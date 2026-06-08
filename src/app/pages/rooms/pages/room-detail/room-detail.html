@@ -59,12 +59,7 @@
           <li>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</li>
           <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
         </ul>
-        <a
-          class="room-detail__book"
-          routerLink="/habitaciones"
-          [queryParams]="bookingQueryParams()"
-          fragment="rooms-booking"
-        >
+        <a class="room-detail__book" routerLink="/reservas-precios">
           {{ 'rooms.detail.bookCta' | translate }}
         </a>
       </aside>

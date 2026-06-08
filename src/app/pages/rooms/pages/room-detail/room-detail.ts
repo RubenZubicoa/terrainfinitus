@@ -41,10 +41,4 @@ export class RoomDetail {
   selectImage(index: number): void {
     this.selectedImageIndex.set(index);
   }
-
-  bookingQueryParams() {
-    const currentRoom = this.room();
-    if (!currentRoom) return {};
-    return { reservar: currentRoom.id, hotel: currentRoom.hotelId };
-  }
 }
