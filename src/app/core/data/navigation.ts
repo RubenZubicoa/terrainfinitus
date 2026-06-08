@@ -1,6 +1,7 @@
 import { NavItem } from '../models/nav-item.model';
 
 export const MAIN_NAVIGATION: NavItem[] = [
+  { labelKey: 'nav.home', route: '/' },
   { labelKey: 'nav.about', route: '/quienes-somos' },
   {
     labelKey: 'nav.projects',
