@@ -1,4 +1,22 @@
 <div class="home">
+  <div class="home-hero__content">
+    <h1 class="home-hero__title">{{ 'home.title' | translate }}</h1>
+  </div>
+  <section class="home-video" [attr.aria-label]="'home.videoAria' | translate">
+
+    <div class="home-video__frame">
+      <iframe
+        class="home-video__player"
+        src="https://www.youtube.com/embed/9FLbyL_39jo?rel=0"
+        [title]="'home.videoTitle' | translate"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
   <section class="home-hero" [attr.aria-label]="'home.galleryAria' | translate">
     <div class="home-hero__banner banner" aria-live="polite">
       @for (slide of slides; track slide.src; let i = $index) {
@@ -56,28 +74,8 @@
       </div>
     </div>
 
-    <div class="home-hero__content">
-      <p class="home-hero__eyebrow">{{ 'home.eyebrow' | translate }}</p>
-      <h1 class="home-hero__title">{{ 'home.title' | translate }}</h1>
-    </div>
+
   </section>
 
-  <section class="home-video" [attr.aria-label]="'home.videoAria' | translate">
-    <header class="home-video__header">
-      <h2 class="home-video__title">{{ 'home.videoHeading' | translate }}</h2>
-      <p class="home-video__subtitle">{{ 'home.videoSubtitle' | translate }}</p>
-    </header>
 
-    <div class="home-video__frame">
-      <iframe
-        class="home-video__player"
-        src="https://www.youtube.com/embed/9FLbyL_39jo?rel=0"
-        [title]="'home.videoTitle' | translate"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </section>
 </div>

@@ -7,7 +7,9 @@
 
 // —— Hero con banner ——
 .home-hero {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1.25rem);
   width: 100%;
 }
 
@@ -20,27 +22,11 @@
   box-shadow: var(--ti-shadow-lg);
 }
 
-.home-hero__overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(
-    105deg,
-    rgba(7, 6, 20, 0.82) 0%,
-    rgba(7, 6, 20, 0.55) 42%,
-    rgba(7, 6, 20, 0.15) 100%
-  );
-  pointer-events: none;
-}
 
 .home-hero__content {
-  position: absolute;
-  z-index: 3;
-  bottom: 0;
-  left: 0;
-  max-width: 36rem;
-  padding: clamp(1.5rem, 4vw, 3rem);
-  color: #fff;
+  max-width: none;
+  padding: 0;
+  color: inherit;
 }
 
 .home-hero__eyebrow {
@@ -49,17 +35,18 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--ti-cream);
+  color: var(--ti-copper);
 }
 
 .home-hero__title {
-  margin: 0 0 1rem;
+  margin: 0;
   font-family: var(--ti-font-display);
-  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-size: clamp(1.75rem, 4.5vw, 3.25rem);
   font-weight: 400;
   line-height: 1.08;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  color: var(--ti-black);
 }
 
 .home-hero__lead {
@@ -189,9 +176,8 @@
 
 // —— Sección vídeo ——
 .home-video {
-  max-width: 56rem;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(0.25rem, 2vw, 1rem);
 }
 
 .home-video__header {
@@ -244,35 +230,9 @@
 }
 
 @media (max-width: 768px) {
-  .home-hero {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
   .home-hero__banner {
     min-height: unset;
     aspect-ratio: 16 / 9;
-  }
-
-  .home-hero__overlay {
-    display: none;
-  }
-
-  .home-hero__content {
-    position: static;
-    max-width: none;
-    padding: 0;
-    color: inherit;
-  }
-
-  .home-hero__eyebrow {
-    color: var(--ti-copper);
-  }
-
-  .home-hero__title {
-    color: var(--ti-black);
-    font-size: clamp(1.75rem, 7vw, 2.25rem);
   }
 
   .home-hero__lead {
