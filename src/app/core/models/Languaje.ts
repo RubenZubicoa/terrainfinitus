@@ -1,0 +1,1 @@
+export type Languaje = 'es' | 'en' | 'de' | 'fr' | 'it' | 'pt' | 'jp'

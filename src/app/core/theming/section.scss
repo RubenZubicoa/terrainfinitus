@@ -1,0 +1,36 @@
+.section {
+  width: 100%;
+}
+
+.title {
+  font-family: var(--ti-font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ti-black);
+}
+
+.text {
+  color: var(--ti-muted);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.link {
+  color: var(--ti-copper);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  img{
+    border-radius: 10px;
+    max-width: 1000px;
+    max-height: 600px;
+  }
+}
+

@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+.footer__cta {
+  position: relative;
+  padding: 4rem 2rem;
+  background:
+    linear-gradient(135deg, rgba(7, 6, 20, 0.92), rgba(184, 115, 51, 0.75)),
+    var(--ti-dark);
+  color: var(--ti-cream);
+  text-align: center;
+}
+
+.footer__cta-inner {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.footer__cta-title {
+  margin: 0 0 1rem;
+  font-family: var(--ti-font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.footer__cta-text {
+  margin: 0 0 1.75rem;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(254, 224, 189, 0.85);
+}
+
+.footer__cta-btn {
+  display: inline-flex;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  background: var(--ti-copper);
+  border: 2px solid var(--ti-copper);
+  color: #fff;
+  font-family: var(--ti-font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    border-color var(--ti-transition),
+    transform var(--ti-transition);
+
+  &:hover {
+    background: var(--ti-copper-dark);
+    border-color: var(--ti-copper-dark);
+    transform: translateY(-2px);
+  }
+}
+
+.footer__bar {
+  padding: 1.25rem 2rem;
+  background: var(--ti-dark);
+  border-top: 1px solid var(--ti-border);
+  color: var(--ti-cream);
+}
+
+.footer__bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ti-cream);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+
+  a {
+    color: var(--ti-copper);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color var(--ti-transition);
+
+    &:hover {
+      color: var(--ti-copper-dark);
+    }
+  }
+}
+
+@media (max-width: 544px) {
+  .footer__bar-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__links {
+    justify-content: center;
+  }
+}

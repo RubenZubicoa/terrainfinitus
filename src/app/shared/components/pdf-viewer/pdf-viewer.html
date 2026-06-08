@@ -1,0 +1,13 @@
+@let pdf = safePdfPath();
+@let label = pdfLabel();
+<div class="pdf-viewer" [attr.aria-label]="label">
+    <iframe
+      class="pdf-viewer__frame"
+      [src]="pdf"
+      [title]="label"
+      loading="lazy"
+    ></iframe>
+    <a class="pdf-viewer__open link" [href]="pdf" target="_blank" rel="noopener noreferrer">
+      {{ label }}
+    </a>
+  </div>

@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Terra Infinitus | Natur und nachhaltiger Luxus",
+    "description": "Terra Infinitus — nachhaltiger Luxus-Touristenkomplex in Spanien. Einzigartige Erlebnisse im Einklang mit der Natur."
+  },
+  "common": {
+    "brand": "Terra Infinitus",
+    "backHome": "Zurück zur Startseite"
+  },
+  "header": {
+    "openMenu": "Navigationsmenü öffnen",
+    "goHome": "Zur Startseite",
+    "selectLanguage": "Sprache auswählen",
+    "languagePrefix": "Sprache",
+    "contact": "Kontakt"
+  },
+  "layout": {
+    "sideNav": "Seitenmenü",
+    "closeMenu": "Menü schließen",
+    "mainNav": "Hauptnavigation"
+  },
+  "sidenav": {
+    "tagline": "Natur und nachhaltiger Luxus"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "projects": "Projekte",
+    "idea": "Die Idee",
+    "peralejos": "Terra Peralejos",
+    "bugarra": "Terra Bugarra",
+    "theLake": "The Lake",
+    "rooms": "Zimmer",
+    "gastronomy": "Gastronomie",
+    "presentation": "Präsentation",
+    "menus": "Die Karten",
+    "activities": "Aktivitäten",
+    "shop": "Boutique-Shop",
+    "photoGallery": "Fotogalerie",
+    "videoGallery": "Videogalerie",
+    "galleryProjects": "Projekte",
+    "galleryNature": "Natur",
+    "galleryFishing": "Angeln",
+    "blog": "Blog",
+    "destinations": "Terra Infinitus Destinations",
+    "freshwater": "Süßwasser",
+    "saltwater": "Salzwasser",
+    "guides": "Guides",
+    "testimonials": "Testimonials",
+    "bookings": "Reservierungen & Preise",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "copyright": "Urheberrecht © {{year}} Terra Infinitus",
+    "linksAria": "Fußzeilen-Links"
+  },
+  "home": {
+    "eyebrow": "Einzigartige Erlebnisse",
+    "title": "Sechs-Sterne-Hotellerie",
+    "lead": "Entdecken Sie Terra Infinitus, wo Luxus mit Nachhaltigkeit in Spaniens beeindruckendsten Landschaften verschmilzt.",
+    "cta": "Mehr entdecken",
+    "showcaseAria": "Galerie und Video",
+    "videoAria": "Präsentationsvideo",
+    "videoTitle": "Terra Infinitus — Video",
+    "galleryAria": "Ausgewählte Bilder",
+    "bannerPrev": "Vorheriges Bild",
+    "bannerNext": "Nächstes Bild",
+    "videoEyebrow": "Entdecken Sie uns",
+    "videoHeading": "Erleben Sie Terra Infinitus",
+    "videoSubtitle": "Ein Einblick in das Erlebnis, das Sie an unseren nachhaltigen Luxusdestinationen erwartet.",
+    "alt1": "Elegantes Interieur mit natürlichem Licht",
+    "alt2": "Moderne Villa mit Pool und Naturblick",
+    "alt3": "Zeitgenössisches Gebäude mit Terrassen und Pool",
+    "alt4": "Natürliche Umgebung von Terra Infinitus",
+    "alt5": "Landschaft und Architektur des Komplexes",
+    "alt6": "Luxuriöse Außenbereiche",
+    "alt7": "Detail der Terra-Infinitus-Umgebung",
+    "alt8": "Panoramablick auf das Projekt"
+  },
+  "gallery": {
+    "images": {
+      "title": "Bildergalerie",
+      "description": "Hier finden Sie die Bilder von Terra Infinitus",
+      "more": "Weitere Bilder",
+      "image1": "Bild 1",
+      "image2": "Bild 2",
+      "image3": "Bild 3"
+    },
+    "videos": {
+      "title": "Videogalerie",
+      "description": "Hier finden Sie die Videos von Terra Infinitus",
+      "more": "Weitere Videos",
+      "videoTitle": "Terra Infinitus — Video"
+    }
+  },
+  "aboutUs": {
+    "title": "Wer sind wir?",
+    "p1": "In diesem wunderbaren Traum haben wir ein außergewöhnliches Team sehr unterschiedlicher Menschen zusammengebracht, vereint durch eine gemeinsame Vision, um ein außergewöhnliches Tourismusprojekt an einem Traumort zu schaffen.",
+    "p2": "Luis Antúnez ist CEO und Schöpfer der Idee, mit umfassender Erfahrung in der Welt des Luxustourismus und der internationalen Gourmet-Gastronomie, mit zahlreichen offiziellen Auszeichnungen für seine touristischen Unternehmungen, darunter die Anerkennung als bestes Tourismusunternehmen des Landes, verliehen vom Tourismusministerium Chiles für sein Hotel in Patagonien.",
+    "p3": "Seit seinen Anfängen bei der UNWTO (Welttourismusorganisation) weckte er seine Leidenschaft für diesen Sektor und spezialisierte sich auf High-End-Tourismus mit erstklassigen Kunden: Schauspieler, Sänger und Persönlichkeiten des öffentlichen Lebens wie Robert Redford, Tom Selleck, John Denver und viele mehr, die ihm nach Jahrzehnten der Arbeit einen exklusiven Stamm von mehr als vierhunderttausend Nutzern und einen erstklassigen Ruf in diesem Markt verschafft haben.",
+    "p4": "Aus seiner Leidenschaft für die Natur und Fliegenfischen hat Luis den Planeten bereist und Destinationen und Operationen in vielen exklusiven Winkeln der Welt eröffnet — Erfahrung, Know-how und Wissen, die in den Aufbau dieses exklusiven Projekts einfließen.",
+    "p5": "Unsere Philosophie basiert darauf, eine einzigartige Umgebung für einzigartige Menschen zu schaffen, im Bewusstsein, wie wichtig es ist, mit den Träumen derer zu arbeiten, die uns besuchen — Träume nehmen wir sehr ernst.",
+    "p6": "Wir stützen unsere Idee auf unsere besondere Interpretation von Luxus, die in Exklusivität besteht und Massentourismus jederzeit vermeidet;",
+    "p7": "Luxus kann nicht Hand in Hand gehen mit Betrieben, die mit Hunderten von Personen arbeiten; wir möchten jedem Besucher seinen Namen geben und einen absolut personalisierten Service bieten, der in nichts dem traditionellen Hotelaufenthalt gleicht.",
+    "p8": "Unser Erfolg basiert auf Loyalität und Wiederholungsbesuchen; manche Kunden besuchen uns seit mehr als achtzehn Jahren — nicht nur in Patagonien, sondern auch an zahlreichen Destinationen weltweit wie dem Amazonas, der Karibik und Spanien.",
+    "p9": "In Spanien wird unser Team aus Talenten in den verschiedenen Bereichen bestehen, die für den Grad an Exklusivität nötig sind — Menschen mit echter Sensibilität und Erfahrung in spanischer Hotellerie, Kundenservice, Möbeldesign, Dekoration und Gastronomie sowie einem vollständigen Verständnis von Tourismus, Leitung und Betreuung.",
+    "p10": "Wir verfügen über spezialisierte Gartenbautechniker, die eine Oase auf dem Gelände gestalten, sowie Wasserexperten und weiteres Personal, das wir vor Ort rekrutieren und schulen, damit die Harmonie des Ganzen dem Projekt gerecht wird und die Erwartungen unserer Gäste übertrifft — mit definitivem Impact auf die Gemeinschaft, voller Beschäftigung mit qualitativ hochwertigen und stabilen Arbeitsplätzen und einer einzigartigen, innovativen, rentablen und nachhaltigen Idee."
+  },
+  "placeholder": {
+    "message": "Dieser Bereich wird in kommenden Iterationen entwickelt.",
+    "defaultTitle": "Seite im Aufbau"
+  },
+  "projects": {
+    "bugarra": {
+      "title": "Bugarra",
+      "p1": "Konzentriert auf den Bau von vierzehn voll ausgestatteten Luxus-Bungalows für eine anspruchsvolle Klientel, mit Gourmetrestaurant, Pools, Spas und einem umfassenden touristischen Angebot.",
+      "p2": "Wir warten auf die letzten Genehmigungen und streben an, bis 2027 eröffnet und betriebsbereit zu sein."
+    },
+    "peralejos": {
+      "title": "Peralejos",
+      "p1": "Konzentriert auf den Bau und die Entwicklung eines Sechs-Sterne-Hotels mit zehn Bungalows, Gourmetrestaurant, Hydrotherapiebereichen, Pools, Fitnessstudios, Spas, touristischen Aktivitäten, Online-Shop, Fahrzeugvermietung und Reiseführern u. a. im Herzen des Alto-Tajo-Naturparks in Peralejos de Las Truchas, Guadalajara — ein Projekt, das wir vor über zwei Jahren begonnen haben und sich in voller Entwicklungs- und Designphase befindet.",
+      "p2": "Wir werden etwa dreißig Zimmer haben, von knapp hundert bis vierhundert Quadratmetern, Gourmetküche und zahlreiche exquisite Details, die dem Projekt höchstes Ansehen in und außerhalb Spaniens verleihen. Das Projekt wird in Phasen entwickelt; viele Bauten und Infrastrukturen sind bereits fertiggestellt.",
+      "p3": "Wir streben an, 2026-2027 mit der gesamten Luxus-Bungalow-Kapazität, Gemeinschaftsbereichen, Saunas, Pools, Spas, Gartenbau, Solarfeldern und vielen weiteren Details bereit zu sein und 2027-2028 mit dem Rest der Bauten und Infrastrukturen voll betriebsbereit."
+    },
+    "theLake": {
+      "title": "The Lake",
+      "pdfViewer": "The Lake-Projektdokument",
+      "p1": "In Gestalgar, Valencia, werden wir einen künstlichen See mit zwei Wasserflächen von jeweils etwa 35.000 Quadratmetern errichten, für Sportaktivitäten, insbesondere Catch-and-Release-Angelsport, der angesichts des Klimas das größte Ziel in Spanien und dem Großteil Europas sein wird — mit der Besonderheit, dass im Winter, während der Rest Spaniens und Europas unter Null liegt, dort 15 bis 20 Grad herrschen.",
+      "p2": "Nationale und internationale Wettkämpfe werden ausgetragen; er dient als Stütze für das Bugarra-Projekt."
+    }
+  }
+}

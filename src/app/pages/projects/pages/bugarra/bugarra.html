@@ -1,0 +1,11 @@
+<section class="peralejos section">
+  <h1 class="title">{{ 'projects.bugarra.title' | translate }}</h1>
+  <p class="text">{{ 'projects.bugarra.p1' | translate }}</p>
+  <p class="text">{{ 'projects.bugarra.p2' | translate }}</p>
+  <div class="image-container">
+    <img src="/images/bugarra/bugarra.png" alt="Bugarra">
+  </div>
+  <app-pdf-viewer [pdfPath]="pdfPath1" [pdfLabel]="'projects.bugarra.pdfViewer' | translate" />
+  <app-pdf-viewer [pdfPath]="pdfPath2" [pdfLabel]="'projects.bugarra.pdfViewer2' | translate" />
+  <a class="link" routerLink="/">{{ 'common.backHome' | translate }}</a>
+</section>

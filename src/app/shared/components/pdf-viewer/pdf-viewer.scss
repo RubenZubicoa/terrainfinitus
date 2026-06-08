@@ -1,0 +1,27 @@
+.pdf-viewer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--ti-border);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: var(--ti-shadow);
+  }
+  
+  .pdf-viewer__frame {
+    width: 100%;
+    height: min(75vh, 720px);
+    min-height: 420px;
+    border: 0;
+    border-radius: 8px;
+    display: block;
+    background: var(--ti-cream-light);
+  }
+  
+  .pdf-viewer__open {
+    align-self: flex-end;
+    font-size: 0.875rem;
+    text-decoration: none;
+  }

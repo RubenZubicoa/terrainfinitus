@@ -1,0 +1,26 @@
+<div class="shell" [class.shell--nav-open]="mobileNavOpen()">
+  <aside
+    class="shell__sidebar"
+    [class.shell__sidebar--open]="mobileNavOpen()"
+    [attr.aria-label]="'layout.sideNav' | translate"
+  >
+    <app-sidenav [mobileOpen]="mobileNavOpen()" (navClose)="closeMobileNav()" />
+  </aside>
+
+  @if (mobileNavOpen()) {
+    <button
+      type="button"
+      class="shell__backdrop"
+      [attr.aria-label]="'layout.closeMenu' | translate"
+      (click)="closeMobileNav()"
+    ></button>
+  }
+
+  <div class="shell__main">
+    <app-header (menuToggle)="toggleMobileNav()" />
+    <main class="shell__content" [class.shell__content--home]="isHome()">
+      <router-outlet />
+    </main>
+    <app-footer />
+  </div>
+</div>

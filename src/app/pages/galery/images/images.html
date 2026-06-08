@@ -1,0 +1,35 @@
+<div class="images-page">
+  <div class="header-container">
+    <h1 class="title">{{ 'gallery.images.title' | translate }}</h1>
+    <p class="text">{{ 'gallery.images.description' | translate }}</p>
+  </div>
+
+  <section class="viewer" *ngIf="selectedImage">
+    <div class="viewer-frame">
+      <img
+        class="viewer-image"
+        [src]="selectedImage.src"
+        [alt]="selectedImage.titleKey | translate"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <section class="strip" *ngIf="images.length > 1">
+    <div class="strip-title text">{{ 'gallery.images.more' | translate }}</div>
+    <div class="strip-list" role="list">
+      <button
+        *ngFor="let img of images"
+        type="button"
+        class="strip-item"
+        role="listitem"
+        [class.is-active]="img.id === selectedImageId"
+        (click)="selectImage(img.id)"
+        [attr.aria-current]="img.id === selectedImageId ? 'true' : null"
+      >
+        <img class="thumb" [src]="img.src" [alt]="img.titleKey | translate" loading="lazy" />
+        <span class="thumb-title">{{ img.titleKey | translate }}</span>
+      </button>
+    </div>
+  </section>
+</div>

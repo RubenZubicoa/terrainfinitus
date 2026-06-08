@@ -1,0 +1,14 @@
+<footer class="footer">
+  <section class="footer__bar">
+    <div class="footer__bar-inner">
+      <p class="footer__copyright">
+        {{ 'footer.copyright' | translate: { year: currentYear } }}
+      </p>
+      <nav class="footer__links" [attr.aria-label]="'footer.linksAria' | translate">
+        <a routerLink="/">{{ 'nav.home' | translate }}</a>
+        <a routerLink="/contacto">{{ 'nav.contact' | translate }}</a>
+        <a routerLink="/blog">{{ 'nav.blog' | translate }}</a>
+      </nav>
+    </div>
+  </section>
+</footer>

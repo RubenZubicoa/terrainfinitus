@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Terra Infinitus | Natura e lusso sostenibile",
+    "description": "Terra Infinitus — complesso turistico di lusso sostenibile in Spagna. Esperienze uniche in armonia con la natura."
+  },
+  "common": {
+    "brand": "Terra Infinitus",
+    "backHome": "Torna alla home"
+  },
+  "header": {
+    "openMenu": "Apri menu di navigazione",
+    "goHome": "Vai alla home",
+    "selectLanguage": "Seleziona lingua",
+    "languagePrefix": "Lingua",
+    "contact": "Contatto"
+  },
+  "layout": {
+    "sideNav": "Menu laterale",
+    "closeMenu": "Chiudi menu",
+    "mainNav": "Navigazione principale"
+  },
+  "sidenav": {
+    "tagline": "Natura e lusso sostenibile"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "projects": "Progetti",
+    "idea": "L'idea",
+    "peralejos": "Terra Peralejos",
+    "bugarra": "Terra Bugarra",
+    "theLake": "The Lake",
+    "rooms": "Camere",
+    "gastronomy": "Gastronomia",
+    "presentation": "Presentazione",
+    "menus": "I menu",
+    "activities": "Attività",
+    "shop": "Boutique",
+    "photoGallery": "Galleria di foto",
+    "videoGallery": "Galleria video",
+    "galleryProjects": "Progetti",
+    "galleryNature": "Natura",
+    "galleryFishing": "Pesca",
+    "blog": "Blog",
+    "destinations": "Terra Infinitus Destinations",
+    "freshwater": "Acqua dolce",
+    "saltwater": "Acqua salata",
+    "guides": "Guide",
+    "testimonials": "Testimonials",
+    "bookings": "Prenotazioni-Prezzi",
+    "contact": "Contatto"
+  },
+  "footer": {
+    "copyright": "Copyright © {{year}} Terra Infinitus",
+    "linksAria": "Link del piè di pagina"
+  },
+  "home": {
+    "eyebrow": "Esperienze uniche",
+    "title": "Hotellerie a sei stelle",
+    "lead": "Scopri Terra Infinitus, dove il lusso si fonde con la sostenibilità negli ambienti più suggestivi della Spagna.",
+    "cta": "Scopri di più",
+    "showcaseAria": "Galleria e video",
+    "videoAria": "Video di presentazione",
+    "videoTitle": "Terra Infinitus — video",
+    "galleryAria": "Immagini in evidenza",
+    "bannerPrev": "Immagine precedente",
+    "bannerNext": "Immagine successiva",
+    "videoEyebrow": "Scopriteci",
+    "videoHeading": "Vivi Terra Infinitus",
+    "videoSubtitle": "Uno sguardo all'esperienza che vi attende nelle nostre destinazioni di lusso sostenibile.",
+    "alt1": "Interno elegante con luce naturale",
+    "alt2": "Villa moderna con piscina e vista sulla natura",
+    "alt3": "Edificio contemporaneo con terrazze e piscina",
+    "alt4": "Ambiente naturale di Terra Infinitus",
+    "alt5": "Paesaggio e architettura del complesso",
+    "alt6": "Spazi esterni di lusso",
+    "alt7": "Dettaglio dell'ambiente Terra Infinitus",
+    "alt8": "Vista panoramica del progetto"
+  },
+  "gallery": {
+    "images": {
+      "title": "Galleria immagini",
+      "description": "Qui troverai le immagini di Terra Infinitus",
+      "more": "Altre immagini",
+      "image1": "Immagine 1",
+      "image2": "Immagine 2",
+      "image3": "Immagine 3"
+    },
+    "videos": {
+      "title": "Galleria video",
+      "description": "Qui troverai i video di Terra Infinitus",
+      "more": "Altri video",
+      "videoTitle": "Terra Infinitus — video"
+    }
+  },
+  "aboutUs": {
+    "title": "Chi siamo?",
+    "p1": "In questo meraviglioso sogno abbiamo riunito un team straordinario di persone molto diverse, unite da una visione comune, per creare un progetto turistico eccezionale in un luogo da sogno.",
+    "p2": "Luis Antúnez è il CEO e creatore dell'idea, con una vasta esperienza nel turismo di lusso e nella gastronomia gourmet a livello internazionale, avendo ottenuto numerosi riconoscimenti ufficiali nelle sue imprese turistiche, come il miglior stabilimento turistico del Paese, premio del Ministero del Turismo del Cile per il suo hotel in Patagonia.",
+    "p3": "Fin dai suoi inizi all'OMT (Organizzazione Mondiale del Turismo) ha coltivato la passione per questo settore, specializzandosi nel turismo di alto livello, con clienti di prima linea: attori, cantanti e personaggi pubblici come Robert Redford, Tom Selleck, John Denver e molti altri che, dopo decenni di lavoro, gli hanno garantito un mercato captivo esclusivo di oltre quattrocentomila utenti e una reputazione di primo livello.",
+    "p4": "Spinto dalla passione per la natura e la pesca a mosca, Luis ha percorso il pianeta aprendo destinazioni e operazioni in molti angoli esclusivi del mondo, portando tutta quell'esperienza, know-how e conoscenze nella costruzione di questo Progetto esclusivo.",
+    "p5": "La nostra filosofia si basa sulla creazione di un ambiente unico per persone uniche, consapevoli dell'importanza di lavorare con i sogni di chi ci visita — i sogni sono qualcosa che prendiamo molto sul serio.",
+    "p6": "Basiamo la nostra idea su un'interpretazione speciale del lusso, che risiede nell'esclusività, evitando in ogni momento la massificazione;",
+    "p7": "Il lusso non può andare di pari passo con strutture che operano con centinaia di persone; vogliamo dare un nome a ciascuno dei nostri visitatori, offrendo un servizio assolutamente personalizzato, senza somiglianza con ciò che tradizionalmente significa soggiornare in un hotel.",
+    "p8": "Il nostro successo si basa sulla fidelizzazione e sulla ripetizione delle visite; alcuni clienti ci visitano da più di diciotto anni, non solo in Patagonia ma anche in molte destinazioni nel mondo, come l'Amazzonia, i Caraibi e la Spagna.",
+    "p9": "In Spagna, il nostro team sarà composto da talenti nei diversi ambiti necessari per raggiungere il grado di esclusività richiesto — persone con genuina sensibilità, esperienza nell'ospitalità spagnola, attenzione al pubblico, design del mobilio, decorazione e gastronomia, e una completa comprensione del turismo, della sua direzione e dell'accoglienza.",
+    "p10": "Disponiamo di tecnici specializzati in giardinaggio che progetteranno un'oasi all'interno della proprietà, oltre a esperti in acque e altro personale che recluteremo in loco e formeremo per garantire che l'armonia dell'insieme sia all'altezza del Progetto e superi le aspettative degli ospiti, con un impatto definitivo sulla comunità, pieno impiego tra i suoi abitanti, posti di lavoro di qualità e stabili, e la creazione di un'idea unica, innovativa, redditizia e sostenibile."
+  },
+  "placeholder": {
+    "message": "Questa sezione sarà sviluppata nelle prossime iterazioni.",
+    "defaultTitle": "Pagina in costruzione"
+  },
+  "projects": {
+    "bugarra": {
+      "title": "Bugarra",
+      "p1": "Consistente nella costruzione di quattordici bungalow di lusso completamente attrezzati per un'clientela esigente, con ristorante gourmet, piscine, spa e un'ampia offerta di attività turistiche.",
+      "p2": "Stiamo attendendo l'ottenimento degli ultimi permessi per l'esecuzione e puntiamo ad essere aperti e operativi entro il 2027."
+    },
+    "peralejos": {
+      "title": "Peralejos",
+      "p1": "Consistente nella costruzione e nello sviluppo di un hotel a sei stelle con dieci bungalow, ristorante gourmet, zone di idroterapia, piscine, palestre, spa, attività turistiche, negozio online, noleggio veicoli e servizio guide, tra gli altri aspetti, nel cuore del Parco Naturale dell'Alto Tajo a Peralejos de Las Truchas, Guadalajara — progetto avviato oltre due anni fa e in piena fase di sviluppo e design.",
+      "p2": "Avremo una trentina di camere, dai quasi cento ai quattrocento metri quadrati, cucina gourmet e una ricchezza di dettagli squisiti che daranno al Progetto la massima reputazione in Spagna e all'estero. Il Progetto si svilupperà per fasi, con numerose costruzioni e infrastrutture già completate.",
+      "p3": "Puntiamo ad essere pronti nel 2026-2027 con tutta la capacità di bungalow di lusso, aree comuni, saune, piscine, spa, progetti di giardinaggio, campi solari e molti altri dettagli, e nel 2027-2028 pienamente operativi con il resto delle costruzioni e infrastrutture del Progetto."
+    },
+    "theLake": {
+      "title": "The Lake",
+      "pdfViewer": "Documento del progetto The Lake",
+      "p1": "A Gestalgar, Valencia, implementeremo un lago artificiale con due specchi d'acqua di circa 35.000 metri quadrati ciascuno, destinati ad attività sportive, in particolare la pesca sportiva catch and release, che, date le caratteristiche climatiche, ne farà la destinazione più grande di Spagna e della maggior parte d'Europa — con la curiosità che in inverno, mentre il resto di Spagna e Europa è sotto zero, lì avremo tra i 15 e i 20 gradi.",
+      "p2": "Si svolgeranno competizioni nazionali e internazionali e servirà a supporto del Progetto Bugarra."
+    }
+  }
+}

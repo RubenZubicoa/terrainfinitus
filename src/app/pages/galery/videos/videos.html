@@ -1,0 +1,37 @@
+<div class="videos-page">
+  <div class="header-container">
+    <h1 class="title">{{ 'gallery.videos.title' | translate }}</h1>
+    <p class="text">{{ 'gallery.videos.description' | translate }}</p>
+  </div>
+
+  <section class="player" *ngIf="selectedVideo">
+    <div class="player-frame">
+      <video
+        class="player-video"
+        [src]="selectedVideo.src"
+        [attr.aria-label]="selectedVideo.titleKey | translate"
+        controls
+        playsinline
+        preload="metadata"
+      ></video>
+    </div>
+  </section>
+
+  <section class="strip" *ngIf="videos.length > 1">
+    <div class="strip-title text">{{ 'gallery.videos.more' | translate }}</div>
+    <div class="strip-list" role="list">
+      <button
+        *ngFor="let v of videos"
+        type="button"
+        class="strip-item"
+        role="listitem"
+        [class.is-active]="v.id === selectedVideoId"
+        (click)="selectVideo(v.id)"
+        [attr.aria-current]="v.id === selectedVideoId ? 'true' : null"
+      >
+        <video class="thumb-video" [src]="v.src" muted playsinline preload="metadata"></video>
+        <span class="thumb-title">{{ v.titleKey | translate }}</span>
+      </button>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,64 @@
+<nav class="sidenav" [attr.aria-label]="'layout.mainNav' | translate">
+  <div class="sidenav__brand">
+    <a routerLink="/" class="sidenav__logo" (click)="onNavigate()">
+      <img
+        class="sidenav__logo-img"
+        src="/images/logo/logo.png"
+        [alt]="'common.brand' | translate"
+        decoding="async"
+      />
+      <span class="sidenav__logo-text">{{ 'common.brand' | translate }}</span>
+    </a>
+  </div>
+
+  <ul class="sidenav__list">
+    @for (item of navigation; track item.labelKey) {
+      <li class="sidenav__item">
+        @if (item.children?.length) {
+          <button
+            type="button"
+            class="sidenav__group-toggle"
+            [class.sidenav__group-toggle--open]="isGroupExpanded(item)"
+            [attr.aria-expanded]="isGroupExpanded(item)"
+            (click)="toggleGroup(item.labelKey)"
+          >
+            <span>{{ item.labelKey | translate }}</span>
+            <svg class="sidenav__chevron" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+          @if (isGroupExpanded(item)) {
+            <ul class="sidenav__sublist">
+              @for (child of item.children; track child.labelKey) {
+                <li>
+                  <a
+                    [routerLink]="child.route"
+                    routerLinkActive="sidenav__link--active"
+                    class="sidenav__link sidenav__link--child"
+                    (click)="onNavigate()"
+                  >
+                    {{ child.labelKey | translate }}
+                  </a>
+                </li>
+              }
+            </ul>
+          }
+        } @else {
+          <a
+            [routerLink]="item.route"
+            routerLinkActive="sidenav__link--active"
+            [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+            class="sidenav__link"
+            (click)="onNavigate()"
+          >
+            {{ item.labelKey | translate }}
+          </a>
+        }
+      </li>
+    }
+  </ul>
+
+  <div class="sidenav__footer">
+    <p class="sidenav__tagline">{{ 'sidenav.tagline' | translate }}</p>
+  </div>
+</nav>

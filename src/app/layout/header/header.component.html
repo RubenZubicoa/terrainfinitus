@@ -1,0 +1,88 @@
+<header class="header">
+  <div class="header__start">
+    <button
+      type="button"
+      class="header__menu-btn"
+      [attr.aria-label]="'header.openMenu' | translate"
+      (click)="menuToggle.emit()"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" />
+      </svg>
+    </button>
+    <a routerLink="/" class="header__brand" [attr.aria-label]="'header.goHome' | translate">
+      <!-- <img
+        class="header__logo"
+        src="/images/logo/logo.png"
+        [alt]="'common.brand' | translate"
+        decoding="async"
+      /> -->
+      <!-- <span class="header__title">{{ 'common.brand' | translate }}</span> -->
+      <span class="header__title">TERRA INFINITUS TENEMOS MILLONES DE ESTRELLAS</span>
+    </a>
+  </div>
+
+  <div class="header__actions">
+    <div
+      class="header__lang header__lang--desktop"
+      role="group"
+      [attr.aria-label]="'header.selectLanguage' | translate"
+    >
+      @for (lang of languageService.languages; track lang.code) {
+        <button
+          type="button"
+          class="header__lang-btn"
+          [class.header__lang-btn--active]="languageService.currentLanguage() === lang.code"
+          [attr.aria-label]="lang.label"
+          [attr.aria-pressed]="languageService.currentLanguage() === lang.code"
+          (click)="selectLanguage(lang.code)"
+        >
+          <img class="header__lang-flag" [src]="lang.flagSrc" [alt]="" aria-hidden="true" />
+        </button>
+      }
+    </div>
+
+    <div class="header__lang-mobile">
+      <button
+        type="button"
+        class="header__lang-toggle"
+        [attr.aria-expanded]="langMenuOpen()"
+        aria-haspopup="listbox"
+        [attr.aria-label]="('header.languagePrefix' | translate) + ': ' + activeLanguage.label"
+        (click)="toggleLangMenu(); $event.stopPropagation()"
+      >
+        <img
+          class="header__lang-flag"
+          [src]="activeLanguage.flagSrc"
+          [alt]="activeLanguage.label"
+        />
+        <svg class="header__lang-chevron" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+
+      @if (langMenuOpen()) {
+        <div
+          class="header__lang-panel"
+          role="listbox"
+          [attr.aria-label]="'header.selectLanguage' | translate"
+        >
+          @for (lang of languageService.languages; track lang.code) {
+            <button
+              type="button"
+              class="header__lang-option"
+              role="option"
+              [class.header__lang-option--active]="languageService.currentLanguage() === lang.code"
+              [attr.aria-selected]="languageService.currentLanguage() === lang.code"
+              (click)="selectLanguage(lang.code)"
+            >
+              <img class="header__lang-flag" [src]="lang.flagSrc" [alt]="" aria-hidden="true" />
+              <span class="header__lang-label">{{ lang.label }}</span>
+            </button>
+          }
+        </div>
+      }
+    </div>
+
+  </div>
+</header>

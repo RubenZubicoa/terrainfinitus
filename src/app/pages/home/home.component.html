@@ -1,0 +1,83 @@
+<div class="home">
+  <section class="home-hero" [attr.aria-label]="'home.galleryAria' | translate">
+    <div class="home-hero__banner banner" aria-live="polite">
+      @for (slide of slides; track slide.src; let i = $index) {
+        <figure
+          class="banner__slide"
+          [class.banner__slide--active]="currentIndex() === i"
+          [attr.aria-hidden]="currentIndex() !== i"
+        >
+          <img
+            [src]="slide.src"
+            [alt]="slide.altKey | translate"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      }
+
+      <div class="home-hero__overlay" aria-hidden="true"></div>
+
+      <div class="banner__controls">
+        <button
+          type="button"
+          class="banner__nav banner__nav--prev"
+          [attr.aria-label]="'home.bannerPrev' | translate"
+          (click)="prevSlide()"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </button>
+        <button
+          type="button"
+          class="banner__nav banner__nav--next"
+          [attr.aria-label]="'home.bannerNext' | translate"
+          (click)="nextSlide()"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="banner__dots" role="tablist" [attr.aria-label]="'home.galleryAria' | translate">
+        @for (slide of slides; track slide.src; let i = $index) {
+          <button
+            type="button"
+            class="banner__dot"
+            role="tab"
+            [class.banner__dot--active]="currentIndex() === i"
+            [attr.aria-selected]="currentIndex() === i"
+            [attr.aria-label]="slide.altKey | translate"
+            (click)="goToSlide(i)"
+          ></button>
+        }
+      </div>
+    </div>
+
+    <div class="home-hero__content">
+      <p class="home-hero__eyebrow">{{ 'home.eyebrow' | translate }}</p>
+      <h1 class="home-hero__title">{{ 'home.title' | translate }}</h1>
+    </div>
+  </section>
+
+  <section class="home-video" [attr.aria-label]="'home.videoAria' | translate">
+    <header class="home-video__header">
+      <h2 class="home-video__title">{{ 'home.videoHeading' | translate }}</h2>
+      <p class="home-video__subtitle">{{ 'home.videoSubtitle' | translate }}</p>
+    </header>
+
+    <div class="home-video__frame">
+      <iframe
+        class="home-video__player"
+        src="https://www.youtube.com/embed/9FLbyL_39jo?rel=0"
+        [title]="'home.videoTitle' | translate"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+</div>

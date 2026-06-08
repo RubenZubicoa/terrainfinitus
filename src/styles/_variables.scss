@@ -1,0 +1,33 @@
+// Paleta Terra Infinitus (extraída de terrainfinitus.com)
+$color-copper: #b87333;
+$color-copper-dark: #9a5f2a;
+$color-cream: #fee0bd;
+$color-cream-light: #fff5eb;
+$color-black: #000000;
+$color-dark: #070614;
+$color-charcoal: #222222;
+$color-border: #d1dae5;
+$color-muted: #475569;
+
+:root {
+  --ti-copper: #{$color-copper};
+  --ti-copper-dark: #{$color-copper-dark};
+  --ti-cream: #{$color-cream};
+  --ti-cream-light: #{$color-cream-light};
+  --ti-black: #{$color-black};
+  --ti-dark: #{$color-dark};
+  --ti-charcoal: #{$color-charcoal};
+  --ti-border: #{$color-border};
+  --ti-muted: #{$color-muted};
+
+  --ti-font-display: 'Belleza', Georgia, serif;
+  --ti-font-body: 'Work Sans', system-ui, sans-serif;
+
+  --ti-sidebar-width: 280px;
+  --ti-header-height: 72px;
+  --ti-radius-sm: 8px;
+  --ti-radius-md: 12px;
+  --ti-shadow: 0 4px 24px rgba(7, 6, 20, 0.08);
+  --ti-shadow-lg: 0 12px 40px rgba(7, 6, 20, 0.15);
+  --ti-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
