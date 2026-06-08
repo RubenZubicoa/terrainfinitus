@@ -128,5 +128,135 @@
       "p1": "En la localidad de Gestalgar, Valencia, donde implementaremos un lago artificial con dos láminas de agua de unos 35.000 metros cuadrados cada una, destinadas a la realización de actividades deportivas, especialmente la pesca deportiva sin muerte, que, dadas las características climáticas de la zona, será el destino más grande de España y de la mayoría de Europa, con la curiosidad de que durante el invierno, mientras el resto de España y Europa está bajo cero, allí estaremos entre los 15 y 20 grados.",
       "p2": "Se realizarán competiciones nacionales e internacionales y servirá como apoyo al Proyecto de Bugarra."
     }
+  },
+  "rooms": {
+    "eyebrow": "Reservas exclusivas",
+    "title": "Habitaciones",
+    "subtitle": "Consulta la disponibilidad y gestiona las reservas de nuestros destinos de lujo sostenible.",
+    "hotelsAria": "Seleccionar hotel",
+    "catalogAria": "Catálogo de habitaciones",
+    "bookingAria": "Formulario de reserva",
+    "reservationsAria": "Gestión de reservas",
+    "perNight": "/ noche",
+    "m2": "m²",
+    "guestsMax": "Hasta {{count}} huéspedes",
+    "bookRoom": "Reservar",
+    "stats": {
+      "rooms": "Habitaciones",
+      "active": "Reservas activas",
+      "hotels": "Destinos"
+    },
+    "hotels": {
+      "peralejos": {
+        "name": "Terra Peralejos",
+        "location": "Parque Natural del Alto Tajo, Guadalajara"
+      },
+      "bugarra": {
+        "name": "Terra Bugarra",
+        "location": "Valencia — entorno natural y lago artificial"
+      },
+      "theLake": {
+        "name": "The Lake",
+        "location": "Gestalgar, Valencia — destino de pesca deportiva"
+      }
+    },
+    "catalog": {
+      "tajoSuite": {
+        "name": "Suite Tajo",
+        "description": "Suite amplia con vistas al río y acabados en madera natural."
+      },
+      "lagoonJunior": {
+        "name": "Junior Lagoon",
+        "description": "Habitación luminosa con balcón privado y diseño contemporáneo."
+      },
+      "presidential": {
+        "name": "Presidential Suite",
+        "description": "La máxima expresión del lujo con salón independiente y terraza panorámica."
+      },
+      "gardenBungalow": {
+        "name": "Garden Bungalow",
+        "description": "Bungalow independiente integrado en el jardín mediterráneo."
+      },
+      "spaSuite": {
+        "name": "Spa Suite",
+        "description": "Suite con acceso privado a circuito de bienestar y hidroterapia."
+      },
+      "lakeView": {
+        "name": "Lake View",
+        "description": "Amplios ventanales con vistas directas al lago y la sierra."
+      },
+      "fisherLodge": {
+        "name": "Fisher Lodge",
+        "description": "Refugio rústico de lujo pensado para la pesca con mosca."
+      },
+      "panorama": {
+        "name": "Panorama Suite",
+        "description": "Suite elevada con vistas de 180° sobre el entorno acuático."
+      },
+      "executive": {
+        "name": "Executive Room",
+        "description": "Habitación elegante con zona de trabajo y servicio personalizado."
+      }
+    },
+    "amenities": {
+      "kingBed": "Cama king",
+      "terrace": "Terraza privada",
+      "spa": "Acceso spa",
+      "gardenView": "Vista jardín",
+      "minibar": "Minibar premium",
+      "rainShower": "Ducha efecto lluvia",
+      "privatePool": "Piscina privada",
+      "butler": "Servicio de mayordomo",
+      "lounge": "Salón privado",
+      "privateGarden": "Jardín privado",
+      "fireplace": "Chimenea",
+      "outdoorShower": "Ducha exterior",
+      "sauna": "Sauna privada",
+      "lakeView": "Vista al lago",
+      "breakfast": "Desayuno gourmet",
+      "fishingGear": "Equipo de pesca",
+      "panoramicView": "Vista panorámica",
+      "workDesk": "Zona de trabajo"
+    },
+    "form": {
+      "title": "Nueva reserva",
+      "editTitle": "Editar reserva",
+      "selectRoom": "Habitación",
+      "selectRoomPlaceholder": "Selecciona una habitación",
+      "guestName": "Nombre del huésped",
+      "checkIn": "Entrada",
+      "checkOut": "Salida",
+      "guests": "Huéspedes",
+      "notes": "Notas (opcional)",
+      "submit": "Confirmar reserva",
+      "update": "Actualizar reserva",
+      "cancel": "Cancelar"
+    },
+    "table": {
+      "title": "Reservas",
+      "count": "reservas",
+      "empty": "No hay reservas registradas para este destino.",
+      "guest": "Huésped",
+      "room": "Habitación",
+      "dates": "Fechas",
+      "guests": "Huésp.",
+      "status": "Estado",
+      "actions": "Acciones",
+      "edit": "Editar",
+      "delete": "Cancelar"
+    },
+    "status": {
+      "confirmed": "Confirmada",
+      "pending": "Pendiente",
+      "cancelled": "Cancelada"
+    },
+    "errors": {
+      "roomRequired": "Selecciona una habitación.",
+      "guestRequired": "Indica el nombre del huésped.",
+      "datesRequired": "Indica las fechas de entrada y salida.",
+      "invalidDates": "La fecha de salida debe ser posterior a la de entrada.",
+      "guestsRequired": "Indica al menos un huésped.",
+      "capacityExceeded": "El número de huéspedes supera la capacidad de la habitación."
+    }
   }
 }

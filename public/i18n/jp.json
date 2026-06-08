@@ -128,5 +128,58 @@
       "p1": "バレンシア州ヘスタルガルに、各約35,000㎡の2つの人工湖を建設し、スポーツ活動、特にキャッチ＆リリースのスポーツフィッシングを提供します。気候のためスペインおよび欧州最大級の目的地となる見込みで、冬にはスペイン・欧州が氷点下でも当地は15〜20度です。",
       "p2": "国内・国際大会を開催し、Bugarra プロジェクトを支援します。"
     }
+  },
+  "rooms": {
+    "eyebrow": "限定予約",
+    "title": "客室",
+    "subtitle": "持続可能なラグジュアリー目的地の空室状況を確認し、予約を管理できます。",
+    "hotelsAria": "ホテルを選択",
+    "catalogAria": "客室カタログ",
+    "bookingAria": "予約フォーム",
+    "reservationsAria": "予約管理",
+    "perNight": "/ 泊",
+    "m2": "m²",
+    "guestsMax": "最大 {{count}} 名",
+    "bookRoom": "予約する",
+    "stats": { "rooms": "客室", "active": "有効な予約", "hotels": "目的地" },
+    "hotels": {
+      "peralejos": { "name": "Terra Peralejos", "location": "アルト・タホ自然公園、グアダラハラ" },
+      "bugarra": { "name": "Terra Bugarra", "location": "バレンシア — 自然と人工湖" },
+      "theLake": { "name": "The Lake", "location": "ヘスタルガル — スポーツフィッシング" }
+    },
+    "catalog": {
+      "tajoSuite": { "name": "タホスイート", "description": "川の眺めと天然木仕上げの広々としたスイート。" },
+      "lagoonJunior": { "name": "ラグーンジュニア", "description": "プライベートバルコニー付きの明るい客室。" },
+      "presidential": { "name": "プレジデンシャルスイート", "description": "独立ラウンジとパノラマテラスを備えた最高級スイート。" },
+      "gardenBungalow": { "name": "ガーデンバンガロー", "description": "地中海庭園に溶け込む独立バンガロー。" },
+      "spaSuite": { "name": "スパスイート", "description": "ウェルネス施設へのプライベートアクセス付き。" },
+      "lakeView": { "name": "レイクビュー", "description": "湖と山々を望む大きな窓。" },
+      "fisherLodge": { "name": "フィッシャーロッジ", "description": "フライフィッシング向けのラグジュアリーなロッジ。" },
+      "panorama": { "name": "パノラマスイート", "description": "水面を180°望む高層スイート。" },
+      "executive": { "name": "エグゼクティブルーム", "description": "ワークスペースとパーソナルサービス付き。" }
+    },
+    "amenities": {
+      "kingBed": "キングベッド", "terrace": "プライベートテラス", "spa": "スパ利用", "gardenView": "ガーデンビュー",
+      "minibar": "プレミアムミニバー", "rainShower": "レインシャワー", "privatePool": "プライベートプール", "butler": "バトラーサービス",
+      "lounge": "プライベートラウンジ", "privateGarden": "プライベートガーデン", "fireplace": "暖炉", "outdoorShower": "屋外シャワー",
+      "sauna": "プライベートサウナ", "lakeView": "レイクビュー", "breakfast": "グルメ朝食", "fishingGear": "釣り具",
+      "panoramicView": "パノラマビュー", "workDesk": "ワークデスク"
+    },
+    "form": {
+      "title": "新規予約", "editTitle": "予約を編集", "selectRoom": "客室",
+      "selectRoomPlaceholder": "客室を選択", "guestName": "ゲスト名", "checkIn": "チェックイン", "checkOut": "チェックアウト",
+      "guests": "人数", "notes": "メモ（任意）", "submit": "予約を確定", "update": "更新", "cancel": "キャンセル"
+    },
+    "table": {
+      "title": "予約一覧", "count": "件", "empty": "この目的地の予約はありません。",
+      "guest": "ゲスト", "room": "客室", "dates": "日程", "guests": "人数", "status": "状態", "actions": "操作",
+      "edit": "編集", "delete": "取消"
+    },
+    "status": { "confirmed": "確定", "pending": "保留", "cancelled": "取消" },
+    "errors": {
+      "roomRequired": "客室を選択してください。", "guestRequired": "ゲスト名を入力してください。",
+      "datesRequired": "チェックイン・チェックアウト日を入力してください。", "invalidDates": "チェックアウトはチェックインより後である必要があります。",
+      "guestsRequired": "1名以上入力してください。", "capacityExceeded": "定員を超えています。"
+    }
   }
 }

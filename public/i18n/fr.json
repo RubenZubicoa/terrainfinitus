@@ -128,5 +128,58 @@
       "p1": "À Gestalgar, Valence, nous implémenterons un lac artificiel avec deux nappes d'eau d'environ 35 000 mètres carrés chacune, destinées aux activités sportives, notamment la pêche sportive sans mort, qui, compte tenu du climat, en fera la plus grande destination d'Espagne et de la majeure partie de l'Europe — avec la particularité qu'en hiver, pendant que le reste de l'Espagne et de l'Europe est sous zéro, il y fera entre 15 et 20 degrés.",
       "p2": "Des compétitions nationales et internationales y seront organisées ; il servira de soutien au Projet Bugarra."
     }
+  },
+  "rooms": {
+    "eyebrow": "Réservations exclusives",
+    "title": "Chambres",
+    "subtitle": "Consultez la disponibilité et gérez les réservations de nos destinations de luxe durable.",
+    "hotelsAria": "Sélectionner l'hôtel",
+    "catalogAria": "Catalogue des chambres",
+    "bookingAria": "Formulaire de réservation",
+    "reservationsAria": "Gestion des réservations",
+    "perNight": "/ nuit",
+    "m2": "m²",
+    "guestsMax": "Jusqu'à {{count}} personnes",
+    "bookRoom": "Réserver",
+    "stats": { "rooms": "Chambres", "active": "Réservations actives", "hotels": "Destinations" },
+    "hotels": {
+      "peralejos": { "name": "Terra Peralejos", "location": "Parc Naturel du Haut Tajo, Guadalajara" },
+      "bugarra": { "name": "Terra Bugarra", "location": "Valence — nature et lac artificiel" },
+      "theLake": { "name": "The Lake", "location": "Gestalgar, Valence — pêche sportive" }
+    },
+    "catalog": {
+      "tajoSuite": { "name": "Suite Tajo", "description": "Suite spacieuse avec vue sur la rivière et bois naturel." },
+      "lagoonJunior": { "name": "Junior Lagoon", "description": "Chambre lumineuse avec balcon privé et design contemporain." },
+      "presidential": { "name": "Suite Présidentielle", "description": "Le summum du luxe avec salon séparé et terrasse panoramique." },
+      "gardenBungalow": { "name": "Bungalow Jardin", "description": "Bungalow indépendant intégré au jardin méditerranéen." },
+      "spaSuite": { "name": "Suite Spa", "description": "Suite avec accès privé au circuit bien-être." },
+      "lakeView": { "name": "Vue Lac", "description": "Baies vitrées avec vue directe sur le lac et la montagne." },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Refuge rustique de luxe pour la pêche à la mouche." },
+      "panorama": { "name": "Suite Panorama", "description": "Suite surélevée avec vue à 180° sur l'eau." },
+      "executive": { "name": "Chambre Executive", "description": "Chambre élégante avec espace de travail et service personnalisé." }
+    },
+    "amenities": {
+      "kingBed": "Lit king", "terrace": "Terrasse privée", "spa": "Accès spa", "gardenView": "Vue jardin",
+      "minibar": "Minibar premium", "rainShower": "Douche pluie", "privatePool": "Piscine privée", "butler": "Service majordome",
+      "lounge": "Salon privé", "privateGarden": "Jardin privé", "fireplace": "Cheminée", "outdoorShower": "Douche extérieure",
+      "sauna": "Sauna privé", "lakeView": "Vue lac", "breakfast": "Petit-déjeuner gourmet", "fishingGear": "Matériel de pêche",
+      "panoramicView": "Vue panoramique", "workDesk": "Bureau"
+    },
+    "form": {
+      "title": "Nouvelle réservation", "editTitle": "Modifier la réservation", "selectRoom": "Chambre",
+      "selectRoomPlaceholder": "Sélectionner une chambre", "guestName": "Nom du client", "checkIn": "Arrivée", "checkOut": "Départ",
+      "guests": "Personnes", "notes": "Notes (optionnel)", "submit": "Confirmer", "update": "Mettre à jour", "cancel": "Annuler"
+    },
+    "table": {
+      "title": "Réservations", "count": "réservations", "empty": "Aucune réservation pour cette destination.",
+      "guest": "Client", "room": "Chambre", "dates": "Dates", "guests": "Pers.", "status": "Statut", "actions": "Actions",
+      "edit": "Modifier", "delete": "Annuler"
+    },
+    "status": { "confirmed": "Confirmée", "pending": "En attente", "cancelled": "Annulée" },
+    "errors": {
+      "roomRequired": "Veuillez sélectionner une chambre.", "guestRequired": "Veuillez indiquer le nom du client.",
+      "datesRequired": "Veuillez indiquer les dates.", "invalidDates": "Le départ doit être après l'arrivée.",
+      "guestsRequired": "Indiquez au moins une personne.", "capacityExceeded": "Capacité de la chambre dépassée."
+    }
   }
 }

@@ -128,5 +128,58 @@
       "p1": "In Gestalgar, Valencia, werden wir einen künstlichen See mit zwei Wasserflächen von jeweils etwa 35.000 Quadratmetern errichten, für Sportaktivitäten, insbesondere Catch-and-Release-Angelsport, der angesichts des Klimas das größte Ziel in Spanien und dem Großteil Europas sein wird — mit der Besonderheit, dass im Winter, während der Rest Spaniens und Europas unter Null liegt, dort 15 bis 20 Grad herrschen.",
       "p2": "Nationale und internationale Wettkämpfe werden ausgetragen; er dient als Stütze für das Bugarra-Projekt."
     }
+  },
+  "rooms": {
+    "eyebrow": "Exklusive Reservierungen",
+    "title": "Zimmer",
+    "subtitle": "Verfügbarkeit prüfen und Reservierungen an unseren nachhaltigen Luxusdestinationen verwalten.",
+    "hotelsAria": "Hotel auswählen",
+    "catalogAria": "Zimmerkatalog",
+    "bookingAria": "Reservierungsformular",
+    "reservationsAria": "Reservierungsverwaltung",
+    "perNight": "/ Nacht",
+    "m2": "m²",
+    "guestsMax": "Bis zu {{count}} Gäste",
+    "bookRoom": "Buchen",
+    "stats": { "rooms": "Zimmer", "active": "Aktive Buchungen", "hotels": "Destinationen" },
+    "hotels": {
+      "peralejos": { "name": "Terra Peralejos", "location": "Alto-Tajo-Naturpark, Guadalajara" },
+      "bugarra": { "name": "Terra Bugarra", "location": "Valencia — Natur und künstlicher See" },
+      "theLake": { "name": "The Lake", "location": "Gestalgar, Valencia — Sportfischerei" }
+    },
+    "catalog": {
+      "tajoSuite": { "name": "Tajo Suite", "description": "Geräumige Suite mit Flussblick und Naturholz." },
+      "lagoonJunior": { "name": "Lagoon Junior", "description": "Helles Zimmer mit privatem Balkon und modernem Design." },
+      "presidential": { "name": "Präsidenten-Suite", "description": "Ultimativer Luxus mit separatem Salon und Panoramaterrasse." },
+      "gardenBungalow": { "name": "Garten-Bungalow", "description": "Freistehender Bungalow im mediterranen Garten." },
+      "spaSuite": { "name": "Spa Suite", "description": "Suite mit privatem Zugang zum Wellnessbereich." },
+      "lakeView": { "name": "Seeblick", "description": "Große Fenster mit direktem See- und Bergblick." },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Luxuriöses rustikales Refugium für Fliegenfischen." },
+      "panorama": { "name": "Panorama Suite", "description": "Erhöhte Suite mit 180°-Wasserblick." },
+      "executive": { "name": "Executive Zimmer", "description": "Elegantes Zimmer mit Arbeitsbereich und persönlichem Service." }
+    },
+    "amenities": {
+      "kingBed": "Kingsize-Bett", "terrace": "Private Terrasse", "spa": "Spa-Zugang", "gardenView": "Gartenblick",
+      "minibar": "Premium-Minibar", "rainShower": "Regendusche", "privatePool": "Privater Pool", "butler": "Butler-Service",
+      "lounge": "Privater Salon", "privateGarden": "Privater Garten", "fireplace": "Kamin", "outdoorShower": "Außendusche",
+      "sauna": "Private Sauna", "lakeView": "Seeblick", "breakfast": "Gourmet-Frühstück", "fishingGear": "Angelausrüstung",
+      "panoramicView": "Panoramablick", "workDesk": "Arbeitsplatz"
+    },
+    "form": {
+      "title": "Neue Reservierung", "editTitle": "Reservierung bearbeiten", "selectRoom": "Zimmer",
+      "selectRoomPlaceholder": "Zimmer auswählen", "guestName": "Gastname", "checkIn": "Anreise", "checkOut": "Abreise",
+      "guests": "Gäste", "notes": "Notizen (optional)", "submit": "Reservierung bestätigen", "update": "Aktualisieren", "cancel": "Abbrechen"
+    },
+    "table": {
+      "title": "Reservierungen", "count": "Reservierungen", "empty": "Keine Reservierungen für dieses Ziel.",
+      "guest": "Gast", "room": "Zimmer", "dates": "Daten", "guests": "Gäste", "status": "Status", "actions": "Aktionen",
+      "edit": "Bearbeiten", "delete": "Stornieren"
+    },
+    "status": { "confirmed": "Bestätigt", "pending": "Ausstehend", "cancelled": "Storniert" },
+    "errors": {
+      "roomRequired": "Bitte ein Zimmer auswählen.", "guestRequired": "Bitte den Gastnamen angeben.",
+      "datesRequired": "Bitte An- und Abreisedatum angeben.", "invalidDates": "Abreise muss nach Anreise liegen.",
+      "guestsRequired": "Mindestens ein Gast erforderlich.", "capacityExceeded": "Gästeanzahl übersteigt die Kapazität."
+    }
   }
 }

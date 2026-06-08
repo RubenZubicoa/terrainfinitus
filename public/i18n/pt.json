@@ -128,5 +128,58 @@
       "p1": "Na localidade de Gestalgar, Valência, implementaremos um lago artificial com duas lâminas de água de cerca de 35.000 metros quadrados cada, destinadas a atividades desportivas, especialmente pesca desportiva sem morte, que, dadas as características climáticas da zona, será o maior destino de Espanha e da maior parte da Europa — com a curiosidade de que no inverno, enquanto o resto de Espanha e Europa está abaixo de zero, ali estaremos entre os 15 e 20 graus.",
       "p2": "Realizar-se-ão competições nacionais e internacionais e servirá de apoio ao Projeto Bugarra."
     }
+  },
+  "rooms": {
+    "eyebrow": "Reservas exclusivas",
+    "title": "Quartos",
+    "subtitle": "Consulte a disponibilidade e gira as reservas dos nossos destinos de luxo sustentável.",
+    "hotelsAria": "Selecionar hotel",
+    "catalogAria": "Catálogo de quartos",
+    "bookingAria": "Formulário de reserva",
+    "reservationsAria": "Gestão de reservas",
+    "perNight": "/ noite",
+    "m2": "m²",
+    "guestsMax": "Até {{count}} hóspedes",
+    "bookRoom": "Reservar",
+    "stats": { "rooms": "Quartos", "active": "Reservas ativas", "hotels": "Destinos" },
+    "hotels": {
+      "peralejos": { "name": "Terra Peralejos", "location": "Parque Natural do Alto Tejo, Guadalajara" },
+      "bugarra": { "name": "Terra Bugarra", "location": "Valência — natureza e lago artificial" },
+      "theLake": { "name": "The Lake", "location": "Gestalgar, Valência — pesca desportiva" }
+    },
+    "catalog": {
+      "tajoSuite": { "name": "Suite Tajo", "description": "Suite ampla com vista para o rio e acabamentos em madeira natural." },
+      "lagoonJunior": { "name": "Junior Lagoon", "description": "Quarto luminoso com varanda privada e design contemporâneo." },
+      "presidential": { "name": "Suite Presidencial", "description": "O máximo do luxo com sala independente e terraço panorâmico." },
+      "gardenBungalow": { "name": "Garden Bungalow", "description": "Bungalow independente integrado no jardim mediterrânico." },
+      "spaSuite": { "name": "Spa Suite", "description": "Suite com acesso privado ao circuito de bem-estar." },
+      "lakeView": { "name": "Lake View", "description": "Amplas janelas com vista direta para o lago e a serra." },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Refúgio rústico de luxo para pesca com mosca." },
+      "panorama": { "name": "Panorama Suite", "description": "Suite elevada com vista de 180° sobre a água." },
+      "executive": { "name": "Executive Room", "description": "Quarto elegante com zona de trabalho e serviço personalizado." }
+    },
+    "amenities": {
+      "kingBed": "Cama king", "terrace": "Terraço privado", "spa": "Acesso spa", "gardenView": "Vista jardim",
+      "minibar": "Minibar premium", "rainShower": "Chuveiro efeito chuva", "privatePool": "Piscina privada", "butler": "Serviço de mordomo",
+      "lounge": "Salão privado", "privateGarden": "Jardim privado", "fireplace": "Lareira", "outdoorShower": "Chuveiro exterior",
+      "sauna": "Sauna privada", "lakeView": "Vista lago", "breakfast": "Pequeno-almoço gourmet", "fishingGear": "Equipamento de pesca",
+      "panoramicView": "Vista panorâmica", "workDesk": "Secretária"
+    },
+    "form": {
+      "title": "Nova reserva", "editTitle": "Editar reserva", "selectRoom": "Quarto",
+      "selectRoomPlaceholder": "Selecione um quarto", "guestName": "Nome do hóspede", "checkIn": "Entrada", "checkOut": "Saída",
+      "guests": "Hóspedes", "notes": "Notas (opcional)", "submit": "Confirmar reserva", "update": "Atualizar", "cancel": "Cancelar"
+    },
+    "table": {
+      "title": "Reservas", "count": "reservas", "empty": "Não há reservas registadas para este destino.",
+      "guest": "Hóspede", "room": "Quarto", "dates": "Datas", "guests": "Hósp.", "status": "Estado", "actions": "Ações",
+      "edit": "Editar", "delete": "Cancelar"
+    },
+    "status": { "confirmed": "Confirmada", "pending": "Pendente", "cancelled": "Cancelada" },
+    "errors": {
+      "roomRequired": "Selecione um quarto.", "guestRequired": "Indique o nome do hóspede.",
+      "datesRequired": "Indique as datas de entrada e saída.", "invalidDates": "A saída deve ser posterior à entrada.",
+      "guestsRequired": "Indique pelo menos um hóspede.", "capacityExceeded": "Número de hóspedes excede a capacidade."
+    }
   }
 }

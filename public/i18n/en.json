@@ -128,5 +128,135 @@
       "p1": "In Gestalgar, Valencia, we will implement an artificial lake with two water bodies of about 35,000 square metres each, intended for sports activities, especially catch-and-release sport fishing which, given the area's climate, will make it the largest destination in Spain and most of Europe — with the curious fact that in winter, while the rest of Spain and Europe is below zero, temperatures there will be between 15 and 20 degrees.",
       "p2": "National and international competitions will be held and it will support the Bugarra Project."
     }
+  },
+  "rooms": {
+    "eyebrow": "Exclusive bookings",
+    "title": "Rooms",
+    "subtitle": "Check availability and manage reservations across our sustainable luxury destinations.",
+    "hotelsAria": "Select hotel",
+    "catalogAria": "Room catalogue",
+    "bookingAria": "Booking form",
+    "reservationsAria": "Reservation management",
+    "perNight": "/ night",
+    "m2": "m²",
+    "guestsMax": "Up to {{count}} guests",
+    "bookRoom": "Book",
+    "stats": {
+      "rooms": "Rooms",
+      "active": "Active bookings",
+      "hotels": "Destinations"
+    },
+    "hotels": {
+      "peralejos": {
+        "name": "Terra Peralejos",
+        "location": "Alto Tajo Natural Park, Guadalajara"
+      },
+      "bugarra": {
+        "name": "Terra Bugarra",
+        "location": "Valencia — natural setting and artificial lake"
+      },
+      "theLake": {
+        "name": "The Lake",
+        "location": "Gestalgar, Valencia — sport fishing destination"
+      }
+    },
+    "catalog": {
+      "tajoSuite": {
+        "name": "Tajo Suite",
+        "description": "Spacious suite with river views and natural wood finishes."
+      },
+      "lagoonJunior": {
+        "name": "Lagoon Junior",
+        "description": "Bright room with private balcony and contemporary design."
+      },
+      "presidential": {
+        "name": "Presidential Suite",
+        "description": "The ultimate expression of luxury with separate lounge and panoramic terrace."
+      },
+      "gardenBungalow": {
+        "name": "Garden Bungalow",
+        "description": "Standalone bungalow integrated into the Mediterranean garden."
+      },
+      "spaSuite": {
+        "name": "Spa Suite",
+        "description": "Suite with private access to wellness and hydrotherapy circuit."
+      },
+      "lakeView": {
+        "name": "Lake View",
+        "description": "Floor-to-ceiling windows with direct lake and mountain views."
+      },
+      "fisherLodge": {
+        "name": "Fisher Lodge",
+        "description": "Luxury rustic retreat designed for fly fishing."
+      },
+      "panorama": {
+        "name": "Panorama Suite",
+        "description": "Elevated suite with 180° views over the water landscape."
+      },
+      "executive": {
+        "name": "Executive Room",
+        "description": "Elegant room with work area and personalised service."
+      }
+    },
+    "amenities": {
+      "kingBed": "King bed",
+      "terrace": "Private terrace",
+      "spa": "Spa access",
+      "gardenView": "Garden view",
+      "minibar": "Premium minibar",
+      "rainShower": "Rain shower",
+      "privatePool": "Private pool",
+      "butler": "Butler service",
+      "lounge": "Private lounge",
+      "privateGarden": "Private garden",
+      "fireplace": "Fireplace",
+      "outdoorShower": "Outdoor shower",
+      "sauna": "Private sauna",
+      "lakeView": "Lake view",
+      "breakfast": "Gourmet breakfast",
+      "fishingGear": "Fishing equipment",
+      "panoramicView": "Panoramic view",
+      "workDesk": "Work desk"
+    },
+    "form": {
+      "title": "New booking",
+      "editTitle": "Edit booking",
+      "selectRoom": "Room",
+      "selectRoomPlaceholder": "Select a room",
+      "guestName": "Guest name",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "guests": "Guests",
+      "notes": "Notes (optional)",
+      "submit": "Confirm booking",
+      "update": "Update booking",
+      "cancel": "Cancel"
+    },
+    "table": {
+      "title": "Bookings",
+      "count": "bookings",
+      "empty": "No bookings registered for this destination.",
+      "guest": "Guest",
+      "room": "Room",
+      "dates": "Dates",
+      "guests": "Guests",
+      "status": "Status",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Cancel"
+    },
+    "status": {
+      "confirmed": "Confirmed",
+      "pending": "Pending",
+      "cancelled": "Cancelled"
+    },
+    "errors": {
+      "roomRequired": "Please select a room.",
+      "guestRequired": "Please enter the guest name.",
+      "datesRequired": "Please enter check-in and check-out dates.",
+      "invalidDates": "Check-out must be after check-in.",
+      "guestsRequired": "Please enter at least one guest.",
+      "capacityExceeded": "Guest count exceeds room capacity."
+    }
   }
 }

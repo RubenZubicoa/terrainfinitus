@@ -1,0 +1,198 @@
+<div class="rooms">
+  <header class="rooms-hero">
+    <p class="rooms-hero__eyebrow">{{ 'rooms.eyebrow' | translate }}</p>
+    <h1 class="rooms-hero__title">{{ 'rooms.title' | translate }}</h1>
+    <p class="rooms-hero__subtitle">{{ 'rooms.subtitle' | translate }}</p>
+  </header>
+
+  <div class="rooms-stats" aria-hidden="true">
+    <article class="rooms-stat">
+      <span class="rooms-stat__value">{{ allRooms.length }}</span>
+      <span class="rooms-stat__label">{{ 'rooms.stats.rooms' | translate }}</span>
+    </article>
+    <article class="rooms-stat">
+      <span class="rooms-stat__value">{{ activeReservationsCount() }}</span>
+      <span class="rooms-stat__label">{{ 'rooms.stats.active' | translate }}</span>
+    </article>
+    <article class="rooms-stat">
+      <span class="rooms-stat__value">{{ hotels.length }}</span>
+      <span class="rooms-stat__label">{{ 'rooms.stats.hotels' | translate }}</span>
+    </article>
+  </div>
+
+  <nav class="rooms-hotels" [attr.aria-label]="'rooms.hotelsAria' | translate">
+    @for (hotel of hotels; track hotel.id) {
+      <button
+        type="button"
+        class="rooms-hotels__tab"
+        [class.rooms-hotels__tab--active]="selectedHotelId() === hotel.id"
+        (click)="selectHotel(hotel.id)"
+      >
+        <span class="rooms-hotels__thumb">
+          <img [src]="hotel.image" [alt]="hotel.nameKey | translate" loading="lazy" />
+        </span>
+        <span class="rooms-hotels__info">
+          <span class="rooms-hotels__name">{{ hotel.nameKey | translate }}</span>
+          <span class="rooms-hotels__location">{{ hotel.locationKey | translate }}</span>
+        </span>
+      </button>
+    }
+  </nav>
+
+  <div class="rooms-layout">
+    <section class="rooms-catalog" [attr.aria-label]="'rooms.catalogAria' | translate">
+      <div class="rooms-catalog__header">
+        <h2 class="rooms-catalog__title">{{ selectedHotel().nameKey | translate }}</h2>
+        <p class="rooms-catalog__location">{{ selectedHotel().locationKey | translate }}</p>
+      </div>
+
+      <div class="rooms-catalog__grid">
+        @for (room of hotelRooms(); track room.id) {
+          <article
+            class="room-card"
+            [class.room-card--selected]="selectedRoomId() === room.id"
+          >
+            <div class="room-card__media">
+              <img [src]="room.image" [alt]="room.nameKey | translate" loading="lazy" />
+              <span class="room-card__price">
+                {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                <small>{{ 'rooms.perNight' | translate }}</small>
+              </span>
+            </div>
+
+            <div class="room-card__body">
+              <h3 class="room-card__name">{{ room.nameKey | translate }}</h3>
+              <p class="room-card__description">{{ room.descriptionKey | translate }}</p>
+
+              <ul class="room-card__meta">
+                <li>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</li>
+                <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
+              </ul>
+
+              <ul class="room-card__amenities">
+                @for (amenityKey of room.amenityKeys; track amenityKey) {
+                  <li>{{ amenityKey | translate }}</li>
+                }
+              </ul>
+
+              <button
+                type="button"
+                class="room-card__cta"
+                (click)="startBooking(room.id)"
+              >
+                {{ 'rooms.bookRoom' | translate }}
+              </button>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <aside class="rooms-booking" id="rooms-booking" [attr.aria-label]="'rooms.bookingAria' | translate">
+      <div class="rooms-booking__panel">
+        <h2 class="rooms-booking__title">
+          @if (editingReservationId()) {
+            {{ 'rooms.form.editTitle' | translate }}
+          } @else {
+            {{ 'rooms.form.title' | translate }}
+          }
+        </h2>
+
+        @if (formError(); as errorKey) {
+          <p class="rooms-booking__error" role="alert">{{ errorKey | translate }}</p>
+        }
+
+        <form class="rooms-form" (ngSubmit)="submitBooking()">
+          <label class="rooms-form__field">
+            <span>{{ 'rooms.form.selectRoom' | translate }}</span>
+            <select
+              [ngModel]="draft().roomId"
+              (ngModelChange)="selectRoom($event)"
+              name="roomId"
+              required
+            >
+              <option value="" disabled>{{ 'rooms.form.selectRoomPlaceholder' | translate }}</option>
+              @for (room of hotelRooms(); track room.id) {
+                <option [value]="room.id">{{ room.nameKey | translate }}</option>
+              }
+            </select>
+          </label>
+
+          <label class="rooms-form__field">
+            <span>{{ 'rooms.form.guestName' | translate }}</span>
+            <input
+              type="text"
+              [ngModel]="draft().guestName"
+              (ngModelChange)="draft.update((d) => ({ ...d, guestName: $event }))"
+              name="guestName"
+              autocomplete="name"
+              required
+            />
+          </label>
+
+          <div class="rooms-form__row">
+            <label class="rooms-form__field">
+              <span>{{ 'rooms.form.checkIn' | translate }}</span>
+              <input
+                type="date"
+                [ngModel]="draft().checkIn"
+                (ngModelChange)="draft.update((d) => ({ ...d, checkIn: $event }))"
+                name="checkIn"
+                required
+              />
+            </label>
+
+            <label class="rooms-form__field">
+              <span>{{ 'rooms.form.checkOut' | translate }}</span>
+              <input
+                type="date"
+                [ngModel]="draft().checkOut"
+                (ngModelChange)="draft.update((d) => ({ ...d, checkOut: $event }))"
+                name="checkOut"
+                required
+              />
+            </label>
+          </div>
+
+          <label class="rooms-form__field">
+            <span>{{ 'rooms.form.guests' | translate }}</span>
+            <input
+              type="number"
+              min="1"
+              max="6"
+              [ngModel]="draft().guests"
+              (ngModelChange)="draft.update((d) => ({ ...d, guests: +$event }))"
+              name="guests"
+              required
+            />
+          </label>
+
+          <label class="rooms-form__field">
+            <span>{{ 'rooms.form.notes' | translate }}</span>
+            <textarea
+              rows="3"
+              [ngModel]="draft().notes"
+              (ngModelChange)="draft.update((d) => ({ ...d, notes: $event }))"
+              name="notes"
+            ></textarea>
+          </label>
+
+          <div class="rooms-form__actions">
+            <button type="submit" class="rooms-form__submit">
+              @if (editingReservationId()) {
+                {{ 'rooms.form.update' | translate }}
+              } @else {
+                {{ 'rooms.form.submit' | translate }}
+              }
+            </button>
+            @if (editingReservationId() || draft().roomId) {
+              <button type="button" class="rooms-form__reset" (click)="resetForm()">
+                {{ 'rooms.form.cancel' | translate }}
+              </button>
+            }
+          </div>
+        </form>
+      </div>
+    </aside>
+  </div>
+</div>
