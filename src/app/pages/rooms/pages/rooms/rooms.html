@@ -53,7 +53,9 @@
             [class.room-card--selected]="selectedRoomId() === room.id"
           >
             <div class="room-card__media">
-              <img [src]="room.image" [alt]="room.nameKey | translate" loading="lazy" />
+              <a [routerLink]="['/habitaciones', room.id]" class="room-card__media-link">
+                <img [src]="room.image" [alt]="room.nameKey | translate" loading="lazy" />
+              </a>
               <span class="room-card__price">
                 {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
                 <small>{{ 'rooms.perNight' | translate }}</small>
@@ -61,7 +63,9 @@
             </div>
 
             <div class="room-card__body">
-              <h3 class="room-card__name">{{ room.nameKey | translate }}</h3>
+              <h3 class="room-card__name">
+                <a [routerLink]="['/habitaciones', room.id]">{{ room.nameKey | translate }}</a>
+              </h3>
               <p class="room-card__description">{{ room.descriptionKey | translate }}</p>
 
               <ul class="room-card__meta">
@@ -75,13 +79,18 @@
                 }
               </ul>
 
-              <button
-                type="button"
-                class="room-card__cta"
-                (click)="startBooking(room.id)"
-              >
-                {{ 'rooms.bookRoom' | translate }}
-              </button>
+              <div class="room-card__actions">
+                <a class="room-card__details" [routerLink]="['/habitaciones', room.id]">
+                  {{ 'rooms.detail.viewDetails' | translate }}
+                </a>
+                <button
+                  type="button"
+                  class="room-card__cta"
+                  (click)="startBooking(room.id)"
+                >
+                  {{ 'rooms.bookRoom' | translate }}
+                </button>
+              </div>
             </div>
           </article>
         }

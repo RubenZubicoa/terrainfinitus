@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PlaceholderComponent } from './pages/placeholder/placeholder.component';
-import { Rooms } from './pages/rooms/pages/rooms/rooms';
+import { roomsRoutes } from './pages/rooms/rooms.routes';
 import { Videos } from './pages/galery/videos/videos';
 import { Images } from './pages/galery/images/images';
 import { projectsRoutes } from './pages/projects/projects.routes';
@@ -21,7 +21,7 @@ export const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'quienes-somos', children: aboutUsRoutes },
       { path: 'proyectos', children: projectsRoutes },
-      { path: 'habitaciones', component: Rooms },
+      { path: 'habitaciones', children: roomsRoutes },
       { path: 'gastronomia/presentacion', ...placeholder('nav.presentation') },
       { path: 'gastronomia/cartas', ...placeholder('nav.menus') },
       { path: 'actividades', ...placeholder('nav.activities') },

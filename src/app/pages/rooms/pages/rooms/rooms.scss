@@ -288,9 +288,59 @@
   }
 }
 
+.room-card__media-link {
+  display: block;
+  height: 100%;
+
+  img {
+    transition: transform var(--ti-transition);
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+  }
+}
+
+.room-card__name a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--ti-copper);
+  }
+}
+
+.room-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.room-card__details {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--ti-border);
+  border-radius: 999px;
+  color: var(--ti-copper);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    border-color var(--ti-transition),
+    background var(--ti-transition);
+
+  &:hover {
+    border-color: var(--ti-copper);
+    background: var(--ti-cream-light);
+  }
+}
+
 .room-card__cta {
   align-self: flex-start;
-  margin-top: auto;
   padding: 0.55rem 1.1rem;
   border: none;
   border-radius: 999px;

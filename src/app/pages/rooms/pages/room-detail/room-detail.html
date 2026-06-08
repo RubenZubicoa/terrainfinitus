@@ -1,0 +1,132 @@
+@if (room(); as room) {
+  <article class="room-detail">
+    <nav class="room-detail__breadcrumb" aria-label="Breadcrumb">
+      <a routerLink="/habitaciones" class="room-detail__back">
+        ← {{ 'rooms.detail.back' | translate }}
+      </a>
+      @if (hotel(); as hotel) {
+        <span class="room-detail__crumb">{{ hotel.nameKey | translate }}</span>
+        <span class="room-detail__crumb room-detail__crumb--current">{{ room.nameKey | translate }}</span>
+      }
+    </nav>
+
+    <section class="room-detail__gallery" [attr.aria-label]="'rooms.detail.galleryAria' | translate">
+      @if (selectedImage(); as image) {
+        <figure class="room-detail__viewer">
+          <img
+            [src]="image.src"
+            [alt]="image.altKey | translate"
+            loading="eager"
+          />
+        </figure>
+      }
+
+      @if (room.images.length > 1) {
+        <div class="room-detail__thumbs" role="list">
+          @for (image of room.images; track image.src; let i = $index) {
+            <button
+              type="button"
+              class="room-detail__thumb"
+              role="listitem"
+              [class.room-detail__thumb--active]="selectedImageIndex() === i"
+              [attr.aria-current]="selectedImageIndex() === i ? 'true' : null"
+              [attr.aria-label]="image.altKey | translate"
+              (click)="selectImage(i)"
+            >
+              <img [src]="image.src" [alt]="image.altKey | translate" loading="lazy" />
+            </button>
+          }
+        </div>
+      }
+    </section>
+
+    <header class="room-detail__header">
+      <div class="room-detail__intro">
+        @if (hotel(); as hotel) {
+          <p class="room-detail__hotel">{{ hotel.nameKey | translate }}</p>
+          <p class="room-detail__location">{{ hotel.locationKey | translate }}</p>
+        }
+        <h1 class="room-detail__title">{{ room.nameKey | translate }}</h1>
+        <p class="room-detail__summary">{{ room.descriptionKey | translate }}</p>
+      </div>
+
+      <aside class="room-detail__price-card">
+        <p class="room-detail__price">
+          {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
+          <span>{{ 'rooms.perNight' | translate }}</span>
+        </p>
+        <ul class="room-detail__highlights">
+          <li>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</li>
+          <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
+        </ul>
+        <a
+          class="room-detail__book"
+          routerLink="/habitaciones"
+          [queryParams]="bookingQueryParams()"
+          fragment="rooms-booking"
+        >
+          {{ 'rooms.detail.bookCta' | translate }}
+        </a>
+      </aside>
+    </header>
+
+    <div class="room-detail__body">
+      <section class="room-detail__section">
+        <h2 class="room-detail__section-title">{{ 'rooms.detail.aboutTitle' | translate }}</h2>
+        <p class="room-detail__text">{{ room.detailKey | translate }}</p>
+      </section>
+
+      <section class="room-detail__section room-detail__specs">
+        <h2 class="room-detail__section-title">{{ 'rooms.detail.specsTitle' | translate }}</h2>
+        <dl class="room-detail__spec-list">
+          <div class="room-detail__spec">
+            <dt>{{ 'rooms.detail.size' | translate }}</dt>
+            <dd>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</dd>
+          </div>
+          <div class="room-detail__spec">
+            <dt>{{ 'rooms.detail.capacity' | translate }}</dt>
+            <dd>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</dd>
+          </div>
+          <div class="room-detail__spec">
+            <dt>{{ 'rooms.detail.bed' | translate }}</dt>
+            <dd>{{ room.bedTypeKey | translate }}</dd>
+          </div>
+          <div class="room-detail__spec">
+            <dt>{{ 'rooms.detail.view' | translate }}</dt>
+            <dd>{{ room.viewKey | translate }}</dd>
+          </div>
+          <div class="room-detail__spec">
+            <dt>{{ 'rooms.detail.bathroom' | translate }}</dt>
+            <dd>{{ room.bathroomKey | translate }}</dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+
+    <section class="room-detail__section">
+      <h2 class="room-detail__section-title">{{ 'rooms.detail.amenitiesTitle' | translate }}</h2>
+      <ul class="room-detail__tags">
+        @for (amenityKey of room.amenityKeys; track amenityKey) {
+          <li>{{ amenityKey | translate }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="room-detail__section">
+      <h2 class="room-detail__section-title">{{ 'rooms.detail.featuresTitle' | translate }}</h2>
+      <ul class="room-detail__features">
+        @for (featureKey of room.featureKeys; track featureKey) {
+          <li>
+            <span class="room-detail__feature-icon" aria-hidden="true">✓</span>
+            {{ featureKey | translate }}
+          </li>
+        }
+      </ul>
+    </section>
+  </article>
+} @else {
+  <section class="room-detail room-detail--empty">
+    <h1 class="room-detail__title">{{ 'rooms.detail.notFound' | translate }}</h1>
+    <a routerLink="/habitaciones" class="room-detail__back-link">{{ 'rooms.detail.back' | translate }}</a>
+  </section>
+}

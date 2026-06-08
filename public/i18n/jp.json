@@ -148,15 +148,15 @@
       "theLake": { "name": "The Lake", "location": "ヘスタルガル — スポーツフィッシング" }
     },
     "catalog": {
-      "tajoSuite": { "name": "タホスイート", "description": "川の眺めと天然木仕上げの広々としたスイート。" },
-      "lagoonJunior": { "name": "ラグーンジュニア", "description": "プライベートバルコニー付きの明るい客室。" },
-      "presidential": { "name": "プレジデンシャルスイート", "description": "独立ラウンジとパノラマテラスを備えた最高級スイート。" },
-      "gardenBungalow": { "name": "ガーデンバンガロー", "description": "地中海庭園に溶け込む独立バンガロー。" },
-      "spaSuite": { "name": "スパスイート", "description": "ウェルネス施設へのプライベートアクセス付き。" },
-      "lakeView": { "name": "レイクビュー", "description": "湖と山々を望む大きな窓。" },
-      "fisherLodge": { "name": "フィッシャーロッジ", "description": "フライフィッシング向けのラグジュアリーなロッジ。" },
-      "panorama": { "name": "パノラマスイート", "description": "水面を180°望む高層スイート。" },
-      "executive": { "name": "エグゼクティブルーム", "description": "ワークスペースとパーソナルサービス付き。" }
+      "tajoSuite": { "name": "タホスイート", "description": "川の眺めと天然木仕上げの広々としたスイート。", "detail": "独立ラウンジ、プライベートテラス、スパ優先利用付きスイート。", "bedType": "キングベッド", "view": "タホ川の眺め", "bathroom": "バスタブとレインシャワー付き大理石バス" },
+      "lagoonJunior": { "name": "ラグーンジュニア", "description": "プライベートバルコニー付きの明るい客室。", "detail": "自然公園を望むプライベートバルコニー付きの明るい客室。", "bedType": "クイーンベッド", "view": "ガーデンとラグーンの眺め", "bathroom": "ウォークインシャワー付きバス" },
+      "presidential": { "name": "プレジデンシャルスイート", "description": "独立ラウンジとパノラマテラスを備えた最高級スイート。", "detail": "180㎡超、プライベートプール、バトラーサービス付き最高級スイート。", "bedType": "キングベッドとソファベッド", "view": "270°パノラマ", "bathroom": "ジャグジーとハンマム付き大理石バス2室" },
+      "gardenBungalow": { "name": "ガーデンバンガロー", "description": "地中海庭園に溶け込む独立バンガロー。", "detail": "プライベートガーデン、暖炉、屋外シャワー付き独立バンガロー。", "bedType": "キングベッド", "view": "プライベートガーデン", "bathroom": "室内・室外シャワー付きバス" },
+      "spaSuite": { "name": "スパスイート", "description": "ウェルネス施設へのプライベートアクセス付き。", "detail": "スパへのプライベートアクセス付きウェルネススイート。", "bedType": "キングベッド", "view": "森林の眺め", "bathroom": "浸浴槽付きスパバス" },
+      "lakeView": { "name": "レイクビュー", "description": "湖と山々を望む大きな窓。", "detail": "湖と山脈を望むフロアツーセilingの窓付き広々客室。", "bedType": "キングベッドとエキストラベッド", "view": "湖の正面眺め", "bathroom": "シャワーとバスタブ付きダブルバス" },
+      "fisherLodge": { "name": "フィッシャーロッジ", "description": "フライフィッシング向けのラグジュアリーなロッジ。", "detail": "湖岸直結、釣り具完備のラスティックラグジュアリーロッジ。", "bedType": "ツインベッドまたはダブル", "view": "湖と釣り場の眺め", "bathroom": "薪ストーブ付きシャワールーム" },
+      "panorama": { "name": "パノラマスイート", "description": "水面を180°望む高層スイート。", "detail": "湖と山を180°望む高層スイート。", "bedType": "キングベッド", "view": "180°ウォーターパノラマ", "bathroom": "パノラマ窓とレインシャワー付きバス" },
+      "executive": { "name": "エグゼクティブルーム", "description": "ワークスペースとパーソナルサービス付き。", "detail": "大型デスクと高速通信付きの機能的でエレガントな客室。", "bedType": "クイーンベッド", "view": "湖の一部眺望", "bathroom": "コンパクトなデザインバスルーム" }
     },
     "amenities": {
       "kingBed": "キングベッド", "terrace": "プライベートテラス", "spa": "スパ利用", "gardenView": "ガーデンビュー",
@@ -164,6 +164,16 @@
       "lounge": "プライベートラウンジ", "privateGarden": "プライベートガーデン", "fireplace": "暖炉", "outdoorShower": "屋外シャワー",
       "sauna": "プライベートサウナ", "lakeView": "レイクビュー", "breakfast": "グルメ朝食", "fishingGear": "釣り具",
       "panoramicView": "パノラマビュー", "workDesk": "ワークデスク"
+    },
+    "features": {
+      "lateCheckout": "14時までレイトチェックアウト", "roomService24h": "24時間ルームサービス", "turndownService": "ナイトターン-downサービス",
+      "welcomeAmenities": "パーソナライズドウェルカムアメニティ", "privateTransfer": "空港プライベート送迎", "personalConcierge": "専属パーソナルコンシェルジュ",
+      "gourmetBreakfast": "グルメ朝食付き", "flexibleCancellation": "48時間前まで柔軟キャンセル"
+    },
+    "detail": {
+      "back": "客室一覧に戻る", "viewDetails": "詳細を見る", "galleryAria": "客室画像ギャラリー", "galleryImage": "客室の眺め",
+      "aboutTitle": "説明", "specsTitle": "詳細", "amenitiesTitle": "アメニティ", "featuresTitle": "含まれるサービス",
+      "bookCta": "この客室を予約", "notFound": "客室が見つかりません", "size": "面積", "capacity": "定員", "bed": "ベッド", "view": "眺望", "bathroom": "バスルーム"
     },
     "form": {
       "title": "新規予約", "editTitle": "予約を編集", "selectRoom": "客室",

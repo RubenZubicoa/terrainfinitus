@@ -9,16 +9,27 @@ export interface Hotel {
   image: string;
 }
 
+export interface RoomImage {
+  src: string;
+  altKey: string;
+}
+
 export interface Room {
   id: string;
   hotelId: HotelId;
   nameKey: string;
   descriptionKey: string;
+  detailKey: string;
   image: string;
+  images: RoomImage[];
   sizeM2: number;
   capacity: number;
   pricePerNight: number;
+  bedTypeKey: string;
+  viewKey: string;
+  bathroomKey: string;
   amenityKeys: string[];
+  featureKeys: string[];
 }
 
 export interface Reservation {

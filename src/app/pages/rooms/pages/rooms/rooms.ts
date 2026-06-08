@@ -1,6 +1,8 @@
-import { CurrencyPipe, DatePipe } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+import { CurrencyPipe } from '@angular/common';
+import { Component, computed, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { HOTELS, INITIAL_RESERVATIONS, ROOMS } from '../../data/rooms.data';
 import {
@@ -21,11 +23,13 @@ const EMPTY_DRAFT = (): BookingDraft => ({
 
 @Component({
   selector: 'app-rooms',
-  imports: [CurrencyPipe, DatePipe, FormsModule, TranslateModule],
+  imports: [CurrencyPipe, FormsModule, RouterLink, TranslateModule],
   templateUrl: './rooms.html',
   styleUrl: './rooms.scss',
 })
 export class Rooms {
+  private readonly route = inject(ActivatedRoute);
+
   readonly hotels = HOTELS;
   readonly allRooms = ROOMS;
 
@@ -53,6 +57,24 @@ export class Rooms {
   readonly selectedHotel = computed(
     () => this.hotels.find((hotel) => hotel.id === this.selectedHotelId()) ?? this.hotels[0],
   );
+
+  constructor() {
+    this.route.queryParamMap.pipe(takeUntilDestroyed()).subscribe((params) => {
+      const hotelId = params.get('hotel') as HotelId | null;
+      const roomId = params.get('reservar');
+
+      if (hotelId && this.hotels.some((hotel) => hotel.id === hotelId)) {
+        this.selectedHotelId.set(hotelId);
+      }
+
+      if (roomId && this.allRooms.some((room) => room.id === roomId)) {
+        this.selectRoom(roomId);
+        queueMicrotask(() =>
+          document.getElementById('rooms-booking')?.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+        );
+      }
+    });
+  }
 
   selectHotel(hotelId: HotelId): void {
     this.selectedHotelId.set(hotelId);

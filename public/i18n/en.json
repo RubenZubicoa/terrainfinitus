@@ -163,39 +163,75 @@
     "catalog": {
       "tajoSuite": {
         "name": "Tajo Suite",
-        "description": "Spacious suite with river views and natural wood finishes."
+        "description": "Spacious suite with river views and natural wood finishes.",
+        "detail": "The Tajo Suite blends local wood warmth with wide windows facing the Tago river. It includes a separate lounge, private terrace and preferred spa access. Designed for guests seeking intimacy and nature without giving up six-star comfort.",
+        "bedType": "King-size bed",
+        "view": "Tagus river views",
+        "bathroom": "Marble bathroom with bathtub and rain shower"
       },
       "lagoonJunior": {
         "name": "Lagoon Junior",
-        "description": "Bright room with private balcony and contemporary design."
+        "description": "Bright room with private balcony and contemporary design.",
+        "detail": "The Lagoon Junior stands out for its brightness and private balcony over the park landscape. Contemporary décor with designer textiles and bespoke furniture. Ideal for couples seeking elegance and warmth.",
+        "bedType": "Queen-size bed",
+        "view": "Garden and lagoon views",
+        "bathroom": "Full bathroom with walk-in shower"
       },
       "presidential": {
         "name": "Presidential Suite",
-        "description": "The ultimate expression of luxury with separate lounge and panoramic terrace."
+        "description": "The ultimate expression of luxury with separate lounge and panoramic terrace.",
+        "detail": "Our most exclusive suite offers over one hundred eighty square metres with reception lounge, private dining, panoramic terrace and heated pool. Includes twenty-four-hour butler service and access to all premium resort facilities.",
+        "bedType": "King-size bed and sofa bed in lounge",
+        "view": "270° panoramic views",
+        "bathroom": "Two marble bathrooms with jacuzzi and private hammam"
       },
       "gardenBungalow": {
         "name": "Garden Bungalow",
-        "description": "Standalone bungalow integrated into the Mediterranean garden."
+        "description": "Standalone bungalow integrated into the Mediterranean garden.",
+        "detail": "Independent bungalow surrounded by Mediterranean vegetation with direct access to a private garden. Designer fireplace, outdoor shower and terrace with lounge area. An intimate experience blending contemporary architecture and nature.",
+        "bedType": "King-size bed",
+        "view": "Private garden",
+        "bathroom": "Bathroom with indoor and outdoor shower"
       },
       "spaSuite": {
         "name": "Spa Suite",
-        "description": "Suite with private access to wellness and hydrotherapy circuit."
+        "description": "Suite with private access to wellness and hydrotherapy circuit.",
+        "detail": "Suite designed for holistic wellness with private access to the hydrotherapy circuit, sauna and relaxation terrace. Natural materials, adjustable lighting and aromatherapy included with every stay.",
+        "bedType": "King-size bed",
+        "view": "Forest views",
+        "bathroom": "Spa bathroom with immersion tub"
       },
       "lakeView": {
         "name": "Lake View",
-        "description": "Floor-to-ceiling windows with direct lake and mountain views."
+        "description": "Floor-to-ceiling windows with direct lake and mountain views.",
+        "detail": "Generously sized room with floor-to-ceiling windows facing the artificial lake and Valencian mountains. Perfect for small families or extended stays with integrated seating area.",
+        "bedType": "King-size bed and extra bed",
+        "view": "Direct lake views",
+        "bathroom": "Double bathroom with shower and bathtub"
       },
       "fisherLodge": {
         "name": "Fisher Lodge",
-        "description": "Luxury rustic retreat designed for fly fishing."
+        "description": "Luxury rustic retreat designed for fly fishing.",
+        "detail": "Refined rustic lodge with direct access to the lakeshore. Includes premium fishing equipment, fly-tying area and private terrace to watch sunrise over the water.",
+        "bedType": "Twin beds or double bed",
+        "view": "Lake and fishing area views",
+        "bathroom": "Shower bathroom with decorative wood stove"
       },
       "panorama": {
         "name": "Panorama Suite",
-        "description": "Elevated suite with 180° views over the water landscape."
+        "description": "Elevated suite with 180° views over the water landscape.",
+        "detail": "Elevated suite with unobstructed one-hundred-eighty-degree views over the lake and mountains. Lounge with premium bar, wide terrace and priority access to water sports and sport fishing.",
+        "bedType": "King-size bed",
+        "view": "180° water panorama",
+        "bathroom": "Panoramic window bathroom with rain shower"
       },
       "executive": {
         "name": "Executive Room",
-        "description": "Elegant room with work area and personalised service."
+        "description": "Elegant room with work area and personalised service.",
+        "detail": "Functional elegant room with large desk, high-speed connectivity and discreet room service. Designed for discerning travellers combining work and rest in an exceptional natural setting.",
+        "bedType": "Queen-size bed",
+        "view": "Partial lake views",
+        "bathroom": "Compact designer bathroom with shower"
       }
     },
     "amenities": {
@@ -217,6 +253,33 @@
       "fishingGear": "Fishing equipment",
       "panoramicView": "Panoramic view",
       "workDesk": "Work desk"
+    },
+    "features": {
+      "lateCheckout": "Late checkout until 2:00 PM",
+      "roomService24h": "24-hour room service",
+      "turndownService": "Nightly turndown service",
+      "welcomeAmenities": "Personalised welcome amenities",
+      "privateTransfer": "Private airport transfer",
+      "personalConcierge": "Dedicated personal concierge",
+      "gourmetBreakfast": "Gourmet breakfast included",
+      "flexibleCancellation": "Flexible cancellation 48 h prior"
+    },
+    "detail": {
+      "back": "Back to rooms",
+      "viewDetails": "View details",
+      "galleryAria": "Room image gallery",
+      "galleryImage": "Room view",
+      "aboutTitle": "Description",
+      "specsTitle": "Details",
+      "amenitiesTitle": "Amenities",
+      "featuresTitle": "Included services",
+      "bookCta": "Book this room",
+      "notFound": "Room not found",
+      "size": "Size",
+      "capacity": "Capacity",
+      "bed": "Bed",
+      "view": "View",
+      "bathroom": "Bathroom"
     },
     "form": {
       "title": "New booking",

@@ -148,15 +148,15 @@
       "theLake": { "name": "The Lake", "location": "Gestalgar, Valence — pêche sportive" }
     },
     "catalog": {
-      "tajoSuite": { "name": "Suite Tajo", "description": "Suite spacieuse avec vue sur la rivière et bois naturel." },
-      "lagoonJunior": { "name": "Junior Lagoon", "description": "Chambre lumineuse avec balcon privé et design contemporain." },
-      "presidential": { "name": "Suite Présidentielle", "description": "Le summum du luxe avec salon séparé et terrasse panoramique." },
-      "gardenBungalow": { "name": "Bungalow Jardin", "description": "Bungalow indépendant intégré au jardin méditerranéen." },
-      "spaSuite": { "name": "Suite Spa", "description": "Suite avec accès privé au circuit bien-être." },
-      "lakeView": { "name": "Vue Lac", "description": "Baies vitrées avec vue directe sur le lac et la montagne." },
-      "fisherLodge": { "name": "Fisher Lodge", "description": "Refuge rustique de luxe pour la pêche à la mouche." },
-      "panorama": { "name": "Suite Panorama", "description": "Suite surélevée avec vue à 180° sur l'eau." },
-      "executive": { "name": "Chambre Executive", "description": "Chambre élégante avec espace de travail et service personnalisé." }
+      "tajoSuite": { "name": "Suite Tajo", "description": "Suite spacieuse avec vue sur la rivière et bois naturel.", "detail": "Suite avec salon séparé, terrasse privée et accès spa prioritaire.", "bedType": "Lit king size", "view": "Vue sur le Tage", "bathroom": "Salle de bain en marbre avec baignoire et douche pluie" },
+      "lagoonJunior": { "name": "Junior Lagoon", "description": "Chambre lumineuse avec balcon privé et design contemporain.", "detail": "Chambre lumineuse avec balcon privé sur le parc naturel.", "bedType": "Lit queen size", "view": "Vue jardin et lagune", "bathroom": "Salle de bain avec douche à l'italienne" },
+      "presidential": { "name": "Suite Présidentielle", "description": "Le summum du luxe avec salon séparé et terrasse panoramique.", "detail": "Notre suite la plus exclusive avec plus de 180 m², piscine privée et majordome.", "bedType": "Lit king et canapé-lit", "view": "Panorama 270°", "bathroom": "Deux salles de bain marbre avec jacuzzi et hammam" },
+      "gardenBungalow": { "name": "Bungalow Jardin", "description": "Bungalow indépendant intégré au jardin méditerranéen.", "detail": "Bungalow indépendant avec jardin privé, cheminée et douche extérieure.", "bedType": "Lit king size", "view": "Jardin privé", "bathroom": "Salle de bain intérieure et extérieure" },
+      "spaSuite": { "name": "Suite Spa", "description": "Suite avec accès privé au circuit bien-être.", "detail": "Suite dédiée au bien-être avec accès privé au spa.", "bedType": "Lit king size", "view": "Vue forêt", "bathroom": "Salle de bain spa avec baignoire d'immersion" },
+      "lakeView": { "name": "Vue Lac", "description": "Baies vitrées avec vue directe sur le lac et la montagne.", "detail": "Grande chambre avec baies vitrées sur le lac et la montagne.", "bedType": "Lit king et lit d'appoint", "view": "Vue directe sur le lac", "bathroom": "Double salle de bain avec douche et baignoire" },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Refuge rustique de luxe pour la pêche à la mouche.", "detail": "Lodge rustique raffiné avec accès direct au lac et équipement de pêche.", "bedType": "Lits jumeaux ou lit double", "view": "Vue lac et zone de pêche", "bathroom": "Douche avec poêle à bois décoratif" },
+      "panorama": { "name": "Suite Panorama", "description": "Suite surélevée avec vue à 180° sur l'eau.", "detail": "Suite surélevée avec vue à 180° sur le lac et les montagnes.", "bedType": "Lit king size", "view": "Panorama aquatique 180°", "bathroom": "Salle de bain panoramique avec douche pluie" },
+      "executive": { "name": "Chambre Executive", "description": "Chambre élégante avec espace de travail et service personnalisé.", "detail": "Chambre élégante avec grand bureau et connectivité haut débit.", "bedType": "Lit queen size", "view": "Vue partielle sur le lac", "bathroom": "Salle de bain design compacte avec douche" }
     },
     "amenities": {
       "kingBed": "Lit king", "terrace": "Terrasse privée", "spa": "Accès spa", "gardenView": "Vue jardin",
@@ -164,6 +164,16 @@
       "lounge": "Salon privé", "privateGarden": "Jardin privé", "fireplace": "Cheminée", "outdoorShower": "Douche extérieure",
       "sauna": "Sauna privé", "lakeView": "Vue lac", "breakfast": "Petit-déjeuner gourmet", "fishingGear": "Matériel de pêche",
       "panoramicView": "Vue panoramique", "workDesk": "Bureau"
+    },
+    "features": {
+      "lateCheckout": "Late checkout jusqu'à 14h", "roomService24h": "Room service 24h/24", "turndownService": "Service de couverture du soir",
+      "welcomeAmenities": "Amenities de bienvenue personnalisés", "privateTransfer": "Transfert privé depuis l'aéroport", "personalConcierge": "Concierge personnel dédié",
+      "gourmetBreakfast": "Petit-déjeuner gourmet inclus", "flexibleCancellation": "Annulation flexible 48 h avant"
+    },
+    "detail": {
+      "back": "Retour aux chambres", "viewDetails": "Voir les détails", "galleryAria": "Galerie photos de la chambre", "galleryImage": "Vue de la chambre",
+      "aboutTitle": "Description", "specsTitle": "Détails", "amenitiesTitle": "Commodités", "featuresTitle": "Services inclus",
+      "bookCta": "Réserver cette chambre", "notFound": "Chambre introuvable", "size": "Surface", "capacity": "Capacité", "bed": "Lit", "view": "Vue", "bathroom": "Salle de bain"
     },
     "form": {
       "title": "Nouvelle réservation", "editTitle": "Modifier la réservation", "selectRoom": "Chambre",

@@ -148,15 +148,15 @@
       "theLake": { "name": "The Lake", "location": "Gestalgar, Valencia — Sportfischerei" }
     },
     "catalog": {
-      "tajoSuite": { "name": "Tajo Suite", "description": "Geräumige Suite mit Flussblick und Naturholz." },
-      "lagoonJunior": { "name": "Lagoon Junior", "description": "Helles Zimmer mit privatem Balkon und modernem Design." },
-      "presidential": { "name": "Präsidenten-Suite", "description": "Ultimativer Luxus mit separatem Salon und Panoramaterrasse." },
-      "gardenBungalow": { "name": "Garten-Bungalow", "description": "Freistehender Bungalow im mediterranen Garten." },
-      "spaSuite": { "name": "Spa Suite", "description": "Suite mit privatem Zugang zum Wellnessbereich." },
-      "lakeView": { "name": "Seeblick", "description": "Große Fenster mit direktem See- und Bergblick." },
-      "fisherLodge": { "name": "Fisher Lodge", "description": "Luxuriöses rustikales Refugium für Fliegenfischen." },
-      "panorama": { "name": "Panorama Suite", "description": "Erhöhte Suite mit 180°-Wasserblick." },
-      "executive": { "name": "Executive Zimmer", "description": "Elegantes Zimmer mit Arbeitsbereich und persönlichem Service." }
+      "tajoSuite": { "name": "Tajo Suite", "description": "Geräumige Suite mit Flussblick und Naturholz.", "detail": "Suite mit separatem Salon, privater Terrasse und bevorzugtem Spa-Zugang.", "bedType": "Kingsize-Bett", "view": "Flussblick", "bathroom": "Marmorbad mit Badewanne und Regendusche" },
+      "lagoonJunior": { "name": "Lagoon Junior", "description": "Helles Zimmer mit privatem Balkon und modernem Design.", "detail": "Lichtdurchflutetes Zimmer mit privatem Balkon und zeitgenössischer Einrichtung.", "bedType": "Queensize-Bett", "view": "Garten- und Lagunenblick", "bathroom": "Bad mit Walk-in-Dusche" },
+      "presidential": { "name": "Präsidenten-Suite", "description": "Ultimativer Luxus mit separatem Salon und Panoramaterrasse.", "detail": "Unsere exklusivste Suite mit über 180 m², privatem Pool und Butler-Service.", "bedType": "Kingsize-Bett und Sofabett", "view": "270° Panorama", "bathroom": "Zwei Marmoräder mit Jacuzzi und Hammam" },
+      "gardenBungalow": { "name": "Garten-Bungalow", "description": "Freistehender Bungalow im mediterranen Garten.", "detail": "Unabhängiger Bungalow mit privatem Garten, Kamin und Außendusche.", "bedType": "Kingsize-Bett", "view": "Privater Garten", "bathroom": "Bad mit Innen- und Außendusche" },
+      "spaSuite": { "name": "Spa Suite", "description": "Suite mit privatem Zugang zum Wellnessbereich.", "detail": "Suite für ganzheitliches Wohlbefinden mit privatem Spa-Zugang.", "bedType": "Kingsize-Bett", "view": "Waldblick", "bathroom": "Spa-Bad mit Tauchbadewanne" },
+      "lakeView": { "name": "Seeblick", "description": "Große Fenster mit direktem See- und Bergblick.", "detail": "Großzügiges Zimmer mit bodentiefen Fenstern zum See und Gebirge.", "bedType": "Kingsize-Bett und Zustellbett", "view": "Direkter Seeblick", "bathroom": "Doppelbad mit Dusche und Wanne" },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Luxuriöses rustikales Refugium für Fliegenfischen.", "detail": "Rustikales Luxusrefugium mit direktem Seezugang und Angelausrüstung.", "bedType": "Zwei Einzelbetten oder Doppelbett", "view": "See- und Angelbereich", "bathroom": "Duschbad mit dekorativem Holzofen" },
+      "panorama": { "name": "Panorama Suite", "description": "Erhöhte Suite mit 180°-Wasserblick.", "detail": "Erhöhte Suite mit 180°-Blick über See und Berge.", "bedType": "Kingsize-Bett", "view": "180° Wasserpanorama", "bathroom": "Panoramabad mit Regendusche" },
+      "executive": { "name": "Executive Zimmer", "description": "Elegantes Zimmer mit Arbeitsbereich und persönlichem Service.", "detail": "Funktionales elegantes Zimmer mit großem Schreibtisch und Highspeed-Internet.", "bedType": "Queensize-Bett", "view": "Teilweiser Seeblick", "bathroom": "Kompaktes Designerbad mit Dusche" }
     },
     "amenities": {
       "kingBed": "Kingsize-Bett", "terrace": "Private Terrasse", "spa": "Spa-Zugang", "gardenView": "Gartenblick",
@@ -164,6 +164,16 @@
       "lounge": "Privater Salon", "privateGarden": "Privater Garten", "fireplace": "Kamin", "outdoorShower": "Außendusche",
       "sauna": "Private Sauna", "lakeView": "Seeblick", "breakfast": "Gourmet-Frühstück", "fishingGear": "Angelausrüstung",
       "panoramicView": "Panoramablick", "workDesk": "Arbeitsplatz"
+    },
+    "features": {
+      "lateCheckout": "Später Check-out bis 14:00", "roomService24h": "24-Stunden-Zimmerservice", "turndownService": "Abendlicher Turndown-Service",
+      "welcomeAmenities": "Personalisierte Willkommensgeschenke", "privateTransfer": "Privater Flughafentransfer", "personalConcierge": "Persönlicher Concierge",
+      "gourmetBreakfast": "Gourmet-Frühstück inklusive", "flexibleCancellation": "Flexible Stornierung 48 h vorher"
+    },
+    "detail": {
+      "back": "Zurück zu Zimmern", "viewDetails": "Details ansehen", "galleryAria": "Zimmerbildergalerie", "galleryImage": "Zimmeransicht",
+      "aboutTitle": "Beschreibung", "specsTitle": "Details", "amenitiesTitle": "Ausstattung", "featuresTitle": "Inklusive Leistungen",
+      "bookCta": "Dieses Zimmer buchen", "notFound": "Zimmer nicht gefunden", "size": "Fläche", "capacity": "Kapazität", "bed": "Bett", "view": "Aussicht", "bathroom": "Bad"
     },
     "form": {
       "title": "Neue Reservierung", "editTitle": "Reservierung bearbeiten", "selectRoom": "Zimmer",

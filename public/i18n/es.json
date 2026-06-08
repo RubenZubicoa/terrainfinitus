@@ -163,39 +163,75 @@
     "catalog": {
       "tajoSuite": {
         "name": "Suite Tajo",
-        "description": "Suite amplia con vistas al río y acabados en madera natural."
+        "description": "Suite amplia con vistas al río y acabados en madera natural.",
+        "detail": "La Suite Tajo combina la calidez de la madera local con amplios ventanales orientados al río Tajo. Dispone de salón independiente, terraza privada y acceso preferente al spa del complejo. Un espacio diseñado para quienes buscan intimidad y contacto con la naturaleza sin renunciar al confort de seis estrellas.",
+        "bedType": "Cama king size",
+        "view": "Vistas al río Tajo",
+        "bathroom": "Baño en mármol con bañera y ducha efecto lluvia"
       },
       "lagoonJunior": {
         "name": "Junior Lagoon",
-        "description": "Habitación luminosa con balcón privado y diseño contemporáneo."
+        "description": "Habitación luminosa con balcón privado y diseño contemporáneo.",
+        "detail": "La Junior Lagoon destaca por su luminosidad y su balcón privado sobre el entorno natural del parque. Decoración contemporánea con textiles de autor y mobiliario a medida. Ideal para escapadas en pareja con un equilibrio perfecto entre elegancia y calidez.",
+        "bedType": "Cama queen size",
+        "view": "Vistas al jardín y la laguna",
+        "bathroom": "Baño completo con ducha walk-in"
       },
       "presidential": {
         "name": "Presidential Suite",
-        "description": "La máxima expresión del lujo con salón independiente y terraza panorámica."
+        "description": "La máxima expresión del lujo con salón independiente y terraza panorámica.",
+        "detail": "Nuestra suite más exclusiva ofrece más de ciento ochenta metros cuadrados con salón de recepción, comedor privado, terraza panorámica y piscina climatizada. Incluye servicio de mayordomo las veinticuatro horas y acceso a todas las instalaciones premium del resort.",
+        "bedType": "Cama king size y sofá cama en salón",
+        "view": "Vistas panorámicas 270°",
+        "bathroom": "Dos baños de mármol con jacuzzi y hammam privado"
       },
       "gardenBungalow": {
         "name": "Garden Bungalow",
-        "description": "Bungalow independiente integrado en el jardín mediterráneo."
+        "description": "Bungalow independiente integrado en el jardín mediterráneo.",
+        "detail": "Bungalow independiente rodeado de vegetación mediterránea con acceso directo al jardín privado. Chimenea de diseño, ducha exterior y terraza con zona de descanso. Una experiencia íntima que fusiona arquitectura contemporánea y entorno natural.",
+        "bedType": "Cama king size",
+        "view": "Jardín privado",
+        "bathroom": "Baño con ducha interior y exterior"
       },
       "spaSuite": {
         "name": "Spa Suite",
-        "description": "Suite con acceso privado a circuito de bienestar y hidroterapia."
+        "description": "Suite con acceso privado a circuito de bienestar y hidroterapia.",
+        "detail": "Suite pensada para el bienestar integral con acceso privado al circuito de hidroterapia, sauna y terraza de relajación. Materiales naturales, iluminación regulable y aromaterapia incluida en cada estancia.",
+        "bedType": "Cama king size",
+        "view": "Vistas al bosque",
+        "bathroom": "Baño spa con bañera de inmersión"
       },
       "lakeView": {
         "name": "Lake View",
-        "description": "Amplios ventanales con vistas directas al lago y la sierra."
+        "description": "Amplios ventanales con vistas directas al lago y la sierra.",
+        "detail": "Habitación de generosas dimensiones con ventanales de suelo a techo orientados al lago artificial y la sierra valenciana. Perfecta para familias pequeñas o estancias prolongadas con zona de estar integrada.",
+        "bedType": "Cama king size y cama supletoria",
+        "view": "Vistas directas al lago",
+        "bathroom": "Baño doble con ducha y bañera"
       },
       "fisherLodge": {
         "name": "Fisher Lodge",
-        "description": "Refugio rústico de lujo pensado para la pesca con mosca."
+        "description": "Refugio rústico de lujo pensado para la pesca con mosca.",
+        "detail": "Lodge de estilo rústico refinado con acceso directo a las orillas del lago. Incluye equipamiento de pesca premium, zona de preparación de mosca y terraza privada para contemplar el amanecer sobre el agua.",
+        "bedType": "Dos camas individuales o cama doble",
+        "view": "Vistas al lago y zona de pesca",
+        "bathroom": "Baño con ducha y caldera de leña decorativa"
       },
       "panorama": {
         "name": "Panorama Suite",
-        "description": "Suite elevada con vistas de 180° sobre el entorno acuático."
+        "description": "Suite elevada con vistas de 180° sobre el entorno acuático.",
+        "detail": "Suite en planta elevada con vistas despejadas de ciento ochenta grados sobre el lago y las montañas. Salón con barra premium, terraza amplia y acceso prioritario a actividades náuticas y de pesca deportiva.",
+        "bedType": "Cama king size",
+        "view": "Panorama acuático 180°",
+        "bathroom": "Baño con ventana panorámica y ducha efecto lluvia"
       },
       "executive": {
         "name": "Executive Room",
-        "description": "Habitación elegante con zona de trabajo y servicio personalizado."
+        "description": "Habitación elegante con zona de trabajo y servicio personalizado.",
+        "detail": "Habitación funcional y elegante con escritorio amplio, conectividad de alta velocidad y servicio de habitaciones discreto. Pensada para viajeros exigentes que combinan trabajo y descanso en un entorno natural excepcional.",
+        "bedType": "Cama queen size",
+        "view": "Vistas parciales al lago",
+        "bathroom": "Baño compacto de diseño con ducha"
       }
     },
     "amenities": {
@@ -217,6 +253,33 @@
       "fishingGear": "Equipo de pesca",
       "panoramicView": "Vista panorámica",
       "workDesk": "Zona de trabajo"
+    },
+    "features": {
+      "lateCheckout": "Late checkout hasta las 14:00",
+      "roomService24h": "Room service 24 horas",
+      "turndownService": "Servicio de turndown nocturno",
+      "welcomeAmenities": "Amenities de bienvenida personalizados",
+      "privateTransfer": "Traslado privado desde aeropuerto",
+      "personalConcierge": "Concierge personal dedicado",
+      "gourmetBreakfast": "Desayuno gourmet incluido",
+      "flexibleCancellation": "Cancelación flexible 48 h antes"
+    },
+    "detail": {
+      "back": "Volver a habitaciones",
+      "viewDetails": "Ver detalles",
+      "galleryAria": "Galería de imágenes de la habitación",
+      "galleryImage": "Vista de la habitación",
+      "aboutTitle": "Descripción",
+      "specsTitle": "Detalles",
+      "amenitiesTitle": "Comodidades",
+      "featuresTitle": "Servicios incluidos",
+      "bookCta": "Reservar esta habitación",
+      "notFound": "Habitación no encontrada",
+      "size": "Superficie",
+      "capacity": "Capacidad",
+      "bed": "Cama",
+      "view": "Vistas",
+      "bathroom": "Baño"
     },
     "form": {
       "title": "Nueva reserva",

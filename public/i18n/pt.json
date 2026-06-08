@@ -148,15 +148,15 @@
       "theLake": { "name": "The Lake", "location": "Gestalgar, Valência — pesca desportiva" }
     },
     "catalog": {
-      "tajoSuite": { "name": "Suite Tajo", "description": "Suite ampla com vista para o rio e acabamentos em madeira natural." },
-      "lagoonJunior": { "name": "Junior Lagoon", "description": "Quarto luminoso com varanda privada e design contemporâneo." },
-      "presidential": { "name": "Suite Presidencial", "description": "O máximo do luxo com sala independente e terraço panorâmico." },
-      "gardenBungalow": { "name": "Garden Bungalow", "description": "Bungalow independente integrado no jardim mediterrânico." },
-      "spaSuite": { "name": "Spa Suite", "description": "Suite com acesso privado ao circuito de bem-estar." },
-      "lakeView": { "name": "Lake View", "description": "Amplas janelas com vista direta para o lago e a serra." },
-      "fisherLodge": { "name": "Fisher Lodge", "description": "Refúgio rústico de luxo para pesca com mosca." },
-      "panorama": { "name": "Panorama Suite", "description": "Suite elevada com vista de 180° sobre a água." },
-      "executive": { "name": "Executive Room", "description": "Quarto elegante com zona de trabalho e serviço personalizado." }
+      "tajoSuite": { "name": "Suite Tajo", "description": "Suite ampla com vista para o rio e acabamentos em madeira natural.", "detail": "Suite com sala independente, terraço privado e acesso preferencial ao spa.", "bedType": "Cama king size", "view": "Vistas para o Tejo", "bathroom": "Casa de banho em mármore com banheira e duche efeito chuva" },
+      "lagoonJunior": { "name": "Junior Lagoon", "description": "Quarto luminoso com varanda privada e design contemporâneo.", "detail": "Quarto luminoso com varanda privada sobre o parque natural.", "bedType": "Cama queen size", "view": "Vista jardim e lagoa", "bathroom": "Casa de banho com duche walk-in" },
+      "presidential": { "name": "Suite Presidencial", "description": "O máximo do luxo com sala independente e terraço panorâmico.", "detail": "A nossa suite mais exclusiva com mais de 180 m², piscina privada e mordomo.", "bedType": "Cama king e sofá-cama", "view": "Panorama 270°", "bathroom": "Duas casas de banho em mármore com jacuzzi e hammam" },
+      "gardenBungalow": { "name": "Garden Bungalow", "description": "Bungalow independente integrado no jardim mediterrânico.", "detail": "Bungalow independente com jardim privado, lareira e duche exterior.", "bedType": "Cama king size", "view": "Jardim privado", "bathroom": "Casa de banho interior e exterior" },
+      "spaSuite": { "name": "Spa Suite", "description": "Suite com acesso privado ao circuito de bem-estar.", "detail": "Suite dedicada ao bem-estar com acesso privado ao spa.", "bedType": "Cama king size", "view": "Vista floresta", "bathroom": "Casa de banho spa com banheira de imersão" },
+      "lakeView": { "name": "Lake View", "description": "Amplas janelas com vista direta para o lago e a serra.", "detail": "Quarto generoso com janelas do chão ao teto sobre o lago e a serra.", "bedType": "Cama king e cama extra", "view": "Vista direta para o lago", "bathroom": "Casa de banho dupla com duche e banheira" },
+      "fisherLodge": { "name": "Fisher Lodge", "description": "Refúgio rústico de luxo para pesca com mosca.", "detail": "Lodge rústico refinado com acesso direto ao lago e equipamento de pesca.", "bedType": "Duas camas individuais ou cama de casal", "view": "Vista lago e zona de pesca", "bathroom": "Duche com salamandra decorativa" },
+      "panorama": { "name": "Panorama Suite", "description": "Suite elevada com vista de 180° sobre a água.", "detail": "Suite elevada com vista de 180° sobre o lago e as montanhas.", "bedType": "Cama king size", "view": "Panorama aquático 180°", "bathroom": "Casa de banho panorâmica com duche efeito chuva" },
+      "executive": { "name": "Executive Room", "description": "Quarto elegante com zona de trabalho e serviço personalizado.", "detail": "Quarto elegante com secretária ampla e conectividade de alta velocidade.", "bedType": "Cama queen size", "view": "Vista parcial para o lago", "bathroom": "Casa de banho design compacta com duche" }
     },
     "amenities": {
       "kingBed": "Cama king", "terrace": "Terraço privado", "spa": "Acesso spa", "gardenView": "Vista jardim",
@@ -164,6 +164,16 @@
       "lounge": "Salão privado", "privateGarden": "Jardim privado", "fireplace": "Lareira", "outdoorShower": "Chuveiro exterior",
       "sauna": "Sauna privada", "lakeView": "Vista lago", "breakfast": "Pequeno-almoço gourmet", "fishingGear": "Equipamento de pesca",
       "panoramicView": "Vista panorâmica", "workDesk": "Secretária"
+    },
+    "features": {
+      "lateCheckout": "Late checkout até às 14:00", "roomService24h": "Room service 24 horas", "turndownService": "Serviço de turndown noturno",
+      "welcomeAmenities": "Amenities de boas-vindas personalizados", "privateTransfer": "Transfer privado do aeroporto", "personalConcierge": "Concierge pessoal dedicado",
+      "gourmetBreakfast": "Pequeno-almoço gourmet incluído", "flexibleCancellation": "Cancelamento flexível 48 h antes"
+    },
+    "detail": {
+      "back": "Voltar aos quartos", "viewDetails": "Ver detalhes", "galleryAria": "Galeria de imagens do quarto", "galleryImage": "Vista do quarto",
+      "aboutTitle": "Descrição", "specsTitle": "Detalhes", "amenitiesTitle": "Comodidades", "featuresTitle": "Serviços incluídos",
+      "bookCta": "Reservar este quarto", "notFound": "Quarto não encontrado", "size": "Área", "capacity": "Capacidade", "bed": "Cama", "view": "Vista", "bathroom": "Casa de banho"
     },
     "form": {
       "title": "Nova reserva", "editTitle": "Editar reserva", "selectRoom": "Quarto",
