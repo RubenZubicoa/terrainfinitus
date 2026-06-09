@@ -13,15 +13,14 @@
 }
 
 .sidenav__brand {
-  padding: 0 0.75rem 1.5rem;
+  padding: 0.5rem 0.75rem 1.5rem;
   border-bottom: 1px solid rgba(254, 224, 189, 0.12);
   margin-bottom: 1.25rem;
 }
 
 .sidenav__logo {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  justify-content: center;
   text-decoration: none;
   color: inherit;
   transition: opacity var(--ti-transition);
@@ -32,21 +31,13 @@
 }
 
 .sidenav__logo-img {
-  width: 3.25rem;
-  height: 3.25rem;
-  border-radius: var(--ti-radius-sm);
+  width: 8rem;
+  height: 8rem;
+  border-radius: var(--ti-radius-md);
   object-fit: contain;
   background: rgba(184, 115, 51, 0.25);
-  padding: 8px;
+  padding: 14px;
   display: block;
-}
-
-.sidenav__logo-text {
-  font-family: var(--ti-font-display);
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
 }
 
 .sidenav__list {

@@ -27,6 +27,12 @@
   max-width: none;
   padding: 0;
   color: inherit;
+
+  .title {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2;
+  }
 }
 
 .home-hero__eyebrow {
@@ -36,17 +42,6 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ti-copper);
-}
-
-.home-hero__title {
-  margin: 0;
-  font-family: var(--ti-font-display);
-  font-size: clamp(1.75rem, 4.5vw, 3.25rem);
-  font-weight: 400;
-  line-height: 1.08;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--ti-black);
 }
 
 .home-hero__lead {

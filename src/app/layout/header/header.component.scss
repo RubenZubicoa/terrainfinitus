@@ -71,14 +71,32 @@
 }
 
 .header__title {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 0.65rem;
+  min-width: 0;
+  line-height: 1.2;
+}
+
+.header__brand-name {
   font-family: var(--ti-font-display);
   font-size: clamp(1rem, 3.5vw, 1.35rem);
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+
+.header__tagline {
+  font-family: var(--ti-font-body);
+  font-size: clamp(0.8125rem, 2.2vw, 1rem);
+  font-weight: 400;
+  font-style: italic;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  opacity: 0.92;
+  white-space: nowrap;
 }
 
 .header__actions {
