@@ -8,9 +8,9 @@
 
 // —— Hero ——
 .rooms-hero {
-  text-align: center;
-  max-width: 40rem;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
+  text-align: left;
 }
 
 .rooms-hero__eyebrow {
@@ -22,14 +22,10 @@
   color: var(--ti-copper);
 }
 
-.rooms-hero__title {
+.rooms-hero .title {
   margin: 0 0 0.75rem;
-  font-family: var(--ti-font-display);
-  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--ti-black);
+  line-height: 1.2;
 }
 
 .rooms-hero__subtitle {
