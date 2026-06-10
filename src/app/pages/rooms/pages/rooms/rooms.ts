@@ -3,8 +3,8 @@ import { Component, computed, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { HOTELS, INITIAL_RESERVATIONS, ROOMS } from '../../data/rooms.data';
-import { HotelId } from '../../models/room.models';
+import { getHotelRooms, getRoomTypeGroups, HOTELS, INITIAL_RESERVATIONS, ROOMS } from '../../data/rooms.data';
+import { HotelId, RoomType } from '../../models/room.models';
 
 @Component({
   selector: 'app-rooms',
@@ -22,10 +22,15 @@ export class Rooms {
   ).length;
 
   readonly selectedHotelId = signal<HotelId>('peralejos');
+  readonly expandedTypes = signal<ReadonlySet<RoomType>>(new Set());
 
-  readonly hotelRooms = computed(() =>
-    this.allRooms.filter((room) => room.hotelId === this.selectedHotelId()),
-  );
+  readonly roomTypeGroups = computed(() => getRoomTypeGroups(this.selectedHotelId()));
+
+  readonly flatRooms = computed(() => getHotelRooms(this.selectedHotelId()));
+
+  readonly isFlatCatalog = computed(() => this.selectedHotel().catalogLayout === 'flat');
+
+  readonly isPreparationCatalog = computed(() => this.selectedHotel().catalogLayout === 'preparation');
 
   readonly selectedHotel = computed(
     () => this.hotels.find((hotel) => hotel.id === this.selectedHotelId()) ?? this.hotels[0],
@@ -35,12 +40,29 @@ export class Rooms {
     this.route.queryParamMap.pipe(takeUntilDestroyed()).subscribe((params) => {
       const hotelId = params.get('hotel') as HotelId | null;
       if (hotelId && this.hotels.some((hotel) => hotel.id === hotelId)) {
-        this.selectedHotelId.set(hotelId);
+        this.selectHotel(hotelId);
       }
     });
   }
 
   selectHotel(hotelId: HotelId): void {
     this.selectedHotelId.set(hotelId);
+    this.expandedTypes.set(new Set());
+  }
+
+  toggleType(type: RoomType): void {
+    this.expandedTypes.update((current) => {
+      const next = new Set(current);
+      if (next.has(type)) {
+        next.delete(type);
+      } else {
+        next.add(type);
+      }
+      return next;
+    });
+  }
+
+  isTypeExpanded(type: RoomType): boolean {
+    return this.expandedTypes().has(type);
   }
 }

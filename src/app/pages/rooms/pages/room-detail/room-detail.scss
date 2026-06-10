@@ -118,8 +118,24 @@
 }
 
 .room-detail__location {
-  margin: 0 0 0.65rem;
+  margin: 0 0 0.35rem;
   font-size: 0.875rem;
+  color: var(--ti-muted);
+}
+
+.room-detail__type {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ti-copper-dark);
+}
+
+.room-detail__number {
+  margin: 0 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
   color: var(--ti-muted);
 }
 

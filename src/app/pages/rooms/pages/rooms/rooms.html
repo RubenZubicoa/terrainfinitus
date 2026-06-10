@@ -40,48 +40,75 @@
   </nav>
 
   <section class="rooms-catalog" [attr.aria-label]="'rooms.catalogAria' | translate">
-      <div class="rooms-catalog__header">
-        <h2 class="rooms-catalog__title">{{ selectedHotel().nameKey | translate }}</h2>
-        <p class="rooms-catalog__location">{{ selectedHotel().locationKey | translate }}</p>
-      </div>
+    <div class="rooms-catalog__header">
+      <h2 class="rooms-catalog__title">{{ selectedHotel().nameKey | translate }}</h2>
+      <p class="rooms-catalog__location">{{ selectedHotel().locationKey | translate }}</p>
+    </div>
 
-      <div class="rooms-catalog__grid">
-        @for (room of hotelRooms(); track room.id) {
-          <article class="room-card">
-            <div class="room-card__media">
-              <img [src]="room.image" [alt]="room.nameKey | translate" loading="lazy" />
-              <span class="room-card__price">
-                {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
-                <small>{{ 'rooms.perNight' | translate }}</small>
+    <div class="rooms-types">
+      @if (isPreparationCatalog()) {
+        <p class="rooms-preparation">{{ 'rooms.preparation' | translate }}</p>
+      } @else if (isFlatCatalog()) {
+        <div class="rooms-flat">
+          <p class="rooms-flat__summary">
+            {{ 'rooms.types.bungalowsAvailableCount' | translate: { count: flatRooms().length } }}
+          </p>
+          <ul class="rooms-type__list rooms-type__list--open">
+            @for (room of flatRooms(); track room.id) {
+              <li>
+                <a class="rooms-unit" [routerLink]="['/habitaciones', room.id]">
+                  <span class="rooms-unit__number">{{ 'rooms.bungalowNumber' | translate }} {{ room.roomNumber }}</span>
+                  <span class="rooms-unit__name">{{ room.nameKey | translate }}</span>
+                  <span class="rooms-unit__meta">
+                    {{ room.sizeM2 }} {{ 'rooms.m2' | translate }} ·
+                    {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                    {{ 'rooms.perNight' | translate }}
+                  </span>
+                </a>
+              </li>
+            }
+          </ul>
+        </div>
+      } @else {
+        @for (group of roomTypeGroups(); track group.type) {
+          <article class="rooms-type">
+            <button
+              type="button"
+              class="rooms-type__header"
+              [attr.aria-expanded]="isTypeExpanded(group.type)"
+              (click)="toggleType(group.type)"
+            >
+              <span class="rooms-type__info">
+                <span class="rooms-type__name">{{ group.labelKey | translate }}</span>
+                <span class="rooms-type__count">
+                  {{ 'rooms.types.availableCount' | translate: { count: group.rooms.length } }}
+                </span>
               </span>
-            </div>
+              <svg class="rooms-type__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </button>
 
-            <div class="room-card__body">
-              <h3 class="room-card__name">{{ room.nameKey | translate }}</h3>
-              <p class="room-card__description">{{ room.descriptionKey | translate }}</p>
-
-              <ul class="room-card__meta">
-                <li>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</li>
-                <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
-              </ul>
-
-              <ul class="room-card__amenities">
-                @for (amenityKey of room.amenityKeys; track amenityKey) {
-                  <li>{{ amenityKey | translate }}</li>
+            @if (isTypeExpanded(group.type)) {
+              <ul class="rooms-type__list">
+                @for (room of group.rooms; track room.id) {
+                  <li>
+                    <a class="rooms-unit" [routerLink]="['/habitaciones', room.id]">
+                      <span class="rooms-unit__number">{{ 'rooms.roomNumber' | translate }} {{ room.roomNumber }}</span>
+                      <span class="rooms-unit__name">{{ room.nameKey | translate }}</span>
+                      <span class="rooms-unit__meta">
+                        {{ room.sizeM2 }} {{ 'rooms.m2' | translate }} ·
+                        {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                        {{ 'rooms.perNight' | translate }}
+                      </span>
+                    </a>
+                  </li>
                 }
               </ul>
-
-              <div class="room-card__actions">
-                <a class="room-card__details" [routerLink]="['/habitaciones', room.id]">
-                  {{ 'rooms.detail.viewDetails' | translate }}
-                </a>
-                <a class="room-card__cta" >
-                  {{ 'rooms.bookRoom' | translate }}
-                </a>
-              </div>
-            </div>
+            }
           </article>
         }
-      </div>
-    </section>
+      }
+    </div>
+  </section>
 </div>

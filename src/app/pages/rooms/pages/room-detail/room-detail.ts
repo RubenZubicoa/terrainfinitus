@@ -4,7 +4,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { map } from 'rxjs';
-import { getHotelById, getRoomById } from '../../data/rooms.data';
+import { getHotelById, getRoomById, ALL_ROOM_TYPES } from '../../data/rooms.data';
 
 @Component({
   selector: 'app-room-detail',
@@ -30,6 +30,18 @@ export class RoomDetail {
   readonly hotel = computed(() => {
     const currentRoom = this.room();
     return currentRoom ? getHotelById(currentRoom.hotelId) : undefined;
+  });
+
+  readonly roomTypeLabel = computed(() => {
+    const currentRoom = this.room();
+    if (!currentRoom) return '';
+    return ALL_ROOM_TYPES.find((t) => t.id === currentRoom.type)?.labelKey ?? '';
+  });
+
+  readonly unitNumberLabel = computed(() => {
+    const currentRoom = this.room();
+    if (!currentRoom) return 'rooms.roomNumber';
+    return currentRoom.type === 'bungalow' ? 'rooms.bungalowNumber' : 'rooms.roomNumber';
   });
 
   readonly selectedImage = computed(() => {

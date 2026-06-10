@@ -1,5 +1,7 @@
 export type HotelId = 'peralejos' | 'bugarra' | 'the-lake';
 
+export type RoomType = 'junior-suite' | 'suite' | 'presidential' | 'commodore' | 'bungalow';
+
 export type ReservationStatus = 'confirmed' | 'pending' | 'cancelled';
 
 export interface Hotel {
@@ -7,6 +9,12 @@ export interface Hotel {
   nameKey: string;
   locationKey: string;
   image: string;
+  catalogLayout?: 'grouped' | 'flat' | 'preparation';
+}
+
+export interface RoomTypeDefinition {
+  id: RoomType;
+  labelKey: string;
 }
 
 export interface RoomImage {
@@ -17,6 +25,8 @@ export interface RoomImage {
 export interface Room {
   id: string;
   hotelId: HotelId;
+  type: RoomType;
+  roomNumber: string;
   nameKey: string;
   descriptionKey: string;
   detailKey: string;
@@ -30,6 +40,12 @@ export interface Room {
   bathroomKey: string;
   amenityKeys: string[];
   featureKeys: string[];
+}
+
+export interface RoomTypeGroup {
+  type: RoomType;
+  labelKey: string;
+  rooms: Room[];
 }
 
 export interface Reservation {
