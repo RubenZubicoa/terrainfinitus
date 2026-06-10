@@ -58,23 +58,25 @@
           </svg>
         </button>
       </div>
+    </div>
 
-      <div class="banner__dots" role="tablist" [attr.aria-label]="'home.galleryAria' | translate">
+    @if (slides.length > 1) {
+      <div class="banner__thumbs" role="list" [attr.aria-label]="'home.galleryAria' | translate">
         @for (slide of slides; track slide.src; let i = $index) {
           <button
             type="button"
-            class="banner__dot"
-            role="tab"
-            [class.banner__dot--active]="currentIndex() === i"
-            [attr.aria-selected]="currentIndex() === i"
+            class="banner__thumb"
+            role="listitem"
+            [class.banner__thumb--active]="currentIndex() === i"
+            [attr.aria-current]="currentIndex() === i ? 'true' : null"
             [attr.aria-label]="slide.altKey | translate"
             (click)="goToSlide(i)"
-          ></button>
+          >
+            <img [src]="slide.src" [alt]="slide.altKey | translate" loading="lazy" />
+          </button>
         }
       </div>
-    </div>
-
-
+    }
   </section>
 
 
