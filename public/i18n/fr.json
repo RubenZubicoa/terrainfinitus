@@ -143,8 +143,8 @@
     "bookRoom": "Réserver",
     "stats": { "rooms": "Chambres", "active": "Réservations actives", "hotels": "Destinations" },
     "hotels": {
-      "peralejos": { "name": "Terra Peralejos", "location": "Parc Naturel du Haut Tajo, Guadalajara" },
-      "bugarra": { "name": "Terra Bugarra", "location": "Valence — nature et lac artificiel" },
+      "peralejos": { "name": "Terra Peralejos", "location": "Hôtel six étoiles dans le Parc Naturel du Haut Tajo" },
+      "bugarra": { "name": "Terra Bugarra", "location": "Resort d'écotourisme de luxe" },
       "theLake": { "name": "The Lake", "location": "Gestalgar, Valence — pêche sportive" }
     },
     "catalog": {

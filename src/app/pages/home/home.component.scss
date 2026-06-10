@@ -15,7 +15,10 @@
 
 .home-hero__banner {
   position: relative;
-  min-height: clamp(16rem, 38vh, 24rem);
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  aspect-ratio: 21 / 9;
   border-radius: var(--ti-radius-md);
   overflow: hidden;
   background: var(--ti-dark);
@@ -227,7 +230,6 @@
 
 @media (max-width: 768px) {
   .home-hero__banner {
-    min-height: unset;
     aspect-ratio: 16 / 9;
   }
 

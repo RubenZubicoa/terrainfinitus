@@ -143,8 +143,8 @@
     "bookRoom": "予約する",
     "stats": { "rooms": "客室", "active": "有効な予約", "hotels": "目的地" },
     "hotels": {
-      "peralejos": { "name": "Terra Peralejos", "location": "アルト・タホ自然公園、グアダラハラ" },
-      "bugarra": { "name": "Terra Bugarra", "location": "バレンシア — 自然と人工湖" },
+      "peralejos": { "name": "Terra Peralejos", "location": "アルト・タホ自然公園の六つ星ホテル" },
+      "bugarra": { "name": "Terra Bugarra", "location": "ラグジュアリー・エコツーリズム・リゾート" },
       "theLake": { "name": "The Lake", "location": "ヘスタルガル — スポーツフィッシング" }
     },
     "catalog": {
