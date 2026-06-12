@@ -1,18 +1,15 @@
-import { Component, DestroyRef, inject, signal } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { interval } from 'rxjs';
+import { Banner, BannerSlide } from '../../shared/components/banner/banner';
 
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule],
+  imports: [Banner, TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  private readonly destroyRef = inject(DestroyRef);
-
-  readonly slides = [
+  readonly slides: readonly BannerSlide[] = [
     { src: '/images/inicio/inicio1.jpg', altKey: 'home.alt1' },
     { src: '/images/inicio/inicio2.jpg', altKey: 'home.alt2' },
     { src: '/images/inicio/inicio3.jpg', altKey: 'home.alt3' },
@@ -32,27 +29,5 @@ export class HomeComponent {
     { src: '/images/inicio/inicio17.jpg', altKey: 'home.alt17' },
     { src: '/images/inicio/inicio18.jpg', altKey: 'home.alt18' },
     { src: '/images/inicio/inicio19.jpg', altKey: 'home.alt19' },
-  ] as const;
-
-  readonly currentIndex = signal(0);
-
-  constructor() {
-    interval(5000)
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(() => this.nextSlide());
-  }
-
-  nextSlide(): void {
-    this.currentIndex.update((i) => (i + 1) % this.slides.length);
-  }
-
-  prevSlide(): void {
-    this.currentIndex.update(
-      (i) => (i - 1 + this.slides.length) % this.slides.length,
-    );
-  }
-
-  goToSlide(index: number): void {
-    this.currentIndex.set(index);
-  }
+  ];
 }
