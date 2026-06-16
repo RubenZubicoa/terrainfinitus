@@ -21,7 +21,14 @@ export const MAIN_NAVIGATION: NavItem[] = [
     ],
   },
   { labelKey: 'nav.activities', route: '/actividades' },
-  { labelKey: 'nav.shop', route: '/tienda-boutique' },
+  {
+    labelKey: 'nav.shop',
+    children: [
+      { labelKey: 'nav.shopGourmet', route: '/tienda-boutique/gourmet' },
+      { labelKey: 'nav.shopMerchandising', route: '/tienda-boutique/merchandising' },
+      { labelKey: 'nav.shopTheLake', route: '/tienda-boutique/the-lake' },
+    ],
+  },
   {
     labelKey: 'nav.photoGallery',
     children: [

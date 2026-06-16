@@ -90,8 +90,9 @@ const seed = (
   roomNumber: string,
   nameKey: string,
   data: Omit<RoomSeed, 'nameKey'>,
+  idRoomNumber = roomNumber,
 ): Room => ({
-  id: `${hotelId}-${type}-${roomNumber}`,
+  id: `${hotelId}-${type}-${idRoomNumber}`,
   hotelId,
   type,
   roomNumber,
@@ -106,6 +107,93 @@ const BUGARRA_IMAGES = [
   '/images/inicio/inicio3.jpeg',
   '/images/inicio/inicio6.jpg',
 ];
+
+const PERALEJOS_BUNGALOW_IMAGES = [
+  '/images/inicio/inicio1.jpeg',
+  '/images/inicio/inicio5.jpg',
+  '/images/inicio/inicio7.jpg',
+  '/images/inicio/inicio3.jpeg',
+  '/images/inicio/inicio6.jpg',
+];
+
+const peralejosTipoABungalows = (): Room[] => {
+  const base = {
+    descriptionKey: 'rooms.catalog.gardenBungalow.description',
+    detailKey: 'rooms.catalog.gardenBungalow.detail',
+    bedTypeKey: 'rooms.catalog.gardenBungalow.bedType',
+    viewKey: 'rooms.catalog.gardenBungalow.view',
+    bathroomKey: 'rooms.catalog.gardenBungalow.bathroom',
+    amenityKeys: [
+      'rooms.amenities.privateGarden',
+      'rooms.amenities.fireplace',
+      'rooms.amenities.outdoorShower',
+    ],
+    featureKeys: ['rooms.features.gourmetBreakfast', 'rooms.features.flexibleCancellation'],
+  };
+
+  return Array.from({ length: 14 }, (_, index) => {
+    const num = String(index + 1);
+    const unitKey = `perA${num.padStart(2, '0')}`;
+    const image = PERALEJOS_BUNGALOW_IMAGES[index % PERALEJOS_BUNGALOW_IMAGES.length];
+    const galleryImages = [
+      image,
+      PERALEJOS_BUNGALOW_IMAGES[(index + 1) % PERALEJOS_BUNGALOW_IMAGES.length],
+      PERALEJOS_BUNGALOW_IMAGES[(index + 2) % PERALEJOS_BUNGALOW_IMAGES.length],
+    ];
+
+    return seed(
+      'peralejos',
+      'bungalow',
+      num,
+      `rooms.units.${unitKey}.name`,
+      {
+        ...base,
+        image,
+        images: gallery(...galleryImages),
+        sizeM2: 75,
+        capacity: 2,
+        pricePerNight: 340 + (index % 3) * 10,
+      },
+      `a-${num}`,
+    );
+  });
+};
+
+const peralejosBungalows = (): Room[] => {
+  const base = {
+    descriptionKey: 'rooms.catalog.gardenBungalow.description',
+    detailKey: 'rooms.catalog.gardenBungalow.detail',
+    bedTypeKey: 'rooms.catalog.gardenBungalow.bedType',
+    viewKey: 'rooms.catalog.gardenBungalow.view',
+    bathroomKey: 'rooms.catalog.gardenBungalow.bathroom',
+    amenityKeys: [
+      'rooms.amenities.privateGarden',
+      'rooms.amenities.fireplace',
+      'rooms.amenities.outdoorShower',
+    ],
+    featureKeys: ['rooms.features.gourmetBreakfast', 'rooms.features.flexibleCancellation'],
+  };
+
+  return Array.from({ length: 11 }, (_, index) => {
+    const num = String(index + 1);
+    const unitKey = `perB${num.padStart(2, '0')}`;
+    const image = PERALEJOS_BUNGALOW_IMAGES[index % PERALEJOS_BUNGALOW_IMAGES.length];
+    const galleryImages = [
+      image,
+      PERALEJOS_BUNGALOW_IMAGES[(index + 1) % PERALEJOS_BUNGALOW_IMAGES.length],
+      PERALEJOS_BUNGALOW_IMAGES[(index + 2) % PERALEJOS_BUNGALOW_IMAGES.length],
+    ];
+
+    return seed('peralejos', 'bungalow', num, `rooms.units.${unitKey}.name`, {
+      ...base,
+      image,
+      images: gallery(...galleryImages),
+      sizeM2: 80,
+      capacity: 2,
+      pricePerNight: 360 + (index % 3) * 10,
+    });
+  });
+};
 
 const bugarraBungalows = (): Room[] => {
   const base = {
@@ -466,6 +554,279 @@ export const ROOMS: Room[] = [
     amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
     featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
   }),
+
+  seed('peralejos', 'junior-suite', 'B1', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 76.17,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+  seed('peralejos', 'terraza', 'B1', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 10.92,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'junior-suite', 'B2', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 63.84,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza', 'B2', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 10.21,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'suite', '101', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 101.55,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '101', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 24.91,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'suite', '102', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 93.77,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '102', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 27.30,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'suite', '201', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 101.55,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '201', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 24.91,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'suite', '202', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 93.77,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '202', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 27.30,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  
+  seed('peralejos', 'suite', '301', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 101.55,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '301', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 24.91,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'suite', '302', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 93.77,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza-suite', '302', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 27.30,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'commodore', 'C1', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 233.63,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  seed('peralejos', 'terraza', 'C1', 'rooms.units.per502.name', {
+    descriptionKey: 'rooms.catalog.tajoSuite.description',
+    detailKey: 'rooms.catalog.tajoSuite.detail',
+    image: '/images/inicio/inicio2.jpeg',
+    images: gallery('/images/habitaciones/habitacion1.png', '/images/habitaciones/habitacion2.png', '/images/habitaciones/habitacion3.png', '/images/habitaciones/habitacion4.png', '/images/habitaciones/habitacion5.png', '/images/habitaciones/habitacion6.png', '/images/habitaciones/habitacion7.png', '/images/habitaciones/habitacion8.png'),
+    sizeM2: 52.21,
+    capacity: 2,
+    pricePerNight: 510,
+    bedTypeKey: 'rooms.catalog.tajoSuite.bedType',
+    viewKey: 'rooms.catalog.tajoSuite.view',
+    bathroomKey: 'rooms.catalog.tajoSuite.bathroom',
+    amenityKeys: ['rooms.amenities.kingBed', 'rooms.amenities.terrace', 'rooms.amenities.lounge', 'rooms.amenities.minibar'],
+    featureKeys: ['rooms.features.personalConcierge', 'rooms.features.roomService24h', 'rooms.features.welcomeAmenities'],
+  }),
+
+  // ...peralejosTipoABungalows(),
+  ...peralejosBungalows(),
   // —— Terra Bugarra ——
   ...bugarraBungalows(),
 ];

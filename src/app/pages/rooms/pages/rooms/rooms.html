@@ -95,7 +95,7 @@
                   <li>
                     <a class="rooms-unit" [routerLink]="['/habitaciones', room.id]">
                       <span class="rooms-unit__number">{{ 'rooms.roomNumber' | translate }} {{ room.roomNumber }}</span>
-                      <!-- <span class="rooms-unit__name">{{ room.nameKey | translate }}</span> -->
+                      <span class="rooms-unit__name">{{ room.nameKey | translate }}</span>
                       <span class="rooms-unit__meta">
                         {{ room.sizeM2 }} {{ 'rooms.m2' | translate }} ·
                         {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
