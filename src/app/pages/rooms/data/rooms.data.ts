@@ -20,12 +20,38 @@ export const ROOM_TYPES: RoomTypeDefinition[] = [
   { id: 'commodore', labelKey: 'rooms.types.commodore' },
 ];
 
-const BUNGALOW_TYPE: RoomTypeDefinition = { id: 'bungalow', labelKey: 'rooms.types.bungalow' };
+const TERRAZA_TYPE: RoomTypeDefinition = {
+  id: 'terraza',
+  labelKey: 'rooms.types.terraza',
+  showWhenEmpty: true,
+};
+const TERRAZA_SUITE_TYPE: RoomTypeDefinition = {
+  id: 'terraza-suite',
+  labelKey: 'rooms.types.terrazaSuite',
+  showWhenEmpty: true,
+};
+const BUNGALOW_TYPE: RoomTypeDefinition = {
+  id: 'bungalow',
+  labelKey: 'rooms.types.bungalow',
+  showWhenEmpty: true,
+};
 
-export const ALL_ROOM_TYPES: RoomTypeDefinition[] = [...ROOM_TYPES, BUNGALOW_TYPE];
+const PERALEJOS_ROOM_TYPES: RoomTypeDefinition[] = [
+  ...ROOM_TYPES,
+  TERRAZA_TYPE,
+  TERRAZA_SUITE_TYPE,
+  BUNGALOW_TYPE,
+];
+
+export const ALL_ROOM_TYPES: RoomTypeDefinition[] = [
+  ...ROOM_TYPES,
+  TERRAZA_TYPE,
+  TERRAZA_SUITE_TYPE,
+  BUNGALOW_TYPE,
+];
 
 const HOTEL_ROOM_TYPES: Record<HotelId, RoomTypeDefinition[]> = {
-  peralejos: ROOM_TYPES,
+  peralejos: PERALEJOS_ROOM_TYPES,
   bugarra: [BUNGALOW_TYPE],
   'the-lake': ROOM_TYPES,
 };
@@ -495,11 +521,16 @@ export function getHotelRooms(hotelId: HotelId): Room[] {
 }
 
 export function getRoomTypeGroups(hotelId: HotelId): { type: RoomType; labelKey: string; rooms: Room[] }[] {
-  return HOTEL_ROOM_TYPES[hotelId].map((typeDef) => ({
-    type: typeDef.id,
-    labelKey: typeDef.labelKey,
-    rooms: ROOMS.filter((room) => room.hotelId === hotelId && room.type === typeDef.id).sort(
-      (a, b) => a.roomNumber.localeCompare(b.roomNumber, undefined, { numeric: true }),
-    ),
-  })).filter((group) => group.rooms.length > 0);
+  return HOTEL_ROOM_TYPES[hotelId]
+    .map((typeDef) => ({
+      type: typeDef.id,
+      labelKey: typeDef.labelKey,
+      rooms: ROOMS.filter((room) => room.hotelId === hotelId && room.type === typeDef.id).sort(
+        (a, b) => a.roomNumber.localeCompare(b.roomNumber, undefined, { numeric: true }),
+      ),
+    }))
+    .filter((group, index) => {
+      const typeDef = HOTEL_ROOM_TYPES[hotelId][index];
+      return group.rooms.length > 0 || typeDef.showWhenEmpty;
+    });
 }

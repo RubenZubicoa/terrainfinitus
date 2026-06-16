@@ -149,6 +149,8 @@
       "suite": "Suites",
       "presidential": "Suites presidenciais",
       "commodore": "Suites Comodoro",
+      "terraza": "Terraço",
+      "terrazaSuite": "Suite terraço",
       "bungalow": "Bungalows",
       "availableCount": "{{count}} quartos disponíveis",
       "bungalowsAvailableCount": "{{count}} bungalows disponíveis"

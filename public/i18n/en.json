@@ -149,6 +149,8 @@
       "suite": "Suites",
       "presidential": "Presidential suites",
       "commodore": "Commodore suites",
+      "terraza": "Terrace",
+      "terrazaSuite": "Terrace suite",
       "bungalow": "Bungalows",
       "availableCount": "{{count}} rooms available",
       "bungalowsAvailableCount": "{{count}} bungalows available"

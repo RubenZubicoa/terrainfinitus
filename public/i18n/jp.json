@@ -149,6 +149,8 @@
       "suite": "スイート",
       "presidential": "プレジデンシャルスイート",
       "commodore": "コモドアスイート",
+      "terraza": "テラス",
+      "terrazaSuite": "テラススイート",
       "bungalow": "バンガロー",
       "availableCount": "空室 {{count}} 室",
       "bungalowsAvailableCount": "空室バンガロー {{count}} 棟"
