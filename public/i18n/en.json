@@ -109,6 +109,74 @@
     "p9": "In Spain, our team will be made up of talents in the different areas needed to achieve the degree of exclusivity we need and will bring to the project — people with genuine sensitivity who will contribute their creativity, with experience in Spanish hospitality, customer service, furniture design, decoration and gastronomy, and a complete understanding of tourism, its management and guest care.",
     "p10": "We have technicians specialised in landscaping who will design an oasis within the property, as well as water experts and other staff we will recruit locally and train to ensure that the harmony of the whole lives up to the Project and exceeds our guests' expectations, while also ensuring the Project has a definitive impact on the Community, achieving full employment among its inhabitants, with quality and stable jobs, creating a unique, innovative, profitable and sustainable idea."
   },
+  "shop": {
+    "productListAria": "Product listing",
+    "empty": "No products are available at the moment.",
+    "gourmet": {
+      "eyebrow": "Boutique Shop",
+      "title": "Gourmet",
+      "description": "A curated selection of gourmet products made with local ingredients and the Terra Infinitus quality seal. Perfect to take the taste of our destinations home with you."
+    },
+    "merchandising": {
+      "eyebrow": "Boutique Shop",
+      "title": "Merchandising",
+      "description": "Exclusive Terra Infinitus items: contemporary design, quality materials and the identity of our destinations. Take home a memento of your experience."
+    },
+    "products": {
+      "gourmet": {
+        "oliveOil": {
+          "name": "Extra virgin olive oil",
+          "description": "Early-harvest oil from inland Guadalajara with herbaceous notes and a smooth finish."
+        },
+        "honey": {
+          "name": "Alto Tajo honey",
+          "description": "Artisan rosemary and thyme honey harvested in the natural park surroundings."
+        },
+        "wine": {
+          "name": "Reserve red wine",
+          "description": "A selection from local wineries with barrel ageing and excellent balance."
+        },
+        "preserves": {
+          "name": "Artisan preserves",
+          "description": "Vegetables and mushrooms from the region, preserved in small batches."
+        },
+        "cheese": {
+          "name": "Aged sheep's cheese",
+          "description": "Slowly matured cheese with a firm texture and intense aroma."
+        },
+        "ham": {
+          "name": "Acorn-fed Iberian ham",
+          "description": "Finely sliced ham cured for more than thirty months."
+        }
+      },
+      "merchandising": {
+        "tshirt": {
+          "name": "Terra Infinitus T-shirt",
+          "description": "Organic cotton with embroidered logo and unisex fit."
+        },
+        "cap": {
+          "name": "Terra Infinitus cap",
+          "description": "Adjustable cotton cap with discreet brand embroidery."
+        },
+        "tote": {
+          "name": "Tote bag",
+          "description": "Sturdy canvas bag with reinforced handles and exclusive print."
+        },
+        "mug": {
+          "name": "Porcelain mug",
+          "description": "Fine porcelain mug with copper detail and Terra Infinitus logo."
+        },
+        "towel": {
+          "name": "Beach towel",
+          "description": "Premium cotton towel with a design inspired by our landscapes."
+        },
+        "scarf": {
+          "name": "Silk scarf",
+          "description": "Lightweight silk scarf with Alto Tajo motifs and artisan finish."
+        }
+      }
+    }
+  },
   "placeholder": {
     "message": "This section will be developed in upcoming iterations.",
     "defaultTitle": "Page under construction"

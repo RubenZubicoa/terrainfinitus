@@ -26,7 +26,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
     children: [
       { labelKey: 'nav.shopGourmet', route: '/tienda-boutique/gourmet' },
       { labelKey: 'nav.shopMerchandising', route: '/tienda-boutique/merchandising' },
-      { labelKey: 'nav.shopTheLake', route: '/tienda-boutique/the-lake' },
+      {
+        labelKey: 'nav.shopTheLake',
+        externalUrl: 'https://tienda-pesca-tau.vercel.app/',
+        openInNewTab: true,
+      },
     ],
   },
   {

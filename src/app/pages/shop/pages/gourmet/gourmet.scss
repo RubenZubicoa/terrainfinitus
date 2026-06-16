@@ -1,0 +1,37 @@
+.gourmet {
+  --gourmet-gap: clamp(1.5rem, 2.5vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gourmet-gap);
+  width: 100%;
+}
+
+.gourmet-hero {
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.gourmet-hero__eyebrow {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ti-copper);
+}
+
+.gourmet-hero .title {
+  margin: 0 0 0.85rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.gourmet-hero__description {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}

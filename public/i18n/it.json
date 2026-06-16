@@ -109,6 +109,74 @@
     "p9": "In Spagna, il nostro team sarà composto da talenti nei diversi ambiti necessari per raggiungere il grado di esclusività richiesto — persone con genuina sensibilità, esperienza nell'ospitalità spagnola, attenzione al pubblico, design del mobilio, decorazione e gastronomia, e una completa comprensione del turismo, della sua direzione e dell'accoglienza.",
     "p10": "Disponiamo di tecnici specializzati in giardinaggio che progetteranno un'oasi all'interno della proprietà, oltre a esperti in acque e altro personale che recluteremo in loco e formeremo per garantire che l'armonia dell'insieme sia all'altezza del Progetto e superi le aspettative degli ospiti, con un impatto definitivo sulla comunità, pieno impiego tra i suoi abitanti, posti di lavoro di qualità e stabili, e la creazione di un'idea unica, innovativa, redditizia e sostenibile."
   },
+  "shop": {
+    "productListAria": "Elenco prodotti",
+    "empty": "Nessun prodotto disponibile al momento.",
+    "gourmet": {
+      "eyebrow": "Boutique",
+      "title": "Gourmet",
+      "description": "Una selezione di prodotti gourmet realizzati con ingredienti di prossimità e il sigillo di qualità Terra Infinitus. Ideali per portare con sé il sapore delle nostre destinazioni."
+    },
+    "merchandising": {
+      "eyebrow": "Boutique",
+      "title": "Merchandising",
+      "description": "Articoli esclusivi Terra Infinitus: design contemporaneo, materiali di qualità e l'identità delle nostre destinazioni. Porta con te un ricordo della tua esperienza."
+    },
+    "products": {
+      "gourmet": {
+        "oliveOil": {
+          "name": "Olio extravergine di oliva",
+          "description": "Olio di raccolta precoce dall'entroterra di Guadalajara, con note erbacee e finale morbido."
+        },
+        "honey": {
+          "name": "Miele dell'Alto Tajo",
+          "description": "Miele artigianale di rosmarino e timo raccolto nell'ambiente del parco naturale."
+        },
+        "wine": {
+          "name": "Vino rosso riserva",
+          "description": "Selezione di cantine locali con affinamento in barrique ed eccellente equilibrio."
+        },
+        "preserves": {
+          "name": "Conserve artigianali",
+          "description": "Verdure e funghi del territorio conservati in piccoli lotti."
+        },
+        "cheese": {
+          "name": "Formaggio di pecora stagionato",
+          "description": "Formaggio maturato lentamente con texture compatta e aroma intenso."
+        },
+        "ham": {
+          "name": "Prosciutto iberico di ghianda",
+          "description": "Fettine sottili di prosciutto stagionato per oltre trenta mesi."
+        }
+      },
+      "merchandising": {
+        "tshirt": {
+          "name": "T-shirt Terra Infinitus",
+          "description": "Cotone biologico con logo ricamato e taglio unisex."
+        },
+        "cap": {
+          "name": "Cappellino Terra Infinitus",
+          "description": "Cappellino in cotone regolabile con ricamo discreto del marchio."
+        },
+        "tote": {
+          "name": "Borsa tote",
+          "description": "Borsa in tela resistente con manici rinforzati e stampa esclusiva."
+        },
+        "mug": {
+          "name": "Tazza in porcellana",
+          "description": "Tazza in fine porcellana con dettaglio rame e logo Terra Infinitus."
+        },
+        "towel": {
+          "name": "Telo mare",
+          "description": "Telo in cotone premium con design ispirato ai nostri paesaggi."
+        },
+        "scarf": {
+          "name": "Sciarpa di seta",
+          "description": "Sciarpa leggera in seta con motivi dell'Alto Tajo e finitura artigianale."
+        }
+      }
+    }
+  },
   "placeholder": {
     "message": "Questa sezione sarà sviluppata nelle prossime iterazioni.",
     "defaultTitle": "Pagina in costruzione"

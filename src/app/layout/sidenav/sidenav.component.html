@@ -30,14 +30,26 @@
             <ul class="sidenav__sublist">
               @for (child of item.children; track child.labelKey) {
                 <li>
-                  <a
-                    [routerLink]="child.route"
-                    routerLinkActive="sidenav__link--active"
-                    class="sidenav__link sidenav__link--child"
-                    (click)="onNavigate()"
-                  >
-                    {{ child.labelKey | translate }}
-                  </a>
+                  @if (child.externalUrl) {
+                    <a
+                      [href]="child.externalUrl"
+                      class="sidenav__link sidenav__link--child"
+                      [attr.target]="child.openInNewTab === false ? null : '_blank'"
+                      [attr.rel]="child.openInNewTab === false ? null : 'noopener noreferrer'"
+                      (click)="onNavigate()"
+                    >
+                      {{ child.labelKey | translate }}
+                    </a>
+                  } @else {
+                    <a
+                      [routerLink]="child.route"
+                      routerLinkActive="sidenav__link--active"
+                      class="sidenav__link sidenav__link--child"
+                      (click)="onNavigate()"
+                    >
+                      {{ child.labelKey | translate }}
+                    </a>
+                  }
                 </li>
               }
             </ul>

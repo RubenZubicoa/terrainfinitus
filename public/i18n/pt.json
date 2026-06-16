@@ -109,6 +109,74 @@
     "p9": "Em Espanha, a nossa equipa será constituída por talentos nos diferentes aspetos necessários para alcançar o grau de exclusividade que precisamos — pessoas com genuína sensibilidade, experiência em hotelaria espanhola, atendimento ao público, design de mobiliário, decoração e gastronomia, e um completo entendimento do turismo, da sua direção e atenção.",
     "p10": "Contamos com técnicos especializados em jardinagem que desenharão um oásis na propriedade, bem como peritos em águas e outro pessoal que recrutaremos na localidade e capacitaremos para garantir que a harmonia do conjunto esteja à altura do Projeto e supere as expectativas dos hóspedes, com impacto definitivo na comunidade, pleno emprego entre os seus habitantes, postos de trabalho de qualidade e estabilidade, e a criação de uma ideia única, inovadora, rentável e sustentável."
   },
+  "shop": {
+    "productListAria": "Lista de produtos",
+    "empty": "Não há produtos disponíveis de momento.",
+    "gourmet": {
+      "eyebrow": "Loja Boutique",
+      "title": "Gourmet",
+      "description": "Uma seleção de produtos gourmet elaborados com ingredientes de proximidade e o selo de qualidade Terra Infinitus. Ideais para levar consigo o sabor dos nossos destinos."
+    },
+    "merchandising": {
+      "eyebrow": "Loja Boutique",
+      "title": "Merchandising",
+      "description": "Artigos exclusivos Terra Infinitus: design contemporâneo, materiais de qualidade e a identidade dos nossos destinos. Leve consigo uma recordação da sua experiência."
+    },
+    "products": {
+      "gourmet": {
+        "oliveOil": {
+          "name": "Azeite virgem extra",
+          "description": "Azeite de colheita precoce do interior de Guadalajara, com notas herbáceas e final suave."
+        },
+        "honey": {
+          "name": "Mel do Alto Tajo",
+          "description": "Mel artesanal de alecrim e tomilho colhido no entorno do parque natural."
+        },
+        "wine": {
+          "name": "Vinho tinto reserva",
+          "description": "Seleção de adegas locais com envelhecimento em barrica e excelente equilíbrio."
+        },
+        "preserves": {
+          "name": "Conservas artesanais",
+          "description": "Legumes e cogumelos do território, conservados em pequenos lotes."
+        },
+        "cheese": {
+          "name": "Queijo curado de ovelha",
+          "description": "Queijo maturado lentamente com textura firme e aroma intenso."
+        },
+        "ham": {
+          "name": "Presunto ibérico de bolota",
+          "description": "Fatias finas de presunto curado durante mais de trinta meses."
+        }
+      },
+      "merchandising": {
+        "tshirt": {
+          "name": "T-shirt Terra Infinitus",
+          "description": "Algodão orgânico com logótipo bordado e corte unissexo."
+        },
+        "cap": {
+          "name": "Boné Terra Infinitus",
+          "description": "Boné ajustável em algodão com bordado discreto da marca."
+        },
+        "tote": {
+          "name": "Saco tote",
+          "description": "Saco de lona resistente com alças reforçadas e estampado exclusivo."
+        },
+        "mug": {
+          "name": "Caneca de porcelana",
+          "description": "Caneca de porcelana fina com detalhe em cobre e logótipo Terra Infinitus."
+        },
+        "towel": {
+          "name": "Toalha de praia",
+          "description": "Toalha de algodão premium com design inspirado nas nossas paisagens."
+        },
+        "scarf": {
+          "name": "Cachecol de seda",
+          "description": "Cachecol leve de seda com motivos do Alto Tajo e acabamento artesanal."
+        }
+      }
+    }
+  },
   "placeholder": {
     "message": "Esta secção será desenvolvida nas próximas iterações.",
     "defaultTitle": "Página em construção"

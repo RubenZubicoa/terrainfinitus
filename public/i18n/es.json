@@ -109,6 +109,74 @@
     "p9": "Pero en España, nuestro equipo estará conformado por talentos en los diferentes aspectos necesarios para lograr el grado de exclusividad que necesitamos y que aportaremos al proyecto, personas con una genuina sensibilidad que aportarán su creatividad, con experiencia en hotelería española, atención al público, diseño de mobiliario, decoración y gastronomía y un completo entendimiento del turismo, su dirección y atención.",
     "p10": "Contamos con técnicos especializados en jardinería que diseñarán un oasis dentro de la propiedad, así como expertos en aguas y otros miembros del personal que reclutaremos en la localidad y capacitaremos para asegurar que la armonía del conjunto esté a la altura del Proyecto y supere las expectativas de nuestros huéspedes, persiguiendo además conseguir que el Proyecto tenga un definitivo impacto en la Comunidad, logrando el pleno empleo entre sus habitantes, con puestos de trabajo de calidad y estabilidad, logrando la creación de una idea única, innovadora, rentable y sustentable."
   },
+  "shop": {
+    "productListAria": "Listado de productos",
+    "empty": "No hay productos disponibles en este momento.",
+    "gourmet": {
+      "eyebrow": "Tienda Boutique",
+      "title": "Gourmet",
+      "description": "Selección de productos gourmet elaborados con ingredientes de proximidad y el sello de calidad Terra Infinitus. Ideales para llevar contigo el sabor de nuestros destinos."
+    },
+    "merchandising": {
+      "eyebrow": "Tienda Boutique",
+      "title": "Merchandising",
+      "description": "Artículos exclusivos de Terra Infinitus: diseño contemporáneo, materiales de calidad y la identidad de nuestros destinos. Lleva contigo un recuerdo de tu experiencia."
+    },
+    "products": {
+      "gourmet": {
+        "oliveOil": {
+          "name": "Aceite de oliva virgen extra",
+          "description": "Aceite de cosecha temprana del interior de Guadalajara, con notas herbáceas y un final suave."
+        },
+        "honey": {
+          "name": "Miel del Alto Tajo",
+          "description": "Miel artesanal de romero y tomillo recolectada en el entorno del parque natural."
+        },
+        "wine": {
+          "name": "Vino tinto reserva",
+          "description": "Selección de bodegas locales con crianza en barrica y gran equilibrio en boca."
+        },
+        "preserves": {
+          "name": "Conservas artesanales",
+          "description": "Verduras y setas del territorio en conserva, elaboradas en pequeños lotes."
+        },
+        "cheese": {
+          "name": "Queso curado de oveja",
+          "description": "Queso madurado lentamente con textura firme y aroma intenso."
+        },
+        "ham": {
+          "name": "Jamón ibérico de bellota",
+          "description": "Loncheado fino de jamón curado durante más de treinta meses."
+        }
+      },
+      "merchandising": {
+        "tshirt": {
+          "name": "Camiseta Terra Infinitus",
+          "description": "Algodón orgánico con el logotipo bordado y corte unisex."
+        },
+        "cap": {
+          "name": "Gorra Terra Infinitus",
+          "description": "Gorra ajustable en algodón con bordado discreto de la marca."
+        },
+        "tote": {
+          "name": "Bolsa tote",
+          "description": "Bolsa de lona resistente con asas reforzadas y estampado exclusivo."
+        },
+        "mug": {
+          "name": "Taza de porcelana",
+          "description": "Taza de porcelana fina con detalle en cobre y logotipo Terra Infinitus."
+        },
+        "towel": {
+          "name": "Toalla de playa",
+          "description": "Toalla de algodón premium con diseño inspirado en nuestros paisajes."
+        },
+        "scarf": {
+          "name": "Bufanda de seda",
+          "description": "Bufanda ligera de seda con motivos del Alto Tajo y acabado artesanal."
+        }
+      }
+    }
+  },
   "placeholder": {
     "message": "Esta sección se desarrollará en próximas iteraciones.",
     "defaultTitle": "Página en construcción"

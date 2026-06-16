@@ -109,6 +109,74 @@
     "p9": "In Spanien wird unser Team aus Talenten in den verschiedenen Bereichen bestehen, die für den Grad an Exklusivität nötig sind — Menschen mit echter Sensibilität und Erfahrung in spanischer Hotellerie, Kundenservice, Möbeldesign, Dekoration und Gastronomie sowie einem vollständigen Verständnis von Tourismus, Leitung und Betreuung.",
     "p10": "Wir verfügen über spezialisierte Gartenbautechniker, die eine Oase auf dem Gelände gestalten, sowie Wasserexperten und weiteres Personal, das wir vor Ort rekrutieren und schulen, damit die Harmonie des Ganzen dem Projekt gerecht wird und die Erwartungen unserer Gäste übertrifft — mit definitivem Impact auf die Gemeinschaft, voller Beschäftigung mit qualitativ hochwertigen und stabilen Arbeitsplätzen und einer einzigartigen, innovativen, rentablen und nachhaltigen Idee."
   },
+  "shop": {
+    "productListAria": "Produktliste",
+    "empty": "Derzeit sind keine Produkte verfügbar.",
+    "gourmet": {
+      "eyebrow": "Boutique-Shop",
+      "title": "Gourmet",
+      "description": "Eine Auswahl von Gourmet-Produkten aus regionalen Zutaten mit dem Terra-Infinitus-Qualitätssiegel. Ideal, um den Geschmack unserer Destinationen mit nach Hause zu nehmen."
+    },
+    "merchandising": {
+      "eyebrow": "Boutique-Shop",
+      "title": "Merchandising",
+      "description": "Exklusive Terra-Infinitus-Artikel: zeitgenössisches Design, hochwertige Materialien und die Identität unserer Destinationen. Nehmen Sie eine Erinnerung an Ihr Erlebnis mit."
+    },
+    "products": {
+      "gourmet": {
+        "oliveOil": {
+          "name": "Natives Olivenöl extra",
+          "description": "Frühernteöl aus dem Landesinneren von Guadalajara mit kräutrigen Noten und sanftem Abgang."
+        },
+        "honey": {
+          "name": "Alto-Tajo-Honig",
+          "description": "Handwerklicher Rosmarin-Thymian-Honig aus der Umgebung des Naturparks."
+        },
+        "wine": {
+          "name": "Reserve-Rotwein",
+          "description": "Auswahl lokaler Weingüter mit Barrikenreife und ausgewogenem Geschmack."
+        },
+        "preserves": {
+          "name": "Handwerkliche Konserven",
+          "description": "Gemüse und Pilze der Region, in kleinen Chargen eingemacht."
+        },
+        "cheese": {
+          "name": "Gereifter Schafskäse",
+          "description": "Langsam gereifter Käse mit fester Textur und intensivem Aroma."
+        },
+        "ham": {
+          "name": "Eichelmast-Ibericoschinken",
+          "description": "Fein geschnittener Schinken, mehr als dreißig Monate gereift."
+        }
+      },
+      "merchandising": {
+        "tshirt": {
+          "name": "Terra-Infinitus-T-Shirt",
+          "description": "Bio-Baumwolle mit gesticktem Logo und Unisex-Schnitt."
+        },
+        "cap": {
+          "name": "Terra-Infinitus-Cap",
+          "description": "Verstellbare Baumwollcap mit dezenter Markenstickerei."
+        },
+        "tote": {
+          "name": "Tote Bag",
+          "description": "Robuste Canvas-Tasche mit verstärkten Henkeln und exklusivem Druck."
+        },
+        "mug": {
+          "name": "Porzellanbecher",
+          "description": "Feines Porzellan mit Kupferdetail und Terra-Infinitus-Logo."
+        },
+        "towel": {
+          "name": "Strandtuch",
+          "description": "Premium-Baumwollhandtuch mit Design inspiriert von unseren Landschaften."
+        },
+        "scarf": {
+          "name": "Seidenschal",
+          "description": "Leichter Seidenschal mit Alto-Tajo-Motiven und handwerklicher Verarbeitung."
+        }
+      }
+    }
+  },
   "placeholder": {
     "message": "Dieser Bereich wird in kommenden Iterationen entwickelt.",
     "defaultTitle": "Seite im Aufbau"

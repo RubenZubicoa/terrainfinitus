@@ -7,6 +7,7 @@ import { Videos } from './pages/galery/videos/videos';
 import { Images } from './pages/galery/images/images';
 import { projectsRoutes } from './pages/projects/projects.routes';
 import { aboutUsRoutes } from './pages/abaut-us/about-us.routes';
+import { shopRoutes } from './pages/shop/shop.routes';
 
 const placeholder = (titleKey: string) => ({
   component: PlaceholderComponent,
@@ -25,10 +26,7 @@ export const routes: Routes = [
       { path: 'gastronomia/presentacion', ...placeholder('nav.presentation') },
       { path: 'gastronomia/cartas', ...placeholder('nav.menus') },
       { path: 'actividades', ...placeholder('nav.activities') },
-      { path: 'tienda-boutique', redirectTo: 'tienda-boutique/gourmet', pathMatch: 'full' },
-      { path: 'tienda-boutique/gourmet', ...placeholder('nav.shopGourmet') },
-      { path: 'tienda-boutique/merchandising', ...placeholder('nav.shopMerchandising') },
-      { path: 'tienda-boutique/the-lake', ...placeholder('nav.shopTheLake') },
+      { path: 'tienda-boutique', children: shopRoutes },
       { path: 'galeria/fotos', redirectTo: 'galeria/fotos/proyectos', pathMatch: 'full' },
       { path: 'galeria/fotos/proyectos', component: Images },
       { path: 'galeria/fotos/naturaleza', component: Images },

@@ -1,0 +1,28 @@
+<section class="product-list" [attr.aria-label]="listAriaKey() | translate">
+  @if (products().length === 0) {
+    <p class="product-list__empty">{{ emptyKey() | translate }}</p>
+  } @else {
+    <ul class="product-list__grid">
+      @for (product of products(); track product.id) {
+        <li class="product-list__item">
+          <article class="product-card">
+            <div class="product-card__media">
+              <img
+                [src]="product.image"
+                [alt]="product.nameKey | translate"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__body">
+              <h3 class="product-card__name">{{ product.nameKey | translate }}</h3>
+              <p class="product-card__description">{{ product.descriptionKey | translate }}</p>
+              <p class="product-card__price">
+                {{ product.price | currency: 'EUR' : 'symbol' : '1.0-0' }}
+              </p>
+            </div>
+          </article>
+        </li>
+      }
+    </ul>
+  }
+</section>
