@@ -115,7 +115,7 @@
     "gourmet": {
       "eyebrow": "Boutique Shop",
       "title": "Gourmet",
-      "description": "A curated selection of gourmet products made with local ingredients and the Terra Infinitus quality seal. Perfect to take the taste of our destinations home with you."
+      "description": "A selection of Malvasía foie gras and duck products from Soria, with the Terra Infinitus quality seal. Perfect to take the gourmet taste of our destinations home with you."
     },
     "merchandising": {
       "eyebrow": "Boutique Shop",
@@ -124,29 +124,157 @@
     },
     "products": {
       "gourmet": {
-        "oliveOil": {
-          "name": "Extra virgin olive oil",
-          "description": "Early-harvest oil from inland Guadalajara with herbaceous notes and a smooth finish."
+        "loteGourmetExperience": {
+          "name": "Gourmet Experience Gift Set",
+          "description": "Gift box | The perfect gourmet present."
         },
-        "honey": {
-          "name": "Alto Tajo honey",
-          "description": "Artisan rosemary and thyme honey harvested in the natural park surroundings."
+        "loteCaprichoSeleccion": {
+          "name": "Capricho Selección Gift Set",
+          "description": "Gift box | The perfect gourmet present."
         },
-        "wine": {
-          "name": "Reserve red wine",
-          "description": "A selection from local wineries with barrel ageing and excellent balance."
+        "foieFrescoExtraDesvenado": {
+          "name": "Extra Fresh Deveined Foie Gras",
+          "description": "Individual vacuum-packed piece. 550–600 g."
         },
-        "preserves": {
-          "name": "Artisan preserves",
-          "description": "Vegetables and mushrooms from the region, preserved in small batches."
+        "foieFrescoExtra600": {
+          "name": "Extra Fresh Foie Gras 600 g",
+          "description": "Premium duck foie gras, 550–650 g piece, ideal for pan-searing."
         },
-        "cheese": {
-          "name": "Aged sheep's cheese",
-          "description": "Slowly matured cheese with a firm texture and intense aroma."
+        "foieMiCuit250": {
+          "name": "Whole Mi-Cuit Foie Gras 250 g",
+          "description": "Whole duck mi-cuit foie gras, lightly pasteurised and vacuum-packed."
         },
-        "ham": {
-          "name": "Acorn-fed Iberian ham",
-          "description": "Finely sliced ham cured for more than thirty months."
+        "foieMiCuit250Estuchado": {
+          "name": "Whole Mi-Cuit Foie Gras 250 g Gift Box",
+          "description": "Vacuum-packed bag in gift box. 250 g."
+        },
+        "foieEntero180": {
+          "name": "Whole Foie Gras 180 g",
+          "description": "Glass jar. 180 g."
+        },
+        "foieEntero130": {
+          "name": "Whole Foie Gras 130 g",
+          "description": "Easy-open round tin. 130 g."
+        },
+        "foieEntero65": {
+          "name": "Whole Foie Gras 65 g",
+          "description": "Round tin. 65 g."
+        },
+        "terrinaBlocMiCuit1kg": {
+          "name": "Mi-Cuit Foie Gras Bloc Terrine 1 kg",
+          "description": "Heat-sealed tray. 1000 g."
+        },
+        "terrinaBlocMiCuit440": {
+          "name": "Mi-Cuit Foie Gras Bloc Terrine 440 g",
+          "description": "Heat-sealed tray. 440 g."
+        },
+        "blocTrozos130": {
+          "name": "Foie Gras Bloc with Pieces 130 g",
+          "description": "Easy-open round tin. 130 g."
+        },
+        "blocTrozos1kg": {
+          "name": "Foie Gras Bloc with Pieces 1 kg",
+          "description": "Round tin. 1000 g."
+        },
+        "confitPulled": {
+          "name": "Pulled Duck Confit 1.2 kg",
+          "description": "Shredded duck confit, ready to serve. 1.2 kg."
+        },
+        "magretFresco": {
+          "name": "Fresh Duck Magret",
+          "description": "Fresh vacuum-packed duck breast from foie gras ducks."
+        },
+        "magretMaitreHotel": {
+          "name": "Duck Magret Maître d'Hôtel 400 g",
+          "description": "Vacuum-packed piece with Maître d'Hôtel marinade in gift box. 400 g."
+        },
+        "magretMediterraneo": {
+          "name": "Duck Magret Mediterranean 400 g",
+          "description": "Vacuum-packed piece with Mediterranean marinade in gift box. 400 g."
+        },
+        "magretBbq": {
+          "name": "Duck Magret BBQ 400 g",
+          "description": "Vacuum-packed piece with BBQ marinade in gift box. 400 g."
+        },
+        "magretTeriyaki": {
+          "name": "Duck Magret Teriyaki 400 g",
+          "description": "Vacuum-packed piece with teriyaki marinade in gift box. 400 g."
+        },
+        "pateMoscatel130": {
+          "name": "Duck Pâté with Moscatel 130 g",
+          "description": "Easy-open round tin. 130 g."
+        },
+        "pateMoscatel1kg": {
+          "name": "Duck Pâté with Moscatel 1 kg",
+          "description": "Round tin. 1000 g."
+        },
+        "confitMuslos10": {
+          "name": "Duck Leg Confit (10 pieces)",
+          "description": "Round tin with 10 duck legs confit in their fat."
+        },
+        "confitMuslos5": {
+          "name": "Duck Leg Confit (5 pieces)",
+          "description": "Five tender, gluten-free duck legs confit in their fat."
+        },
+        "confitMuslos2": {
+          "name": "Duck Leg Confit (2 pieces)",
+          "description": "Round tin with 2 confit duck legs."
+        },
+        "confitMusloIndividual": {
+          "name": "Individual Duck Leg Confit 210 g",
+          "description": "Individual vacuum-packed piece. 210 g."
+        },
+        "confitAlas25": {
+          "name": "Confit Duck Wings (25 pieces)",
+          "description": "Round box with 25 confit duck wings."
+        },
+        "confitAlas7": {
+          "name": "Confit Duck Wings (7 pieces)",
+          "description": "Round tin with 7 confit duck wings."
+        },
+        "confitMollejas320": {
+          "name": "Duck Gizzards Confit 320 g",
+          "description": "Round tin. 320 g."
+        },
+        "lotePremium": {
+          "name": "Malvasía Premium Gift Set",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "loteMiCuitBloc": {
+          "name": "Malvasía Mi-Cuit + Bloc Gift Set",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "lote3Foies": {
+          "name": "Malvasía 3 Foies Gift Set",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "lote3FoiesMini": {
+          "name": "3 Mini Foies Gift Set 100 g",
+          "description": "An ideal gourmet gift."
+        },
+        "lote3FoiesAbrefacil": {
+          "name": "3 Foies Easy-Open Gift Set 130 g",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "lote3Mousses": {
+          "name": "3 Gourmet Mousses Gift Set",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "lote3MoussesAbrefacil": {
+          "name": "3 Mousses Easy-Open Gift Set 130 g",
+          "description": "Gift box | The perfect gourmet present."
+        },
+        "cestaSauvignon": {
+          "name": "Malvasía Gourmet Basket & Sauvignon Blanc",
+          "description": "Gift box with Sauvignon Blanc R.O. Rueda wine."
+        },
+        "cestaPedroXimenez": {
+          "name": "Malvasía Gourmet Basket & Pedro Ximénez",
+          "description": "Gift box with Pedro Ximénez wine."
+        },
+        "cestaMoscatel": {
+          "name": "Malvasía Gourmet Basket & Moscatel",
+          "description": "Gift box with Moscatel wine."
         }
       },
       "merchandising": {
@@ -227,60 +355,168 @@
       "bungalowsAvailableCount": "{{count}} bungalows available"
     },
     "units": {
-      "per101": { "name": "Junior Lagoon — Tajo View" },
-      "per102": { "name": "Junior Lagoon — Garden View" },
-      "per103": { "name": "Junior Lagoon — Park Terrace" },
-      "per201": { "name": "Tajo Suite" },
-      "per202": { "name": "River Suite" },
-      "per203": { "name": "Tajo Panorama Suite" },
-      "per401": { "name": "Presidential Suite Tajo" },
-      "per402": { "name": "Presidential Suite Park" },
-      "per501": { "name": "Commodore Tajo Suite" },
-      "per502": { "name": "Commodore High View Suite" },
-      "perA01": { "name": "Type A" },
-      "perA02": { "name": "Type A" },
-      "perA03": { "name": "Type A" },
-      "perA04": { "name": "Type A" },
-      "perA05": { "name": "Type A" },
-      "perA06": { "name": "Type A" },
-      "perA07": { "name": "Type A" },
-      "perA08": { "name": "Type A" },
-      "perA09": { "name": "Type A" },
-      "perA10": { "name": "Type A" },
-      "perA11": { "name": "Type A" },
-      "perA12": { "name": "Type A" },
-      "perA13": { "name": "Type A" },
-      "perA14": { "name": "Type A" },
-      "perB01": { "name": "Type B" },
-      "perB02": { "name": "Type B" },
-      "perB03": { "name": "Type B" },
-      "perB04": { "name": "Type B" },
-      "perB05": { "name": "Type B" },
-      "perB06": { "name": "Type B" },
-      "perB07": { "name": "Type B" },
-      "perB08": { "name": "Type B" },
-      "perB09": { "name": "Type B" },
-      "perB10": { "name": "Type B" },
-      "perB11": { "name": "Type B" },
-      "bug01": { "name": "North Garden Bungalow" },
-      "bug02": { "name": "East Garden Bungalow" },
-      "bug03": { "name": "South Garden Bungalow" },
-      "bug04": { "name": "West Garden Bungalow" },
-      "bug05": { "name": "Olive Grove Bungalow" },
-      "bug06": { "name": "Holm Oak Bungalow" },
-      "bug07": { "name": "Lavender Bungalow" },
-      "bug08": { "name": "Rosemary Bungalow" },
-      "bug09": { "name": "Almond Tree Bungalow" },
-      "bug10": { "name": "Lookout Bungalow" },
-      "bug11": { "name": "Terrace Bungalow" },
-      "bug12": { "name": "Valley Bungalow" },
-      "bug13": { "name": "Horizon Bungalow" },
-      "bug14": { "name": "Breeze Bungalow" },
-      "lake01": { "name": "North Shore Fisher Lodge" },
-      "lake02": { "name": "Executive Lake View" },
-      "lake11": { "name": "East Panorama Suite" },
-      "lake12": { "name": "West Panorama Suite" },
-      "lake21": { "name": "Panorama Commodore Suite" }
+      "per101": {
+        "name": "Junior Lagoon — Tajo View"
+      },
+      "per102": {
+        "name": "Junior Lagoon — Garden View"
+      },
+      "per103": {
+        "name": "Junior Lagoon — Park Terrace"
+      },
+      "per201": {
+        "name": "Tajo Suite"
+      },
+      "per202": {
+        "name": "River Suite"
+      },
+      "per203": {
+        "name": "Tajo Panorama Suite"
+      },
+      "per401": {
+        "name": "Presidential Suite Tajo"
+      },
+      "per402": {
+        "name": "Presidential Suite Park"
+      },
+      "per501": {
+        "name": "Commodore Tajo Suite"
+      },
+      "per502": {
+        "name": "Commodore High View Suite"
+      },
+      "perA01": {
+        "name": "Type A"
+      },
+      "perA02": {
+        "name": "Type A"
+      },
+      "perA03": {
+        "name": "Type A"
+      },
+      "perA04": {
+        "name": "Type A"
+      },
+      "perA05": {
+        "name": "Type A"
+      },
+      "perA06": {
+        "name": "Type A"
+      },
+      "perA07": {
+        "name": "Type A"
+      },
+      "perA08": {
+        "name": "Type A"
+      },
+      "perA09": {
+        "name": "Type A"
+      },
+      "perA10": {
+        "name": "Type A"
+      },
+      "perA11": {
+        "name": "Type A"
+      },
+      "perA12": {
+        "name": "Type A"
+      },
+      "perA13": {
+        "name": "Type A"
+      },
+      "perA14": {
+        "name": "Type A"
+      },
+      "perB01": {
+        "name": "Type B"
+      },
+      "perB02": {
+        "name": "Type B"
+      },
+      "perB03": {
+        "name": "Type B"
+      },
+      "perB04": {
+        "name": "Type B"
+      },
+      "perB05": {
+        "name": "Type B"
+      },
+      "perB06": {
+        "name": "Type B"
+      },
+      "perB07": {
+        "name": "Type B"
+      },
+      "perB08": {
+        "name": "Type B"
+      },
+      "perB09": {
+        "name": "Type B"
+      },
+      "perB10": {
+        "name": "Type B"
+      },
+      "perB11": {
+        "name": "Type B"
+      },
+      "bug01": {
+        "name": "North Garden Bungalow"
+      },
+      "bug02": {
+        "name": "East Garden Bungalow"
+      },
+      "bug03": {
+        "name": "South Garden Bungalow"
+      },
+      "bug04": {
+        "name": "West Garden Bungalow"
+      },
+      "bug05": {
+        "name": "Olive Grove Bungalow"
+      },
+      "bug06": {
+        "name": "Holm Oak Bungalow"
+      },
+      "bug07": {
+        "name": "Lavender Bungalow"
+      },
+      "bug08": {
+        "name": "Rosemary Bungalow"
+      },
+      "bug09": {
+        "name": "Almond Tree Bungalow"
+      },
+      "bug10": {
+        "name": "Lookout Bungalow"
+      },
+      "bug11": {
+        "name": "Terrace Bungalow"
+      },
+      "bug12": {
+        "name": "Valley Bungalow"
+      },
+      "bug13": {
+        "name": "Horizon Bungalow"
+      },
+      "bug14": {
+        "name": "Breeze Bungalow"
+      },
+      "lake01": {
+        "name": "North Shore Fisher Lodge"
+      },
+      "lake02": {
+        "name": "Executive Lake View"
+      },
+      "lake11": {
+        "name": "East Panorama Suite"
+      },
+      "lake12": {
+        "name": "West Panorama Suite"
+      },
+      "lake21": {
+        "name": "Panorama Commodore Suite"
+      }
     },
     "stats": {
       "rooms": "Rooms",

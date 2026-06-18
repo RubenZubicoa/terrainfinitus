@@ -115,7 +115,7 @@
     "gourmet": {
       "eyebrow": "Tienda Boutique",
       "title": "Gourmet",
-      "description": "Selección de productos gourmet elaborados con ingredientes de proximidad y el sello de calidad Terra Infinitus. Ideales para llevar contigo el sabor de nuestros destinos."
+      "description": "Selección de foie gras y productos de pato Malvasía, elaborados en Soria con el sello de calidad Terra Infinitus. Ideales para llevar contigo el sabor gourmet de nuestros destinos."
     },
     "merchandising": {
       "eyebrow": "Tienda Boutique",
@@ -124,29 +124,157 @@
     },
     "products": {
       "gourmet": {
-        "oliveOil": {
-          "name": "Aceite de oliva virgen extra",
-          "description": "Aceite de cosecha temprana del interior de Guadalajara, con notas herbáceas y un final suave."
+        "loteGourmetExperience": {
+          "name": "Lote Gourmet Experience",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
         },
-        "honey": {
-          "name": "Miel del Alto Tajo",
-          "description": "Miel artesanal de romero y tomillo recolectada en el entorno del parque natural."
+        "loteCaprichoSeleccion": {
+          "name": "Lote Capricho Selección",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
         },
-        "wine": {
-          "name": "Vino tinto reserva",
-          "description": "Selección de bodegas locales con crianza en barrica y gran equilibrio en boca."
+        "foieFrescoExtraDesvenado": {
+          "name": "Foie Gras Fresco Extra Desvenado",
+          "description": "Pieza individual envasada al vacío. 550–600 g."
         },
-        "preserves": {
-          "name": "Conservas artesanales",
-          "description": "Verduras y setas del territorio en conserva, elaboradas en pequeños lotes."
+        "foieFrescoExtra600": {
+          "name": "Foie Gras Fresco Extra 600 g",
+          "description": "Foie gras fresco extra de pato, pieza premium de 550–650 g, ideal para cocinar a la plancha."
         },
-        "cheese": {
-          "name": "Queso curado de oveja",
-          "description": "Queso madurado lentamente con textura firme y aroma intenso."
+        "foieMiCuit250": {
+          "name": "Foie Gras Entero Mi-Cuit 250 g",
+          "description": "Foie gras entero mi-cuit de pato, ligeramente pasteurizado y envasado al vacío."
         },
-        "ham": {
-          "name": "Jamón ibérico de bellota",
-          "description": "Loncheado fino de jamón curado durante más de treinta meses."
+        "foieMiCuit250Estuchado": {
+          "name": "Foie Gras Entero Mi-Cuit 250 g Estuchado",
+          "description": "Bolsa al vacío estuchada de 250 g."
+        },
+        "foieEntero180": {
+          "name": "Foie Gras Entero 180 g",
+          "description": "Tarro de cristal de 180 g."
+        },
+        "foieEntero130": {
+          "name": "Foie Gras Entero 130 g",
+          "description": "Lata redonda abrefácil de 130 g."
+        },
+        "foieEntero65": {
+          "name": "Foie Gras Entero 65 g",
+          "description": "Lata redonda de 65 g."
+        },
+        "terrinaBlocMiCuit1kg": {
+          "name": "Terrina de Bloc de Foie Gras con Trozos Mi-Cuit 1 kg",
+          "description": "Barqueta termosellada de 1000 g."
+        },
+        "terrinaBlocMiCuit440": {
+          "name": "Terrina de Bloc Foie Gras con Trozos Mi-Cuit 440 g",
+          "description": "Barqueta termosellada de 440 g."
+        },
+        "blocTrozos130": {
+          "name": "Bloc de Foie Gras con Trozos 130 g",
+          "description": "Lata redonda abrefácil de 130 g."
+        },
+        "blocTrozos1kg": {
+          "name": "Bloc de Foie Gras con Trozos 1 kg",
+          "description": "Lata redonda de 1000 g."
+        },
+        "confitPulled": {
+          "name": "Confit de Pato Pulled Desmigado 1,2 kg",
+          "description": "Confit de pato desmigado, listo para servir. 1,2 kg."
+        },
+        "magretFresco": {
+          "name": "Magret de Pato Fresco",
+          "description": "Magret de pato fresco envasado al vacío, procedente de patos de foie gras."
+        },
+        "magretMaitreHotel": {
+          "name": "Magret de Pato Maître d'Hôtel 400 g",
+          "description": "Pieza envasada al vacío con marinado Maître d'Hôtel, presentada en estuche. 400 g."
+        },
+        "magretMediterraneo": {
+          "name": "Magret de Pato Mediterráneo 400 g",
+          "description": "Pieza envasada al vacío con marinado mediterráneo, presentada en estuche. 400 g."
+        },
+        "magretBbq": {
+          "name": "Magret de Pato BBQ 400 g",
+          "description": "Pieza envasada al vacío con marinado BBQ, presentada en estuche. 400 g."
+        },
+        "magretTeriyaki": {
+          "name": "Magret de Pato Teriyaki 400 g",
+          "description": "Pieza envasada al vacío con marinado teriyaki, presentada en estuche. 400 g."
+        },
+        "pateMoscatel130": {
+          "name": "Paté de Pato al Moscatel 130 g",
+          "description": "Lata circular abrefácil de 130 g."
+        },
+        "pateMoscatel1kg": {
+          "name": "Paté de Pato al Moscatel 1 kg",
+          "description": "Lata redonda de 1000 g."
+        },
+        "confitMuslos10": {
+          "name": "Confit Muslos de Pato (10 unidades)",
+          "description": "Lata redonda con 10 muslos de pato confitados en su grasa."
+        },
+        "confitMuslos5": {
+          "name": "Confit Muslos de Pato (5 unidades)",
+          "description": "Cinco muslos de pato confitados en su grasa, tiernos y sin gluten."
+        },
+        "confitMuslos2": {
+          "name": "Confit Muslos de Pato (2 unidades)",
+          "description": "Lata redonda con 2 muslos de pato confitados."
+        },
+        "confitMusloIndividual": {
+          "name": "Confit Muslo de Pato Individual 210 g",
+          "description": "Pieza individual envasada al vacío de 210 g."
+        },
+        "confitAlas25": {
+          "name": "Alitas de Pato Confitadas (25 unidades)",
+          "description": "Caja redonda con 25 alas de pato confitadas."
+        },
+        "confitAlas7": {
+          "name": "Alas de Pato Confitadas (7 unidades)",
+          "description": "Lata redonda con 7 alas de pato confitadas."
+        },
+        "confitMollejas320": {
+          "name": "Confit de Mollejas de Pato 320 g",
+          "description": "Lata redonda de 320 g."
+        },
+        "lotePremium": {
+          "name": "Lote Premium Malvasía",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "loteMiCuitBloc": {
+          "name": "Lote Mi-Cuit + Bloc Malvasía",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "lote3Foies": {
+          "name": "Lote 3 Foies Malvasía",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "lote3FoiesMini": {
+          "name": "Lote 3 Foies Mini 100 g",
+          "description": "Un regalo gourmet ideal."
+        },
+        "lote3FoiesAbrefacil": {
+          "name": "Lote 3 Foies Abrefácil 130 g",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "lote3Mousses": {
+          "name": "Lote 3 Mousses Gourmet",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "lote3MoussesAbrefacil": {
+          "name": "Lote 3 Mousses Abrefácil 130 g",
+          "description": "Estuche para regalo | El regalo gourmet perfecto."
+        },
+        "cestaSauvignon": {
+          "name": "Cesta Gourmet Malvasía & Sauvignon Blanc",
+          "description": "Estuche para regalo con vino Sauvignon Blanc R.O. Rueda."
+        },
+        "cestaPedroXimenez": {
+          "name": "Cesta Gourmet Malvasía & Pedro Ximénez",
+          "description": "Estuche para regalo con vino Pedro Ximénez."
+        },
+        "cestaMoscatel": {
+          "name": "Cesta Gourmet Malvasía & Moscatel",
+          "description": "Estuche para regalo con vino Moscatel."
         }
       },
       "merchandising": {

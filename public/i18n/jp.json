@@ -115,7 +115,7 @@
     "gourmet": {
       "eyebrow": "ブティックショップ",
       "title": "Gourmet",
-      "description": "地元の食材とテラ・インフィニタスの品質で作られたグルメ商品のセレクション。旅先の味をお持ち帰りいただけます。"
+      "description": "ソリア産マルバシアのフォアグラと鴨製品のセレクション。Terra Infinitus品質保証付き。目的地のグルメの味をお持ち帰りいただけます。"
     },
     "merchandising": {
       "eyebrow": "ブティックショップ",
@@ -124,29 +124,157 @@
     },
     "products": {
       "gourmet": {
-        "oliveOil": {
-          "name": "エクストラバージンオリーブオイル",
-          "description": "グアダラハラ内陸の早期収穫オイル。ハーブの香りとまろやかな余韻。"
+        "loteGourmetExperience": {
+          "name": "グルメエクスペリエンスギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
         },
-        "honey": {
-          "name": "アルト・タホの蜂蜜",
-          "description": "自然公園周辺で採れたローズマリーとタイムの手作り蜂蜜。"
+        "loteCaprichoSeleccion": {
+          "name": "カプリチョセレcciónギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
         },
-        "wine": {
-          "name": "リザーブ赤ワイン",
-          "description": "地元ワイナリーのセレクション。樽熟成とバランスの取れた味わい。"
+        "foieFrescoExtraDesvenado": {
+          "name": "エクストラフレッシュフォアグラ（静脈除去）",
+          "description": "真空パック個包装。550–600 g。"
         },
-        "preserves": {
-          "name": "手作り保存食",
-          "description": "地域の野菜ときのこを小ロットで瓶詰めした保存食。"
+        "foieFrescoExtra600": {
+          "name": "エクストラフレッシュフォアグラ 600 g",
+          "description": "プレミアム鴨フォアグラ、550–650 g。フライパン調理に最適。"
         },
-        "cheese": {
-          "name": "熟成羊乳チーズ",
-          "description": "ゆっくり熟成させた、しっかりした食感と濃厚な香りのチーズ。"
+        "foieMiCuit250": {
+          "name": "ミキュイフォアグラ丸ごと 250 g",
+          "description": "鴨ミキュイフォアグラ、軽く低温殺菌、真空パック。"
         },
-        "ham": {
-          "name": "ベジョータイベリコハム",
-          "description": "30か月以上熟成したハムを薄切りにした逸品。"
+        "foieMiCuit250Estuchado": {
+          "name": "ミキュイフォアグラ丸ごと 250 g ギフト箱",
+          "description": "真空パック袋入りギフト箱。250 g。"
+        },
+        "foieEntero180": {
+          "name": "フォアグラ丸ごと 180 g",
+          "description": "ガラス瓶。180 g。"
+        },
+        "foieEntero130": {
+          "name": "フォアグラ丸ごと 130 g",
+          "description": "イージーオープン丸缶。130 g。"
+        },
+        "foieEntero65": {
+          "name": "フォアグラ丸ごと 65 g",
+          "description": "丸缶。65 g。"
+        },
+        "terrinaBlocMiCuit1kg": {
+          "name": "ミキュイフォアグラブロックテリーヌ 1 kg",
+          "description": "熱密封トレー。1000 g。"
+        },
+        "terrinaBlocMiCuit440": {
+          "name": "ミキュイフォアグラブロックテリーヌ 440 g",
+          "description": "熱密封トレー。440 g。"
+        },
+        "blocTrozos130": {
+          "name": "フォアグラブロック（角切り入り）130 g",
+          "description": "イージーオープン丸缶。130 g。"
+        },
+        "blocTrozos1kg": {
+          "name": "フォアグラブロック（角切り入り）1 kg",
+          "description": "丸缶。1000 g。"
+        },
+        "confitPulled": {
+          "name": "プルドダックコンフィ 1.2 kg",
+          "description": "ほぐしダックコンフィ、すぐに提供可能。1.2 kg。"
+        },
+        "magretFresco": {
+          "name": "フレッシュダックマグレ",
+          "description": "フォアグラ用鴨の真空パック生マグレ。"
+        },
+        "magretMaitreHotel": {
+          "name": "ダックマグレ メートルドテル 400 g",
+          "description": "メートルドテルマリネ、ギフト箱入り真空パック。400 g。"
+        },
+        "magretMediterraneo": {
+          "name": "ダックマグレ 地中海風 400 g",
+          "description": "地中海風マリネ、ギフト箱入り真空パック。400 g。"
+        },
+        "magretBbq": {
+          "name": "ダックマグレ BBQ 400 g",
+          "description": "BBQマリネ、ギフト箱入り真空パック。400 g。"
+        },
+        "magretTeriyaki": {
+          "name": "ダックマグレ 照り焼き 400 g",
+          "description": "照り焼きマリネ、ギフト箱入り真空パック。400 g。"
+        },
+        "pateMoscatel130": {
+          "name": "モスカテル入り鴨パテ 130 g",
+          "description": "イージーオープン丸缶。130 g。"
+        },
+        "pateMoscatel1kg": {
+          "name": "モスカテル入り鴨パテ 1 kg",
+          "description": "丸缶。1000 g。"
+        },
+        "confitMuslos10": {
+          "name": "ダックモモコンフィ（10本）",
+          "description": "丸缶、脂でコンフィしたモモ10本。"
+        },
+        "confitMuslos5": {
+          "name": "ダックモモコンフィ（5本）",
+          "description": "脂でコンフィした柔らかいグルテンフリーモモ5本。"
+        },
+        "confitMuslos2": {
+          "name": "ダックモモコンフィ（2本）",
+          "description": "丸缶、コンフィモモ2本。"
+        },
+        "confitMusloIndividual": {
+          "name": "ダックモモコンフィ 個包装 210 g",
+          "description": "真空パック個包装。210 g。"
+        },
+        "confitAlas25": {
+          "name": "ダック手羽コンフィ（25本）",
+          "description": "丸箱、コンフィ手羽25本。"
+        },
+        "confitAlas7": {
+          "name": "ダック手羽コンフィ（7本）",
+          "description": "丸缶、コンフィ手羽7本。"
+        },
+        "confitMollejas320": {
+          "name": "ダック砂肝コンフィ 320 g",
+          "description": "丸缶。320 g。"
+        },
+        "lotePremium": {
+          "name": "マルバシアプレミアムギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "loteMiCuitBloc": {
+          "name": "マルバシア ミキュイ+ブロックギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "lote3Foies": {
+          "name": "マルバシア 3フォアグラギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "lote3FoiesMini": {
+          "name": "3ミニフォアグラギフトセット 100 g",
+          "description": "理想的なグルメギフト。"
+        },
+        "lote3FoiesAbrefacil": {
+          "name": "3フォアグライージーオープンギフトセット 130 g",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "lote3Mousses": {
+          "name": "3グルメムースギフトセット",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "lote3MoussesAbrefacil": {
+          "name": "3ムースイージーオープンギフトセット 130 g",
+          "description": "ギフトボックス｜完璧なグルメギフト。"
+        },
+        "cestaSauvignon": {
+          "name": "マルバシアグルメバスケット＆ソーヴィニヨンブラン",
+          "description": "ソーヴィニヨンブラン R.O. Rueda 入りギフト箱。"
+        },
+        "cestaPedroXimenez": {
+          "name": "マルバシアグルメバスケット＆ペドロヒメネス",
+          "description": "ペドロヒメネス入りギフト箱。"
+        },
+        "cestaMoscatel": {
+          "name": "マルバシアグルメバスケット＆モスカテル",
+          "description": "モスカテル入りギフト箱。"
         }
       },
       "merchandising": {
@@ -227,110 +355,348 @@
       "bungalowsAvailableCount": "空室バンガロー {{count}} 棟"
     },
     "units": {
-      "per101": { "name": "ジュニア・ラグーン — タホ眺望" },
-      "per102": { "name": "ジュニア・ラグーン — 庭園眺望" },
-      "per103": { "name": "ジュニア・ラグーン — パークテラス" },
-      "per201": { "name": "タホスイート" },
-      "per202": { "name": "リバースイート" },
-      "per203": { "name": "タホパノラマスイート" },
-      "per401": { "name": "プレジデンシャルスイート・タホ" },
-      "per402": { "name": "プレジデンシャルスイート・パーク" },
-      "per501": { "name": "コモドア・タホスイート" },
-      "per502": { "name": "コモドア・ハイビュースイート" },
-      "perA01": { "name": "Tipo A" },
-      "perA02": { "name": "Tipo A" },
-      "perA03": { "name": "Tipo A" },
-      "perA04": { "name": "Tipo A" },
-      "perA05": { "name": "Tipo A" },
-      "perA06": { "name": "Tipo A" },
-      "perA07": { "name": "Tipo A" },
-      "perA08": { "name": "Tipo A" },
-      "perA09": { "name": "Tipo A" },
-      "perA10": { "name": "Tipo A" },
-      "perA11": { "name": "Tipo A" },
-      "perA12": { "name": "Tipo A" },
-      "perA13": { "name": "Tipo A" },
-      "perA14": { "name": "Tipo A" },
-      "perB01": { "name": "Tipo B" },
-      "perB02": { "name": "Tipo B" },
-      "perB03": { "name": "Tipo B" },
-      "perB04": { "name": "Tipo B" },
-      "perB05": { "name": "Tipo B" },
-      "perB06": { "name": "Tipo B" },
-      "perB07": { "name": "Tipo B" },
-      "perB08": { "name": "Tipo B" },
-      "perB09": { "name": "Tipo B" },
-      "perB10": { "name": "Tipo B" },
-      "perB11": { "name": "Tipo B" },
-      "bug01": { "name": "北庭園バンガロー" },
-      "bug02": { "name": "東庭園バンガロー" },
-      "bug03": { "name": "南庭園バンガロー" },
-      "bug04": { "name": "西庭園バンガロー" },
-      "bug05": { "name": "オリーブバンガロー" },
-      "bug06": { "name": "ホルムオークバンガロー" },
-      "bug07": { "name": "ラベンダーバンガロー" },
-      "bug08": { "name": "ローズマリーバンガロー" },
-      "bug09": { "name": "アーモンドバンガロー" },
-      "bug10": { "name": "展望バンガロー" },
-      "bug11": { "name": "テラスバンガロー" },
-      "bug12": { "name": "ヴァレーバンガロー" },
-      "bug13": { "name": "ホライゾンバンガロー" },
-      "bug14": { "name": "ブリーズバンガロー" },
-      "lake01": { "name": "フィッシャーロッジ北岸" },
-      "lake02": { "name": "エグゼクティブ・レイクビュー" },
-      "lake11": { "name": "イーストパノラマスイート" },
-      "lake12": { "name": "ウエストパノラマスイート" },
-      "lake21": { "name": "パノラマ・コモドアスイート" }
+      "per101": {
+        "name": "ジュニア・ラグーン — タホ眺望"
+      },
+      "per102": {
+        "name": "ジュニア・ラグーン — 庭園眺望"
+      },
+      "per103": {
+        "name": "ジュニア・ラグーン — パークテラス"
+      },
+      "per201": {
+        "name": "タホスイート"
+      },
+      "per202": {
+        "name": "リバースイート"
+      },
+      "per203": {
+        "name": "タホパノラマスイート"
+      },
+      "per401": {
+        "name": "プレジデンシャルスイート・タホ"
+      },
+      "per402": {
+        "name": "プレジデンシャルスイート・パーク"
+      },
+      "per501": {
+        "name": "コモドア・タホスイート"
+      },
+      "per502": {
+        "name": "コモドア・ハイビュースイート"
+      },
+      "perA01": {
+        "name": "Tipo A"
+      },
+      "perA02": {
+        "name": "Tipo A"
+      },
+      "perA03": {
+        "name": "Tipo A"
+      },
+      "perA04": {
+        "name": "Tipo A"
+      },
+      "perA05": {
+        "name": "Tipo A"
+      },
+      "perA06": {
+        "name": "Tipo A"
+      },
+      "perA07": {
+        "name": "Tipo A"
+      },
+      "perA08": {
+        "name": "Tipo A"
+      },
+      "perA09": {
+        "name": "Tipo A"
+      },
+      "perA10": {
+        "name": "Tipo A"
+      },
+      "perA11": {
+        "name": "Tipo A"
+      },
+      "perA12": {
+        "name": "Tipo A"
+      },
+      "perA13": {
+        "name": "Tipo A"
+      },
+      "perA14": {
+        "name": "Tipo A"
+      },
+      "perB01": {
+        "name": "Tipo B"
+      },
+      "perB02": {
+        "name": "Tipo B"
+      },
+      "perB03": {
+        "name": "Tipo B"
+      },
+      "perB04": {
+        "name": "Tipo B"
+      },
+      "perB05": {
+        "name": "Tipo B"
+      },
+      "perB06": {
+        "name": "Tipo B"
+      },
+      "perB07": {
+        "name": "Tipo B"
+      },
+      "perB08": {
+        "name": "Tipo B"
+      },
+      "perB09": {
+        "name": "Tipo B"
+      },
+      "perB10": {
+        "name": "Tipo B"
+      },
+      "perB11": {
+        "name": "Tipo B"
+      },
+      "bug01": {
+        "name": "北庭園バンガロー"
+      },
+      "bug02": {
+        "name": "東庭園バンガロー"
+      },
+      "bug03": {
+        "name": "南庭園バンガロー"
+      },
+      "bug04": {
+        "name": "西庭園バンガロー"
+      },
+      "bug05": {
+        "name": "オリーブバンガロー"
+      },
+      "bug06": {
+        "name": "ホルムオークバンガロー"
+      },
+      "bug07": {
+        "name": "ラベンダーバンガロー"
+      },
+      "bug08": {
+        "name": "ローズマリーバンガロー"
+      },
+      "bug09": {
+        "name": "アーモンドバンガロー"
+      },
+      "bug10": {
+        "name": "展望バンガロー"
+      },
+      "bug11": {
+        "name": "テラスバンガロー"
+      },
+      "bug12": {
+        "name": "ヴァレーバンガロー"
+      },
+      "bug13": {
+        "name": "ホライゾンバンガロー"
+      },
+      "bug14": {
+        "name": "ブリーズバンガロー"
+      },
+      "lake01": {
+        "name": "フィッシャーロッジ北岸"
+      },
+      "lake02": {
+        "name": "エグゼクティブ・レイクビュー"
+      },
+      "lake11": {
+        "name": "イーストパノラマスイート"
+      },
+      "lake12": {
+        "name": "ウエストパノラマスイート"
+      },
+      "lake21": {
+        "name": "パノラマ・コモドアスイート"
+      }
     },
-    "stats": { "rooms": "客室", "active": "有効な予約", "hotels": "目的地" },
+    "stats": {
+      "rooms": "客室",
+      "active": "有効な予約",
+      "hotels": "目的地"
+    },
     "hotels": {
-      "peralejos": { "name": "Terra Peralejos", "location": "アルト・タホ自然公園の六つ星ホテル" },
-      "bugarra": { "name": "Terra Bugarra", "location": "ラグジュアリー・エコツーリズム・リゾート" },
-      "theLake": { "name": "The Lake", "location": "ヘスタルガル — スポーツフィッシング" }
+      "peralejos": {
+        "name": "Terra Peralejos",
+        "location": "アルト・タホ自然公園の六つ星ホテル"
+      },
+      "bugarra": {
+        "name": "Terra Bugarra",
+        "location": "ラグジュアリー・エコツーリズム・リゾート"
+      },
+      "theLake": {
+        "name": "The Lake",
+        "location": "ヘスタルガル — スポーツフィッシング"
+      }
     },
     "catalog": {
-      "tajoSuite": { "name": "タホスイート", "description": "川の眺めと天然木仕上げの広々としたスイート。", "detail": "独立ラウンジ、プライベートテラス、スパ優先利用付きスイート。", "bedType": "キングベッド", "view": "タホ川の眺め", "bathroom": "バスタブとレインシャワー付き大理石バス" },
-      "lagoonJunior": { "name": "ラグーンジュニア", "description": "プライベートバルコニー付きの明るい客室。", "detail": "自然公園を望むプライベートバルコニー付きの明るい客室。", "bedType": "クイーンベッド", "view": "ガーデンとラグーンの眺め", "bathroom": "ウォークインシャワー付きバス" },
-      "presidential": { "name": "プレジデンシャルスイート", "description": "独立ラウンジとパノラマテラスを備えた最高級スイート。", "detail": "180㎡超、プライベートプール、バトラーサービス付き最高級スイート。", "bedType": "キングベッドとソファベッド", "view": "270°パノラマ", "bathroom": "ジャグジーとハンマム付き大理石バス2室" },
-      "gardenBungalow": { "name": "ガーデンバンガロー", "description": "地中海庭園に溶け込む独立バンガロー。", "detail": "プライベートガーデン、暖炉、屋外シャワー付き独立バンガロー。", "bedType": "キングベッド", "view": "プライベートガーデン", "bathroom": "室内・室外シャワー付きバス" },
-      "spaSuite": { "name": "スパスイート", "description": "ウェルネス施設へのプライベートアクセス付き。", "detail": "スパへのプライベートアクセス付きウェルネススイート。", "bedType": "キングベッド", "view": "森林の眺め", "bathroom": "浸浴槽付きスパバス" },
-      "lakeView": { "name": "レイクビュー", "description": "湖と山々を望む大きな窓。", "detail": "湖と山脈を望むフロアツーセilingの窓付き広々客室。", "bedType": "キングベッドとエキストラベッド", "view": "湖の正面眺め", "bathroom": "シャワーとバスタブ付きダブルバス" },
-      "fisherLodge": { "name": "フィッシャーロッジ", "description": "フライフィッシング向けのラグジュアリーなロッジ。", "detail": "湖岸直結、釣り具完備のラスティックラグジュアリーロッジ。", "bedType": "ツインベッドまたはダブル", "view": "湖と釣り場の眺め", "bathroom": "薪ストーブ付きシャワールーム" },
-      "panorama": { "name": "パノラマスイート", "description": "水面を180°望む高層スイート。", "detail": "湖と山を180°望む高層スイート。", "bedType": "キングベッド", "view": "180°ウォーターパノラマ", "bathroom": "パノラマ窓とレインシャワー付きバス" },
-      "executive": { "name": "エグゼクティブルーム", "description": "ワークスペースとパーソナルサービス付き。", "detail": "大型デスクと高速通信付きの機能的でエレガントな客室。", "bedType": "クイーンベッド", "view": "湖の一部眺望", "bathroom": "コンパクトなデザインバスルーム" }
+      "tajoSuite": {
+        "name": "タホスイート",
+        "description": "川の眺めと天然木仕上げの広々としたスイート。",
+        "detail": "独立ラウンジ、プライベートテラス、スパ優先利用付きスイート。",
+        "bedType": "キングベッド",
+        "view": "タホ川の眺め",
+        "bathroom": "バスタブとレインシャワー付き大理石バス"
+      },
+      "lagoonJunior": {
+        "name": "ラグーンジュニア",
+        "description": "プライベートバルコニー付きの明るい客室。",
+        "detail": "自然公園を望むプライベートバルコニー付きの明るい客室。",
+        "bedType": "クイーンベッド",
+        "view": "ガーデンとラグーンの眺め",
+        "bathroom": "ウォークインシャワー付きバス"
+      },
+      "presidential": {
+        "name": "プレジデンシャルスイート",
+        "description": "独立ラウンジとパノラマテラスを備えた最高級スイート。",
+        "detail": "180㎡超、プライベートプール、バトラーサービス付き最高級スイート。",
+        "bedType": "キングベッドとソファベッド",
+        "view": "270°パノラマ",
+        "bathroom": "ジャグジーとハンマム付き大理石バス2室"
+      },
+      "gardenBungalow": {
+        "name": "ガーデンバンガロー",
+        "description": "地中海庭園に溶け込む独立バンガロー。",
+        "detail": "プライベートガーデン、暖炉、屋外シャワー付き独立バンガロー。",
+        "bedType": "キングベッド",
+        "view": "プライベートガーデン",
+        "bathroom": "室内・室外シャワー付きバス"
+      },
+      "spaSuite": {
+        "name": "スパスイート",
+        "description": "ウェルネス施設へのプライベートアクセス付き。",
+        "detail": "スパへのプライベートアクセス付きウェルネススイート。",
+        "bedType": "キングベッド",
+        "view": "森林の眺め",
+        "bathroom": "浸浴槽付きスパバス"
+      },
+      "lakeView": {
+        "name": "レイクビュー",
+        "description": "湖と山々を望む大きな窓。",
+        "detail": "湖と山脈を望むフロアツーセilingの窓付き広々客室。",
+        "bedType": "キングベッドとエキストラベッド",
+        "view": "湖の正面眺め",
+        "bathroom": "シャワーとバスタブ付きダブルバス"
+      },
+      "fisherLodge": {
+        "name": "フィッシャーロッジ",
+        "description": "フライフィッシング向けのラグジュアリーなロッジ。",
+        "detail": "湖岸直結、釣り具完備のラスティックラグジュアリーロッジ。",
+        "bedType": "ツインベッドまたはダブル",
+        "view": "湖と釣り場の眺め",
+        "bathroom": "薪ストーブ付きシャワールーム"
+      },
+      "panorama": {
+        "name": "パノラマスイート",
+        "description": "水面を180°望む高層スイート。",
+        "detail": "湖と山を180°望む高層スイート。",
+        "bedType": "キングベッド",
+        "view": "180°ウォーターパノラマ",
+        "bathroom": "パノラマ窓とレインシャワー付きバス"
+      },
+      "executive": {
+        "name": "エグゼクティブルーム",
+        "description": "ワークスペースとパーソナルサービス付き。",
+        "detail": "大型デスクと高速通信付きの機能的でエレガントな客室。",
+        "bedType": "クイーンベッド",
+        "view": "湖の一部眺望",
+        "bathroom": "コンパクトなデザインバスルーム"
+      }
     },
     "amenities": {
-      "kingBed": "キングベッド", "terrace": "プライベートテラス", "spa": "スパ利用", "gardenView": "ガーデンビュー",
-      "minibar": "プレミアムミニバー", "rainShower": "レインシャワー", "privatePool": "プライベートプール", "butler": "バトラーサービス",
-      "lounge": "プライベートラウンジ", "privateGarden": "プライベートガーデン", "fireplace": "暖炉", "outdoorShower": "屋外シャワー",
-      "sauna": "プライベートサウナ", "lakeView": "レイクビュー", "breakfast": "グルメ朝食", "fishingGear": "釣り具",
-      "panoramicView": "パノラマビュー", "workDesk": "ワークデスク"
+      "kingBed": "キングベッド",
+      "terrace": "プライベートテラス",
+      "spa": "スパ利用",
+      "gardenView": "ガーデンビュー",
+      "minibar": "プレミアムミニバー",
+      "rainShower": "レインシャワー",
+      "privatePool": "プライベートプール",
+      "butler": "バトラーサービス",
+      "lounge": "プライベートラウンジ",
+      "privateGarden": "プライベートガーデン",
+      "fireplace": "暖炉",
+      "outdoorShower": "屋外シャワー",
+      "sauna": "プライベートサウナ",
+      "lakeView": "レイクビュー",
+      "breakfast": "グルメ朝食",
+      "fishingGear": "釣り具",
+      "panoramicView": "パノラマビュー",
+      "workDesk": "ワークデスク"
     },
     "features": {
-      "lateCheckout": "14時までレイトチェックアウト", "roomService24h": "24時間ルームサービス", "turndownService": "ナイトターン-downサービス",
-      "welcomeAmenities": "パーソナライズドウェルカムアメニティ", "privateTransfer": "空港プライベート送迎", "personalConcierge": "専属パーソナルコンシェルジュ",
-      "gourmetBreakfast": "グルメ朝食付き", "flexibleCancellation": "48時間前まで柔軟キャンセル"
+      "lateCheckout": "14時までレイトチェックアウト",
+      "roomService24h": "24時間ルームサービス",
+      "turndownService": "ナイトターン-downサービス",
+      "welcomeAmenities": "パーソナライズドウェルカムアメニティ",
+      "privateTransfer": "空港プライベート送迎",
+      "personalConcierge": "専属パーソナルコンシェルジュ",
+      "gourmetBreakfast": "グルメ朝食付き",
+      "flexibleCancellation": "48時間前まで柔軟キャンセル"
     },
     "detail": {
-      "back": "客室一覧に戻る", "viewDetails": "詳細を見る", "galleryAria": "客室画像ギャラリー", "galleryImage": "客室の眺め",
-      "aboutTitle": "説明", "specsTitle": "詳細", "amenitiesTitle": "アメニティ", "featuresTitle": "含まれるサービス",
-      "bookCta": "この客室を予約", "notFound": "客室が見つかりません", "size": "面積", "capacity": "定員", "bed": "ベッド", "view": "眺望", "bathroom": "バスルーム"
+      "back": "客室一覧に戻る",
+      "viewDetails": "詳細を見る",
+      "galleryAria": "客室画像ギャラリー",
+      "galleryImage": "客室の眺め",
+      "aboutTitle": "説明",
+      "specsTitle": "詳細",
+      "amenitiesTitle": "アメニティ",
+      "featuresTitle": "含まれるサービス",
+      "bookCta": "この客室を予約",
+      "notFound": "客室が見つかりません",
+      "size": "面積",
+      "capacity": "定員",
+      "bed": "ベッド",
+      "view": "眺望",
+      "bathroom": "バスルーム"
     },
     "form": {
-      "title": "新規予約", "editTitle": "予約を編集", "selectRoom": "客室",
-      "selectRoomPlaceholder": "客室を選択", "guestName": "ゲスト名", "checkIn": "チェックイン", "checkOut": "チェックアウト",
-      "guests": "人数", "notes": "メモ（任意）", "submit": "予約を確定", "update": "更新", "cancel": "キャンセル"
+      "title": "新規予約",
+      "editTitle": "予約を編集",
+      "selectRoom": "客室",
+      "selectRoomPlaceholder": "客室を選択",
+      "guestName": "ゲスト名",
+      "checkIn": "チェックイン",
+      "checkOut": "チェックアウト",
+      "guests": "人数",
+      "notes": "メモ（任意）",
+      "submit": "予約を確定",
+      "update": "更新",
+      "cancel": "キャンセル"
     },
     "table": {
-      "title": "予約一覧", "count": "件", "empty": "この目的地の予約はありません。",
-      "guest": "ゲスト", "room": "客室", "dates": "日程", "guests": "人数", "status": "状態", "actions": "操作",
-      "edit": "編集", "delete": "取消"
+      "title": "予約一覧",
+      "count": "件",
+      "empty": "この目的地の予約はありません。",
+      "guest": "ゲスト",
+      "room": "客室",
+      "dates": "日程",
+      "guests": "人数",
+      "status": "状態",
+      "actions": "操作",
+      "edit": "編集",
+      "delete": "取消"
     },
-    "status": { "confirmed": "確定", "pending": "保留", "cancelled": "取消" },
+    "status": {
+      "confirmed": "確定",
+      "pending": "保留",
+      "cancelled": "取消"
+    },
     "errors": {
-      "roomRequired": "客室を選択してください。", "guestRequired": "ゲスト名を入力してください。",
-      "datesRequired": "チェックイン・チェックアウト日を入力してください。", "invalidDates": "チェックアウトはチェックインより後である必要があります。",
-      "guestsRequired": "1名以上入力してください。", "capacityExceeded": "定員を超えています。"
+      "roomRequired": "客室を選択してください。",
+      "guestRequired": "ゲスト名を入力してください。",
+      "datesRequired": "チェックイン・チェックアウト日を入力してください。",
+      "invalidDates": "チェックアウトはチェックインより後である必要があります。",
+      "guestsRequired": "1名以上入力してください。",
+      "capacityExceeded": "定員を超えています。"
     }
   }
 }

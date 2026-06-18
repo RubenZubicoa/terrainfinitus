@@ -115,7 +115,7 @@
     "gourmet": {
       "eyebrow": "Boutique-Shop",
       "title": "Gourmet",
-      "description": "Eine Auswahl von Gourmet-Produkten aus regionalen Zutaten mit dem Terra-Infinitus-Qualitätssiegel. Ideal, um den Geschmack unserer Destinationen mit nach Hause zu nehmen."
+      "description": "Auswahl an Malvasía Foie gras und Entenprodukten aus Soria mit dem Terra-Infinitus-Qualitätssiegel. Ideal, um den Gourmet-Geschmack unserer Destinationen mit nach Hause zu nehmen."
     },
     "merchandising": {
       "eyebrow": "Boutique-Shop",
@@ -124,29 +124,157 @@
     },
     "products": {
       "gourmet": {
-        "oliveOil": {
-          "name": "Natives Olivenöl extra",
-          "description": "Frühernteöl aus dem Landesinneren von Guadalajara mit kräutrigen Noten und sanftem Abgang."
+        "loteGourmetExperience": {
+          "name": "Gourmet Experience Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
         },
-        "honey": {
-          "name": "Alto-Tajo-Honig",
-          "description": "Handwerklicher Rosmarin-Thymian-Honig aus der Umgebung des Naturparks."
+        "loteCaprichoSeleccion": {
+          "name": "Capricho Selección Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
         },
-        "wine": {
-          "name": "Reserve-Rotwein",
-          "description": "Auswahl lokaler Weingüter mit Barrikenreife und ausgewogenem Geschmack."
+        "foieFrescoExtraDesvenado": {
+          "name": "Extra Frisches Entfilztes Foie Gras",
+          "description": "Einzelstück vakuumverpackt. 550–600 g."
         },
-        "preserves": {
-          "name": "Handwerkliche Konserven",
-          "description": "Gemüse und Pilze der Region, in kleinen Chargen eingemacht."
+        "foieFrescoExtra600": {
+          "name": "Extra Frisches Foie Gras 600 g",
+          "description": "Premium Entenfoie gras, 550–650 g, ideal zum Anbraten."
         },
-        "cheese": {
-          "name": "Gereifter Schafskäse",
-          "description": "Langsam gereifter Käse mit fester Textur und intensivem Aroma."
+        "foieMiCuit250": {
+          "name": "Ganzes Mi-Cuit Foie Gras 250 g",
+          "description": "Ganzes Enten-Mi-Cuit-Foie gras, leicht pasteurisiert und vakuumverpackt."
         },
-        "ham": {
-          "name": "Eichelmast-Ibericoschinken",
-          "description": "Fein geschnittener Schinken, mehr als dreißig Monate gereift."
+        "foieMiCuit250Estuchado": {
+          "name": "Ganzes Mi-Cuit Foie Gras 250 g Geschenkbox",
+          "description": "Vakuumbeutel in Geschenkbox. 250 g."
+        },
+        "foieEntero180": {
+          "name": "Ganzes Foie Gras 180 g",
+          "description": "Glas. 180 g."
+        },
+        "foieEntero130": {
+          "name": "Ganzes Foie Gras 130 g",
+          "description": "Runde Easy-Open-Dose. 130 g."
+        },
+        "foieEntero65": {
+          "name": "Ganzes Foie Gras 65 g",
+          "description": "Runde Dose. 65 g."
+        },
+        "terrinaBlocMiCuit1kg": {
+          "name": "Mi-Cuit Foie Gras Block Terrine 1 kg",
+          "description": "Thermoversiegelte Schale. 1000 g."
+        },
+        "terrinaBlocMiCuit440": {
+          "name": "Mi-Cuit Foie Gras Block Terrine 440 g",
+          "description": "Thermoversiegelte Schale. 440 g."
+        },
+        "blocTrozos130": {
+          "name": "Foie Gras Block mit Stücken 130 g",
+          "description": "Runde Easy-Open-Dose. 130 g."
+        },
+        "blocTrozos1kg": {
+          "name": "Foie Gras Block mit Stücken 1 kg",
+          "description": "Runde Dose. 1000 g."
+        },
+        "confitPulled": {
+          "name": "Gezupftes Entenconfit 1,2 kg",
+          "description": "Gezupftes Entenconfit, servierfertig. 1,2 kg."
+        },
+        "magretFresco": {
+          "name": "Frische Entenbrust (Magret)",
+          "description": "Frische vakuumverpackte Entenbrust von Foie-gras-Enten."
+        },
+        "magretMaitreHotel": {
+          "name": "Entenbrust Maître d'Hôtel 400 g",
+          "description": "Vakuumverpacktes Stück mit Maître-d'Hôtel-Marinade in Geschenkbox. 400 g."
+        },
+        "magretMediterraneo": {
+          "name": "Entenbrust Mediterran 400 g",
+          "description": "Vakuumverpacktes Stück mit mediterraner Marinade in Geschenkbox. 400 g."
+        },
+        "magretBbq": {
+          "name": "Entenbrust BBQ 400 g",
+          "description": "Vakuumverpacktes Stück mit BBQ-Marinade in Geschenkbox. 400 g."
+        },
+        "magretTeriyaki": {
+          "name": "Entenbrust Teriyaki 400 g",
+          "description": "Vakuumverpacktes Stück mit Teriyaki-Marinade in Geschenkbox. 400 g."
+        },
+        "pateMoscatel130": {
+          "name": "Entenpastete mit Moscatel 130 g",
+          "description": "Runde Easy-Open-Dose. 130 g."
+        },
+        "pateMoscatel1kg": {
+          "name": "Entenpastete mit Moscatel 1 kg",
+          "description": "Runde Dose. 1000 g."
+        },
+        "confitMuslos10": {
+          "name": "Entenkeulen-Confit (10 Stück)",
+          "description": "Runde Dose mit 10 in Fett confierten Entenkeulen."
+        },
+        "confitMuslos5": {
+          "name": "Entenkeulen-Confit (5 Stück)",
+          "description": "Fünf zarte, glutenfreie confierte Entenkeulen."
+        },
+        "confitMuslos2": {
+          "name": "Entenkeulen-Confit (2 Stück)",
+          "description": "Runde Dose mit 2 confierten Entenkeulen."
+        },
+        "confitMusloIndividual": {
+          "name": "Einzelne Entenkeule Confit 210 g",
+          "description": "Einzelstück vakuumverpackt. 210 g."
+        },
+        "confitAlas25": {
+          "name": "Confierte Entenflügel (25 Stück)",
+          "description": "Runde Box mit 25 confierten Entenflügeln."
+        },
+        "confitAlas7": {
+          "name": "Confierte Entenflügel (7 Stück)",
+          "description": "Runde Dose mit 7 confierten Entenflügeln."
+        },
+        "confitMollejas320": {
+          "name": "Confierte Entenmägen 320 g",
+          "description": "Runde Dose. 320 g."
+        },
+        "lotePremium": {
+          "name": "Malvasía Premium Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "loteMiCuitBloc": {
+          "name": "Malvasía Mi-Cuit + Block Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "lote3Foies": {
+          "name": "Malvasía 3 Foies Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "lote3FoiesMini": {
+          "name": "3 Mini Foies Geschenkset 100 g",
+          "description": "Ein ideales Gourmet-Geschenk."
+        },
+        "lote3FoiesAbrefacil": {
+          "name": "3 Foies Easy-Open Geschenkset 130 g",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "lote3Mousses": {
+          "name": "3 Gourmet-Mousses Geschenkset",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "lote3MoussesAbrefacil": {
+          "name": "3 Mousses Easy-Open Geschenkset 130 g",
+          "description": "Geschenkbox | Das perfekte Gourmet-Geschenk."
+        },
+        "cestaSauvignon": {
+          "name": "Malvasía Gourmet-Korb & Sauvignon Blanc",
+          "description": "Geschenkbox mit Sauvignon Blanc R.O. Rueda."
+        },
+        "cestaPedroXimenez": {
+          "name": "Malvasía Gourmet-Korb & Pedro Ximénez",
+          "description": "Geschenkbox mit Pedro Ximénez."
+        },
+        "cestaMoscatel": {
+          "name": "Malvasía Gourmet-Korb & Moscatel",
+          "description": "Geschenkbox mit Moscatel."
         }
       },
       "merchandising": {
@@ -227,110 +355,348 @@
       "bungalowsAvailableCount": "{{count}} Bungalows verfügbar"
     },
     "units": {
-      "per101": { "name": "Junior Lagoon — Tajo-Blick" },
-      "per102": { "name": "Junior Lagoon — Gartenblick" },
-      "per103": { "name": "Junior Lagoon — Parkterrasse" },
-      "per201": { "name": "Tajo Suite" },
-      "per202": { "name": "Fluss-Suite" },
-      "per203": { "name": "Tajo-Panorama-Suite" },
-      "per401": { "name": "Präsidenten-Suite Tajo" },
-      "per402": { "name": "Präsidenten-Suite Park" },
-      "per501": { "name": "Commodore Tajo Suite" },
-      "per502": { "name": "Commodore Hochblick Suite" },
-      "perA01": { "name": "Tipo A" },
-      "perA02": { "name": "Tipo A" },
-      "perA03": { "name": "Tipo A" },
-      "perA04": { "name": "Tipo A" },
-      "perA05": { "name": "Tipo A" },
-      "perA06": { "name": "Tipo A" },
-      "perA07": { "name": "Tipo A" },
-      "perA08": { "name": "Tipo A" },
-      "perA09": { "name": "Tipo A" },
-      "perA10": { "name": "Tipo A" },
-      "perA11": { "name": "Tipo A" },
-      "perA12": { "name": "Tipo A" },
-      "perA13": { "name": "Tipo A" },
-      "perA14": { "name": "Tipo A" },
-      "perB01": { "name": "Tipo B" },
-      "perB02": { "name": "Tipo B" },
-      "perB03": { "name": "Tipo B" },
-      "perB04": { "name": "Tipo B" },
-      "perB05": { "name": "Tipo B" },
-      "perB06": { "name": "Tipo B" },
-      "perB07": { "name": "Tipo B" },
-      "perB08": { "name": "Tipo B" },
-      "perB09": { "name": "Tipo B" },
-      "perB10": { "name": "Tipo B" },
-      "perB11": { "name": "Tipo B" },
-      "bug01": { "name": "Bungalow Nordgarten" },
-      "bug02": { "name": "Bungalow Ostgarten" },
-      "bug03": { "name": "Bungalow Südgarten" },
-      "bug04": { "name": "Bungalow Westgarten" },
-      "bug05": { "name": "Bungalow Olivenhain" },
-      "bug06": { "name": "Bungalow Steineiche" },
-      "bug07": { "name": "Bungalow Lavendel" },
-      "bug08": { "name": "Bungalow Rosmarin" },
-      "bug09": { "name": "Bungalow Mandelbaum" },
-      "bug10": { "name": "Bungalow Aussicht" },
-      "bug11": { "name": "Bungalow Terrasse" },
-      "bug12": { "name": "Bungalow Tal" },
-      "bug13": { "name": "Bungalow Horizont" },
-      "bug14": { "name": "Bungalow Brise" },
-      "lake01": { "name": "Fisher Lodge Nordufer" },
-      "lake02": { "name": "Executive Lake View" },
-      "lake11": { "name": "Ost-Panorama-Suite" },
-      "lake12": { "name": "West-Panorama-Suite" },
-      "lake21": { "name": "Panorama Commodore Suite" }
+      "per101": {
+        "name": "Junior Lagoon — Tajo-Blick"
+      },
+      "per102": {
+        "name": "Junior Lagoon — Gartenblick"
+      },
+      "per103": {
+        "name": "Junior Lagoon — Parkterrasse"
+      },
+      "per201": {
+        "name": "Tajo Suite"
+      },
+      "per202": {
+        "name": "Fluss-Suite"
+      },
+      "per203": {
+        "name": "Tajo-Panorama-Suite"
+      },
+      "per401": {
+        "name": "Präsidenten-Suite Tajo"
+      },
+      "per402": {
+        "name": "Präsidenten-Suite Park"
+      },
+      "per501": {
+        "name": "Commodore Tajo Suite"
+      },
+      "per502": {
+        "name": "Commodore Hochblick Suite"
+      },
+      "perA01": {
+        "name": "Tipo A"
+      },
+      "perA02": {
+        "name": "Tipo A"
+      },
+      "perA03": {
+        "name": "Tipo A"
+      },
+      "perA04": {
+        "name": "Tipo A"
+      },
+      "perA05": {
+        "name": "Tipo A"
+      },
+      "perA06": {
+        "name": "Tipo A"
+      },
+      "perA07": {
+        "name": "Tipo A"
+      },
+      "perA08": {
+        "name": "Tipo A"
+      },
+      "perA09": {
+        "name": "Tipo A"
+      },
+      "perA10": {
+        "name": "Tipo A"
+      },
+      "perA11": {
+        "name": "Tipo A"
+      },
+      "perA12": {
+        "name": "Tipo A"
+      },
+      "perA13": {
+        "name": "Tipo A"
+      },
+      "perA14": {
+        "name": "Tipo A"
+      },
+      "perB01": {
+        "name": "Tipo B"
+      },
+      "perB02": {
+        "name": "Tipo B"
+      },
+      "perB03": {
+        "name": "Tipo B"
+      },
+      "perB04": {
+        "name": "Tipo B"
+      },
+      "perB05": {
+        "name": "Tipo B"
+      },
+      "perB06": {
+        "name": "Tipo B"
+      },
+      "perB07": {
+        "name": "Tipo B"
+      },
+      "perB08": {
+        "name": "Tipo B"
+      },
+      "perB09": {
+        "name": "Tipo B"
+      },
+      "perB10": {
+        "name": "Tipo B"
+      },
+      "perB11": {
+        "name": "Tipo B"
+      },
+      "bug01": {
+        "name": "Bungalow Nordgarten"
+      },
+      "bug02": {
+        "name": "Bungalow Ostgarten"
+      },
+      "bug03": {
+        "name": "Bungalow Südgarten"
+      },
+      "bug04": {
+        "name": "Bungalow Westgarten"
+      },
+      "bug05": {
+        "name": "Bungalow Olivenhain"
+      },
+      "bug06": {
+        "name": "Bungalow Steineiche"
+      },
+      "bug07": {
+        "name": "Bungalow Lavendel"
+      },
+      "bug08": {
+        "name": "Bungalow Rosmarin"
+      },
+      "bug09": {
+        "name": "Bungalow Mandelbaum"
+      },
+      "bug10": {
+        "name": "Bungalow Aussicht"
+      },
+      "bug11": {
+        "name": "Bungalow Terrasse"
+      },
+      "bug12": {
+        "name": "Bungalow Tal"
+      },
+      "bug13": {
+        "name": "Bungalow Horizont"
+      },
+      "bug14": {
+        "name": "Bungalow Brise"
+      },
+      "lake01": {
+        "name": "Fisher Lodge Nordufer"
+      },
+      "lake02": {
+        "name": "Executive Lake View"
+      },
+      "lake11": {
+        "name": "Ost-Panorama-Suite"
+      },
+      "lake12": {
+        "name": "West-Panorama-Suite"
+      },
+      "lake21": {
+        "name": "Panorama Commodore Suite"
+      }
     },
-    "stats": { "rooms": "Zimmer", "active": "Aktive Buchungen", "hotels": "Destinationen" },
+    "stats": {
+      "rooms": "Zimmer",
+      "active": "Aktive Buchungen",
+      "hotels": "Destinationen"
+    },
     "hotels": {
-      "peralejos": { "name": "Terra Peralejos", "location": "Sechs-Sterne-Hotel im Alto-Tajo-Naturpark" },
-      "bugarra": { "name": "Terra Bugarra", "location": "Luxus-Ökotourismus-Resort" },
-      "theLake": { "name": "The Lake", "location": "Gestalgar, Valencia — Sportfischerei" }
+      "peralejos": {
+        "name": "Terra Peralejos",
+        "location": "Sechs-Sterne-Hotel im Alto-Tajo-Naturpark"
+      },
+      "bugarra": {
+        "name": "Terra Bugarra",
+        "location": "Luxus-Ökotourismus-Resort"
+      },
+      "theLake": {
+        "name": "The Lake",
+        "location": "Gestalgar, Valencia — Sportfischerei"
+      }
     },
     "catalog": {
-      "tajoSuite": { "name": "Tajo Suite", "description": "Geräumige Suite mit Flussblick und Naturholz.", "detail": "Suite mit separatem Salon, privater Terrasse und bevorzugtem Spa-Zugang.", "bedType": "Kingsize-Bett", "view": "Flussblick", "bathroom": "Marmorbad mit Badewanne und Regendusche" },
-      "lagoonJunior": { "name": "Lagoon Junior", "description": "Helles Zimmer mit privatem Balkon und modernem Design.", "detail": "Lichtdurchflutetes Zimmer mit privatem Balkon und zeitgenössischer Einrichtung.", "bedType": "Queensize-Bett", "view": "Garten- und Lagunenblick", "bathroom": "Bad mit Walk-in-Dusche" },
-      "presidential": { "name": "Präsidenten-Suite", "description": "Ultimativer Luxus mit separatem Salon und Panoramaterrasse.", "detail": "Unsere exklusivste Suite mit über 180 m², privatem Pool und Butler-Service.", "bedType": "Kingsize-Bett und Sofabett", "view": "270° Panorama", "bathroom": "Zwei Marmoräder mit Jacuzzi und Hammam" },
-      "gardenBungalow": { "name": "Garten-Bungalow", "description": "Freistehender Bungalow im mediterranen Garten.", "detail": "Unabhängiger Bungalow mit privatem Garten, Kamin und Außendusche.", "bedType": "Kingsize-Bett", "view": "Privater Garten", "bathroom": "Bad mit Innen- und Außendusche" },
-      "spaSuite": { "name": "Spa Suite", "description": "Suite mit privatem Zugang zum Wellnessbereich.", "detail": "Suite für ganzheitliches Wohlbefinden mit privatem Spa-Zugang.", "bedType": "Kingsize-Bett", "view": "Waldblick", "bathroom": "Spa-Bad mit Tauchbadewanne" },
-      "lakeView": { "name": "Seeblick", "description": "Große Fenster mit direktem See- und Bergblick.", "detail": "Großzügiges Zimmer mit bodentiefen Fenstern zum See und Gebirge.", "bedType": "Kingsize-Bett und Zustellbett", "view": "Direkter Seeblick", "bathroom": "Doppelbad mit Dusche und Wanne" },
-      "fisherLodge": { "name": "Fisher Lodge", "description": "Luxuriöses rustikales Refugium für Fliegenfischen.", "detail": "Rustikales Luxusrefugium mit direktem Seezugang und Angelausrüstung.", "bedType": "Zwei Einzelbetten oder Doppelbett", "view": "See- und Angelbereich", "bathroom": "Duschbad mit dekorativem Holzofen" },
-      "panorama": { "name": "Panorama Suite", "description": "Erhöhte Suite mit 180°-Wasserblick.", "detail": "Erhöhte Suite mit 180°-Blick über See und Berge.", "bedType": "Kingsize-Bett", "view": "180° Wasserpanorama", "bathroom": "Panoramabad mit Regendusche" },
-      "executive": { "name": "Executive Zimmer", "description": "Elegantes Zimmer mit Arbeitsbereich und persönlichem Service.", "detail": "Funktionales elegantes Zimmer mit großem Schreibtisch und Highspeed-Internet.", "bedType": "Queensize-Bett", "view": "Teilweiser Seeblick", "bathroom": "Kompaktes Designerbad mit Dusche" }
+      "tajoSuite": {
+        "name": "Tajo Suite",
+        "description": "Geräumige Suite mit Flussblick und Naturholz.",
+        "detail": "Suite mit separatem Salon, privater Terrasse und bevorzugtem Spa-Zugang.",
+        "bedType": "Kingsize-Bett",
+        "view": "Flussblick",
+        "bathroom": "Marmorbad mit Badewanne und Regendusche"
+      },
+      "lagoonJunior": {
+        "name": "Lagoon Junior",
+        "description": "Helles Zimmer mit privatem Balkon und modernem Design.",
+        "detail": "Lichtdurchflutetes Zimmer mit privatem Balkon und zeitgenössischer Einrichtung.",
+        "bedType": "Queensize-Bett",
+        "view": "Garten- und Lagunenblick",
+        "bathroom": "Bad mit Walk-in-Dusche"
+      },
+      "presidential": {
+        "name": "Präsidenten-Suite",
+        "description": "Ultimativer Luxus mit separatem Salon und Panoramaterrasse.",
+        "detail": "Unsere exklusivste Suite mit über 180 m², privatem Pool und Butler-Service.",
+        "bedType": "Kingsize-Bett und Sofabett",
+        "view": "270° Panorama",
+        "bathroom": "Zwei Marmoräder mit Jacuzzi und Hammam"
+      },
+      "gardenBungalow": {
+        "name": "Garten-Bungalow",
+        "description": "Freistehender Bungalow im mediterranen Garten.",
+        "detail": "Unabhängiger Bungalow mit privatem Garten, Kamin und Außendusche.",
+        "bedType": "Kingsize-Bett",
+        "view": "Privater Garten",
+        "bathroom": "Bad mit Innen- und Außendusche"
+      },
+      "spaSuite": {
+        "name": "Spa Suite",
+        "description": "Suite mit privatem Zugang zum Wellnessbereich.",
+        "detail": "Suite für ganzheitliches Wohlbefinden mit privatem Spa-Zugang.",
+        "bedType": "Kingsize-Bett",
+        "view": "Waldblick",
+        "bathroom": "Spa-Bad mit Tauchbadewanne"
+      },
+      "lakeView": {
+        "name": "Seeblick",
+        "description": "Große Fenster mit direktem See- und Bergblick.",
+        "detail": "Großzügiges Zimmer mit bodentiefen Fenstern zum See und Gebirge.",
+        "bedType": "Kingsize-Bett und Zustellbett",
+        "view": "Direkter Seeblick",
+        "bathroom": "Doppelbad mit Dusche und Wanne"
+      },
+      "fisherLodge": {
+        "name": "Fisher Lodge",
+        "description": "Luxuriöses rustikales Refugium für Fliegenfischen.",
+        "detail": "Rustikales Luxusrefugium mit direktem Seezugang und Angelausrüstung.",
+        "bedType": "Zwei Einzelbetten oder Doppelbett",
+        "view": "See- und Angelbereich",
+        "bathroom": "Duschbad mit dekorativem Holzofen"
+      },
+      "panorama": {
+        "name": "Panorama Suite",
+        "description": "Erhöhte Suite mit 180°-Wasserblick.",
+        "detail": "Erhöhte Suite mit 180°-Blick über See und Berge.",
+        "bedType": "Kingsize-Bett",
+        "view": "180° Wasserpanorama",
+        "bathroom": "Panoramabad mit Regendusche"
+      },
+      "executive": {
+        "name": "Executive Zimmer",
+        "description": "Elegantes Zimmer mit Arbeitsbereich und persönlichem Service.",
+        "detail": "Funktionales elegantes Zimmer mit großem Schreibtisch und Highspeed-Internet.",
+        "bedType": "Queensize-Bett",
+        "view": "Teilweiser Seeblick",
+        "bathroom": "Kompaktes Designerbad mit Dusche"
+      }
     },
     "amenities": {
-      "kingBed": "Kingsize-Bett", "terrace": "Private Terrasse", "spa": "Spa-Zugang", "gardenView": "Gartenblick",
-      "minibar": "Premium-Minibar", "rainShower": "Regendusche", "privatePool": "Privater Pool", "butler": "Butler-Service",
-      "lounge": "Privater Salon", "privateGarden": "Privater Garten", "fireplace": "Kamin", "outdoorShower": "Außendusche",
-      "sauna": "Private Sauna", "lakeView": "Seeblick", "breakfast": "Gourmet-Frühstück", "fishingGear": "Angelausrüstung",
-      "panoramicView": "Panoramablick", "workDesk": "Arbeitsplatz"
+      "kingBed": "Kingsize-Bett",
+      "terrace": "Private Terrasse",
+      "spa": "Spa-Zugang",
+      "gardenView": "Gartenblick",
+      "minibar": "Premium-Minibar",
+      "rainShower": "Regendusche",
+      "privatePool": "Privater Pool",
+      "butler": "Butler-Service",
+      "lounge": "Privater Salon",
+      "privateGarden": "Privater Garten",
+      "fireplace": "Kamin",
+      "outdoorShower": "Außendusche",
+      "sauna": "Private Sauna",
+      "lakeView": "Seeblick",
+      "breakfast": "Gourmet-Frühstück",
+      "fishingGear": "Angelausrüstung",
+      "panoramicView": "Panoramablick",
+      "workDesk": "Arbeitsplatz"
     },
     "features": {
-      "lateCheckout": "Später Check-out bis 14:00", "roomService24h": "24-Stunden-Zimmerservice", "turndownService": "Abendlicher Turndown-Service",
-      "welcomeAmenities": "Personalisierte Willkommensgeschenke", "privateTransfer": "Privater Flughafentransfer", "personalConcierge": "Persönlicher Concierge",
-      "gourmetBreakfast": "Gourmet-Frühstück inklusive", "flexibleCancellation": "Flexible Stornierung 48 h vorher"
+      "lateCheckout": "Später Check-out bis 14:00",
+      "roomService24h": "24-Stunden-Zimmerservice",
+      "turndownService": "Abendlicher Turndown-Service",
+      "welcomeAmenities": "Personalisierte Willkommensgeschenke",
+      "privateTransfer": "Privater Flughafentransfer",
+      "personalConcierge": "Persönlicher Concierge",
+      "gourmetBreakfast": "Gourmet-Frühstück inklusive",
+      "flexibleCancellation": "Flexible Stornierung 48 h vorher"
     },
     "detail": {
-      "back": "Zurück zu Zimmern", "viewDetails": "Details ansehen", "galleryAria": "Zimmerbildergalerie", "galleryImage": "Zimmeransicht",
-      "aboutTitle": "Beschreibung", "specsTitle": "Details", "amenitiesTitle": "Ausstattung", "featuresTitle": "Inklusive Leistungen",
-      "bookCta": "Dieses Zimmer buchen", "notFound": "Zimmer nicht gefunden", "size": "Fläche", "capacity": "Kapazität", "bed": "Bett", "view": "Aussicht", "bathroom": "Bad"
+      "back": "Zurück zu Zimmern",
+      "viewDetails": "Details ansehen",
+      "galleryAria": "Zimmerbildergalerie",
+      "galleryImage": "Zimmeransicht",
+      "aboutTitle": "Beschreibung",
+      "specsTitle": "Details",
+      "amenitiesTitle": "Ausstattung",
+      "featuresTitle": "Inklusive Leistungen",
+      "bookCta": "Dieses Zimmer buchen",
+      "notFound": "Zimmer nicht gefunden",
+      "size": "Fläche",
+      "capacity": "Kapazität",
+      "bed": "Bett",
+      "view": "Aussicht",
+      "bathroom": "Bad"
     },
     "form": {
-      "title": "Neue Reservierung", "editTitle": "Reservierung bearbeiten", "selectRoom": "Zimmer",
-      "selectRoomPlaceholder": "Zimmer auswählen", "guestName": "Gastname", "checkIn": "Anreise", "checkOut": "Abreise",
-      "guests": "Gäste", "notes": "Notizen (optional)", "submit": "Reservierung bestätigen", "update": "Aktualisieren", "cancel": "Abbrechen"
+      "title": "Neue Reservierung",
+      "editTitle": "Reservierung bearbeiten",
+      "selectRoom": "Zimmer",
+      "selectRoomPlaceholder": "Zimmer auswählen",
+      "guestName": "Gastname",
+      "checkIn": "Anreise",
+      "checkOut": "Abreise",
+      "guests": "Gäste",
+      "notes": "Notizen (optional)",
+      "submit": "Reservierung bestätigen",
+      "update": "Aktualisieren",
+      "cancel": "Abbrechen"
     },
     "table": {
-      "title": "Reservierungen", "count": "Reservierungen", "empty": "Keine Reservierungen für dieses Ziel.",
-      "guest": "Gast", "room": "Zimmer", "dates": "Daten", "guests": "Gäste", "status": "Status", "actions": "Aktionen",
-      "edit": "Bearbeiten", "delete": "Stornieren"
+      "title": "Reservierungen",
+      "count": "Reservierungen",
+      "empty": "Keine Reservierungen für dieses Ziel.",
+      "guest": "Gast",
+      "room": "Zimmer",
+      "dates": "Daten",
+      "guests": "Gäste",
+      "status": "Status",
+      "actions": "Aktionen",
+      "edit": "Bearbeiten",
+      "delete": "Stornieren"
     },
-    "status": { "confirmed": "Bestätigt", "pending": "Ausstehend", "cancelled": "Storniert" },
+    "status": {
+      "confirmed": "Bestätigt",
+      "pending": "Ausstehend",
+      "cancelled": "Storniert"
+    },
     "errors": {
-      "roomRequired": "Bitte ein Zimmer auswählen.", "guestRequired": "Bitte den Gastnamen angeben.",
-      "datesRequired": "Bitte An- und Abreisedatum angeben.", "invalidDates": "Abreise muss nach Anreise liegen.",
-      "guestsRequired": "Mindestens ein Gast erforderlich.", "capacityExceeded": "Gästeanzahl übersteigt die Kapazität."
+      "roomRequired": "Bitte ein Zimmer auswählen.",
+      "guestRequired": "Bitte den Gastnamen angeben.",
+      "datesRequired": "Bitte An- und Abreisedatum angeben.",
+      "invalidDates": "Abreise muss nach Anreise liegen.",
+      "guestsRequired": "Mindestens ein Gast erforderlich.",
+      "capacityExceeded": "Gästeanzahl übersteigt die Kapazität."
     }
   }
 }
