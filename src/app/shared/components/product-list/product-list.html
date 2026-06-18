@@ -22,7 +22,7 @@
                 <p class="product-card__description">{{ product.descriptionKey | translate }}</p>
                 <div class="product-card__footer">
                   <p class="product-card__price">
-                    {{ product.price | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                    {{ product.price | currency: 'EUR' : 'symbol' : priceDigits() : 'es' }}
                   </p>
                   <span class="product-card__cta">{{ viewDetailsKey() | translate }}</span>
                 </div>
@@ -41,7 +41,7 @@
                 <h3 class="product-card__name">{{ product.nameKey | translate }}</h3>
                 <p class="product-card__description">{{ product.descriptionKey | translate }}</p>
                 <p class="product-card__price">
-                  {{ product.price | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                  {{ product.price | currency: 'EUR' : 'symbol' : priceDigits() : 'es' }}
                 </p>
               </div>
             </article>

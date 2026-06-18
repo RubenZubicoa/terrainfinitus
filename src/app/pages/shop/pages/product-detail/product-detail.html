@@ -26,7 +26,7 @@
 
         <aside class="product-detail__price-card">
           <p class="product-detail__price">
-            {{ product.price | currency: 'EUR' : 'symbol' : '1.2-2' }}
+            {{ product.price | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
             <span>{{ 'shop.detail.priceLabel' | translate }}</span>
           </p>
           <ul class="product-detail__badges">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="product-detail__related-body">
                   <h3>{{ related.nameKey | translate }}</h3>
-                  <p>{{ related.price | currency: 'EUR' : 'symbol' : '1.2-2' }}</p>
+                  <p>{{ related.price | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}</p>
                 </div>
               </a>
             </li>

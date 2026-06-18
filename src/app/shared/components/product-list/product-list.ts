@@ -16,4 +16,5 @@ export class ProductList {
   readonly emptyKey = input('shop.empty');
   readonly detailRoutePrefix = input<string | null>(null);
   readonly viewDetailsKey = input('shop.detail.viewDetails');
+  readonly priceDigits = input('1.0-0');
 }
