@@ -7,7 +7,7 @@
     <div class="home-video__frame">
       <iframe
         class="home-video__player"
-        src="https://www.youtube.com/embed/9FLbyL_39jo?rel=0"
+        [src]="safeVideoPath"
         [title]="'home.videoTitle' | translate"
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin"

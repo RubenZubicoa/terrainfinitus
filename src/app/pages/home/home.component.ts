@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Banner, BannerSlide } from '../../shared/components/banner/banner';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import { Banner, BannerSlide } from '../../shared/components/banner/banner';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  private readonly sanitizer = inject(DomSanitizer);
+
   readonly slides: readonly BannerSlide[] = [
     { src: '/images/inicio/inicio1.jpg', altKey: 'home.alt1' },
     { src: '/images/inicio/inicio2.jpg', altKey: 'home.alt2' },
@@ -30,4 +33,6 @@ export class HomeComponent {
     { src: '/images/inicio/inicio18.jpg', altKey: 'home.alt18' },
     { src: '/images/inicio/inicio19.jpg', altKey: 'home.alt19' },
   ];
+
+  public safeVideoPath = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ae6IlsbTFxc?rel=0')
 }
