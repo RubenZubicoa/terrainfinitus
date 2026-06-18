@@ -124,157 +124,321 @@
     },
     "products": {
       "gourmet": {
-        "loteGourmetExperience": {
-          "name": "Gourmet Experience Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+        "blocDeFoieGras1Kg": {
+          "name": "Bloc de Foie Gras 1 KG",
+          "description": "Round tin 1000 g"
         },
-        "loteCaprichoSeleccion": {
-          "name": "Capricho Selección Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+        "blocDeFoieGras130": {
+          "name": "Bloc de Foie Gras 130",
+          "description": "Easy-open tin 130 g"
         },
-        "foieFrescoExtraDesvenado": {
-          "name": "Extra Fresh Deveined Foie Gras",
-          "description": "Individual vacuum-packed piece. 550–600 g."
+        "blocDeFoieGras180": {
+          "name": "Bloc de Foie Gras 180",
+          "description": "Glass jar 180 g"
         },
-        "foieFrescoExtra600": {
-          "name": "Extra Fresh Foie Gras 600 g",
-          "description": "Premium duck foie gras, 550–650 g piece, ideal for pan-searing."
+        "blocDeFoieGras190": {
+          "name": "Bloc de Foie Gras 190",
+          "description": "Lata rectangular 190 g"
         },
-        "foieMiCuit250": {
-          "name": "Whole Mi-Cuit Foie Gras 250 g",
-          "description": "Whole duck mi-cuit foie gras, lightly pasteurised and vacuum-packed."
+        "blocDeFoieGrasConTrozos1Kg": {
+          "name": "Bloc de Foie Gras con Trozos 1 KG",
+          "description": "Round tin 1000 g"
         },
-        "foieMiCuit250Estuchado": {
-          "name": "Whole Mi-Cuit Foie Gras 250 g Gift Box",
-          "description": "Vacuum-packed bag in gift box. 250 g."
+        "blocDeFoieGrasConTrozos130": {
+          "name": "Bloc de Foie Gras con Trozos 130",
+          "description": "Round tin abrefácil 130 g"
         },
-        "foieEntero180": {
-          "name": "Whole Foie Gras 180 g",
-          "description": "Glass jar. 180 g."
+        "blocDeFoieGrasDePatoConTrufa130G": {
+          "name": "Bloc de Foie Gras de pato con Trufa 130 g",
+          "description": "Bloc de foie gras de pato con trufa (130 g) Textura emulsionada, ideal para untar o servir en taquitos Sabor trufado intenso y..."
         },
-        "foieEntero130": {
-          "name": "Whole Foie Gras 130 g",
-          "description": "Easy-open round tin. 130 g."
+        "blocDeFoieGrasMini100Estuchado": {
+          "name": "Bloc de Foie Gras MINI 100 Estuchado",
+          "description": "Mini Canapé Barra de 100 g Estuchado"
         },
-        "foieEntero65": {
-          "name": "Whole Foie Gras 65 g",
-          "description": "Round tin. 65 g."
+        "blocDeFoieGrasParaCanapes1kg": {
+          "name": "Bloc de Foie Gras para Canapés 1KG",
+          "description": "4 barras en bolsa 1000 g"
         },
-        "terrinaBlocMiCuit1kg": {
-          "name": "Mi-Cuit Foie Gras Bloc Terrine 1 kg",
-          "description": "Heat-sealed tray. 1000 g."
+        "cestaGourmetMalvasiaMoscatel": {
+          "name": "Cesta Gourmet Malvasia & Moscatel",
+          "description": "!PRODUCTO NUEVO¡ Gift box"
         },
-        "terrinaBlocMiCuit440": {
-          "name": "Mi-Cuit Foie Gras Bloc Terrine 440 g",
-          "description": "Heat-sealed tray. 440 g."
+        "cestaGourmetMalvasiaPedroXimenez": {
+          "name": "Cesta Gourmet Malvasía & Pedro Ximénez",
+          "description": "¡PRODUCTO NUEVO! Gift box"
         },
-        "blocTrozos130": {
-          "name": "Foie Gras Bloc with Pieces 130 g",
-          "description": "Easy-open round tin. 130 g."
+        "cestaGourmetMalvasiaSauvignon": {
+          "name": "Cesta Gourmet Malvasía & Sauvignon",
+          "description": "Gift box"
         },
-        "blocTrozos1kg": {
-          "name": "Foie Gras Bloc with Pieces 1 kg",
-          "description": "Round tin. 1000 g."
+        "confitDePatoPulledDesmigado12Kg": {
+          "name": "Confit de Pato PULLED desmigado 1,2 kg",
+          "description": "¡PRODUCTO NUEVO!"
         },
-        "confitPulled": {
-          "name": "Pulled Duck Confit 1.2 kg",
-          "description": "Shredded duck confit, ready to serve. 1.2 kg."
+        "confitDelicias25": {
+          "name": "CONFIT DELICIAS 25",
+          "description": "Caja redonda 25 wings."
         },
-        "magretFresco": {
-          "name": "Fresh Duck Magret",
-          "description": "Fresh vacuum-packed duck breast from foie gras ducks."
-        },
-        "magretMaitreHotel": {
-          "name": "Duck Magret Maître d'Hôtel 400 g",
-          "description": "Vacuum-packed piece with Maître d'Hôtel marinade in gift box. 400 g."
-        },
-        "magretMediterraneo": {
-          "name": "Duck Magret Mediterranean 400 g",
-          "description": "Vacuum-packed piece with Mediterranean marinade in gift box. 400 g."
-        },
-        "magretBbq": {
-          "name": "Duck Magret BBQ 400 g",
-          "description": "Vacuum-packed piece with BBQ marinade in gift box. 400 g."
-        },
-        "magretTeriyaki": {
-          "name": "Duck Magret Teriyaki 400 g",
-          "description": "Vacuum-packed piece with teriyaki marinade in gift box. 400 g."
-        },
-        "pateMoscatel130": {
-          "name": "Duck Pâté with Moscatel 130 g",
-          "description": "Easy-open round tin. 130 g."
-        },
-        "pateMoscatel1kg": {
-          "name": "Duck Pâté with Moscatel 1 kg",
-          "description": "Round tin. 1000 g."
-        },
-        "confitMuslos10": {
-          "name": "Duck Leg Confit (10 pieces)",
-          "description": "Round tin with 10 duck legs confit in their fat."
-        },
-        "confitMuslos5": {
-          "name": "Duck Leg Confit (5 pieces)",
-          "description": "Five tender, gluten-free duck legs confit in their fat."
-        },
-        "confitMuslos2": {
-          "name": "Duck Leg Confit (2 pieces)",
-          "description": "Round tin with 2 confit duck legs."
-        },
-        "confitMusloIndividual": {
-          "name": "Individual Duck Leg Confit 210 g",
-          "description": "Individual vacuum-packed piece. 210 g."
-        },
-        "confitAlas25": {
-          "name": "Confit Duck Wings (25 pieces)",
-          "description": "Round box with 25 confit duck wings."
-        },
-        "confitAlas7": {
-          "name": "Confit Duck Wings (7 pieces)",
-          "description": "Round tin with 7 confit duck wings."
+        "confitDelicias7": {
+          "name": "CONFIT DELICIAS 7",
+          "description": "Round tin 7 wings."
         },
         "confitMollejas320": {
-          "name": "Duck Gizzards Confit 320 g",
-          "description": "Round tin. 320 g."
+          "name": "CONFIT MOLLEJAS 320",
+          "description": "Round tin 320 g"
         },
-        "lotePremium": {
-          "name": "Malvasía Premium Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+        "confitMusloIndividual210g": {
+          "name": "CONFIT MUSLO INDIVIDUAL 210G",
+          "description": "Individual vacuum-packed piece 210 g"
         },
-        "loteMiCuitBloc": {
-          "name": "Malvasía Mi-Cuit + Bloc Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+        "confitMuslos10": {
+          "name": "CONFIT MUSLOS 10",
+          "description": "Round tin 10 legs"
+        },
+        "confitMuslos2": {
+          "name": "CONFIT MUSLOS 2",
+          "description": "Round tin 2 legs."
+        },
+        "confitMuslos4": {
+          "name": "CONFIT MUSLOS 4",
+          "description": "Round tin 4 legs"
+        },
+        "confitMuslos5": {
+          "name": "CONFIT MUSLOS 5",
+          "description": "Cinco legs de pato confitados en su grasa , tiernos , sin gluten y de larga conservación ."
+        },
+        "confitMuslosCatering12": {
+          "name": "CONFIT MUSLOS CATERING 12",
+          "description": "Lata circular 12 legs"
+        },
+        "desmigadoDeConfitDePato1Kg": {
+          "name": "Desmigado de Confit de Pato 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "foieGrasBodega400": {
+          "name": "Foie Gras BODEGA 400",
+          "description": "FABRICACIÓN ESPECIAL NAVIDAD Bajo Pedido Papel de aluminio + Bolsa al vacío 400 g NAVIDAD 2023 - ¡RESERVA EL TUYO YA! Disponible..."
+        },
+        "foieGrasBodega60": {
+          "name": "FOIE GRAS BODEGA 60",
+          "description": "FABRICACIÓN ESPECIAL NAVIDAD Bajo Pedido Envasado al vacío. NAVIDAD 2023 - ¡RESERVA EL TUYO YA! Disponible a partir del 11 de..."
+        },
+        "foieGrasEntero130": {
+          "name": "Foie Gras Entero 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "foieGrasEntero180": {
+          "name": "Foie Gras Entero 180",
+          "description": "Glass jar 180 g"
+        },
+        "foieGrasEntero65": {
+          "name": "FOIE GRAS ENTERO 65",
+          "description": "Round tin 65 g"
+        },
+        "foieGrasEnteroMiCuit250": {
+          "name": "Foie Gras Entero MI CUIT 250",
+          "description": "Foie gras entero mi-cuit de pato , elaborado a partir de una pieza íntegra de hígado graso, ligeramente pasteurizada y envasada al vacío. Formato..."
+        },
+        "foieGrasEnteroMiCuitMiniEstuchado": {
+          "name": "Foie Gras Entero MI CUIT MINI Estuchado",
+          "description": "Foie gras entero mi-cuit de pato , elaborado a partir de una pieza íntegra de hígado graso, ligeramente pasteurizada y envasada al vacío. Formato..."
+        },
+        "foieGrasEnteroMiCuit250Estuchado": {
+          "name": "Foie Gras Entero Mi-Cuit 250 Estuchado",
+          "description": "Vacuum-packed bag in gift box 250 g"
+        },
+        "foieGrasEnteroTrufado100G": {
+          "name": "Foie Gras Entero Trufado 100 g",
+          "description": "Foie gras entero trufado de pato Textura firme, ideal para cortar y servir en tostadas Sin gluten, apto para celíacos Marca de garantía..."
+        },
+        "foieGrasFrescoExtra600g": {
+          "name": "Foie Gras Fresco Extra 600g",
+          "description": "Foie gras fresco extra de pato , pieza premium de 550–650 g , ideal para cocinar a la plancha y disfrutar de su sabor intenso y..."
+        },
+        "foieGrasFrescoExtraDesvenado": {
+          "name": "Foie Gras Fresco Extra Desvenado",
+          "description": "Individual vacuum-packed piece. 550 - 600 g"
+        },
+        "foieMicuit500": {
+          "name": "Foie Micuit 500",
+          "description": "Foie gras entero mi-cuit de pato , elaborado a partir de una pieza íntegra de hígado graso, ligeramente pasteurizada y envasada al vacío. Formato..."
+        },
+        "grasaDePato650": {
+          "name": "GRASA DE PATO 650",
+          "description": "Round tin 650g."
+        },
+        "jamonDePatoEnPieza": {
+          "name": "Jamón de Pato en pieza",
+          "description": "Individual vacuum-packed piece. Peso variable; 250 y 320 gramos."
+        },
+        "jamonDePatoLoncheado100": {
+          "name": "Jamón de Pato loncheado 100",
+          "description": "En lonchas envasado al vacío 100 g"
+        },
+        "jamonDePatoLoncheado200": {
+          "name": "Jamón de Pato Loncheado 200",
+          "description": "En lonchas envasado al vacío 200 g"
+        },
+        "jamonDePatoLoncheado50": {
+          "name": "Jamón de Pato loncheado 50",
+          "description": "En lonchas envasado al vacío 50 g"
+        },
+        "lingoteDeConfitDeMuslo": {
+          "name": "Lingote de Confit de Muslo",
+          "description": "Lingote de 500 g"
         },
         "lote3Foies": {
-          "name": "Malvasía 3 Foies Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+          "name": "LOTE 3 FOIES",
+          "description": "Gift box | The perfect gourmet gift"
+        },
+        "lote3FoiesAbrefacil130G": {
+          "name": "Lote 3 Foies abrefácil 130 g",
+          "description": "Gift box | The perfect gourmet gift"
         },
         "lote3FoiesMini": {
-          "name": "3 Mini Foies Gift Set 100 g",
-          "description": "An ideal gourmet gift."
-        },
-        "lote3FoiesAbrefacil": {
-          "name": "3 Foies Easy-Open Gift Set 130 g",
-          "description": "Gift box | The perfect gourmet present."
+          "name": "LOTE 3 FOIES MINI",
+          "description": "Un regalo gourmet ideal"
         },
         "lote3Mousses": {
-          "name": "3 Gourmet Mousses Gift Set",
-          "description": "Gift box | The perfect gourmet present."
+          "name": "LOTE 3 MOUSSES",
+          "description": "Gift box | The perfect gourmet gift"
         },
-        "lote3MoussesAbrefacil": {
-          "name": "3 Mousses Easy-Open Gift Set 130 g",
-          "description": "Gift box | The perfect gourmet present."
+        "lote3MoussesAbrefacil130g": {
+          "name": "Lote 3 Mousses abrefácil 130g",
+          "description": "Gift box | The perfect gourmet gift"
         },
-        "cestaSauvignon": {
-          "name": "Malvasía Gourmet Basket & Sauvignon Blanc",
-          "description": "Gift box with Sauvignon Blanc R.O. Rueda wine."
+        "loteCaprichoSeleccion": {
+          "name": "LOTE CAPRICHO SELECCIÓN",
+          "description": "Gift box | The perfect gourmet gift"
         },
-        "cestaPedroXimenez": {
-          "name": "Malvasía Gourmet Basket & Pedro Ximénez",
-          "description": "Gift box with Pedro Ximénez wine."
+        "loteGourmetExperience": {
+          "name": "LOTE GOURMET EXPERIENCE",
+          "description": "Gift box | The perfect gourmet gift"
         },
-        "cestaMoscatel": {
-          "name": "Malvasía Gourmet Basket & Moscatel",
-          "description": "Gift box with Moscatel wine."
+        "loteMiCuitBloc": {
+          "name": "LOTE MI-CUIT + BLOC",
+          "description": "Gift box | The perfect gourmet gift"
+        },
+        "lotePremium": {
+          "name": "LOTE PREMIUM",
+          "description": "Gift box | The perfect gourmet gift"
+        },
+        "magretDePatoBbq400G": {
+          "name": "Magret de Pato BBQ 400 g",
+          "description": "¡PRODUCTO NUEVO! Individual vacuum-packed piece, y presentada en un original estuche. 400 g"
+        },
+        "magretDePatoFresco": {
+          "name": "Magret de Pato Fresco",
+          "description": "Magret de pato fresco , procedente de patos destinados a la producción de foie gras. Individual vacuum-packed piece, con un peso aproximado..."
+        },
+        "magretDePatoMaitreDHotel400G": {
+          "name": "Magret de Pato Maître d´Hôtel 400 g",
+          "description": "¡PRODUCTO NUEVO! Individual vacuum-packed piece, y presentada en un original estuche. 400 g"
+        },
+        "magretDePatoMediterraneo400G": {
+          "name": "Magret de Pato Mediterráneo 400 g",
+          "description": "¡PRODUCTO NUEVO! Individual vacuum-packed piece, y presentada en un original estuche. 400 g"
+        },
+        "magretDePatoTeriyaki400G": {
+          "name": "Magret de Pato Teriyaki 400 g",
+          "description": "¡PRODUCTO NUEVO! Individual vacuum-packed piece, y presentada en un original estuche. 400 g"
+        },
+        "mousseDeFoie1Kg": {
+          "name": "Mousse de Foie 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "mousseDeFoie130": {
+          "name": "Mousse de Foie 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "mousseDeFoieCiruelasMini100Estuchado": {
+          "name": "Mousse de Foie Ciruelas MINI 100 Estuchado",
+          "description": "Mini Canapé Barra 100 g estuchado"
+        },
+        "mousseDeFoieConCiruelas1Kg": {
+          "name": "Mousse de Foie con Ciruelas 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "mousseDeFoieConCiruelas130": {
+          "name": "Mousse de Foie con Ciruelas 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "mousseDeFoieConCiruelas200": {
+          "name": "Mousse de Foie con Ciruelas 200",
+          "description": "Round tin 200 g"
+        },
+        "mousseDeFoieConTrufa1Kg": {
+          "name": "Mousse de Foie con Trufa 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "mousseDeFoieConTrufa130": {
+          "name": "Mousse de Foie con Trufa 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "mousseDeFoieConTrufa200": {
+          "name": "Mousse de Foie con Trufa 200",
+          "description": "Round tin 200 g"
+        },
+        "mousseDeFoieConTrufaMini100Estuchado": {
+          "name": "Mousse de Foie con Trufa MINI 100 Estuchado",
+          "description": "Mini Canapé Barra 100 g estuchado"
+        },
+        "mousseDeFoieMini100Estuchado": {
+          "name": "Mousse de Foie MINI 100 Estuchado",
+          "description": "Mini canapé Barra 100 g estuchado"
+        },
+        "mousseDeFoieParaCanapes1Kg": {
+          "name": "Mousse de Foie para Canapes 1 KG",
+          "description": "4 barras envasadas al vacío."
+        },
+        "parfaitDeFoie1Kg": {
+          "name": "Parfait de Foie 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "parfaitDeFoie125": {
+          "name": "Parfait de Foie 125",
+          "description": "Lata rectangular 125 g"
+        },
+        "parfaitDeFoie130": {
+          "name": "Parfait de Foie 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "parfaitDeFoie190": {
+          "name": "Parfait de Foie 190",
+          "description": "Lata rectangular 190 g"
+        },
+        "parfaitDeFoieDeOca130": {
+          "name": "Parfait de Foie de Oca 130",
+          "description": "Round tin abrefácil 130 g"
+        },
+        "parfaitDeFoieMini100Estuchado": {
+          "name": "Parfait de Foie MINI 100 Estuchado",
+          "description": "Mini Canapé Barra 100 g estuchado"
+        },
+        "parfaitDeFoieParaCanapes1kg": {
+          "name": "Parfait de Foie para Canapés 1kg",
+          "description": "4 barras en bolsa 1000 g"
+        },
+        "pateDePatoAlMoscatel1Kg": {
+          "name": "Paté de Pato al Moscatel 1 KG",
+          "description": "Round tin 1000 g"
+        },
+        "pateDePatoAlMoscatel130": {
+          "name": "Paté de Pato al Moscatel 130",
+          "description": "Easy-open round tin 130 g"
+        },
+        "solomillosFrescos250": {
+          "name": "Solomillos Frescos 250",
+          "description": "Bolsa al vacío 250 g."
+        },
+        "terrinaDeBlocDeFoieGrasConTrozosMiCuit1Kg": {
+          "name": "Terrina de Bloc de Foie Gras con Trozos Mi-Cuit 1 KG",
+          "description": "Heat-sealed tray 1000 g"
+        },
+        "terrinaDeBlocFoieGrasConTrozosMiCuit440": {
+          "name": "Terrina de Bloc Foie Gras con trozos Mi-Cuit 440",
+          "description": "Heat-sealed tray 440 g"
         }
       },
       "merchandising": {
