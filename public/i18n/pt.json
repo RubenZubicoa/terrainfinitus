@@ -303,6 +303,25 @@
           "description": "Cachecol leve de seda com motivos do Alto Tajo e acabamento artesanal."
         }
       }
+    },
+    "detail": {
+      "back": "Voltar ao gourmet",
+      "viewDetails": "Ver produto",
+      "galleryAria": "Imagem do produto",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Preço",
+      "aboutTitle": "Descrição",
+      "originTitle": "Origem e qualidade",
+      "originText": "Elaborado pela Malvasía (Canard S.A.) em Abejar, Sória. Produtos gourmet de pato de qualidade premium, sem glúten e reconhecidos internacionalmente.",
+      "relatedTitle": "Também pode gostar",
+      "contactCta": "Consultar disponibilidade",
+      "notFound": "Produto não encontrado",
+      "highlights": {
+        "quality": "Qualidade premium",
+        "glutenFree": "Sem glúten",
+        "origin": "Elaborado em Sória",
+        "shipping": "Entrega ao domicílio"
+      }
     }
   },
   "placeholder": {

@@ -44,6 +44,11 @@
     border-color: rgba(184, 115, 51, 0.35);
     box-shadow: var(--ti-shadow-lg);
   }
+
+  &--link {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .product-card__media {
@@ -89,4 +94,21 @@
   font-size: 1rem;
   font-weight: 600;
   color: var(--ti-copper);
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.product-card__cta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ti-copper);
+  white-space: nowrap;
 }

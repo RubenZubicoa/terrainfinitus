@@ -303,6 +303,25 @@
           "description": "Leichter Seidenschal mit Alto-Tajo-Motiven und handwerklicher Verarbeitung."
         }
       }
+    },
+    "detail": {
+      "back": "Zurück zu Gourmet",
+      "viewDetails": "Produkt ansehen",
+      "galleryAria": "Produktbild",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Preis",
+      "aboutTitle": "Beschreibung",
+      "originTitle": "Herkunft & Qualität",
+      "originText": "Hergestellt von Malvasía (Canard S.A.) in Abejar, Soria. Premium-Entengourmet-Produkte mit strengen Qualitätsstandards, glutenfrei und international anerkannt.",
+      "relatedTitle": "Das könnte Ihnen auch gefallen",
+      "contactCta": "Verfügbarkeit anfragen",
+      "notFound": "Produkt nicht gefunden",
+      "highlights": {
+        "quality": "Premium-Qualität",
+        "glutenFree": "Glutenfrei",
+        "origin": "Hergestellt in Soria",
+        "shipping": "Lieferung nach Hause"
+      }
     }
   },
   "placeholder": {

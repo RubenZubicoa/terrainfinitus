@@ -303,6 +303,25 @@
           "description": "アルト・タホのモチーフと手仕上げの軽やかなシルクスカーフ。"
         }
       }
+    },
+    "detail": {
+      "back": "グルメに戻る",
+      "viewDetails": "商品を見る",
+      "galleryAria": "商品画像",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "価格",
+      "aboutTitle": "説明",
+      "originTitle": "原産地と品質",
+      "originText": "ソリア州アベハールのMalvasía（Canard S.A.）製。厳格な品質基準を満たしたプレミアム鴨グルメ製品。グルテンフリーで国際的に評価されています。",
+      "relatedTitle": "こちらもおすすめ",
+      "contactCta": "在庫を問い合わせる",
+      "notFound": "商品が見つかりません",
+      "highlights": {
+        "quality": "プレミアム品質",
+        "glutenFree": "グルテンフリー",
+        "origin": "ソリア産",
+        "shipping": "宅配便対応"
+      }
     }
   },
   "placeholder": {

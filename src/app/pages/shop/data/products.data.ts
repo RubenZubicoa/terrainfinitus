@@ -363,6 +363,19 @@ export const MERCHANDISING_PRODUCTS: Product[] = [
 
 const ALL_PRODUCTS: Product[] = [...GOURMET_PRODUCTS, ...MERCHANDISING_PRODUCTS];
 
+export function getProductById(id: string): Product | undefined {
+  return ALL_PRODUCTS.find((product) => product.id === id);
+}
+
+export function getRelatedProducts(productId: string, limit = 4): Product[] {
+  const current = getProductById(productId);
+  if (!current) return [];
+
+  return ALL_PRODUCTS.filter(
+    (product) => product.category === current.category && product.id !== productId,
+  ).slice(0, limit);
+}
+
 export function getProductsByCategory(category: ProductCategory): Product[] {
   return ALL_PRODUCTS.filter((product) => product.category === category);
 }

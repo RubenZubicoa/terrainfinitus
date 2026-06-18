@@ -303,6 +303,25 @@
           "description": "Sciarpa leggera in seta con motivi dell'Alto Tajo e finitura artigianale."
         }
       }
+    },
+    "detail": {
+      "back": "Torna al gourmet",
+      "viewDetails": "Vedi prodotto",
+      "galleryAria": "Immagine del prodotto",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Prezzo",
+      "aboutTitle": "Descrizione",
+      "originTitle": "Origine e qualità",
+      "originText": "Prodotto da Malvasía (Canard S.A.) ad Abejar, Soria. Prodotti gourmet d'anatra di qualità premium, senza glutine e riconosciuti a livello internazionale.",
+      "relatedTitle": "Potrebbe interessarti anche",
+      "contactCta": "Verifica disponibilità",
+      "notFound": "Prodotto non trovato",
+      "highlights": {
+        "quality": "Qualità premium",
+        "glutenFree": "Senza glutine",
+        "origin": "Prodotto a Soria",
+        "shipping": "Consegna a domicilio"
+      }
     }
   },
   "placeholder": {

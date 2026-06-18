@@ -303,6 +303,25 @@
           "description": "Bufanda ligera de seda con motivos del Alto Tajo y acabado artesanal."
         }
       }
+    },
+    "detail": {
+      "back": "Volver a gourmet",
+      "viewDetails": "Ver producto",
+      "galleryAria": "Imagen del producto",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Precio",
+      "aboutTitle": "Descripción",
+      "originTitle": "Origen y calidad",
+      "originText": "Elaborado por Malvasía (Canard S.A.) en Abejar, Soria. Productos gourmet de pato con estrictos criterios de calidad, aptos para celíacos y reconocidos internacionalmente.",
+      "relatedTitle": "También te puede interesar",
+      "contactCta": "Consultar disponibilidad",
+      "notFound": "Producto no encontrado",
+      "highlights": {
+        "quality": "Calidad premium",
+        "glutenFree": "Sin gluten",
+        "origin": "Elaborado en Soria",
+        "shipping": "Envío a domicilio"
+      }
     }
   },
   "placeholder": {

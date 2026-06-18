@@ -303,6 +303,25 @@
           "description": "Lightweight silk scarf with Alto Tajo motifs and artisan finish."
         }
       }
+    },
+    "detail": {
+      "back": "Back to gourmet",
+      "viewDetails": "View product",
+      "galleryAria": "Product image",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Price",
+      "aboutTitle": "Description",
+      "originTitle": "Origin & quality",
+      "originText": "Produced by Malvasía (Canard S.A.) in Abejar, Soria. Premium duck gourmet products with strict quality standards, gluten-free and internationally recognised.",
+      "relatedTitle": "You may also like",
+      "contactCta": "Check availability",
+      "notFound": "Product not found",
+      "highlights": {
+        "quality": "Premium quality",
+        "glutenFree": "Gluten-free",
+        "origin": "Made in Soria",
+        "shipping": "Home delivery"
+      }
     }
   },
   "placeholder": {

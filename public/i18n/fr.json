@@ -303,6 +303,25 @@
           "description": "Écharpe légère en soie aux motifs du Haut Tajo et finition artisanale."
         }
       }
+    },
+    "detail": {
+      "back": "Retour au gourmet",
+      "viewDetails": "Voir le produit",
+      "galleryAria": "Image du produit",
+      "brand": "Malvasía · Soria",
+      "priceLabel": "Prix",
+      "aboutTitle": "Description",
+      "originTitle": "Origine et qualité",
+      "originText": "Élaboré par Malvasía (Canard S.A.) à Abejar, Soria. Produits gourmet de canard de qualité premium, sans gluten et reconnus internationalement.",
+      "relatedTitle": "Vous pourriez aussi aimer",
+      "contactCta": "Vérifier la disponibilité",
+      "notFound": "Produit introuvable",
+      "highlights": {
+        "quality": "Qualité premium",
+        "glutenFree": "Sans gluten",
+        "origin": "Fabriqué à Soria",
+        "shipping": "Livraison à domicile"
+      }
     }
   },
   "placeholder": {

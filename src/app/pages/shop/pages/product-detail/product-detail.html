@@ -1,0 +1,99 @@
+@if (product(); as product) {
+  <article class="product-detail">
+    <nav class="product-detail__breadcrumb" aria-label="Breadcrumb">
+      <a [routerLink]="backRoute()" class="product-detail__back">
+        ← {{ 'shop.detail.back' | translate }}
+      </a>
+      <span class="product-detail__crumb">{{ 'shop.gourmet.title' | translate }}</span>
+      <span class="product-detail__crumb product-detail__crumb--current">
+        {{ product.nameKey | translate }}
+      </span>
+    </nav>
+
+    <div class="product-detail__hero">
+      <figure class="product-detail__media" [attr.aria-label]="'shop.detail.galleryAria' | translate">
+        <img
+          [src]="product.image"
+          [alt]="product.nameKey | translate"
+          loading="eager"
+        />
+      </figure>
+
+      <div class="product-detail__summary">
+        <p class="product-detail__brand">{{ 'shop.detail.brand' | translate }}</p>
+        <h1 class="product-detail__title">{{ product.nameKey | translate }}</h1>
+        <p class="product-detail__description">{{ product.descriptionKey | translate }}</p>
+
+        <aside class="product-detail__price-card">
+          <p class="product-detail__price">
+            {{ product.price | currency: 'EUR' : 'symbol' : '1.2-2' }}
+            <span>{{ 'shop.detail.priceLabel' | translate }}</span>
+          </p>
+          <ul class="product-detail__badges">
+            @for (highlightKey of highlightKeys; track highlightKey) {
+              <li>{{ highlightKey | translate }}</li>
+            }
+          </ul>
+          <a class="product-detail__cta" routerLink="/contacto">
+            {{ 'shop.detail.contactCta' | translate }}
+          </a>
+        </aside>
+      </div>
+    </div>
+
+    <div class="product-detail__body">
+      <section class="product-detail__section">
+        <h2 class="product-detail__section-title">{{ 'shop.detail.aboutTitle' | translate }}</h2>
+        <p class="product-detail__text">{{ product.descriptionKey | translate }}</p>
+      </section>
+
+      <section class="product-detail__section product-detail__origin">
+        <h2 class="product-detail__section-title">{{ 'shop.detail.originTitle' | translate }}</h2>
+        <p class="product-detail__text">{{ 'shop.detail.originText' | translate }}</p>
+        <ul class="product-detail__features">
+          @for (highlightKey of highlightKeys; track highlightKey) {
+            <li>
+              <span class="product-detail__feature-icon" aria-hidden="true">✓</span>
+              {{ highlightKey | translate }}
+            </li>
+          }
+        </ul>
+      </section>
+    </div>
+
+    @if (relatedProducts().length > 0) {
+      <section class="product-detail__related">
+        <h2 class="product-detail__section-title">{{ 'shop.detail.relatedTitle' | translate }}</h2>
+        <ul class="product-detail__related-grid">
+          @for (related of relatedProducts(); track related.id) {
+            <li>
+              <a
+                class="product-detail__related-card"
+                [routerLink]="[detailRoutePrefix(), related.id]"
+              >
+                <div class="product-detail__related-media">
+                  <img
+                    [src]="related.image"
+                    [alt]="related.nameKey | translate"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-detail__related-body">
+                  <h3>{{ related.nameKey | translate }}</h3>
+                  <p>{{ related.price | currency: 'EUR' : 'symbol' : '1.2-2' }}</p>
+                </div>
+              </a>
+            </li>
+          }
+        </ul>
+      </section>
+    }
+  </article>
+} @else {
+  <section class="product-detail product-detail--empty">
+    <h1 class="product-detail__title">{{ 'shop.detail.notFound' | translate }}</h1>
+    <a routerLink="/tienda-boutique/gourmet" class="product-detail__back-link">
+      {{ 'shop.detail.back' | translate }}
+    </a>
+  </section>
+}
