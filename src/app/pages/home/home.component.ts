@@ -34,5 +34,7 @@ export class HomeComponent {
     { src: '/images/inicio/inicio19.jpg', altKey: 'home.alt19' },
   ];
 
-  public safeVideoPath = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/Ae6IlsbTFxc?rel=0')
+  private videoPath = 'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/Terra%20infinitus%201080.mp4?alt=media&token=59b3ec1e-28da-41f1-a7c2-886ab2afae74'
+
+  public safeVideoPath = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoPath)
 }
