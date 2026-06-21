@@ -496,13 +496,16 @@
     "bugarra": {
       "title": "Bugarra",
       "p1": "Consistente en la construcción de catorce bungalows de lujo, totalmente equipados y preparados para recibir una clientela de lujo, con restaurante gourmet, piscinas, spas y toda una oferta de actividades turísticas.",
-      "p2": "Estamos esperando a la obtención de los últimos permisos para ejecutarse y pretendemos estar abiertos y operativos para el 2027."
+      "p2": "Estamos esperando a la obtención de los últimos permisos para ejecutarse y pretendemos estar abiertos y operativos para el 2027.",
+      "pdfViewer": "Documento del proyecto Bugarra I",
+      "pdfViewer2": "Documento del proyecto Bugarra II"
     },
     "peralejos": {
       "title": "Peralejos",
       "p1": "Consistente en la construcción y desarrollo de un hotel de seis estrellas, junto con diez bungalows, restaurante gourmet, zonas de hidroterapias, piscinas, gimnasios, spas, actividades turísticas, tienda online, alquiler de vehículos y servicio de guías, entre otros aspectos más, en el corazón del entorno privilegiado del Parque Natural del Alto Tajo, en Peralejos de Las Truchas, Guadalajara, proyecto que iniciamos hace más de dos años y que se encuentra en plena etapa de desarrollo y diseño.",
       "p2": "Contaremos con unas treinta habitaciones, entre los casi cien metros cuadrados y los cuatrocientos, comida gourmet y una exquisita y gran cantidad de detalles que van a dotar al Proyecto de la más alta reputación y prestigio dentro y fuera de España. El Proyecto se irá desarrollando en fases, estando numerosas construcciones e infraestructuras finalizadas.",
-      "p3": "Pretendemos estar en el 2026-2027 listos con toda la capacidad de bungalows de lujo, zonas comunes, saunas, piscinas, spas, proyectos de jardinería, campos solares y numerosos detalles más, y para el 2027-2028 estar ya operativos con el resto de construcciones e infraestructuras del Proyecto."
+      "p3": "Pretendemos estar en el 2026-2027 listos con toda la capacidad de bungalows de lujo, zonas comunes, saunas, piscinas, spas, proyectos de jardinería, campos solares y numerosos detalles más, y para el 2027-2028 estar ya operativos con el resto de construcciones e infraestructuras del Proyecto.",
+      "pdfViewer": "Documento del proyecto Peralejos"
     },
     "theLake": {
       "title": "The Lake",

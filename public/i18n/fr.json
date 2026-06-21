@@ -496,13 +496,16 @@
     "bugarra": {
       "title": "Bugarra",
       "p1": "Consistant en la construction de quatorze bungalows de luxe entièrement équipés pour une clientèle haut de gamme, avec restaurant gastronomique, piscines, spas et une offre complète d'activités touristiques.",
-      "p2": "Nous attendons l'obtention des derniers permis pour l'exécution et visons à être ouverts et opérationnels pour 2027."
+      "p2": "Nous attendons l'obtention des derniers permis pour l'exécution et visons à être ouverts et opérationnels pour 2027.",
+      "pdfViewer": "Document du projet Bugarra I",
+      "pdfViewer2": "Document du projet Bugarra II"
     },
     "peralejos": {
       "title": "Peralejos",
       "p1": "Consistant en la construction et le développement d'un hôtel six étoiles avec dix bungalows, restaurant gastronomique, zones d'hydrothérapie, piscines, salles de sport, spas, activités touristiques, boutique en ligne, location de véhicules et service de guides, entre autres, au cœur du Parc Naturel du Haut Tajo à Peralejos de Las Truchas, Guadalajara — projet lancé il y a plus de deux ans et en pleine phase de développement et de conception.",
       "p2": "Nous disposerons d'une trentaine de chambres, de près de cent à quatre cents mètres carrés, d'une cuisine gastronomique et de nombreux détails exquis qui donneront au Projet la plus haute réputation en Espagne et à l'étranger. Le Projet se développera par phases, de nombreuses constructions et infrastructures étant déjà achevées.",
-      "p3": "Nous visons à être prêts en 2026-2027 avec toute la capacité de bungalows de luxe, espaces communs, saunas, piscines, spas, aménagement paysager, champs solaires et bien d'autres détails, et en 2027-2028 pleinement opérationnels pour le reste des constructions et infrastructures du Projet."
+      "p3": "Nous visons à être prêts en 2026-2027 avec toute la capacité de bungalows de luxe, espaces communs, saunas, piscines, spas, aménagement paysager, champs solaires et bien d'autres détails, et en 2027-2028 pleinement opérationnels pour le reste des constructions et infrastructures du Projet.",
+      "pdfViewer": "Document du projet Peralejos"
     },
     "theLake": {
       "title": "The Lake",

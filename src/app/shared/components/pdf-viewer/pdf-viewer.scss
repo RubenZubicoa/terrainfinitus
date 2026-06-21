@@ -10,6 +10,16 @@
     box-shadow: var(--ti-shadow);
   }
   
+  .pdf-viewer__label {
+    margin: 0;
+    font-family: var(--ti-font-display);
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ti-copper);
+  }
+
   .pdf-viewer__frame {
     width: 100%;
     height: min(75vh, 720px);

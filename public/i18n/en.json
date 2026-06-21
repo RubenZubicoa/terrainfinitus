@@ -496,13 +496,16 @@
     "bugarra": {
       "title": "Bugarra",
       "p1": "Focused on building fourteen fully equipped luxury bungalows ready to welcome an upscale clientele, with a gourmet restaurant, pools, spas and a full range of tourist activities.",
-      "p2": "We are awaiting the final permits to proceed and aim to be open and operational by 2027."
+      "p2": "We are awaiting the final permits to proceed and aim to be open and operational by 2027.",
+      "pdfViewer": "Bugarra project document I",
+      "pdfViewer2": "Bugarra project document II"
     },
     "peralejos": {
       "title": "Peralejos",
       "p1": "Focused on building and developing a six-star hotel along with ten bungalows, a gourmet restaurant, hydrotherapy areas, pools, gyms, spas, tourist activities, online shop, vehicle rental and guide services, among other features, in the heart of the privileged Alto Tajo Natural Park in Peralejos de Las Truchas, Guadalajara — a project we started more than two years ago and which is in full development and design phase.",
       "p2": "We will have around thirty rooms, ranging from nearly one hundred to four hundred square metres, gourmet dining and a wealth of exquisite details that will give the Project the highest reputation and prestige in Spain and abroad. The Project will be developed in phases, with many constructions and infrastructures already completed.",
-      "p3": "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures."
+      "p3": "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures.",
+      "pdfViewer": "Peralejos project document"
     },
     "theLake": {
       "title": "The Lake",

@@ -496,13 +496,16 @@
     "bugarra": {
       "title": "Bugarra",
       "p1": "Konzentriert auf den Bau von vierzehn voll ausgestatteten Luxus-Bungalows für eine anspruchsvolle Klientel, mit Gourmetrestaurant, Pools, Spas und einem umfassenden touristischen Angebot.",
-      "p2": "Wir warten auf die letzten Genehmigungen und streben an, bis 2027 eröffnet und betriebsbereit zu sein."
+      "p2": "Wir warten auf die letzten Genehmigungen und streben an, bis 2027 eröffnet und betriebsbereit zu sein.",
+      "pdfViewer": "Bugarra-Projektdokument I",
+      "pdfViewer2": "Bugarra-Projektdokument II"
     },
     "peralejos": {
       "title": "Peralejos",
       "p1": "Konzentriert auf den Bau und die Entwicklung eines Sechs-Sterne-Hotels mit zehn Bungalows, Gourmetrestaurant, Hydrotherapiebereichen, Pools, Fitnessstudios, Spas, touristischen Aktivitäten, Online-Shop, Fahrzeugvermietung und Reiseführern u. a. im Herzen des Alto-Tajo-Naturparks in Peralejos de Las Truchas, Guadalajara — ein Projekt, das wir vor über zwei Jahren begonnen haben und sich in voller Entwicklungs- und Designphase befindet.",
       "p2": "Wir werden etwa dreißig Zimmer haben, von knapp hundert bis vierhundert Quadratmetern, Gourmetküche und zahlreiche exquisite Details, die dem Projekt höchstes Ansehen in und außerhalb Spaniens verleihen. Das Projekt wird in Phasen entwickelt; viele Bauten und Infrastrukturen sind bereits fertiggestellt.",
-      "p3": "Wir streben an, 2026-2027 mit der gesamten Luxus-Bungalow-Kapazität, Gemeinschaftsbereichen, Saunas, Pools, Spas, Gartenbau, Solarfeldern und vielen weiteren Details bereit zu sein und 2027-2028 mit dem Rest der Bauten und Infrastrukturen voll betriebsbereit."
+      "p3": "Wir streben an, 2026-2027 mit der gesamten Luxus-Bungalow-Kapazität, Gemeinschaftsbereichen, Saunas, Pools, Spas, Gartenbau, Solarfeldern und vielen weiteren Details bereit zu sein und 2027-2028 mit dem Rest der Bauten und Infrastrukturen voll betriebsbereit.",
+      "pdfViewer": "Peralejos-Projektdokument"
     },
     "theLake": {
       "title": "The Lake",

@@ -496,13 +496,16 @@
     "bugarra": {
       "title": "Bugarra",
       "p1": "Consistente nella costruzione di quattordici bungalow di lusso completamente attrezzati per un'clientela esigente, con ristorante gourmet, piscine, spa e un'ampia offerta di attività turistiche.",
-      "p2": "Stiamo attendendo l'ottenimento degli ultimi permessi per l'esecuzione e puntiamo ad essere aperti e operativi entro il 2027."
+      "p2": "Stiamo attendendo l'ottenimento degli ultimi permessi per l'esecuzione e puntiamo ad essere aperti e operativi entro il 2027.",
+      "pdfViewer": "Documento del progetto Bugarra I",
+      "pdfViewer2": "Documento del progetto Bugarra II"
     },
     "peralejos": {
       "title": "Peralejos",
       "p1": "Consistente nella costruzione e nello sviluppo di un hotel a sei stelle con dieci bungalow, ristorante gourmet, zone di idroterapia, piscine, palestre, spa, attività turistiche, negozio online, noleggio veicoli e servizio guide, tra gli altri aspetti, nel cuore del Parco Naturale dell'Alto Tajo a Peralejos de Las Truchas, Guadalajara — progetto avviato oltre due anni fa e in piena fase di sviluppo e design.",
       "p2": "Avremo una trentina di camere, dai quasi cento ai quattrocento metri quadrati, cucina gourmet e una ricchezza di dettagli squisiti che daranno al Progetto la massima reputazione in Spagna e all'estero. Il Progetto si svilupperà per fasi, con numerose costruzioni e infrastrutture già completate.",
-      "p3": "Puntiamo ad essere pronti nel 2026-2027 con tutta la capacità di bungalow di lusso, aree comuni, saune, piscine, spa, progetti di giardinaggio, campi solari e molti altri dettagli, e nel 2027-2028 pienamente operativi con il resto delle costruzioni e infrastrutture del Progetto."
+      "p3": "Puntiamo ad essere pronti nel 2026-2027 con tutta la capacità di bungalow di lusso, aree comuni, saune, piscine, spa, progetti di giardinaggio, campi solari e molti altri dettagli, e nel 2027-2028 pienamente operativi con il resto delle costruzioni e infrastrutture del Progetto.",
+      "pdfViewer": "Documento del progetto Peralejos"
     },
     "theLake": {
       "title": "The Lake",
