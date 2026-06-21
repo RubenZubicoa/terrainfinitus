@@ -5,15 +5,16 @@
 
   <section class="home-video" [attr.aria-label]="'home.videoAria' | translate">
     <div class="home-video__frame">
-      <iframe
+      <video
         class="home-video__player"
-        [src]="safeVideoPath"
-        [title]="'home.videoTitle' | translate"
-        loading="lazy"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+        [src]="videoPath"
+        [attr.aria-label]="'home.videoTitle' | translate"
+        autoplay
+        muted
+        playsinline
+        controls
+        preload="auto"
+      ></video>
     </div>
   </section>
 

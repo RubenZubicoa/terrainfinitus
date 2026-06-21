@@ -1,7 +1,6 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Banner, BannerSlide } from '../../shared/components/banner/banner';
-import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +9,10 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  private readonly sanitizer = inject(DomSanitizer);
+  readonly videoPath =
+    'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/Terra%20infinitus%201080.mp4?alt=media&token=59b3ec1e-28da-41f1-a7c2-886ab2afae74';
 
-  readonly slides: readonly BannerSlide[] = [
-    { src: '/images/inicio/inicio1.jpg', altKey: 'home.alt1' },
+  readonly slides: readonly BannerSlide[] = [    { src: '/images/inicio/inicio1.jpg', altKey: 'home.alt1' },
     { src: '/images/inicio/inicio2.jpg', altKey: 'home.alt2' },
     { src: '/images/inicio/inicio3.jpg', altKey: 'home.alt3' },
     { src: '/images/inicio/inicio4.jpg', altKey: 'home.alt4' },
@@ -33,8 +32,4 @@ export class HomeComponent {
     { src: '/images/inicio/inicio18.jpg', altKey: 'home.alt18' },
     { src: '/images/inicio/inicio19.jpg', altKey: 'home.alt19' },
   ];
-
-  private videoPath = 'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/Terra%20infinitus%201080.mp4?alt=media&token=59b3ec1e-28da-41f1-a7c2-886ab2afae74'
-
-  public safeVideoPath = this.sanitizer.bypassSecurityTrustResourceUrl(this.videoPath)
 }
