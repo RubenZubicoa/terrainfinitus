@@ -1,10 +1,11 @@
-import { Product, ProductCategory } from '../../../shared/models/product.models';
+import { Product, ProductCategory, GourmetSectionId } from '../../../shared/models/product.models';
 
 function gourmetProductImage(productId: string): string {
   return `/images/shop/gourmet/${productId.replace('gourmet-', '')}.jpg`;
 }
 
-export const GOURMET_PRODUCTS: Product[] = [
+
+const GOURMET_PRODUCTS_RAW: Omit<Product, 'gourmetSection'>[] = [
   {
     id: 'gourmet-bloc-de-foie-gras-1-kg',
     category: 'gourmet',
@@ -639,6 +640,11 @@ export const GOURMET_PRODUCTS: Product[] = [
   },
 ];
 
+export const GOURMET_PRODUCTS: Product[] = GOURMET_PRODUCTS_RAW.map((product) => ({
+  ...product,
+  gourmetSection: 'productos-pato' satisfies GourmetSectionId,
+}));
+
 export const MERCHANDISING_PRODUCTS: Product[] = [];
 
 const ALL_PRODUCTS: Product[] = [...GOURMET_PRODUCTS, ...MERCHANDISING_PRODUCTS];
@@ -658,4 +664,8 @@ export function getRelatedProducts(productId: string, limit = 4): Product[] {
 
 export function getProductsByCategory(category: ProductCategory): Product[] {
   return ALL_PRODUCTS.filter((product) => product.category === category);
+}
+
+export function getGourmetProductsBySection(sectionId: GourmetSectionId): Product[] {
+  return GOURMET_PRODUCTS.filter((product) => product.gourmetSection === sectionId);
 }

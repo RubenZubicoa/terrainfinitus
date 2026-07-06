@@ -141,7 +141,24 @@
     "gourmet": {
       "eyebrow": "Loja Boutique",
       "title": "Gourmet",
-      "description": "Seleção de foie gras e produtos de pato Malvasía, elaborados em Sória com o selo de qualidade Terra Infinitus. Ideal para levar consigo o sabor gourmet dos nossos destinos."
+      "description": "Explore a nossa seleção gourmet organizada por famílias de produto: azeites, produtos de pato Malvasía, doces, enchidos, conservas e muito mais. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
+      "navAria": "Categorias da loja gourmet",
+      "catalogDownload": "Descarregar catálogo Malvasía",
+      "sectionEmpty": "Em breve adicionaremos referências nesta categoria.",
+      "sections": {
+        "aceites": { "title": "Azeites", "presentation": "Azeites virgem extra e especialidades selecionadas para alta gastronomia." },
+        "productosPato": { "title": "Produtos de pato", "presentation": "Foie gras, confits, patês e especialidades Malvasía de Sória com o selo Terra Infinitus." },
+        "dulcesPostres": { "title": "Doces e sobremesas", "presentation": "Reposteria fina, doces artesanais e sobremesas gourmet." },
+        "embutidosJamonesCecinas": { "title": "Enchidos, presuntos e cecinas", "presentation": "Seleção de enchidos ibéricos, presuntos e cecinas de máxima qualidade." },
+        "mielesMermeladas": { "title": "Mel e compotas", "presentation": "Mel artesanal e compotas gourmet com ingredientes naturais." },
+        "conservas": { "title": "Conservas", "presentation": "Conservas gourmet de época e especialidades para paladares exigentes." },
+        "caviar": { "title": "Caviar", "presentation": "Caviar e ovas selecionadas para ocasiões especiais." },
+        "pastas": { "title": "Massas", "presentation": "Massas artesanais e especialidades para cozinha de autor." },
+        "condimentosEspeciasSales": { "title": "Condimentos, especiarias e sal", "presentation": "Condimentos, especiarias aromáticas e sal gourmet para realçar cada prato." },
+        "galletasPanes": { "title": "Bolachas, pães, etc.", "presentation": "Bolachas artesanais, pães especiais e produtos de padaria gourmet." },
+        "bebidasVinosLicores": { "title": "Bebidas, vinhos e licores", "presentation": "Vinhos, licores e bebidas selecionadas para harmonizar com a nossa proposta gastronómica." },
+        "setas": { "title": "Cogumelos", "presentation": "Cogumelos frescos e conservas de cogumelos de época e origem selecionada." }
+      }
     },
     "merchandising": {
       "eyebrow": "Loja Boutique",

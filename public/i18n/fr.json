@@ -141,7 +141,24 @@
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
-      "description": "Sélection de foie gras et produits de canard Malvasía, élaborés à Soria avec le label de qualité Terra Infinitus. Idéal pour emporter chez vous le goût gourmet de nos destinations."
+      "description": "Découvrez notre sélection gourmet organisée par familles de produits : huiles, produits de canard Malvasía, douceurs, charcuteries, conserves et bien plus. Chaque section comprend une présentation et un catalogue de références avec prix.",
+      "navAria": "Catégories de la boutique gourmet",
+      "catalogDownload": "Télécharger le catalogue Malvasía",
+      "sectionEmpty": "Nous ajouterons bientôt des références dans cette catégorie.",
+      "sections": {
+        "aceites": { "title": "Huiles", "presentation": "Huiles d'olive vierge extra et spécialités sélectionnées pour la haute gastronomie." },
+        "productosPato": { "title": "Produits de canard", "presentation": "Foie gras, confits, pâtés et spécialités élaborés par Malvasía à Soria, avec le label Terra Infinitus." },
+        "dulcesPostres": { "title": "Douceurs et desserts", "presentation": "Pâtisserie fine, douceurs artisanales et desserts gourmet." },
+        "embutidosJamonesCecinas": { "title": "Charcuteries, jambons et cecinas", "presentation": "Sélection de charcuteries ibériques, jambons et cecinas de grande qualité." },
+        "mielesMermeladas": { "title": "Miels et confitures", "presentation": "Miels artisanaux et confitures gourmet à base d'ingrédients naturels." },
+        "conservas": { "title": "Conserves", "presentation": "Conserves gourmet de saison et spécialités pour les palais exigeants." },
+        "caviar": { "title": "Caviar", "presentation": "Caviar et œufs sélectionnés pour les occasions spéciales." },
+        "pastas": { "title": "Pâtes", "presentation": "Pâtes artisanales et spécialités pour une cuisine d'auteur." },
+        "condimentosEspeciasSales": { "title": "Condiments, épices et sels", "presentation": "Condiments, épices aromatiques et sels gourmet pour sublimer chaque plat." },
+        "galletasPanes": { "title": "Biscuits, pains, etc.", "presentation": "Biscuits artisanaux, pains spéciaux et produits de boulangerie gourmet." },
+        "bebidasVinosLicores": { "title": "Boissons, vins et liqueurs", "presentation": "Vins, liqueurs et boissons sélectionnés pour accompagner notre offre gastronomique." },
+        "setas": { "title": "Champignons", "presentation": "Champignons frais et conserves de champignons de saison." }
+      }
     },
     "merchandising": {
       "eyebrow": "Boutique",

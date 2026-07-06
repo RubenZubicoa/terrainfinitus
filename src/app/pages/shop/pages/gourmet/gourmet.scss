@@ -35,3 +35,120 @@
   color: var(--ti-muted);
   text-align: justify;
 }
+
+.gourmet-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.85rem 0;
+  background: linear-gradient(
+    to bottom,
+    var(--ti-cream) 75%,
+    rgba(254, 224, 189, 0)
+  );
+}
+
+.gourmet-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gourmet-nav__link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--ti-border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ti-charcoal);
+  font-family: var(--ti-font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    border-color var(--ti-transition),
+    color var(--ti-transition),
+    transform var(--ti-transition);
+
+  &:hover {
+    border-color: var(--ti-copper);
+    color: var(--ti-copper-dark);
+    transform: translateY(-1px);
+  }
+}
+
+.gourmet-sections {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.gourmet-section {
+  scroll-margin-top: 5.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--ti-border);
+}
+
+.gourmet-section__header {
+  margin-bottom: 1.25rem;
+}
+
+.gourmet-section__title {
+  margin: 0 0 0.75rem;
+  font-family: var(--ti-font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ti-black);
+}
+
+.gourmet-section__presentation {
+  margin: 0;
+  max-width: 52rem;
+  font-size: clamp(0.9375rem, 1.5vw, 1.02rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}
+
+.gourmet-section__catalog {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.9rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--ti-copper);
+  color: #fff;
+  font-family: var(--ti-font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    transform var(--ti-transition);
+
+  &:hover {
+    background: var(--ti-copper-dark);
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 768px) {
+  .gourmet-nav__list {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .gourmet-section {
+    scroll-margin-top: 4.5rem;
+  }
+}

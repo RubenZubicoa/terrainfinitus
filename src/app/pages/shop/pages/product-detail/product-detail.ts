@@ -42,9 +42,13 @@ export class ProductDetail {
   readonly backRoute = computed(() => {
     const current = this.product();
     if (!current) return '/tienda-boutique/gourmet';
-    return current.category === 'merchandising'
-      ? '/tienda-boutique/merchandising'
-      : '/tienda-boutique/gourmet';
+    if (current.category === 'merchandising') {
+      return '/tienda-boutique/merchandising';
+    }
+    if (current.gourmetSection) {
+      return `/tienda-boutique/gourmet#${current.gourmetSection}`;
+    }
+    return '/tienda-boutique/gourmet';
   });
 
   readonly detailRoutePrefix = computed(() => {

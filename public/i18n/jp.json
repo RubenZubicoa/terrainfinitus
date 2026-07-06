@@ -141,7 +141,24 @@
     "gourmet": {
       "eyebrow": "ブティックショップ",
       "title": "Gourmet",
-      "description": "ソリア産マルバシアのフォアグラと鴨製品のセレクション。Terra Infinitus品質保証付き。目的地のグルメの味をお持ち帰りいただけます。"
+      "description": "オイル、Malvasíaの鴨製品、スイーツ、ハム・ソーセージ、瓶詰めなど、製品ファミリー別に整理したグルメセレクション。各セクションには紹介文と価格付きの商品カタログがあります。",
+      "navAria": "グルメショップのカテゴリー",
+      "catalogDownload": "Malvasíaカタログをダウンロード",
+      "sectionEmpty": "このカテゴリーにはまもなく商品を追加します。",
+      "sections": {
+        "aceites": { "title": "オイル", "presentation": "エクストラバージンオリーブオイルと高級料理向けの厳選品。" },
+        "productosPato": { "title": "鴨製品", "presentation": "ソリアのMalvasíaが手がけるフォアグラ、コンフィ、パテなど、Terra Infinitus品質の製品。" },
+        "dulcesPostres": { "title": "スイーツ・デザート", "presentation": "繊細な洋菓子、手作りスイーツ、グルメデザート。" },
+        "embutidosJamonesCecinas": { "title": "ハム・ソーセージ・セシーナ", "presentation": "最高品質のイベリコ系加工肉、ハム、セシーナのセレクション。" },
+        "mielesMermeladas": { "title": "はちみつ・ジャム", "presentation": "天然素材を使った手作りはちみつとグルメジャム。" },
+        "conservas": { "title": "瓶詰め", "presentation": "季節のグルメ瓶詰めとこだわりの味。" },
+        "caviar": { "title": "キャビア", "presentation": "特別な日のための厳選キャビアと魚卵。" },
+        "pastas": { "title": "パスタ", "presentation": "手作りパスタと創作料理向けの特選品。" },
+        "condimentosEspeciasSales": { "title": "調味料・スパイス・塩", "presentation": "料理を引き立てるグルメ調味料、香辛料、塩。" },
+        "galletasPanes": { "title": "ビスケット・パンなど", "presentation": "手作りビスケット、特製パン、グルメベーカリー製品。" },
+        "bebidasVinosLicores": { "title": "飲料・ワイン・リキュール", "presentation": "料理に合わせて選んだワイン、リキュール、飲料。" },
+        "setas": { "title": "きのこ", "presentation": "新鮮なきのこと季節のきのこ瓶詰め。" }
+      }
     },
     "merchandising": {
       "eyebrow": "ブティックショップ",

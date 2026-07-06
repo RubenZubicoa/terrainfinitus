@@ -141,7 +141,24 @@
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
-      "description": "Selezione di foie gras e prodotti d'anatra Malvasía, elaborati a Soria con il marchio di qualità Terra Infinitus. Ideale per portare a casa il gusto gourmet delle nostre destinazioni."
+      "description": "Esplora la nostra selezione gourmet organizzata per famiglie di prodotto: oli, prodotti di anatra Malvasía, dolci, salumi, conserve e altro. Ogni sezione include una presentazione e un catalogo di referenze con prezzi.",
+      "navAria": "Categorie del negozio gourmet",
+      "catalogDownload": "Scarica catalogo Malvasía",
+      "sectionEmpty": "Aggiungeremo presto referenze in questa categoria.",
+      "sections": {
+        "aceites": { "title": "Oli", "presentation": "Oli extravergine di oliva e specialità selezionate per l'alta gastronomia." },
+        "productosPato": { "title": "Prodotti di anatra", "presentation": "Foie gras, confit, paté e specialità Malvasía di Soria con il marchio Terra Infinitus." },
+        "dulcesPostres": { "title": "Dolci e dessert", "presentation": "Pasticceria fine, dolci artigianali e dessert gourmet." },
+        "embutidosJamonesCecinas": { "title": "Salumi, prosciutti e cecinas", "presentation": "Selezione di salumi iberici, prosciutti e cecinas di massima qualità." },
+        "mielesMermeladas": { "title": "Mieli e marmellate", "presentation": "Mieli artigianali e marmellate gourmet con ingredienti naturali." },
+        "conservas": { "title": "Conserve", "presentation": "Conserve gourmet di stagione e specialità per palati esigenti." },
+        "caviar": { "title": "Caviale", "presentation": "Caviale e uova selezionate per occasioni speciali." },
+        "pastas": { "title": "Paste", "presentation": "Paste artigianali e specialità per una cucina d'autore." },
+        "condimentosEspeciasSales": { "title": "Condimenti, spezie e sali", "presentation": "Condimenti, spezie aromatiche e sali gourmet per esaltare ogni piatto." },
+        "galletasPanes": { "title": "Biscotti, pani, ecc.", "presentation": "Biscotti artigianali, pani speciali e prodotti da forno gourmet." },
+        "bebidasVinosLicores": { "title": "Bevande, vini e liquori", "presentation": "Vini, liquori e bevande selezionati per accompagnare la nostra proposta gastronomica." },
+        "setas": { "title": "Funghi", "presentation": "Funghi freschi e conserve di funghi di stagione e origine selezionata." }
+      }
     },
     "merchandising": {
       "eyebrow": "Boutique",

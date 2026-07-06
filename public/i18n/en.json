@@ -141,7 +141,60 @@
     "gourmet": {
       "eyebrow": "Boutique Shop",
       "title": "Gourmet",
-      "description": "A selection of Malvasía foie gras and duck products from Soria, with the Terra Infinitus quality seal. Perfect to take the gourmet taste of our destinations home with you."
+      "description": "Explore our gourmet selection organised by product families: oils, Malvasía duck products, sweets, charcuterie, preserves and more. Each section includes an introduction and a catalogue of items with prices.",
+      "navAria": "Gourmet shop categories",
+      "catalogDownload": "Download Malvasía catalogue",
+      "sectionEmpty": "We will add items to this category soon.",
+      "sections": {
+        "aceites": {
+          "title": "Oils",
+          "presentation": "Extra virgin olive oils and selected specialities for fine dining."
+        },
+        "productosPato": {
+          "title": "Duck products",
+          "presentation": "Foie gras, confits, pâtés and specialities crafted by Malvasía in Soria, with the Terra Infinitus quality seal."
+        },
+        "dulcesPostres": {
+          "title": "Sweets and desserts",
+          "presentation": "Fine pastries, artisan sweets and gourmet desserts to sweeten the Terra Infinitus experience."
+        },
+        "embutidosJamonesCecinas": {
+          "title": "Charcuterie, hams and cured meats",
+          "presentation": "A selection of Iberian charcuterie, hams and premium cured meats."
+        },
+        "mielesMermeladas": {
+          "title": "Honey and jams",
+          "presentation": "Artisan honey and gourmet jams made with natural ingredients."
+        },
+        "conservas": {
+          "title": "Preserves",
+          "presentation": "Seasonal gourmet preserves and specialities for the discerning palate."
+        },
+        "caviar": {
+          "title": "Caviar",
+          "presentation": "Selected caviar and roe for special occasions."
+        },
+        "pastas": {
+          "title": "Pasta",
+          "presentation": "Artisan pasta and specialities for creative cuisine."
+        },
+        "condimentosEspeciasSales": {
+          "title": "Condiments, spices and salts",
+          "presentation": "Gourmet condiments, aromatic spices and salts to enhance every dish."
+        },
+        "galletasPanes": {
+          "title": "Biscuits, breads, etc.",
+          "presentation": "Artisan biscuits, speciality breads and gourmet bakery products."
+        },
+        "bebidasVinosLicores": {
+          "title": "Drinks, wines and spirits",
+          "presentation": "Wines, spirits and beverages selected to pair with our gastronomic offer."
+        },
+        "setas": {
+          "title": "Mushrooms",
+          "presentation": "Fresh mushrooms and preserved seasonal mushrooms from selected origins."
+        }
+      }
     },
     "merchandising": {
       "eyebrow": "Boutique Shop",

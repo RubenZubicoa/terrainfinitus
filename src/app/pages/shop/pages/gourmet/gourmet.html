@@ -5,9 +5,53 @@
     <p class="gourmet-hero__description">{{ 'shop.gourmet.description' | translate }}</p>
   </header>
 
-  <app-product-list
-    [products]="products"
-    detailRoutePrefix="/tienda-boutique/gourmet"
-    priceDigits="1.2-2"
-  />
+  <nav class="gourmet-nav" [attr.aria-label]="'shop.gourmet.navAria' | translate">
+    <ul class="gourmet-nav__list">
+      @for (section of sections; track section.id) {
+        <li>
+          <a
+            class="gourmet-nav__link"
+            [href]="'#' + section.id"
+            (click)="scrollToSection(section.id); $event.preventDefault()"
+          >
+            {{ section.translationKey + '.title' | translate }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+
+  <div class="gourmet-sections">
+    @for (section of sections; track section.id) {
+      <section class="gourmet-section" [id]="section.id">
+        <header class="gourmet-section__header">
+          <h2 class="gourmet-section__title">
+            {{ section.translationKey + '.title' | translate }}
+          </h2>
+          <p class="gourmet-section__presentation">
+            {{ section.translationKey + '.presentation' | translate }}
+          </p>
+
+          @if (section.catalogUrl) {
+            <a
+              class="gourmet-section__catalog"
+              [href]="section.catalogUrl"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ 'shop.gourmet.catalogDownload' | translate }}
+            </a>
+          }
+        </header>
+
+        <app-product-list
+          [products]="productsForSection(section.id)"
+          detailRoutePrefix="/tienda-boutique/gourmet"
+          priceDigits="1.2-2"
+          [emptyKey]="'shop.gourmet.sectionEmpty'"
+        />
+      </section>
+    }
+  </div>
 </div>

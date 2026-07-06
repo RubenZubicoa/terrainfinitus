@@ -141,7 +141,24 @@
     "gourmet": {
       "eyebrow": "Boutique-Shop",
       "title": "Gourmet",
-      "description": "Auswahl an Malvasía Foie gras und Entenprodukten aus Soria mit dem Terra-Infinitus-Qualitätssiegel. Ideal, um den Gourmet-Geschmack unserer Destinationen mit nach Hause zu nehmen."
+      "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien: Öle, Malvasía-Entenprodukte, Süßes, Wurstwaren, Konserven und mehr. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
+      "navAria": "Gourmet-Shop-Kategorien",
+      "catalogDownload": "Malvasía-Katalog herunterladen",
+      "sectionEmpty": "In dieser Kategorie werden wir bald Referenzen hinzufügen.",
+      "sections": {
+        "aceites": { "title": "Öle", "presentation": "Natives Olivenöl extra und ausgewählte Spezialitäten für die Haute Cuisine." },
+        "productosPato": { "title": "Entenprodukte", "presentation": "Foie gras, Confit, Pasteten und Spezialitäten von Malvasía aus Soria mit dem Terra-Infinitus-Siegel." },
+        "dulcesPostres": { "title": "Süßes und Desserts", "presentation": "Feine Patisserie, handgemachte Süßigkeiten und Gourmet-Desserts." },
+        "embutidosJamonesCecinas": { "title": "Wurst, Schinken und Cecinas", "presentation": "Auswahl iberischer Wurstwaren, Schinken und Cecinas von höchster Qualität." },
+        "mielesMermeladas": { "title": "Honig und Marmeladen", "presentation": "Handwerklicher Honig und Gourmet-Marmeladen aus natürlichen Zutaten." },
+        "conservas": { "title": "Konserven", "presentation": "Saisonale Gourmet-Konserven und Spezialitäten für anspruchsvolle Gaumen." },
+        "caviar": { "title": "Kaviar", "presentation": "Ausgewählter Kaviar und Rogen für besondere Anlässe." },
+        "pastas": { "title": "Pasta", "presentation": "Handgemachte Pasta und Spezialitäten für kreative Küche." },
+        "condimentosEspeciasSales": { "title": "Würzmittel, Gewürze und Salze", "presentation": "Gourmet-Würzmittel, aromatische Gewürze und Salze für jedes Gericht." },
+        "galletasPanes": { "title": "Kekse, Brote usw.", "presentation": "Handgemachte Kekse, Spezialbrote und Gourmet-Backwaren." },
+        "bebidasVinosLicores": { "title": "Getränke, Weine und Spirituosen", "presentation": "Weine, Spirituosen und Getränke passend zu unserem gastronomischen Angebot." },
+        "setas": { "title": "Pilze", "presentation": "Frische Pilze und Pilzkonserven ausgewählter Herkunft und Saison." }
+      }
     },
     "merchandising": {
       "eyebrow": "Boutique-Shop",

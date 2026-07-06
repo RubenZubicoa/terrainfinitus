@@ -141,7 +141,60 @@
     "gourmet": {
       "eyebrow": "Tienda Boutique",
       "title": "Gourmet",
-      "description": "Selección de foie gras y productos de pato Malvasía, elaborados en Soria con el sello de calidad Terra Infinitus. Ideales para llevar contigo el sabor gourmet de nuestros destinos."
+      "description": "Explora nuestra selección gourmet organizada por familias de producto: aceites, productos del pato Malvasía, dulces, embutidos, conservas y mucho más. Cada sección incluye una presentación y el catálogo de referencias con precios.",
+      "navAria": "Categorías de la tienda gourmet",
+      "catalogDownload": "Descargar catálogo Malvasía",
+      "sectionEmpty": "Próximamente añadiremos referencias en esta categoría.",
+      "sections": {
+        "aceites": {
+          "title": "Aceites",
+          "presentation": "Aceites de oliva virgen extra y especialidades seleccionadas para la alta gastronomía."
+        },
+        "productosPato": {
+          "title": "Productos del pato",
+          "presentation": "Foie gras, confits, patés y especialidades elaboradas por Malvasía en Soria, con el sello de calidad Terra Infinitus."
+        },
+        "dulcesPostres": {
+          "title": "Dulces y postres",
+          "presentation": "Repostería fina, dulces artesanales y postres gourmet para endulzar la experiencia Terra Infinitus."
+        },
+        "embutidosJamonesCecinas": {
+          "title": "Embutidos, jamones y cecinas",
+          "presentation": "Selección de embutidos ibéricos, jamones y cecinas de máxima calidad."
+        },
+        "mielesMermeladas": {
+          "title": "Mieles y mermeladas",
+          "presentation": "Mieles artesanales y mermeladas gourmet elaboradas con ingredientes naturales."
+        },
+        "conservas": {
+          "title": "Conservas",
+          "presentation": "Conservas gourmet de temporada y especialidades para el paladar exigente."
+        },
+        "caviar": {
+          "title": "Caviar",
+          "presentation": "Caviar y huevas seleccionadas para ocasiones especiales."
+        },
+        "pastas": {
+          "title": "Pastas",
+          "presentation": "Pastas artesanales y especialidades para una cocina de autor."
+        },
+        "condimentosEspeciasSales": {
+          "title": "Condimentos, especias y sales",
+          "presentation": "Condimentos, especias aromáticas y sales gourmet para realzar cada plato."
+        },
+        "galletasPanes": {
+          "title": "Galletas, panes, etc.",
+          "presentation": "Galletas artesanales, panes especiales y productos de obrador gourmet."
+        },
+        "bebidasVinosLicores": {
+          "title": "Bebidas, vinos y licores",
+          "presentation": "Vinos, licores y bebidas seleccionadas para maridar con nuestra propuesta gastronómica."
+        },
+        "setas": {
+          "title": "Setas",
+          "presentation": "Setas frescas y conservas de setas de temporada y origen seleccionado."
+        }
+      }
     },
     "merchandising": {
       "eyebrow": "Tienda Boutique",
