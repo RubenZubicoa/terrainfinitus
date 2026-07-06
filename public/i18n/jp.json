@@ -154,10 +154,45 @@
       "continueGourmet": "グルメを続ける",
       "continueMerchandising": "マーチャンダイジングを続ける",
       "checkout": "注文を依頼する",
-      "checkoutNote": "オンライン決済は近日公開予定です。現在はお問い合わせからご注文いただけます。",
+      "checkoutNote": "注文内容を確認し、次のステップで情報を入力してください。",
       "decrease": "数量を減らす",
       "increase": "数量を増やす",
-      "categories": { "gourmet": "グルメ", "merchandising": "マーチャンダイジング" }
+      "categories": { "gourmet": "グルメ", "merchandising": "マーチャンダイジング"       }
+    },
+    "checkout": {
+      "title": "注文を完了する",
+      "eyebrow": "Checkout",
+      "subtitle": "個人情報を入力し、お支払い方法を選択してください。",
+      "personalData": "個人情報",
+      "name": "名",
+      "lastName": "姓",
+      "email": "メールアドレス",
+      "phone": "電話番号",
+      "address": "配送先住所",
+      "paymentMethod": "お支払い方法",
+      "paymentMethods": {
+        "card": "カード",
+        "transfer": "銀行振込",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "ご注文確認後、振込先の銀行口座情報をお送りします。",
+        "bizum": "ご注文確認後、Bizumの番号をお送りします。",
+        "paypal": "PayPalの支払いリンクをお送りして購入を完了します。"
+      },
+      "stripeAria": "カード決済フォーム",
+      "stripePlaceholder": "カード情報入力用のStripeセキュアフォームをここに統合します。",
+      "stripeHint": "これはプレースホルダーです。バックエンド接続時にStripe Elementsに置き換えてください。",
+      "stripeCardNumber": "カード番号",
+      "stripeExpiry": "有効期限",
+      "stripeCvc": "CVC",
+      "orderSummary": "注文概要",
+      "backToCart": "カートに戻る",
+      "submit": "注文を確定",
+      "submitting": "注文を処理中…",
+      "success": "注文が正常に登録されました。追ってご連絡いたします。",
+      "error": "注文を処理できませんでした。もう一度お試しください。"
     },
     "gourmet": {
       "eyebrow": "ブティックショップ",

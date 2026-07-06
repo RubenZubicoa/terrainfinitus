@@ -154,13 +154,48 @@
       "continueGourmet": "Seguir en gourmet",
       "continueMerchandising": "Seguir en merchandising",
       "checkout": "Solicitar pedido",
-      "checkoutNote": "El pago en línea estará disponible próximamente. Por ahora puedes solicitar tu pedido desde contacto.",
+      "checkoutNote": "Revisa tu pedido y completa tus datos en el siguiente paso.",
       "decrease": "Reducir cantidad",
       "increase": "Aumentar cantidad",
       "categories": {
         "gourmet": "Gourmet",
         "merchandising": "Merchandising"
       }
+    },
+    "checkout": {
+      "title": "Finalizar pedido",
+      "eyebrow": "Checkout",
+      "subtitle": "Introduce tus datos personales y elige cómo deseas pagar.",
+      "personalData": "Datos personales",
+      "name": "Nombre",
+      "lastName": "Apellidos",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "address": "Dirección de envío",
+      "paymentMethod": "Forma de pago",
+      "paymentMethods": {
+        "card": "Tarjeta",
+        "transfer": "Transferencia",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "Recibirás los datos bancarios para realizar la transferencia una vez confirmemos tu pedido.",
+        "bizum": "Te enviaremos el número de Bizum para completar el pago tras revisar tu pedido.",
+        "paypal": "Te enviaremos un enlace de pago de PayPal para finalizar la compra."
+      },
+      "stripeAria": "Formulario de pago con tarjeta",
+      "stripePlaceholder": "Aquí se integrará el formulario seguro de Stripe para introducir los datos de la tarjeta.",
+      "stripeHint": "Este bloque es un marcador de posición. Sustitúyelo por Stripe Elements cuando conectes el backend.",
+      "stripeCardNumber": "Número de tarjeta",
+      "stripeExpiry": "Caducidad",
+      "stripeCvc": "CVC",
+      "orderSummary": "Resumen del pedido",
+      "backToCart": "Volver al carrito",
+      "submit": "Confirmar pedido",
+      "submitting": "Procesando pedido…",
+      "success": "Pedido registrado correctamente. Nos pondremos en contacto contigo.",
+      "error": "No se pudo procesar el pedido. Inténtalo de nuevo."
     },
     "gourmet": {
       "eyebrow": "Tienda Boutique",

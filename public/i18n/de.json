@@ -154,10 +154,45 @@
       "continueGourmet": "Weiter im Gourmet",
       "continueMerchandising": "Weiter im Merchandising",
       "checkout": "Bestellung anfragen",
-      "checkoutNote": "Die Online-Zahlung wird bald verfügbar sein. Bis dahin können Sie Ihre Bestellung über Kontakt anfragen.",
+      "checkoutNote": "Überprüfen Sie Ihre Bestellung und vervollständigen Sie Ihre Daten im nächsten Schritt.",
       "decrease": "Menge verringern",
       "increase": "Menge erhöhen",
-      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising"       }
+    },
+    "checkout": {
+      "title": "Bestellung abschließen",
+      "eyebrow": "Checkout",
+      "subtitle": "Geben Sie Ihre persönlichen Daten ein und wählen Sie die Zahlungsart.",
+      "personalData": "Persönliche Daten",
+      "name": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Lieferadresse",
+      "paymentMethod": "Zahlungsart",
+      "paymentMethods": {
+        "card": "Karte",
+        "transfer": "Überweisung",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "Sie erhalten die Bankdaten für die Überweisung, sobald wir Ihre Bestellung bestätigen.",
+        "bizum": "Wir senden Ihnen die Bizum-Nummer zur Zahlung nach Prüfung Ihrer Bestellung.",
+        "paypal": "Wir senden Ihnen einen PayPal-Zahlungslink zum Abschluss des Kaufs."
+      },
+      "stripeAria": "Kartenzahlungsformular",
+      "stripePlaceholder": "Hier wird das sichere Stripe-Formular für Kartendaten integriert.",
+      "stripeHint": "Dies ist ein Platzhalter. Ersetzen Sie ihn durch Stripe Elements, wenn Sie das Backend anbinden.",
+      "stripeCardNumber": "Kartennummer",
+      "stripeExpiry": "Ablauf",
+      "stripeCvc": "CVC",
+      "orderSummary": "Bestellübersicht",
+      "backToCart": "Zurück zum Warenkorb",
+      "submit": "Bestellung bestätigen",
+      "submitting": "Bestellung wird verarbeitet…",
+      "success": "Bestellung erfolgreich registriert. Wir werden Sie kontaktieren.",
+      "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen."
     },
     "gourmet": {
       "eyebrow": "Boutique-Shop",

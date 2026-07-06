@@ -154,10 +154,45 @@
       "continueGourmet": "Continua in gourmet",
       "continueMerchandising": "Continua in merchandising",
       "checkout": "Richiedi ordine",
-      "checkoutNote": "Il pagamento online sarà disponibile a breve. Per ora puoi richiedere l'ordine tramite contatto.",
+      "checkoutNote": "Controlla il tuo ordine e completa i dati nel passaggio successivo.",
       "decrease": "Diminuisci quantità",
       "increase": "Aumenta quantità",
-      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising"       }
+    },
+    "checkout": {
+      "title": "Completa l'ordine",
+      "eyebrow": "Checkout",
+      "subtitle": "Inserisci i tuoi dati personali e scegli come pagare.",
+      "personalData": "Dati personali",
+      "name": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "address": "Indirizzo di spedizione",
+      "paymentMethod": "Metodo di pagamento",
+      "paymentMethods": {
+        "card": "Carta",
+        "transfer": "Bonifico",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "Riceverai i dati bancari per il bonifico dopo la conferma dell'ordine.",
+        "bizum": "Ti invieremo il numero Bizum per completare il pagamento dopo la revisione dell'ordine.",
+        "paypal": "Ti invieremo un link PayPal per completare l'acquisto."
+      },
+      "stripeAria": "Modulo pagamento con carta",
+      "stripePlaceholder": "Qui verrà integrato il modulo sicuro Stripe per i dati della carta.",
+      "stripeHint": "Questo è un segnaposto. Sostituiscilo con Stripe Elements quando colleghi il backend.",
+      "stripeCardNumber": "Numero carta",
+      "stripeExpiry": "Scadenza",
+      "stripeCvc": "CVC",
+      "orderSummary": "Riepilogo ordine",
+      "backToCart": "Torna al carrello",
+      "submit": "Conferma ordine",
+      "submitting": "Elaborazione ordine…",
+      "success": "Ordine registrato correttamente. Ti contatteremo a breve.",
+      "error": "Impossibile elaborare l'ordine. Riprova."
     },
     "gourmet": {
       "eyebrow": "Boutique",

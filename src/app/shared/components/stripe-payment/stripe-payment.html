@@ -1,0 +1,22 @@
+<div class="stripe-payment" role="region" [attr.aria-label]="'shop.checkout.stripeAria' | translate">
+  <p class="stripe-payment__note">{{ 'shop.checkout.stripePlaceholder' | translate }}</p>
+
+  <div class="stripe-payment__mock" aria-hidden="true">
+    <div class="stripe-payment__row">
+      <span class="stripe-payment__label">{{ 'shop.checkout.stripeCardNumber' | translate }}</span>
+      <div class="stripe-payment__field stripe-payment__field--wide"></div>
+    </div>
+    <div class="stripe-payment__row stripe-payment__row--split">
+      <div>
+        <span class="stripe-payment__label">{{ 'shop.checkout.stripeExpiry' | translate }}</span>
+        <div class="stripe-payment__field"></div>
+      </div>
+      <div>
+        <span class="stripe-payment__label">{{ 'shop.checkout.stripeCvc' | translate }}</span>
+        <div class="stripe-payment__field"></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="stripe-payment__hint">{{ 'shop.checkout.stripeHint' | translate }}</p>
+</div>

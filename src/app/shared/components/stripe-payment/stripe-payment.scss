@@ -1,0 +1,60 @@
+.stripe-payment {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem;
+  border: 1px dashed var(--ti-copper);
+  border-radius: var(--ti-radius-md);
+  background: rgba(184, 115, 51, 0.05);
+}
+
+.stripe-payment__note {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--ti-charcoal);
+}
+
+.stripe-payment__mock {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.85rem;
+  border-radius: var(--ti-radius-sm);
+  background: #fff;
+  border: 1px solid var(--ti-border);
+}
+
+.stripe-payment__row {
+  display: grid;
+  gap: 0.35rem;
+
+  &--split {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.stripe-payment__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ti-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stripe-payment__field {
+  height: 2.5rem;
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-sm);
+  background: var(--ti-cream-light);
+
+  &--wide {
+    width: 100%;
+  }
+}
+
+.stripe-payment__hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--ti-muted);
+  line-height: 1.45;
+}

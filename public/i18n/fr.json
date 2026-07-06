@@ -154,10 +154,45 @@
       "continueGourmet": "Continuer en gourmet",
       "continueMerchandising": "Continuer en merchandising",
       "checkout": "Demander la commande",
-      "checkoutNote": "Le paiement en ligne sera bientôt disponible. Pour l'instant, vous pouvez demander votre commande via contact.",
+      "checkoutNote": "Vérifiez votre commande et complétez vos informations à l'étape suivante.",
       "decrease": "Diminuer la quantité",
       "increase": "Augmenter la quantité",
-      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising"       }
+    },
+    "checkout": {
+      "title": "Finaliser la commande",
+      "eyebrow": "Checkout",
+      "subtitle": "Saisissez vos données personnelles et choisissez votre mode de paiement.",
+      "personalData": "Données personnelles",
+      "name": "Prénom",
+      "lastName": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "address": "Adresse de livraison",
+      "paymentMethod": "Mode de paiement",
+      "paymentMethods": {
+        "card": "Carte",
+        "transfer": "Virement",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "Vous recevrez les coordonnées bancaires pour effectuer le virement après confirmation de votre commande.",
+        "bizum": "Nous vous enverrons le numéro Bizum pour finaliser le paiement après examen de votre commande.",
+        "paypal": "Nous vous enverrons un lien de paiement PayPal pour finaliser votre achat."
+      },
+      "stripeAria": "Formulaire de paiement par carte",
+      "stripePlaceholder": "Le formulaire sécurisé Stripe pour les données de carte sera intégré ici.",
+      "stripeHint": "Il s'agit d'un emplacement réservé. Remplacez-le par Stripe Elements lors de la connexion au backend.",
+      "stripeCardNumber": "Numéro de carte",
+      "stripeExpiry": "Expiration",
+      "stripeCvc": "CVC",
+      "orderSummary": "Récapitulatif",
+      "backToCart": "Retour au panier",
+      "submit": "Confirmer la commande",
+      "submitting": "Traitement en cours…",
+      "success": "Commande enregistrée avec succès. Nous vous contacterons prochainement.",
+      "error": "Impossible de traiter la commande. Veuillez réessayer."
     },
     "gourmet": {
       "eyebrow": "Boutique",

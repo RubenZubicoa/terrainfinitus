@@ -154,13 +154,48 @@
       "continueGourmet": "Continue in gourmet",
       "continueMerchandising": "Continue in merchandising",
       "checkout": "Request order",
-      "checkoutNote": "Online payment will be available soon. For now you can request your order via contact.",
+      "checkoutNote": "Review your order and complete your details in the next step.",
       "decrease": "Decrease quantity",
       "increase": "Increase quantity",
       "categories": {
         "gourmet": "Gourmet",
         "merchandising": "Merchandising"
       }
+    },
+    "checkout": {
+      "title": "Complete order",
+      "eyebrow": "Checkout",
+      "subtitle": "Enter your personal details and choose how you want to pay.",
+      "personalData": "Personal details",
+      "name": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Shipping address",
+      "paymentMethod": "Payment method",
+      "paymentMethods": {
+        "card": "Card",
+        "transfer": "Bank transfer",
+        "bizum": "Bizum",
+        "paypal": "PayPal"
+      },
+      "paymentInstructions": {
+        "transfer": "You will receive bank details to complete the transfer once we confirm your order.",
+        "bizum": "We will send you the Bizum number to complete payment after reviewing your order.",
+        "paypal": "We will send you a PayPal payment link to complete your purchase."
+      },
+      "stripeAria": "Card payment form",
+      "stripePlaceholder": "The secure Stripe form for card details will be integrated here.",
+      "stripeHint": "This is a placeholder. Replace it with Stripe Elements when you connect the backend.",
+      "stripeCardNumber": "Card number",
+      "stripeExpiry": "Expiry",
+      "stripeCvc": "CVC",
+      "orderSummary": "Order summary",
+      "backToCart": "Back to cart",
+      "submit": "Confirm order",
+      "submitting": "Processing order…",
+      "success": "Order placed successfully. We will contact you shortly.",
+      "error": "Could not process the order. Please try again."
     },
     "gourmet": {
       "eyebrow": "Boutique Shop",
