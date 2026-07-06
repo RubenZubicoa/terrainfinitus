@@ -5,7 +5,8 @@
   },
   "common": {
     "brand": "Terra Infinitus",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "close": "Close"
   },
   "header": {
     "openMenu": "Open navigation menu",
@@ -13,7 +14,8 @@
     "selectLanguage": "Select language",
     "languagePrefix": "Language",
     "contact": "Contact",
-    "login": "Sign in"
+    "login": "Sign in",
+    "logout": "Sign out"
   },
   "login": {
     "eyebrow": "Private area",
@@ -34,6 +36,9 @@
     "showPassword": "Show password",
     "hidePassword": "Hide password",
     "demoHint": "Demo: demo@terrainfinitus.com / demo123"
+  },
+  "auth": {
+    "logoutSuccess": "You have been signed out successfully."
   },
   "layout": {
     "sideNav": "Side menu",

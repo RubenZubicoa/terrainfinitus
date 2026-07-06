@@ -18,6 +18,7 @@
 
   <div class="shell__main">
     <app-header (menuToggle)="toggleMobileNav()" />
+    <app-notification-toast />
     <main class="shell__content" [class.shell__content--home]="isHome()">
       <router-outlet />
     </main>

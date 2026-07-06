@@ -1,7 +1,10 @@
 import { Component, HostListener, inject, output, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CurrentLanguegeService } from '../../core/services/current-languege.service';
+import { AuthService } from '../../core/services/auth.service';
+import { CurrentUserService } from '../../core/services/current-user-service';
+import { NotificationService } from '../../core/services/notification.service';
 import { Languaje } from '../../core/models/Languaje';
 import { LanguageOption } from '../../core/data/languages';
 
@@ -15,6 +18,11 @@ export class HeaderComponent {
   readonly menuToggle = output<void>();
 
   protected readonly languageService = inject(CurrentLanguegeService);
+  protected readonly currentUserService = inject(CurrentUserService);
+  private readonly authService = inject(AuthService);
+  private readonly notificationService = inject(NotificationService);
+  private readonly router = inject(Router);
+
   protected readonly langMenuOpen = signal(false);
 
   protected get activeLanguage(): LanguageOption {
@@ -48,5 +56,11 @@ export class HeaderComponent {
   @HostListener('document:keydown.escape')
   protected closeLangMenuOnEscape(): void {
     this.langMenuOpen.set(false);
+  }
+
+  protected logout(): void {
+    this.authService.logout();
+    this.notificationService.show('auth.logoutSuccess', 'info');
+    void this.router.navigate(['/']);
   }
 }

@@ -87,6 +87,22 @@
       }
     </div>
 
-    <a routerLink="/login" class="header__cta">{{ 'header.login' | translate }}</a>
+    @if (currentUserService.user()) {
+      <div class="header__session">
+        <span class="header__user-name" [attr.title]="currentUserService.displayName()">
+          {{ currentUserService.displayName() }}
+        </span>
+        <button
+          type="button"
+          class="header__logout"
+          [attr.aria-label]="'header.logout' | translate"
+          (click)="logout()"
+        >
+          {{ 'header.logout' | translate }}
+        </button>
+      </div>
+    } @else {
+      <a routerLink="/login" class="header__cta">{{ 'header.login' | translate }}</a>
+    }
   </div>
 </header>

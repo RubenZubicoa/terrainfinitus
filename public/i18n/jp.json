@@ -5,7 +5,8 @@
   },
   "common": {
     "brand": "Terra Infinitus",
-    "backHome": "ホームに戻る"
+    "backHome": "ホームに戻る",
+    "close": "閉じる"
   },
   "header": {
     "openMenu": "ナビゲーションメニューを開く",
@@ -13,7 +14,8 @@
     "selectLanguage": "言語を選択",
     "languagePrefix": "言語",
     "contact": "お問い合わせ",
-    "login": "ログイン"
+    "login": "ログイン",
+    "logout": "ログアウト"
   },
   "login": {
     "eyebrow": "会員エリア",
@@ -34,6 +36,9 @@
     "showPassword": "パスワードを表示",
     "hidePassword": "パスワードを非表示",
     "demoHint": "デモ: demo@terrainfinitus.com / demo123"
+  },
+  "auth": {
+    "logoutSuccess": "ログアウトしました。"
   },
   "layout": {
     "sideNav": "サイドメニュー",

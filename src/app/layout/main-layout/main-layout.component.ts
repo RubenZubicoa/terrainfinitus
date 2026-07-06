@@ -6,10 +6,18 @@ import { filter, map, startWith } from 'rxjs';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { SidenavComponent } from '../sidenav/sidenav.component';
+import { NotificationToast } from '../../shared/components/notification-toast/notification-toast';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, SidenavComponent, TranslateModule],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    FooterComponent,
+    SidenavComponent,
+    NotificationToast,
+    TranslateModule,
+  ],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.scss',
 })

@@ -1,5 +1,5 @@
-import { inject, Injectable, OnInit, signal } from '@angular/core';
-import { User } from '../../core/models/User';
+import { computed, inject, Injectable, signal } from '@angular/core';
+import { User } from '../models/User';
 import { TokenService } from './token-service';
 
 @Injectable({
@@ -11,36 +11,41 @@ export class CurrentUserService {
   private readonly _user = signal<User | null>(null);
   private readonly storageKey = 'user';
 
-  public get user() {
-    return this._user.asReadonly();
-  }
+  readonly user = this._user.asReadonly();
+
+  readonly displayName = computed(() => {
+    const current = this._user();
+    if (!current) {
+      return '';
+    }
+    return [current.name, current.lastName].filter(Boolean).join(' ').trim();
+  });
 
   constructor() {
-    const isAuthenticated = this.tokenService.isAuthenticated();
-    if (isAuthenticated) {
+    if (this.tokenService.isAuthenticated()) {
       this.initialize();
     }
   }
 
-  protected initialize(): void {
+  private initialize(): void {
     this._user.set(this.getUser());
   }
 
-  public setUser(user: User) {
+  setUser(user: User): void {
     this._user.set(user);
     localStorage.setItem(this.storageKey, JSON.stringify(user));
   }
 
-  public removeUser() {
+  removeUser(): void {
     this._user.set(null);
     localStorage.removeItem(this.storageKey);
   }
 
-  public getUser() {
-    const user = localStorage.getItem(this.storageKey);
-    if (user) {
-      return JSON.parse(user);
+  getUser(): User | null {
+    const stored = localStorage.getItem(this.storageKey);
+    if (!stored) {
+      return null;
     }
-    return null;
+    return JSON.parse(stored) as User;
   }
 }
