@@ -15,7 +15,8 @@
     "languagePrefix": "言語",
     "contact": "お問い合わせ",
     "login": "ログイン",
-    "logout": "ログアウト"
+    "logout": "ログアウト",
+    "cart": "ショッピングカート"
   },
   "login": {
     "eyebrow": "会員エリア",
@@ -138,6 +139,26 @@
   "shop": {
     "productListAria": "商品一覧",
     "empty": "現在ご利用いただける商品はありません。",
+    "cart": {
+      "add": "カートに追加",
+      "added": "商品をカートに追加しました",
+      "title": "ショッピングカート",
+      "eyebrow": "選択した商品",
+      "description": "Terra Infinitusのグルメとマーチャンダイジングをひとつのカートで管理できます。",
+      "empty": "カートは空です。まだ商品が追加されていません。",
+      "emptyCtaGourmet": "グルメを見る",
+      "emptyCtaMerchandising": "マーチャンダイジングを見る",
+      "quantity": "数量",
+      "remove": "削除",
+      "subtotal": "小計",
+      "continueGourmet": "グルメを続ける",
+      "continueMerchandising": "マーチャンダイジングを続ける",
+      "checkout": "注文を依頼する",
+      "checkoutNote": "オンライン決済は近日公開予定です。現在はお問い合わせからご注文いただけます。",
+      "decrease": "数量を減らす",
+      "increase": "数量を増やす",
+      "categories": { "gourmet": "グルメ", "merchandising": "マーチャンダイジング" }
+    },
     "gourmet": {
       "eyebrow": "ブティックショップ",
       "title": "Gourmet",
@@ -163,7 +184,8 @@
     "merchandising": {
       "eyebrow": "ブティックショップ",
       "title": "Merchandising",
-      "description": "テラ・インフィニタス限定アイテム。コンテンポラリーデザイン、上質な素材、各目的地の世界観をお届けします。思い出をお持ち帰りください。"
+      "description": "テラ・インフィニタス限定アイテム。コンテンポラリーデザイン、上質な素材、各目的地の世界観をお届けします。思い出をお持ち帰りください。",
+      "empty": "マーチャンダイジング商品は近日追加予定です。"
     },
     "products": {
       "gourmet": {

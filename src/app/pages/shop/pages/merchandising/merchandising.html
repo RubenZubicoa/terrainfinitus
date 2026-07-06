@@ -5,5 +5,10 @@
     <p class="merchandising-hero__description">{{ 'shop.merchandising.description' | translate }}</p>
   </header>
 
-  <app-product-list [products]="products" />
+  <app-product-list
+    [products]="products"
+    detailRoutePrefix="/tienda-boutique/merchandising"
+    priceDigits="1.2-2"
+    [emptyKey]="'shop.merchandising.empty'"
+  />
 </div>

@@ -1,10 +1,18 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { map } from 'rxjs';
+import { filter, map, startWith } from 'rxjs';
+import { CartService } from '../../../../core/services/cart.service';
+import { NotificationService } from '../../../../core/services/notification.service';
 import { getProductById, getRelatedProducts } from '../../data/products.data';
+import {
+  getCategoryListingPath,
+  getCategoryTitleKey,
+  getShopCategoryBasePath,
+  resolveCategoryFromUrl,
+} from '../../data/shop-paths';
 
 const HIGHLIGHT_KEYS = [
   'shop.detail.highlights.quality',
@@ -21,6 +29,9 @@ const HIGHLIGHT_KEYS = [
 })
 export class ProductDetail {
   private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
+  protected readonly cartService = inject(CartService);
+  private readonly notificationService = inject(NotificationService);
 
   readonly highlightKeys = HIGHLIGHT_KEYS;
 
@@ -29,9 +40,22 @@ export class ProductDetail {
     { initialValue: '' },
   );
 
+  private readonly routeCategory = toSignal(
+    this.router.events.pipe(
+      filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+      map(() => resolveCategoryFromUrl(this.router.url)),
+      startWith(resolveCategoryFromUrl(this.router.url)),
+    ),
+    { initialValue: resolveCategoryFromUrl(this.router.url) },
+  );
+
   readonly product = computed(() => {
     const id = this.productId();
-    return id ? getProductById(id) : undefined;
+    const current = id ? getProductById(id) : undefined;
+    if (!current || current.category !== this.routeCategory()) {
+      return undefined;
+    }
+    return current;
   });
 
   readonly relatedProducts = computed(() => {
@@ -39,23 +63,30 @@ export class ProductDetail {
     return id ? getRelatedProducts(id) : [];
   });
 
+  readonly categoryTitleKey = computed(() => {
+    const current = this.product();
+    return getCategoryTitleKey(current?.category ?? this.routeCategory());
+  });
+
   readonly backRoute = computed(() => {
     const current = this.product();
-    if (!current) return '/tienda-boutique/gourmet';
-    if (current.category === 'merchandising') {
-      return '/tienda-boutique/merchandising';
+    if (!current) {
+      return getShopCategoryBasePath(this.routeCategory());
     }
-    if (current.gourmetSection) {
-      return `/tienda-boutique/gourmet#${current.gourmetSection}`;
-    }
-    return '/tienda-boutique/gourmet';
+    return getCategoryListingPath(current.category, current.gourmetSection);
   });
 
   readonly detailRoutePrefix = computed(() => {
     const current = this.product();
-    if (!current) return '/tienda-boutique/gourmet';
-    return current.category === 'merchandising'
-      ? '/tienda-boutique/merchandising'
-      : '/tienda-boutique/gourmet';
+    return getShopCategoryBasePath(current?.category ?? this.routeCategory());
   });
+
+  protected addToCart(): void {
+    const current = this.product();
+    if (!current) {
+      return;
+    }
+    this.cartService.addItem(current.id);
+    this.notificationService.show('shop.cart.added', 'success', 2500);
+  }
 }

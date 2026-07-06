@@ -1,7 +1,9 @@
 import { CurrencyPipe } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { CartService } from '../../../core/services/cart.service';
+import { NotificationService } from '../../../core/services/notification.service';
 import { Product } from '../../models/product.models';
 
 @Component({
@@ -17,4 +19,13 @@ export class ProductList {
   readonly detailRoutePrefix = input<string | null>(null);
   readonly viewDetailsKey = input('shop.detail.viewDetails');
   readonly priceDigits = input('1.0-0');
+  readonly enableCart = input(true);
+
+  protected readonly cartService = inject(CartService);
+  private readonly notificationService = inject(NotificationService);
+
+  protected addToCart(product: Product): void {
+    this.cartService.addItem(product.id);
+    this.notificationService.show('shop.cart.added', 'success', 2500);
+  }
 }

@@ -15,7 +15,8 @@
     "languagePrefix": "Idioma",
     "contact": "Contacto",
     "login": "Iniciar sessão",
-    "logout": "Terminar sessão"
+    "logout": "Terminar sessão",
+    "cart": "Carrinho"
   },
   "login": {
     "eyebrow": "Área privada",
@@ -138,6 +139,26 @@
   "shop": {
     "productListAria": "Lista de produtos",
     "empty": "Não há produtos disponíveis de momento.",
+    "cart": {
+      "add": "Adicionar ao carrinho",
+      "added": "Produto adicionado ao carrinho",
+      "title": "Carrinho de compras",
+      "eyebrow": "A sua seleção",
+      "description": "Um único carrinho para as lojas Gourmet e Merchandising da Terra Infinitus.",
+      "empty": "O carrinho está vazio. Ainda não adicionou produtos.",
+      "emptyCtaGourmet": "Explorar gourmet",
+      "emptyCtaMerchandising": "Explorar merchandising",
+      "quantity": "Quantidade",
+      "remove": "Remover",
+      "subtotal": "Subtotal",
+      "continueGourmet": "Continuar em gourmet",
+      "continueMerchandising": "Continuar em merchandising",
+      "checkout": "Solicitar encomenda",
+      "checkoutNote": "O pagamento online estará disponível em breve. Por agora pode solicitar a encomenda através do contacto.",
+      "decrease": "Diminuir quantidade",
+      "increase": "Aumentar quantidade",
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+    },
     "gourmet": {
       "eyebrow": "Loja Boutique",
       "title": "Gourmet",
@@ -163,7 +184,8 @@
     "merchandising": {
       "eyebrow": "Loja Boutique",
       "title": "Merchandising",
-      "description": "Artigos exclusivos Terra Infinitus: design contemporâneo, materiais de qualidade e a identidade dos nossos destinos. Leve consigo uma recordação da sua experiência."
+      "description": "Artigos exclusivos Terra Infinitus: design contemporâneo, materiais de qualidade e a identidade dos nossos destinos. Leve consigo uma recordação da sua experiência.",
+      "empty": "Em breve adicionaremos produtos de merchandising."
     },
     "products": {
       "gourmet": {

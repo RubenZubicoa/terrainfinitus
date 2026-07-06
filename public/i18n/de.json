@@ -15,7 +15,8 @@
     "languagePrefix": "Sprache",
     "contact": "Kontakt",
     "login": "Anmelden",
-    "logout": "Abmelden"
+    "logout": "Abmelden",
+    "cart": "Warenkorb"
   },
   "login": {
     "eyebrow": "Privater Bereich",
@@ -138,6 +139,26 @@
   "shop": {
     "productListAria": "Produktliste",
     "empty": "Derzeit sind keine Produkte verfügbar.",
+    "cart": {
+      "add": "In den Warenkorb",
+      "added": "Produkt zum Warenkorb hinzugefügt",
+      "title": "Warenkorb",
+      "eyebrow": "Ihre Auswahl",
+      "description": "Ein Warenkorb für die Gourmet- und Merchandising-Shops von Terra Infinitus.",
+      "empty": "Ihr Warenkorb ist leer. Sie haben noch keine Produkte hinzugefügt.",
+      "emptyCtaGourmet": "Gourmet entdecken",
+      "emptyCtaMerchandising": "Merchandising entdecken",
+      "quantity": "Menge",
+      "remove": "Entfernen",
+      "subtotal": "Zwischensumme",
+      "continueGourmet": "Weiter im Gourmet",
+      "continueMerchandising": "Weiter im Merchandising",
+      "checkout": "Bestellung anfragen",
+      "checkoutNote": "Die Online-Zahlung wird bald verfügbar sein. Bis dahin können Sie Ihre Bestellung über Kontakt anfragen.",
+      "decrease": "Menge verringern",
+      "increase": "Menge erhöhen",
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+    },
     "gourmet": {
       "eyebrow": "Boutique-Shop",
       "title": "Gourmet",
@@ -163,7 +184,8 @@
     "merchandising": {
       "eyebrow": "Boutique-Shop",
       "title": "Merchandising",
-      "description": "Exklusive Terra-Infinitus-Artikel: zeitgenössisches Design, hochwertige Materialien und die Identität unserer Destinationen. Nehmen Sie eine Erinnerung an Ihr Erlebnis mit."
+      "description": "Exklusive Terra-Infinitus-Artikel: zeitgenössisches Design, hochwertige Materialien und die Identität unserer Destinationen. Nehmen Sie eine Erinnerung an Ihr Erlebnis mit.",
+      "empty": "Merchandising-Produkte folgen in Kürze."
     },
     "products": {
       "gourmet": {

@@ -15,7 +15,8 @@
     "languagePrefix": "Lingua",
     "contact": "Contatto",
     "login": "Accedi",
-    "logout": "Esci"
+    "logout": "Esci",
+    "cart": "Carrello"
   },
   "login": {
     "eyebrow": "Area privata",
@@ -138,6 +139,26 @@
   "shop": {
     "productListAria": "Elenco prodotti",
     "empty": "Nessun prodotto disponibile al momento.",
+    "cart": {
+      "add": "Aggiungi al carrello",
+      "added": "Prodotto aggiunto al carrello",
+      "title": "Carrello",
+      "eyebrow": "La tua selezione",
+      "description": "Un unico carrello per le boutique Gourmet e Merchandising di Terra Infinitus.",
+      "empty": "Il carrello è vuoto. Non hai ancora aggiunto prodotti.",
+      "emptyCtaGourmet": "Esplora gourmet",
+      "emptyCtaMerchandising": "Esplora merchandising",
+      "quantity": "Quantità",
+      "remove": "Rimuovi",
+      "subtotal": "Subtotale",
+      "continueGourmet": "Continua in gourmet",
+      "continueMerchandising": "Continua in merchandising",
+      "checkout": "Richiedi ordine",
+      "checkoutNote": "Il pagamento online sarà disponibile a breve. Per ora puoi richiedere l'ordine tramite contatto.",
+      "decrease": "Diminuisci quantità",
+      "increase": "Aumenta quantità",
+      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising" }
+    },
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
@@ -163,7 +184,8 @@
     "merchandising": {
       "eyebrow": "Boutique",
       "title": "Merchandising",
-      "description": "Articoli esclusivi Terra Infinitus: design contemporaneo, materiali di qualità e l'identità delle nostre destinazioni. Porta con te un ricordo della tua esperienza."
+      "description": "Articoli esclusivi Terra Infinitus: design contemporaneo, materiali di qualità e l'identità delle nostre destinazioni. Porta con te un ricordo della tua esperienza.",
+      "empty": "Aggiungeremo presto prodotti merchandising."
     },
     "products": {
       "gourmet": {

@@ -15,7 +15,8 @@
     "languagePrefix": "Idioma",
     "contact": "Contacto",
     "login": "Iniciar sesión",
-    "logout": "Cerrar sesión"
+    "logout": "Cerrar sesión",
+    "cart": "Carrito de compra"
   },
   "login": {
     "eyebrow": "Área privada",
@@ -138,6 +139,29 @@
   "shop": {
     "productListAria": "Listado de productos",
     "empty": "No hay productos disponibles en este momento.",
+    "cart": {
+      "add": "Añadir al carrito",
+      "added": "Producto añadido al carrito",
+      "title": "Carrito de compra",
+      "eyebrow": "Tu selección",
+      "description": "Un único carrito para las tiendas Gourmet y Merchandising de Terra Infinitus.",
+      "empty": "Tu carrito está vacío. Aún no has añadido ningún producto.",
+      "emptyCtaGourmet": "Explorar gourmet",
+      "emptyCtaMerchandising": "Explorar merchandising",
+      "quantity": "Cantidad",
+      "remove": "Eliminar",
+      "subtotal": "Subtotal",
+      "continueGourmet": "Seguir en gourmet",
+      "continueMerchandising": "Seguir en merchandising",
+      "checkout": "Solicitar pedido",
+      "checkoutNote": "El pago en línea estará disponible próximamente. Por ahora puedes solicitar tu pedido desde contacto.",
+      "decrease": "Reducir cantidad",
+      "increase": "Aumentar cantidad",
+      "categories": {
+        "gourmet": "Gourmet",
+        "merchandising": "Merchandising"
+      }
+    },
     "gourmet": {
       "eyebrow": "Tienda Boutique",
       "title": "Gourmet",
@@ -199,7 +223,8 @@
     "merchandising": {
       "eyebrow": "Tienda Boutique",
       "title": "Merchandising",
-      "description": "Artículos exclusivos de Terra Infinitus: diseño contemporáneo, materiales de calidad y la identidad de nuestros destinos. Lleva contigo un recuerdo de tu experiencia."
+      "description": "Artículos exclusivos de Terra Infinitus: diseño contemporáneo, materiales de calidad y la identidad de nuestros destinos. Lleva contigo un recuerdo de tu experiencia.",
+      "empty": "Próximamente añadiremos productos de merchandising."
     },
     "products": {
       "gourmet": {

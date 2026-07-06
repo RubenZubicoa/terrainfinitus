@@ -6,28 +6,40 @@
       @for (product of products(); track product.id) {
         <li class="product-list__item">
           @if (detailRoutePrefix(); as routePrefix) {
-            <a
-              class="product-card product-card--link"
-              [routerLink]="[routePrefix, product.id]"
-            >
-              <div class="product-card__media">
-                <img
-                  [src]="product.image"
-                  [alt]="product.nameKey | translate"
-                  loading="lazy"
-                />
-              </div>
-              <div class="product-card__body">
-                <h3 class="product-card__name">{{ product.nameKey | translate }}</h3>
-                <p class="product-card__description">{{ product.descriptionKey | translate }}</p>
-                <div class="product-card__footer">
-                  <p class="product-card__price">
-                    {{ product.price | currency: 'EUR' : 'symbol' : priceDigits() : 'es' }}
-                  </p>
-                  <span class="product-card__cta">{{ viewDetailsKey() | translate }}</span>
+            <article class="product-card">
+              <a class="product-card__link" [routerLink]="[routePrefix, product.id]">
+                <div class="product-card__media">
+                  <img
+                    [src]="product.image"
+                    [alt]="product.nameKey | translate"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="product-card__body">
+                  <h3 class="product-card__name">{{ product.nameKey | translate }}</h3>
+                  <p class="product-card__description">{{ product.descriptionKey | translate }}</p>
+                </div>
+              </a>
+              <div class="product-card__footer">
+                <p class="product-card__price">
+                  {{ product.price | currency: 'EUR' : 'symbol' : priceDigits() : 'es' }}
+                </p>
+                <div class="product-card__actions">
+                  <a class="product-card__cta" [routerLink]="[routePrefix, product.id]">
+                    {{ viewDetailsKey() | translate }}
+                  </a>
+                  @if (enableCart()) {
+                    <button
+                      type="button"
+                      class="product-card__cart-btn"
+                      (click)="addToCart(product)"
+                    >
+                      {{ 'shop.cart.add' | translate }}
+                    </button>
+                  }
                 </div>
               </div>
-            </a>
+            </article>
           } @else {
             <article class="product-card">
               <div class="product-card__media">

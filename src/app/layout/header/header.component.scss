@@ -246,6 +246,50 @@
   border-radius: 50%;
 }
 
+.header__cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.35rem;
+  height: 2.35rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    transform var(--ti-transition);
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+  }
+}
+
+.header__cart-badge {
+  position: absolute;
+  top: -0.2rem;
+  right: -0.2rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  padding: 0 0.25rem;
+  border-radius: 999px;
+  background: var(--ti-cream);
+  color: var(--ti-dark);
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  text-align: center;
+}
+
 .header__cta {
   display: inline-flex;
   align-items: center;

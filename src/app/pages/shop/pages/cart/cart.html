@@ -1,0 +1,115 @@
+<section class="cart section" [attr.aria-label]="'shop.cart.title' | translate">
+  <header class="cart__header">
+    <p class="cart__eyebrow">{{ 'shop.cart.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'shop.cart.title' | translate }}</h1>
+    <p class="cart__description">{{ 'shop.cart.description' | translate }}</p>
+  </header>
+
+  @if (cartService.isEmpty()) {
+    <div class="cart__empty">
+      <p>{{ 'shop.cart.empty' | translate }}</p>
+      <div class="cart__empty-actions">
+        <a routerLink="/tienda-boutique/gourmet" class="cart__empty-cta">
+          {{ 'shop.cart.emptyCtaGourmet' | translate }}
+        </a>
+        <a routerLink="/tienda-boutique/merchandising" class="cart__empty-cta cart__empty-cta--secondary">
+          {{ 'shop.cart.emptyCtaMerchandising' | translate }}
+        </a>
+      </div>
+    </div>
+  } @else {
+    <div class="cart__groups">
+      @for (group of cartService.groupedItems(); track group.category) {
+        <section class="cart__group">
+          <h2 class="cart__group-title">{{ categoryLabelKey(group.category) | translate }}</h2>
+          <ul class="cart__list">
+            @for (item of group.items; track item.product.id) {
+              <li class="cart-item">
+                <a
+                  class="cart-item__media"
+                  [routerLink]="productRoute(item.product.id, item.product.category)"
+                >
+                  <img
+                    [src]="item.product.image"
+                    [alt]="item.product.nameKey | translate"
+                    loading="lazy"
+                  />
+                </a>
+
+                <div class="cart-item__body">
+                  <a
+                    class="cart-item__name"
+                    [routerLink]="productRoute(item.product.id, item.product.category)"
+                  >
+                    {{ item.product.nameKey | translate }}
+                  </a>
+                  <p class="cart-item__description">{{ item.product.descriptionKey | translate }}</p>
+                  <p class="cart-item__unit-price">
+                    {{ item.product.price | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
+                  </p>
+                </div>
+
+                <div class="cart-item__controls">
+                  <div
+                    class="cart-item__quantity"
+                    role="group"
+                    [attr.aria-label]="'shop.cart.quantity' | translate"
+                  >
+                    <button
+                      type="button"
+                      class="cart-item__qty-btn"
+                      [attr.aria-label]="'shop.cart.decrease' | translate"
+                      (click)="cartService.setQuantity(item.product.id, item.quantity - 1)"
+                    >
+                      −
+                    </button>
+                    <span class="cart-item__qty-value">{{ item.quantity }}</span>
+                    <button
+                      type="button"
+                      class="cart-item__qty-btn"
+                      [attr.aria-label]="'shop.cart.increase' | translate"
+                      (click)="cartService.setQuantity(item.product.id, item.quantity + 1)"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                  <p class="cart-item__line-total">
+                    {{ item.lineTotal | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
+                  </p>
+
+                  <button
+                    type="button"
+                    class="cart-item__remove"
+                    (click)="cartService.removeItem(item.product.id)"
+                  >
+                    {{ 'shop.cart.remove' | translate }}
+                  </button>
+                </div>
+              </li>
+            }
+          </ul>
+        </section>
+      }
+    </div>
+
+    <aside class="cart__summary">
+      <div class="cart__summary-row">
+        <span>{{ 'shop.cart.subtotal' | translate }}</span>
+        <strong>{{ cartService.subtotal() | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}</strong>
+      </div>
+      <p class="cart__summary-note">{{ 'shop.cart.checkoutNote' | translate }}</p>
+      <div class="cart__summary-actions">
+        <a routerLink="/tienda-boutique/gourmet" class="cart__link">
+          {{ 'shop.cart.continueGourmet' | translate }}
+        </a>
+        <a routerLink="/tienda-boutique/merchandising" class="cart__link">
+          {{ 'shop.cart.continueMerchandising' | translate }}
+        </a>
+        <a routerLink="/contacto" class="cart__checkout">
+          {{ 'shop.cart.checkout' | translate }}
+        </a>
+      </div>
+    </aside>
+  }
+</section>

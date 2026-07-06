@@ -4,7 +4,7 @@
       <a [routerLink]="backRoute()" class="product-detail__back">
         ← {{ 'shop.detail.back' | translate }}
       </a>
-      <span class="product-detail__crumb">{{ 'shop.gourmet.title' | translate }}</span>
+      <span class="product-detail__crumb">{{ categoryTitleKey() | translate }}</span>
       <span class="product-detail__crumb product-detail__crumb--current">
         {{ product.nameKey | translate }}
       </span>
@@ -34,9 +34,14 @@
               <li>{{ highlightKey | translate }}</li>
             }
           </ul>
-          <a class="product-detail__cta" routerLink="/contacto">
-            {{ 'shop.detail.contactCta' | translate }}
-          </a>
+          <div class="product-detail__actions">
+            <button type="button" class="product-detail__add-cart" (click)="addToCart()">
+              {{ 'shop.cart.add' | translate }}
+            </button>
+            <a class="product-detail__cta" routerLink="/contacto">
+              {{ 'shop.detail.contactCta' | translate }}
+            </a>
+          </div>
         </aside>
       </div>
     </div>

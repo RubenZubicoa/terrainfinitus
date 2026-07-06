@@ -15,7 +15,8 @@
     "languagePrefix": "Language",
     "contact": "Contact",
     "login": "Sign in",
-    "logout": "Sign out"
+    "logout": "Sign out",
+    "cart": "Shopping cart"
   },
   "login": {
     "eyebrow": "Private area",
@@ -138,6 +139,29 @@
   "shop": {
     "productListAria": "Product listing",
     "empty": "No products are available at the moment.",
+    "cart": {
+      "add": "Add to cart",
+      "added": "Product added to cart",
+      "title": "Shopping cart",
+      "eyebrow": "Your selection",
+      "description": "One cart for Terra Infinitus Gourmet and Merchandising shops.",
+      "empty": "Your cart is empty. You haven't added any products yet.",
+      "emptyCtaGourmet": "Explore gourmet",
+      "emptyCtaMerchandising": "Explore merchandising",
+      "quantity": "Quantity",
+      "remove": "Remove",
+      "subtotal": "Subtotal",
+      "continueGourmet": "Continue in gourmet",
+      "continueMerchandising": "Continue in merchandising",
+      "checkout": "Request order",
+      "checkoutNote": "Online payment will be available soon. For now you can request your order via contact.",
+      "decrease": "Decrease quantity",
+      "increase": "Increase quantity",
+      "categories": {
+        "gourmet": "Gourmet",
+        "merchandising": "Merchandising"
+      }
+    },
     "gourmet": {
       "eyebrow": "Boutique Shop",
       "title": "Gourmet",
@@ -199,7 +223,8 @@
     "merchandising": {
       "eyebrow": "Boutique Shop",
       "title": "Merchandising",
-      "description": "Exclusive Terra Infinitus items: contemporary design, quality materials and the identity of our destinations. Take home a memento of your experience."
+      "description": "Exclusive Terra Infinitus items: contemporary design, quality materials and the identity of our destinations. Take home a memento of your experience.",
+      "empty": "We will add merchandising products soon."
     },
     "products": {
       "gourmet": {

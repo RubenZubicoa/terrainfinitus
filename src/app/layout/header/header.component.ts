@@ -3,6 +3,7 @@ import { Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CurrentLanguegeService } from '../../core/services/current-languege.service';
 import { AuthService } from '../../core/services/auth.service';
+import { CartService } from '../../core/services/cart.service';
 import { CurrentUserService } from '../../core/services/current-user-service';
 import { NotificationService } from '../../core/services/notification.service';
 import { Languaje } from '../../core/models/Languaje';
@@ -19,6 +20,7 @@ export class HeaderComponent {
 
   protected readonly languageService = inject(CurrentLanguegeService);
   protected readonly currentUserService = inject(CurrentUserService);
+  protected readonly cartService = inject(CartService);
   private readonly authService = inject(AuthService);
   private readonly notificationService = inject(NotificationService);
   private readonly router = inject(Router);
