@@ -12,7 +12,28 @@
     "goHome": "ホームへ",
     "selectLanguage": "言語を選択",
     "languagePrefix": "言語",
-    "contact": "お問い合わせ"
+    "contact": "お問い合わせ",
+    "login": "ログイン"
+  },
+  "login": {
+    "eyebrow": "会員エリア",
+    "title": "ログイン",
+    "subtitle": "Terra Infinitus アカウントにアクセス",
+    "email": "メールアドレス",
+    "emailPlaceholder": "you@email.com",
+    "password": "パスワード",
+    "passwordPlaceholder": "パスワードを入力",
+    "submit": "ログイン",
+    "submitting": "ログイン中…",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "register": "新規登録",
+    "error": "認証情報が正しくありません。もう一度お試しください。",
+    "errorRequired": "すべての項目を正しく入力してください。",
+    "success": "ログインに成功しました。",
+    "showPassword": "パスワードを表示",
+    "hidePassword": "パスワードを非表示",
+    "demoHint": "デモ: demo@terrainfinitus.com / demo123"
   },
   "layout": {
     "sideNav": "サイドメニュー",

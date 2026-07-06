@@ -12,7 +12,28 @@
     "goHome": "Zur Startseite",
     "selectLanguage": "Sprache auswählen",
     "languagePrefix": "Sprache",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "login": "Anmelden"
+  },
+  "login": {
+    "eyebrow": "Privater Bereich",
+    "title": "Anmelden",
+    "subtitle": "Zugang zu Ihrem Terra-Infinitus-Konto",
+    "email": "E-Mail",
+    "emailPlaceholder": "ihre@email.com",
+    "password": "Passwort",
+    "passwordPlaceholder": "Ihr Passwort",
+    "submit": "Anmelden",
+    "submitting": "Anmeldung läuft…",
+    "forgotPassword": "Passwort vergessen?",
+    "noAccount": "Noch kein Konto?",
+    "register": "Registrieren",
+    "error": "Ungültige Anmeldedaten. Bitte erneut versuchen.",
+    "errorRequired": "Bitte füllen Sie alle Felder korrekt aus.",
+    "success": "Erfolgreich angemeldet.",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort ausblenden",
+    "demoHint": "Demo: demo@terrainfinitus.com / demo123"
   },
   "layout": {
     "sideNav": "Seitenmenü",

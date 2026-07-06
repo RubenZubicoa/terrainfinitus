@@ -8,6 +8,7 @@ import { Images } from './pages/galery/images/images';
 import { projectsRoutes } from './pages/projects/projects.routes';
 import { aboutUsRoutes } from './pages/abaut-us/about-us.routes';
 import { shopRoutes } from './pages/shop/shop.routes';
+import { authRoutes } from './pages/auth/auth.routes';
 
 const placeholder = (titleKey: string) => ({
   component: PlaceholderComponent,
@@ -42,6 +43,7 @@ export const routes: Routes = [
       { path: 'testimonios', ...placeholder('nav.testimonials') },
       { path: 'reservas-precios', ...placeholder('nav.bookings') },
       { path: 'contacto', ...placeholder('nav.contact') },
+      { path: 'login', children: authRoutes },
     ],
   },
   { path: '**', redirectTo: '' },

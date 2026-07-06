@@ -12,7 +12,28 @@
     "goHome": "Go to home",
     "selectLanguage": "Select language",
     "languagePrefix": "Language",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Sign in"
+  },
+  "login": {
+    "eyebrow": "Private area",
+    "title": "Sign in",
+    "subtitle": "Access your Terra Infinitus account",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "register": "Register",
+    "error": "Invalid credentials. Please try again.",
+    "errorRequired": "Please complete all fields correctly.",
+    "success": "Signed in successfully.",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "demoHint": "Demo: demo@terrainfinitus.com / demo123"
   },
   "layout": {
     "sideNav": "Side menu",
