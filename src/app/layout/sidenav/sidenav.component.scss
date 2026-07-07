@@ -92,6 +92,43 @@
   padding-left: 1.25rem;
 }
 
+.sidenav__group-header {
+  display: flex;
+  align-items: stretch;
+  gap: 0.25rem;
+}
+
+.sidenav__link--parent {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.sidenav__group-expand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: var(--ti-radius-sm);
+  background: transparent;
+  color: rgba(254, 224, 189, 0.88);
+  cursor: pointer;
+  transition:
+    background var(--ti-transition),
+    color var(--ti-transition);
+
+  &:hover {
+    background: rgba(184, 115, 51, 0.2);
+    color: var(--ti-cream);
+  }
+
+  &--open .sidenav__chevron {
+    transform: rotate(180deg);
+  }
+}
+
 .sidenav__chevron {
   width: 1.125rem;
   height: 1.125rem;

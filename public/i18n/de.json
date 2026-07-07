@@ -138,6 +138,27 @@
     "p10": "Wir verfügen über spezialisierte Gartenbautechniker, die eine Oase auf dem Gelände gestalten, sowie Wasserexperten und weiteres Personal, das wir vor Ort rekrutieren und schulen, damit die Harmonie des Ganzen dem Projekt gerecht wird und die Erwartungen unserer Gäste übertrifft — mit definitivem Impact auf die Gemeinschaft, voller Beschäftigung mit qualitativ hochwertigen und stabilen Arbeitsplätzen und einer einzigartigen, innovativen, rentablen und nachhaltigen Idee."
   },
   "shop": {
+    "landing": {
+      "eyebrow": "Boutique-Shop",
+      "title": "Unsere Online-Shops",
+      "intro": "Willkommen in unseren Online-Shops, in denen Sie eine exquisite Auswahl an Artikeln für die unten aufgeführten Kategorien finden (vergessen Sie nicht, den Bereich zu den Verkaufs-, Zahlungs- und Versandbedingungen für jede Marke und jedes Produkt zu besuchen).",
+      "categoriesAria": "Boutique-Shop-Kategorien",
+      "gourmet": {
+        "title": "Gourmet",
+        "description": "Eine Auswahl gourmet und Delikatessen-Produkte, die Sie in unseren Restaurants genießen und über unseren Online-Shop mit nach Hause nehmen können, um sie mit Ihren Liebsten zu teilen. Top-Marken mit handwerklich hergestellten Produkten in kleiner Auflage von höchster Qualität und Originalität.",
+        "cta": "Gourmet entdecken"
+      },
+      "merchandising": {
+        "title": "Merchandising",
+        "description": "In diesem Bereich finden Sie Firmen- und Werbeartikel, die speziell von Terra Infinitus für Sie entworfen und erstellt wurden.",
+        "cta": "Merchandising entdecken"
+      },
+      "theLake": {
+        "title": "The Lake",
+        "description": "Unser Shop für Sportangelzubehör mit erstklassigen Marken von weltweitem Prestige.",
+        "cta": "The Lake besuchen"
+      }
+    },
     "productListAria": "Produktliste",
     "empty": "Derzeit sind keine Produkte verfügbar.",
     "cart": {

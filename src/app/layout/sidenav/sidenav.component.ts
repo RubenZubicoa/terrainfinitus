@@ -1,5 +1,5 @@
-import { Component, input, output, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component, inject, input, output, signal } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { MAIN_NAVIGATION } from '../../core/data/navigation';
 import { NavItem } from '../../core/models/nav-item.model';
@@ -11,6 +11,8 @@ import { NavItem } from '../../core/models/nav-item.model';
   styleUrl: './sidenav.component.scss',
 })
 export class SidenavComponent {
+  private readonly router = inject(Router);
+
   readonly mobileOpen = input(false);
   readonly navClose = output<void>();
 
@@ -20,12 +22,21 @@ export class SidenavComponent {
   protected toggleGroup(labelKey: string): void {
     this.expandedGroups.update((state) => ({
       ...state,
-      [labelKey]: !state[labelKey],
+      [labelKey]: !this.isGroupExpanded({ labelKey } as NavItem),
     }));
   }
 
   protected isGroupExpanded(item: NavItem): boolean {
-    return this.expandedGroups()[item.labelKey] ?? false;
+    const manual = this.expandedGroups()[item.labelKey];
+    if (manual !== undefined) {
+      return manual;
+    }
+
+    if (item.labelKey === 'nav.shop' && this.router.url.startsWith('/tienda-boutique')) {
+      return true;
+    }
+
+    return false;
   }
 
   protected onNavigate(): void {

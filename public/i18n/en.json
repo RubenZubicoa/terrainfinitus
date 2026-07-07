@@ -138,6 +138,27 @@
     "p10": "We have technicians specialised in landscaping who will design an oasis within the property, as well as water experts and other staff we will recruit locally and train to ensure that the harmony of the whole lives up to the Project and exceeds our guests' expectations, while also ensuring the Project has a definitive impact on the Community, achieving full employment among its inhabitants, with quality and stable jobs, creating a unique, innovative, profitable and sustainable idea."
   },
   "shop": {
+    "landing": {
+      "eyebrow": "Boutique Shop",
+      "title": "Our online shops",
+      "intro": "Welcome to our online shops, where you will find an exquisite selection of items across the categories detailed below (remember to check the sales, payment and shipping conditions section for each brand and product).",
+      "categoriesAria": "Boutique shop categories",
+      "gourmet": {
+        "title": "Gourmet",
+        "description": "A selection of gourmet and delicatessen products you can enjoy in our restaurants and, through our online shop, take home to share with your loved ones. Top brands with artisanal, small-batch products of the highest quality and originality.",
+        "cta": "Explore gourmet"
+      },
+      "merchandising": {
+        "title": "Merchandising",
+        "description": "In this section you will find corporate and promotional products specially designed and created by Terra Infinitus for you.",
+        "cta": "Explore merchandising"
+      },
+      "theLake": {
+        "title": "The Lake",
+        "description": "Our sport fishing tackle shop, featuring top-tier brands with worldwide prestige.",
+        "cta": "Visit The Lake"
+      }
+    },
     "productListAria": "Product listing",
     "empty": "No products are available at the moment.",
     "cart": {

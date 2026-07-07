@@ -23,6 +23,7 @@ export const MAIN_NAVIGATION: NavItem[] = [
   { labelKey: 'nav.activities', route: '/actividades' },
   {
     labelKey: 'nav.shop',
+    route: '/tienda-boutique',
     children: [
       { labelKey: 'nav.shopGourmet', route: '/tienda-boutique/gourmet' },
       { labelKey: 'nav.shopMerchandising', route: '/tienda-boutique/merchandising' },

@@ -1,0 +1,42 @@
+<div class="shop-landing">
+  <header class="shop-landing__hero">
+    <p class="shop-landing__eyebrow">{{ 'shop.landing.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'shop.landing.title' | translate }}</h1>
+    <p class="shop-landing__intro">{{ 'shop.landing.intro' | translate }}</p>
+  </header>
+
+  <div class="shop-landing__categories" [attr.aria-label]="'shop.landing.categoriesAria' | translate">
+    <article class="shop-landing__category" id="gourmet">
+      <h2 class="shop-landing__category-title">{{ 'shop.landing.gourmet.title' | translate }}</h2>
+      <p class="shop-landing__category-text">{{ 'shop.landing.gourmet.description' | translate }}</p>
+      <a class="shop-landing__cta" [routerLink]="gourmetRoute">
+        {{ 'shop.landing.gourmet.cta' | translate }}
+      </a>
+    </article>
+
+    <article class="shop-landing__category" id="merchandising">
+      <h2 class="shop-landing__category-title">
+        {{ 'shop.landing.merchandising.title' | translate }}
+      </h2>
+      <p class="shop-landing__category-text">
+        {{ 'shop.landing.merchandising.description' | translate }}
+      </p>
+      <a class="shop-landing__cta" [routerLink]="merchandisingRoute">
+        {{ 'shop.landing.merchandising.cta' | translate }}
+      </a>
+    </article>
+
+    <article class="shop-landing__category" id="the-lake">
+      <h2 class="shop-landing__category-title">{{ 'shop.landing.theLake.title' | translate }}</h2>
+      <p class="shop-landing__category-text">{{ 'shop.landing.theLake.description' | translate }}</p>
+      <a
+        class="shop-landing__cta shop-landing__cta--external"
+        [href]="theLakeUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ 'shop.landing.theLake.cta' | translate }}
+      </a>
+    </article>
+  </div>
+</div>

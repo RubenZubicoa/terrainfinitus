@@ -1,6 +1,7 @@
 import { ProductCategory } from '../../../shared/models/product.models';
 
 export const SHOP_BASE_PATH = '/tienda-boutique';
+export const SHOP_THE_LAKE_URL = 'https://tienda-pesca-tau.vercel.app/';
 
 const CATEGORY_BASE_PATHS: Record<'gourmet' | 'merchandising', string> = {
   gourmet: `${SHOP_BASE_PATH}/gourmet`,

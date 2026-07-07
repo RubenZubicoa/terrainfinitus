@@ -138,6 +138,27 @@
     "p10": "Contamos con técnicos especializados en jardinería que diseñarán un oasis dentro de la propiedad, así como expertos en aguas y otros miembros del personal que reclutaremos en la localidad y capacitaremos para asegurar que la armonía del conjunto esté a la altura del Proyecto y supere las expectativas de nuestros huéspedes, persiguiendo además conseguir que el Proyecto tenga un definitivo impacto en la Comunidad, logrando el pleno empleo entre sus habitantes, con puestos de trabajo de calidad y estabilidad, logrando la creación de una idea única, innovadora, rentable y sustentable."
   },
   "shop": {
+    "landing": {
+      "eyebrow": "Tienda Boutique",
+      "title": "Nuestras tiendas online",
+      "intro": "Bienvenidos a nuestras tiendas on line, donde podrás encontrar una exquisita selección de artículos disponibles para las categorías que te detallamos a continuación (no se te olvide visitar la sección de condiciones de venta, pago y envíos para cada marca y producto).",
+      "categoriesAria": "Categorías de la tienda boutique",
+      "gourmet": {
+        "title": "Gourmet",
+        "description": "Una selección de algunos de los productos gourmet y delicatessen que podrás disfrutar en nuestros restaurantes y, que, a través de nuestra tienda virtual, podrás llevarte a tu casa y compartirlos con los tuyos. Primeras marcas con productos artesanales de baja producción y altísimo nivel de calidad y originalidad.",
+        "cta": "Explorar gourmet"
+      },
+      "merchandising": {
+        "title": "Merchandising",
+        "description": "En esta sección encontrarás productos corporativos y publicitarios especialmente diseñados y creados por Terra Infinitus para ti.",
+        "cta": "Explorar merchandising"
+      },
+      "theLake": {
+        "title": "The Lake",
+        "description": "Nuestra tienda de materiales de pesca deportiva, con marcas de primer nivel y prestigio de todo el mundo.",
+        "cta": "Visitar The Lake"
+      }
+    },
     "productListAria": "Listado de productos",
     "empty": "No hay productos disponibles en este momento.",
     "cart": {

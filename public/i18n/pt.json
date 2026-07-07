@@ -138,6 +138,27 @@
     "p10": "Contamos com técnicos especializados em jardinagem que desenharão um oásis na propriedade, bem como peritos em águas e outro pessoal que recrutaremos na localidade e capacitaremos para garantir que a harmonia do conjunto esteja à altura do Projeto e supere as expectativas dos hóspedes, com impacto definitivo na comunidade, pleno emprego entre os seus habitantes, postos de trabalho de qualidade e estabilidade, e a criação de uma ideia única, inovadora, rentável e sustentável."
   },
   "shop": {
+    "landing": {
+      "eyebrow": "Loja Boutique",
+      "title": "As nossas lojas online",
+      "intro": "Bem-vindos às nossas lojas online, onde encontrará uma seleção requintada de artigos nas categorias que detalhamos a seguir (não se esqueça de visitar a secção de condições de venda, pagamento e envios para cada marca e produto).",
+      "categoriesAria": "Categorias da loja boutique",
+      "gourmet": {
+        "title": "Gourmet",
+        "description": "Uma seleção de produtos gourmet e delicatessen que poderá desfrutar nos nossos restaurantes e, através da nossa loja virtual, levar para casa e partilhar com os seus. Primeiras marcas com produtos artesanais de baixa produção e altíssimo nível de qualidade e originalidade.",
+        "cta": "Explorar gourmet"
+      },
+      "merchandising": {
+        "title": "Merchandising",
+        "description": "Nesta secção encontrará produtos corporativos e publicitários especialmente desenhados e criados pela Terra Infinitus para si.",
+        "cta": "Explorar merchandising"
+      },
+      "theLake": {
+        "title": "The Lake",
+        "description": "A nossa loja de materiais de pesca desportiva, com marcas de primeiro nível e prestígio em todo o mundo.",
+        "cta": "Visitar The Lake"
+      }
+    },
     "productListAria": "Lista de produtos",
     "empty": "Não há produtos disponíveis de momento.",
     "cart": {

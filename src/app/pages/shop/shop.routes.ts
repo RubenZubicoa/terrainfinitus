@@ -1,7 +1,10 @@
 import { Routes } from '@angular/router';
 
 export const shopRoutes: Routes = [
-  { path: '', redirectTo: 'gourmet', pathMatch: 'full' },
+  {
+    path: '',
+    loadComponent: () => import('./pages/shop-landing/shop-landing').then((m) => m.ShopLanding),
+  },
   {
     path: 'gourmet/:productId',
     loadComponent: () => import('./pages/product-detail/product-detail').then((m) => m.ProductDetail),
