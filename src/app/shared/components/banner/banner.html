@@ -1,19 +1,21 @@
 <section class="banner" [attr.aria-label]="galleryAriaKey() | translate">
   <div class="banner__viewport" aria-live="polite">
-    @for (slide of slides(); track slide.src; let i = $index) {
-      <figure
-        class="banner__slide"
-        [class.banner__slide--active]="currentIndex() === i"
-        [attr.aria-hidden]="currentIndex() !== i"
-      >
-        <img
-          [src]="slide.src"
-          [alt]="slide.altKey | translate"
-          loading="lazy"
-          decoding="async"
-        />
-      </figure>
-    }
+    <div
+      class="banner__track"
+      [class.banner__track--no-transition]="!enableTransition()"
+      [style.transform]="'translateX(-' + currentIndex() * 100 + '%)'"
+    >
+      @for (slide of slides(); track slide.src; let i = $index) {
+        <figure class="banner__slide" [attr.aria-hidden]="currentIndex() !== i">
+          <img
+            [src]="slide.src"
+            [alt]="slide.altKey | translate"
+            loading="lazy"
+            decoding="async"
+          />
+        </figure>
+      }
+    </div>
 
     @if (slides().length > 1) {
       <div class="banner__controls">

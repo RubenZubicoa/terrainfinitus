@@ -21,6 +21,7 @@ export class Banner {
   readonly autoplayMs = input(5000);
 
   readonly currentIndex = signal(0);
+  readonly enableTransition = signal(true);
 
   constructor() {
     effect((onCleanup) => {
@@ -34,18 +35,44 @@ export class Banner {
   }
 
   nextSlide(): void {
-    const count = this.slides().length;
-    if (count === 0) return;
-    this.currentIndex.update((i) => (i + 1) % count);
+    this.goToIndex((this.currentIndex() + 1) % this.slides().length, 'next');
   }
 
   prevSlide(): void {
     const count = this.slides().length;
     if (count === 0) return;
-    this.currentIndex.update((i) => (i - 1 + count) % count);
+    this.goToIndex((this.currentIndex() - 1 + count) % count, 'prev');
   }
 
   goToSlide(index: number): void {
+    const current = this.currentIndex();
+    if (index === current) return;
+    const direction = index > current ? 'next' : 'prev';
+    this.goToIndex(index, direction);
+  }
+
+  private goToIndex(index: number, direction: 'next' | 'prev'): void {
+    const count = this.slides().length;
+    if (count === 0) return;
+
+    const current = this.currentIndex();
+    const isWrap =
+      (direction === 'next' && index < current) || (direction === 'prev' && index > current);
+    const isJump = Math.abs(index - current) > 1;
+
+    if (isWrap || isJump) {
+      this.setIndexWithoutTransition(index);
+      return;
+    }
+
     this.currentIndex.set(index);
+  }
+
+  private setIndexWithoutTransition(index: number): void {
+    this.enableTransition.set(false);
+    this.currentIndex.set(index);
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => this.enableTransition.set(true));
+    });
   }
 }
