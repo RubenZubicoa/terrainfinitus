@@ -11,6 +11,7 @@
         <li>
           <a
             class="gourmet-nav__link"
+            [class.gourmet-nav__link--active]="isExpanded(section.id)"
             [href]="'#' + section.id"
             (click)="scrollToSection(section.id); $event.preventDefault()"
           >
@@ -24,33 +25,52 @@
   <div class="gourmet-sections">
     @for (section of sections; track section.id) {
       <section class="gourmet-section" [id]="section.id">
-        <header class="gourmet-section__header">
-          <h2 class="gourmet-section__title">
-            {{ section.translationKey + '.title' | translate }}
-          </h2>
-          <p class="gourmet-section__presentation">
-            {{ section.translationKey + '.presentation' | translate }}
-          </p>
+        <button
+          type="button"
+          class="gourmet-section__toggle"
+          [attr.aria-expanded]="isExpanded(section.id)"
+          [attr.aria-controls]="'gourmet-panel-' + section.id"
+          (click)="toggleSection(section.id)"
+        >
+          <span class="gourmet-section__summary">
+            <span class="gourmet-section__title">
+              {{ section.translationKey + '.title' | translate }}
+            </span>
+            <span class="gourmet-section__count">
+              {{ 'shop.gourmet.productCount' | translate: { count: productCount(section.id) } }}
+            </span>
+          </span>
+          <svg class="gourmet-section__chevron" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </button>
 
-          @if (section.catalogUrl) {
-            <a
-              class="gourmet-section__catalog"
-              [href]="section.catalogUrl"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {{ 'shop.gourmet.catalogDownload' | translate }}
-            </a>
-          }
-        </header>
+        @if (isExpanded(section.id)) {
+          <div class="gourmet-section__panel" [id]="'gourmet-panel-' + section.id">
+            <p class="gourmet-section__presentation">
+              {{ section.translationKey + '.presentation' | translate }}
+            </p>
 
-        <app-product-list
-          [products]="productsForSection(section.id)"
-          detailRoutePrefix="/tienda-boutique/gourmet"
-          priceDigits="1.2-2"
-          [emptyKey]="'shop.gourmet.sectionEmpty'"
-        />
+            @if (section.catalogUrl) {
+              <a
+                class="gourmet-section__catalog"
+                [href]="section.catalogUrl"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ 'shop.gourmet.catalogDownload' | translate }}
+              </a>
+            }
+
+            <app-product-list
+              [products]="productsForSection(section.id)"
+              detailRoutePrefix="/tienda-boutique/gourmet"
+              priceDigits="1.2-2"
+              [emptyKey]="'shop.gourmet.sectionEmpty'"
+            />
+          </div>
+        }
       </section>
     }
   </div>

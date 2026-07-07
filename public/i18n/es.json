@@ -225,6 +225,7 @@
       "description": "Explora nuestra selección gourmet organizada por familias de producto: aceites, productos del pato Malvasía, dulces, embutidos, conservas y mucho más. Cada sección incluye una presentación y el catálogo de referencias con precios.",
       "navAria": "Categorías de la tienda gourmet",
       "catalogDownload": "Descargar catálogo Malvasía",
+      "productCount": "{{count}} productos",
       "sectionEmpty": "Próximamente añadiremos referencias en esta categoría.",
       "sections": {
         "aceites": {

@@ -222,6 +222,7 @@
       "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien: Öle, Malvasía-Entenprodukte, Süßes, Wurstwaren, Konserven und mehr. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
       "navAria": "Gourmet-Shop-Kategorien",
       "catalogDownload": "Malvasía-Katalog herunterladen",
+      "productCount": "{{count}} Produkte",
       "sectionEmpty": "In dieser Kategorie werden wir bald Referenzen hinzufügen.",
       "sections": {
         "aceites": { "title": "Öle", "presentation": "Natives Olivenöl extra und ausgewählte Spezialitäten für die Haute Cuisine." },

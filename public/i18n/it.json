@@ -222,6 +222,7 @@
       "description": "Esplora la nostra selezione gourmet organizzata per famiglie di prodotto: oli, prodotti di anatra Malvasía, dolci, salumi, conserve e altro. Ogni sezione include una presentazione e un catalogo di referenze con prezzi.",
       "navAria": "Categorie del negozio gourmet",
       "catalogDownload": "Scarica catalogo Malvasía",
+      "productCount": "{{count}} prodotti",
       "sectionEmpty": "Aggiungeremo presto referenze in questa categoria.",
       "sections": {
         "aceites": { "title": "Oli", "presentation": "Oli extravergine di oliva e specialità selezionate per l'alta gastronomia." },

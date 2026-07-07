@@ -225,6 +225,7 @@
       "description": "Explore our gourmet selection organised by product families: oils, Malvasía duck products, sweets, charcuterie, preserves and more. Each section includes an introduction and a catalogue of items with prices.",
       "navAria": "Gourmet shop categories",
       "catalogDownload": "Download Malvasía catalogue",
+      "productCount": "{{count}} products",
       "sectionEmpty": "We will add items to this category soon.",
       "sections": {
         "aceites": {

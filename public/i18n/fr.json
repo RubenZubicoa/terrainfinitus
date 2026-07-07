@@ -222,6 +222,7 @@
       "description": "Découvrez notre sélection gourmet organisée par familles de produits : huiles, produits de canard Malvasía, douceurs, charcuteries, conserves et bien plus. Chaque section comprend une présentation et un catalogue de références avec prix.",
       "navAria": "Catégories de la boutique gourmet",
       "catalogDownload": "Télécharger le catalogue Malvasía",
+      "productCount": "{{count}} produits",
       "sectionEmpty": "Nous ajouterons bientôt des références dans cette catégorie.",
       "sections": {
         "aceites": { "title": "Huiles", "presentation": "Huiles d'olive vierge extra et spécialités sélectionnées pour la haute gastronomie." },

@@ -222,6 +222,7 @@
       "description": "Explore a nossa seleção gourmet organizada por famílias de produto: azeites, produtos de pato Malvasía, doces, enchidos, conservas e muito mais. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
       "navAria": "Categorias da loja gourmet",
       "catalogDownload": "Descarregar catálogo Malvasía",
+      "productCount": "{{count}} produtos",
       "sectionEmpty": "Em breve adicionaremos referências nesta categoria.",
       "sections": {
         "aceites": { "title": "Azeites", "presentation": "Azeites virgem extra e especialidades selecionadas para alta gastronomia." },

@@ -222,6 +222,7 @@
       "description": "オイル、Malvasíaの鴨製品、スイーツ、ハム・ソーセージ、瓶詰めなど、製品ファミリー別に整理したグルメセレクション。各セクションには紹介文と価格付きの商品カタログがあります。",
       "navAria": "グルメショップのカテゴリー",
       "catalogDownload": "Malvasíaカタログをダウンロード",
+      "productCount": "{{count}} 件の商品",
       "sectionEmpty": "このカテゴリーにはまもなく商品を追加します。",
       "sections": {
         "aceites": { "title": "オイル", "presentation": "エクストラバージンオリーブオイルと高級料理向けの厳選品。" },

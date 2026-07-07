@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { filter } from 'rxjs';
@@ -21,6 +21,7 @@ export class Gourmet implements OnInit {
   private readonly destroyRef = inject(DestroyRef);
 
   readonly sections = GOURMET_SECTIONS;
+  readonly expandedSections = signal<ReadonlySet<GourmetSectionId>>(new Set());
 
   ngOnInit(): void {
     this.route.fragment
@@ -29,6 +30,7 @@ export class Gourmet implements OnInit {
         takeUntilDestroyed(this.destroyRef),
       )
       .subscribe((fragment) => {
+        this.expandSection(fragment as GourmetSectionId);
         queueMicrotask(() => this.scrollToSection(fragment));
       });
   }
@@ -37,7 +39,37 @@ export class Gourmet implements OnInit {
     return getGourmetProductsBySection(sectionId);
   }
 
+  productCount(sectionId: GourmetSectionId): number {
+    return this.productsForSection(sectionId).length;
+  }
+
+  isExpanded(sectionId: GourmetSectionId): boolean {
+    return this.expandedSections().has(sectionId);
+  }
+
+  toggleSection(sectionId: GourmetSectionId): void {
+    this.expandedSections.update((current) => {
+      const next = new Set(current);
+      if (next.has(sectionId)) {
+        next.delete(sectionId);
+      } else {
+        next.add(sectionId);
+      }
+      return next;
+    });
+  }
+
+  expandSection(sectionId: GourmetSectionId): void {
+    if (!this.sections.some((section) => section.id === sectionId)) {
+      return;
+    }
+
+    this.expandedSections.update((current) => new Set(current).add(sectionId));
+  }
+
   scrollToSection(sectionId: string): void {
+    this.expandSection(sectionId as GourmetSectionId);
+
     const element = document.getElementById(sectionId);
     if (!element) {
       return;
