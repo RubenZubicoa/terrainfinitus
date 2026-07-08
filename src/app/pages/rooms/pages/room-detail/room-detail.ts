@@ -20,6 +20,40 @@ export class RoomDetail {
     { initialValue: '' },
   );
 
+  private readonly queryParams = toSignal(this.route.queryParamMap, {
+    initialValue: null,
+  });
+
+  readonly checkIn = computed(() => this.queryParams()?.get('checkIn') ?? '');
+  readonly checkOut = computed(() => this.queryParams()?.get('checkOut') ?? '');
+
+  readonly hasStayDates = computed(() => {
+    const checkIn = this.checkIn();
+    const checkOut = this.checkOut();
+    return !!checkIn && !!checkOut && checkIn < checkOut;
+  });
+
+  readonly nights = computed(() => {
+    if (!this.hasStayDates()) {
+      return 0;
+    }
+    const start = new Date(this.checkIn()).getTime();
+    const end = new Date(this.checkOut()).getTime();
+    return Math.max(0, Math.round((end - start) / (1000 * 60 * 60 * 24)));
+  });
+
+  readonly stayTotal = computed(() => {
+    const currentRoom = this.room();
+    if (!currentRoom || !this.hasStayDates()) {
+      return 0;
+    }
+    return currentRoom.pricePerNight * this.nights();
+  });
+
+  readonly bookingQueryParams = computed(() =>
+    this.hasStayDates() ? { checkIn: this.checkIn(), checkOut: this.checkOut() } : {},
+  );
+
   readonly selectedImageIndex = signal(0);
 
   readonly room = computed(() => {

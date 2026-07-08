@@ -895,3 +895,29 @@ export function getRoomTypeGroups(hotelId: HotelId): { type: RoomType; labelKey:
       return group.rooms.length > 0 || typeDef.showWhenEmpty;
     });
 }
+
+function rangesOverlap(
+  startA: string,
+  endA: string,
+  startB: string,
+  endB: string,
+): boolean {
+  return startA < endB && endA > startB;
+}
+
+/**
+ * Comprueba si una habitación está libre en el rango [checkIn, checkOut).
+ * Ignora las reservas canceladas.
+ */
+export function isRoomAvailable(roomId: string, checkIn: string, checkOut: string): boolean {
+  if (!checkIn || !checkOut || checkIn >= checkOut) {
+    return true;
+  }
+
+  return !INITIAL_RESERVATIONS.some(
+    (reservation) =>
+      reservation.roomId === roomId &&
+      reservation.status !== 'cancelled' &&
+      rangesOverlap(reservation.checkIn, reservation.checkOut, checkIn, checkOut),
+  );
+}

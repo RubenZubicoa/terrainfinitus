@@ -5,7 +5,7 @@
     <p class="rooms-hero__subtitle">{{ 'rooms.subtitle' | translate }}</p>
   </header>
 
-  <div class="rooms-stats" aria-hidden="true">
+  <!-- <div class="rooms-stats" aria-hidden="true">
     <article class="rooms-stat">
       <span class="rooms-stat__value">{{ allRooms.length }}</span>
       <span class="rooms-stat__label">{{ 'rooms.stats.rooms' | translate }}</span>
@@ -18,7 +18,52 @@
       <span class="rooms-stat__value">{{ hotels.length }}</span>
       <span class="rooms-stat__label">{{ 'rooms.stats.hotels' | translate }}</span>
     </article>
-  </div>
+  </div> -->
+
+  <section class="rooms-dates" [attr.aria-label]="'rooms.dates.aria' | translate">
+    <div class="rooms-dates__intro">
+      <h2 class="rooms-dates__title">{{ 'rooms.dates.title' | translate }}</h2>
+      <p class="rooms-dates__subtitle">{{ 'rooms.dates.subtitle' | translate }}</p>
+    </div>
+
+    <div class="rooms-dates__fields">
+      <label class="rooms-dates__field">
+        <span class="rooms-dates__label">{{ 'rooms.dates.checkIn' | translate }}</span>
+        <input
+          type="date"
+          class="rooms-dates__input"
+          [min]="today"
+          [ngModel]="checkIn()"
+          (ngModelChange)="checkIn.set($event)"
+        />
+      </label>
+
+      <label class="rooms-dates__field">
+        <span class="rooms-dates__label">{{ 'rooms.dates.checkOut' | translate }}</span>
+        <input
+          type="date"
+          class="rooms-dates__input"
+          [min]="checkIn() || today"
+          [ngModel]="checkOut()"
+          (ngModelChange)="checkOut.set($event)"
+        />
+      </label>
+
+      @if (hasDateRange() || checkIn() || checkOut()) {
+        <button type="button" class="rooms-dates__clear" (click)="clearDates()">
+          {{ 'rooms.dates.clear' | translate }}
+        </button>
+      }
+    </div>
+
+    @if (dateRangeInvalid()) {
+      <p class="rooms-dates__error" role="alert">{{ 'rooms.dates.invalid' | translate }}</p>
+    } @else if (hasDateRange()) {
+      <p class="rooms-dates__summary">
+        {{ 'rooms.dates.nights' | translate: { count: nights() } }}
+      </p>
+    }
+  </section>
 
   <nav class="rooms-hotels" [attr.aria-label]="'rooms.hotelsAria' | translate">
     @for (hotel of hotels; track hotel.id) {
@@ -39,6 +84,8 @@
     }
   </nav>
 
+
+
   <section class="rooms-catalog" [attr.aria-label]="'rooms.catalogAria' | translate">
     <div class="rooms-catalog__header">
       <h2 class="rooms-catalog__title">{{ selectedHotel().nameKey | translate }}</h2>
@@ -51,26 +98,42 @@
       } @else if (isFlatCatalog()) {
         <div class="rooms-flat">
           <p class="rooms-flat__summary">
-            {{ 'rooms.types.bungalowsAvailableCount' | translate: { count: flatRooms().length } }}
-          </p>
-          <ul class="rooms-type__list rooms-type__list--open">
-            @for (room of flatRooms(); track room.id) {
-              <li>
-                <a class="rooms-unit" [routerLink]="['/habitaciones', room.id]">
-                  <span class="rooms-unit__number">{{ 'rooms.bungalowNumber' | translate }} {{ room.roomNumber }}</span>
-                  <!-- <span class="rooms-unit__name">{{ room.nameKey | translate }}</span> -->
-                  <span class="rooms-unit__meta">
-                    {{ room.sizeM2 }} {{ 'rooms.m2' | translate }} ·
-                    {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
-                    {{ 'rooms.perNight' | translate }}
-                  </span>
-                </a>
-              </li>
+            @if (hasDateRange()) {
+              {{ 'rooms.dates.availableOfTotal' | translate: { available: visibleFlatRooms().length, total: flatRooms().length } }}
+            } @else {
+              {{ 'rooms.types.bungalowsAvailableCount' | translate: { count: flatRooms().length } }}
             }
-          </ul>
+          </p>
+
+          @if (hasDateRange() && visibleFlatRooms().length === 0) {
+            <p class="rooms-dates__empty">{{ 'rooms.dates.noRooms' | translate }}</p>
+          } @else {
+            <ul class="rooms-type__list rooms-type__list--open">
+              @for (room of visibleFlatRooms(); track room.id) {
+                <li>
+                  <a
+                    class="rooms-unit"
+                    [routerLink]="['/habitaciones', room.id]"
+                    [queryParams]="bookingQueryParams()"
+                  >
+                    <span class="rooms-unit__number">{{ 'rooms.bungalowNumber' | translate }} {{ room.roomNumber }}</span>
+                    <span class="rooms-unit__meta">
+                      {{ room.sizeM2 }} {{ 'rooms.m2' | translate }} ·
+                      {{ room.pricePerNight | currency: 'EUR' : 'symbol' : '1.0-0' }}
+                      {{ 'rooms.perNight' | translate }}
+                    </span>
+                  </a>
+                </li>
+              }
+            </ul>
+          }
         </div>
       } @else {
-        @for (group of roomTypeGroups(); track group.type) {
+        @if (hasDateRange() && visibleRoomTypeGroups().length === 0) {
+          <p class="rooms-dates__empty">{{ 'rooms.dates.noRooms' | translate }}</p>
+        }
+
+        @for (group of visibleRoomTypeGroups(); track group.type) {
           <article class="rooms-type">
             <button
               type="button"
@@ -81,7 +144,11 @@
               <span class="rooms-type__info">
                 <span class="rooms-type__name">{{ group.labelKey | translate }}</span>
                 <span class="rooms-type__count">
-                  {{ 'rooms.types.availableCount' | translate: { count: group.rooms.length } }}
+                  @if (hasDateRange()) {
+                    {{ 'rooms.dates.availableOfTotal' | translate: { available: group.rooms.length, total: group.totalRooms } }}
+                  } @else {
+                    {{ 'rooms.types.availableCount' | translate: { count: group.rooms.length } }}
+                  }
                 </span>
               </span>
               <svg class="rooms-type__chevron" viewBox="0 0 24 24" aria-hidden="true">
@@ -93,7 +160,11 @@
               <ul class="rooms-type__list">
                 @for (room of group.rooms; track room.id) {
                   <li>
-                    <a class="rooms-unit" [routerLink]="['/habitaciones', room.id]">
+                    <a
+                      class="rooms-unit"
+                      [routerLink]="['/habitaciones', room.id]"
+                      [queryParams]="bookingQueryParams()"
+                    >
                       <span class="rooms-unit__number">{{ 'rooms.roomNumber' | translate }} {{ room.roomNumber }}</span>
                       <span class="rooms-unit__name">{{ room.nameKey | translate }}</span>
                       <span class="rooms-unit__meta">

@@ -63,7 +63,29 @@
           <li>{{ room.sizeM2 }} {{ 'rooms.m2' | translate }}</li>
           <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
         </ul>
-        <a class="room-detail__book" routerLink="/reservas-precios">
+
+        @if (hasStayDates()) {
+          <div class="room-detail__stay">
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.dates.checkIn' | translate }}</span>
+              <strong>{{ checkIn() }}</strong>
+            </div>
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.dates.checkOut' | translate }}</span>
+              <strong>{{ checkOut() }}</strong>
+            </div>
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
+              <strong>{{ stayTotal() | currency: 'EUR' : 'symbol' : '1.0-0' }}</strong>
+            </div>
+          </div>
+        }
+
+        <a
+          class="room-detail__book"
+          routerLink="/reservas-precios"
+          [queryParams]="bookingQueryParams()"
+        >
           {{ 'rooms.detail.bookCta' | translate }}
         </a>
       </aside>

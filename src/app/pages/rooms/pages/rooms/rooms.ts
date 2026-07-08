@@ -1,14 +1,22 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { getHotelRooms, getRoomTypeGroups, HOTELS, INITIAL_RESERVATIONS, ROOMS } from '../../data/rooms.data';
-import { HotelId, RoomType } from '../../models/room.models';
+import {
+  getHotelRooms,
+  getRoomTypeGroups,
+  HOTELS,
+  INITIAL_RESERVATIONS,
+  isRoomAvailable,
+  ROOMS,
+} from '../../data/rooms.data';
+import { HotelId, Room, RoomType } from '../../models/room.models';
 
 @Component({
   selector: 'app-rooms',
-  imports: [CurrencyPipe, RouterLink, TranslateModule],
+  imports: [CurrencyPipe, FormsModule, RouterLink, TranslateModule],
   templateUrl: './rooms.html',
   styleUrl: './rooms.scss',
 })
@@ -24,9 +32,46 @@ export class Rooms {
   readonly selectedHotelId = signal<HotelId>('peralejos');
   readonly expandedTypes = signal<ReadonlySet<RoomType>>(new Set());
 
+  readonly checkIn = signal('');
+  readonly checkOut = signal('');
+  readonly today = new Date().toISOString().split('T')[0];
+
+  readonly hasDateRange = computed(() => {
+    const checkIn = this.checkIn();
+    const checkOut = this.checkOut();
+    return !!checkIn && !!checkOut && checkIn < checkOut;
+  });
+
+  readonly dateRangeInvalid = computed(() => {
+    const checkIn = this.checkIn();
+    const checkOut = this.checkOut();
+    return !!checkIn && !!checkOut && checkIn >= checkOut;
+  });
+
+  readonly nights = computed(() => {
+    if (!this.hasDateRange()) {
+      return 0;
+    }
+    const start = new Date(this.checkIn()).getTime();
+    const end = new Date(this.checkOut()).getTime();
+    return Math.max(0, Math.round((end - start) / (1000 * 60 * 60 * 24)));
+  });
+
   readonly roomTypeGroups = computed(() => getRoomTypeGroups(this.selectedHotelId()));
 
   readonly flatRooms = computed(() => getHotelRooms(this.selectedHotelId()));
+
+  readonly visibleFlatRooms = computed(() => this.visibleRooms(this.flatRooms()));
+
+  readonly visibleRoomTypeGroups = computed(() =>
+    this.roomTypeGroups()
+      .map((group) => ({
+        ...group,
+        totalRooms: group.rooms.length,
+        rooms: this.visibleRooms(group.rooms),
+      }))
+      .filter((group) => !this.hasDateRange() || group.rooms.length > 0),
+  );
 
   readonly isFlatCatalog = computed(() => this.selectedHotel().catalogLayout === 'flat');
 
@@ -64,5 +109,38 @@ export class Rooms {
 
   isTypeExpanded(type: RoomType): boolean {
     return this.expandedTypes().has(type);
+  }
+
+  clearDates(): void {
+    this.checkIn.set('');
+    this.checkOut.set('');
+  }
+
+  isRoomAvailable(roomId: string): boolean {
+    if (!this.hasDateRange()) {
+      return true;
+    }
+    return isRoomAvailable(roomId, this.checkIn(), this.checkOut());
+  }
+
+  visibleRooms(rooms: Room[]): Room[] {
+    if (!this.hasDateRange()) {
+      return rooms;
+    }
+    return rooms.filter((room) => this.isRoomAvailable(room.id));
+  }
+
+  availableCount(rooms: Room[]): number {
+    if (!this.hasDateRange()) {
+      return rooms.length;
+    }
+    return rooms.filter((room) => this.isRoomAvailable(room.id)).length;
+  }
+
+  bookingQueryParams(): Record<string, string> {
+    if (!this.hasDateRange()) {
+      return {};
+    }
+    return { checkIn: this.checkIn(), checkOut: this.checkOut() };
   }
 }

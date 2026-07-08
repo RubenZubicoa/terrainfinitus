@@ -197,6 +197,31 @@
   color: var(--ti-muted);
 }
 
+.room-detail__stay {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--ti-radius-sm);
+  background: var(--ti-cream-light);
+  border: 1px solid var(--ti-border);
+}
+
+.room-detail__stay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--ti-muted);
+
+  strong {
+    color: var(--ti-charcoal);
+    font-weight: 700;
+  }
+}
+
 .room-detail__book {
   display: block;
   width: 100%;
