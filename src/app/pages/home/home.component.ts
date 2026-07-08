@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Banner, BannerSlide } from '../../shared/components/banner/banner';
 
@@ -8,7 +8,9 @@ import { Banner, BannerSlide } from '../../shared/components/banner/banner';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit {
+  private readonly videoRef = viewChild<ElementRef<HTMLVideoElement>>('homeVideo');
+
   readonly videoPath =
     'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/Terra%20infinitus%201080.mp4?alt=media&token=59b3ec1e-28da-41f1-a7c2-886ab2afae74';
 
@@ -32,4 +34,19 @@ export class HomeComponent {
     { src: '/images/inicio/inicio18.jpg', altKey: 'home.alt18' },
     { src: '/images/inicio/inicio19.jpg', altKey: 'home.alt19' },
   ];
+
+  ngAfterViewInit(): void {
+    const video = this.videoRef()?.nativeElement;
+    if (!video) {
+      return;
+    }
+
+    video.muted = true;
+    const playAttempt = video.play();
+    if (playAttempt) {
+      playAttempt.catch(() => {
+        // El navegador bloqueó el autoplay; el usuario podrá iniciarlo con los controles.
+      });
+    }
+  }
 }

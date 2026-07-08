@@ -1,12 +1,12 @@
 <div class="home">
   <div class="home-hero__content">
     <h1 class="title">{{ 'home.title' | translate }}</h1>
-    <p class="home-hero__subtitle">{{ 'home.subtitle' | translate }}</p>
   </div>
 
   <section class="home-video" [attr.aria-label]="'home.videoAria' | translate">
     <div class="home-video__frame">
       <video
+        #homeVideo
         class="home-video__player"
         [src]="videoPath"
         [attr.aria-label]="'home.videoTitle' | translate"
@@ -18,6 +18,8 @@
       ></video>
     </div>
   </section>
+
+  <p class="home-hero__subtitle">{{ 'home.subtitle' | translate }}</p>
 
   <app-banner [slides]="slides" />
 </div>

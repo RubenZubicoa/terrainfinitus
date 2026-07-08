@@ -22,12 +22,13 @@
 }
 
 .home-hero__subtitle {
-  margin: 0.75rem 0 0;
-  max-width: 42rem;
+  margin: 0 auto;
+  max-width: 45rem;
   font-family: var(--ti-font-body);
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-style: italic;
   line-height: 1.55;
+  text-align: center;
   color: var(--ti-muted);
 }
 
