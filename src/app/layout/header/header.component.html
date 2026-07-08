@@ -31,7 +31,7 @@
       role="group"
       [attr.aria-label]="'header.selectLanguage' | translate"
     >
-      @for (lang of languageService.languages; track lang.code) {
+      @for (lang of languageService.languages; track lang.id) {
         <button
           type="button"
           class="header__lang-btn"
@@ -70,7 +70,7 @@
           role="listbox"
           [attr.aria-label]="'header.selectLanguage' | translate"
         >
-          @for (lang of languageService.languages; track lang.code) {
+          @for (lang of languageService.languages; track lang.id) {
             <button
               type="button"
               class="header__lang-option"
