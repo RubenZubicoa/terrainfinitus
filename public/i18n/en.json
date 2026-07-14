@@ -224,6 +224,7 @@
       "title": "Gourmet",
       "description": "Explore our gourmet selection organised by product families. Each section includes an introduction and a catalogue of items with prices.",
       "navAria": "Gourmet shop categories",
+      "mobileCategoryLabel": "Category",
       "catalogDownload": "View Malvasía catalogue",
       "productCount": "{{count}} products",
       "sectionEmpty": "We will add items to this category soon.",

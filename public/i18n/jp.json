@@ -221,6 +221,7 @@
       "title": "Gourmet",
       "description": "製品ファミリー別に整理されたグルメセレクションをご覧ください。各セクションには紹介文と価格付きカタログがあります。",
       "navAria": "グルメショップのカテゴリー",
+      "mobileCategoryLabel": "カテゴリー",
       "catalogDownload": "Malvasíaカタログを見る",
       "productCount": "{{count}} 件の商品",
       "sectionEmpty": "このカテゴリーにはまもなく商品を追加します。",

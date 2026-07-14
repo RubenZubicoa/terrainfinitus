@@ -142,9 +142,47 @@
   transition:
     background var(--ti-transition),
     color var(--ti-transition);
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     background: var(--ti-copper);
     color: #fff;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list__grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .product-card__body {
+    padding: 0.85rem 0.9rem 0.95rem;
+  }
+
+  .product-card__footer {
+    padding: 0 0.9rem 0.95rem;
+  }
+
+  .product-card__name {
+    font-size: 1rem;
+  }
+
+  .product-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-card__cta,
+  .product-card__cart-btn {
+    justify-content: center;
+    width: 100%;
+    min-height: 2.65rem;
+    padding-block: 0.55rem;
+    text-align: center;
+  }
+
+  .product-card__cart-btn {
+    font-size: 0.8125rem;
   }
 }

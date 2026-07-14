@@ -1,6 +1,6 @@
 import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { ActivatedRoute, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   DEFAULT_GOURMET_SECTION,
@@ -19,6 +19,7 @@ import { ProductList } from '../../../../shared/components/product-list/product-
 })
 export class Gourmet implements OnInit {
   private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
 
   readonly sections = GOURMET_SECTIONS;
@@ -51,6 +52,11 @@ export class Gourmet implements OnInit {
 
   isMalvasiaSection(section: GourmetSection): boolean {
     return section.id === 'productos-pato';
+  }
+
+  onSectionChange(event: Event): void {
+    const sectionId = (event.target as HTMLSelectElement).value as GourmetSectionId;
+    void this.router.navigate([this.gourmetBaseRoute], { fragment: sectionId });
   }
 
   private resolveActiveSection(fragment: string | null): GourmetSectionId {

@@ -5,6 +5,24 @@
     <p class="gourmet-hero__description">{{ 'shop.gourmet.description' | translate }}</p>
   </header>
 
+  <div class="gourmet-mobile-nav">
+    <label class="gourmet-mobile-nav__label" for="gourmet-section-select">
+      {{ 'shop.gourmet.mobileCategoryLabel' | translate }}
+    </label>
+    <select
+      id="gourmet-section-select"
+      class="gourmet-mobile-nav__select"
+      [value]="activeSection()"
+      (change)="onSectionChange($event)"
+    >
+      @for (section of sections; track section.id) {
+        <option [value]="section.id">
+          {{ section.translationKey + '.title' | translate }}
+        </option>
+      }
+    </select>
+  </div>
+
   <div class="gourmet-layout">
     <aside class="gourmet-sidebar">
       <nav class="gourmet-sidebar__nav" [attr.aria-label]="'shop.gourmet.navAria' | translate">
