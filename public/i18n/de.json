@@ -228,7 +228,7 @@
       "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
       "navAria": "Gourmet-Shop-Kategorien",
       "mobileCategoryLabel": "Kategorie",
-      "catalogDownload": "Malvasía-Katalog ansehen",
+      "catalogDownload": "Malvasía-Katalog herunterladen",
       "productCount": "{{count}} Produkte",
       "sectionEmpty": "In dieser Kategorie werden wir bald Referenzen hinzufügen.",
       "recipeLibrary": {
@@ -251,6 +251,7 @@
         "productosPato": {
           "title": "Entenprodukte: Malvasía",
           "presentationTitle": "Präsentation",
+          "presentationVideoTitle": "Malvasía-Präsentationsvideo",
           "presentationParagraphs": [
             "In unserem Gourmet-Shop führen wir ausschließlich exklusive Produkte, die Qualität, Originalität, Exklusivität sowie familiäre und nachhaltige Produktion vereinen.",
             "Seit mehr als dreißig Jahren erfüllt Malvasía diese und viele weitere Anforderungen, die ihre Produkte zu den besten auf dem Markt machen – mit besonderer Sorgfalt im Umgang mit den Tieren (einzige in FoieGood aufgenommen), glutenfrei und mit absoluter Sorgfalt in allen Herstellungsprozessen.",

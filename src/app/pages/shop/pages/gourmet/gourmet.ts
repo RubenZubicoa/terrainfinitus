@@ -1,6 +1,7 @@
 import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   DEFAULT_GOURMET_SECTION,
@@ -21,6 +22,7 @@ export class Gourmet implements OnInit {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly sanitizer = inject(DomSanitizer);
 
   readonly sections = GOURMET_SECTIONS;
   readonly gourmetBaseRoute = GOURMET_BASE_ROUTE;
@@ -52,6 +54,10 @@ export class Gourmet implements OnInit {
 
   isMalvasiaSection(section: GourmetSection): boolean {
     return section.id === 'productos-pato';
+  }
+
+  safePresentationVideoUrl(url?: string): SafeResourceUrl | null {
+    return url ? this.sanitizer.bypassSecurityTrustResourceUrl(url) : null;
   }
 
   onSectionChange(event: Event): void {

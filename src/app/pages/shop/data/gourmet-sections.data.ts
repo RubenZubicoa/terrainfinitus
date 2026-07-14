@@ -4,6 +4,7 @@ import { GourmetSection, GourmetSectionId } from '../../../shared/models/product
 export const DEFAULT_GOURMET_SECTION: GourmetSectionId = 'productos-pato';
 export const GOURMET_BASE_ROUTE = '/tienda-boutique/gourmet';
 export const MALVASIA_RECIPE_LIBRARY_URL = 'https://www.malvasia.com/es/recetas-pato/';
+export const MALVASIA_PRESENTATION_VIDEO_URL = 'https://www.youtube.com/embed/_BU7DVqn1cQ?start=4';
 
 export const GOURMET_SECTION_ORDER: readonly GourmetSectionId[] = [
   'productos-pato',
@@ -24,8 +25,9 @@ export const GOURMET_SECTIONS: readonly GourmetSection[] = [
   {
     id: 'productos-pato',
     translationKey: 'shop.gourmet.sections.productosPato',
-    catalogUrl: '/documents/gourmet/catalogo-malvasia.html',
+    catalogUrl: '/documents/gourmet/Catalogo_malvasia-pdf.pdf',
     recipeLibraryUrl: MALVASIA_RECIPE_LIBRARY_URL,
+    presentationVideoUrl: MALVASIA_PRESENTATION_VIDEO_URL,
   },
   { id: 'aceites', translationKey: 'shop.gourmet.sections.aceites' },
   { id: 'dulces-postres', translationKey: 'shop.gourmet.sections.dulcesPostres' },

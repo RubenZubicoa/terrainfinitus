@@ -228,7 +228,7 @@
       "description": "Explore a nossa seleção gourmet por famílias de produto. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
       "navAria": "Categorias da loja gourmet",
       "mobileCategoryLabel": "Categoria",
-      "catalogDownload": "Consultar catálogo Malvasía",
+      "catalogDownload": "Descarregar catálogo Malvasía",
       "productCount": "{{count}} produtos",
       "sectionEmpty": "Em breve adicionaremos referências nesta categoria.",
       "recipeLibrary": {
@@ -251,6 +251,7 @@
         "productosPato": {
           "title": "Produtos de pato: Malvasía",
           "presentationTitle": "Apresentação",
+          "presentationVideoTitle": "Vídeo de apresentação Malvasía",
           "presentationParagraphs": [
             "Na nossa loja gourmet incluímos apenas produtos exclusivos que reúnam qualidade, originalidade, exclusividade e produção familiar e sustentável.",
             "Há mais de trinta anos que a Malvasía reúne estes e muitos outros requisitos que fazem dos seus produtos os melhores do mercado, com especial cuidado no tratamento dos animais (únicos incluídos na FoieGood), sem glúten e com absoluto cuidado em todos os processos de fabrico.",

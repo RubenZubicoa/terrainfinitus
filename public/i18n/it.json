@@ -228,7 +228,7 @@
       "description": "Esplora la nostra selezione gourmet per famiglie di prodotto. Ogni sezione include una presentazione e un catalogo di referenze con prezzi.",
       "navAria": "Categorie del negozio gourmet",
       "mobileCategoryLabel": "Categoria",
-      "catalogDownload": "Consulta il catalogo Malvasía",
+      "catalogDownload": "Scarica il catalogo Malvasía",
       "productCount": "{{count}} prodotti",
       "sectionEmpty": "Aggiungeremo presto referenze in questa categoria.",
       "recipeLibrary": {
@@ -251,6 +251,7 @@
         "productosPato": {
           "title": "Prodotti di anatra: Malvasía",
           "presentationTitle": "Presentazione",
+          "presentationVideoTitle": "Video di presentazione Malvasía",
           "presentationParagraphs": [
             "Nel nostro negozio gourmet includiamo solo prodotti esclusivi che riuniscano qualità, originalità, esclusività e produzione familiare e sostenibile.",
             "Da oltre trent'anni Malvasía riunisce questi e molti altri requisiti che rendono i suoi prodotti tra i migliori sul mercato, con particolare attenzione al benessere animale (unici inclusi in FoieGood), senza glutine e con assoluta cura in tutti i processi di lavorazione.",

@@ -228,7 +228,7 @@
       "description": "製品ファミリー別に整理されたグルメセレクションをご覧ください。各セクションには紹介文と価格付きカタログがあります。",
       "navAria": "グルメショップのカテゴリー",
       "mobileCategoryLabel": "カテゴリー",
-      "catalogDownload": "Malvasíaカタログを見る",
+      "catalogDownload": "Malvasíaカタログをダウンロード",
       "productCount": "{{count}} 件の商品",
       "sectionEmpty": "このカテゴリーにはまもなく商品を追加します。",
       "recipeLibrary": {
@@ -251,6 +251,7 @@
         "productosPato": {
           "title": "鴨製品：Malvasía",
           "presentationTitle": "紹介",
+          "presentationVideoTitle": "Malvasía紹介動画",
           "presentationParagraphs": [
             "当グルメショップでは、品質・独創性・限定性・家族的で持続可能な生産といった条件を満たす独占的な商品のみを取り扱っています。",
             "30年以上にわたりMalvasíaは、動物福祉（FoieGood唯一の採用）への配慮、グルテンフリー、製造工程全体への徹底した注意など、市場最高水準の製品づくりを続けています。",

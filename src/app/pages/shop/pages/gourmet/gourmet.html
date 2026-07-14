@@ -62,6 +62,21 @@
             @for (paragraph of ('shop.gourmet.sections.productosPato.presentationParagraphs' | translate); track $index) {
               <p class="gourmet-presentation__paragraph">{{ paragraph }}</p>
             }
+
+            @if (section.presentationVideoUrl) {
+              <div class="gourmet-presentation__video">
+                <iframe
+                  class="gourmet-presentation__video-frame"
+                  [src]="safePresentationVideoUrl(section.presentationVideoUrl)"
+                  [title]="section.translationKey + '.presentationVideoTitle' | translate"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            }
+
             <p class="gourmet-presentation__footnote">
               {{ section.translationKey + '.presentationFootnote' | translate }}
             </p>
@@ -72,8 +87,7 @@
               <a
                 class="gourmet-actions__button gourmet-actions__button--primary"
                 [href]="section.catalogUrl"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Catalogo-Malvasia.pdf"
               >
                 {{ 'shop.gourmet.catalogDownload' | translate }}
               </a>

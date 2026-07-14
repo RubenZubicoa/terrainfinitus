@@ -173,6 +173,26 @@
   color: var(--ti-copper-dark);
 }
 
+.gourmet-presentation__video {
+  position: relative;
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 0 1rem;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--ti-radius-md);
+  overflow: hidden;
+  background: #000;
+  box-shadow: var(--ti-shadow);
+}
+
+.gourmet-presentation__video-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .gourmet-actions {
   display: flex;
   flex-wrap: wrap;

@@ -228,7 +228,7 @@
       "description": "Découvrez notre sélection gourmet par familles de produits. Chaque section comprend une présentation et un catalogue de références avec prix.",
       "navAria": "Catégories de la boutique gourmet",
       "mobileCategoryLabel": "Catégorie",
-      "catalogDownload": "Consulter le catalogue Malvasía",
+      "catalogDownload": "Télécharger le catalogue Malvasía",
       "productCount": "{{count}} produits",
       "sectionEmpty": "Nous ajouterons bientôt des références dans cette catégorie.",
       "recipeLibrary": {
@@ -251,6 +251,7 @@
         "productosPato": {
           "title": "Produits de canard : Malvasía",
           "presentationTitle": "Présentation",
+          "presentationVideoTitle": "Vidéo de présentation Malvasía",
           "presentationParagraphs": [
             "Dans notre boutique gourmet, nous n'incluons que des produits exclusifs réunissant qualité, originalité, exclusivité et production familiale et durable.",
             "Depuis plus de trente ans, Malvasía réunit ces exigences et bien d'autres qui font de ses produits les meilleurs du marché, avec un soin particulier pour le traitement des animaux (seuls inclus dans FoieGood), sans gluten et une attention absolue à tous les processus de fabrication.",
