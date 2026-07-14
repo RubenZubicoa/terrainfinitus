@@ -219,14 +219,38 @@
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
-      "description": "Découvrez notre sélection gourmet organisée par familles de produits : huiles, produits de canard Malvasía, douceurs, charcuteries, conserves et bien plus. Chaque section comprend une présentation et un catalogue de références avec prix.",
+      "description": "Découvrez notre sélection gourmet par familles de produits. Chaque section comprend une présentation et un catalogue de références avec prix.",
       "navAria": "Catégories de la boutique gourmet",
-      "catalogDownload": "Télécharger le catalogue Malvasía",
+      "catalogDownload": "Consulter le catalogue Malvasía",
       "productCount": "{{count}} produits",
       "sectionEmpty": "Nous ajouterons bientôt des références dans cette catégorie.",
+      "recipeLibrary": {
+        "title": "Vidéothèque de recettes",
+        "description": "Inspirez-vous des recettes officielles Malvasía pour profiter au maximum de leurs produits de canard.",
+        "cta": "Voir la vidéothèque de recettes Malvasía"
+      },
+      "salesConditions": {
+        "title": "Conditions de vente, paiement et livraison",
+        "ordering": "Passez commande en ligne en ajoutant des produits au panier et en complétant vos données au checkout.",
+        "payment": "Paiement par carte, virement, Bizum ou PayPal. Les prix affichés sont les prix usine, avec l'attention personnalisée de Terra Infinitus.",
+        "shipping": "Livraison à domicile disponible. Consultez les formats et la disponibilité de chaque référence avant de confirmer.",
+        "contact": "Après enregistrement de votre commande, nous vous contacterons pour confirmer les détails, le paiement et la livraison."
+      },
       "sections": {
         "aceites": { "title": "Huiles", "presentation": "Huiles d'olive vierge extra et spécialités sélectionnées pour la haute gastronomie." },
-        "productosPato": { "title": "Produits de canard", "presentation": "Foie gras, confits, pâtés et spécialités élaborés par Malvasía à Soria, avec le label Terra Infinitus." },
+        "productosPato": {
+          "title": "Produits de canard : Malvasía",
+          "presentationTitle": "Présentation",
+          "presentationParagraphs": [
+            "Dans notre boutique gourmet, nous n'incluons que des produits exclusifs réunissant qualité, originalité, exclusivité et production familiale et durable.",
+            "Depuis plus de trente ans, Malvasía réunit ces exigences et bien d'autres qui font de ses produits les meilleurs du marché, avec un soin particulier pour le traitement des animaux (seuls inclus dans FoieGood), sans gluten et une attention absolue à tous les processus de fabrication.",
+            "Nous distribuons aux particuliers et aux professionnels, en conservant les mêmes prix d'usine et en ajoutant notre touche et notre attention personnalisées.",
+            "Qualité, spécialisation et respect du produit nous définissent depuis plus de 30 ans.",
+            "Notre philosophie est claire : une production qui privilégie la qualité sur la quantité, le respect du produit et un engagement constant pour l'innovation.",
+            "Vous trouverez ci-dessous les produits disponibles."
+          ],
+          "presentationFootnote": "*N'oubliez pas de consulter les conditions de vente, livraison et paiement, ainsi que les formats disponibles."
+        },
         "dulcesPostres": { "title": "Douceurs et desserts", "presentation": "Pâtisserie fine, douceurs artisanales et desserts gourmet." },
         "embutidosJamonesCecinas": { "title": "Charcuteries, jambons et cecinas", "presentation": "Sélection de charcuteries ibériques, jambons et cecinas de grande qualité." },
         "mielesMermeladas": { "title": "Miels et confitures", "presentation": "Miels artisanaux et confitures gourmet à base d'ingrédients naturels." },

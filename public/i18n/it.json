@@ -219,14 +219,38 @@
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
-      "description": "Esplora la nostra selezione gourmet organizzata per famiglie di prodotto: oli, prodotti di anatra Malvasía, dolci, salumi, conserve e altro. Ogni sezione include una presentazione e un catalogo di referenze con prezzi.",
+      "description": "Esplora la nostra selezione gourmet per famiglie di prodotto. Ogni sezione include una presentazione e un catalogo di referenze con prezzi.",
       "navAria": "Categorie del negozio gourmet",
-      "catalogDownload": "Scarica catalogo Malvasía",
+      "catalogDownload": "Consulta il catalogo Malvasía",
       "productCount": "{{count}} prodotti",
       "sectionEmpty": "Aggiungeremo presto referenze in questa categoria.",
+      "recipeLibrary": {
+        "title": "Videoteca di ricette",
+        "description": "Lasciati ispirare dalle ricette ufficiali Malvasía per valorizzare i loro prodotti di anatra.",
+        "cta": "Vedi la videoteca di ricette Malvasía"
+      },
+      "salesConditions": {
+        "title": "Condizioni di vendita, pagamento e spedizione",
+        "ordering": "Effettua l'ordine online aggiungendo i prodotti al carrello e completando i dati nel checkout.",
+        "payment": "Puoi pagare con carta, bonifico, Bizum o PayPal. I prezzi mostrati sono quelli di fabbrica, con l'attenzione personalizzata di Terra Infinitus.",
+        "shipping": "Offriamo spedizione a domicilio. Consulta formati e disponibilità di ogni referenza prima di confermare.",
+        "contact": "Dopo la registrazione dell'ordine ti contatteremo per confermare dettagli, pagamento e consegna."
+      },
       "sections": {
         "aceites": { "title": "Oli", "presentation": "Oli extravergine di oliva e specialità selezionate per l'alta gastronomia." },
-        "productosPato": { "title": "Prodotti di anatra", "presentation": "Foie gras, confit, paté e specialità Malvasía di Soria con il marchio Terra Infinitus." },
+        "productosPato": {
+          "title": "Prodotti di anatra: Malvasía",
+          "presentationTitle": "Presentazione",
+          "presentationParagraphs": [
+            "Nel nostro negozio gourmet includiamo solo prodotti esclusivi che riuniscano qualità, originalità, esclusività e produzione familiare e sostenibile.",
+            "Da oltre trent'anni Malvasía riunisce questi e molti altri requisiti che rendono i suoi prodotti tra i migliori sul mercato, con particolare attenzione al benessere animale (unici inclusi in FoieGood), senza glutine e con assoluta cura in tutti i processi di lavorazione.",
+            "Distribuiamo a privati e professionisti mantenendo gli stessi prezzi di fabbrica e aggiungendo il nostro tocco e attenzione personalizzata.",
+            "Qualità, specializzazione e rispetto del prodotto ci definiscono da oltre 30 anni.",
+            "La nostra filosofia è chiara: produzione che privilegia la qualità sulla quantità, rispetto del prodotto e costante impegno per l'innovazione.",
+            "Di seguito dettagliamo i prodotti disponibili."
+          ],
+          "presentationFootnote": "*Non dimenticare di consultare le condizioni di vendita, spedizione e pagamento, nonché i formati disponibili."
+        },
         "dulcesPostres": { "title": "Dolci e dessert", "presentation": "Pasticceria fine, dolci artigianali e dessert gourmet." },
         "embutidosJamonesCecinas": { "title": "Salumi, prosciutti e cecinas", "presentation": "Selezione di salumi iberici, prosciutti e cecinas di massima qualità." },
         "mielesMermeladas": { "title": "Mieli e marmellate", "presentation": "Mieli artigianali e marmellate gourmet con ingredienti naturali." },

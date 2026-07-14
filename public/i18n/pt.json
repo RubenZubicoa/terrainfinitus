@@ -219,14 +219,38 @@
     "gourmet": {
       "eyebrow": "Loja Boutique",
       "title": "Gourmet",
-      "description": "Explore a nossa seleção gourmet organizada por famílias de produto: azeites, produtos de pato Malvasía, doces, enchidos, conservas e muito mais. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
+      "description": "Explore a nossa seleção gourmet por famílias de produto. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
       "navAria": "Categorias da loja gourmet",
-      "catalogDownload": "Descarregar catálogo Malvasía",
+      "catalogDownload": "Consultar catálogo Malvasía",
       "productCount": "{{count}} produtos",
       "sectionEmpty": "Em breve adicionaremos referências nesta categoria.",
+      "recipeLibrary": {
+        "title": "Videoteca de receitas",
+        "description": "Inspire-se com as receitas oficiais da Malvasía para tirar o máximo partido dos seus produtos de pato.",
+        "cta": "Ver videoteca de receitas Malvasía"
+      },
+      "salesConditions": {
+        "title": "Condições de venda, pagamento e envio",
+        "ordering": "Faça o seu pedido online adicionando produtos ao carrinho e completando os seus dados no checkout.",
+        "payment": "Pode pagar com cartão, transferência, Bizum ou PayPal. Os preços apresentados são os de fábrica, com a atenção personalizada da Terra Infinitus.",
+        "shipping": "Oferecemos envio ao domicílio. Consulte formatos e disponibilidade de cada referência antes de confirmar.",
+        "contact": "Após registar o pedido entraremos em contacto para confirmar detalhes, pagamento e entrega."
+      },
       "sections": {
         "aceites": { "title": "Azeites", "presentation": "Azeites virgem extra e especialidades selecionadas para alta gastronomia." },
-        "productosPato": { "title": "Produtos de pato", "presentation": "Foie gras, confits, patês e especialidades Malvasía de Sória com o selo Terra Infinitus." },
+        "productosPato": {
+          "title": "Produtos de pato: Malvasía",
+          "presentationTitle": "Apresentação",
+          "presentationParagraphs": [
+            "Na nossa loja gourmet incluímos apenas produtos exclusivos que reúnam qualidade, originalidade, exclusividade e produção familiar e sustentável.",
+            "Há mais de trinta anos que a Malvasía reúne estes e muitos outros requisitos que fazem dos seus produtos os melhores do mercado, com especial cuidado no tratamento dos animais (únicos incluídos na FoieGood), sem glúten e com absoluto cuidado em todos os processos de fabrico.",
+            "Distribuímos a particulares e profissionais, mantendo os mesmos preços de fábrica e acrescentando o nosso toque e atenção personalizados.",
+            "Qualidade, especialização e respeito pelo produto definem-nos há mais de 30 anos.",
+            "A nossa filosofia é clara: produção que prioriza a qualidade sobre a quantidade, respeito pelo produto e aposta constante na inovação.",
+            "Seguidamente detalhamos os produtos disponíveis."
+          ],
+          "presentationFootnote": "*Não se esqueça de consultar as condições de venda, envio e pagamento, bem como os formatos disponíveis."
+        },
         "dulcesPostres": { "title": "Doces e sobremesas", "presentation": "Reposteria fina, doces artesanais e sobremesas gourmet." },
         "embutidosJamonesCecinas": { "title": "Enchidos, presuntos e cecinas", "presentation": "Seleção de enchidos ibéricos, presuntos e cecinas de máxima qualidade." },
         "mielesMermeladas": { "title": "Mel e compotas", "presentation": "Mel artesanal e compotas gourmet com ingredientes naturais." },

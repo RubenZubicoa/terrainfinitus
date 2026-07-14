@@ -18,6 +18,7 @@ export interface GourmetSection {
   id: GourmetSectionId;
   translationKey: string;
   catalogUrl?: string;
+  recipeLibraryUrl?: string;
 }
 
 export interface Product {

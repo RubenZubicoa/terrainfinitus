@@ -1,4 +1,5 @@
 import { NavItem } from '../models/nav-item.model';
+import { buildGourmetNavigationChildren } from '../../pages/shop/data/gourmet-sections.data';
 
 export const MAIN_NAVIGATION: NavItem[] = [
   { labelKey: 'nav.home', route: '/' },
@@ -25,7 +26,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
     labelKey: 'nav.shop',
     route: '/tienda-boutique',
     children: [
-      { labelKey: 'nav.shopGourmet', route: '/tienda-boutique/gourmet' },
+      {
+        labelKey: 'nav.shopGourmet',
+        route: '/tienda-boutique/gourmet',
+        children: buildGourmetNavigationChildren(),
+      },
       { labelKey: 'nav.shopMerchandising', route: '/tienda-boutique/merchandising' },
       {
         labelKey: 'nav.shopTheLake',

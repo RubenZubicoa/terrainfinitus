@@ -222,19 +222,40 @@
     "gourmet": {
       "eyebrow": "Boutique Shop",
       "title": "Gourmet",
-      "description": "Explore our gourmet selection organised by product families: oils, Malvasía duck products, sweets, charcuterie, preserves and more. Each section includes an introduction and a catalogue of items with prices.",
+      "description": "Explore our gourmet selection organised by product families. Each section includes an introduction and a catalogue of items with prices.",
       "navAria": "Gourmet shop categories",
-      "catalogDownload": "Download Malvasía catalogue",
+      "catalogDownload": "View Malvasía catalogue",
       "productCount": "{{count}} products",
       "sectionEmpty": "We will add items to this category soon.",
+      "recipeLibrary": {
+        "title": "Recipe video library",
+        "description": "Get inspired with official Malvasía recipes to make the most of their duck products.",
+        "cta": "View Malvasía recipe videos"
+      },
+      "salesConditions": {
+        "title": "Sales, payment and shipping terms",
+        "ordering": "Place your order online by adding products to the cart and completing your details at checkout.",
+        "payment": "You can pay by card, bank transfer, Bizum or PayPal. Prices shown are factory prices, with Terra Infinitus personalised service.",
+        "shipping": "We offer home delivery. Check formats and availability for each item before confirming your order.",
+        "contact": "After registering your order we will contact you to confirm details, payment and delivery."
+      },
       "sections": {
         "aceites": {
           "title": "Oils",
           "presentation": "Extra virgin olive oils and selected specialities for fine dining."
         },
         "productosPato": {
-          "title": "Duck products",
-          "presentation": "Foie gras, confits, pâtés and specialities crafted by Malvasía in Soria, with the Terra Infinitus quality seal."
+          "title": "Duck Products: Malvasía",
+          "presentationTitle": "Introduction",
+          "presentationParagraphs": [
+            "In our gourmet shop we only include exclusive products that meet a set of qualities such as quality, originality, exclusivity, and family-based sustainable production.",
+            "For more than thirty years, Malvasía has met these and many other requirements that make its products arguably the best on the market, with special care for animal welfare (the only ones included in FoieGood), gluten-free production, and absolute care throughout every manufacturing process, finished with excellent and practical presentation in different sizes and formats that ensure that, if you love foie gras, we are the best alternative.",
+            "We supply both private customers and professionals, keeping the same factory prices while adding our personal touch and guidance to advise, serve and support you quickly, efficiently and safely.",
+            "Quality, specialisation and respect for the product have defined us for more than 30 years.",
+            "Our philosophy is clear: production that prioritises quality over quantity, respect for the product, and a constant commitment to innovation.",
+            "Below we detail the products currently available."
+          ],
+          "presentationFootnote": "*Please remember to check sales, shipping and payment terms, as well as available formats."
         },
         "dulcesPostres": {
           "title": "Sweets and desserts",

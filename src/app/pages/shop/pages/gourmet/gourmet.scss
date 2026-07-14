@@ -36,37 +36,146 @@
   text-align: justify;
 }
 
-.gourmet-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 0.85rem 0;
-  background: linear-gradient(
-    to bottom,
-    var(--ti-cream) 75%,
-    rgba(254, 224, 189, 0)
-  );
+.gourmet-layout {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  align-items: start;
 }
 
-.gourmet-nav__list {
+.gourmet-sidebar {
+  position: sticky;
+  top: 1rem;
+}
+
+.gourmet-sidebar__nav {
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-md);
+  background: #fff;
+  box-shadow: var(--ti-shadow);
+  overflow: hidden;
+}
+
+.gourmet-sidebar__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
   list-style: none;
 }
 
-.gourmet-nav__link {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.45rem 0.85rem;
-  border: 1px solid var(--ti-border);
-  border-radius: 999px;
-  background: #fff;
+.gourmet-sidebar__link {
+  display: block;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--ti-radius-sm);
   color: var(--ti-charcoal);
   font-family: var(--ti-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    color var(--ti-transition);
+
+  &:hover {
+    background: rgba(184, 115, 51, 0.08);
+    color: var(--ti-copper-dark);
+  }
+
+  &--active {
+    background: rgba(184, 115, 51, 0.12);
+    color: var(--ti-copper-dark);
+    box-shadow: inset 3px 0 0 var(--ti-copper);
+  }
+}
+
+.gourmet-content {
+  scroll-margin-top: 5.5rem;
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-md);
+  background: #fff;
+  box-shadow: var(--ti-shadow);
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.gourmet-content__header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--ti-border);
+}
+
+.gourmet-content__title {
+  margin: 0 0 0.35rem;
+  font-family: var(--ti-font-display);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ti-black);
+}
+
+.gourmet-content__count {
+  margin: 0;
   font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ti-muted);
+}
+
+.gourmet-content__presentation {
+  margin: 0 0 1.25rem;
+  max-width: 52rem;
+  font-size: clamp(0.9375rem, 1.5vw, 1.02rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}
+
+.gourmet-presentation {
+  margin-bottom: 1.25rem;
+}
+
+.gourmet-presentation__title {
+  margin: 0 0 0.85rem;
+  font-family: var(--ti-font-display);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ti-black);
+}
+
+.gourmet-presentation__paragraph {
+  margin: 0 0 0.85rem;
+  max-width: 52rem;
+  font-size: clamp(0.9375rem, 1.5vw, 1.02rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}
+
+.gourmet-presentation__footnote {
+  margin: 0;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--ti-copper-dark);
+}
+
+.gourmet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.gourmet-actions__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-family: var(--ti-font-body);
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
   transition:
@@ -75,138 +184,84 @@
     color var(--ti-transition),
     transform var(--ti-transition);
 
-  &:hover {
-    border-color: var(--ti-copper);
-    color: var(--ti-copper-dark);
-    transform: translateY(-1px);
+  &--primary {
+    background: var(--ti-copper);
+    color: #fff;
+
+    &:hover {
+      background: var(--ti-copper-dark);
+      transform: translateY(-1px);
+    }
   }
 
-  &--active {
-    border-color: var(--ti-copper);
-    background: rgba(184, 115, 51, 0.08);
-    color: var(--ti-copper-dark);
-  }
-}
-
-.gourmet-sections {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.gourmet-section {
-  scroll-margin-top: 5.5rem;
-  border: 1px solid var(--ti-border);
-  border-radius: var(--ti-radius-md);
-  background: #fff;
-  box-shadow: var(--ti-shadow);
-  overflow: hidden;
-}
-
-.gourmet-section__toggle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem 1.15rem;
-  border: none;
-  background: var(--ti-cream-light);
-  cursor: pointer;
-  text-align: left;
-  transition: background var(--ti-transition);
-
-  &:hover {
+  &--secondary {
+    border: 1px solid var(--ti-copper);
     background: #fff;
-  }
+    color: var(--ti-copper-dark);
 
-  &[aria-expanded='true'] {
-    background: #fff;
-    border-bottom: 1px solid var(--ti-border);
-
-    .gourmet-section__chevron {
-      transform: rotate(180deg);
+    &:hover {
+      background: rgba(184, 115, 51, 0.08);
+      transform: translateY(-1px);
     }
   }
 }
 
-.gourmet-section__summary {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  min-width: 0;
+.gourmet-conditions {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(184, 115, 51, 0.25);
+  border-radius: var(--ti-radius-md);
+  background: rgba(184, 115, 51, 0.05);
 }
 
-.gourmet-section__title {
-  margin: 0;
+.gourmet-conditions__title {
+  margin: 0 0 0.75rem;
   font-family: var(--ti-font-display);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--ti-black);
 }
 
-.gourmet-section__count {
-  font-family: var(--ti-font-body);
-  font-size: 0.8125rem;
-  font-weight: 500;
+.gourmet-conditions__list {
+  margin: 0;
+  padding-left: 1.15rem;
   color: var(--ti-muted);
-}
+  font-size: 0.9375rem;
+  line-height: 1.6;
 
-.gourmet-section__chevron {
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-  color: var(--ti-copper-dark);
-  transition: transform var(--ti-transition);
-}
-
-.gourmet-section__panel {
-  padding: 1rem 1.15rem 1.25rem;
-}
-
-.gourmet-section__presentation {
-  margin: 0 0 1rem;
-  max-width: 52rem;
-  font-size: clamp(0.9375rem, 1.5vw, 1.02rem);
-  line-height: 1.65;
-  color: var(--ti-muted);
-  text-align: justify;
-}
-
-.gourmet-section__catalog {
-  display: inline-flex;
-  align-items: center;
-  margin: 0 0 1.25rem;
-  padding: 0.55rem 1rem;
-  border-radius: 999px;
-  background: var(--ti-copper);
-  color: #fff;
-  font-family: var(--ti-font-body);
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition:
-    background var(--ti-transition),
-    transform var(--ti-transition);
-
-  &:hover {
-    background: var(--ti-copper-dark);
-    transform: translateY(-1px);
+  li + li {
+    margin-top: 0.45rem;
   }
 }
 
-@media (max-width: 768px) {
-  .gourmet-nav__list {
+@media (max-width: 900px) {
+  .gourmet-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gourmet-sidebar {
+    position: static;
+  }
+
+  .gourmet-sidebar__list {
+    flex-direction: row;
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.35rem;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
   }
 
-  .gourmet-section {
+  .gourmet-sidebar__link {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .gourmet-content {
     scroll-margin-top: 4.5rem;
   }
 }

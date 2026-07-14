@@ -219,14 +219,38 @@
     "gourmet": {
       "eyebrow": "ブティックショップ",
       "title": "Gourmet",
-      "description": "オイル、Malvasíaの鴨製品、スイーツ、ハム・ソーセージ、瓶詰めなど、製品ファミリー別に整理したグルメセレクション。各セクションには紹介文と価格付きの商品カタログがあります。",
+      "description": "製品ファミリー別に整理されたグルメセレクションをご覧ください。各セクションには紹介文と価格付きカタログがあります。",
       "navAria": "グルメショップのカテゴリー",
-      "catalogDownload": "Malvasíaカタログをダウンロード",
+      "catalogDownload": "Malvasíaカタログを見る",
       "productCount": "{{count}} 件の商品",
       "sectionEmpty": "このカテゴリーにはまもなく商品を追加します。",
+      "recipeLibrary": {
+        "title": "レシピ動画ライブラリ",
+        "description": "Malvasía公式レシピで鴨製品の魅力を最大限に引き出しましょう。",
+        "cta": "Malvasíaレシピ動画を見る"
+      },
+      "salesConditions": {
+        "title": "販売・支払い・配送条件",
+        "ordering": "商品をカートに追加し、チェックアウトで情報を入力してオンライン注文できます。",
+        "payment": "カード、銀行振込、Bizum、PayPalでお支払いいただけます。表示価格は工場価格で、Terra Infinitusの個別サポート付きです。",
+        "shipping": "宅配便での配送に対応しています。ご注文前に各商品のフォーマットと在庫をご確認ください。",
+        "contact": "ご注文登録後、詳細・お支払い・配送についてご連絡いたします。"
+      },
       "sections": {
         "aceites": { "title": "オイル", "presentation": "エクストラバージンオリーブオイルと高級料理向けの厳選品。" },
-        "productosPato": { "title": "鴨製品", "presentation": "ソリアのMalvasíaが手がけるフォアグラ、コンフィ、パテなど、Terra Infinitus品質の製品。" },
+        "productosPato": {
+          "title": "鴨製品：Malvasía",
+          "presentationTitle": "紹介",
+          "presentationParagraphs": [
+            "当グルメショップでは、品質・独創性・限定性・家族的で持続可能な生産といった条件を満たす独占的な商品のみを取り扱っています。",
+            "30年以上にわたりMalvasíaは、動物福祉（FoieGood唯一の採用）への配慮、グルテンフリー、製造工程全体への徹底した注意など、市場最高水準の製品づくりを続けています。",
+            "一般のお客様からプロまで、工場価格を維持しながら、迅速・効率的・安心な個別サポートを提供しています。",
+            "品質、専門性、製品への敬意が30年以上私たちを定義してきました。",
+            "私たちの哲学は明確です。量より質を優先し、製品を尊重し、常に革新に挑戦すること。",
+            "以下に現在ご利用いただける製品を掲載しています。"
+          ],
+          "presentationFootnote": "*販売・配送・支払い条件および利用可能なフォーマットを必ずご確認ください。"
+        },
         "dulcesPostres": { "title": "スイーツ・デザート", "presentation": "繊細な洋菓子、手作りスイーツ、グルメデザート。" },
         "embutidosJamonesCecinas": { "title": "ハム・ソーセージ・セシーナ", "presentation": "最高品質のイベリコ系加工肉、ハム、セシーナのセレクション。" },
         "mielesMermeladas": { "title": "はちみつ・ジャム", "presentation": "天然素材を使った手作りはちみつとグルメジャム。" },

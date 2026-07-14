@@ -219,14 +219,38 @@
     "gourmet": {
       "eyebrow": "Boutique-Shop",
       "title": "Gourmet",
-      "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien: Öle, Malvasía-Entenprodukte, Süßes, Wurstwaren, Konserven und mehr. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
+      "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
       "navAria": "Gourmet-Shop-Kategorien",
-      "catalogDownload": "Malvasía-Katalog herunterladen",
+      "catalogDownload": "Malvasía-Katalog ansehen",
       "productCount": "{{count}} Produkte",
       "sectionEmpty": "In dieser Kategorie werden wir bald Referenzen hinzufügen.",
+      "recipeLibrary": {
+        "title": "Rezept-Videothek",
+        "description": "Lassen Sie sich von den offiziellen Malvasía-Rezepten inspirieren.",
+        "cta": "Malvasía-Rezeptvideos ansehen"
+      },
+      "salesConditions": {
+        "title": "Verkaufs-, Zahlungs- und Versandbedingungen",
+        "ordering": "Bestellen Sie online, indem Sie Produkte in den Warenkorb legen und Ihre Daten im Checkout ausfüllen.",
+        "payment": "Zahlung per Karte, Überweisung, Bizum oder PayPal. Die angezeigten Preise sind Fabrikpreise mit persönlicher Betreuung durch Terra Infinitus.",
+        "shipping": "Wir liefern nach Hause. Prüfen Sie Formate und Verfügbarkeit jeder Referenz vor der Bestätigung.",
+        "contact": "Nach Ihrer Bestellung kontaktieren wir Sie zur Bestätigung von Details, Zahlung und Lieferung."
+      },
       "sections": {
         "aceites": { "title": "Öle", "presentation": "Natives Olivenöl extra und ausgewählte Spezialitäten für die Haute Cuisine." },
-        "productosPato": { "title": "Entenprodukte", "presentation": "Foie gras, Confit, Pasteten und Spezialitäten von Malvasía aus Soria mit dem Terra-Infinitus-Siegel." },
+        "productosPato": {
+          "title": "Entenprodukte: Malvasía",
+          "presentationTitle": "Präsentation",
+          "presentationParagraphs": [
+            "In unserem Gourmet-Shop führen wir ausschließlich exklusive Produkte, die Qualität, Originalität, Exklusivität sowie familiäre und nachhaltige Produktion vereinen.",
+            "Seit mehr als dreißig Jahren erfüllt Malvasía diese und viele weitere Anforderungen, die ihre Produkte zu den besten auf dem Markt machen – mit besonderer Sorgfalt im Umgang mit den Tieren (einzige in FoieGood aufgenommen), glutenfrei und mit absoluter Sorgfalt in allen Herstellungsprozessen.",
+            "Wir beliefern Privatkunden und Profis zu denselben Fabrikpreisen und bieten persönliche Beratung sowie schnellen, effizienten und sicheren Service.",
+            "Qualität, Spezialisierung und Respekt vor dem Produkt definieren uns seit über 30 Jahren.",
+            "Unsere Philosophie ist klar: Produktion, die Qualität vor Quantität stellt, Respekt vor dem Produkt und ein ständiges Engagement für Innovation.",
+            "Im Folgenden finden Sie die verfügbaren Produkte."
+          ],
+          "presentationFootnote": "*Bitte beachten Sie die Verkaufs-, Versand- und Zahlungsbedingungen sowie die verfügbaren Formate."
+        },
         "dulcesPostres": { "title": "Süßes und Desserts", "presentation": "Feine Patisserie, handgemachte Süßigkeiten und Gourmet-Desserts." },
         "embutidosJamonesCecinas": { "title": "Wurst, Schinken und Cecinas", "presentation": "Auswahl iberischer Wurstwaren, Schinken und Cecinas von höchster Qualität." },
         "mielesMermeladas": { "title": "Honig und Marmeladen", "presentation": "Handwerklicher Honig und Gourmet-Marmeladen aus natürlichen Zutaten." },

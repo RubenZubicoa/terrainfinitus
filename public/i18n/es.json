@@ -222,19 +222,40 @@
     "gourmet": {
       "eyebrow": "Tienda Boutique",
       "title": "Gourmet",
-      "description": "Explora nuestra selección gourmet organizada por familias de producto: aceites, productos del pato Malvasía, dulces, embutidos, conservas y mucho más. Cada sección incluye una presentación y el catálogo de referencias con precios.",
+      "description": "Explora nuestra selección gourmet organizada por familias de producto. Cada sección incluye una presentación y el catálogo de referencias con precios.",
       "navAria": "Categorías de la tienda gourmet",
-      "catalogDownload": "Descargar catálogo Malvasía",
+      "catalogDownload": "Consultar catálogo Malvasía",
       "productCount": "{{count}} productos",
       "sectionEmpty": "Próximamente añadiremos referencias en esta categoría.",
+      "recipeLibrary": {
+        "title": "Videoteca de recetas",
+        "description": "Inspírate con las recetas oficiales de Malvasía para sacar el máximo partido a sus productos de pato.",
+        "cta": "Ver videoteca de recetas Malvasía"
+      },
+      "salesConditions": {
+        "title": "Condiciones de venta, pago y envío",
+        "ordering": "Realiza tu pedido on line añadiendo productos al carrito y completa tus datos en el proceso de checkout.",
+        "payment": "Puedes pagar con tarjeta, transferencia bancaria, Bizum o PayPal. Los precios mostrados son los de fábrica, con la misma atención personalizada de Terra Infinitus.",
+        "shipping": "Ofrecemos envío a domicilio. Consulta formatos y disponibilidad de cada referencia antes de confirmar tu pedido.",
+        "contact": "Tras registrar tu pedido nos pondremos en contacto contigo para confirmar detalles, cobro y entrega."
+      },
       "sections": {
         "aceites": {
           "title": "Aceites",
           "presentation": "Aceites de oliva virgen extra y especialidades seleccionadas para la alta gastronomía."
         },
         "productosPato": {
-          "title": "Productos del pato",
-          "presentation": "Foie gras, confits, patés y especialidades elaboradas por Malvasía en Soria, con el sello de calidad Terra Infinitus."
+          "title": "Productos del Pato: Malvasía",
+          "presentationTitle": "Presentación",
+          "presentationParagraphs": [
+            "En nuestra tienda gourmet solamente incluimos productos exclusivos que reúnan una serie de cualidades, como la calidad, la originalidad, la exclusividad y la producción familiar y sostenible.",
+            "Desde hace más de treinta años, Malvasia reúne esos y muchos otros requisitos que hacen que sus productos, seguramente sean los mejores del mercado, con un cuidado especial hacia el trato de los animales (únicos incluidos en FoieGood) sin gluten y con un cuidado absoluto en todos los procesos de fabricación, rematados con una estupenda y práctica presentación en diferentes formatos de tamaños y tipos que te aseguran que, si te gusta el foie, somos la mejor alternativa.",
+            "Distribuimos a particulares y profesionales, manteniendo los mismos precios que tiene el producto en fábrica y añadiendo nuestro toque y atención personales para orientarte, atenderte y servirte de una manera rápida, eficiente y segura.",
+            "Calidad, especialización y respeto por el producto nos definen desde hace más de 30 años.",
+            "Nuestra filosofía es clara: producción que prioriza la calidad sobre la cantidad, respeto por el producto y una constante apuesta por la innovación.",
+            "Seguidamente te detallamos los productos disponibles."
+          ],
+          "presentationFootnote": "*No se te olvide consultar las condiciones de venta, envío y pago, así como los formatos disponibles."
         },
         "dulcesPostres": {
           "title": "Dulces y postres",
