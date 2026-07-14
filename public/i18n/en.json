@@ -707,7 +707,9 @@
       "description": "Development of a six-star hotel and luxury bungalows in the Alto Tajo Natural Park, Peralejos de Las Truchas, Guadalajara.",
       "pdfViewer": "Peralejos project document",
       "sections": {
-        "estudioSocioeconomico": { "title": "Socio-economic study of the Region. Section I" },
+        "estudioSocioeconomico": {
+          "title": "Socio-economic study of the Region. Section I"
+        },
         "introduccion": {
           "title": "Introduction",
           "paragraphs": [
@@ -716,16 +718,36 @@
             "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures."
           ]
         },
-        "quienesSomos": { "title": "Who are we? Why? The company, synergies" },
-        "conceptosTuristicos": { "title": "Applied tourism concepts, phases" },
-        "edificaciones": { "title": "Buildings, room types, floor plans" },
-        "bungalows": { "title": "Bungalows" },
-        "spasHidroterapia": { "title": "Spas, pools, saunas, gyms, hydrotherapy concept, terraces, library" },
-        "gimnasioRecepcion": { "title": "Gym, reception, meeting room" },
-        "cocinaCarta": { "title": "Kitchen, our menu" },
-        "tiendaPaquetes": { "title": "Shop, tourist packages" },
-        "rutasTrekking": { "title": "Trekking and running routes, tourist programmes, analysis, tourism situation in the area" },
-        "staffImpacto": { "title": "Staff and jobs, direct impact on the Community" }
+        "quienesSomos": {
+          "title": "Who are we? Why? The company, synergies"
+        },
+        "conceptosTuristicos": {
+          "title": "Applied tourism concepts, phases"
+        },
+        "edificaciones": {
+          "title": "Buildings, room types, floor plans"
+        },
+        "bungalows": {
+          "title": "Bungalows"
+        },
+        "spasHidroterapia": {
+          "title": "Spas, pools, saunas, gyms, hydrotherapy concept, terraces, library"
+        },
+        "gimnasioRecepcion": {
+          "title": "Gym, reception, meeting room"
+        },
+        "cocinaCarta": {
+          "title": "Kitchen, our menu"
+        },
+        "tiendaPaquetes": {
+          "title": "Shop, tourist packages"
+        },
+        "rutasTrekking": {
+          "title": "Trekking and running routes, tourist programmes, analysis, tourism situation in the area"
+        },
+        "staffImpacto": {
+          "title": "Staff and jobs, direct impact on the Community"
+        }
       }
     },
     "bugarra": {
@@ -735,12 +757,37 @@
       "pdfViewer": "Bugarra project document I",
       "pdfViewer2": "Bugarra project document II",
       "sections": {
-        "estudioSocioeconomico": { "title": "Socio-economic study of the Region" },
+        "estudioSocioeconomico": {
+          "title": "Socio-economic study of the Region",
+          "paragraphs": [
+            "Our Project is divided into the following volumes: Socio-economic study of the Region; The Project, with designs, equipment, layout, economic studies, forecasts and plans; Investment proposal; and Appendices with detailed plans, reports and company information.",
+            "A unique place: infinite horizons, starry skies, silence, nature, unique infrastructure, gastronomy, hospitality, dream climate, ecology, fly fishing, romantic activities, pool, spa, yoga, massages, trekking, sky bar, pub and planetarium. A perfect plan for very special people.",
+            "Our philosophy: sustainable tourism is a romance that flourishes in harmony with nature and culture. We respect local flora and fauna, value local traditions and support local economic development. We educate on environmental care and generate a positive impact on the community.",
+            "Socio-economic study of the Region: demographic evolution, migration, birth rates, fertility, mortality and family relationship models in the Valencian Community are analysed to frame the Project in its environment.",
+            "The population of the Valencian Community on 1 January 2024 is 5,319,285 inhabitants, with growth of 2.0% compared to the previous year. 81.8% are Spanish nationals and 18.2% foreign. 63.2% were born in the Valencian Community, 14.3% in other regions of Spain and 22.5% abroad.",
+            "Population dynamics in Bugarra (2013–2025): after sustained loss until 2017 (from 811 to 711 inhabitants), the trend reverses from 2018. In 2023, 783 inhabitants are reached and in 2024–2025 stability consolidates at around 770–780 inhabitants, above the historical minimum.",
+            "The Municipality of Bugarra offers a consolidated natural environment, stabilised population and opportunity for low-density accommodation projects aimed at tourist, holiday and flexible-use markets, without depending on local demographic growth.",
+            "The Spanish wedding market is back on a growth path: 175,364 marriages were registered in 2024 (+1.7%). Average spending per celebration reached €24,618 in 2024 (+17% compared to 2022), in a sector exceeding €4 billion annually.",
+            "Depopulation indicators: in 2020, 171 Valencian municipalities were at risk of depopulation (more than half in Castellón). The Valencian Anti-depopulation Agenda promotes programmes such as Reviu and Itinerant to boost economic activity in rural areas.",
+            "Residential market evolution: Spain exceeded 19.4 million households in 2025. Average household size is falling towards 2.32 people by 2039, driving additional net housing demand. Around 1.5 million new households are estimated to be needed by 2030.",
+            "Analysis: population growth in the Valencian Community is mainly due to registered foreign population. The ageing index continues to rise. Sustainable tourism development in municipalities such as Bugarra contributes to economic dynamisation and quality employment in the community."
+          ]
+        },
         "elProyecto": {
           "title": "The Project",
           "paragraphs": [
-            "Focused on building fourteen fully equipped luxury bungalows ready to welcome an upscale clientele, with a gourmet restaurant, pools, spas and a full range of tourist activities.",
-            "We are awaiting the final permits to proceed and aim to be open and operational by 2027."
+            "In the previous volumes we detailed the idea, spirit, development and execution phase. We decided not to resort to bank financing and to open share capital to third parties who share our vision of unique and exceptional people.",
+            "Tremendous monthly profitability: profits after expenses are excellent, from €439,584 monthly at 15% occupancy to €2,955,552 annually at 80% occupancy. These figures improve when the monthly financial charge of €8,000 included in expenses is removed.",
+            "Minimal risk: contributed money is reflected in assets with no risk of loss, such as land, buildings and equipment. Invested capital appreciates over time, above inflationary value.",
+            "Captive market and business diversification: hospitality, shop, events, restaurant, tourist excursions, coaching, team building and fishing trips for foreign visitors. We have been absolutely cautious and conservative in our forecasts.",
+            "Maximum convenience in contributions: they can be made with an initial amount and successive instalments as the Project progresses, under conditions agreed by all partners.",
+            "Your percentage in the Company is representative and gives you a voice and vote in decisions and business management, allowing you to limit your presence on the board to accountability or actively participate in operations.",
+            "Business with future projection: we value the Company and business goodwill at €5,000,000, with almost €1,000,000 already invested. Costs have been well below market by personally developing work and synergies with third parties.",
+            "Once launched, this business model will be extremely easy to export to other communities. We already have 18 plots in Peguerinos de La Sierra (Madrid) and other land located in the province of León.",
+            "30% occupancy scenario: with 14 bungalows and 28 places, monthly revenue reaches €136,306.53, with EBITDA of €92,520.39 (67.88% margin) and DSCR of 6.62 after debt service.",
+            "50% occupancy scenario: monthly revenue of €228,223.59, EBITDA of €169,747.09 (74.38% margin), free cash flow of €155,765.28 and DSCR of 12.14.",
+            "70% occupancy scenario: monthly revenue of €325,598.28, EBITDA of €247,997.24 (76.17% margin), free cash flow of €234,015.43 and DSCR of 17.74, with exceptional headroom against demand fluctuations.",
+            "We offer you an incredible and limited investment opportunity, secure, with unmatched profitability on invested capital. We would be delighted to have your participation in our dream."
           ]
         }
       }
@@ -751,14 +798,49 @@
       "imageAlt": "The Lake Terra Infinitus",
       "pdfViewer": "The Lake project document",
       "sections": {
-        "historiaPesca": { "title": "Fishing history, fly fishing, sport fishing" },
-        "estadisticas": { "title": "Statistics" },
-        "tramosIntensivos": { "title": "Intensive stretches" },
+        "historiaPesca": {
+          "title": "Fishing history, fly fishing, sport fishing",
+          "paragraphs": [
+            "It is not known for certain when humans caught the first fish, but since prehistoric times fishing has been fundamental to human survival. Humans have been fishing for at least 30,000 years.",
+            "The earliest hooks found date from the Upper Palaeolithic, approximately 23,000 years ago, made mainly from polished seashell. Primitive fishing was done with spears, rudimentary nets and traps in rivers, lakes and seacoasts.",
+            "Sport fishing as a recreational form began to take shape in the 15th century in Europe, especially among the nobility. In the 19th century it gained notable popularity in the United Kingdom, with books on techniques and associations dedicated to regulating and promoting recreational fishing.",
+            "In Spain, Juan de Vergara's Astorga Manuscript (1624) first describes models of artificial flies for trout fishing, placing Spain at the forefront of precursors to modern fly fishing worldwide.",
+            "Modern fly fishing was formalised in the 19th century in Great Britain and North America. It consists of using an artificial lure that imitates insects or small fish, cast with a light rod and line. Catch-and-release is the most established practice worldwide.",
+            "In summary, fishing has been an integral part of human history. Sport fishing and fly fishing have evolved over the centuries, with notable growth in popularity during the 18th and 19th centuries. \"A fish is too valuable to be caught only once.\""
+          ]
+        },
+        "estadisticas": {
+          "title": "Statistics",
+          "paragraphs": [
+            "The world of leisure and sport is one of the most important economic and social fields worldwide. Within this sporting globalisation, sport fishing mobilises millions of people and accounts for an average of 6.7% of the population in countries where this activity is common.",
+            "The most reliable estimates point to more than 174.5 million sport anglers worldwide. In Europe there are more than 9 million recreational anglers. In the United States, around 7 million practise fly fishing with steady growth since 2012.",
+            "In Spain, between 900,000 and 1.2 million recreational fishing licences are estimated. In the Valencian Community, 66,000 sport anglers are estimated. These statistics use the number of annual licences, although the actual number of anglers is estimated to be at least 30% higher.",
+            "By autonomous communities, notable figures include Catalonia (100,000), Galicia (90,000), Andalusia (76,500), Castile and León (55,000) and the Valencian Community (66,000), among others."
+          ]
+        },
+        "tramosIntensivos": {
+          "title": "Intensive stretches",
+          "paragraphs": [
+            "General fishing waters have an open season that generally runs from the first Sunday in March until late August and September. When the open season closes, stretches called \"intensive\" offer the possibility of continuing the hobby all year round.",
+            "In these places, activity is based on fish population management, with stocking of sterile rainbow trout (triploids), biologically unable to hybridise with native species, making it absolutely safe for the environment and biodiversity.",
+            "In Spain there are public and private intensive fishing stretches in multiple autonomous communities: Castile and León (Ebro, Pisuerga, Carrión, Sil, Duero and other rivers), La Rioja, Aragon, Castile-La Mancha, Catalonia, Extremadura, Basque Country and Valencian Community.",
+            "In the Valencian Community, notable fisheries include Bugarra, Villamarchante, Chulilla, Pedralba and Ribarroja de Turia, among others. There is no exhaustive official national list, as each region manages its own fisheries according to annual regulations.",
+            "Intensive stretches allow fishing all year round with controlled stocking, offering sport anglers continuity in their practice outside the general season."
+          ]
+        },
         "nuestroProyecto": {
           "title": "Our Project",
           "paragraphs": [
-            "In Gestalgar, Valencia, we will implement an artificial lake with two water bodies of about 35,000 square metres each, intended for sports activities, especially catch-and-release sport fishing which, given the area's climate, will make it the largest destination in Spain and most of Europe — with the curious fact that in winter, while the rest of Spain and Europe is below zero, temperatures there will be between 15 and 20 degrees.",
-            "National and international competitions will be held and it will support the Bugarra Project."
+            "In Gestalgar, Valencia, we will implement an artificial lake with two water bodies of about 35,000 square metres each, intended for sports activities, especially catch-and-release sport fishing. Given the area's climate, it will be the largest destination in Spain and most of Europe.",
+            "In winter, while the rest of Spain and Europe is below zero, in Gestalgar temperatures will be between 15 and 20 degrees. National and international competitions will be held and it will support the Bugarra Project.",
+            "We love sport fishing and have a captive market of more than 400,000 fly-fishing angler addresses worldwide, as well as specialised distributors, clubs and associations. We are in contact with the Spanish Fishing Federation, the IOC and FIPS.",
+            "Luis Antúnez has won numerous national and international titles, organised the first World Master Championship in Chilean Patagonia and was promoter of Spain's first catch-and-release stretch in Peralejos de las Truchas and the first fly-fishing school in Uña, Cuenca.",
+            "The Project combines operation of an intensive fly-fishing stretch and creation of a Fishing School offering courses and environmental and sports education programmes for children and new generations, in collaboration with schools and town councils.",
+            "Project advantages: first-class facilities (toilets, protected parking, shelters and technical advice); selective fishing without overcrowding; privileged climate (18–20 °C average in winter); courses, activities and conferences; competitions with federations; proximity to the Turia River; and free fishing school for children and young people.",
+            "The federations commit to booking a minimum of four monthly championships at our facilities, guaranteeing viability and backing from the start of the Project.",
+            "Estimated investment: €1,381,000, with phases of feasibility study, permits, property purchase, earthworks, waterproofing, construction of shelters and services, landscaping, stocking and equipment.",
+            "Economic study: capacity of 50 people per day with entry fee of €50 plus VAT. Ticket revenue from €3,750/month (5% occupancy) to €75,000/month (100% occupancy), plus equipment sales (~€6,166/month) and competitions and courses (~€4,400/month). Fixed operating expenses: €8,500/month.",
+            "At 30% occupancy monthly profits reach €24,566; at 50%, €39,566; and at 100%, €77,066. The Federation and the Regional Ministry will collaborate on stocking, reducing monthly investment expenses. Each championship yields about €2,000 in direct profit."
           ]
         }
       }

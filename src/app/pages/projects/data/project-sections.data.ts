@@ -86,9 +86,7 @@ export const RESORTS: readonly ResortConfig[] = [
       {
         id: 'estudio-socioeconomico',
         translationKey: 'projects.bugarra.sections.estudioSocioeconomico',
-        contentType: 'pdf',
-        pdfPath: '/documents/bugarra/bugarra_1.pdf',
-        pdfLabelKey: 'projects.bugarra.pdfViewer',
+        contentType: 'paragraphs',
       },
       {
         id: 'el-proyecto',
@@ -96,8 +94,6 @@ export const RESORTS: readonly ResortConfig[] = [
         contentType: 'paragraphs',
         imageSrc: '/images/bugarra/bugarra.png',
         imageAltKey: 'projects.bugarra.imageAlt',
-        pdfPath: '/documents/bugarra/bugarra_2.pdf',
-        pdfLabelKey: 'projects.bugarra.pdfViewer2',
       },
     ],
   },
@@ -110,17 +106,17 @@ export const RESORTS: readonly ResortConfig[] = [
       {
         id: 'historia-pesca',
         translationKey: 'projects.theLake.sections.historiaPesca',
-        contentType: 'pending',
+        contentType: 'paragraphs',
       },
       {
         id: 'estadisticas',
         translationKey: 'projects.theLake.sections.estadisticas',
-        contentType: 'pending',
+        contentType: 'paragraphs',
       },
       {
         id: 'tramos-intensivos',
         translationKey: 'projects.theLake.sections.tramosIntensivos',
-        contentType: 'pending',
+        contentType: 'paragraphs',
       },
       {
         id: 'nuestro-proyecto',
@@ -128,8 +124,6 @@ export const RESORTS: readonly ResortConfig[] = [
         contentType: 'paragraphs',
         imageSrc: '/images/the-lake/the-lake-1.jpg',
         imageAltKey: 'projects.theLake.imageAlt',
-        pdfPath: '/documents/the-lake/the-lake.pdf',
-        pdfLabelKey: 'projects.theLake.pdfViewer',
       },
     ],
   },

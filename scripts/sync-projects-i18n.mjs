@@ -4,6 +4,12 @@ import { join } from 'node:path';
 const ROOT = process.cwd();
 const LANGS = ['de', 'fr', 'it', 'pt', 'jp'];
 
+const esSource = JSON.parse(
+  readFileSync(join(ROOT, 'public', 'i18n', 'es.json'), 'utf8'),
+);
+const esBugarraSections = esSource.projects.bugarra.sections;
+const esTheLakeSections = esSource.projects.theLake.sections;
+
 const NAV_PATCH = {
   de: {
     resorts: 'Unsere Resorts',
@@ -237,6 +243,7 @@ function patchLang(lang) {
                   : lang === 'pt'
                     ? 'Estudo socioeconómico da Região'
                     : '地域の社会経済調査',
+          paragraphs: esBugarraSections.estudioSocioeconomico.paragraphs,
         },
         elProyecto: {
           title:
@@ -249,7 +256,7 @@ function patchLang(lang) {
                   : lang === 'pt'
                     ? 'O Projeto'
                     : 'プロジェクト',
-          paragraphs: [oldProjects.bugarra?.p1, oldProjects.bugarra?.p2].filter(Boolean),
+          paragraphs: esBugarraSections.elProyecto.paragraphs,
         },
       },
     },
@@ -270,10 +277,12 @@ function patchLang(lang) {
                   : lang === 'pt'
                     ? 'História da pesca, pesca com mosca, pesca desportiva'
                     : '釣りの歴史、フライフィッシング、スポーツフィッシング',
+          paragraphs: esTheLakeSections.historiaPesca.paragraphs,
         },
         estadisticas: {
           title:
             lang === 'de' ? 'Statistiken' : lang === 'fr' ? 'Statistiques' : lang === 'it' ? 'Statistiche' : lang === 'pt' ? 'Estatísticas' : '統計',
+          paragraphs: esTheLakeSections.estadisticas.paragraphs,
         },
         tramosIntensivos: {
           title:
@@ -286,6 +295,7 @@ function patchLang(lang) {
                   : lang === 'pt'
                     ? 'Troços intensivos'
                     : '集約区間',
+          paragraphs: esTheLakeSections.tramosIntensivos.paragraphs,
         },
         nuestroProyecto: {
           title:
@@ -298,7 +308,7 @@ function patchLang(lang) {
                   : lang === 'pt'
                     ? 'O nosso Projeto'
                     : '私たちのプロジェクト',
-          paragraphs: [oldProjects.theLake?.p1, oldProjects.theLake?.p2].filter(Boolean),
+          paragraphs: esTheLakeSections.nuestroProyecto.paragraphs,
         },
       },
     },
