@@ -1,0 +1,83 @@
+@if (resort(); as resortData) {
+  <div class="project-resort">
+    <header class="project-resort__hero">
+      <h1 class="title">{{ resortData.translationKey + '.title' | translate }}</h1>
+      <p class="project-resort__description">{{ resortData.translationKey + '.description' | translate }}</p>
+    </header>
+
+    <div class="project-resort__mobile-nav">
+      <label class="project-resort__mobile-label" [attr.for]="'resort-section-' + resortData.id">
+        {{ 'projects.mobileSectionLabel' | translate }}
+      </label>
+      <select
+        [id]="'resort-section-' + resortData.id"
+        class="project-resort__mobile-select"
+        [value]="activeSection()"
+        (change)="onSectionChange($event)"
+      >
+        @for (section of sections(); track section.id) {
+          <option [value]="section.id">
+            {{ section.translationKey + '.title' | translate }}
+          </option>
+        }
+      </select>
+    </div>
+
+    <div class="project-resort__layout">
+      <aside class="project-resort__sidebar">
+        <nav class="project-resort__nav" [attr.aria-label]="'projects.navAria' | translate">
+          <ul class="project-resort__list">
+            @for (section of sections(); track section.id) {
+              <li>
+                <a
+                  class="project-resort__link"
+                  [class.project-resort__link--active]="isActiveSection(section.id)"
+                  [routerLink]="resortRoute()"
+                  [fragment]="section.id"
+                >
+                  {{ section.translationKey + '.title' | translate }}
+                </a>
+              </li>
+            }
+          </ul>
+        </nav>
+      </aside>
+
+      @if (activeSectionData(); as section) {
+        <section class="project-resort__content" [id]="section.id">
+          <header class="project-resort__content-header">
+            <h2 class="project-resort__content-title">
+              {{ section.translationKey + '.title' | translate }}
+            </h2>
+          </header>
+
+          @switch (section.contentType) {
+            @case ('paragraphs') {
+              @for (paragraph of (section.translationKey + '.paragraphs' | translate); track $index) {
+                <p class="text">{{ paragraph }}</p>
+              }
+
+              @if (section.imageSrc) {
+                <div class="image-container">
+                  <img [src]="section.imageSrc" [alt]="section.imageAltKey ? (section.imageAltKey | translate) : ''" />
+                </div>
+              }
+
+              @if (section.pdfPath && section.pdfLabelKey) {
+                <app-pdf-viewer [pdfPath]="section.pdfPath" [pdfLabel]="section.pdfLabelKey | translate" />
+              }
+            }
+            @case ('pdf') {
+              @if (section.pdfPath && section.pdfLabelKey) {
+                <app-pdf-viewer [pdfPath]="section.pdfPath" [pdfLabel]="section.pdfLabelKey | translate" />
+              }
+            }
+            @default {
+              <p class="text project-resort__pending">{{ 'projects.sectionPending' | translate }}</p>
+            }
+          }
+        </section>
+      }
+    </div>
+  </div>
+}

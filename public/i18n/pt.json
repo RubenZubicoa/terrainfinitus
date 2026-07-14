@@ -78,7 +78,10 @@
     "guides": "Guias",
     "testimonials": "Testimonials",
     "bookings": "Reservas-Preços",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "resorts": "Os nossos Resorts",
+    "peralejosHotel": "Hotel 6 estrelas Terra Infinitus Peralejos",
+    "bugarraResort": "Resort de luxo Terra Infinitus Bugarra"
   },
   "footer": {
     "copyright": "Direitos de autor © {{year}} Terra Infinitus",
@@ -179,7 +182,10 @@
       "checkoutNote": "Reveja a sua encomenda e complete os dados no passo seguinte.",
       "decrease": "Diminuir quantidade",
       "increase": "Aumentar quantidade",
-      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising"       }
+      "categories": {
+        "gourmet": "Gourmet",
+        "merchandising": "Merchandising"
+      }
     },
     "checkout": {
       "title": "Finalizar encomenda",
@@ -238,7 +244,10 @@
         "contact": "Após registar o pedido entraremos em contacto para confirmar detalhes, pagamento e entrega."
       },
       "sections": {
-        "aceites": { "title": "Azeites", "presentation": "Azeites virgem extra e especialidades selecionadas para alta gastronomia." },
+        "aceites": {
+          "title": "Azeites",
+          "presentation": "Azeites virgem extra e especialidades selecionadas para alta gastronomia."
+        },
         "productosPato": {
           "title": "Produtos de pato: Malvasía",
           "presentationTitle": "Apresentação",
@@ -252,16 +261,46 @@
           ],
           "presentationFootnote": "*Não se esqueça de consultar as condições de venda, envio e pagamento, bem como os formatos disponíveis."
         },
-        "dulcesPostres": { "title": "Doces e sobremesas", "presentation": "Reposteria fina, doces artesanais e sobremesas gourmet." },
-        "embutidosJamonesCecinas": { "title": "Enchidos, presuntos e cecinas", "presentation": "Seleção de enchidos ibéricos, presuntos e cecinas de máxima qualidade." },
-        "mielesMermeladas": { "title": "Mel e compotas", "presentation": "Mel artesanal e compotas gourmet com ingredientes naturais." },
-        "conservas": { "title": "Conservas", "presentation": "Conservas gourmet de época e especialidades para paladares exigentes." },
-        "caviar": { "title": "Caviar", "presentation": "Caviar e ovas selecionadas para ocasiões especiais." },
-        "pastas": { "title": "Massas", "presentation": "Massas artesanais e especialidades para cozinha de autor." },
-        "condimentosEspeciasSales": { "title": "Condimentos, especiarias e sal", "presentation": "Condimentos, especiarias aromáticas e sal gourmet para realçar cada prato." },
-        "galletasPanes": { "title": "Bolachas, pães, etc.", "presentation": "Bolachas artesanais, pães especiais e produtos de padaria gourmet." },
-        "bebidasVinosLicores": { "title": "Bebidas, vinhos e licores", "presentation": "Vinhos, licores e bebidas selecionadas para harmonizar com a nossa proposta gastronómica." },
-        "setas": { "title": "Cogumelos", "presentation": "Cogumelos frescos e conservas de cogumelos de época e origem selecionada." }
+        "dulcesPostres": {
+          "title": "Doces e sobremesas",
+          "presentation": "Reposteria fina, doces artesanais e sobremesas gourmet."
+        },
+        "embutidosJamonesCecinas": {
+          "title": "Enchidos, presuntos e cecinas",
+          "presentation": "Seleção de enchidos ibéricos, presuntos e cecinas de máxima qualidade."
+        },
+        "mielesMermeladas": {
+          "title": "Mel e compotas",
+          "presentation": "Mel artesanal e compotas gourmet com ingredientes naturais."
+        },
+        "conservas": {
+          "title": "Conservas",
+          "presentation": "Conservas gourmet de época e especialidades para paladares exigentes."
+        },
+        "caviar": {
+          "title": "Caviar",
+          "presentation": "Caviar e ovas selecionadas para ocasiões especiais."
+        },
+        "pastas": {
+          "title": "Massas",
+          "presentation": "Massas artesanais e especialidades para cozinha de autor."
+        },
+        "condimentosEspeciasSales": {
+          "title": "Condimentos, especiarias e sal",
+          "presentation": "Condimentos, especiarias aromáticas e sal gourmet para realçar cada prato."
+        },
+        "galletasPanes": {
+          "title": "Bolachas, pães, etc.",
+          "presentation": "Bolachas artesanais, pães especiais e produtos de padaria gourmet."
+        },
+        "bebidasVinosLicores": {
+          "title": "Bebidas, vinhos e licores",
+          "presentation": "Vinhos, licores e bebidas selecionadas para harmonizar com a nossa proposta gastronómica."
+        },
+        "setas": {
+          "title": "Cogumelos",
+          "presentation": "Cogumelos frescos e conservas de cogumelos de época e origem selecionada."
+        }
       }
     },
     "merchandising": {
@@ -641,25 +680,118 @@
     "defaultTitle": "Página em construção"
   },
   "projects": {
-    "bugarra": {
-      "title": "Bugarra",
-      "p1": "Consistente na construção de catorze bungalows de luxo totalmente equipados para uma clientela exigente, com restaurante gourmet, piscinas, spas e toda uma oferta de atividades turísticas.",
-      "p2": "Estamos à espera da obtenção das últimas licenças para avançar e pretendemos estar abertos e operacionais em 2027.",
-      "pdfViewer": "Documento do projeto Bugarra I",
-      "pdfViewer2": "Documento do projeto Bugarra II"
+    "navAria": "Resort sections",
+    "mobileSectionLabel": "Section",
+    "sectionPending": "Esta secção será concluída em breve com o conteúdo fornecido pelo cliente.",
+    "idea": {
+      "title": "A ideia",
+      "alt1": "Terra Infinitus",
+      "alt2": "Terra Infinitus",
+      "alt3": "Terra Infinitus",
+      "alt4": "Terra Infinitus",
+      "paragraphs": [
+        "Neste maravilhoso sonho reunimos uma equipa extraordinária de pessoas muito diversas, unidas numa visão comum, para criar um projeto turístico excecional num lugar de sonho.",
+        "Luis Antúnez é o CEO e criador da ideia, com vasta experiência no turismo de luxo e na gastronomia gourmet internacional, tendo alcançado numerosos reconhecimentos oficiais nas suas empreitadas turísticas, como a consideração do melhor estabelecimento turístico do país, galardão do Ministério do Turismo do Chile para o seu hotel na Patagónia.",
+        "Desde os seus inícios na OMT (Organização Mundial do Turismo) despertou a paixão por este setor, especializando-se no turismo de alto nível, com clientes de primeira linha: atores, cantores e personalidades públicas como Robert Redford, Tom Selleck, John Denver e muitos outros que, após décadas de trabalho, lhe proporcionaram um mercado cativo exclusivo com mais de quatrocentos mil utilizadores e uma reputação de primeiro nível.",
+        "Desde a sua paixão pela natureza e pela pesca com mosca, Luis percorreu o planeta abrindo destinos e operações em muitos recantos exclusivos do mundo, trazendo toda essa experiência, saber-fazer e conhecimentos para a construção deste Projeto exclusivo.",
+        "A nossa filosofia baseia-se em criar um ambiente único para pessoas únicas, conscientes da importância de trabalhar com os sonhos de quem nos visita — os sonhos são algo que levamos muito a sério.",
+        "Baseamos a nossa ideia numa interpretação especial do luxo, que reside na exclusividade, evitando em todo o momento a massificação;",
+        "O luxo não pode ir de mãos dadas com estabelecimentos que operam com centenas de pessoas; queremos dar o seu nome a cada visitante, proporcionando um serviço absolutamente personalizado, sem semelhança com o que tradicionalmente significa estar num hotel.",
+        "Baseamos o nosso sucesso na fidelização e repetição dos nossos clientes; alguns visitam-nos há mais de dezoito anos, não só na nossa infraestrutura na Patagónia, mas também em múltiplos destinos pelo mundo, como a Amazónia, o Caribe e Espanha.",
+        "Em Espanha, a nossa equipa será constituída por talentos nos diferentes aspetos necessários para alcançar o grau de exclusividade que precisamos — pessoas com genuína sensibilidade, experiência em hotelaria espanhola, atendimento ao público, design de mobiliário, decoração e gastronomia, e um completo entendimento do turismo, da sua direção e atenção.",
+        "Contamos com técnicos especializados em jardinagem que desenharão um oásis na propriedade, bem como peritos em águas e outro pessoal que recrutaremos na localidade e capacitaremos para garantir que a harmonia do conjunto esteja à altura do Projeto e supere as expectativas dos hóspedes, com impacto definitivo na comunidade, pleno emprego entre os seus habitantes, postos de trabalho de qualidade e estabilidade, e a criação de uma ideia única, inovadora, rentável e sustentável."
+      ]
     },
     "peralejos": {
-      "title": "Peralejos",
-      "p1": "Consistente na construção e desenvolvimento de um hotel de seis estrelas com dez bungalows, restaurante gourmet, zonas de hidroterapia, piscinas, ginásios, spas, atividades turísticas, loja online, aluguer de veículos e serviço de guias, entre outros, no coração do Parque Natural do Alto Tejo em Peralejos de Las Truchas, Guadalajara — projeto iniciado há mais de dois anos e em plena fase de desenvolvimento e design.",
-      "p2": "Contaremos com cerca de trinta quartos, entre quase cem e quatrocentos metros quadrados, gastronomia gourmet e uma grande quantidade de pormenores requintados que darão ao Projeto a mais alta reputação dentro e fora de Espanha. O Projeto desenvolver-se-á em fases, com numerosas construções e infraestruturas já finalizadas.",
-      "p3": "Pretendemos estar prontos em 2026-2027 com toda a capacidade de bungalows de luxo, zonas comuns, saunas, piscinas, spas, projetos de jardinagem, campos solares e muitos mais pormenores, e em 2027-2028 plenamente operacionais com o resto das construções e infraestruturas do Projeto.",
-      "pdfViewer": "Documento do projeto Peralejos"
+      "title": "Hotel 6 estrelas Terra Infinitus Peralejos",
+      "description": "Consistente na construção e desenvolvimento de um hotel de seis estrelas com dez bungalows, restaurante gourmet, zonas de hidroterapia, piscinas, ginásios, spas, atividades turísti…",
+      "pdfViewer": "Documento do projeto Peralejos",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Estudo socioeconómico da Região. Secção I"
+        },
+        "introduccion": {
+          "title": "Introdução",
+          "paragraphs": [
+            "Consistente na construção e desenvolvimento de um hotel de seis estrelas com dez bungalows, restaurante gourmet, zonas de hidroterapia, piscinas, ginásios, spas, atividades turísticas, loja online, aluguer de veículos e serviço de guias, entre outros, no coração do Parque Natural do Alto Tejo em Peralejos de Las Truchas, Guadalajara — projeto iniciado há mais de dois anos e em plena fase de desenvolvimento e design.",
+            "Contaremos com cerca de trinta quartos, entre quase cem e quatrocentos metros quadrados, gastronomia gourmet e uma grande quantidade de pormenores requintados que darão ao Projeto a mais alta reputação dentro e fora de Espanha. O Projeto desenvolver-se-á em fases, com numerosas construções e infraestruturas já finalizadas.",
+            "Pretendemos estar prontos em 2026-2027 com toda a capacidade de bungalows de luxo, zonas comuns, saunas, piscinas, spas, projetos de jardinagem, campos solares e muitos mais pormenores, e em 2027-2028 plenamente operacionais com o resto das construções e infraestruturas do Projeto."
+          ]
+        },
+        "quienesSomos": {
+          "title": "Quem somos? Porquê? A empresa, sinergias"
+        },
+        "conceptosTuristicos": {
+          "title": "Conceitos turísticos aplicados, fases"
+        },
+        "edificaciones": {
+          "title": "Edificações, tipos de quartos, plantas"
+        },
+        "bungalows": {
+          "title": "Bungalows"
+        },
+        "spasHidroterapia": {
+          "title": "Spas, piscinas, saunas, ginásios, hidroterapia, terraços, biblioteca"
+        },
+        "gimnasioRecepcion": {
+          "title": "Ginásio, receção, sala de reuniões"
+        },
+        "cocinaCarta": {
+          "title": "Cozinha, a nossa carta"
+        },
+        "tiendaPaquetes": {
+          "title": "Loja, pacotes turísticos"
+        },
+        "rutasTrekking": {
+          "title": "Rotas de trekking e running, programas turísticos, análise, situação turística da zona"
+        },
+        "staffImpacto": {
+          "title": "Equipa e postos de trabalho, impacto direto na comunidade"
+        }
+      }
+    },
+    "bugarra": {
+      "title": "Resort de luxo Terra Infinitus Bugarra",
+      "description": "Consistente na construção de catorze bungalows de luxo totalmente equipados para uma clientela exigente, com restaurante gourmet, piscinas, spas e toda uma oferta de atividades turísticas.",
+      "imageAlt": "Bugarra",
+      "pdfViewer": "Documento do projeto Bugarra I",
+      "pdfViewer2": "Documento do projeto Bugarra II",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Estudo socioeconómico da Região"
+        },
+        "elProyecto": {
+          "title": "O Projeto",
+          "paragraphs": [
+            "Consistente na construção de catorze bungalows de luxo totalmente equipados para uma clientela exigente, com restaurante gourmet, piscinas, spas e toda uma oferta de atividades turísticas.",
+            "Estamos à espera da obtenção das últimas licenças para avançar e pretendemos estar abertos e operacionais em 2027."
+          ]
+        }
+      }
     },
     "theLake": {
       "title": "The Lake",
+      "description": "Na localidade de Gestalgar, Valência, implementaremos um lago artificial com duas lâminas de água de cerca de 35.000 metros quadrados cada, destinadas a ativida…",
+      "imageAlt": "The Lake",
       "pdfViewer": "Documento do projeto The Lake",
-      "p1": "Na localidade de Gestalgar, Valência, implementaremos um lago artificial com duas lâminas de água de cerca de 35.000 metros quadrados cada, destinadas a atividades desportivas, especialmente pesca desportiva sem morte, que, dadas as características climáticas da zona, será o maior destino de Espanha e da maior parte da Europa — com a curiosidade de que no inverno, enquanto o resto de Espanha e Europa está abaixo de zero, ali estaremos entre os 15 e 20 graus.",
-      "p2": "Realizar-se-ão competições nacionais e internacionais e servirá de apoio ao Projeto Bugarra."
+      "sections": {
+        "historiaPesca": {
+          "title": "História da pesca, pesca com mosca, pesca desportiva"
+        },
+        "estadisticas": {
+          "title": "Estatísticas"
+        },
+        "tramosIntensivos": {
+          "title": "Troços intensivos"
+        },
+        "nuestroProyecto": {
+          "title": "O nosso Projeto",
+          "paragraphs": [
+            "Na localidade de Gestalgar, Valência, implementaremos um lago artificial com duas lâminas de água de cerca de 35.000 metros quadrados cada, destinadas a atividades desportivas, especialmente pesca desportiva sem morte, que, dadas as características climáticas da zona, será o maior destino de Espanha e da maior parte da Europa — com a curiosidade de que no inverno, enquanto o resto de Espanha e Europa está abaixo de zero, ali estaremos entre os 15 e 20 graus.",
+            "Realizar-se-ão competições nacionais e internacionais e servirá de apoio ao Projeto Bugarra."
+          ]
+        }
+      }
     }
   },
   "rooms": {

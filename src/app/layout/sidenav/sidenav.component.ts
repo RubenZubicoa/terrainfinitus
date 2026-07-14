@@ -44,6 +44,10 @@ export class SidenavComponent {
       return true;
     }
 
+    if (item.labelKey === 'nav.resorts' && this.router.url.startsWith('/proyectos')) {
+      return true;
+    }
+
     return false;
   }
 
@@ -54,6 +58,18 @@ export class SidenavComponent {
     }
 
     if (item.labelKey === 'nav.shopGourmet' && this.router.url.startsWith('/tienda-boutique/gourmet')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.peralejosHotel' && this.router.url.startsWith('/proyectos/terra-peralejos')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.bugarraResort' && this.router.url.startsWith('/proyectos/terra-bugarra')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.theLake' && this.router.url.startsWith('/proyectos/the-lake')) {
       return true;
     }
 

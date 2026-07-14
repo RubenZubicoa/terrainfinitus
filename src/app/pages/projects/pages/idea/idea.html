@@ -1,8 +1,11 @@
-<section class="peralejos section">
-    <h1 class="title">{{ 'nav.idea' | translate }}</h1>
-    <div class="image-container">
-      <app-banner [slides]="slides" />
-    </div>
-    <app-pdf-viewer [pdfPath]="pdfPath1" [pdfLabel]="'projects.bugarra.pdfViewer' | translate" />
-    <a class="link" routerLink="/">{{ 'common.backHome' | translate }}</a>
-  </section>
+<section class="project-idea section">
+  <h1 class="title">{{ 'projects.idea.title' | translate }}</h1>
+
+  <div class="image-container">
+    <app-banner [slides]="slides" />
+  </div>
+
+  @for (paragraph of ('projects.idea.paragraphs' | translate); track $index) {
+    <p class="text">{{ paragraph }}</p>
+  }
+</section>

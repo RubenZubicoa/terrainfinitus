@@ -53,9 +53,12 @@
     "home": "Home",
     "about": "About us",
     "projects": "Projects",
+    "resorts": "Our Resorts",
     "idea": "The idea",
     "peralejos": "Terra Peralejos",
+    "peralejosHotel": "Terra Infinitus Peralejos six-star hotel",
     "bugarra": "Terra Bugarra",
+    "bugarraResort": "Terra Infinitus Bugarra luxury resort",
     "theLake": "The Lake",
     "rooms": "Rooms",
     "gastronomy": "Gastronomy",
@@ -677,25 +680,88 @@
     "defaultTitle": "Page under construction"
   },
   "projects": {
-    "bugarra": {
-      "title": "Bugarra",
-      "p1": "Focused on building fourteen fully equipped luxury bungalows ready to welcome an upscale clientele, with a gourmet restaurant, pools, spas and a full range of tourist activities.",
-      "p2": "We are awaiting the final permits to proceed and aim to be open and operational by 2027.",
-      "pdfViewer": "Bugarra project document I",
-      "pdfViewer2": "Bugarra project document II"
+    "navAria": "Resort sections",
+    "mobileSectionLabel": "Section",
+    "sectionPending": "This section will be completed soon with content provided by the client.",
+    "idea": {
+      "title": "The idea",
+      "alt1": "Terra Infinitus vision",
+      "alt2": "Natural setting of the project",
+      "alt3": "Architecture and landscape",
+      "alt4": "Terra Infinitus experience",
+      "paragraphs": [
+        "In this wonderful dream we have brought together an extraordinary team of very diverse people, united by a common vision, to create an exceptional tourism project in a dream location.",
+        "Luis Antúnez is the CEO and creator of the idea, with vast experience in the world of luxury tourism and international gourmet gastronomy, having achieved numerous official recognitions in his tourism ventures, such as being considered the best tourism establishment in the country, an award granted by the Ministry of Tourism of Chile for his hotel in Patagonia.",
+        "From his early days working at the UNWTO (World Tourism Organization) he discovered his passion for this sector, specialising in high-end tourism, with first-class clients: actors, singers and public figures such as Robert Redford, Tom Selleck, John Denver and a very long list who, after decades of work, have given him an exclusive captive market of more than four hundred thousand users and a first-class reputation in this market.",
+        "Driven by his passion for nature and fly fishing, Luis has travelled the planet opening destinations and operations in many exclusive corners of the world, bringing all that experience, know-how and knowledge to the construction of this exclusive Project.",
+        "Our philosophy is based on creating a unique environment for unique people, aware of the importance of working with the dreams of those who visit us — dreams are something we take very seriously.",
+        "We base our idea on our special interpretation of luxury, which lies in exclusivity, avoiding mass tourism at all times;",
+        "Luxury cannot go hand in hand with establishments that operate with hundreds of people; we want to put your name to each of our visitors, providing them with an absolutely personalised service that bears no resemblance to what traditionally means staying in a hotel.",
+        "We base our success on loyalty and repeat visits from our clients; some have been visiting us for more than eighteen years, not only at our infrastructure in Patagonia but also at multiple destinations around the world, such as the Amazon, the Caribbean and Spain.",
+        "In Spain, our team will be made up of talents in the different areas needed to achieve the degree of exclusivity we need and will bring to the project — people with genuine sensitivity who will contribute their creativity, with experience in Spanish hospitality, customer service, furniture design, decoration and gastronomy, and a complete understanding of tourism, its management and guest care.",
+        "We have technicians specialised in landscaping who will design an oasis within the property, as well as water experts and other staff we will recruit locally and train to ensure that the harmony of the whole lives up to the Project and exceeds our guests' expectations, while also ensuring the Project has a definitive impact on the Community, achieving full employment among its inhabitants, with quality and stable jobs, creating a unique, innovative, profitable and sustainable idea."
+      ]
     },
     "peralejos": {
-      "title": "Peralejos",
-      "p1": "Focused on building and developing a six-star hotel along with ten bungalows, a gourmet restaurant, hydrotherapy areas, pools, gyms, spas, tourist activities, online shop, vehicle rental and guide services, among other features, in the heart of the privileged Alto Tajo Natural Park in Peralejos de Las Truchas, Guadalajara — a project we started more than two years ago and which is in full development and design phase.",
-      "p2": "We will have around thirty rooms, ranging from nearly one hundred to four hundred square metres, gourmet dining and a wealth of exquisite details that will give the Project the highest reputation and prestige in Spain and abroad. The Project will be developed in phases, with many constructions and infrastructures already completed.",
-      "p3": "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures.",
-      "pdfViewer": "Peralejos project document"
+      "title": "Terra Infinitus Peralejos six-star hotel",
+      "description": "Development of a six-star hotel and luxury bungalows in the Alto Tajo Natural Park, Peralejos de Las Truchas, Guadalajara.",
+      "pdfViewer": "Peralejos project document",
+      "sections": {
+        "estudioSocioeconomico": { "title": "Socio-economic study of the Region. Section I" },
+        "introduccion": {
+          "title": "Introduction",
+          "paragraphs": [
+            "Focused on building and developing a six-star hotel along with ten bungalows, a gourmet restaurant, hydrotherapy areas, pools, gyms, spas, tourist activities, online shop, vehicle rental and guide services, among other features, in the heart of the privileged Alto Tajo Natural Park in Peralejos de Las Truchas, Guadalajara — a project we started more than two years ago and which is in full development and design phase.",
+            "We will have around thirty rooms, ranging from nearly one hundred to four hundred square metres, gourmet dining and a wealth of exquisite details that will give the Project the highest reputation and prestige in Spain and abroad. The Project will be developed in phases, with many constructions and infrastructures already completed.",
+            "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures."
+          ]
+        },
+        "quienesSomos": { "title": "Who are we? Why? The company, synergies" },
+        "conceptosTuristicos": { "title": "Applied tourism concepts, phases" },
+        "edificaciones": { "title": "Buildings, room types, floor plans" },
+        "bungalows": { "title": "Bungalows" },
+        "spasHidroterapia": { "title": "Spas, pools, saunas, gyms, hydrotherapy concept, terraces, library" },
+        "gimnasioRecepcion": { "title": "Gym, reception, meeting room" },
+        "cocinaCarta": { "title": "Kitchen, our menu" },
+        "tiendaPaquetes": { "title": "Shop, tourist packages" },
+        "rutasTrekking": { "title": "Trekking and running routes, tourist programmes, analysis, tourism situation in the area" },
+        "staffImpacto": { "title": "Staff and jobs, direct impact on the Community" }
+      }
+    },
+    "bugarra": {
+      "title": "Terra Infinitus Bugarra luxury resort",
+      "description": "Construction of fourteen fully equipped luxury bungalows with gourmet restaurant, pools, spas and tourist activities.",
+      "imageAlt": "Terra Infinitus Bugarra resort",
+      "pdfViewer": "Bugarra project document I",
+      "pdfViewer2": "Bugarra project document II",
+      "sections": {
+        "estudioSocioeconomico": { "title": "Socio-economic study of the Region" },
+        "elProyecto": {
+          "title": "The Project",
+          "paragraphs": [
+            "Focused on building fourteen fully equipped luxury bungalows ready to welcome an upscale clientele, with a gourmet restaurant, pools, spas and a full range of tourist activities.",
+            "We are awaiting the final permits to proceed and aim to be open and operational by 2027."
+          ]
+        }
+      }
     },
     "theLake": {
       "title": "The Lake",
+      "description": "Artificial lake in Gestalgar, Valencia, dedicated to catch-and-release sport fishing and premium water activities.",
+      "imageAlt": "The Lake Terra Infinitus",
       "pdfViewer": "The Lake project document",
-      "p1": "In Gestalgar, Valencia, we will implement an artificial lake with two water bodies of about 35,000 square metres each, intended for sports activities, especially catch-and-release sport fishing which, given the area's climate, will make it the largest destination in Spain and most of Europe — with the curious fact that in winter, while the rest of Spain and Europe is below zero, temperatures there will be between 15 and 20 degrees.",
-      "p2": "National and international competitions will be held and it will support the Bugarra Project."
+      "sections": {
+        "historiaPesca": { "title": "Fishing history, fly fishing, sport fishing" },
+        "estadisticas": { "title": "Statistics" },
+        "tramosIntensivos": { "title": "Intensive stretches" },
+        "nuestroProyecto": {
+          "title": "Our Project",
+          "paragraphs": [
+            "In Gestalgar, Valencia, we will implement an artificial lake with two water bodies of about 35,000 square metres each, intended for sports activities, especially catch-and-release sport fishing which, given the area's climate, will make it the largest destination in Spain and most of Europe — with the curious fact that in winter, while the rest of Spain and Europe is below zero, temperatures there will be between 15 and 20 degrees.",
+            "National and international competitions will be held and it will support the Bugarra Project."
+          ]
+        }
+      }
     }
   },
   "rooms": {

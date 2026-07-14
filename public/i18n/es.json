@@ -53,9 +53,12 @@
     "home": "Inicio",
     "about": "Quiénes somos",
     "projects": "Proyectos",
+    "resorts": "Nuestros Resorts",
     "idea": "La idea",
     "peralejos": "Terra Peralejos",
+    "peralejosHotel": "Hotel 6 estrellas Terra Infinitus Peralejos",
     "bugarra": "Terra Bugarra",
+    "bugarraResort": "Resort de lujo Terra Infinitus Bugarra",
     "theLake": "The Lake",
     "rooms": "Habitaciones",
     "gastronomy": "Gastronomía",
@@ -677,25 +680,118 @@
     "defaultTitle": "Página en construcción"
   },
   "projects": {
-    "bugarra": {
-      "title": "Bugarra",
-      "p1": "Consistente en la construcción de catorce bungalows de lujo, totalmente equipados y preparados para recibir una clientela de lujo, con restaurante gourmet, piscinas, spas y toda una oferta de actividades turísticas.",
-      "p2": "Estamos esperando a la obtención de los últimos permisos para ejecutarse y pretendemos estar abiertos y operativos para el 2027.",
-      "pdfViewer": "Documento del proyecto Bugarra I",
-      "pdfViewer2": "Documento del proyecto Bugarra II"
+    "navAria": "Secciones del resort",
+    "mobileSectionLabel": "Sección",
+    "sectionPending": "Esta sección se completará próximamente con el contenido facilitado por el cliente.",
+    "idea": {
+      "title": "La idea",
+      "alt1": "Visión de Terra Infinitus",
+      "alt2": "Entorno natural del proyecto",
+      "alt3": "Arquitectura y paisaje",
+      "alt4": "Experiencia Terra Infinitus",
+      "paragraphs": [
+        "En este maravilloso sueño nos hemos reunido un equipo extraordinario de personas muy diversas, unidas en una visión común, para crear un proyecto turístico excepcional en un lugar de ensueño.",
+        "Luis Antúnez es el CEO y creador de la idea, contando con una vasta experiencia en el mundo del turismo de lujo y la gastronomía gourmet internacionalmente, habiendo logrado numerosos reconocimientos oficiales en sus emprendimientos turísticos, tales como la consideración del mejor establecimiento turístico del País, galardón otorgado por el Ministerio de Turismo de Chile para su Hotel en la Patagonia.",
+        "Desde sus inicios trabajando en la OMT (Organización Mundial del Turismo) despertó su pasión en este sector, especializándose en el turismo de alto nivel, contando con clientes de primera línea: actores, cantantes, personajes públicos tales como Robert Redford, Tom Selleck, John Denver y un larguísimo etcétera que, tras décadas de trabajo, le han aportado un exclusivo mercado cautivo con más de cuatrocientos mil usuarios y una reputación de primer nivel en este mercado.",
+        "Desde su pasión por la naturaleza y la pesca con mosca, Luis ha recorrido el Planeta abriendo destinos y operaciones en muchos rincones exclusivos del Mundo, aportando toda esa experiencia, saber hacer y conocimientos, en la construcción de este exclusivo Proyecto.",
+        "Nuestra filosofía se basa en crear un ambiente único para personas únicas, siendo conscientes de la importancia de trabajar con los sueños de quienes nos visitan, y los sueños, son algo que nos tomamos muy en serio.",
+        "Basamos nuestra idea en nuestra interpretación especial del lujo, la cual radica en la exclusividad, evitando en todo momento la masificación;",
+        "El lujo no puede ir de la mano en establecimientos que operan con cientos de personas y nosotros queremos poner su nombre a cada uno de nuestros visitantes, dotándoles de un servicio absolutamente personalizado, que no se parezca en absoluto a lo que tradicionalmente significa estar en un hotel.",
+        "Basamos nuestro éxito en la fidelización y repetición de nuestros clientes, algunos de ellos llevan más de dieciocho años visitándonos, no sólo en nuestra infraestructura en la Patagonia, sino también en múltiples destinos alrededor del mundo, como el Amazonas, el Caribe y España.",
+        "Pero en España, nuestro equipo estará conformado por talentos en los diferentes aspectos necesarios para lograr el grado de exclusividad que necesitamos y que aportaremos al proyecto, personas con una genuina sensibilidad que aportarán su creatividad, con experiencia en hotelería española, atención al público, diseño de mobiliario, decoración y gastronomía y un completo entendimiento del turismo, su dirección y atención.",
+        "Contamos con técnicos especializados en jardinería que diseñarán un oasis dentro de la propiedad, así como expertos en aguas y otros miembros del personal que reclutaremos en la localidad y capacitaremos para asegurar que la armonía del conjunto esté a la altura del Proyecto y supere las expectativas de nuestros huéspedes, persiguiendo además conseguir que el Proyecto tenga un definitivo impacto en la Comunidad, logrando el pleno empleo entre sus habitantes, con puestos de trabajo de calidad y estabilidad, logrando la creación de una idea única, innovadora, rentable y sustentable."
+      ]
     },
     "peralejos": {
-      "title": "Peralejos",
-      "p1": "Consistente en la construcción y desarrollo de un hotel de seis estrellas, junto con diez bungalows, restaurante gourmet, zonas de hidroterapias, piscinas, gimnasios, spas, actividades turísticas, tienda online, alquiler de vehículos y servicio de guías, entre otros aspectos más, en el corazón del entorno privilegiado del Parque Natural del Alto Tajo, en Peralejos de Las Truchas, Guadalajara, proyecto que iniciamos hace más de dos años y que se encuentra en plena etapa de desarrollo y diseño.",
-      "p2": "Contaremos con unas treinta habitaciones, entre los casi cien metros cuadrados y los cuatrocientos, comida gourmet y una exquisita y gran cantidad de detalles que van a dotar al Proyecto de la más alta reputación y prestigio dentro y fuera de España. El Proyecto se irá desarrollando en fases, estando numerosas construcciones e infraestructuras finalizadas.",
-      "p3": "Pretendemos estar en el 2026-2027 listos con toda la capacidad de bungalows de lujo, zonas comunes, saunas, piscinas, spas, proyectos de jardinería, campos solares y numerosos detalles más, y para el 2027-2028 estar ya operativos con el resto de construcciones e infraestructuras del Proyecto.",
-      "pdfViewer": "Documento del proyecto Peralejos"
+      "title": "Hotel 6 estrellas Terra Infinitus Peralejos",
+      "description": "Desarrollo de un hotel de seis estrellas y bungalows de lujo en el Parque Natural del Alto Tajo, en Peralejos de Las Truchas, Guadalajara.",
+      "pdfViewer": "Documento del proyecto Peralejos",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Estudio socio económico de La Región. Sección I"
+        },
+        "introduccion": {
+          "title": "Introducción",
+          "paragraphs": [
+            "Consistente en la construcción y desarrollo de un hotel de seis estrellas, junto con diez bungalows, restaurante gourmet, zonas de hidroterapias, piscinas, gimnasios, spas, actividades turísticas, tienda online, alquiler de vehículos y servicio de guías, entre otros aspectos más, en el corazón del entorno privilegiado del Parque Natural del Alto Tajo, en Peralejos de Las Truchas, Guadalajara, proyecto que iniciamos hace más de dos años y que se encuentra en plena etapa de desarrollo y diseño.",
+            "Contaremos con unas treinta habitaciones, entre los casi cien metros cuadrados y los cuatrocientos, comida gourmet y una exquisita y gran cantidad de detalles que van a dotar al Proyecto de la más alta reputación y prestigio dentro y fuera de España. El Proyecto se irá desarrollando en fases, estando numerosas construcciones e infraestructuras finalizadas.",
+            "Pretendemos estar en el 2026-2027 listos con toda la capacidad de bungalows de lujo, zonas comunes, saunas, piscinas, spas, proyectos de jardinería, campos solares y numerosos detalles más, y para el 2027-2028 estar ya operativos con el resto de construcciones e infraestructuras del Proyecto."
+          ]
+        },
+        "quienesSomos": {
+          "title": "¿Quiénes somos? ¿Por qué? La Empresa, sinergias"
+        },
+        "conceptosTuristicos": {
+          "title": "Conceptos turísticos aplicados, fases"
+        },
+        "edificaciones": {
+          "title": "Edificaciones, tipos de habitaciones, planos de plantas"
+        },
+        "bungalows": {
+          "title": "Bungalows"
+        },
+        "spasHidroterapia": {
+          "title": "Spas, piscinas, saunas, gimnasios, concepto de hidroterapia, terrazas, biblioteca"
+        },
+        "gimnasioRecepcion": {
+          "title": "Gimnasio, recepción, sala de reuniones"
+        },
+        "cocinaCarta": {
+          "title": "Cocina, nuestra carta"
+        },
+        "tiendaPaquetes": {
+          "title": "Tienda, paquetes turísticos"
+        },
+        "rutasTrekking": {
+          "title": "Rutas de trekking y running, programas turísticos, análisis, situación turística de la zona"
+        },
+        "staffImpacto": {
+          "title": "Staff y puestos de trabajo, impacto directo en la Comunidad"
+        }
+      }
+    },
+    "bugarra": {
+      "title": "Resort de lujo Terra Infinitus Bugarra",
+      "description": "Construcción de catorce bungalows de lujo totalmente equipados con restaurante gourmet, piscinas, spas y actividades turísticas.",
+      "imageAlt": "Resort Terra Infinitus Bugarra",
+      "pdfViewer": "Documento del proyecto Bugarra I",
+      "pdfViewer2": "Documento del proyecto Bugarra II",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Estudio socio económico de La Región"
+        },
+        "elProyecto": {
+          "title": "El Proyecto",
+          "paragraphs": [
+            "Consistente en la construcción de catorce bungalows de lujo, totalmente equipados y preparados para recibir una clientela de lujo, con restaurante gourmet, piscinas, spas y toda una oferta de actividades turísticas.",
+            "Estamos esperando a la obtención de los últimos permisos para ejecutarse y pretendemos estar abiertos y operativos para el 2027."
+          ]
+        }
+      }
     },
     "theLake": {
       "title": "The Lake",
+      "description": "Lago artificial en Gestalgar, Valencia, destinado a la pesca deportiva sin muerte y actividades acuáticas de primer nivel.",
+      "imageAlt": "The Lake Terra Infinitus",
       "pdfViewer": "Documento del proyecto The Lake",
-      "p1": "En la localidad de Gestalgar, Valencia, donde implementaremos un lago artificial con dos láminas de agua de unos 35.000 metros cuadrados cada una, destinadas a la realización de actividades deportivas, especialmente la pesca deportiva sin muerte, que, dadas las características climáticas de la zona, será el destino más grande de España y de la mayoría de Europa, con la curiosidad de que durante el invierno, mientras el resto de España y Europa está bajo cero, allí estaremos entre los 15 y 20 grados.",
-      "p2": "Se realizarán competiciones nacionales e internacionales y servirá como apoyo al Proyecto de Bugarra."
+      "sections": {
+        "historiaPesca": {
+          "title": "Historia de la pesca, pesca con mosca, pesca deportiva"
+        },
+        "estadisticas": {
+          "title": "Estadísticas"
+        },
+        "tramosIntensivos": {
+          "title": "Tramos intensivos"
+        },
+        "nuestroProyecto": {
+          "title": "Nuestro Proyecto",
+          "paragraphs": [
+            "En la localidad de Gestalgar, Valencia, donde implementaremos un lago artificial con dos láminas de agua de unos 35.000 metros cuadrados cada una, destinadas a la realización de actividades deportivas, especialmente la pesca deportiva sin muerte, que, dadas las características climáticas de la zona, será el destino más grande de España y de la mayoría de Europa, con la curiosidad de que durante el invierno, mientras el resto de España y Europa está bajo cero, allí estaremos entre los 15 y 20 grados.",
+            "Se realizarán competiciones nacionales e internacionales y servirá como apoyo al Proyecto de Bugarra."
+          ]
+        }
+      }
     }
   },
   "rooms": {
