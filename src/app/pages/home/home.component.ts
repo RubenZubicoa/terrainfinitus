@@ -12,7 +12,7 @@ export class HomeComponent implements AfterViewInit {
   private readonly videoRef = viewChild<ElementRef<HTMLVideoElement>>('homeVideo');
 
   readonly videoPath =
-    'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/Terra%20infinitus%201080.mp4?alt=media&token=59b3ec1e-28da-41f1-a7c2-886ab2afae74';
+    'https://firebasestorage.googleapis.com/v0/b/terrainfinitus-62208.firebasestorage.app/o/TERRA%20INFINITUS.mov?alt=media&token=3b20349e-d43e-45d5-aa84-51ab13aca311';
 
   readonly slides: readonly BannerSlide[] = [    { src: '/images/inicio/inicio1.jpg', altKey: 'home.alt1' },
     { src: '/images/inicio/inicio2.jpg', altKey: 'home.alt2' },
