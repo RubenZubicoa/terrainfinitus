@@ -1,16 +1,13 @@
 import { NavItem } from '../models/nav-item.model';
+import { buildGourmetNavigationChildren } from '../../pages/shop/data/gourmet-sections.data';
+import { buildResortsNavigationChildren } from '../../pages/projects/data/project-sections.data';
 
 export const MAIN_NAVIGATION: NavItem[] = [
   { labelKey: 'nav.home', route: '/' },
   { labelKey: 'nav.about', route: '/quienes-somos' },
   {
-    labelKey: 'nav.projects',
-    children: [
-      { labelKey: 'nav.idea', route: '/proyectos/la-idea' },
-      { labelKey: 'nav.peralejos', route: '/proyectos/terra-peralejos' },
-      { labelKey: 'nav.bugarra', route: '/proyectos/terra-bugarra' },
-      { labelKey: 'nav.theLake', route: '/proyectos/the-lake' },
-    ],
+    labelKey: 'nav.resorts',
+    children: buildResortsNavigationChildren(),
   },
   { labelKey: 'nav.rooms', route: '/habitaciones' },
   {
@@ -25,7 +22,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
     labelKey: 'nav.shop',
     route: '/tienda-boutique',
     children: [
-      { labelKey: 'nav.shopGourmet', route: '/tienda-boutique/gourmet' },
+      {
+        labelKey: 'nav.shopGourmet',
+        route: '/tienda-boutique/gourmet',
+        children: buildGourmetNavigationChildren(),
+      },
       { labelKey: 'nav.shopMerchandising', route: '/tienda-boutique/merchandising' },
       {
         labelKey: 'nav.shopTheLake',

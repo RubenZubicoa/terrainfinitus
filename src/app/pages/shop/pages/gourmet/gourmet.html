@@ -5,72 +5,127 @@
     <p class="gourmet-hero__description">{{ 'shop.gourmet.description' | translate }}</p>
   </header>
 
-  <nav class="gourmet-nav" [attr.aria-label]="'shop.gourmet.navAria' | translate">
-    <ul class="gourmet-nav__list">
+  <div class="gourmet-mobile-nav">
+    <label class="gourmet-mobile-nav__label" for="gourmet-section-select">
+      {{ 'shop.gourmet.mobileCategoryLabel' | translate }}
+    </label>
+    <select
+      id="gourmet-section-select"
+      class="gourmet-mobile-nav__select"
+      [value]="activeSection()"
+      (change)="onSectionChange($event)"
+    >
       @for (section of sections; track section.id) {
-        <li>
-          <a
-            class="gourmet-nav__link"
-            [class.gourmet-nav__link--active]="isExpanded(section.id)"
-            [href]="'#' + section.id"
-            (click)="scrollToSection(section.id); $event.preventDefault()"
-          >
-            {{ section.translationKey + '.title' | translate }}
-          </a>
-        </li>
+        <option [value]="section.id">
+          {{ section.translationKey + '.title' | translate }}
+        </option>
       }
-    </ul>
-  </nav>
+    </select>
+  </div>
 
-  <div class="gourmet-sections">
-    @for (section of sections; track section.id) {
-      <section class="gourmet-section" [id]="section.id">
-        <button
-          type="button"
-          class="gourmet-section__toggle"
-          [attr.aria-expanded]="isExpanded(section.id)"
-          [attr.aria-controls]="'gourmet-panel-' + section.id"
-          (click)="toggleSection(section.id)"
-        >
-          <span class="gourmet-section__summary">
-            <span class="gourmet-section__title">
-              {{ section.translationKey + '.title' | translate }}
-            </span>
-            <span class="gourmet-section__count">
-              {{ 'shop.gourmet.productCount' | translate: { count: productCount(section.id) } }}
-            </span>
-          </span>
-          <svg class="gourmet-section__chevron" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
-          </svg>
-        </button>
+  <div class="gourmet-layout">
+    <aside class="gourmet-sidebar">
+      <nav class="gourmet-sidebar__nav" [attr.aria-label]="'shop.gourmet.navAria' | translate">
+        <ul class="gourmet-sidebar__list">
+          @for (section of sections; track section.id) {
+            <li>
+              <a
+                class="gourmet-sidebar__link"
+                [class.gourmet-sidebar__link--active]="isActiveSection(section.id)"
+                [routerLink]="gourmetBaseRoute"
+                [fragment]="section.id"
+              >
+                {{ section.translationKey + '.title' | translate }}
+              </a>
+            </li>
+          }
+        </ul>
+      </nav>
+    </aside>
 
-        @if (isExpanded(section.id)) {
-          <div class="gourmet-section__panel" [id]="'gourmet-panel-' + section.id">
-            <p class="gourmet-section__presentation">
-              {{ section.translationKey + '.presentation' | translate }}
+    @if (activeSectionData(); as section) {
+      <section class="gourmet-content" [id]="section.id">
+        <header class="gourmet-content__header">
+          <h2 class="gourmet-content__title">
+            {{ section.translationKey + '.title' | translate }}
+          </h2>
+          <p class="gourmet-content__count">
+            {{ 'shop.gourmet.productCount' | translate: { count: productCount(section.id) } }}
+          </p>
+        </header>
+
+        @if (isMalvasiaSection(section)) {
+          <div class="gourmet-presentation">
+            <h3 class="gourmet-presentation__title">
+              {{ section.translationKey + '.presentationTitle' | translate }}
+            </h3>
+            @for (paragraph of ('shop.gourmet.sections.productosPato.presentationParagraphs' | translate); track $index) {
+              <p class="gourmet-presentation__paragraph">{{ paragraph }}</p>
+            }
+
+            @if (section.presentationVideoUrl) {
+              <div class="gourmet-presentation__video">
+                <iframe
+                  class="gourmet-presentation__video-frame"
+                  [src]="safePresentationVideoUrl(section.presentationVideoUrl)"
+                  [title]="section.translationKey + '.presentationVideoTitle' | translate"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            }
+
+            <p class="gourmet-presentation__footnote">
+              {{ section.translationKey + '.presentationFootnote' | translate }}
             </p>
+          </div>
 
+          <div class="gourmet-actions">
             @if (section.catalogUrl) {
               <a
-                class="gourmet-section__catalog"
+                class="gourmet-actions__button gourmet-actions__button--primary"
                 [href]="section.catalogUrl"
-                download
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Catalogo-Malvasia.pdf"
               >
                 {{ 'shop.gourmet.catalogDownload' | translate }}
               </a>
             }
 
-            <app-product-list
-              [products]="productsForSection(section.id)"
-              detailRoutePrefix="/tienda-boutique/gourmet"
-              priceDigits="1.2-2"
-              [emptyKey]="'shop.gourmet.sectionEmpty'"
-            />
+            @if (section.recipeLibraryUrl) {
+              <a
+                class="gourmet-actions__button gourmet-actions__button--secondary"
+                [href]="section.recipeLibraryUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ 'shop.gourmet.recipeLibrary.cta' | translate }}
+              </a>
+            }
           </div>
+
+          <section class="gourmet-conditions">
+            <h3 class="gourmet-conditions__title">{{ 'shop.gourmet.salesConditions.title' | translate }}</h3>
+            <ul class="gourmet-conditions__list">
+              <li>{{ 'shop.gourmet.salesConditions.ordering' | translate }}</li>
+              <li>{{ 'shop.gourmet.salesConditions.payment' | translate }}</li>
+              <li>{{ 'shop.gourmet.salesConditions.shipping' | translate }}</li>
+              <li>{{ 'shop.gourmet.salesConditions.contact' | translate }}</li>
+            </ul>
+          </section>
+        } @else {
+          <p class="gourmet-content__presentation">
+            {{ section.translationKey + '.presentation' | translate }}
+          </p>
         }
+
+        <app-product-list
+          [products]="productsForSection(section.id)"
+          detailRoutePrefix="/tienda-boutique/gourmet"
+          priceDigits="1.2-2"
+          [emptyKey]="'shop.gourmet.sectionEmpty'"
+        />
       </section>
     }
   </div>

@@ -33,6 +33,9 @@ export function getCategoryListingPath(
   if (category === 'gourmet' && gourmetSection) {
     return `${base}#${gourmetSection}`;
   }
+  if (category === 'gourmet') {
+    return `${base}#productos-pato`;
+  }
   return base;
 }
 

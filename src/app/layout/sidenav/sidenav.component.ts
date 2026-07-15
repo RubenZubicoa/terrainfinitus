@@ -18,11 +18,19 @@ export class SidenavComponent {
 
   protected readonly navigation = MAIN_NAVIGATION;
   protected readonly expandedGroups = signal<Record<string, boolean>>({});
+  protected readonly expandedNestedGroups = signal<Record<string, boolean>>({});
 
   protected toggleGroup(labelKey: string): void {
     this.expandedGroups.update((state) => ({
       ...state,
       [labelKey]: !this.isGroupExpanded({ labelKey } as NavItem),
+    }));
+  }
+
+  protected toggleNestedGroup(labelKey: string): void {
+    this.expandedNestedGroups.update((state) => ({
+      ...state,
+      [labelKey]: !this.isNestedGroupExpanded({ labelKey } as NavItem),
     }));
   }
 
@@ -33,6 +41,35 @@ export class SidenavComponent {
     }
 
     if (item.labelKey === 'nav.shop' && this.router.url.startsWith('/tienda-boutique')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.resorts' && this.router.url.startsWith('/proyectos')) {
+      return true;
+    }
+
+    return false;
+  }
+
+  protected isNestedGroupExpanded(item: NavItem): boolean {
+    const manual = this.expandedNestedGroups()[item.labelKey];
+    if (manual !== undefined) {
+      return manual;
+    }
+
+    if (item.labelKey === 'nav.shopGourmet' && this.router.url.startsWith('/tienda-boutique/gourmet')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.peralejosHotel' && this.router.url.startsWith('/proyectos/terra-peralejos')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.bugarraResort' && this.router.url.startsWith('/proyectos/terra-bugarra')) {
+      return true;
+    }
+
+    if (item.labelKey === 'nav.theLake' && this.router.url.startsWith('/proyectos/the-lake')) {
       return true;
     }
 

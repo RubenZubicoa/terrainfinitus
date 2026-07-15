@@ -61,7 +61,60 @@
             <ul class="sidenav__sublist">
               @for (child of item.children; track child.labelKey) {
                 <li>
-                  @if (child.externalUrl) {
+                  @if (child.children?.length) {
+                    <div class="sidenav__group-header sidenav__group-header--nested">
+                      <a
+                        [routerLink]="child.route"
+                        [fragment]="child.fragment"
+                        routerLinkActive="sidenav__link--active"
+                        [routerLinkActiveOptions]="{
+                          paths: 'subset',
+                          queryParams: 'ignored',
+                          fragment: 'ignored',
+                          matrixParams: 'ignored',
+                        }"
+                        class="sidenav__link sidenav__link--child sidenav__link--parent"
+                        (click)="onNavigate()"
+                      >
+                        {{ child.labelKey | translate }}
+                      </a>
+                      <button
+                        type="button"
+                        class="sidenav__group-expand"
+                        [class.sidenav__group-expand--open]="isNestedGroupExpanded(child)"
+                        [attr.aria-expanded]="isNestedGroupExpanded(child)"
+                        [attr.aria-label]="child.labelKey | translate"
+                        (click)="toggleNestedGroup(child.labelKey)"
+                      >
+                        <svg class="sidenav__chevron" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                      </button>
+                    </div>
+                    @if (isNestedGroupExpanded(child)) {
+                      <ul class="sidenav__sublist sidenav__sublist--nested">
+                        @for (grandchild of child.children; track grandchild.labelKey) {
+                          <li>
+                            <a
+                              [routerLink]="grandchild.route"
+                              [fragment]="grandchild.fragment"
+                              routerLinkActive="sidenav__link--active"
+                              [routerLinkActiveOptions]="{
+                                paths: 'exact',
+                                queryParams: 'ignored',
+                                fragment: 'exact',
+                                matrixParams: 'ignored',
+                              }"
+                              class="sidenav__link sidenav__link--grandchild"
+                              (click)="onNavigate()"
+                            >
+                              {{ grandchild.labelKey | translate }}
+                            </a>
+                          </li>
+                        }
+                      </ul>
+                    }
+                  } @else if (child.externalUrl) {
                     <a
                       [href]="child.externalUrl"
                       class="sidenav__link sidenav__link--child"
@@ -74,7 +127,14 @@
                   } @else {
                     <a
                       [routerLink]="child.route"
+                      [fragment]="child.fragment"
                       routerLinkActive="sidenav__link--active"
+                      [routerLinkActiveOptions]="{
+                        paths: 'subset',
+                        queryParams: 'ignored',
+                        fragment: 'ignored',
+                        matrixParams: 'ignored',
+                      }"
                       class="sidenav__link sidenav__link--child"
                       (click)="onNavigate()"
                     >

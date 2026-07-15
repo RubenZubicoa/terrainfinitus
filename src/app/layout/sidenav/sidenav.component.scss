@@ -92,6 +92,22 @@
   padding-left: 1.25rem;
 }
 
+.sidenav__link--grandchild {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  padding-left: 1.75rem;
+}
+
+.sidenav__group-header--nested {
+  margin-top: 0.15rem;
+}
+
+.sidenav__sublist--nested {
+  margin-top: 0.15rem;
+  margin-bottom: 0.35rem;
+  padding-left: 0.75rem;
+}
+
 .sidenav__group-header {
   display: flex;
   align-items: stretch;

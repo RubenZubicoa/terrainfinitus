@@ -1,38 +1,43 @@
-import { ViewportScroller } from '@angular/common';
-import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { ActivatedRoute } from '@angular/router';
-import { filter } from 'rxjs';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { TranslateModule } from '@ngx-translate/core';
-import { GOURMET_SECTIONS } from '../../data/gourmet-sections.data';
+import {
+  DEFAULT_GOURMET_SECTION,
+  GOURMET_BASE_ROUTE,
+  GOURMET_SECTIONS,
+} from '../../data/gourmet-sections.data';
 import { getGourmetProductsBySection } from '../../data/products.data';
-import { GourmetSectionId } from '../../../../shared/models/product.models';
+import { GourmetSection, GourmetSectionId } from '../../../../shared/models/product.models';
 import { ProductList } from '../../../../shared/components/product-list/product-list';
 
 @Component({
   selector: 'app-gourmet',
-  imports: [TranslateModule, ProductList],
+  imports: [TranslateModule, ProductList, RouterLink],
   templateUrl: './gourmet.html',
   styleUrl: './gourmet.scss',
 })
 export class Gourmet implements OnInit {
   private readonly route = inject(ActivatedRoute);
-  private readonly viewportScroller = inject(ViewportScroller);
+  private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly sanitizer = inject(DomSanitizer);
 
   readonly sections = GOURMET_SECTIONS;
-  readonly expandedSections = signal<ReadonlySet<GourmetSectionId>>(new Set());
+  readonly gourmetBaseRoute = GOURMET_BASE_ROUTE;
+  readonly activeSection = computed(() => this.resolveActiveSection(this.fragment()));
+
+  private readonly fragment = signal<string | null>(null);
+
+  readonly activeSectionData = computed((): GourmetSection | undefined =>
+    this.sections.find((section) => section.id === this.activeSection()),
+  );
 
   ngOnInit(): void {
-    this.route.fragment
-      .pipe(
-        filter((fragment): fragment is string => !!fragment),
-        takeUntilDestroyed(this.destroyRef),
-      )
-      .subscribe((fragment) => {
-        this.expandSection(fragment as GourmetSectionId);
-        queueMicrotask(() => this.scrollToSection(fragment));
-      });
+    this.route.fragment.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((fragment) => {
+      this.fragment.set(fragment);
+    });
   }
 
   productsForSection(sectionId: GourmetSectionId) {
@@ -43,39 +48,28 @@ export class Gourmet implements OnInit {
     return this.productsForSection(sectionId).length;
   }
 
-  isExpanded(sectionId: GourmetSectionId): boolean {
-    return this.expandedSections().has(sectionId);
+  isActiveSection(sectionId: GourmetSectionId): boolean {
+    return this.activeSection() === sectionId;
   }
 
-  toggleSection(sectionId: GourmetSectionId): void {
-    this.expandedSections.update((current) => {
-      const next = new Set(current);
-      if (next.has(sectionId)) {
-        next.delete(sectionId);
-      } else {
-        next.add(sectionId);
-      }
-      return next;
-    });
+  isMalvasiaSection(section: GourmetSection): boolean {
+    return section.id === 'productos-pato';
   }
 
-  expandSection(sectionId: GourmetSectionId): void {
-    if (!this.sections.some((section) => section.id === sectionId)) {
-      return;
+  safePresentationVideoUrl(url?: string): SafeResourceUrl | null {
+    return url ? this.sanitizer.bypassSecurityTrustResourceUrl(url) : null;
+  }
+
+  onSectionChange(event: Event): void {
+    const sectionId = (event.target as HTMLSelectElement).value as GourmetSectionId;
+    void this.router.navigate([this.gourmetBaseRoute], { fragment: sectionId });
+  }
+
+  private resolveActiveSection(fragment: string | null): GourmetSectionId {
+    if (fragment && this.sections.some((section) => section.id === fragment)) {
+      return fragment as GourmetSectionId;
     }
 
-    this.expandedSections.update((current) => new Set(current).add(sectionId));
-  }
-
-  scrollToSection(sectionId: string): void {
-    this.expandSection(sectionId as GourmetSectionId);
-
-    const element = document.getElementById(sectionId);
-    if (!element) {
-      return;
-    }
-
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    this.viewportScroller.scrollToAnchor(sectionId);
+    return DEFAULT_GOURMET_SECTION;
   }
 }

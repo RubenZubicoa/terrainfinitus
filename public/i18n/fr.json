@@ -78,7 +78,10 @@
     "guides": "Guides",
     "testimonials": "Testimonials",
     "bookings": "Réservations-Prix",
-    "contact": "Contact"
+    "contact": "Contact",
+    "resorts": "Nos Resorts",
+    "peralejosHotel": "Hôtel 6 étoiles Terra Infinitus Peralejos",
+    "bugarraResort": "Resort de luxe Terra Infinitus Bugarra"
   },
   "footer": {
     "copyright": "Droits d'auteur © {{year}} Terra Infinitus",
@@ -179,7 +182,10 @@
       "checkoutNote": "Vérifiez votre commande et complétez vos informations à l'étape suivante.",
       "decrease": "Diminuer la quantité",
       "increase": "Augmenter la quantité",
-      "categories": { "gourmet": "Gourmet", "merchandising": "Merchandising"       }
+      "categories": {
+        "gourmet": "Gourmet",
+        "merchandising": "Merchandising"
+      }
     },
     "checkout": {
       "title": "Finaliser la commande",
@@ -219,24 +225,83 @@
     "gourmet": {
       "eyebrow": "Boutique",
       "title": "Gourmet",
-      "description": "Découvrez notre sélection gourmet organisée par familles de produits : huiles, produits de canard Malvasía, douceurs, charcuteries, conserves et bien plus. Chaque section comprend une présentation et un catalogue de références avec prix.",
+      "description": "Découvrez notre sélection gourmet par familles de produits. Chaque section comprend une présentation et un catalogue de références avec prix.",
       "navAria": "Catégories de la boutique gourmet",
+      "mobileCategoryLabel": "Catégorie",
       "catalogDownload": "Télécharger le catalogue Malvasía",
       "productCount": "{{count}} produits",
       "sectionEmpty": "Nous ajouterons bientôt des références dans cette catégorie.",
+      "recipeLibrary": {
+        "title": "Vidéothèque de recettes",
+        "description": "Inspirez-vous des recettes officielles Malvasía pour profiter au maximum de leurs produits de canard.",
+        "cta": "Voir la vidéothèque de recettes Malvasía"
+      },
+      "salesConditions": {
+        "title": "Conditions de vente, paiement et livraison",
+        "ordering": "Passez commande en ligne en ajoutant des produits au panier et en complétant vos données au checkout.",
+        "payment": "Paiement par carte, virement, Bizum ou PayPal. Les prix affichés sont les prix usine, avec l'attention personnalisée de Terra Infinitus.",
+        "shipping": "Livraison à domicile disponible. Consultez les formats et la disponibilité de chaque référence avant de confirmer.",
+        "contact": "Après enregistrement de votre commande, nous vous contacterons pour confirmer les détails, le paiement et la livraison."
+      },
       "sections": {
-        "aceites": { "title": "Huiles", "presentation": "Huiles d'olive vierge extra et spécialités sélectionnées pour la haute gastronomie." },
-        "productosPato": { "title": "Produits de canard", "presentation": "Foie gras, confits, pâtés et spécialités élaborés par Malvasía à Soria, avec le label Terra Infinitus." },
-        "dulcesPostres": { "title": "Douceurs et desserts", "presentation": "Pâtisserie fine, douceurs artisanales et desserts gourmet." },
-        "embutidosJamonesCecinas": { "title": "Charcuteries, jambons et cecinas", "presentation": "Sélection de charcuteries ibériques, jambons et cecinas de grande qualité." },
-        "mielesMermeladas": { "title": "Miels et confitures", "presentation": "Miels artisanaux et confitures gourmet à base d'ingrédients naturels." },
-        "conservas": { "title": "Conserves", "presentation": "Conserves gourmet de saison et spécialités pour les palais exigeants." },
-        "caviar": { "title": "Caviar", "presentation": "Caviar et œufs sélectionnés pour les occasions spéciales." },
-        "pastas": { "title": "Pâtes", "presentation": "Pâtes artisanales et spécialités pour une cuisine d'auteur." },
-        "condimentosEspeciasSales": { "title": "Condiments, épices et sels", "presentation": "Condiments, épices aromatiques et sels gourmet pour sublimer chaque plat." },
-        "galletasPanes": { "title": "Biscuits, pains, etc.", "presentation": "Biscuits artisanaux, pains spéciaux et produits de boulangerie gourmet." },
-        "bebidasVinosLicores": { "title": "Boissons, vins et liqueurs", "presentation": "Vins, liqueurs et boissons sélectionnés pour accompagner notre offre gastronomique." },
-        "setas": { "title": "Champignons", "presentation": "Champignons frais et conserves de champignons de saison." }
+        "aceites": {
+          "title": "Huiles",
+          "presentation": "Huiles d'olive vierge extra et spécialités sélectionnées pour la haute gastronomie."
+        },
+        "productosPato": {
+          "title": "Produits de canard : Malvasía",
+          "presentationTitle": "Présentation",
+          "presentationVideoTitle": "Vidéo de présentation Malvasía",
+          "presentationParagraphs": [
+            "Dans notre boutique gourmet, nous n'incluons que des produits exclusifs réunissant qualité, originalité, exclusivité et production familiale et durable.",
+            "Depuis plus de trente ans, Malvasía réunit ces exigences et bien d'autres qui font de ses produits les meilleurs du marché, avec un soin particulier pour le traitement des animaux (seuls inclus dans FoieGood), sans gluten et une attention absolue à tous les processus de fabrication.",
+            "Nous distribuons aux particuliers et aux professionnels, en conservant les mêmes prix d'usine et en ajoutant notre touche et notre attention personnalisées.",
+            "Qualité, spécialisation et respect du produit nous définissent depuis plus de 30 ans.",
+            "Notre philosophie est claire : une production qui privilégie la qualité sur la quantité, le respect du produit et un engagement constant pour l'innovation.",
+            "Vous trouverez ci-dessous les produits disponibles."
+          ],
+          "presentationFootnote": "*N'oubliez pas de consulter les conditions de vente, livraison et paiement, ainsi que les formats disponibles."
+        },
+        "dulcesPostres": {
+          "title": "Douceurs et desserts",
+          "presentation": "Pâtisserie fine, douceurs artisanales et desserts gourmet."
+        },
+        "embutidosJamonesCecinas": {
+          "title": "Charcuteries, jambons et cecinas",
+          "presentation": "Sélection de charcuteries ibériques, jambons et cecinas de grande qualité."
+        },
+        "mielesMermeladas": {
+          "title": "Miels et confitures",
+          "presentation": "Miels artisanaux et confitures gourmet à base d'ingrédients naturels."
+        },
+        "conservas": {
+          "title": "Conserves",
+          "presentation": "Conserves gourmet de saison et spécialités pour les palais exigeants."
+        },
+        "caviar": {
+          "title": "Caviar",
+          "presentation": "Caviar et œufs sélectionnés pour les occasions spéciales."
+        },
+        "pastas": {
+          "title": "Pâtes",
+          "presentation": "Pâtes artisanales et spécialités pour une cuisine d'auteur."
+        },
+        "condimentosEspeciasSales": {
+          "title": "Condiments, épices et sels",
+          "presentation": "Condiments, épices aromatiques et sels gourmet pour sublimer chaque plat."
+        },
+        "galletasPanes": {
+          "title": "Biscuits, pains, etc.",
+          "presentation": "Biscuits artisanaux, pains spéciaux et produits de boulangerie gourmet."
+        },
+        "bebidasVinosLicores": {
+          "title": "Boissons, vins et liqueurs",
+          "presentation": "Vins, liqueurs et boissons sélectionnés pour accompagner notre offre gastronomique."
+        },
+        "setas": {
+          "title": "Champignons",
+          "presentation": "Champignons frais et conserves de champignons de saison."
+        }
       }
     },
     "merchandising": {
@@ -616,25 +681,166 @@
     "defaultTitle": "Page en construction"
   },
   "projects": {
-    "bugarra": {
-      "title": "Bugarra",
-      "p1": "Consistant en la construction de quatorze bungalows de luxe entièrement équipés pour une clientèle haut de gamme, avec restaurant gastronomique, piscines, spas et une offre complète d'activités touristiques.",
-      "p2": "Nous attendons l'obtention des derniers permis pour l'exécution et visons à être ouverts et opérationnels pour 2027.",
-      "pdfViewer": "Document du projet Bugarra I",
-      "pdfViewer2": "Document du projet Bugarra II"
+    "navAria": "Resort sections",
+    "mobileSectionLabel": "Section",
+    "sectionPending": "Cette section sera complétée prochainement avec le contenu fourni par le client.",
+    "idea": {
+      "title": "L'idée",
+      "alt1": "Terra Infinitus",
+      "alt2": "Terra Infinitus",
+      "alt3": "Terra Infinitus",
+      "alt4": "Terra Infinitus",
+      "paragraphs": [
+        "Dans ce merveilleux rêve, nous avons réuni une équipe extraordinaire de personnes très diverses, unies par une vision commune, pour créer un projet touristique exceptionnel dans un lieu de rêve.",
+        "Luis Antúnez est le PDG et créateur de l'idée, avec une vaste expérience dans le tourisme de luxe et la gastronomie gourmet internationale, ayant obtenu de nombreuses reconnaissances officielles, notamment la considération du meilleur établissement touristique du pays, décernée par le ministère du Tourisme du Chili pour son hôtel en Patagonie.",
+        "Depuis ses débuts à l'OMT (Organisation mondiale du tourisme), il a développé sa passion pour ce secteur, se spécialisant dans le tourisme haut de gamme, avec des clients de premier plan : acteurs, chanteurs et personnalités publiques telles que Robert Redford, Tom Selleck, John Denver et bien d'autres qui, après des décennies de travail, lui ont apporté un marché captif exclusif de plus de quatre cent mille utilisateurs et une réputation de premier ordre.",
+        "Animé par sa passion pour la nature et la pêche à la mouche, Luis a parcouru la planète en ouvrant des destinations et des opérations dans de nombreux coins exclusifs du monde, apportant toute cette expérience, ce savoir-faire et ces connaissances à la construction de ce Projet exclusif.",
+        "Notre philosophie consiste à créer un environnement unique pour des personnes uniques, conscients de l'importance de travailler avec les rêves de ceux qui nous visitent — les rêves sont quelque chose que nous prenons très au sérieux.",
+        "Nous fondons notre idée sur notre interprétation particulière du luxe, qui réside dans l'exclusivité, en évitant à tout moment la massification ;",
+        "Le luxe ne peut aller de pair avec des établissements qui accueillent des centaines de personnes ; nous voulons donner son nom à chaque visiteur et leur offrir un service absolument personnalisé, sans ressemblance avec ce que signifie traditionnellement séjourner dans un hôtel.",
+        "Nous basons notre succès sur la fidélisation et les visites répétées ; certains clients nous rendent visite depuis plus de dix-huit ans, non seulement en Patagonie mais aussi dans de nombreuses destinations dans le monde, comme l'Amazonie, les Caraïbes et l'Espagne.",
+        "En Espagne, notre équipe sera composée de talents dans les différents domaines nécessaires pour atteindre le degré d'exclusivité requis — des personnes à la sensibilité authentique, avec de l'expérience en hôtellerie espagnole, accueil, design de mobilier, décoration et gastronomie, et une compréhension complète du tourisme, de sa direction et de l'attention aux clients.",
+        "Nous disposons de techniciens spécialisés en jardinerie qui concevront une oasis sur la propriété, ainsi que d'experts en eaux et d'autres membres du personnel recrutés localement et formés pour que l'harmonie de l'ensemble soit à la hauteur du Projet et dépasse les attentes de nos hôtes, tout en ayant un impact définitif sur la communauté, l'emploi complet de ses habitants, des emplois de qualité et stables, et la création d'une idée unique, innovante, rentable et durable."
+      ]
     },
     "peralejos": {
-      "title": "Peralejos",
-      "p1": "Consistant en la construction et le développement d'un hôtel six étoiles avec dix bungalows, restaurant gastronomique, zones d'hydrothérapie, piscines, salles de sport, spas, activités touristiques, boutique en ligne, location de véhicules et service de guides, entre autres, au cœur du Parc Naturel du Haut Tajo à Peralejos de Las Truchas, Guadalajara — projet lancé il y a plus de deux ans et en pleine phase de développement et de conception.",
-      "p2": "Nous disposerons d'une trentaine de chambres, de près de cent à quatre cents mètres carrés, d'une cuisine gastronomique et de nombreux détails exquis qui donneront au Projet la plus haute réputation en Espagne et à l'étranger. Le Projet se développera par phases, de nombreuses constructions et infrastructures étant déjà achevées.",
-      "p3": "Nous visons à être prêts en 2026-2027 avec toute la capacité de bungalows de luxe, espaces communs, saunas, piscines, spas, aménagement paysager, champs solaires et bien d'autres détails, et en 2027-2028 pleinement opérationnels pour le reste des constructions et infrastructures du Projet.",
-      "pdfViewer": "Document du projet Peralejos"
+      "title": "Hôtel 6 étoiles Terra Infinitus Peralejos",
+      "description": "undefined…",
+      "pdfViewer": "Document du projet Peralejos",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Étude socio-économique de la Région. Section I"
+        },
+        "introduccion": {
+          "title": "Introduction",
+          "paragraphs": []
+        },
+        "quienesSomos": {
+          "title": "Qui sommes-nous ? Pourquoi ? L’entreprise, synergies"
+        },
+        "conceptosTuristicos": {
+          "title": "Concepts touristiques appliqués, phases"
+        },
+        "edificaciones": {
+          "title": "Bâtiments, types de chambres, plans"
+        },
+        "bungalows": {
+          "title": "Bungalows"
+        },
+        "spasHidroterapia": {
+          "title": "Spas, piscines, saunas, gymnases, hydrothérapie, terrasses, bibliothèque"
+        },
+        "gimnasioRecepcion": {
+          "title": "Gymnase, réception, salle de réunion"
+        },
+        "cocinaCarta": {
+          "title": "Cuisine, notre carte"
+        },
+        "tiendaPaquetes": {
+          "title": "Boutique, forfaits touristiques"
+        },
+        "rutasTrekking": {
+          "title": "Itinéraires de trekking et running, programmes touristiques, analyse, situation touristique de la zone"
+        },
+        "staffImpacto": {
+          "title": "Personnel et emplois, impact direct sur la communauté"
+        }
+      }
+    },
+    "bugarra": {
+      "title": "Resort de luxe Terra Infinitus Bugarra",
+      "description": "",
+      "imageAlt": "Bugarra",
+      "pdfViewer": "Document du projet Bugarra I",
+      "pdfViewer2": "Document du projet Bugarra II",
+      "sections": {
+        "estudioSocioeconomico": {
+          "title": "Étude socio-économique de la Région",
+          "paragraphs": [
+            "Nuestro Proyecto se divide en los siguientes volúmenes: Estudio socio-económico de La Región; El Proyecto, con diseños, equipamiento, distribución, estudios económicos, previsiones y planos; Propuesta de inversión; y Anexos con planos detallados, informes e información de la Empresa.",
+            "Un lugar único: horizontes infinitos, cielos de estrellas, silencio, naturaleza, infraestructura única, gastronomía, hospitalidad, clima de ensueño, ecología, pesca con mosca, actividades románticas, piscina, spa, yoga, masajes, trekking, sky bar, pub y planetario. Un plan perfecto para gente muy especial.",
+            "Nuestra filosofía: el turismo sostenible es un romance que florece en armonía con la naturaleza y la cultura. Respetamos la flora y fauna local, valoramos las tradiciones del lugar y apoyamos el desarrollo económico local. Educamos en el cuidado del entorno y generamos impacto positivo en la comunidad.",
+            "Estudio socio-económico de la Región: se analiza la evolución demográfica, los movimientos migratorios, la natalidad, la fertilidad, la mortalidad y los modelos de relación familiar en la Comunidad Valenciana para enmarcar el Proyecto en su entorno.",
+            "La población de la Comunitat Valenciana a 1 de enero de 2024 es de 5.319.285 habitantes, con un crecimiento del 2,0% respecto al año anterior. El 81,8% es de nacionalidad española y el 18,2% extranjera. El 63,2% nació en la Comunitat, el 14,3% en otras regiones de España y el 22,5% en el extranjero.",
+            "Dinámica poblacional de Bugarra (2013–2025): tras una pérdida sostenida hasta 2017 (de 811 a 711 habitantes), la tendencia se revierte desde 2018. En 2023 se alcanzan 783 habitantes y en 2024–2025 se consolida la estabilidad en torno a 770–780 habitantes, por encima del mínimo histórico.",
+            "El Municipio de Bugarra ofrece entorno natural consolidado, población estabilizada y oportunidad para proyectos de alojamiento de baja densidad orientados a un mercado turístico, vacacional y de uso flexible, sin depender del crecimiento demográfico local.",
+            "El mercado nupcial español retoma senda de crecimiento: en 2024 se registraron 175.364 matrimonios (+1,7%). El gasto medio por celebración alcanzó 24.618 euros en 2024 (+17% respecto a 2022), con un sector que supera los 4.000 millones de euros anuales.",
+            "Indicadores de despoblación: en 2020, 171 municipios valencianos estaban en riesgo de despoblación (más de la mitad en Castellón). La Agenda Valenciana Anti-despoblación impulsa programas como Reviu e Itinerant para dinamizar la actividad económica en el medio rural.",
+            "Evolución del mercado residencial: España superó los 19,4 millones de hogares en 2025. El tamaño medio del hogar desciende hacia 2,32 personas en 2039, impulsando demanda neta adicional de vivienda. Se estima la necesidad de alrededor de 1,5 millones de nuevos hogares de aquí a 2030.",
+            "Análisis: el incremento de población en la Comunidad Valenciana se debe principalmente a la población extranjera empadronada. El índice de envejecimiento sigue aumentando. El desarrollo turístico sostenible en municipios como Bugarra contribuye a la dinamización económica y al empleo de calidad en la comunidad."
+          ]
+        },
+        "elProyecto": {
+          "title": "Le Projet",
+          "paragraphs": [
+            "En los volúmenes anteriores hemos detallado la idea, el espíritu, su desarrollo y la fase de ejecución. Decidimos no recurrir a financiación bancaria y abrir el capital social a la participación de terceros que compartan nuestra visión de personas únicas y excepcionales.",
+            "Tremenda rentabilidad mensual: los beneficios después de gastos son excelentes, desde 439.584 euros mensuales con un 15% de ocupación hasta 2.955.552 euros anuales con un 80% de ocupación. Estas cifras mejoran al eliminar la carga financiera mensual de 8.000 euros incluida en los gastos.",
+            "Mínima posibilidad de riesgo: el dinero aportado se refleja en activos sin riesgo de pérdida, tales como terrenos, construcciones y equipamiento. El capital invertido se revaloriza con el tiempo, por encima del valor inflacionario.",
+            "Mercado cautivo y diversificación de negocio: hotelería, tienda, eventos, restaurante, excursiones turísticas, coaching, team building y excursiones de pesca para extranjeros. Hemos sido absolutamente cautos y conservadores en las previsiones.",
+            "Máxima comodidad en las aportaciones: se podrán realizar con una cantidad de entrada y sucesivas entregas según avance el Proyecto, en condiciones acordadas entre todos los socios.",
+            "Tu porcentaje en la Empresa es representativo y te da voz y voto en las decisiones y en la gestión del negocio, pudiendo limitar tu presencia al board a la rendición de cuentas o participar activamente en la explotación.",
+            "Negocio con proyección de futuro: valoramos la Empresa y el fondo de negocio en 5.000.000 euros, con casi 1.000.000 ya invertidos. Los costos han ido muy por debajo del mercado al desarrollar personalmente trabajos y sinergias con terceros.",
+            "Este modelo de negocio, una vez lanzado, resultará extremadamente fácil de exportar a otras comunidades. Ya tenemos 18 parcelas en Peguerinos de La Sierra (Madrid) y otros terrenos localizados en la provincia de León.",
+            "Escenario de ocupación del 30%: con 14 bungalows y 28 plazas, la facturación mensual alcanza 136.306,53 €, con EBITDA de 92.520,39 € (margen 67,88%) y DSCR de 6,62 tras el servicio de la deuda.",
+            "Escenario de ocupación del 50%: facturación mensual de 228.223,59 €, EBITDA de 169.747,09 € (margen 74,38%), flujo de caja libre de 155.765,28 € y DSCR de 12,14.",
+            "Escenario de ocupación del 70%: facturación mensual de 325.598,28 €, EBITDA de 247.997,24 € (margen 76,17%), flujo de caja libre de 234.015,43 € y DSCR de 17,74, con holgura excepcional frente a fluctuaciones de demanda.",
+            "Te ofrecemos una increíble y limitada oportunidad de inversión, segura, con una rentabilidad sin igual sobre el capital invertido. Estaremos encantados de contar con tu participación en nuestro sueño."
+          ]
+        }
+      }
     },
     "theLake": {
       "title": "The Lake",
+      "description": "undefined…",
+      "imageAlt": "The Lake",
       "pdfViewer": "Document du projet The Lake",
-      "p1": "À Gestalgar, Valence, nous implémenterons un lac artificiel avec deux nappes d'eau d'environ 35 000 mètres carrés chacune, destinées aux activités sportives, notamment la pêche sportive sans mort, qui, compte tenu du climat, en fera la plus grande destination d'Espagne et de la majeure partie de l'Europe — avec la particularité qu'en hiver, pendant que le reste de l'Espagne et de l'Europe est sous zéro, il y fera entre 15 et 20 degrés.",
-      "p2": "Des compétitions nationales et internationales y seront organisées ; il servira de soutien au Projet Bugarra."
+      "sections": {
+        "historiaPesca": {
+          "title": "Histoire de la pêche, pêche à la mouche, pêche sportive",
+          "paragraphs": [
+            "No se sabe a ciencia cierta en qué momento el ser humano capturó el primer pez, pero desde tiempos prehistóricos la pesca ha sido fundamental para la supervivencia humana. Se sabe que los humanos han estado pescando durante al menos 30.000 años.",
+            "Los primeros anzuelos encontrados datan del Paleolítico Superior, hace aproximadamente 23.000 años, elaborados principalmente de concha marina pulida. La pesca primitiva se realizaba con arpones, redes rudimentarias y trampas en ríos, lagos y costas marinas.",
+            "La pesca deportiva, como forma recreativa, comenzó a tomar forma en el siglo XV en Europa, especialmente entre la nobleza. En el siglo XIX ganó notable popularidad en el Reino Unido, con libros sobre técnicas y asociaciones dedicadas a la regulación y promoción de la pesca recreativa.",
+            "En España, el Manuscrito de Astorga de Juan de Vergara (1624) describe por primera vez modelos de moscas artificiales para la pesca de truchas, situando a España a la cabeza de los precursores de la pesca con mosca moderna en el mundo.",
+            "La pesca con mosca moderna se formalizó en el siglo XIX en Gran Bretaña y América del Norte. Consiste en utilizar un señuelo artificial que imita insectos o pequeños peces, lanzado con caña y línea livianas. La pesca con devolución es la práctica más asentada en todo el mundo.",
+            "En resumen, la pesca ha sido parte integral de la historia humana. La pesca deportiva y la pesca con mosca han evolucionado a lo largo de los siglos, con un notable crecimiento en popularidad durante los siglos XVIII y XIX. «Un pez es demasiado valioso como para ser pescado solo una vez»."
+          ]
+        },
+        "estadisticas": {
+          "title": "Statistiques",
+          "paragraphs": [
+            "El mundo del ocio y del deporte es uno de los campos económicos y sociales más importantes en todo el mundo. Dentro de esta globalización deportiva, la pesca deportiva moviliza a millones de personas y constituye un promedio del 6,7% de la población en países donde esta actividad es común.",
+            "Las estimaciones más confiables apuntan a más de 174,5 millones de pescadores deportivos a nivel mundial. En Europa hay más de 9 millones de pescadores recreativos. En Estados Unidos, alrededor de 7 millones practican pesca con mosca con crecimiento constante desde 2012.",
+            "En España se estiman entre 900.000 y 1,2 millones de licencias de pesca recreativa. En la Comunidad Valenciana se estiman 66.000 pescadores deportivos. Para estas estadísticas se usa el número de licencias anuales, aunque se estima que el número real de pescadores es al menos un 30% superior.",
+            "Por comunidades autónomas destacan Cataluña (100.000), Galicia (90.000), Andalucía (76.500), Castilla y León (55.000) y la Comunidad Valenciana (66.000), entre otras."
+          ]
+        },
+        "tramosIntensivos": {
+          "title": "Tronçons intensifs",
+          "paragraphs": [
+            "Las aguas de pesca generales tienen un período hábil que abarca genéricamente desde el primer domingo de marzo hasta finales de agosto y septiembre. Cuando se cierra el periodo hábil, los tramos denominados «intensivos» ofrecen la posibilidad de continuar con la afición durante todo el año.",
+            "En estos lugares se basa la actividad en el manejo de las poblaciones de peces, con repoblaciones de trucha arco iris estériles (triploides), biológicamente imposible que se hibriden con especies autóctonas, siendo absolutamente seguro para el medio ambiente y la biodiversidad.",
+            "En España existen tramos de pesca intensiva públicos y privados en múltiples comunidades autónomas: Castilla y León (ríos Ebro, Pisuerga, Carrión, Sil, Duero y otros), La Rioja, Aragón, Castilla-La Mancha, Cataluña, Extremadura, País Vasco y Comunidad Valenciana.",
+            "En la Comunidad Valenciana destacan cotos como Bugarra, Villamarchante, Chulilla, Pedralba y Ribarroja de Turia, entre otros. No existe un listado oficial exhaustivo a nivel nacional, ya que cada región gestiona sus propios cotos según normativas anuales.",
+            "Los tramos intensivos permiten la pesca durante todo el año con repoblación controlada, ofreciendo a los pescadores deportivos continuidad en su práctica fuera de la temporada general."
+          ]
+        },
+        "nuestroProyecto": {
+          "title": "Notre Projet",
+          "paragraphs": [
+            "En la localidad de Gestalgar, Valencia, implementaremos un lago artificial con dos láminas de agua de unos 35.000 metros cuadrados cada una, destinadas a actividades deportivas, especialmente la pesca deportiva sin muerte. Dadas las características climáticas de la zona, será el destino más grande de España y de la mayoría de Europa.",
+            "Durante el invierno, mientras el resto de España y Europa está bajo cero, en Gestalgar estaremos entre los 15 y 20 grados. Se realizarán competiciones nacionales e internacionales y servirá como apoyo al Proyecto de Bugarra.",
+            "Amamos la pesca deportiva y contamos con un mercado cautivo de más de 400.000 direcciones de pescadores a mosca de todo el mundo, así como distribuidores especializados, clubes y asociaciones. Estamos en contacto con la Federación Española de Pesca, el COI y la FIPS.",
+            "Luis Antúnez ha cosechado numerosos títulos nacionales e internacionales, organizó el primer Campeonato del Mundo Master en la Patagonia chilena y fue promotor del primer tramo sin muerte de España en Peralejos de las Truchas y de la primera escuela de pesca con mosca en Uña, Cuenca.",
+            "El Proyecto combina la explotación de un tramo intensivo de pesca con mosca y la creación de una Escuela de Pesca que imparta cursos y programas educativos medioambientales y deportivos entre niños y nuevas generaciones, en colaboración con colegios y ayuntamientos.",
+            "Ventajas del Proyecto: instalaciones de primer nivel (baños, aparcamientos protegidos, refugios y asesoramiento técnico); pesca selectiva sin masificación; climatología privilegiada (18–20 °C de media invernal); cursos, actividades y conferencias; competiciones con federaciones; cercanía al Río Turia; y escuela de pesca gratuita para niños y jóvenes.",
+            "Las federaciones se comprometen a contratar un mínimo de cuatro campeonatos mensuales en nuestras instalaciones, lo que garantiza viabilidad y respaldo desde el inicio del Proyecto.",
+            "Inversión estimada: 1.381.000 €, con fases de estudio de viabilidad, permisos, compra de propiedades, movimiento de tierras, impermeabilización, construcción de refugios y servicios, jardinería, repoblación y equipamiento.",
+            "Estudio económico: capacidad de 50 personas por día con entrada de 50 euros más IVA. Ingresos por tickets desde 3.750 €/mes (5% ocupación) hasta 75.000 €/mes (100% ocupación), más venta de equipos (~6.166 €/mes) y concursos y cursos (~4.400 €/mes). Gastos operacionales fijos: 8.500 €/mes.",
+            "Con un 30% de ocupación los beneficios mensuales alcanzan 24.566 €; con 50%, 39.566 €; y con 100%, 77.066 €. La Federación y la Consellería colaborarán en repoblaciones, reduciendo gastos de inversión mensuales. Cada campeonato deja unos 2.000 euros de beneficio directo."
+          ]
+        }
+      }
     }
   },
   "rooms": {
