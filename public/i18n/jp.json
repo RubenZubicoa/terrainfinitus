@@ -72,6 +72,7 @@
     "galleryNature": "自然",
     "galleryFishing": "釣り",
     "blog": "ブログ",
+    "bulletins": "ニュースレター",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "淡水",
     "saltwater": "海水",
@@ -1226,6 +1227,51 @@
       "invalidDates": "チェックアウトはチェックインより後である必要があります。",
       "guestsRequired": "1名以上入力してください。",
       "capacityExceeded": "定員を超えています。"
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "ニュースレター",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "ニュースレターを受け取るにはこちらをクリック",
+    "thanks": "ありがとうございます。",
+    "archiveTitle": "公開済みニュースレター",
+    "viewIssue": "ニュースレターを見る",
+    "unsubscribeHint": "すでに登録済みでニュースレターの受信を停止したい場合は、",
+    "unsubscribeLink": "こちらをクリックして登録を解除してください",
+    "subscribeDialog": {
+      "title": "Newsletter subscription",
+      "description": "Enter your details to receive our newsletters. Only name and email are required.",
+      "name": "Name",
+      "email": "Email address",
+      "required": "(required)",
+      "optionalLegend": "Additional details (optional)",
+      "phone": "Phone",
+      "address": "Address",
+      "notes": "Other details",
+      "privacy": "Your data will remain absolutely private and will not be shared with third parties.",
+      "submit": "Subscribe",
+      "submitting": "Sending…",
+      "success": "Thank you. Your subscription has been registered. You will receive our newsletters soon."
+    },
+    "unsubscribePage": {
+      "title": "Cancel subscription",
+      "description": "Enter your email address and we will remove it from our newsletter list.",
+      "email": "Email address",
+      "submit": "Unsubscribe",
+      "submitting": "Processing…",
+      "success": "We have received your request. Your email address will be removed from our newsletter list.",
+      "back": "Back to newsletters"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "ニュースレター第1号"
+      }
     }
   }
 }

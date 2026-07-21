@@ -72,6 +72,7 @@
     "galleryNature": "Natur",
     "galleryFishing": "Angeln",
     "blog": "Blog",
+    "bulletins": "Newsletter",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Süßwasser",
     "saltwater": "Salzwasser",
@@ -1226,6 +1227,51 @@
       "invalidDates": "Abreise muss nach Anreise liegen.",
       "guestsRequired": "Mindestens ein Gast erforderlich.",
       "capacityExceeded": "Gästeanzahl übersteigt die Kapazität."
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Newsletter",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "Um unsere Newsletter zu erhalten, klicken Sie hier",
+    "thanks": "Danke.",
+    "archiveTitle": "Veröffentlichte Newsletter",
+    "viewIssue": "Newsletter ansehen",
+    "unsubscribeHint": "Wenn Sie bereits abonniert sind und unsere Newsletter nicht mehr erhalten möchten,",
+    "unsubscribeLink": "klicken Sie hier, um Ihr Abonnement zu kündigen",
+    "subscribeDialog": {
+      "title": "Newsletter-Abonnement",
+      "description": "Geben Sie Ihre Daten ein, um unsere Newsletter zu erhalten. Nur Name und E-Mail sind Pflichtfelder.",
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "required": "(Pflichtfeld)",
+      "optionalLegend": "Zusätzliche Angaben (freiwillig)",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "notes": "Weitere Angaben",
+      "privacy": "Ihre Daten bleiben absolut privat und werden nicht an Dritte weitergegeben.",
+      "submit": "Abonnieren",
+      "submitting": "Wird gesendet…",
+      "success": "Vielen Dank. Ihr Abonnement wurde registriert. Sie erhalten bald unsere Newsletter."
+    },
+    "unsubscribePage": {
+      "title": "Abonnement kündigen",
+      "description": "Geben Sie Ihre E-Mail-Adresse ein und wir entfernen sie aus unserer Newsletter-Liste.",
+      "email": "E-Mail-Adresse",
+      "submit": "Abmelden",
+      "submitting": "Wird verarbeitet…",
+      "success": "Wir haben Ihre Anfrage erhalten. Ihre E-Mail-Adresse wird aus unserer Newsletter-Liste entfernt.",
+      "back": "Zurück zu Newsletter"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Newsletter Nr. 1"
+      }
     }
   }
 }

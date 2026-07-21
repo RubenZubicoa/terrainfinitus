@@ -52,6 +52,7 @@ export const MAIN_NAVIGATION: NavItem[] = [
     ],
   },
   { labelKey: 'nav.blog', route: '/blog' },
+  { labelKey: 'nav.bulletins', route: '/boletines' },
   {
     labelKey: 'nav.destinations',
     children: [

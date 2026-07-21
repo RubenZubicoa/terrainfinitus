@@ -1,0 +1,97 @@
+.bulletins-unsubscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 36rem;
+}
+
+.bulletins-unsubscribe__eyebrow {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ti-copper);
+}
+
+.bulletins-unsubscribe__hero .title {
+  margin: 0 0 0.65rem;
+  font-weight: 400;
+}
+
+.bulletins-unsubscribe__description,
+.bulletins-unsubscribe__success {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ti-muted);
+}
+
+.bulletins-unsubscribe__success {
+  padding: 1rem;
+  border: 1px solid rgba(184, 115, 51, 0.25);
+  border-radius: var(--ti-radius-md);
+  background: rgba(184, 115, 51, 0.05);
+  color: var(--ti-copper-dark);
+  font-weight: 600;
+}
+
+.bulletins-unsubscribe__form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-md);
+  background: #fff;
+  box-shadow: var(--ti-shadow);
+}
+
+.bulletins-unsubscribe__field {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.bulletins-unsubscribe__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ti-charcoal);
+}
+
+.bulletins-unsubscribe__input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-sm);
+  background: var(--ti-cream-light);
+  color: var(--ti-dark);
+  font-family: var(--ti-font-body);
+  font-size: 0.9375rem;
+
+  &:focus {
+    outline: none;
+    border-color: var(--ti-copper);
+    box-shadow: 0 0 0 3px rgba(184, 115, 51, 0.15);
+  }
+}
+
+.bulletins-unsubscribe__submit {
+  min-height: 2.85rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ti-copper);
+  color: #fff;
+  font-family: var(--ti-font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    background: var(--ti-copper-dark);
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: wait;
+  }
+}

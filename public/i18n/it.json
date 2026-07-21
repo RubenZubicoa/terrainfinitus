@@ -72,6 +72,7 @@
     "galleryNature": "Natura",
     "galleryFishing": "Pesca",
     "blog": "Blog",
+    "bulletins": "Bollettini",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Acqua dolce",
     "saltwater": "Acqua salata",
@@ -1226,6 +1227,51 @@
       "invalidDates": "Il check-out deve essere dopo il check-in.",
       "guestsRequired": "Indica almeno un ospite.",
       "capacityExceeded": "Ospiti superiori alla capacità della camera."
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Bollettini",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "Per ricevere i nostri bollettini, clicca qui",
+    "thanks": "Grazie.",
+    "archiveTitle": "Bollettini pubblicati",
+    "viewIssue": "Vedi bollettino",
+    "unsubscribeHint": "Se sei già iscritto e desideri smettere di ricevere i nostri bollettini,",
+    "unsubscribeLink": "clicca qui per annullare l’iscrizione",
+    "subscribeDialog": {
+      "title": "Iscrizione ai bollettini",
+      "description": "Inserisci i tuoi dati per ricevere i nostri bollettini. Solo nome ed e-mail sono obbligatori.",
+      "name": "Nome",
+      "email": "Indirizzo e-mail",
+      "required": "(obbligatorio)",
+      "optionalLegend": "Dati aggiuntivi (facoltativi)",
+      "phone": "Telefono",
+      "address": "Indirizzo",
+      "notes": "Altri dati",
+      "privacy": "I tuoi dati rimarranno assolutamente privati e non saranno condivisi con terzi.",
+      "submit": "Iscriviti",
+      "submitting": "Invio in corso…",
+      "success": "Grazie. La tua iscrizione è stata registrata. Presto riceverai i nostri bollettini."
+    },
+    "unsubscribePage": {
+      "title": "Annulla iscrizione",
+      "description": "Inserisci il tuo indirizzo e-mail e lo rimuoveremo dalla nostra lista di bollettini.",
+      "email": "Indirizzo e-mail",
+      "submit": "Annulla iscrizione",
+      "submitting": "Elaborazione…",
+      "success": "Abbiamo ricevuto la tua richiesta. Il tuo indirizzo e-mail sarà rimosso dalla nostra lista.",
+      "back": "Torna ai bollettini"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Bollettino n. 1"
+      }
     }
   }
 }

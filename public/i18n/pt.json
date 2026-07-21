@@ -72,6 +72,7 @@
     "galleryNature": "Natureza",
     "galleryFishing": "Pesca",
     "blog": "Blog",
+    "bulletins": "Boletins",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Água doce",
     "saltwater": "Água salgada",
@@ -1226,6 +1227,51 @@
       "invalidDates": "A saída deve ser posterior à entrada.",
       "guestsRequired": "Indique pelo menos um hóspede.",
       "capacityExceeded": "Número de hóspedes excede a capacidade."
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Boletins",
+    "introParagraphs": [
+      "Periódicamente, emitimos un boletín de información y entretenimiento sobre nuestros resorts: actividades, novedades y actualizaciones.",
+      "Estos boletines no son agresivos o comerciales y normalmente consisten en una fotografía potente que recibirás y podrás disfrutar trasladando tu imaginación a algunos de los maravillosos parajes que nos rodean.",
+      "Tus datos permanecerán absolutamente privados y no serán compartidos con terceros, y la periodicidad será baja y jamás serán agresivos o comerciales.",
+      "En cualquier momento podrás darte de baja y borraremos tu dirección de correo electrónico."
+    ],
+    "subscribeCta": "Para receber os boletins, clique aqui",
+    "thanks": "Obrigado.",
+    "archiveTitle": "Boletins publicados",
+    "viewIssue": "Ver boletim",
+    "unsubscribeHint": "Se já está subscrito e deseja deixar de receber os nossos boletins,",
+    "unsubscribeLink": "clique aqui para anular a sua subscrição",
+    "subscribeDialog": {
+      "title": "Suscripción a boletines",
+      "description": "Introduce tus datos para recibir nuestros boletines. Solo el nombre y el correo electrónico son obligatorios.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "required": "(obligatorio)",
+      "optionalLegend": "Datos adicionales (voluntarios)",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "notes": "Otros datos",
+      "privacy": "Tus datos permanecerán absolutamente privados y no serán compartidos con terceros.",
+      "submit": "Subscrever",
+      "submitting": "A enviar…",
+      "success": "Obrigado. A sua subscrição foi registada. Em breve receberá os nossos boletins."
+    },
+    "unsubscribePage": {
+      "title": "Anular subscrição",
+      "description": "Introduce tu correo electrónico y eliminaremos tu dirección de nuestra lista de boletines.",
+      "email": "Correo electrónico",
+      "submit": "Cancelar subscrição",
+      "submitting": "A processar…",
+      "success": "Recebemos o seu pedido. O seu endereço de e-mail será removido da nossa lista de boletins.",
+      "back": "Voltar aos boletins"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Boletim n.º 1"
+      }
     }
   }
 }

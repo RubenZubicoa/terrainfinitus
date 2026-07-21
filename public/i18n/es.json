@@ -75,6 +75,7 @@
     "galleryNature": "Naturaleza",
     "galleryFishing": "Pesca",
     "blog": "Blog",
+    "bulletins": "Boletines",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Agua dulce",
     "saltwater": "Agua salada",
@@ -86,6 +87,51 @@
   "footer": {
     "copyright": "Derechos de Autor © {{year}} Terra Infinitus",
     "linksAria": "Enlaces del pie de página"
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Boletines",
+    "introParagraphs": [
+      "Periódicamente, emitimos un boletín de información y entretenimiento sobre nuestros resorts: actividades, novedades y actualizaciones.",
+      "Estos boletines no son agresivos o comerciales y normalmente consisten en una fotografía potente que recibirás y podrás disfrutar trasladando tu imaginación a algunos de los maravillosos parajes que nos rodean.",
+      "Tus datos permanecerán absolutamente privados y no serán compartidos con terceros, y la periodicidad será baja y jamás serán agresivos o comerciales.",
+      "En cualquier momento podrás darte de baja y borraremos tu dirección de correo electrónico."
+    ],
+    "subscribeCta": "Para recibir los boletines, pincha aquí",
+    "thanks": "Gracias.",
+    "archiveTitle": "Boletines publicados",
+    "viewIssue": "Ver boletín",
+    "unsubscribeHint": "Si ya estás suscrito y deseas dejar de recibir nuestros boletines,",
+    "unsubscribeLink": "pincha aquí para anular tu suscripción",
+    "subscribeDialog": {
+      "title": "Suscripción a boletines",
+      "description": "Introduce tus datos para recibir nuestros boletines. Solo el nombre y el correo electrónico son obligatorios.",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "required": "(obligatorio)",
+      "optionalLegend": "Datos adicionales (voluntarios)",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "notes": "Otros datos",
+      "privacy": "Tus datos permanecerán absolutamente privados y no serán compartidos con terceros.",
+      "submit": "Suscribirme",
+      "submitting": "Enviando…",
+      "success": "Gracias. Hemos registrado tu suscripción. Pronto recibirás nuestros boletines."
+    },
+    "unsubscribePage": {
+      "title": "Anular suscripción",
+      "description": "Introduce tu correo electrónico y eliminaremos tu dirección de nuestra lista de boletines.",
+      "email": "Correo electrónico",
+      "submit": "Darme de baja",
+      "submitting": "Procesando…",
+      "success": "Hemos recibido tu solicitud. Tu correo electrónico será eliminado de nuestra lista de boletines.",
+      "back": "Volver a boletines"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Boletín n.º 1"
+      }
+    }
   },
   "home": {
     "eyebrow": "Experiencias únicas",

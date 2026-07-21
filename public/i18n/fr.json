@@ -72,6 +72,7 @@
     "galleryNature": "Nature",
     "galleryFishing": "Pêche",
     "blog": "Blog",
+    "bulletins": "Bulletins",
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Eau douce",
     "saltwater": "Eau salée",
@@ -1226,6 +1227,51 @@
       "invalidDates": "Le départ doit être après l'arrivée.",
       "guestsRequired": "Indiquez au moins une personne.",
       "capacityExceeded": "Capacité de la chambre dépassée."
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Bulletins",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "Pour recevoir nos bulletins, cliquez ici",
+    "thanks": "Merci.",
+    "archiveTitle": "Bulletins publiés",
+    "viewIssue": "Voir le bulletin",
+    "unsubscribeHint": "Si vous êtes déjà abonné et souhaitez ne plus recevoir nos bulletins,",
+    "unsubscribeLink": "cliquez ici pour annuler votre abonnement",
+    "subscribeDialog": {
+      "title": "Abonnement aux bulletins",
+      "description": "Saisissez vos coordonnées pour recevoir nos bulletins. Seuls le nom et l’e-mail sont obligatoires.",
+      "name": "Nom",
+      "email": "Adresse e-mail",
+      "required": "(obligatoire)",
+      "optionalLegend": "Informations supplémentaires (facultatives)",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "notes": "Autres informations",
+      "privacy": "Vos données resteront absolument privées et ne seront pas partagées avec des tiers.",
+      "submit": "S’abonner",
+      "submitting": "Envoi en cours…",
+      "success": "Merci. Votre abonnement a été enregistré. Vous recevrez bientôt nos bulletins."
+    },
+    "unsubscribePage": {
+      "title": "Annuler l’abonnement",
+      "description": "Saisissez votre adresse e-mail et nous la supprimerons de notre liste de bulletins.",
+      "email": "Adresse e-mail",
+      "submit": "Se désabonner",
+      "submitting": "Traitement…",
+      "success": "Nous avons reçu votre demande. Votre adresse e-mail sera supprimée de notre liste.",
+      "back": "Retour aux bulletins"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Bulletin nº 1"
+      }
     }
   }
 }
