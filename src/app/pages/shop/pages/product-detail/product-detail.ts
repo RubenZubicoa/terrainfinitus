@@ -5,6 +5,7 @@ import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/rout
 import { TranslateModule } from '@ngx-translate/core';
 import { catchError, filter, map, of, startWith, switchMap } from 'rxjs';
 import { CartService } from '../../../../core/services/cart.service';
+import { CurrentUserService } from '../../../../core/services/current-user-service';
 import { NotificationService } from '../../../../core/services/notification.service';
 import { Product } from '../../../../shared/models/product.models';
 import {
@@ -35,6 +36,7 @@ export class ProductDetail {
   private readonly router = inject(Router);
   private readonly gourmetService = inject(GourmetService);
   protected readonly cartService = inject(CartService);
+  protected readonly currentUserService = inject(CurrentUserService);
   private readonly notificationService = inject(NotificationService);
 
   readonly highlightKeys = HIGHLIGHT_KEYS;
