@@ -40,6 +40,9 @@
 }
 
 .home-video__frame {
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
   border-radius: var(--ti-radius-md);
   overflow: hidden;
   background: var(--ti-dark);
@@ -49,6 +52,8 @@
 }
 
 .home-video__player {
+  position: relative;
+  z-index: 0;
   width: 100%;
   height: 100%;
   border: 0;

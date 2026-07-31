@@ -13,12 +13,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 1100;
   width: var(--ti-sidebar-width);
   height: 100dvh;
   transform: translateX(0);
   transition: transform var(--ti-transition);
   box-shadow: var(--ti-shadow-lg);
+  isolation: isolate;
+  background: var(--ti-cream);
 }
 
 .shell__main {
@@ -61,7 +63,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  z-index: 150;
+  z-index: 1050;
   border: none;
   padding: 0;
   background: rgba(7, 6, 20, 0.55);
@@ -84,5 +86,13 @@
 
   .shell--nav-open .shell__backdrop {
     display: block;
+  }
+
+  /* Los controles nativos de <video> se pintan por encima del menú en móvil. */
+  .shell--nav-open .shell__content {
+    video,
+    iframe {
+      visibility: hidden;
+    }
   }
 }
