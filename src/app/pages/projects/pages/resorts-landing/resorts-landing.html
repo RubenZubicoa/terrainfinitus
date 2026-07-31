@@ -1,0 +1,19 @@
+<div class="resorts-landing">
+  <header class="resorts-landing__hero">
+    <p class="resorts-landing__eyebrow">{{ 'projects.landing.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'projects.landing.title' | translate }}</h1>
+    <p class="resorts-landing__intro">{{ 'projects.landing.intro' | translate }}</p>
+  </header>
+
+  <div class="resorts-landing__sections" [attr.aria-label]="'projects.landing.sectionsAria' | translate">
+    @for (section of sections; track section.route) {
+      <article class="resorts-landing__section">
+        <h2 class="resorts-landing__section-title">{{ section.titleKey | translate }}</h2>
+        <p class="resorts-landing__section-text">{{ section.descriptionKey | translate }}</p>
+        <a class="resorts-landing__cta" [routerLink]="section.route">
+          {{ section.ctaKey | translate }}
+        </a>
+      </article>
+    }
+  </div>
+</div>

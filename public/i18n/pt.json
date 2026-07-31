@@ -685,6 +685,26 @@
     "navAria": "Resort sections",
     "mobileSectionLabel": "Section",
     "sectionPending": "Esta secção será concluída em breve com o conteúdo fornecido pelo cliente.",
+    "landing": {
+      "eyebrow": "Os nossos Resorts",
+      "title": "Projetos Terra Infinitus",
+      "intro": "Descubra os nossos projetos de turismo de luxo sustentável: a visão que nos inspira e os resorts onde a natureza, a exclusividade e a hospitalidade se encontram. Escolha uma secção para conhecer cada destino em detalhe.",
+      "sectionsAria": "Secções dos nossos resorts",
+      "idea": {
+        "title": "A ideia",
+        "description": "A visão, a equipa e a filosofia por detrás da Terra Infinitus: um projeto turístico excepcional pensado para pessoas únicas em ambientes de sonho.",
+        "cta": "Descobrir a ideia"
+      },
+      "peralejos": {
+        "cta": "Explorar Peralejos"
+      },
+      "bugarra": {
+        "cta": "Explorar Bugarra"
+      },
+      "theLake": {
+        "cta": "Explorar The Lake"
+      }
+    },
     "idea": {
       "title": "A ideia",
       "alt1": "Terra Infinitus",

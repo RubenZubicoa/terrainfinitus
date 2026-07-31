@@ -7,6 +7,7 @@ export const MAIN_NAVIGATION: NavItem[] = [
   { labelKey: 'nav.about', route: '/quienes-somos' },
   {
     labelKey: 'nav.resorts',
+    route: '/proyectos',
     children: buildResortsNavigationChildren(),
   },
   { labelKey: 'nav.rooms', route: '/habitaciones' },
