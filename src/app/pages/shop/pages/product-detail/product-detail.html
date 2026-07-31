@@ -29,6 +29,12 @@
             {{ product.price | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
             <span>{{ 'shop.detail.priceLabel' | translate }}</span>
           </p>
+          @if (product.professionalPrice != null) {
+            <p class="product-detail__price product-detail__price--professional">
+              {{ product.professionalPrice | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
+              <span>{{ 'shop.detail.professionalPriceLabel' | translate }}</span>
+            </p>
+          }
           <ul class="product-detail__badges">
             @for (highlightKey of highlightKeys; track highlightKey) {
               <li>{{ highlightKey | translate }}</li>

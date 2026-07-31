@@ -123,6 +123,12 @@
     text-transform: uppercase;
     color: var(--ti-muted);
   }
+
+  &--professional {
+    margin-top: -0.35rem;
+    font-size: clamp(1.35rem, 2.4vw, 1.65rem);
+    color: var(--ti-copper-dark);
+  }
 }
 
 .product-detail__badges {

@@ -92,11 +92,35 @@
   color: var(--ti-muted);
 }
 
-.product-card__price {
+.product-card__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
   margin: 0.25rem 0 0;
+}
+
+.product-card__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.55rem;
+  margin: 0;
   font-size: 1rem;
   font-weight: 600;
   color: var(--ti-copper);
+}
+
+.product-card__price--professional {
+  font-size: 0.9375rem;
+  color: var(--ti-copper-dark);
+}
+
+.product-card__price-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ti-muted);
 }
 
 .product-card__footer {
