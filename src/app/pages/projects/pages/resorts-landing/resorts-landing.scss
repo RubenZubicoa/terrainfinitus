@@ -36,6 +36,22 @@
   text-align: justify;
 }
 
+.resorts-landing__image {
+  padding: 0;
+  width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    max-height: min(360px, 45vh);
+    object-fit: cover;
+    border-radius: var(--ti-radius-md);
+    box-shadow: var(--ti-shadow);
+  }
+}
+
 .resorts-landing__sections {
   display: grid;
   gap: clamp(1.25rem, 2.5vw, 1.75rem);
@@ -93,5 +109,9 @@
   .resorts-landing__intro,
   .resorts-landing__section-text {
     text-align: left;
+  }
+
+  .resorts-landing__image img {
+    max-height: min(220px, 35vh);
   }
 }

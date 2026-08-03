@@ -5,6 +5,14 @@
     <p class="resorts-landing__intro">{{ 'projects.landing.intro' | translate }}</p>
   </header>
 
+  <div class="image-container resorts-landing__image">
+    <img
+      src="/images/nuestros-resorts/image.jpeg"
+      [alt]="'projects.landing.imageAlt' | translate"
+      loading="lazy"
+    />
+  </div>
+
   <div class="resorts-landing__sections" [attr.aria-label]="'projects.landing.sectionsAria' | translate">
     @for (section of sections; track section.route) {
       <article class="resorts-landing__section">

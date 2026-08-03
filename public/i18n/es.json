@@ -734,7 +734,8 @@
     "landing": {
       "eyebrow": "Nuestros Resorts",
       "title": "Proyectos Terra Infinitus",
-      "intro": "Descubre nuestros proyectos de turismo de lujo sostenible: la visión que nos inspira y los resorts donde la naturaleza, la exclusividad y la hospitalidad se encuentran. Elige una sección para conocer cada destino en detalle.",
+      "intro": "En esta sección presentamos los tres Proyectos con los que contamos, en los cuales detallamos todas las características, información y servicios de los mismos.",
+      "imageAlt": "Atardecer sobre el paisaje de nuestros resorts",
       "sectionsAria": "Secciones de nuestros resorts",
       "idea": {
         "title": "La idea",
