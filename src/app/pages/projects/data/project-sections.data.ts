@@ -114,6 +114,13 @@ export const RESORTS: readonly ResortConfig[] = [
     defaultSectionId: 'nuestro-proyecto',
     sections: [
       {
+        id: 'nuestro-proyecto',
+        translationKey: 'projects.theLake.sections.nuestroProyecto',
+        contentType: 'paragraphs',
+        imageSrc: '/images/the-lake/logo-the-lake.png',
+        imageAltKey: 'projects.theLake.logoAlt',
+      },
+      {
         id: 'historia-pesca',
         translationKey: 'projects.theLake.sections.historiaPesca',
         contentType: 'paragraphs',
@@ -127,13 +134,6 @@ export const RESORTS: readonly ResortConfig[] = [
         id: 'tramos-intensivos',
         translationKey: 'projects.theLake.sections.tramosIntensivos',
         contentType: 'paragraphs',
-      },
-      {
-        id: 'nuestro-proyecto',
-        translationKey: 'projects.theLake.sections.nuestroProyecto',
-        contentType: 'paragraphs',
-        imageSrc: '/images/the-lake/the-lake-1.jpg',
-        imageAltKey: 'projects.theLake.imageAlt',
       },
     ],
   },
