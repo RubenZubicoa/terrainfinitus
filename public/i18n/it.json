@@ -738,8 +738,14 @@
           "title": "Introduzione",
           "paragraphs": []
         },
+        "laZona": {
+          "title": "La zona"
+        },
         "quienesSomos": {
-          "title": "Chi siamo? Perché? L’azienda, sinergie"
+          "title": "Chi siamo?"
+        },
+        "sinergias": {
+          "title": "Sinergie"
         },
         "conceptosTuristicos": {
           "title": "Concetti turistici applicati, fasi"

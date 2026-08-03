@@ -738,8 +738,14 @@
           "title": "紹介",
           "paragraphs": []
         },
+        "laZona": {
+          "title": "この地域"
+        },
         "quienesSomos": {
-          "title": "私たちについて。なぜ？企業とシナジー"
+          "title": "私たちについて"
+        },
+        "sinergias": {
+          "title": "シナジー"
         },
         "conceptosTuristicos": {
           "title": "適用される観光概念、フェーズ"

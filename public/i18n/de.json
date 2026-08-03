@@ -738,8 +738,14 @@
           "title": "Einleitung",
           "paragraphs": []
         },
+        "laZona": {
+          "title": "Die Region"
+        },
         "quienesSomos": {
-          "title": "Wer sind wir? Warum? Das Unternehmen, Synergien"
+          "title": "Wer sind wir?"
+        },
+        "sinergias": {
+          "title": "Synergien"
         },
         "conceptosTuristicos": {
           "title": "Angewandte Tourismuskonzepte, Phasen"

@@ -26,9 +26,19 @@ export const RESORTS: readonly ResortConfig[] = [
         contentType: 'paragraphs',
       },
       {
+        id: 'la-zona',
+        translationKey: 'projects.peralejos.sections.laZona',
+        contentType: 'paragraphs',
+      },
+      {
         id: 'quienes-somos',
         translationKey: 'projects.peralejos.sections.quienesSomos',
-        contentType: 'pending',
+        contentType: 'paragraphs',
+      },
+      {
+        id: 'sinergias',
+        translationKey: 'projects.peralejos.sections.sinergias',
+        contentType: 'paragraphs',
       },
       {
         id: 'conceptos-turisticos',
