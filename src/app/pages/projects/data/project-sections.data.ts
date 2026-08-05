@@ -24,8 +24,6 @@ export const RESORTS: readonly ResortConfig[] = [
         id: 'introduccion',
         translationKey: 'projects.peralejos.sections.introduccion',
         contentType: 'paragraphs',
-        pdfPath: '/documents/peralejos/introduccion-al-proyecto.pdf',
-        pdfLabelKey: 'projects.peralejos.pdfIntroViewer',
       },
       {
         id: 'la-zona',
