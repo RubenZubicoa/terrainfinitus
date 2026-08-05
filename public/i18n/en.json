@@ -731,6 +731,7 @@
     "navAria": "Resort sections",
     "mobileSectionLabel": "Section",
     "sectionPending": "This section will be completed soon with content provided by the client.",
+    "imagePlaceholder": "Image pending",
     "landing": {
       "eyebrow": "Our Resorts",
       "title": "Terra Infinitus projects",
@@ -782,9 +783,29 @@
         "introduccion": {
           "title": "Introduction",
           "paragraphs": [
-            "Focused on building and developing a six-star hotel along with ten bungalows, a gourmet restaurant, hydrotherapy areas, pools, gyms, spas, tourist activities, online shop, vehicle rental and guide services, among other features, in the heart of the privileged Alto Tajo Natural Park in Peralejos de Las Truchas, Guadalajara — a project we started more than two years ago and which is in full development and design phase.",
-            "We will have around thirty rooms, ranging from nearly one hundred to four hundred square metres, gourmet dining and a wealth of exquisite details that will give the Project the highest reputation and prestige in Spain and abroad. The Project will be developed in phases, with many constructions and infrastructures already completed.",
-            "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures."
+            "In this dream we have brought together a very special group of very different people, united by a common idea: to create a tourism project suited to a dream place like Peralejos.",
+            "We have extensive experience in tourism and gastronomy; we come from a project of more than thirty years in Patagonia, where we run a first-class lodge welcoming top international personalities — singers, actors, politicians, business leaders — who return again and again. The destination has been rated preferential on TripAdvisor, and Chile’s Ministry of Tourism recognised it as the country’s best tourism establishment in 2008.",
+            "Our philosophy is to create a unique environment for unique people. We know we work with something that deserves absolute responsibility: our clients’ dreams. We have built an unmatched reputation and a captive market of guests who will be a major contribution to our new project in Peralejos.",
+            "Among them are Robert Redford, Tom Selleck, John Denver, Madonna, White House members, painters, presidents of major corporations such as Coca-Cola and Inditex, journalists, writers, athletes and actors — and a treasure of testimonials and recommendations we will bring to Peralejos.",
+            "Some of these guests have been visiting us for more than eighteen years in a row, not only in Patagonia but also in destinations such as the Amazon, the Caribbean and Spain. They will undoubtedly be regular visitors to our Castilla-La Mancha infrastructure.",
+            "Our family also includes creatives with genuine sensitivity: experience in Spanish hospitality, customer service, furniture design, decoration and gastronomy. Landscaping professionals will design an oasis within the property; water technicians and other staff will be recruited locally and trained so the whole exceeds our guests’ expectations.",
+            "We have carried out a thorough study of vital aspects so that our infrastructure reaches the highest level, tailored to the market our idea is aimed at.",
+            "What is luxury? Luxury means very different things to different people. There is no absolute truth: respecting individual freedom of thought, the definition of luxury belongs to each person. We serve a demand that we personally share.",
+            "After travelling widely and visiting every kind of establishment, we concluded that we do not really like traditional hotels: they turn you into a number — anonymous and lacking the peculiarities we love in luxury travel.",
+            "Regardless of size or star rating, you are one of hundreds or thousands. Massage requires booking hours or days ahead. Pools, spas and saunas are shared with strangers; cafés involve waiting and protocols that steal rest and privacy. Staff barely know your name. Rooms look alike and you almost have to beg for a view.",
+            "Many hotels share the same décor and an acceptable quality-price balance, yet a special day with your partner, friends or team is shared with strangers — noise, photos, phone calls. For us, that is not luxury, but a series of small annoyances.",
+            "We do not claim the only definition of luxury, but we defend ours and apply it radically. Around thirty rooms mean special guests who are never anonymous. Extensive common areas can be used freely, without appointments or unwanted company: terraces, garden corners, rooms, spas, pools, gyms, cafés, saunas and private rooms.",
+            "Mobile phones and recording devices are not allowed in common areas. From Patagonia we learned to protect the privacy of famous and non-famous guests alike, so they can go unnoticed.",
+            "A drink can be requested from staff or taken from visi-coolers around the grounds; the same applies to coffee, snacks and juices. Guests choose their parking space, view it via the iPad given on arrival, control room temperatures, check spa and pool temperatures, choose menus, shop and move freely through common areas.",
+            "We focus on a layer of luxury within luxury, where real exclusivity means minority attention. In restaurants and cafés no tables sit side by side. Each room has its own character. We decorate as guests would decorate their own homes — we aim to be a home more than a hotel.",
+            "We avoid rigid check-in and check-out times. We prefer to call guests “invitees”: economic freedom and as few extras as possible, minimising the hated phrase “this is not included”.",
+            "The complex will be run by a highly trained team under outstanding working conditions: we do not have employees, we have a team. Owners and managers will be available to guests so their stay fully exceeds expectations. We are not claiming to be better than others — simply different, serving a different segment.",
+            "True luxury in hotels and restaurants goes far beyond price. It is measured by experience: exclusive surroundings, impeccable service and the ability to delight from the first moment.",
+            "We address a particularly demanding segment of the luxury market. A boutique hotel can feel more personal than a large chain. We take that idea further, with a guest-to-staff ratio well above typical hospitality standards.",
+            "True luxury lives in every detail — textiles, lighting, tableware, views, noble materials, climate, acoustics and integrated technology. Each guest receives an iPad to manage services, rest, pillows and room ambience, with sustainability data such as carbon footprint and solar generation in real time.",
+            "In Patagonia we achieved 85% repeat stays and, in peak seasons, waiting lists of several years — a goal we aim to replicate. With around thirty rooms and strong loyalty, plus a captive database of some six hundred thousand contacts, we start already halfway there.",
+            "This project seeks excellence beyond extreme quality. Official ratings in Europe stop at five stars, but six and seven exist worldwide, based on care and exclusivity as much as facilities. True exclusivity cannot be massified: each guest has a name and knows the team; spaces serve the guest, not the other way around.",
+            "Our best rating is our guests’ opinion. Hence our slogan: “we have millions of stars.” We sit in a privileged Free Sky place without light pollution — crowned not by five or six stars, but by millions of them. Silence, peace and warmth, with skies visible from almost every point of the hotel, are the finest rating we could aspire to."
           ]
         },
         "laZona": {
@@ -837,11 +858,46 @@
             "Peralejos Expeditios: a company that will be handed over to selected young people from the village and will run all tourism activities for our clients and external clients."
           ]
         },
+        "edificaciones": {
+          "title": "Buildings",
+          "paragraphs": [
+            "Tower I: this five-storey building is one of the central structures, with the main entrance and the most important areas of the whole complex.",
+            "On Tower I ground level (floor 0) are the gym, sauna, games room, WCs, showers, counter-current swimming pool, changing rooms and other smaller spaces (about 174.5 m² built).",
+            "On the ground floor are the main access to the tower and hotel, stairs, kitchens, service bathrooms, dining room, reception, bar-pub, cloakroom, office, storeroom and wine cellar, plus other smaller rooms (about 760.62 m² built).",
+            "Floors 1 to 4 mainly house rooms, stairs, lift and common areas. Each has suites (five per floor on several levels) and around 800–810 m² built. Tower I totals about 4,492.59 m² built.",
+            "Staff floors (mezzanine and −1) contain individual rooms with bathroom for staff. Together with the planned apartment, they can accommodate up to ten employees in comfort.",
+            "Tower II: also five storeys, houses top-level rooms — Top Presidential, Presidential Suites, Suites and Junior Suites — plus a meeting room and control rooms for the four solar fields, batteries, tool room, barbecue, terraces, water tanks and machinery. Given its location it is the tallest building above the complex’s zero level, with unmatched views. It has a lift and stairs, three independent accesses from Tower I, and a glazed corridor linking the two towers.",
+            "On Tower II floor 0 there are three independent vehicle entrances, a tool room, solar field and battery control centre, VIP parking for four vehicles and common areas with access to stairs and lift (about 271.40 m² built).",
+            "Upper floors of Tower II house suites with terraces and common areas (around 350 m² per floor). Floor 4 includes the largest suite in the complex, about three hundred square metres, with a terrace of privileged views; duplexes with private terraces are created on the roof level.",
+            "Rooms: no resource has been spared to design and equip them for the expected clientele. Each has a unique design — decoration, orientation, views and terrace type differ — with three-metre ceiling height and first-class fittings: XXXL bed, large-format TV, personalised iPad, fibre optic, emission-free fireplace, underfloor heating, climate control, safe, butler, 24-hour service and more than twenty-five square metres, among other details.",
+            "Bathrooms: conceived as an oasis, with natural light, home automation, luxury materials and innovations (XXL jacuzzi, smart mirror, hydromassage, aromatherapy, smart WC, non-slip floor, heated towel rail, etc.). They are one of the complex’s best calling cards and loyalty drivers.",
+            "In addition to the main buildings, the project includes 11 luxury bungalows (types A and B) to support luxury motorhomes and glamping, diversify the business model and reach another guest profile. A type A pilot bungalow already exists; in the first phase three type B units will be built."
+          ]
+        },
+        "terrenos": {
+          "title": "Land",
+          "paragraphs": [
+            "Project location: the whole complex sits on four plots — Carretera del Albergue 25A, 25B and 25C, and Polígono 5 plot 11. Cadastral plans and a topographic survey are available; main buildings are detailed in the buildings section.",
+            "Areas: plot 25A, 444 m²; plot 25B, 1,002 m²; plot 25C, 1,932 m²; plot 11, 13,600 m². Approximate total: 16,978 m². Three further plots are under negotiation.",
+            "Within the perimeter: entrances, bungalows, internal paths, motorhome area, parking and spa, sauna and gym buildings.",
+            "Site plan: original and final project layouts place every building and zone on the plots (Tower I, Tower II, bungalows, dwelling, spa/gym/massage buildings, conference hall, organic garden and henhouse, guest and VIP parking, etc.).",
+            "Parking: besides enclosed parking, there is covered outdoor space for events or restaurant guests; bus parking; and space for up to three luxury motorhomes with bathroom, shower, water, sewage and VIP services. Among others: VIP parking at Tower II and plot 16-25C, guest and motorhome parking on plot 16, and bungalow parking beside those units."
+          ]
+        },
+        "servicios": {
+          "title": "Services",
+          "paragraphs": [
+            "Spa, sauna, massage, gym and pool buildings: several structures group massage rooms, sauna, counter-current pool, jacuzzi, hydrotherapy circuit, bar, spas and similar equipment; outside, a large pool, smaller pools and several spas. The layout avoids crowding: each guest chooses a space and uses it exclusively, with no schedules or waiting lists. The ensemble is visible from any point of the complex.",
+            "Several zones are distinguished: Tower I floor 0 (swim pool, showers, WC and gym next to the games room); others in Tower II, Águila building, spa and pool area, and the romantic pool and beach.",
+            "Garages: spacious, climate-controlled luxury spaces per room, with individual video cameras the vehicle owner can monitor, smoke, flood, fire and noise detection, and an isolated, avant-garde design. There is also parking for visitors, events, buses and vehicles needing security, placed next to each area of interest with shade and weather protection.",
+            "Laundry: each room includes an iron, board and suit hanging space; the hotel also offers wash and iron service with a special net and request form.",
+            "Entrances: four vehicle accesses with automatic opening controllable from the guest’s phone, and five illuminated pedestrian accesses under 24-hour CCTV. There are three VIP entrances, one service/goods entrance and one for bungalows, separating flows. All accesses stay closed, with video intercoms. The hotel operates by reservation only, with no street walk-in access, for maximum security and privacy.",
+            "Games room, gym, spa and swim pool: next to the main gym — billiards, darts, board games, video games and a bar, with noble woods, lighting and high-definition cinema/sound.",
+            "Mobile phones, cameras and tobacco: for exclusivity, discretion and the security of illustrious guests, mobiles and any recording or listening device are not allowed in common areas — only in guest rooms. The entire grounds, indoors and outdoors, are smoke-free: tobacco and similar products are not permitted."
+          ]
+        },
         "conceptosTuristicos": {
           "title": "Applied tourism concepts, phases"
-        },
-        "edificaciones": {
-          "title": "Buildings, room types, floor plans"
         },
         "bungalows": {
           "title": "Bungalows"
@@ -864,7 +920,8 @@
         "staffImpacto": {
           "title": "Staff and jobs, direct impact on the Community"
         }
-      }
+      },
+      "pdfIntroViewer": "Full document: Project introduction"
     },
     "bugarra": {
       "title": "Terra Infinitus Bugarra luxury resort",

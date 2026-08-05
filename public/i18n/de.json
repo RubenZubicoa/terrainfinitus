@@ -686,6 +686,7 @@
     "navAria": "Resort sections",
     "mobileSectionLabel": "Section",
     "sectionPending": "Dieser Abschnitt wird in Kürze mit den vom Kunden bereitgestellten Inhalten vervollständigt.",
+    "imagePlaceholder": "Bild ausstehend",
     "landing": {
       "eyebrow": "Unsere Resorts",
       "title": "Terra Infinitus Projekte",
@@ -751,7 +752,13 @@
           "title": "Angewandte Tourismuskonzepte, Phasen"
         },
         "edificaciones": {
-          "title": "Gebäude, Zimmertypen, Grundrisse"
+          "title": "Gebäude"
+        },
+        "terrenos": {
+          "title": "Grundstücke"
+        },
+        "servicios": {
+          "title": "Dienstleistungen"
         },
         "bungalows": {
           "title": "Bungalows"

@@ -686,6 +686,7 @@
     "navAria": "リゾートのセクション",
     "mobileSectionLabel": "Section",
     "sectionPending": "このセクションは、クライアントから提供されるコンテンツで近日中に完成します。",
+    "imagePlaceholder": "画像準備中",
     "landing": {
       "eyebrow": "Our Resorts",
       "title": "Terra Infinitus projects",
@@ -751,7 +752,13 @@
           "title": "適用される観光概念、フェーズ"
         },
         "edificaciones": {
-          "title": "建物、客室タイプ、平面図"
+          "title": "建物"
+        },
+        "terrenos": {
+          "title": "土地"
+        },
+        "servicios": {
+          "title": "サービス"
         },
         "bungalows": {
           "title": "Bungalows"
