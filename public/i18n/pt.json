@@ -760,26 +760,47 @@
         "servicios": {
           "title": "Serviços"
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "restauracion": {
+          "title": "Restauração"
         },
-        "spasHidroterapia": {
-          "title": "Spas, piscinas, saunas, ginásios, hidroterapia, terraços, biblioteca"
+        "otrasZonas": {
+          "title": "Outras zonas"
         },
-        "gimnasioRecepcion": {
-          "title": "Ginásio, receção, sala de reuniões"
+        "tienda": {
+          "title": "Loja"
         },
-        "cocinaCarta": {
-          "title": "Cozinha, a nossa carta"
+        "paquetesTuristicos": {
+          "title": "Pacotes turísticos"
         },
-        "tiendaPaquetes": {
-          "title": "Loja, pacotes turísticos"
+        "reservas": {
+          "title": "Reservas"
         },
-        "rutasTrekking": {
-          "title": "Rotas de trekking e running, programas turísticos, análise, situação turística da zona"
+        "suministros": {
+          "title": "Fornecimentos"
         },
-        "staffImpacto": {
-          "title": "Equipa e postos de trabalho, impacto direto na comunidade"
+        "helipuerto": {
+          "title": "Heliporto"
+        },
+        "domotica": {
+          "title": "Domótica"
+        },
+        "seguridad": {
+          "title": "Segurança"
+        },
+        "programas": {
+          "title": "Programas"
+        },
+        "situacionTuristica": {
+          "title": "Situação turística"
+        },
+        "web": {
+          "title": "Web"
+        },
+        "staff": {
+          "title": "Staff"
+        },
+        "gestion": {
+          "title": "Gestão"
         }
       }
     },

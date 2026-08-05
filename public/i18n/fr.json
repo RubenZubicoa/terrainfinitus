@@ -748,9 +748,6 @@
         "sinergias": {
           "title": "Synergies"
         },
-        "conceptosTuristicos": {
-          "title": "Concepts touristiques appliqués, phases"
-        },
         "edificaciones": {
           "title": "Bâtiments"
         },
@@ -760,26 +757,47 @@
         "servicios": {
           "title": "Services"
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "restauracion": {
+          "title": "Restauration"
         },
-        "spasHidroterapia": {
-          "title": "Spas, piscines, saunas, gymnases, hydrothérapie, terrasses, bibliothèque"
+        "otrasZonas": {
+          "title": "Autres zones"
         },
-        "gimnasioRecepcion": {
-          "title": "Gymnase, réception, salle de réunion"
+        "tienda": {
+          "title": "Boutique"
         },
-        "cocinaCarta": {
-          "title": "Cuisine, notre carte"
+        "paquetesTuristicos": {
+          "title": "Forfaits touristiques"
         },
-        "tiendaPaquetes": {
-          "title": "Boutique, forfaits touristiques"
+        "reservas": {
+          "title": "Réservations"
         },
-        "rutasTrekking": {
-          "title": "Itinéraires de trekking et running, programmes touristiques, analyse, situation touristique de la zone"
+        "suministros": {
+          "title": "Fournitures"
         },
-        "staffImpacto": {
-          "title": "Personnel et emplois, impact direct sur la communauté"
+        "helipuerto": {
+          "title": "Héliport"
+        },
+        "domotica": {
+          "title": "Domotique"
+        },
+        "seguridad": {
+          "title": "Sécurité"
+        },
+        "programas": {
+          "title": "Programmes"
+        },
+        "situacionTuristica": {
+          "title": "Situation touristique"
+        },
+        "web": {
+          "title": "Site web"
+        },
+        "staff": {
+          "title": "Personnel"
+        },
+        "gestion": {
+          "title": "Gestion"
         }
       }
     },

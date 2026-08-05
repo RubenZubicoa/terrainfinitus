@@ -760,26 +760,47 @@
         "servicios": {
           "title": "サービス"
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "restauracion": {
+          "title": "レストラン"
         },
-        "spasHidroterapia": {
-          "title": "スパ、プール、サウナ、ジム、水治療、テラス、図書館"
+        "otrasZonas": {
+          "title": "その他のエリア"
         },
-        "gimnasioRecepcion": {
-          "title": "ジム、受付、会議室"
+        "tienda": {
+          "title": "ショップ"
         },
-        "cocinaCarta": {
-          "title": "キッチン、メニュー"
+        "paquetesTuristicos": {
+          "title": "観光パッケージ"
         },
-        "tiendaPaquetes": {
-          "title": "ショップ、ツアーパッケージ"
+        "reservas": {
+          "title": "予約"
         },
-        "rutasTrekking": {
-          "title": "トレッキング・ランニングルート、観光プログラム、分析、地域の観光状況"
+        "suministros": {
+          "title": "設備・供給"
         },
-        "staffImpacto": {
-          "title": "スタッフと雇用、地域社会への直接的影響"
+        "helipuerto": {
+          "title": "ヘリポート"
+        },
+        "domotica": {
+          "title": "ホームオートメーション"
+        },
+        "seguridad": {
+          "title": "セキュリティ"
+        },
+        "programas": {
+          "title": "プログラム"
+        },
+        "situacionTuristica": {
+          "title": "観光状況"
+        },
+        "web": {
+          "title": "ウェブサイト"
+        },
+        "staff": {
+          "title": "スタッフ"
+        },
+        "gestion": {
+          "title": "経営管理"
         }
       }
     },

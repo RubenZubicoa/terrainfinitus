@@ -896,29 +896,141 @@
             "Teléfonos móviles, cámaras y tabaco: por exclusividad, discreción y seguridad de huéspedes ilustres, móviles y cualquier sistema de grabación o escucha no están permitidos en espacios comunes; solo en las habitaciones. Todo el recinto, interior y exterior, es libre de humo: no se permite fumar tabaco ni similares."
           ]
         },
-        "conceptosTuristicos": {
-          "title": "Conceptos turísticos aplicados, fases"
+        "restauracion": {
+          "title": "Restauración",
+          "paragraphs": [
+            "Cocina, restaurante y cafetería: persiguiendo la originalidad y el diseño en todo el proyecto, en la oferta gastronómica no se ha escatimado esfuerzo en la concepción de platos y menús. La carta se basa en productos originales y auténticos (orgánicos, con trazabilidad y calidad), primeras marcas, y rapidez y dedicación en el servicio: cada plato indica el tiempo que tardará en servirse.",
+            "Con un equipo profesional y en formación permanente, comer o beber en el establecimiento será un placer para los sentidos: emoción, calidez, autenticidad y excelencia, en un entorno con vistas y luz natural, decoración exquisita pero sencilla, comodidad y ergonomía, y plena independencia respecto a otros comensales.",
+            "Se ha diseñado una cocina ad hoc para el complejo, con novedades tecnológicas, elaboración cuidadosa, rapidez y eficacia en el servicio y comodidad para el personal. Se priorizan proveedores cercanos que reduzcan la huella de carbono y suministradores eficientes de carnes, pescados, mariscos, aceites, vinagres, patés, pastas y productos gourmet, sin olvidar lo producido en las propias instalaciones.",
+            "Cubertería, vajilla y mantelerías: se han creado diseños personalizados al nivel de la restauración —platos de todos los tamaños, bajos, cristalería fina—, de modo que cada plato de la carta se presenta con vajilla específica (porcelana, bandejas, tablas de maderas nobles, cerámicas). Las mantelerías se diseñan según el tipo de evento, la hora del día y las necesidades decorativas.",
+            "Comedores: equipamiento de primera calidad en maderas nobles, con piedra, acero y cristal, y una decoración clásica y acogedora en chimeneas, cuadros y luminarias. Cada mesa o rincón está pensado para que unas mesas no interfieran con otras, visual ni acústicamente. La experiencia comienza en sillones y rincones frente a chimeneas, terrazas y fuentes con aperitivos, continúa en la mesa y se remata en sobremesa con bajativos, licores premium, cafés e infusiones en otra zona.",
+            "Nuestras cartas: se han elaborado cuatro cartas, una por estación, concebidas como obras de arte. Cada plato describe procedencia y trazabilidad, composición y posibles alérgenos, tiempo de servicio y número de comensales de la ración. La cocina combina imaginación, celeridad y presentación de primer nivel, desde la sencillez hasta la sofisticación.",
+            "Corners de autoservicio: encurtidos y escabeches; más de treinta aceites de toda la geografía española; más de setenta picantes, condimentos y sales del mundo; y corner de ensaladas con producto fresco y orgánico, reduciendo desperdicio. La carta de vinos y licores combina referencias de prestigio con procedencias y cepas menos conocidas, y destilados de nivel extraordinario —por ejemplo, recorrer la evolución de un mismo whisky a distintas edades.",
+            "La selección de destilados, asesorada con Hisúmer, se entiende como extensión de la experiencia del hotel: marcas premium con historia y diferenciación, convivencia con referencias reconocibles, formación del equipo, recomendaciones por perfil de cliente y experiencias de cata. La pregunta no es solo qué marcas conoce todo el mundo, sino qué recuerdo queremos que el cliente lleve consigo."
+          ]
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "otrasZonas": {
+          "title": "Otras zonas",
+          "paragraphs": [
+            "Zona de barbacoa y horno de leña: espacio castizo para encuentros informales, desayunos, picoteos, comidas y cenas, con vistas impresionantes. Incluye grifo de cerveza gratuito, cafetera, microondas, aire acondicionado, extractor, ventilador, calefacción de leña, plancha, barbacoa y horno de leña, cocina de gas e inducción, cubertería y vajilla especiales, decoración cuidada, y luz y sonido manejables desde iPad o en el propio recinto, para actividades particulares o de grupo sin injerencias.",
+            "El entorno: las vistas son espectaculares de día y de noche; tranquilidad, paz y romanticismo crean un clima único, de la mano del espíritu del Parque Nacional del Alto Tajo.",
+            "Oficinas y alojamientos: dada la magnitud del proyecto, se han adquirido dos viviendas en Molina de Aragón. Una, remodelada por completo, facilita alojamiento a visitas que necesiten pernoctar (además del bungalow piloto en los terrenos del proyecto), con dos habitaciones, baño, cocina y comedor. Otra planta se destina a oficina, almacén, sala de reuniones y archivos. También se ha abierto el apartado de correos nº 16 en esa localidad para centralizar la correspondencia."
+          ]
         },
-        "spasHidroterapia": {
-          "title": "Spas, piscinas, saunas, gimnasios, concepto de hidroterapia, terrazas, biblioteca"
+        "tienda": {
+          "title": "Tienda",
+          "paragraphs": [
+            "Se implementará una tienda de productos gourmet, merchandising, artesanía local y artículos deportivos y de pesca, con una amplia variedad de primera calidad, distribuida físicamente en el hotel y en todo el país a través de la web.",
+            "Ya se cuentan con varias distribuciones en exclusiva para la zona y la región —marcas alimentarias, deportivas y otras— que constituirán una fuente de ingresos y una diferenciación más de imagen y concepto."
+          ]
         },
-        "gimnasioRecepcion": {
-          "title": "Gimnasio, recepción, sala de reuniones"
+        "paquetesTuristicos": {
+          "title": "Paquetes turísticos",
+          "paragraphs": [
+            "Se ofrecerán paquetes turísticos a distribuidores, agencias y otros actores del mercado, aprovechando la base de clientes leales, y se explorarán actividades que enriquezcan la experiencia de los visitantes.",
+            "Pesca con mosca: rodeados de aguas ya reconocidas a nivel nacional, se llevará la oferta también a escala internacional. Paquetes para clientes extranjeros y turismo nacional con guías (capacitando personal de la zona), cursos y escuela de pesca, y programas de perfeccionamiento. En Patagonia, con más de treinta y cinco años de experiencia y clientela fija, la tarifa de referencia es de 1.200 € por persona y día; en Peralejos se mantendrá una tarifa promocional inicial de 850 € por persona y día durante los dos primeros años. Habrá equipos de alquiler para Hoce-seca, Cabrillas, Gallo y Tajo, días con guía y cursillos de cualquier nivel, además de cursos gratuitos para niños y jóvenes de la zona, en línea con la responsabilidad social.",
+            "Rutas de aventura en buggies: adquisición de Can-Am Maverick Trail de dos plazas, sellados para evitar derrames contaminantes, de menor cilindrada para seguridad, autonomía, agilidad y bajas emisiones; y un modelo de cuatro plazas. Con ambos se realizarán excursiones guiadas como extra de los programas generales.",
+            "Mountain bike: alquiler de bicicletas de montaña para rutas guiadas o libres, e-bikes personalizadas para el hotel, y reconocimiento Bike Friendly en agrupaciones nacionales e internacionales, con colaboración local para eventos.",
+            "Vehículos de alquiler, transfer y excursiones: Ferrari Modena 360 con conductor para rutas y transfers; Hummer H3 equipado (climatización, pantallas, GPS, música, 4x4) para setas, rutas por el parque, transfers y traslado de viajeros; y un Nissan Juke disponible para clientes. También alquiler de moto trail Honda Transalp 750 cc y kayaks para paseos acuáticos, con acuerdos locales para cañones y actividades similares.",
+            "Equipos para actividades turísticas: en un entorno privilegiado —montañas, naturaleza, cielos sin contaminación lumínica— se dispondrá de equipamiento de primer nivel para turismo y deporte; muchas primeras unidades ya adquiridas."
+          ]
         },
-        "cocinaCarta": {
-          "title": "Cocina, nuestra carta"
+        "reservas": {
+          "title": "Reservas",
+          "paragraphs": [
+            "Durante las últimas décadas se ha creado una base de datos de cientos de miles de direcciones: un mercado cautivo único y privilegiado. A esas direcciones de clientes se suman cientos de contactos de distribuidores alrededor del mundo, además de los distribuidores tradicionales.",
+            "El 19 % de las reservas serán clientes ocasionales —quienes pasan por el establecimiento y no retornan por razones de procedencia u otras—. El éxito de la operación se basa en las repeticiones: la verdadera fidelización por servicio, atención y conformidad. En Patagonia, el 85 % de las reservas son de clientes habituales, y hay grupos que llevan más de 18 años consecutivos.",
+            "En la previsión se estima que el 25 % de los visitantes repetirán (cifra ultra conservadora; se espera que tras las primeras temporadas se acerque al 75 %). Un 20 % llegará a través de la web y un 5 % serán clientes de pesca, porcentaje que se irá aumentando al operar y darse a conocer.",
+            "Los canales de distribución internacionales aportan un valor estratégico decisivo. Entre agencias, distribuidores y ferias (Fly Water Travel, ORVIS, Frontiers, Yellow Dog, Safari Club International, EFFTEX y muchas más en EE. UU., Europa, Latinoamérica, Japón y Australia) hay contactos activos y otros en proceso.",
+            "La base de datos incluye, entre otras cifras: unas 52.430 direcciones de clientes, 52.660 de pescadores, 421 de tiendas, 15.066 de viajeros en el mundo y 3.500 en España. Ese respaldo se usará para enviar boletines y publicidad personalizada a clientes finales, agencias y distribuidores.",
+            "Esta clientela y estos distribuidores se orientan a turismo de super alto nivel, con paquetes por encima de los cinco mil euros semanales. Se han editado catálogos del destino y el libro «DREAMS»: 208 páginas a color en papel cuché, regalado a distribuidores y clientes VIP.",
+            "Origen estimado de las reservas (según la experiencia de Patagonia): repeticiones 25 %, agencias 21 %, clientes directos 19 %, web 20 %, ocasionales 10 % y pesca 5 %."
+          ]
         },
-        "tiendaPaquetes": {
-          "title": "Tienda, paquetes turísticos"
+        "suministros": {
+          "title": "Suministros",
+          "paragraphs": [
+            "Hosting de lujo para autocaravanas: tres plazas de primer nivel para este turismo nómada de lujo (glamping), con todo incluido, exclusividad y máximo confort. Las autocaravanas suelen costar decenas de miles de euros y sus usuarios buscan lujo; los campings habituales no evitan hacinamiento ni ruido. Cada plaza contempla vistas, independencia, agua potable, electricidad, vaciado de residuos, acceso a cafetería, restaurante, bar, terrazas, piscina, spas y saunas, lavado de vehículo y aseo diario, con contactos en plataformas del sector para dar a conocer la oferta.",
+            "Movimiento de tierras: las parcelas requieren nivelación, relleno, caminos y escolleras. Parte del trabajo ya está hecho; hasta la fecha se han empleado más de trescientos camiones y mucha maquinaria pesada (retroexcavadoras, hormigoneras, grúas, etc.).",
+            "Suministro eléctrico: el proyecto apunta a altos estándares de reducción de emisiones. Se prevén tres plantas fotovoltaicas de algo más de 25 kW cada una (límite por parcela de autoconsumo), casi en autoconsumo, equivalentes a unos 150 árboles al mes en devolución ambiental. Habrá generadores eléctricos automáticos de respaldo para plena ocupación, emergencias o clima extremo.",
+            "Iluminación solar exterior: red de luminarias solares de encendido crepuscular con detección de presencia; ya está instalado y funcionando alrededor del 50 %.",
+            "Redes e internet de alta velocidad en áreas comunes y habitaciones. En zonas comunes no se permiten móviles ni sistemas fotográficos o de grabación; solo en las habitaciones.",
+            "Cada cliente dispondrá de un iPad de última generación para servicios (también gestionables manualmente): salud y sueño, películas, información, restaurante, domótica, etc. Habrá iMac en administración, habitaciones y zonas comunes, y televisores de 100 pulgadas en cada habitación.",
+            "Puntos de recarga de vehículos eléctricos alimentados con energía solar: dos cargadores Tesla de velocidad media y dos de carga rápida en los estacionamientos. No hay cargadores en Peralejos ni en localidades cercanas (el más próximo supera los cincuenta kilómetros)."
+          ]
         },
-        "rutasTrekking": {
-          "title": "Rutas de trekking y running, programas turísticos, análisis, situación turística de la zona"
+        "helipuerto": {
+          "title": "Helipuerto",
+          "paragraphs": [
+            "En Patagonia, muchos clientes llegan en jets privados y se ofrece helicóptero para transfers, desplazamientos turísticos y de pesca (heli-fishing) y otros servicios exclusivos.",
+            "En Peralejos, dado el público objetivo, se prevé utilizar el helipuerto de la localidad —si es posible legalmente— para clientes internacionales que lleguen en jet privado al aeropuerto correspondiente, y para quienes deseen ese medio en determinadas actividades."
+          ]
         },
-        "staffImpacto": {
-          "title": "Staff y puestos de trabajo, impacto directo en la Comunidad"
+        "domotica": {
+          "title": "Domótica",
+          "paragraphs": [
+            "Todo el complejo —habitaciones, zonas comunes, piscinas, saunas, restaurante y cafetería, interiores y exteriores— estará equipado con domótica avanzada: cerraduras automáticas, mirillas digitales, termostatos inteligentes, sensores de movimiento, caída, humos e inundaciones, reconocimiento facial, lectura de matrículas, regulación automática de luces y persianas.",
+            "Desde el iPad el huésped podrá regular luces, sonido, persianas, climatización, hacer check-in/out, consultar carta, navegar, rutas, meteorología, vuelos, emergencias, monitorizar el descanso, contratar actividades, comunicar con dirección y comprar o reservar entradas, entre otros.",
+            "Tecnología Z-Wave (868 MHz en Europa): protocolo inalámbrico de bajo consumo con arquitectura mesh, interoperabilidad y cifrado S2. En un hotel multi-edificio cada bloque tendrá su propio hub conectado a la red IP, con topología mallada por plantas o alas e integración posible con BMS, PMS y control de accesos.",
+            "Beneficios: iluminación circadiana, persianas motorizadas, climatización por ocupación (modo ECO en habitaciones vacías), cerraduras electrónicas y monitorización centralizada. Ahorros estimados del 20–40 % en climatización y del 20–50 % en iluminación en determinadas áreas; proyectos integrales pueden reducir la factura energética entre un 20 % y un 45 %, con amortizaciones típicas de 2 a 5 años."
+          ]
+        },
+        "seguridad": {
+          "title": "Seguridad",
+          "paragraphs": [
+            "En todo el complejo y sus alrededores se contemplan equipamientos de última generación para la seguridad y comodidad de huéspedes y visitantes: videovigilancia, detección de incendios, humos e inundaciones, barreras perimetrales, inteligencia artificial, situaciones climatológicas adversas y sistemas de domótica e informática.",
+            "El sistema de seguridad interior y exterior protege la privacidad y el recinto: alarma de perímetros y áreas comunes; alarma interior individual en cada habitación; detección de humos, gases, incendios e inundaciones; y seguridad en piscinas, saunas, spas y gimnasios."
+          ]
+        },
+        "programas": {
+          "title": "Programas",
+          "paragraphs": [
+            "Rutas de trekking y running: circuito en los aledaños de la propiedad, con paradas y ejercicios de distintos niveles, en silencio y aire puro, supervisado por personal especializado y combinable con gimnasios, masajes y terapias de agua.",
+            "Programas turísticos: la zona tiene gran potencial pero escasa oferta de paquetes de alto nivel. Con experiencia en la Cámara de Turismo de Patagonia y en la OMT, se busca posicionar el destino de calidad, atraer un perfil de mayor poder adquisitivo y educación medioambiental, y crear programas VIP basados en paisaje, gastronomía, artesanía, flora, fauna y actividades exclusivas, cuidando cada detalle.",
+            "Entre los programas previstos: luna de miel, berrea, enamorados, micológico, buggy, ríos y lagunas, aves y fauna, pesca con mosca, rafting, barranquismo, mountain bike, gastronomía, ruta ecuestre, sky watch, escalada, trekking, coaching, team building, circuito spa, masajeterapia, Open Sky, Ferrari, rutas en moto y buggy, celebraciones, y muchos más, ampliables con el tiempo.",
+            "Algunos se desarrollan con empresas y guías locales; otros con infraestructura propia y la empresa de ecoturismo prevista, con participación gratuita de jóvenes locales para pleno empleo de calidad y sin estacionalidad. La infraestructura del proyecto es clave para atraer a esa clientela distinguida hasta ahora desconocida en la zona."
+          ]
+        },
+        "situacionTuristica": {
+          "title": "Situación turística",
+          "paragraphs": [
+            "Para esquematizar la situación turística de la región se identifican tres problemas esenciales.",
+            "Falta de infraestructuras de calidad: en un radio muy amplio alrededor de Peralejos, el Parque Natural y el proyecto hay muchos alojamientos del mismo tipo, orientados a la misma clientela, con precios en torno a 25 € e instalaciones mediocres en general.",
+            "Falta de oferta turística: la zona tiene un potencial enorme, pero al menos el 90 % está sin desarrollar —hay montañas maravillosas, pero nadie que te lleve ni cómo organizar la visita.",
+            "Baja calidad del mercado actual: por precios, calidad de los establecimientos y poca valoración de los activos del destino, el público mayoritario aporta pocos recursos económicos y a menudo no respeta el entorno. Hay excepciones, pero la tendencia general es esa.",
+            "Frente a ello se proponen acciones como crear y mejorar infraestructuras de calidad, convertir el producto bruto en programas turísticos, atraer mercados VIP, reeducar el mercado existente, crear microempresas de servicios y guías, desarrollar restauración de calidad, difundir en canales adecuados, y mejorar normativa, señalización y vigilancia."
+          ]
+        },
+        "web": {
+          "title": "Web",
+          "paragraphs": [
+            "Se poseen las denominaciones «terrainfinitus» en numerosas extensiones (.com, .es, .org, etc.) y la marca registrada en clase 39.",
+            "La web estará en varios idiomas (español, inglés, francés, rumano, italiano, alemán), con secciones sobre la zona —Peralejos, la región y el país— para situar a los visitantes en el entorno donde vivirán sus actividades.",
+            "Incluirá quiénes somos, bagaje y experiencia; descripción detallada de alojamientos, entorno, camas, baños, domótica y equipamiento; reservas online; compra de entradas a actividades regionales; tienda online; vídeos, testimoniales y fotografías; y un apartado sobre restaurante, cafetería, sky bar, terrazas, cartas y bodega.",
+            "Contenidos previstos: la zona, reservas, bungalow, quiénes somos, alojamiento, restauración, actividades, pesca, contacto, vídeos, fotos, testimonial, tienda y viajes.",
+            "También se creará un portal de servicios de la localidad y de toda la zona, con actividades, rutas, alojamientos, restauración y demás servicios, y un sistema de reservas online que contribuya al desarrollo de otras empresas."
+          ]
+        },
+        "staff": {
+          "title": "Staff",
+          "paragraphs": [
+            "El proyecto nace con responsabilidad social para cambiar la situación de Peralejos: creación de puestos de trabajo de calidad y pleno empleo; constitución de una empresa de servicios paralelos entregada a jóvenes locales; alianzas y sinergias con terceros; y mejora del urbanismo del pueblo.",
+            "Se construirán seis habitaciones VIP con baño para seis empleados y una vivienda para un matrimonio, más zonas de descanso y confort. Además de salarios excelentes, el equipo tendrá participación directa en los beneficios. El hotel contará con cerca de un empleado por cada tres clientes.",
+            "Se crearán unos 22 puestos (dirección, gerencia, mayordomo, mucamas, recepción, cocina, RR. PP. y diez copropietarios de la empresa de aventura), trabajos dignos y bien remunerados que impulsarán viviendas, educación, seguridad y ambiente en la comunidad.",
+            "La empresa de servicios turísticos tendrá personalidad jurídica, oficinas, web y equipamiento (buggies, vehículos, material de montaña, etc.): atenderá al hotel y al público general. La propiedad se mantiene, pero la dirección se entregará gratuitamente a un grupo de hasta diez personas, preferiblemente de la localidad.",
+            "Impacto directo: licencias e impuestos municipales para mejorar calles e iluminación; aportes arquitectónicos gratuitos (fuentes, esculturas, reforma de calles); pleno empleo; llegada de familias con hijos para la escuela; y apoyo a comercios, artesanos, guías y otros servicios. También se cederá un espacio en la parcela 16 a un tostador de café exclusivo local, con acceso independiente desde la calle para no interferir en el complejo."
+          ]
+        },
+        "gestion": {
+          "title": "Gestión",
+          "paragraphs": [
+            "La viabilidad se analiza a partir de los retos típicos de la hostelería (personal, márgenes, alquileres, fidelización, planificación). Frente a la dificultad de encontrar trabajadores, el modelo reduce dependencia de plantillas grandes, apuesta por autoservicio donde encaje, volumen de clientes manejable, viviendas y zonas comunes para el equipo, salarios excelentes, estabilidad y participación en beneficios.",
+            "La formación es constante y responsabilidad de la dirección: se buscan personas con ganas de aprender. Un equipo motivado y productivo permite plantillas más ajustadas, más personalización y menores costes laborales. La fidelización interna evita rotación y absentismo.",
+            "En márgenes y logística: años de trabajo para proveedores de calidad con reposición rápida y menos stock; cocina de ensamblaje ágil; sin alquiler ni traspaso (inversión propia amortizable); estudio económico flexible y adaptativo; costes de apertura reducidos al hacer gran parte del trabajo con capacidades propias; mercado cautivo y repeticiones; estudio de mercado alineado con clientes objetivo.",
+            "Gestión profesional: vocación hostelera y asesoría especializada van juntas. Transparencia fiscal (sin economía sumergida). Las propinas no se admiten de forma directa: se reparten proporcionalmente entre sectores. Cartas con rangos de precio, control informático de inventarios y seguimiento de platos más solicitados.",
+            "Localización y experiencia del cliente: aparcamientos ad hoc, exclusivos y seguros. El cliente es la pieza fundamental. Fidelización por nombre, preferencias e historial; ambiente con alma; repeticiones y boca a boca; cuatro cartas estacionales; atención humana y empática; tiempos de servicio indicados en cada plato; seguimiento post-venta personalizado (boletines, felicitaciones, novedades).",
+            "Modelo de negocio diversificado dentro del mismo concepto de exclusividad: hotel seis estrellas, bungalows, restaurante, cafetería, spa, tienda, eventos, pesca, excursiones, guías, alquiler de coches y motos, etc., con flujos de clientela separados y los mismos estándares de calidad en todos."
+          ]
         }
       },
       "pdfIntroViewer": "Documento completo: Introducción al Proyecto"
