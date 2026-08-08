@@ -29,7 +29,7 @@ interface GourmetApiProduct {
 })
 export class Gourmet {
   private readonly http = inject(HttpClient);
-  private readonly apiUrl = environment.apiUrl + '/api/gourmet';
+  private readonly apiUrl = environment.terrainfinitusApiUrl + '/api/gourmet';
 
   getProducts() {
     return this.http
