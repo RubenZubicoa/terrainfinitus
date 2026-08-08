@@ -85,31 +85,9 @@
   color: var(--ti-cream);
 }
 
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-
-  a {
-    color: var(--ti-copper);
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color var(--ti-transition);
-
-    &:hover {
-      color: var(--ti-copper-dark);
-    }
-  }
-}
-
 @media (max-width: 544px) {
   .footer__bar-inner {
     flex-direction: column;
     text-align: center;
-  }
-
-  .footer__links {
-    justify-content: center;
   }
 }
