@@ -1495,7 +1495,27 @@
       "loginRequired": "Sign in to confirm your booking.",
       "loginCta": "Sign in",
       "success": "Booking created successfully.",
-      "error": "Could not create the booking. Please try again."
+      "error": "Could not create the booking. Please try again.",
+      "unavailable": "This room is not available for the selected dates. Please choose other dates.",
+      "dayUnavailable": "This day is unavailable because it is already booked."
+    },
+    "calendar": {
+      "aria": "Availability calendar",
+      "prev": "Previous month",
+      "next": "Next month",
+      "loading": "Loading availability…",
+      "selectCheckIn": "Select check-in",
+      "selectCheckOut": "Select check-out",
+      "unavailableLegend": "Unavailable days",
+      "weekdays": {
+        "mon": "Mo",
+        "tue": "Tu",
+        "wed": "We",
+        "thu": "Th",
+        "fri": "Fr",
+        "sat": "Sa",
+        "sun": "Su"
+      }
     },
     "table": {
       "title": "Bookings",

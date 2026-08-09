@@ -1495,7 +1495,27 @@
       "loginRequired": "Inicia sesión para confirmar la reserva.",
       "loginCta": "Iniciar sesión",
       "success": "Reserva creada correctamente.",
-      "error": "No se pudo crear la reserva. Inténtalo de nuevo."
+      "error": "No se pudo crear la reserva. Inténtalo de nuevo.",
+      "unavailable": "Esta habitación no está disponible en las fechas seleccionadas. Elige otras fechas.",
+      "dayUnavailable": "Este día no está disponible porque ya hay una reserva."
+    },
+    "calendar": {
+      "aria": "Calendario de disponibilidad",
+      "prev": "Mes anterior",
+      "next": "Mes siguiente",
+      "loading": "Cargando disponibilidad…",
+      "selectCheckIn": "Selecciona entrada",
+      "selectCheckOut": "Selecciona salida",
+      "unavailableLegend": "Días no disponibles",
+      "weekdays": {
+        "mon": "Lu",
+        "tue": "Ma",
+        "wed": "Mi",
+        "thu": "Ju",
+        "fri": "Vi",
+        "sat": "Sa",
+        "sun": "Do"
+      }
     },
     "table": {
       "title": "Reservas",

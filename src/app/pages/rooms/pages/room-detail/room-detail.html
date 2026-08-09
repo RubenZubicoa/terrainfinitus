@@ -69,31 +69,69 @@
           [attr.aria-label]="'rooms.bookingAria' | translate"
           (ngSubmit)="submitBooking()"
         >
-          <label class="room-detail__field">
-            <span>{{ 'rooms.form.checkIn' | translate }}</span>
-            <input
-              type="date"
-              class="room-detail__input"
-              [min]="today"
-              [ngModel]="checkIn()"
-              (ngModelChange)="checkIn.set($event)"
-              name="checkIn"
-              required
-            />
-          </label>
+          <div class="room-detail__calendar" [attr.aria-label]="'rooms.calendar.aria' | translate">
+            <div class="room-detail__calendar-header">
+              <button type="button" class="room-detail__calendar-nav" (click)="previousMonth()" [attr.aria-label]="'rooms.calendar.prev' | translate">
+                ‹
+              </button>
+              <p class="room-detail__calendar-title">{{ calendarTitle() }}</p>
+              <button type="button" class="room-detail__calendar-nav" (click)="nextMonth()" [attr.aria-label]="'rooms.calendar.next' | translate">
+                ›
+              </button>
+            </div>
 
-          <label class="room-detail__field">
-            <span>{{ 'rooms.form.checkOut' | translate }}</span>
-            <input
-              type="date"
-              class="room-detail__input"
-              [min]="checkIn() || today"
-              [ngModel]="checkOut()"
-              (ngModelChange)="checkOut.set($event)"
-              name="checkOut"
-              required
-            />
-          </label>
+            <div class="room-detail__calendar-weekdays">
+              @for (dayKey of weekDayKeys; track dayKey) {
+                <span>{{ dayKey | translate }}</span>
+              }
+            </div>
+
+            <div class="room-detail__calendar-grid" role="grid">
+              @for (day of calendarDays(); track day.key) {
+                <button
+                  type="button"
+                  class="room-detail__calendar-day"
+                  [class.room-detail__calendar-day--muted]="!day.inMonth"
+                  [class.room-detail__calendar-day--past]="day.past"
+                  [class.room-detail__calendar-day--unavailable]="day.unavailable"
+                  [class.room-detail__calendar-day--start]="day.selectedStart"
+                  [class.room-detail__calendar-day--end]="day.selectedEnd"
+                  [class.room-detail__calendar-day--range]="day.inRange"
+                  [disabled]="!day.inMonth || day.past"
+                  (click)="selectCalendarDay(day)"
+                >
+                  @if (day.inMonth) {
+                    {{ day.day }}
+                  }
+                </button>
+              }
+            </div>
+
+            <p class="room-detail__calendar-legend">
+              <span class="room-detail__legend-swatch room-detail__legend-swatch--unavailable"></span>
+              {{ 'rooms.calendar.unavailableLegend' | translate }}
+            </p>
+
+            @if (bookingsLoading()) {
+              <p class="room-detail__hint">{{ 'rooms.calendar.loading' | translate }}</p>
+            }
+          </div>
+
+          <div class="room-detail__dates-summary">
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.form.checkIn' | translate }}</span>
+              <strong>{{ checkIn() || ('rooms.calendar.selectCheckIn' | translate) }}</strong>
+            </div>
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.form.checkOut' | translate }}</span>
+              <strong>{{ checkOut() || ('rooms.calendar.selectCheckOut' | translate) }}</strong>
+            </div>
+            @if (checkIn() || checkOut()) {
+              <button type="button" class="room-detail__clear-dates" (click)="clearDates()">
+                {{ 'rooms.dates.clear' | translate }}
+              </button>
+            }
+          </div>
 
           <label class="room-detail__field">
             <span>{{ 'rooms.form.guests' | translate }}</span>
@@ -113,13 +151,17 @@
             <p class="room-detail__error" role="alert">{{ 'rooms.dates.invalid' | translate }}</p>
           }
 
+          @if (datesUnavailable()) {
+            <p class="room-detail__error" role="alert">{{ 'rooms.form.unavailable' | translate }}</p>
+          }
+
           @if (guestsInvalid()) {
             <p class="room-detail__error" role="alert">
               {{ 'rooms.form.guestsInvalid' | translate: { max: room.capacity } }}
             </p>
           }
 
-          @if (hasStayDates()) {
+          @if (hasStayDates() && !datesUnavailable()) {
             <div class="room-detail__stay">
               <div class="room-detail__stay-row">
                 <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
@@ -162,8 +204,7 @@
               }
             </button>
           }
-        </form>
-      </aside>    </header>
+        </form>      </aside>    </header>
 
     <div class="room-detail__body">
       <section class="room-detail__section">

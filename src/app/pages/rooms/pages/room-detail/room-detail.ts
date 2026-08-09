@@ -3,18 +3,36 @@ import { Component, computed, DestroyRef, inject, OnInit, signal } from '@angula
 import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
-import { map } from 'rxjs';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { catchError, map, of } from 'rxjs';
 import { CurrentUserService } from '../../../../core/services/current-user-service';
 import { NotificationService } from '../../../../core/services/notification.service';
 import { TokenService } from '../../../../core/services/token-service';
 import { ALL_ROOM_TYPES, getHotelById, getRoomById } from '../../data/rooms.data';
 import {
+  isRoomRangeAvailable,
+  toDateKey,
+  unavailableDatesInMonth,
+} from '../../models/booking-availability';
+import {
   BOOKING_PAYMENT_METHODS,
+  Booking,
   BookingPaymentMethod,
   CreateBooking,
 } from '../../models/booking.models';
 import { BookingService } from '../../services/booking.service';
+
+export interface CalendarDay {
+  key: string;
+  day: number;
+  inMonth: boolean;
+  past: boolean;
+  unavailable: boolean;
+  selectedStart: boolean;
+  selectedEnd: boolean;
+  inRange: boolean;
+  disabled: boolean;
+}
 
 @Component({
   selector: 'app-room-detail',
@@ -30,6 +48,7 @@ export class RoomDetail implements OnInit {
   private readonly currentUserService = inject(CurrentUserService);
   private readonly tokenService = inject(TokenService);
   private readonly notificationService = inject(NotificationService);
+  private readonly translate = inject(TranslateService);
 
   private readonly roomId = toSignal(
     this.route.paramMap.pipe(map((params) => params.get('roomId') ?? '')),
@@ -37,7 +56,16 @@ export class RoomDetail implements OnInit {
   );
 
   readonly paymentMethods = BOOKING_PAYMENT_METHODS;
-  readonly today = new Date().toISOString().split('T')[0];
+  readonly today = toDateKey(new Date());
+  readonly weekDayKeys = [
+    'rooms.calendar.weekdays.mon',
+    'rooms.calendar.weekdays.tue',
+    'rooms.calendar.weekdays.wed',
+    'rooms.calendar.weekdays.thu',
+    'rooms.calendar.weekdays.fri',
+    'rooms.calendar.weekdays.sat',
+    'rooms.calendar.weekdays.sun',
+  ] as const;
 
   readonly checkIn = signal('');
   readonly checkOut = signal('');
@@ -45,6 +73,9 @@ export class RoomDetail implements OnInit {
   readonly paymentMethod = signal<BookingPaymentMethod>('card');
   readonly selectedImageIndex = signal(0);
   readonly submitting = signal(false);
+  readonly roomBookings = signal<Booking[]>([]);
+  readonly bookingsLoading = signal(true);
+  readonly calendarMonth = signal(this.currentMonthStart());
 
   readonly isAuthenticated = this.tokenService.isAuthenticated;
 
@@ -58,6 +89,19 @@ export class RoomDetail implements OnInit {
     const checkIn = this.checkIn();
     const checkOut = this.checkOut();
     return !!checkIn && !!checkOut && checkIn >= checkOut;
+  });
+
+  readonly datesUnavailable = computed(() => {
+    const room = this.room();
+    if (!room || !this.hasStayDates()) {
+      return false;
+    }
+    return !isRoomRangeAvailable(
+      this.roomBookings(),
+      room.id,
+      this.checkIn(),
+      this.checkOut(),
+    );
   });
 
   readonly guestsInvalid = computed(() => {
@@ -93,10 +137,12 @@ export class RoomDetail implements OnInit {
     () =>
       this.hasStayDates() &&
       !this.dateRangeInvalid() &&
+      !this.datesUnavailable() &&
       !this.guestsInvalid() &&
       this.isAuthenticated() &&
       !!this.room() &&
-      !this.submitting(),
+      !this.submitting() &&
+      !this.bookingsLoading(),
   );
 
   readonly room = computed(() => {
@@ -127,6 +173,78 @@ export class RoomDetail implements OnInit {
     return currentRoom.images[this.selectedImageIndex()] ?? currentRoom.images[0] ?? null;
   });
 
+  readonly calendarTitle = computed(() => {
+    const month = this.calendarMonth();
+    const formatter = new Intl.DateTimeFormat(this.translate.getCurrentLang() || 'es', {
+      month: 'long',
+      year: 'numeric',
+    });
+    return formatter.format(month);
+  });
+
+  readonly calendarDays = computed((): CalendarDay[] => {
+    const room = this.room();
+    const monthDate = this.calendarMonth();
+    const year = monthDate.getFullYear();
+    const monthIndex = monthDate.getMonth();
+    const firstWeekday = (new Date(year, monthIndex, 1).getDay() + 6) % 7;
+    const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+    const unavailable = room
+      ? unavailableDatesInMonth(this.roomBookings(), room.id, year, monthIndex)
+      : new Set<string>();
+
+    const checkIn = this.checkIn();
+    const checkOut = this.checkOut();
+    const days: CalendarDay[] = [];
+
+    for (let i = 0; i < firstWeekday; i++) {
+      days.push({
+        key: `pad-start-${i}`,
+        day: 0,
+        inMonth: false,
+        past: true,
+        unavailable: false,
+        selectedStart: false,
+        selectedEnd: false,
+        inRange: false,
+        disabled: true,
+      });
+    }
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const key = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      const past = key < this.today;
+      const isUnavailable = unavailable.has(key);
+      days.push({
+        key,
+        day,
+        inMonth: true,
+        past,
+        unavailable: isUnavailable,
+        selectedStart: key === checkIn,
+        selectedEnd: key === checkOut,
+        inRange: !!checkIn && !!checkOut && key > checkIn && key < checkOut,
+        disabled: past || isUnavailable,
+      });
+    }
+
+    while (days.length % 7 !== 0) {
+      days.push({
+        key: `pad-end-${days.length}`,
+        day: 0,
+        inMonth: false,
+        past: true,
+        unavailable: false,
+        selectedStart: false,
+        selectedEnd: false,
+        inRange: false,
+        disabled: true,
+      });
+    }
+
+    return days;
+  });
+
   ngOnInit(): void {
     this.route.queryParamMap.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((params) => {
       const checkIn = params.get('checkIn') ?? '';
@@ -134,6 +252,7 @@ export class RoomDetail implements OnInit {
       const guestsParam = params.get('guests');
       if (checkIn) {
         this.checkIn.set(checkIn);
+        this.calendarMonth.set(this.monthFromKey(checkIn));
       }
       if (checkOut) {
         this.checkOut.set(checkOut);
@@ -145,6 +264,8 @@ export class RoomDetail implements OnInit {
         }
       }
     });
+
+    this.loadRoomBookings();
   }
 
   selectImage(index: number): void {
@@ -158,6 +279,51 @@ export class RoomDetail implements OnInit {
 
   paymentMethodLabelKey(method: BookingPaymentMethod): string {
     return `shop.checkout.paymentMethods.${method}`;
+  }
+
+  previousMonth(): void {
+    const current = this.calendarMonth();
+    this.calendarMonth.set(new Date(current.getFullYear(), current.getMonth() - 1, 1));
+  }
+
+  nextMonth(): void {
+    const current = this.calendarMonth();
+    this.calendarMonth.set(new Date(current.getFullYear(), current.getMonth() + 1, 1));
+  }
+
+  selectCalendarDay(day: CalendarDay): void {
+    if (!day.inMonth || day.disabled) {
+      if (day.unavailable) {
+        this.notificationService.show('rooms.form.dayUnavailable', 'error');
+      }
+      return;
+    }
+
+    const room = this.room();
+    if (!room) {
+      return;
+    }
+
+    const checkIn = this.checkIn();
+    const checkOut = this.checkOut();
+
+    if (!checkIn || (checkIn && checkOut) || day.key <= checkIn) {
+      this.checkIn.set(day.key);
+      this.checkOut.set('');
+      return;
+    }
+
+    if (!isRoomRangeAvailable(this.roomBookings(), room.id, checkIn, day.key)) {
+      this.notificationService.show('rooms.form.unavailable', 'error');
+      return;
+    }
+
+    this.checkOut.set(day.key);
+  }
+
+  clearDates(): void {
+    this.checkIn.set('');
+    this.checkOut.set('');
   }
 
   goToLogin(): void {
@@ -181,7 +347,17 @@ export class RoomDetail implements OnInit {
     const room = this.room();
     const user = this.currentUserService.user();
 
-    if (!room || !this.hasStayDates() || this.dateRangeInvalid() || this.guestsInvalid()) {
+    if (
+      !room ||
+      !this.hasStayDates() ||
+      this.dateRangeInvalid() ||
+      this.guestsInvalid()
+    ) {
+      return;
+    }
+
+    if (this.datesUnavailable()) {
+      this.notificationService.show('rooms.form.unavailable', 'error');
       return;
     }
 
@@ -214,10 +390,47 @@ export class RoomDetail implements OnInit {
           queryParams: { hotel: room.hotelId },
         });
       },
-      error: () => {
+      error: (error: { status?: number }) => {
         this.submitting.set(false);
+        if (error?.status === 409 || error?.status === 400) {
+          this.notificationService.show('rooms.form.unavailable', 'error');
+          this.loadRoomBookings();
+          return;
+        }
         this.notificationService.show('rooms.form.error', 'error');
       },
     });
+  }
+
+  private loadRoomBookings(): void {
+    const roomId = this.roomId();
+    this.bookingsLoading.set(true);
+
+    this.bookingService
+      .getBookings()
+      .pipe(
+        catchError(() => of([] as Booking[])),
+        takeUntilDestroyed(this.destroyRef),
+      )
+      .subscribe((bookings) => {
+        this.roomBookings.set(
+          roomId ? bookings.filter((booking) => booking.roomId === roomId) : [],
+        );
+        this.bookingsLoading.set(false);
+
+        if (this.hasStayDates() && this.datesUnavailable()) {
+          this.checkOut.set('');
+        }
+      });
+  }
+
+  private currentMonthStart(): Date {
+    const now = new Date();
+    return new Date(now.getFullYear(), now.getMonth(), 1);
+  }
+
+  private monthFromKey(dateKey: string): Date {
+    const [year, month] = dateKey.split('-').map(Number);
+    return new Date(year, month - 1, 1);
   }
 }
