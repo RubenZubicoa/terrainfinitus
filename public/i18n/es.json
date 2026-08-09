@@ -1485,6 +1485,7 @@
       "checkIn": "Entrada",
       "checkOut": "Salida",
       "guests": "Huéspedes",
+      "guestsInvalid": "Indica entre 1 y {{max}} huéspedes.",
       "notes": "Notas (opcional)",
       "paymentMethod": "Método de pago",
       "submit": "Confirmar reserva",

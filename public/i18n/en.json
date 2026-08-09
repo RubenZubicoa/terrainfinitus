@@ -1485,6 +1485,7 @@
       "checkIn": "Check-in",
       "checkOut": "Check-out",
       "guests": "Guests",
+      "guestsInvalid": "Enter between 1 and {{max}} guests.",
       "notes": "Notes (optional)",
       "paymentMethod": "Payment method",
       "submit": "Confirm booking",

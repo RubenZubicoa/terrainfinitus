@@ -41,6 +41,7 @@ export class RoomDetail implements OnInit {
 
   readonly checkIn = signal('');
   readonly checkOut = signal('');
+  readonly guests = signal(1);
   readonly paymentMethod = signal<BookingPaymentMethod>('card');
   readonly selectedImageIndex = signal(0);
   readonly submitting = signal(false);
@@ -57,6 +58,18 @@ export class RoomDetail implements OnInit {
     const checkIn = this.checkIn();
     const checkOut = this.checkOut();
     return !!checkIn && !!checkOut && checkIn >= checkOut;
+  });
+
+  readonly guestsInvalid = computed(() => {
+    const room = this.room();
+    const count = this.guests();
+    if (!Number.isFinite(count) || count < 1) {
+      return true;
+    }
+    if (room && count > room.capacity) {
+      return true;
+    }
+    return false;
   });
 
   readonly nights = computed(() => {
@@ -80,6 +93,7 @@ export class RoomDetail implements OnInit {
     () =>
       this.hasStayDates() &&
       !this.dateRangeInvalid() &&
+      !this.guestsInvalid() &&
       this.isAuthenticated() &&
       !!this.room() &&
       !this.submitting(),
@@ -117,17 +131,29 @@ export class RoomDetail implements OnInit {
     this.route.queryParamMap.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((params) => {
       const checkIn = params.get('checkIn') ?? '';
       const checkOut = params.get('checkOut') ?? '';
+      const guestsParam = params.get('guests');
       if (checkIn) {
         this.checkIn.set(checkIn);
       }
       if (checkOut) {
         this.checkOut.set(checkOut);
       }
+      if (guestsParam) {
+        const parsed = Number(guestsParam);
+        if (Number.isFinite(parsed) && parsed >= 1) {
+          this.guests.set(parsed);
+        }
+      }
     });
   }
 
   selectImage(index: number): void {
     this.selectedImageIndex.set(index);
+  }
+
+  onGuestsChange(value: string | number): void {
+    const parsed = typeof value === 'number' ? value : Number(value);
+    this.guests.set(Number.isFinite(parsed) ? parsed : 1);
   }
 
   paymentMethodLabelKey(method: BookingPaymentMethod): string {
@@ -143,6 +169,9 @@ export class RoomDetail implements OnInit {
     if (this.checkOut()) {
       query.push(`checkOut=${encodeURIComponent(this.checkOut())}`);
     }
+    if (this.guests() > 0) {
+      query.push(`guests=${encodeURIComponent(String(this.guests()))}`);
+    }
     const path = room ? `/habitaciones/${room.id}` : '/habitaciones';
     const returnUrl = query.length ? `${path}?${query.join('&')}` : path;
     void this.router.navigate(['/login'], { queryParams: { returnUrl } });
@@ -152,7 +181,7 @@ export class RoomDetail implements OnInit {
     const room = this.room();
     const user = this.currentUserService.user();
 
-    if (!room || !this.hasStayDates() || this.dateRangeInvalid()) {
+    if (!room || !this.hasStayDates() || this.dateRangeInvalid() || this.guestsInvalid()) {
       return;
     }
 
@@ -167,6 +196,7 @@ export class RoomDetail implements OnInit {
       roomId: room.id,
       startDate: new Date(this.checkIn()),
       endDate: new Date(this.checkOut()),
+      guests: this.guests(),
       price: this.stayTotal(),
       status: 'pending',
       currency: 'EUR',

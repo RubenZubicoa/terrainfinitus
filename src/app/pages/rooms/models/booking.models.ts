@@ -4,6 +4,7 @@ export interface BookingDB {
   roomId: string;
   startDate: Date;
   endDate: Date;
+  guests: number;
   price: number;
   status: string;
   currency: string;
@@ -20,6 +21,7 @@ export interface Booking {
   roomId: string;
   startDate: Date;
   endDate: Date;
+  guests: number;
   price: number;
   status: string;
   currency: string;
@@ -47,6 +49,7 @@ export function mapBookingDBToBooking(bookingDB: BookingDB): Booking {
     roomId: bookingDB.roomId,
     startDate: bookingDB.startDate,
     endDate: bookingDB.endDate,
+    guests: bookingDB.guests,
     price: bookingDB.price,
     status: bookingDB.status,
     currency: bookingDB.currency,

@@ -95,8 +95,28 @@
             />
           </label>
 
+          <label class="room-detail__field">
+            <span>{{ 'rooms.form.guests' | translate }}</span>
+            <input
+              type="number"
+              class="room-detail__input"
+              min="1"
+              [max]="room.capacity"
+              [ngModel]="guests()"
+              (ngModelChange)="onGuestsChange($event)"
+              name="guests"
+              required
+            />
+          </label>
+
           @if (dateRangeInvalid()) {
             <p class="room-detail__error" role="alert">{{ 'rooms.dates.invalid' | translate }}</p>
+          }
+
+          @if (guestsInvalid()) {
+            <p class="room-detail__error" role="alert">
+              {{ 'rooms.form.guestsInvalid' | translate: { max: room.capacity } }}
+            </p>
           }
 
           @if (hasStayDates()) {
