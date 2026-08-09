@@ -1486,9 +1486,15 @@
       "checkOut": "Salida",
       "guests": "Huéspedes",
       "notes": "Notas (opcional)",
+      "paymentMethod": "Método de pago",
       "submit": "Confirmar reserva",
+      "submitting": "Reservando…",
       "update": "Actualizar reserva",
-      "cancel": "Cancelar"
+      "cancel": "Cancelar",
+      "loginRequired": "Inicia sesión para confirmar la reserva.",
+      "loginCta": "Iniciar sesión",
+      "success": "Reserva creada correctamente.",
+      "error": "No se pudo crear la reserva. Inténtalo de nuevo."
     },
     "table": {
       "title": "Reservas",

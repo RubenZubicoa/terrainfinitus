@@ -64,32 +64,86 @@
           <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
         </ul>
 
-        @if (hasStayDates()) {
-          <div class="room-detail__stay">
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.checkIn' | translate }}</span>
-              <strong>{{ checkIn() }}</strong>
-            </div>
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.checkOut' | translate }}</span>
-              <strong>{{ checkOut() }}</strong>
-            </div>
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
-              <strong>{{ stayTotal() | currency: 'EUR' : 'symbol' : '1.0-0' }}</strong>
-            </div>
-          </div>
-        }
-
-        <a
-          class="room-detail__book"
-          routerLink="/reservas-precios"
-          [queryParams]="bookingQueryParams()"
+        <form
+          class="room-detail__booking"
+          [attr.aria-label]="'rooms.bookingAria' | translate"
+          (ngSubmit)="submitBooking()"
         >
-          {{ 'rooms.detail.bookCta' | translate }}
-        </a>
-      </aside>
-    </header>
+          <label class="room-detail__field">
+            <span>{{ 'rooms.form.checkIn' | translate }}</span>
+            <input
+              type="date"
+              class="room-detail__input"
+              [min]="today"
+              [ngModel]="checkIn()"
+              (ngModelChange)="checkIn.set($event)"
+              name="checkIn"
+              required
+            />
+          </label>
+
+          <label class="room-detail__field">
+            <span>{{ 'rooms.form.checkOut' | translate }}</span>
+            <input
+              type="date"
+              class="room-detail__input"
+              [min]="checkIn() || today"
+              [ngModel]="checkOut()"
+              (ngModelChange)="checkOut.set($event)"
+              name="checkOut"
+              required
+            />
+          </label>
+
+          @if (dateRangeInvalid()) {
+            <p class="room-detail__error" role="alert">{{ 'rooms.dates.invalid' | translate }}</p>
+          }
+
+          @if (hasStayDates()) {
+            <div class="room-detail__stay">
+              <div class="room-detail__stay-row">
+                <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
+                <strong>{{ stayTotal() | currency: 'EUR' : 'symbol' : '1.0-0' }}</strong>
+              </div>
+            </div>
+          }
+
+          <fieldset class="room-detail__payment">
+            <legend>{{ 'rooms.form.paymentMethod' | translate }}</legend>
+            @for (method of paymentMethods; track method) {
+              <label class="room-detail__payment-option">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  [value]="method"
+                  [ngModel]="paymentMethod()"
+                  (ngModelChange)="paymentMethod.set($event)"
+                />
+                <span>{{ paymentMethodLabelKey(method) | translate }}</span>
+              </label>
+            }
+          </fieldset>
+
+          @if (!isAuthenticated()) {
+            <p class="room-detail__hint">{{ 'rooms.form.loginRequired' | translate }}</p>
+            <button type="button" class="room-detail__book" (click)="goToLogin()">
+              {{ 'rooms.form.loginCta' | translate }}
+            </button>
+          } @else {
+            <button
+              type="submit"
+              class="room-detail__book"
+              [disabled]="!canSubmit()"
+            >
+              @if (submitting()) {
+                {{ 'rooms.form.submitting' | translate }}
+              } @else {
+                {{ 'rooms.form.submit' | translate }}
+              }
+            </button>
+          }
+        </form>
+      </aside>    </header>
 
     <div class="room-detail__body">
       <section class="room-detail__section">

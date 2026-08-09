@@ -1486,9 +1486,15 @@
       "checkOut": "Check-out",
       "guests": "Guests",
       "notes": "Notes (optional)",
+      "paymentMethod": "Payment method",
       "submit": "Confirm booking",
+      "submitting": "Booking…",
       "update": "Update booking",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "loginRequired": "Sign in to confirm your booking.",
+      "loginCta": "Sign in",
+      "success": "Booking created successfully.",
+      "error": "Could not create the booking. Please try again."
     },
     "table": {
       "title": "Bookings",

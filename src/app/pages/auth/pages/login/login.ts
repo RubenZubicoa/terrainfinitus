@@ -1,6 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AuthService } from '../../../../core/services/auth.service';
 
@@ -14,6 +14,7 @@ export class Login {
   private readonly fb = inject(FormBuilder);
   private readonly authService = inject(AuthService);
   private readonly router = inject(Router);
+  private readonly route = inject(ActivatedRoute);
 
   protected readonly showPassword = signal(false);
   protected readonly loading = signal(false);
@@ -46,7 +47,10 @@ export class Login {
       next: () => {
         this.loading.set(false);
         this.success.set(true);
-        setTimeout(() => this.router.navigate(['/']), 1200);
+        const returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
+        const safeUrl =
+          returnUrl.startsWith('/') && !returnUrl.startsWith('//') ? returnUrl : '/';
+        setTimeout(() => void this.router.navigateByUrl(safeUrl), 1200);
       },
       error: () => {
         this.loading.set(false);

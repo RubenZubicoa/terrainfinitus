@@ -226,6 +226,7 @@
   display: block;
   width: 100%;
   padding: 0.75rem 1rem;
+  border: none;
   border-radius: 999px;
   background: var(--ti-copper);
   color: #fff;
@@ -235,11 +236,94 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
   transition: background var(--ti-transition);
 
-  &:hover {
+  &:hover:not(:disabled) {
     background: var(--ti-copper-dark);
   }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+.room-detail__booking {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.room-detail__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ti-muted);
+}
+
+.room-detail__input {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-sm);
+  background: #fff;
+  color: var(--ti-charcoal);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.room-detail__payment {
+  margin: 0;
+  padding: 0.75rem 0 0;
+  border: none;
+  border-top: 1px solid var(--ti-border);
+
+  legend {
+    padding: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ti-muted);
+  }
+}
+
+.room-detail__payment-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ti-charcoal);
+  cursor: pointer;
+}
+
+.room-detail__error,
+.room-detail__hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.room-detail__error {
+  color: #a33;
+}
+
+.room-detail__hint {
+  color: var(--ti-muted);
 }
 
 // —— Body ——
