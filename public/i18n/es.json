@@ -95,7 +95,7 @@
     "presentation": "Presentación",
     "menus": "Las cartas",
     "activities": "Actividades",
-    "shop": "Tienda Boutique",
+    "shop": "Tiendas online",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -218,10 +218,10 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Tienda Boutique",
+      "eyebrow": "Tiendas online",
       "title": "Nuestras tiendas online",
       "intro": "Bienvenidos a nuestras tiendas on line, donde podrás encontrar una exquisita selección de artículos disponibles para las categorías que te detallamos a continuación (no se te olvide visitar la sección de condiciones de venta, pago y envíos para cada marca y producto).",
-      "categoriesAria": "Categorías de la tienda boutique",
+      "categoriesAria": "Categorías de las tiendas online",
       "gourmet": {
         "title": "Gourmet",
         "description": "Una selección de algunos de los productos gourmet y delicatessen que podrás disfrutar en nuestros restaurantes y, que, a través de nuestra tienda virtual, podrás llevarte a tu casa y compartirlos con los tuyos. Primeras marcas con productos artesanales de baja producción y altísimo nivel de calidad y originalidad.",
@@ -299,7 +299,7 @@
       "error": "No se pudo procesar el pedido. Inténtalo de nuevo."
     },
     "gourmet": {
-      "eyebrow": "Tienda Boutique",
+      "eyebrow": "Tiendas online",
       "title": "Gourmet",
       "description": "Explora nuestra selección gourmet organizada por familias de producto. Cada sección incluye una presentación y el catálogo de referencias con precios.",
       "navAria": "Categorías de la tienda gourmet",
@@ -381,7 +381,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Tienda Boutique",
+      "eyebrow": "Tiendas online",
       "title": "Merchandising",
       "description": "Artículos exclusivos de Terra Infinitus: diseño contemporáneo, materiales de calidad y la identidad de nuestros destinos. Lleva contigo un recuerdo de tu experiencia.",
       "empty": "Próximamente añadiremos productos de merchandising."

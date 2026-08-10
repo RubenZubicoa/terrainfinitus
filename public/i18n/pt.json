@@ -92,7 +92,7 @@
     "presentation": "Apresentação",
     "menus": "As cartas",
     "activities": "Atividades",
-    "shop": "Loja Boutique",
+    "shop": "Lojas online",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -173,7 +173,7 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Loja Boutique",
+      "eyebrow": "Lojas online",
       "title": "As nossas lojas online",
       "intro": "Bem-vindos às nossas lojas online, onde encontrará uma seleção requintada de artigos nas categorias que detalhamos a seguir (não se esqueça de visitar a secção de condições de venda, pagamento e envios para cada marca e produto).",
       "categoriesAria": "Categorias da loja boutique",
@@ -254,7 +254,7 @@
       "error": "Não foi possível processar a encomenda. Tente novamente."
     },
     "gourmet": {
-      "eyebrow": "Loja Boutique",
+      "eyebrow": "Lojas online",
       "title": "Gourmet",
       "description": "Explore a nossa seleção gourmet por famílias de produto. Cada secção inclui uma apresentação e um catálogo de referências com preços.",
       "navAria": "Categorias da loja gourmet",
@@ -336,7 +336,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Loja Boutique",
+      "eyebrow": "Lojas online",
       "title": "Merchandising",
       "description": "Artigos exclusivos Terra Infinitus: design contemporâneo, materiais de qualidade e a identidade dos nossos destinos. Leve consigo uma recordação da sua experiência.",
       "empty": "Em breve adicionaremos produtos de merchandising."

@@ -92,7 +92,7 @@
     "presentation": "プレゼンテーション",
     "menus": "メニュー",
     "activities": "アクティビティ",
-    "shop": "ブティックショップ",
+    "shop": "オンラインショップ",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -173,7 +173,7 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "オンラインショップ",
       "intro": "オンラインショップへようこそ。以下のカテゴリーで厳選された商品をご覧いただけます（各ブランド・商品の販売、支払い、配送条件のセクションもご確認ください）。",
       "categoriesAria": "ブティックショップのカテゴリー",
@@ -254,7 +254,7 @@
       "error": "注文を処理できませんでした。もう一度お試しください。"
     },
     "gourmet": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "Gourmet",
       "description": "製品ファミリー別に整理されたグルメセレクションをご覧ください。各セクションには紹介文と価格付きカタログがあります。",
       "navAria": "グルメショップのカテゴリー",
@@ -336,7 +336,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "Merchandising",
       "description": "テラ・インフィニタス限定アイテム。コンテンポラリーデザイン、上質な素材、各目的地の世界観をお届けします。思い出をお持ち帰りください。",
       "empty": "マーチャンダイジング商品は近日追加予定です。"

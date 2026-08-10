@@ -95,7 +95,7 @@
     "presentation": "Presentation",
     "menus": "The menus",
     "activities": "Activities",
-    "shop": "Boutique Shop",
+    "shop": "Online shops",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -218,10 +218,10 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Our online shops",
       "intro": "Welcome to our online shops, where you will find an exquisite selection of items across the categories detailed below (remember to check the sales, payment and shipping conditions section for each brand and product).",
-      "categoriesAria": "Boutique shop categories",
+      "categoriesAria": "Online shop categories",
       "gourmet": {
         "title": "Gourmet",
         "description": "A selection of gourmet and delicatessen products you can enjoy in our restaurants and, through our online shop, take home to share with your loved ones. Top brands with artisanal, small-batch products of the highest quality and originality.",
@@ -299,7 +299,7 @@
       "error": "Could not process the order. Please try again."
     },
     "gourmet": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Gourmet",
       "description": "Explore our gourmet selection organised by product families. Each section includes an introduction and a catalogue of items with prices.",
       "navAria": "Gourmet shop categories",
@@ -381,7 +381,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Merchandising",
       "description": "Exclusive Terra Infinitus items: contemporary design, quality materials and the identity of our destinations. Take home a memento of your experience.",
       "empty": "We will add merchandising products soon."

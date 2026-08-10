@@ -92,7 +92,7 @@
     "presentation": "Präsentation",
     "menus": "Die Karten",
     "activities": "Aktivitäten",
-    "shop": "Boutique-Shop",
+    "shop": "Online-Shops",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -173,7 +173,7 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Unsere Online-Shops",
       "intro": "Willkommen in unseren Online-Shops, in denen Sie eine exquisite Auswahl an Artikeln für die unten aufgeführten Kategorien finden (vergessen Sie nicht, den Bereich zu den Verkaufs-, Zahlungs- und Versandbedingungen für jede Marke und jedes Produkt zu besuchen).",
       "categoriesAria": "Boutique-Shop-Kategorien",
@@ -254,7 +254,7 @@
       "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen."
     },
     "gourmet": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Gourmet",
       "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
       "navAria": "Gourmet-Shop-Kategorien",
@@ -336,7 +336,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Merchandising",
       "description": "Exklusive Terra-Infinitus-Artikel: zeitgenössisches Design, hochwertige Materialien und die Identität unserer Destinationen. Nehmen Sie eine Erinnerung an Ihr Erlebnis mit.",
       "empty": "Merchandising-Produkte folgen in Kürze."
