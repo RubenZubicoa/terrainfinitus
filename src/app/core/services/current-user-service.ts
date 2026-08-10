@@ -51,6 +51,7 @@ export class CurrentUserService {
     const user = JSON.parse(stored) as User;
     return {
       ...user,
+      dni: user.dni ?? '',
       isProfessional: user.isProfessional === true,
     };
   }
