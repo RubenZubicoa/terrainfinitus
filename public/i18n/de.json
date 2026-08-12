@@ -221,13 +221,16 @@
     "checkout": {
       "title": "Bestellung abschließen",
       "eyebrow": "Checkout",
-      "subtitle": "Geben Sie Ihre persönlichen Daten ein und wählen Sie die Zahlungsart.",
+      "subtitle": "Bestätigen Sie Ihr Konto und wählen Sie die Zahlungsart.",
+      "accountData": "Kontodaten",
+      "accountHint": "Die Bestellung wird Ihrem Konto zugeordnet. Aktualisieren Sie Ihr Profil, falls diese Daten geändert werden müssen.",
       "personalData": "Persönliche Daten",
       "name": "Vorname",
       "lastName": "Nachname",
       "email": "E-Mail",
       "phone": "Telefon",
       "address": "Lieferadresse",
+      "dni": "Ausweis / Steuernummer",
       "paymentMethod": "Zahlungsart",
       "paymentMethods": {
         "card": "Karte",
@@ -251,7 +254,10 @@
       "submit": "Bestellung bestätigen",
       "submitting": "Bestellung wird verarbeitet…",
       "success": "Bestellung erfolgreich registriert. Wir werden Sie kontaktieren.",
-      "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen."
+      "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen.",
+      "loginRequired": "Melden Sie sich an, um die Bestellung zu bestätigen.",
+      "loginCta": "Anmelden",
+      "noGourmetItems": "Es gibt keine Gourmet-Produkte im Warenkorb für eine Bestellung."
     },
     "gourmet": {
       "eyebrow": "Online-Shops",

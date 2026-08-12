@@ -266,13 +266,16 @@
     "checkout": {
       "title": "Complete order",
       "eyebrow": "Checkout",
-      "subtitle": "Enter your personal details and choose how you want to pay.",
+      "subtitle": "Confirm your account and choose how you want to pay.",
+      "accountData": "Account details",
+      "accountHint": "The order will be linked to your account. Update your profile if these details need changing.",
       "personalData": "Personal details",
       "name": "First name",
       "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
       "address": "Shipping address",
+      "dni": "ID / Tax ID",
       "paymentMethod": "Payment method",
       "paymentMethods": {
         "card": "Card",
@@ -296,7 +299,10 @@
       "submit": "Confirm order",
       "submitting": "Processing order…",
       "success": "Order placed successfully. We will contact you shortly.",
-      "error": "Could not process the order. Please try again."
+      "error": "Could not process the order. Please try again.",
+      "loginRequired": "Sign in to confirm your order.",
+      "loginCta": "Sign in",
+      "noGourmetItems": "There are no gourmet products in the cart to create an order."
     },
     "gourmet": {
       "eyebrow": "Online shops",

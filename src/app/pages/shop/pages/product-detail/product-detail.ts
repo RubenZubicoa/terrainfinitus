@@ -107,7 +107,7 @@ export class ProductDetail {
     if (!current) {
       return;
     }
-    this.cartService.addItem(current.id);
+    this.cartService.addItem(current);
     this.notificationService.show('shop.cart.added', 'success', 2500);
   }
 }

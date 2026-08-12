@@ -1,11 +1,11 @@
-import { computed, Injectable, signal } from '@angular/core';
-import { getProductById } from '../../pages/shop/data/products.data';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import {
   CART_CATEGORY_ORDER,
   isCartEligibleCategory,
 } from '../../pages/shop/data/shop-paths';
 import { CartItemView, CartLine } from '../models/cart.models';
-import { ProductCategory } from '../../shared/models/product.models';
+import { Product, ProductCategory } from '../../shared/models/product.models';
+import { CurrentUserService } from './current-user-service';
 
 const CART_STORAGE_KEY = 'ti_cart';
 
@@ -13,22 +13,18 @@ const CART_STORAGE_KEY = 'ti_cart';
   providedIn: 'root',
 })
 export class CartService {
+  private readonly currentUserService = inject(CurrentUserService);
   private readonly _lines = signal<CartLine[]>(this.loadLines());
 
   readonly items = computed<CartItemView[]>(() =>
-    this._lines()
-      .map((line) => {
-        const product = getProductById(line.productId);
-        if (!product) {
-          return null;
-        }
-        return {
-          product,
-          quantity: line.quantity,
-          lineTotal: product.price * line.quantity,
-        };
-      })
-      .filter((item): item is CartItemView => item !== null),
+    this._lines().map((line) => {
+      const unitPrice = this.resolveUnitPrice(line.product);
+      return {
+        product: line.product,
+        quantity: line.quantity,
+        lineTotal: unitPrice * line.quantity,
+      };
+    }),
   );
 
   readonly itemCount = computed(() =>
@@ -56,26 +52,21 @@ export class CartService {
     }));
   });
 
-  addItem(productId: string, quantity = 1): void {
-    if (quantity < 1) {
-      return;
-    }
-
-    const product = getProductById(productId);
-    if (!product || !isCartEligibleCategory(product.category)) {
+  addItem(product: Product, quantity = 1): void {
+    if (quantity < 1 || !isCartEligibleCategory(product.category)) {
       return;
     }
 
     this._lines.update((lines) => {
-      const existing = lines.find((line) => line.productId === productId);
+      const existing = lines.find((line) => line.productId === product.id);
       if (existing) {
         return lines.map((line) =>
-          line.productId === productId
-            ? { ...line, quantity: line.quantity + quantity }
+          line.productId === product.id
+            ? { ...line, quantity: line.quantity + quantity, product }
             : line,
         );
       }
-      return [...lines, { productId, quantity }];
+      return [...lines, { productId: product.id, quantity, product }];
     });
 
     this.persist();
@@ -98,6 +89,11 @@ export class CartService {
     this.persist();
   }
 
+  removeItemsByCategory(category: ProductCategory): void {
+    this._lines.update((lines) => lines.filter((line) => line.product.category !== category));
+    this.persist();
+  }
+
   clear(): void {
     this._lines.set([]);
     this.persist();
@@ -111,14 +107,19 @@ export class CartService {
 
     try {
       const parsed = JSON.parse(stored) as CartLine[];
-      return Array.isArray(parsed)
-        ? parsed.filter(
-            (line) =>
-              typeof line.productId === 'string' &&
-              typeof line.quantity === 'number' &&
-              line.quantity > 0,
-          )
-        : [];
+      if (!Array.isArray(parsed)) {
+        return [];
+      }
+
+      return parsed.filter(
+        (line) =>
+          typeof line.productId === 'string' &&
+          typeof line.quantity === 'number' &&
+          line.quantity > 0 &&
+          line.product &&
+          typeof line.product.id === 'string' &&
+          typeof line.product.price === 'number',
+      );
     } catch {
       return [];
     }
@@ -126,5 +127,12 @@ export class CartService {
 
   private persist(): void {
     localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(this._lines()));
+  }
+
+  private resolveUnitPrice(product: Product): number {
+    if (this.currentUserService.isProfessional() && product.professionalPrice != null) {
+      return product.professionalPrice;
+    }
+    return product.price;
   }
 }

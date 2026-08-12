@@ -27,7 +27,7 @@ export class ProductList {
   private readonly notificationService = inject(NotificationService);
 
   protected addToCart(product: Product): void {
-    this.cartService.addItem(product.id);
+    this.cartService.addItem(product);
     this.notificationService.show('shop.cart.added', 'success', 2500);
   }
 }

@@ -221,13 +221,16 @@
     "checkout": {
       "title": "注文を完了する",
       "eyebrow": "Checkout",
-      "subtitle": "個人情報を入力し、お支払い方法を選択してください。",
+      "subtitle": "アカウントを確認し、お支払い方法を選択してください。",
+      "accountData": "アカウント情報",
+      "accountHint": "注文はアカウントに紐づけられます。情報の変更が必要な場合はプロフィールを更新してください。",
       "personalData": "個人情報",
       "name": "名",
       "lastName": "姓",
       "email": "メールアドレス",
       "phone": "電話番号",
       "address": "配送先住所",
+      "dni": "身分証番号 / NIF",
       "paymentMethod": "お支払い方法",
       "paymentMethods": {
         "card": "カード",
@@ -251,7 +254,10 @@
       "submit": "注文を確定",
       "submitting": "注文を処理中…",
       "success": "注文が正常に登録されました。追ってご連絡いたします。",
-      "error": "注文を処理できませんでした。もう一度お試しください。"
+      "error": "注文を処理できませんでした。もう一度お試しください。",
+      "loginRequired": "注文を確定するにはログインしてください。",
+      "loginCta": "ログイン",
+      "noGourmetItems": "注文を作成できるグルメ商品がカートにありません。"
     },
     "gourmet": {
       "eyebrow": "オンラインショップ",

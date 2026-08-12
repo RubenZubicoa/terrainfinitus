@@ -221,13 +221,16 @@
     "checkout": {
       "title": "Finalizar encomenda",
       "eyebrow": "Checkout",
-      "subtitle": "Introduza os seus dados pessoais e escolha a forma de pagamento.",
+      "subtitle": "Confirme a sua conta e escolha a forma de pagamento.",
+      "accountData": "Dados da conta",
+      "accountHint": "A encomenda será associada à sua conta. Atualize o perfil se estes dados precisarem de alteração.",
       "personalData": "Dados pessoais",
       "name": "Nome",
       "lastName": "Apelido",
       "email": "Email",
       "phone": "Telefone",
       "address": "Morada de envio",
+      "dni": "NIF / Documento",
       "paymentMethod": "Forma de pagamento",
       "paymentMethods": {
         "card": "Cartão",
@@ -251,7 +254,10 @@
       "submit": "Confirmar encomenda",
       "submitting": "A processar encomenda…",
       "success": "Encomenda registada com sucesso. Entraremos em contacto consigo.",
-      "error": "Não foi possível processar a encomenda. Tente novamente."
+      "error": "Não foi possível processar a encomenda. Tente novamente.",
+      "loginRequired": "Inicie sessão para confirmar a encomenda.",
+      "loginCta": "Iniciar sessão",
+      "noGourmetItems": "Não há produtos gourmet no carrinho para criar a encomenda."
     },
     "gourmet": {
       "eyebrow": "Lojas online",

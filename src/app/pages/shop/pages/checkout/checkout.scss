@@ -110,6 +110,39 @@
   min-height: 5rem;
 }
 
+.checkout__account {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.checkout__account-row {
+  display: grid;
+  gap: 0.15rem;
+
+  dt {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ti-muted);
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: var(--ti-charcoal);
+  }
+}
+
+.checkout__account-hint {
+  margin: 1rem 0 0;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: var(--ti-muted);
+}
+
 .checkout__payment-options {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

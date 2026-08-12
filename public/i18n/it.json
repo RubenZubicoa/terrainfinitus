@@ -221,13 +221,16 @@
     "checkout": {
       "title": "Completa l'ordine",
       "eyebrow": "Checkout",
-      "subtitle": "Inserisci i tuoi dati personali e scegli come pagare.",
+      "subtitle": "Conferma il tuo account e scegli come pagare.",
+      "accountData": "Dati dell'account",
+      "accountHint": "L'ordine sarà collegato al tuo account. Aggiorna il profilo se questi dati devono cambiare.",
       "personalData": "Dati personali",
       "name": "Nome",
       "lastName": "Cognome",
       "email": "Email",
       "phone": "Telefono",
       "address": "Indirizzo di spedizione",
+      "dni": "Codice fiscale / NIF",
       "paymentMethod": "Metodo di pagamento",
       "paymentMethods": {
         "card": "Carta",
@@ -251,7 +254,10 @@
       "submit": "Conferma ordine",
       "submitting": "Elaborazione ordine…",
       "success": "Ordine registrato correttamente. Ti contatteremo a breve.",
-      "error": "Impossibile elaborare l'ordine. Riprova."
+      "error": "Impossibile elaborare l'ordine. Riprova.",
+      "loginRequired": "Accedi per confermare l'ordine.",
+      "loginCta": "Accedi",
+      "noGourmetItems": "Non ci sono prodotti gourmet nel carrello per creare un ordine."
     },
     "gourmet": {
       "eyebrow": "Negozi online",

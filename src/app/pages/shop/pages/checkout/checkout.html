@@ -7,68 +7,47 @@
 
   <div class="checkout__layout">
     <form class="checkout__form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
-      <section class="checkout__section" [attr.aria-labelledby]="'checkout-personal-title'">
-        <h2 id="checkout-personal-title" class="checkout__section-title">
-          {{ 'shop.checkout.personalData' | translate }}
+      <section class="checkout__section" [attr.aria-labelledby]="'checkout-account-title'">
+        <h2 id="checkout-account-title" class="checkout__section-title">
+          {{ 'shop.checkout.accountData' | translate }}
         </h2>
 
-        <div class="checkout__grid checkout__grid--2">
-          <div class="checkout__field">
-            <label class="checkout__label" for="checkout-name">{{ 'shop.checkout.name' | translate }}</label>
-            <input
-              id="checkout-name"
-              class="checkout__input"
-              type="text"
-              formControlName="name"
-              autocomplete="given-name"
-            />
-          </div>
-          <div class="checkout__field">
-            <label class="checkout__label" for="checkout-lastName">
-              {{ 'shop.checkout.lastName' | translate }}
-            </label>
-            <input
-              id="checkout-lastName"
-              class="checkout__input"
-              type="text"
-              formControlName="lastName"
-              autocomplete="family-name"
-            />
-          </div>
-        </div>
-
-        <div class="checkout__field">
-          <label class="checkout__label" for="checkout-email">{{ 'shop.checkout.email' | translate }}</label>
-          <input
-            id="checkout-email"
-            class="checkout__input"
-            type="email"
-            formControlName="email"
-            autocomplete="email"
-          />
-        </div>
-
-        <div class="checkout__field">
-          <label class="checkout__label" for="checkout-phone">{{ 'shop.checkout.phone' | translate }}</label>
-          <input
-            id="checkout-phone"
-            class="checkout__input"
-            type="tel"
-            formControlName="phone"
-            autocomplete="tel"
-          />
-        </div>
-
-        <div class="checkout__field">
-          <label class="checkout__label" for="checkout-address">{{ 'shop.checkout.address' | translate }}</label>
-          <textarea
-            id="checkout-address"
-            class="checkout__input checkout__textarea"
-            rows="3"
-            formControlName="address"
-            autocomplete="street-address"
-          ></textarea>
-        </div>
+        @if (currentUser(); as user) {
+          <dl class="checkout__account">
+            <div class="checkout__account-row">
+              <dt>{{ 'shop.checkout.name' | translate }}</dt>
+              <dd>{{ user.name }} {{ user.lastName }}</dd>
+            </div>
+            <div class="checkout__account-row">
+              <dt>{{ 'shop.checkout.email' | translate }}</dt>
+              <dd>{{ user.email }}</dd>
+            </div>
+            <div class="checkout__account-row">
+              <dt>{{ 'shop.checkout.phone' | translate }}</dt>
+              <dd>{{ user.phone }}</dd>
+            </div>
+            <div class="checkout__account-row">
+              <dt>{{ 'shop.checkout.address' | translate }}</dt>
+              <dd>{{ user.address }}</dd>
+            </div>
+            @if (user.dni) {
+              <div class="checkout__account-row">
+                <dt>{{ 'shop.checkout.dni' | translate }}</dt>
+                <dd>{{ user.dni }}</dd>
+              </div>
+            }
+          </dl>
+          <p class="checkout__account-hint">{{ 'shop.checkout.accountHint' | translate }}</p>
+        } @else {
+          <p class="checkout__account-hint">{{ 'shop.checkout.loginRequired' | translate }}</p>
+          <a
+            class="checkout__back"
+            routerLink="/login"
+            [queryParams]="{ returnUrl: '/tienda-boutique/checkout' }"
+          >
+            {{ 'shop.checkout.loginCta' | translate }}
+          </a>
+        }
       </section>
 
       <section class="checkout__section" [attr.aria-labelledby]="'checkout-payment-title'">
@@ -96,7 +75,11 @@
         <a routerLink="/tienda-boutique/carrito" class="checkout__back">
           {{ 'shop.checkout.backToCart' | translate }}
         </a>
-        <button type="submit" class="checkout__submit" [disabled]="loading()">
+        <button
+          type="submit"
+          class="checkout__submit"
+          [disabled]="loading() || !isAuthenticated() || gourmetItems().length === 0"
+        >
           @if (loading()) {
             {{ 'shop.checkout.submitting' | translate }}
           } @else {
@@ -109,19 +92,19 @@
     <aside class="checkout__summary">
       <h2 class="checkout__summary-title">{{ 'shop.checkout.orderSummary' | translate }}</h2>
       <ul class="checkout__summary-list">
-        @for (item of cartServiceRef.items(); track item.product.id) {
+        @for (item of gourmetItems(); track item.product.id) {
           <li class="checkout__summary-item">
             <span class="checkout__summary-name">{{ item.product.nameKey | translate }}</span>
             <span class="checkout__summary-qty">× {{ item.quantity }}</span>
             <span class="checkout__summary-price">
-              {{ item.lineTotal | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
+              {{ lineTotal(item.product, item.quantity) | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
             </span>
           </li>
         }
       </ul>
       <div class="checkout__summary-total">
         <span>{{ 'shop.cart.subtotal' | translate }}</span>
-        <strong>{{ cartServiceRef.subtotal() | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}</strong>
+        <strong>{{ gourmetSubtotal() | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}</strong>
       </div>
     </aside>
   </div>

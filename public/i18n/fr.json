@@ -221,13 +221,16 @@
     "checkout": {
       "title": "Finaliser la commande",
       "eyebrow": "Checkout",
-      "subtitle": "Saisissez vos données personnelles et choisissez votre mode de paiement.",
+      "subtitle": "Confirmez votre compte et choisissez votre mode de paiement.",
+      "accountData": "Données du compte",
+      "accountHint": "La commande sera liée à votre compte. Mettez à jour votre profil si ces informations doivent changer.",
       "personalData": "Données personnelles",
       "name": "Prénom",
       "lastName": "Nom",
       "email": "E-mail",
       "phone": "Téléphone",
       "address": "Adresse de livraison",
+      "dni": "NIF / ID",
       "paymentMethod": "Mode de paiement",
       "paymentMethods": {
         "card": "Carte",
@@ -251,7 +254,10 @@
       "submit": "Confirmer la commande",
       "submitting": "Traitement en cours…",
       "success": "Commande enregistrée avec succès. Nous vous contacterons prochainement.",
-      "error": "Impossible de traiter la commande. Veuillez réessayer."
+      "error": "Impossible de traiter la commande. Veuillez réessayer.",
+      "loginRequired": "Connectez-vous pour confirmer la commande.",
+      "loginCta": "Se connecter",
+      "noGourmetItems": "Il n'y a aucun produit gourmet dans le panier pour créer une commande."
     },
     "gourmet": {
       "eyebrow": "Boutiques en ligne",
