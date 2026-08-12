@@ -28,6 +28,12 @@ export class BookingService {
     );
   }
 
+  getBookingsByUserId(userId: string) {
+    return this.http.get<BookingDB[]>(`${this.apiUrl}/user/${userId}`).pipe(
+      map(bookingsDB => bookingsDB.map(mapBookingDBToBooking)),
+    );
+  }
+
   createBooking(booking: CreateBooking) {
     return this.http.post<BookingDB>(`${this.apiUrl}`, booking).pipe(
       map(mapBookingDBToBooking),

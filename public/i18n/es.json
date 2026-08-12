@@ -92,6 +92,37 @@
       "unknown": "Estado desconocido"
     }
   },
+  "myBookings": {
+    "eyebrow": "Cuenta",
+    "title": "Mis reservas",
+    "description": "Consulta el historial de tus reservas de habitaciones.",
+    "loading": "Cargando reservas…",
+    "error": "No se pudieron cargar las reservas. Inténtalo de nuevo más tarde.",
+    "empty": "Todavía no has realizado ninguna reserva.",
+    "emptyCta": "Ver habitaciones",
+    "bookingId": "Reserva",
+    "createdAt": "Creada",
+    "checkIn": "Entrada",
+    "checkOut": "Salida",
+    "guests": "Huéspedes",
+    "paymentMethod": "Método de pago",
+    "payment": "Pago",
+    "total": "Total",
+    "status": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmada",
+      "cancelled": "Cancelada",
+      "completed": "Completada",
+      "unknown": "Estado desconocido"
+    },
+    "paymentStatus": {
+      "pending": "Pendiente",
+      "paid": "Pagado",
+      "failed": "Fallido",
+      "refunded": "Reembolsado",
+      "unknown": "Desconocido"
+    }
+  },
   "auth": {
     "logoutSuccess": "Has cerrado sesión correctamente."
   },

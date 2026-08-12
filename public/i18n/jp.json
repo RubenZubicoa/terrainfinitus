@@ -92,6 +92,37 @@
       "unknown": "不明な状態"
     }
   },
+  "myBookings": {
+    "eyebrow": "アカウント",
+    "title": "予約履歴",
+    "description": "客室予約の履歴を確認できます。",
+    "loading": "予約を読み込み中…",
+    "error": "予約を読み込めませんでした。後でもう一度お試しください。",
+    "empty": "まだ予約がありません。",
+    "emptyCta": "客室を見る",
+    "bookingId": "予約",
+    "createdAt": "作成日",
+    "checkIn": "チェックイン",
+    "checkOut": "チェックアウト",
+    "guests": "人数",
+    "paymentMethod": "支払い方法",
+    "payment": "支払い",
+    "total": "合計",
+    "status": {
+      "pending": "保留中",
+      "confirmed": "確認済み",
+      "cancelled": "キャンセル",
+      "completed": "完了",
+      "unknown": "不明な状態"
+    },
+    "paymentStatus": {
+      "pending": "保留中",
+      "paid": "支払済み",
+      "failed": "失敗",
+      "refunded": "返金済み",
+      "unknown": "不明"
+    }
+  },
   "auth": {
     "logoutSuccess": "ログアウトしました。"
   },

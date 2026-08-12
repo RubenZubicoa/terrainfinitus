@@ -92,6 +92,37 @@
       "unknown": "État inconnu"
     }
   },
+  "myBookings": {
+    "eyebrow": "Compte",
+    "title": "Mes réservations",
+    "description": "Consultez l'historique de vos réservations de chambres.",
+    "loading": "Chargement des réservations…",
+    "error": "Impossible de charger les réservations. Réessayez plus tard.",
+    "empty": "Vous n'avez encore aucune réservation.",
+    "emptyCta": "Voir les chambres",
+    "bookingId": "Réservation",
+    "createdAt": "Créée",
+    "checkIn": "Arrivée",
+    "checkOut": "Départ",
+    "guests": "Voyageurs",
+    "paymentMethod": "Mode de paiement",
+    "payment": "Paiement",
+    "total": "Total",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmée",
+      "cancelled": "Annulée",
+      "completed": "Terminée",
+      "unknown": "État inconnu"
+    },
+    "paymentStatus": {
+      "pending": "En attente",
+      "paid": "Payé",
+      "failed": "Échoué",
+      "refunded": "Remboursé",
+      "unknown": "Inconnu"
+    }
+  },
   "auth": {
     "logoutSuccess": "Vous êtes déconnecté."
   },

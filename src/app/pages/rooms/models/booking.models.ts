@@ -28,10 +28,11 @@ export interface Booking {
   paymentMethod: string;
   paymentStatus: string;
   paymentDate: Date;
+  createdAt?: string;
 }
 
 /** Payload para crear una reserva (el backend asigna el id). */
-export type CreateBooking = Omit<Booking, 'uuid'>;
+export type CreateBooking = Omit<Booking, 'uuid' | 'createdAt'>;
 
 export type BookingPaymentMethod = 'card' | 'transfer' | 'bizum' | 'paypal';
 
@@ -56,5 +57,8 @@ export function mapBookingDBToBooking(bookingDB: BookingDB): Booking {
     paymentMethod: bookingDB.paymentMethod,
     paymentStatus: bookingDB.paymentStatus,
     paymentDate: bookingDB.paymentDate,
+    createdAt: bookingDB.createdAt
+      ? new Date(bookingDB.createdAt).toISOString()
+      : undefined,
   };
 }

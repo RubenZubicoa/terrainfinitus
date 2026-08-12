@@ -92,6 +92,37 @@
       "unknown": "Unbekannter Status"
     }
   },
+  "myBookings": {
+    "eyebrow": "Konto",
+    "title": "Meine Reservierungen",
+    "description": "Sehen Sie Ihre Zimmerreservierungen ein.",
+    "loading": "Reservierungen werden geladen…",
+    "error": "Reservierungen konnten nicht geladen werden. Bitte später erneut versuchen.",
+    "empty": "Sie haben noch keine Reservierungen.",
+    "emptyCta": "Zimmer ansehen",
+    "bookingId": "Reservierung",
+    "createdAt": "Erstellt",
+    "checkIn": "Anreise",
+    "checkOut": "Abreise",
+    "guests": "Gäste",
+    "paymentMethod": "Zahlungsart",
+    "payment": "Zahlung",
+    "total": "Gesamt",
+    "status": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "cancelled": "Storniert",
+      "completed": "Abgeschlossen",
+      "unknown": "Unbekannter Status"
+    },
+    "paymentStatus": {
+      "pending": "Ausstehend",
+      "paid": "Bezahlt",
+      "failed": "Fehlgeschlagen",
+      "refunded": "Erstattet",
+      "unknown": "Unbekannt"
+    }
+  },
   "auth": {
     "logoutSuccess": "Sie wurden erfolgreich abgemeldet."
   },

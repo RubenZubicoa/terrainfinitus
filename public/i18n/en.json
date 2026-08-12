@@ -92,6 +92,37 @@
       "unknown": "Unknown status"
     }
   },
+  "myBookings": {
+    "eyebrow": "Account",
+    "title": "My bookings",
+    "description": "View your room booking history.",
+    "loading": "Loading bookings…",
+    "error": "Could not load bookings. Please try again later.",
+    "empty": "You have not made any bookings yet.",
+    "emptyCta": "Browse rooms",
+    "bookingId": "Booking",
+    "createdAt": "Created",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "paymentMethod": "Payment method",
+    "payment": "Payment",
+    "total": "Total",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "unknown": "Unknown status"
+    },
+    "paymentStatus": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "failed": "Failed",
+      "refunded": "Refunded",
+      "unknown": "Unknown"
+    }
+  },
   "auth": {
     "logoutSuccess": "You have been signed out successfully."
   },

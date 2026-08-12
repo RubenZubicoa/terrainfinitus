@@ -1,0 +1,87 @@
+<section class="my-bookings section" [attr.aria-label]="'myBookings.title' | translate">
+  <header class="my-bookings__header">
+    <p class="my-bookings__eyebrow">{{ 'myBookings.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'myBookings.title' | translate }}</h1>
+    <p class="my-bookings__description">{{ 'myBookings.description' | translate }}</p>
+  </header>
+
+  @if (loading()) {
+    <p class="my-bookings__state">{{ 'myBookings.loading' | translate }}</p>
+  } @else if (error()) {
+    <p class="my-bookings__state my-bookings__state--error" role="alert">
+      {{ 'myBookings.error' | translate }}
+    </p>
+  } @else if (bookings().length === 0) {
+    <div class="my-bookings__empty">
+      <p>{{ 'myBookings.empty' | translate }}</p>
+      <a routerLink="/habitaciones" class="my-bookings__cta">
+        {{ 'myBookings.emptyCta' | translate }}
+      </a>
+    </div>
+  } @else {
+    <ul class="my-bookings__list">
+      @for (booking of bookings(); track booking.uuid) {
+        <li class="my-bookings__card">
+          <div class="my-bookings__card-top">
+            <div>
+              <p class="my-bookings__id">
+                {{ 'myBookings.bookingId' | translate }}:
+                <span>{{ booking.uuid }}</span>
+              </p>
+              @if (booking.createdAt) {
+                <p class="my-bookings__meta">
+                  {{ 'myBookings.createdAt' | translate }}:
+                  {{ booking.createdAt | date: 'dd/MM/yyyy HH:mm' }}
+                </p>
+              }
+            </div>
+            <span class="my-bookings__status">{{ statusKey(booking.status) | translate }}</span>
+          </div>
+
+          <div class="my-bookings__room">
+            @if (roomNameKey(booking.roomId); as nameKey) {
+              <a class="my-bookings__room-name" [routerLink]="roomDetailLink(booking.roomId)">
+                {{ nameKey | translate }}
+              </a>
+            } @else {
+              <span class="my-bookings__room-name">{{ booking.roomId }}</span>
+            }
+            @if (hotelNameKey(booking.roomId); as hotelKey) {
+              <p class="my-bookings__hotel">{{ hotelKey | translate }}</p>
+            }
+          </div>
+
+          <dl class="my-bookings__details">
+            <div class="my-bookings__detail">
+              <dt>{{ 'myBookings.checkIn' | translate }}</dt>
+              <dd>{{ booking.startDate | date: 'dd/MM/yyyy' }}</dd>
+            </div>
+            <div class="my-bookings__detail">
+              <dt>{{ 'myBookings.checkOut' | translate }}</dt>
+              <dd>{{ booking.endDate | date: 'dd/MM/yyyy' }}</dd>
+            </div>
+            <div class="my-bookings__detail">
+              <dt>{{ 'myBookings.guests' | translate }}</dt>
+              <dd>{{ booking.guests }}</dd>
+            </div>
+            <div class="my-bookings__detail">
+              <dt>{{ 'myBookings.paymentMethod' | translate }}</dt>
+              <dd>{{ paymentMethodKey(booking.paymentMethod) | translate }}</dd>
+            </div>
+            <div class="my-bookings__detail">
+              <dt>{{ 'myBookings.payment' | translate }}</dt>
+              <dd>{{ paymentStatusKey(booking.paymentStatus) | translate }}</dd>
+            </div>
+          </dl>
+
+          <div class="my-bookings__total">
+            <span>{{ 'myBookings.total' | translate }}</span>
+            <strong>
+              {{ booking.price | currency: (booking.currency || 'EUR') : 'symbol' : '1.2-2' : 'es' }}
+            </strong>
+          </div>
+        </li>
+      }
+    </ul>
+  }
+</section>

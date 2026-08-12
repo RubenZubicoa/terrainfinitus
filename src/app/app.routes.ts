@@ -50,7 +50,11 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./pages/shop/pages/orders/orders').then((m) => m.Orders),
       },
-      { path: 'reservas', ...placeholder('header.bookings') },
+      {
+        path: 'reservas',
+        loadComponent: () =>
+          import('./pages/rooms/pages/my-bookings/my-bookings').then((m) => m.MyBookings),
+      },
       { path: 'contacto', ...placeholder('nav.contact') },
       { path: 'login', children: authRoutes },
     ],

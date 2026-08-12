@@ -92,6 +92,37 @@
       "unknown": "Stato sconosciuto"
     }
   },
+  "myBookings": {
+    "eyebrow": "Account",
+    "title": "Le mie prenotazioni",
+    "description": "Consulta lo storico delle tue prenotazioni.",
+    "loading": "Caricamento prenotazioni…",
+    "error": "Impossibile caricare le prenotazioni. Riprova più tardi.",
+    "empty": "Non hai ancora effettuato prenotazioni.",
+    "emptyCta": "Vedi le camere",
+    "bookingId": "Prenotazione",
+    "createdAt": "Creata",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Ospiti",
+    "paymentMethod": "Metodo di pagamento",
+    "payment": "Pagamento",
+    "total": "Totale",
+    "status": {
+      "pending": "In sospeso",
+      "confirmed": "Confermata",
+      "cancelled": "Annullata",
+      "completed": "Completata",
+      "unknown": "Stato sconosciuto"
+    },
+    "paymentStatus": {
+      "pending": "In sospeso",
+      "paid": "Pagato",
+      "failed": "Fallito",
+      "refunded": "Rimborsato",
+      "unknown": "Sconosciuto"
+    }
+  },
   "auth": {
     "logoutSuccess": "Hai chiuso la sessione correttamente."
   },
