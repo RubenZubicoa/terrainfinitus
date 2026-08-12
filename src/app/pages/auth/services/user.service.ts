@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../../../environments/environment';
-import { AddUser, UpdateUser } from '../../../core/models/User';
+import { AddUser, UpdateUser, UpdateUserWithPassword } from '../../../core/models/User';
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +17,10 @@ export class UserService {
   }
 
   public updateUser(uuid: string, user: UpdateUser): Observable<void> {
+    return this.http.put<void>(`${this.baseUrl}/${uuid}`, user);
+  }
+
+  public updateUserPassword(uuid: string, user: UpdateUserWithPassword): Observable<void> {
     return this.http.put<void>(`${this.baseUrl}/${uuid}`, user);
   }
 }

@@ -123,6 +123,34 @@
       "unknown": "Sconosciuto"
     }
   },
+  "profile": {
+    "eyebrow": "Account",
+    "title": "Il mio profilo",
+    "subtitle": "Aggiorna i tuoi dati personali o cambia la password.",
+    "personalData": "Dati personali",
+    "changePassword": "Cambia password",
+    "name": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "dni": "Codice fiscale / NIF",
+    "address": "Indirizzo",
+    "password": "Nuova password",
+    "passwordPlaceholder": "Almeno 6 caratteri",
+    "confirmPassword": "Conferma password",
+    "confirmPasswordPlaceholder": "Ripeti la nuova password",
+    "saveProfile": "Salva modifiche",
+    "savingProfile": "Salvataggio…",
+    "savePassword": "Aggiorna password",
+    "savingPassword": "Aggiornamento…",
+    "successProfile": "Profilo aggiornato correttamente.",
+    "successPassword": "Password aggiornata correttamente.",
+    "errorRequired": "Compila correttamente tutti i campi.",
+    "errorPasswordMismatch": "Le password non coincidono.",
+    "errorProfile": "Impossibile aggiornare il profilo. Riprova.",
+    "errorPassword": "Impossibile aggiornare la password. Riprova.",
+    "errorExists": "Esiste già un account con questa email."
+  },
   "auth": {
     "logoutSuccess": "Hai chiuso la sessione correttamente."
   },

@@ -123,6 +123,34 @@
       "unknown": "Unbekannt"
     }
   },
+  "profile": {
+    "eyebrow": "Konto",
+    "title": "Mein Profil",
+    "subtitle": "Aktualisieren Sie Ihre persönlichen Daten oder ändern Sie Ihr Passwort.",
+    "personalData": "Persönliche Daten",
+    "changePassword": "Passwort ändern",
+    "name": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "dni": "Ausweis / Steuernummer",
+    "address": "Adresse",
+    "password": "Neues Passwort",
+    "passwordPlaceholder": "Mindestens 6 Zeichen",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordPlaceholder": "Neues Passwort wiederholen",
+    "saveProfile": "Änderungen speichern",
+    "savingProfile": "Wird gespeichert…",
+    "savePassword": "Passwort aktualisieren",
+    "savingPassword": "Wird aktualisiert…",
+    "successProfile": "Profil erfolgreich aktualisiert.",
+    "successPassword": "Passwort erfolgreich aktualisiert.",
+    "errorRequired": "Bitte füllen Sie alle Felder korrekt aus.",
+    "errorPasswordMismatch": "Die Passwörter stimmen nicht überein.",
+    "errorProfile": "Profil konnte nicht aktualisiert werden. Bitte erneut versuchen.",
+    "errorPassword": "Passwort konnte nicht aktualisiert werden. Bitte erneut versuchen.",
+    "errorExists": "Ein Konto mit dieser E-Mail existiert bereits."
+  },
   "auth": {
     "logoutSuccess": "Sie wurden erfolgreich abgemeldet."
   },

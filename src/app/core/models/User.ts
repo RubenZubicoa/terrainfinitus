@@ -28,7 +28,12 @@ export interface User {
 }
 
 export type AddUser = Omit<User, 'uuid' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'isProfessional'>;
-export type UpdateUser = Omit<User, 'uuid' | 'password' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'role'>;
+export type UpdateUser = Omit<
+  User,
+  'uuid' | 'password' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'role'
+>;
+/** Actualización de perfil incluyendo nueva contraseña. */
+export type UpdateUserWithPassword = UpdateUser & { password: string };
 
 export function mapUserDBToUser(userDB: UserDB): User {
     return {

@@ -123,6 +123,34 @@
       "unknown": "Desconhecido"
     }
   },
+  "profile": {
+    "eyebrow": "Conta",
+    "title": "O meu perfil",
+    "subtitle": "Atualize os seus dados pessoais ou altere a palavra-passe.",
+    "personalData": "Dados pessoais",
+    "changePassword": "Alterar palavra-passe",
+    "name": "Nome",
+    "lastName": "Apelidos",
+    "email": "Email",
+    "phone": "Telefone",
+    "dni": "NIF / Documento",
+    "address": "Morada",
+    "password": "Nova palavra-passe",
+    "passwordPlaceholder": "Mínimo 6 caracteres",
+    "confirmPassword": "Confirmar palavra-passe",
+    "confirmPasswordPlaceholder": "Repita a nova palavra-passe",
+    "saveProfile": "Guardar alterações",
+    "savingProfile": "A guardar…",
+    "savePassword": "Atualizar palavra-passe",
+    "savingPassword": "A atualizar…",
+    "successProfile": "Perfil atualizado com sucesso.",
+    "successPassword": "Palavra-passe atualizada com sucesso.",
+    "errorRequired": "Preencha todos os campos corretamente.",
+    "errorPasswordMismatch": "As palavras-passe não coincidem.",
+    "errorProfile": "Não foi possível atualizar o perfil. Tente novamente.",
+    "errorPassword": "Não foi possível atualizar a palavra-passe. Tente novamente.",
+    "errorExists": "Já existe uma conta com este email."
+  },
   "auth": {
     "logoutSuccess": "Sessão terminada com sucesso."
   },

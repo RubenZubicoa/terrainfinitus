@@ -44,7 +44,11 @@ export const routes: Routes = [
       { path: 'destinations/guias', ...placeholder('nav.guides') },
       { path: 'testimonios', ...placeholder('nav.testimonials') },
       { path: 'reservas-precios', ...placeholder('nav.bookings') },
-      { path: 'perfil', ...placeholder('header.profile') },
+      {
+        path: 'perfil',
+        loadComponent: () =>
+          import('./pages/auth/pages/profile/profile').then((m) => m.Profile),
+      },
       {
         path: 'pedidos',
         loadComponent: () =>

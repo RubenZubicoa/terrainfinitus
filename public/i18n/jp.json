@@ -123,6 +123,34 @@
       "unknown": "不明"
     }
   },
+  "profile": {
+    "eyebrow": "アカウント",
+    "title": "マイプロフィール",
+    "subtitle": "個人情報の更新やパスワードの変更ができます。",
+    "personalData": "個人情報",
+    "changePassword": "パスワード変更",
+    "name": "名",
+    "lastName": "姓",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "dni": "身分証番号 / NIF",
+    "address": "住所",
+    "password": "新しいパスワード",
+    "passwordPlaceholder": "6文字以上",
+    "confirmPassword": "パスワード確認",
+    "confirmPasswordPlaceholder": "新しいパスワードを再入力",
+    "saveProfile": "変更を保存",
+    "savingProfile": "保存中…",
+    "savePassword": "パスワードを更新",
+    "savingPassword": "更新中…",
+    "successProfile": "プロフィールを更新しました。",
+    "successPassword": "パスワードを更新しました。",
+    "errorRequired": "すべての項目を正しく入力してください。",
+    "errorPasswordMismatch": "パスワードが一致しません。",
+    "errorProfile": "プロフィールを更新できませんでした。もう一度お試しください。",
+    "errorPassword": "パスワードを更新できませんでした。もう一度お試しください。",
+    "errorExists": "このメールアドレスのアカウントは既に存在します。"
+  },
   "auth": {
     "logoutSuccess": "ログアウトしました。"
   },

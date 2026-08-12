@@ -123,6 +123,34 @@
       "unknown": "Unknown"
     }
   },
+  "profile": {
+    "eyebrow": "Account",
+    "title": "My profile",
+    "subtitle": "Update your personal details or change your password.",
+    "personalData": "Personal details",
+    "changePassword": "Change password",
+    "name": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "dni": "ID / Tax ID",
+    "address": "Address",
+    "password": "New password",
+    "passwordPlaceholder": "At least 6 characters",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordPlaceholder": "Repeat the new password",
+    "saveProfile": "Save changes",
+    "savingProfile": "Saving…",
+    "savePassword": "Update password",
+    "savingPassword": "Updating…",
+    "successProfile": "Profile updated successfully.",
+    "successPassword": "Password updated successfully.",
+    "errorRequired": "Please complete all fields correctly.",
+    "errorPasswordMismatch": "Passwords do not match.",
+    "errorProfile": "Could not update the profile. Please try again.",
+    "errorPassword": "Could not update the password. Please try again.",
+    "errorExists": "An account with this email already exists."
+  },
   "auth": {
     "logoutSuccess": "You have been signed out successfully."
   },

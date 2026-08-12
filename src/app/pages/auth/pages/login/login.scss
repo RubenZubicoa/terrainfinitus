@@ -281,6 +281,22 @@
   }
 }
 
+.profile .login__form + .login__form {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ti-border);
+}
+
+.profile__section-title {
+  margin: 0 0 0.25rem;
+  font-family: var(--ti-font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ti-black);
+}
+
 @media (max-width: 480px) {
   .login__card {
     padding: 1.75rem 1.25rem;

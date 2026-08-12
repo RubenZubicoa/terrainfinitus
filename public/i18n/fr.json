@@ -123,6 +123,34 @@
       "unknown": "Inconnu"
     }
   },
+  "profile": {
+    "eyebrow": "Compte",
+    "title": "Mon profil",
+    "subtitle": "Mettez à jour vos données personnelles ou changez votre mot de passe.",
+    "personalData": "Données personnelles",
+    "changePassword": "Changer le mot de passe",
+    "name": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "dni": "NIF / ID",
+    "address": "Adresse",
+    "password": "Nouveau mot de passe",
+    "passwordPlaceholder": "Au moins 6 caractères",
+    "confirmPassword": "Confirmer le mot de passe",
+    "confirmPasswordPlaceholder": "Répétez le nouveau mot de passe",
+    "saveProfile": "Enregistrer",
+    "savingProfile": "Enregistrement…",
+    "savePassword": "Mettre à jour le mot de passe",
+    "savingPassword": "Mise à jour…",
+    "successProfile": "Profil mis à jour avec succès.",
+    "successPassword": "Mot de passe mis à jour avec succès.",
+    "errorRequired": "Veuillez remplir tous les champs correctement.",
+    "errorPasswordMismatch": "Les mots de passe ne correspondent pas.",
+    "errorProfile": "Impossible de mettre à jour le profil. Réessayez.",
+    "errorPassword": "Impossible de mettre à jour le mot de passe. Réessayez.",
+    "errorExists": "Un compte existe déjà avec cet e-mail."
+  },
   "auth": {
     "logoutSuccess": "Vous êtes déconnecté."
   },
