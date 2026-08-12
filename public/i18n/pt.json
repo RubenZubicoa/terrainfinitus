@@ -72,6 +72,26 @@
     "errorPasswordMismatch": "As palavras-passe não coincidem.",
     "errorExists": "Já existe uma conta com este email."
   },
+  "orders": {
+    "eyebrow": "Conta",
+    "title": "As minhas encomendas",
+    "description": "Consulte o histórico das suas encomendas gourmet.",
+    "loading": "A carregar encomendas…",
+    "error": "Não foi possível carregar as encomendas. Tente novamente mais tarde.",
+    "empty": "Ainda não fez nenhuma encomenda.",
+    "emptyCta": "Ir à loja gourmet",
+    "orderId": "Encomenda",
+    "total": "Total",
+    "status": {
+      "pending": "Pendente",
+      "confirmed": "Confirmada",
+      "paid": "Paga",
+      "shipped": "Enviada",
+      "cancelled": "Cancelada",
+      "completed": "Concluída",
+      "unknown": "Estado desconhecido"
+    }
+  },
   "auth": {
     "logoutSuccess": "Sessão terminada com sucesso."
   },

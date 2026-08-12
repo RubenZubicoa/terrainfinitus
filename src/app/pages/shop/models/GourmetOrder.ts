@@ -22,6 +22,7 @@ export interface GourmetOrder {
     }[];
     totalPrice: number;
     status: string;
+    createdAt?: string;
 }
 
 export type AddGourmetOrder = Omit<GourmetOrder, 'uuid' | 'createdAt' | 'updatedAt'>;
@@ -34,5 +35,8 @@ export function mapGourmetOrderDBToGourmetOrder(gourmetOrderDB: GourmetOrderDB):
         products: gourmetOrderDB.products,
         totalPrice: gourmetOrderDB.totalPrice,
         status: gourmetOrderDB.status,
+        createdAt: gourmetOrderDB.createdAt
+            ? new Date(gourmetOrderDB.createdAt).toISOString()
+            : undefined,
     };
 }

@@ -72,6 +72,26 @@
     "errorPasswordMismatch": "Les mots de passe ne correspondent pas.",
     "errorExists": "Un compte existe déjà avec cet e-mail."
   },
+  "orders": {
+    "eyebrow": "Compte",
+    "title": "Mes commandes",
+    "description": "Consultez l'historique de vos commandes gourmet.",
+    "loading": "Chargement des commandes…",
+    "error": "Impossible de charger les commandes. Réessayez plus tard.",
+    "empty": "Vous n'avez encore passé aucune commande.",
+    "emptyCta": "Aller à la boutique gourmet",
+    "orderId": "Commande",
+    "total": "Total",
+    "status": {
+      "pending": "En attente",
+      "confirmed": "Confirmée",
+      "paid": "Payée",
+      "shipped": "Expédiée",
+      "cancelled": "Annulée",
+      "completed": "Terminée",
+      "unknown": "État inconnu"
+    }
+  },
   "auth": {
     "logoutSuccess": "Vous êtes déconnecté."
   },

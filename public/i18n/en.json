@@ -72,6 +72,26 @@
     "errorPasswordMismatch": "Passwords do not match.",
     "errorExists": "An account with this email already exists."
   },
+  "orders": {
+    "eyebrow": "Account",
+    "title": "My orders",
+    "description": "View your gourmet order history.",
+    "loading": "Loading orders…",
+    "error": "Could not load orders. Please try again later.",
+    "empty": "You have not placed any orders yet.",
+    "emptyCta": "Go to the gourmet shop",
+    "orderId": "Order",
+    "total": "Total",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "paid": "Paid",
+      "shipped": "Shipped",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "unknown": "Unknown status"
+    }
+  },
   "auth": {
     "logoutSuccess": "You have been signed out successfully."
   },

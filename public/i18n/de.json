@@ -72,6 +72,26 @@
     "errorPasswordMismatch": "Die Passwörter stimmen nicht überein.",
     "errorExists": "Ein Konto mit dieser E-Mail existiert bereits."
   },
+  "orders": {
+    "eyebrow": "Konto",
+    "title": "Meine Bestellungen",
+    "description": "Sehen Sie Ihre Gourmet-Bestellhistorie ein.",
+    "loading": "Bestellungen werden geladen…",
+    "error": "Bestellungen konnten nicht geladen werden. Bitte später erneut versuchen.",
+    "empty": "Sie haben noch keine Bestellungen aufgegeben.",
+    "emptyCta": "Zum Gourmet-Shop",
+    "orderId": "Bestellung",
+    "total": "Gesamt",
+    "status": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "paid": "Bezahlt",
+      "shipped": "Versendet",
+      "cancelled": "Storniert",
+      "completed": "Abgeschlossen",
+      "unknown": "Unbekannter Status"
+    }
+  },
   "auth": {
     "logoutSuccess": "Sie wurden erfolgreich abgemeldet."
   },

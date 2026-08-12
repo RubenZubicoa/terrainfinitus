@@ -45,7 +45,11 @@ export const routes: Routes = [
       { path: 'testimonios', ...placeholder('nav.testimonials') },
       { path: 'reservas-precios', ...placeholder('nav.bookings') },
       { path: 'perfil', ...placeholder('header.profile') },
-      { path: 'pedidos', ...placeholder('header.orders') },
+      {
+        path: 'pedidos',
+        loadComponent: () =>
+          import('./pages/shop/pages/orders/orders').then((m) => m.Orders),
+      },
       { path: 'reservas', ...placeholder('header.bookings') },
       { path: 'contacto', ...placeholder('nav.contact') },
       { path: 'login', children: authRoutes },

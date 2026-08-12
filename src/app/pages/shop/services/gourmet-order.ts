@@ -29,6 +29,12 @@ export class GourmetOrderService {
       .pipe(map(mapGourmetOrderDBToGourmetOrder));
   }
 
+  getGourmetOrdersByUserId(userId: string): Observable<GourmetOrder[]> {
+    return this.http
+      .get<GourmetOrderDB[]>(`${this.apiUrl}/user/${userId}`)
+      .pipe(map(gourmetOrdersDB => gourmetOrdersDB.map(mapGourmetOrderDBToGourmetOrder)));
+  }
+
   updateGourmetOrder(id: string, gourmetOrder: UpdateGourmetOrder): Observable<GourmetOrder> {
     return this.http
       .put<GourmetOrderDB>(`${this.apiUrl}/${id}`, gourmetOrder)

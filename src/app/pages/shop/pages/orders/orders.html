@@ -1,0 +1,64 @@
+<section class="orders section" [attr.aria-label]="'orders.title' | translate">
+  <header class="orders__header">
+    <p class="orders__eyebrow">{{ 'orders.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'orders.title' | translate }}</h1>
+    <p class="orders__description">{{ 'orders.description' | translate }}</p>
+  </header>
+
+  @if (loading()) {
+    <p class="orders__state">{{ 'orders.loading' | translate }}</p>
+  } @else if (error()) {
+    <p class="orders__state orders__state--error" role="alert">{{ 'orders.error' | translate }}</p>
+  } @else if (orders().length === 0) {
+    <div class="orders__empty">
+      <p>{{ 'orders.empty' | translate }}</p>
+      <a routerLink="/tienda-boutique/gourmet" class="orders__cta">
+        {{ 'orders.emptyCta' | translate }}
+      </a>
+    </div>
+  } @else {
+    <ul class="orders__list">
+      @for (order of orders(); track order.uuid) {
+        <li class="orders__card">
+          <div class="orders__card-top">
+            <div>
+              <p class="orders__id">
+                {{ 'orders.orderId' | translate }}:
+                <span>{{ order.uuid }}</span>
+              </p>
+              @if (order.createdAt) {
+                <p class="orders__date">
+                  {{ order.createdAt | date: 'dd/MM/yyyy HH:mm' }}
+                </p>
+              }
+            </div>
+            <span class="orders__status">{{ statusKey(order.status) | translate }}</span>
+          </div>
+
+          <ul class="orders__products">
+            @for (line of order.products; track line.productId + '-' + $index) {
+              <li class="orders__product">
+                <span class="orders__product-name">
+                  @if (productNameKey(line.productId); as nameKey) {
+                    {{ nameKey | translate }}
+                  } @else {
+                    {{ line.productId }}
+                  }
+                </span>
+                <span class="orders__product-qty">× {{ line.quantity }}</span>
+                <span class="orders__product-price">
+                  {{ line.price * line.quantity | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}
+                </span>
+              </li>
+            }
+          </ul>
+
+          <div class="orders__total">
+            <span>{{ 'orders.total' | translate }}</span>
+            <strong>{{ order.totalPrice | currency: 'EUR' : 'symbol' : '1.2-2' : 'es' }}</strong>
+          </div>
+        </li>
+      }
+    </ul>
+  }
+</section>
