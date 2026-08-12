@@ -16,7 +16,11 @@
     "contact": "Contact",
     "login": "Connexion",
     "logout": "Déconnexion",
-    "cart": "Panier"
+    "cart": "Panier",
+    "userMenu": "Menu utilisateur",
+    "profile": "Profil",
+    "orders": "Commandes",
+    "bookings": "Réservations"
   },
   "login": {
     "eyebrow": "Espace privé",

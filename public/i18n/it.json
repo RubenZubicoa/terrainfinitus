@@ -16,7 +16,11 @@
     "contact": "Contatto",
     "login": "Accedi",
     "logout": "Esci",
-    "cart": "Carrello"
+    "cart": "Carrello",
+    "userMenu": "Menu utente",
+    "profile": "Profilo",
+    "orders": "Ordini",
+    "bookings": "Prenotazioni"
   },
   "login": {
     "eyebrow": "Area privata",

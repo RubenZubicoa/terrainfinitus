@@ -16,7 +16,11 @@
     "contact": "お問い合わせ",
     "login": "ログイン",
     "logout": "ログアウト",
-    "cart": "ショッピングカート"
+    "cart": "ショッピングカート",
+    "userMenu": "ユーザーメニュー",
+    "profile": "プロフィール",
+    "orders": "注文",
+    "bookings": "予約"
   },
   "login": {
     "eyebrow": "会員エリア",

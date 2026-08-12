@@ -26,6 +26,7 @@ export class HeaderComponent {
   private readonly router = inject(Router);
 
   protected readonly langMenuOpen = signal(false);
+  protected readonly userMenuOpen = signal(false);
 
   protected get activeLanguage(): LanguageOption {
     const code = this.languageService.currentLanguage();
@@ -36,7 +37,17 @@ export class HeaderComponent {
   }
 
   protected toggleLangMenu(): void {
+    this.userMenuOpen.set(false);
     this.langMenuOpen.update((open) => !open);
+  }
+
+  protected toggleUserMenu(): void {
+    this.langMenuOpen.set(false);
+    this.userMenuOpen.update((open) => !open);
+  }
+
+  protected closeUserMenu(): void {
+    this.userMenuOpen.set(false);
   }
 
   protected selectLanguage(code: Languaje): void {
@@ -45,22 +56,26 @@ export class HeaderComponent {
   }
 
   @HostListener('document:click', ['$event'])
-  protected closeLangMenuOnOutsideClick(event: MouseEvent): void {
-    if (!this.langMenuOpen()) {
-      return;
-    }
+  protected closeMenusOnOutsideClick(event: MouseEvent): void {
     const target = event.target as HTMLElement;
-    if (!target.closest('.header__lang-mobile')) {
+
+    if (this.langMenuOpen() && !target.closest('.header__lang-mobile')) {
       this.langMenuOpen.set(false);
+    }
+
+    if (this.userMenuOpen() && !target.closest('.header__user-menu')) {
+      this.userMenuOpen.set(false);
     }
   }
 
   @HostListener('document:keydown.escape')
-  protected closeLangMenuOnEscape(): void {
+  protected closeMenusOnEscape(): void {
     this.langMenuOpen.set(false);
+    this.userMenuOpen.set(false);
   }
 
   protected logout(): void {
+    this.userMenuOpen.set(false);
     this.authService.logout();
     this.notificationService.show('auth.logoutSuccess', 'info');
     void this.router.navigate(['/']);

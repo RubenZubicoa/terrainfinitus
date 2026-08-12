@@ -16,7 +16,11 @@
     "contact": "Contacto",
     "login": "Iniciar sessão",
     "logout": "Terminar sessão",
-    "cart": "Carrinho"
+    "cart": "Carrinho",
+    "userMenu": "Menu do utilizador",
+    "profile": "Perfil",
+    "orders": "Encomendas",
+    "bookings": "Reservas"
   },
   "login": {
     "eyebrow": "Área privada",
