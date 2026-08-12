@@ -21,6 +21,6 @@ export class UserService {
   }
 
   public updateUserPassword(uuid: string, user: UpdateUserWithPassword): Observable<void> {
-    return this.http.put<void>(`${this.baseUrl}/${uuid}`, user);
+    return this.http.post<void>(`${this.baseUrl}/${uuid}/change-password`, {password: user.password});
   }
 }
