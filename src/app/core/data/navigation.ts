@@ -41,7 +41,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
     children: [
       { labelKey: 'nav.galleryProjects', route: '/galeria/fotos/proyectos' },
       { labelKey: 'nav.galleryNature', route: '/galeria/fotos/naturaleza' },
-      { labelKey: 'nav.galleryFishing', route: '/galeria/fotos/pesca' },
+      {
+        labelKey: 'nav.galleryFishing',
+        externalUrl: 'https://www.thelakefish.es/galeria',
+        openInNewTab: true,
+      },
     ],
   },
   {
@@ -49,7 +53,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
     children: [
       { labelKey: 'nav.galleryProjects', route: '/galeria/videos/proyectos' },
       { labelKey: 'nav.galleryNature', route: '/galeria/videos/naturaleza' },
-      { labelKey: 'nav.galleryFishing', route: '/galeria/videos/pesca' },
+      {
+        labelKey: 'nav.galleryFishing',
+        externalUrl: 'https://www.thelakefish.es/galeria',
+        openInNewTab: true,
+      },
     ],
   },
   { labelKey: 'nav.blog', route: '/blog' },
