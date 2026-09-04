@@ -9,6 +9,7 @@ import { projectsRoutes } from './pages/projects/projects.routes';
 import { aboutUsRoutes } from './pages/abaut-us/about-us.routes';
 import { shopRoutes } from './pages/shop/shop.routes';
 import { authRoutes } from './pages/auth/auth.routes';
+import { destinationsRoutes } from './pages/destinations/destinations.routes';
 
 const placeholder = (titleKey: string) => ({
   component: PlaceholderComponent,
@@ -37,9 +38,7 @@ export const routes: Routes = [
       { path: 'galeria/videos/naturaleza', component: Videos },
       { path: 'galeria/videos/pesca', component: Videos },
       { path: 'blog', ...placeholder('nav.blog') },
-      { path: 'destinations/agua-dulce', ...placeholder('nav.freshwater') },
-      { path: 'destinations/agua-salada', ...placeholder('nav.saltwater') },
-      { path: 'destinations/guias', ...placeholder('nav.guides') },
+      { path: 'destinations', children: destinationsRoutes },
       { path: 'testimonios', ...placeholder('nav.testimonials') },
       { path: 'reservas-precios', ...placeholder('nav.bookings') },
       { path: 'contacto', ...placeholder('nav.contact') },

@@ -75,6 +75,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "淡水",
     "saltwater": "海水",
+    "warmwater": "暖水域",
     "guides": "ガイド",
     "testimonials": "Testimonials",
     "bookings": "予約・料金",
@@ -125,6 +126,45 @@
       "description": "Terra Infinitus の動画はこちら",
       "more": "その他の動画",
       "videoTitle": "Terra Infinitus — 動画"
+    }
+  },
+  "destinations": {
+    "eyebrow": "世界があなたを待っています",
+    "title": "Terra Infinitus Destinations",
+    "lead": "旅は、間違いなく体験できる最高の冒険のひとつです。",
+    "intro": "Terra Infinitusではそのことを深く理解し、地球各地に広がる充実したデスティネーションを厳選してご用意しています。",
+    "selection": "各デスティネーションは、品質・生産性・おもてなし・安全性・そして心からの楽しみというすべての基準を満たすよう、丁寧に選定されています。",
+    "groupsLabel": "三つの大きなグループ",
+    "groupsAria": "デスティネーションのカテゴリー",
+    "closingAria": "私たちと一緒に旅を",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "川と湖",
+        "title": "淡水",
+        "description": "川や湖のデスティネーション。定住種・回遊種を問わず多彩な魚種（トラウト、サーモン、シートラウト、スチールヘッド、パイク、バス、コイ、バーベル、ナマズなど）が対象です。",
+        "cta": "淡水を探す",
+        "alt": "淡水の釣りを楽しむ川の風景"
+      },
+      "saltwater": {
+        "eyebrow": "海とフラッツ",
+        "title": "海水",
+        "description": "海水または汽水のデスティネーション。ボートからの釣りも、フラッツを歩く釣りも、あらゆるスキルを試す無数の魚種が待っています。",
+        "cta": "海水を探す",
+        "alt": "海水での釣り環境"
+      },
+      "warmwater": {
+        "eyebrow": "アマゾンと熱帯",
+        "title": "暖水域",
+        "description": "アマゾンや熱帯の水域での冒険。世界で最も情熱的なデスティネーションを、完全な独占性と安全性とともに厳選しています。",
+        "cta": "暖水域を探す",
+        "alt": "熱帯の暖水域での冒険"
+      }
+    },
+    "closing": {
+      "quote": "私たちと旅をし、ガイド、VIPサービス、プレミアム宿泊施設をお楽しみください。",
+      "services": "さらに、機材からフライト、接続、送迎、手続きまで、旅のロジスティクス全般をトータルでサポートします。",
+      "invite": "次の冒険でお待ちしています。",
+      "cta": "情報をリクエスト"
     }
   },
   "aboutUs": {

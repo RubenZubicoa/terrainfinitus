@@ -1,0 +1,53 @@
+<div class="destinations">
+  <header class="destinations-hero">
+    <p class="destinations-hero__eyebrow">{{ 'destinations.eyebrow' | translate }}</p>
+    <h1 class="title destinations-hero__title">{{ 'destinations.title' | translate }}</h1>
+    <p class="destinations-hero__lead">{{ 'destinations.lead' | translate }}</p>
+    <p class="destinations-hero__intro">{{ 'destinations.intro' | translate }}</p>
+    <p class="destinations-hero__selection">{{ 'destinations.selection' | translate }}</p>
+  </header>
+
+  <section
+    class="destinations-groups"
+    [attr.aria-label]="'destinations.groupsAria' | translate"
+  >
+    <p class="destinations-groups__label">{{ 'destinations.groupsLabel' | translate }}</p>
+
+    @for (category of categories; track category.id; let i = $index) {
+      <article
+        class="destinations-panel"
+        [class.destinations-panel--reverse]="i % 2 === 1"
+        [id]="category.id"
+      >
+        <div class="destinations-panel__media">
+          <img
+            class="destinations-panel__image"
+            [src]="category.imageSrc"
+            [alt]="category.altKey | translate"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="destinations-panel__veil" aria-hidden="true"></div>
+        </div>
+
+        <div class="destinations-panel__content">
+          <p class="destinations-panel__eyebrow">{{ category.eyebrowKey | translate }}</p>
+          <h2 class="destinations-panel__title">{{ category.titleKey | translate }}</h2>
+          <p class="destinations-panel__text">{{ category.descriptionKey | translate }}</p>
+          <a class="destinations-panel__cta" [routerLink]="category.route">
+            {{ category.ctaKey | translate }}
+          </a>
+        </div>
+      </article>
+    }
+  </section>
+
+  <section class="destinations-closing" [attr.aria-label]="'destinations.closingAria' | translate">
+    <p class="destinations-closing__quote">{{ 'destinations.closing.quote' | translate }}</p>
+    <p class="destinations-closing__text">{{ 'destinations.closing.services' | translate }}</p>
+    <p class="destinations-closing__invite">{{ 'destinations.closing.invite' | translate }}</p>
+    <a class="destinations-closing__cta" routerLink="/contacto">
+      {{ 'destinations.closing.cta' | translate }}
+    </a>
+  </section>
+</div>

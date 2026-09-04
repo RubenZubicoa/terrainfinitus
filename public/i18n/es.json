@@ -78,6 +78,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Agua dulce",
     "saltwater": "Agua salada",
+    "warmwater": "Aguas cálidas",
     "guides": "Guías",
     "testimonials": "Testimonials",
     "bookings": "Reservas-Precios",
@@ -125,6 +126,45 @@
       "description": "Aquí podrás encontrar los videos de Terra Infinitus",
       "more": "Más videos",
       "videoTitle": "Terra Infinitus — vídeo"
+    }
+  },
+  "destinations": {
+    "eyebrow": "El mundo te espera",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Viajar es, sin duda alguna, una de las mejores aventuras que puedes correr.",
+    "intro": "En Terra Infinitus, somos conscientes de ello y por eso hemos elaborado un extenso y completo surtido de destinos repartidos por todo el Planeta.",
+    "selection": "Cada destino ha sido minuciosamente seleccionado para asegurar que cumple con todos los requisitos de calidad, productividad, atención, seguridad y pleno divertimiento.",
+    "groupsLabel": "Tres grandes grupos",
+    "groupsAria": "Categorías de destinos",
+    "closingAria": "Viaja con nosotros",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Ríos y lagos",
+        "title": "Agua dulce",
+        "description": "Destinos de río y lago, abarcando todo un gran cúmulo de especies, tanto residentes como migratorias (trucha, salmón, reos, steelhead, lucio, bass, carpas, barbos, siluros, etc).",
+        "cta": "Explorar agua dulce",
+        "alt": "Paisaje de río y aguas dulces para la pesca"
+      },
+      "saltwater": {
+        "eyebrow": "Océanos y flats",
+        "title": "Agua salada",
+        "description": "Destinos que se desarrollan en agua salada o semi salada, tanto pescado desde embarcación como recorriendo los bajíos o flats y cubriendo un sinfín de especies que te harán vibrar y utilizar todas tus habilidades ante tal desafío.",
+        "cta": "Explorar agua salada",
+        "alt": "Entorno de pesca en agua salada"
+      },
+      "warmwater": {
+        "eyebrow": "Amazonas y trópicos",
+        "title": "Aguas cálidas",
+        "description": "Aventuras en El Amazonas y aguas tropicales en general, con la plena garantía de haber seleccionado los mejores y más apasionantes destinos del Mundo, con una total exclusividad y seguridad.",
+        "cta": "Explorar aguas cálidas",
+        "alt": "Aventura en aguas cálidas y tropicales"
+      }
+    },
+    "closing": {
+      "quote": "Viaja con nosotros y disfruta de nuestros guías, servicios VIP disponibles y alojamientos premium.",
+      "services": "Además, un total asesoramiento en toda la logística de tu viaje: desde equipos hasta vuelos, conexiones, traslados y trámites.",
+      "invite": "Te esperamos para acompañarte en tu próxima aventura.",
+      "cta": "Solicitar información"
     }
   },
   "aboutUs": {

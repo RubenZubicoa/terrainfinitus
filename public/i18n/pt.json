@@ -75,6 +75,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Água doce",
     "saltwater": "Água salgada",
+    "warmwater": "Águas quentes",
     "guides": "Guias",
     "testimonials": "Testimonials",
     "bookings": "Reservas-Preços",
@@ -125,6 +126,45 @@
       "description": "Aqui poderá encontrar os vídeos da Terra Infinitus",
       "more": "Mais vídeos",
       "videoTitle": "Terra Infinitus — vídeo"
+    }
+  },
+  "destinations": {
+    "eyebrow": "O mundo espera por si",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Viajar é, sem dúvida alguma, uma das melhores aventuras que se pode viver.",
+    "intro": "Na Terra Infinitus somos conscientes disso e por isso elaborámos uma seleção vasta e completa de destinos espalhados por todo o planeta.",
+    "selection": "Cada destino foi minuciosamente selecionado para garantir que cumpre todos os requisitos de qualidade, produtividade, atenção, segurança e pleno divertimento.",
+    "groupsLabel": "Três grandes grupos",
+    "groupsAria": "Categorias de destinos",
+    "closingAria": "Viaje connosco",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Rios e lagos",
+        "title": "Água doce",
+        "description": "Destinos de rio e lago, abrangendo um grande conjunto de espécies, residentes e migratórias (truta, salmão, reos, steelhead, lúcio, bass, carpas, barbos, siluros, etc.).",
+        "cta": "Explorar água doce",
+        "alt": "Paisagem de rio e águas doces para a pesca"
+      },
+      "saltwater": {
+        "eyebrow": "Oceanos e flats",
+        "title": "Água salgada",
+        "description": "Destinos em água salgada ou semissalgada, tanto a partir de embarcação como percorrendo os baixios ou flats, com um sem-fim de espécies que farão vibrar todas as suas competências.",
+        "cta": "Explorar água salgada",
+        "alt": "Ambiente de pesca em água salgada"
+      },
+      "warmwater": {
+        "eyebrow": "Amazónia e trópicos",
+        "title": "Águas quentes",
+        "description": "Aventuras na Amazónia e em águas tropicais em geral, com a garantia de ter selecionado os melhores e mais apaixonantes destinos do mundo, com total exclusividade e segurança.",
+        "cta": "Explorar águas quentes",
+        "alt": "Aventura em águas quentes tropicais"
+      }
+    },
+    "closing": {
+      "quote": "Viaje connosco e desfrute dos nossos guias, serviços VIP disponíveis e alojamentos premium.",
+      "services": "Além disso, um aconselhamento total em toda a logística da sua viagem: desde equipamentos até voos, ligações, transferências e trâmites.",
+      "invite": "Esperamo-lo para o acompanhar na sua próxima aventura.",
+      "cta": "Solicitar informação"
     }
   },
   "aboutUs": {

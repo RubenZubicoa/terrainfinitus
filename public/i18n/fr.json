@@ -75,6 +75,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Eau douce",
     "saltwater": "Eau salée",
+    "warmwater": "Eaux chaudes",
     "guides": "Guides",
     "testimonials": "Testimonials",
     "bookings": "Réservations-Prix",
@@ -125,6 +126,45 @@
       "description": "Ici vous trouverez les vidéos de Terra Infinitus",
       "more": "Plus de vidéos",
       "videoTitle": "Terra Infinitus — vidéo"
+    }
+  },
+  "destinations": {
+    "eyebrow": "Le monde vous attend",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Voyager est, sans aucun doute, l'une des plus belles aventures que l'on puisse vivre.",
+    "intro": "Chez Terra Infinitus, nous en sommes conscients et avons élaboré une sélection vaste et complète de destinations à travers la planète.",
+    "selection": "Chaque destination a été minutieusement choisie pour répondre à tous nos critères de qualité, de productivité, d'attention, de sécurité et de pur divertissement.",
+    "groupsLabel": "Trois grands groupes",
+    "groupsAria": "Catégories de destinations",
+    "closingAria": "Voyagez avec nous",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Rivières et lacs",
+        "title": "Eau douce",
+        "description": "Destinations de rivière et de lac couvrant un large éventail d'espèces, résidentes comme migratrices (truite, saumon, truite de mer, steelhead, brochet, black-bass, carpes, barbeaux, silures, etc.).",
+        "cta": "Explorer l'eau douce",
+        "alt": "Paysage de rivière et d'eau douce pour la pêche"
+      },
+      "saltwater": {
+        "eyebrow": "Océans et flats",
+        "title": "Eau salée",
+        "description": "Destinations en eau salée ou saumâtre, depuis un bateau ou en parcourant les flats, avec une infinité d'espèces qui mettront toutes vos compétences à l'épreuve.",
+        "cta": "Explorer l'eau salée",
+        "alt": "Environnement de pêche en eau salée"
+      },
+      "warmwater": {
+        "eyebrow": "Amazone et tropiques",
+        "title": "Eaux chaudes",
+        "description": "Aventures en Amazonie et dans les eaux tropicales, avec la garantie d'avoir sélectionné les destinations les plus passionnantes au monde, dans une exclusivité et une sécurité totales.",
+        "cta": "Explorer les eaux chaudes",
+        "alt": "Aventure en eaux chaudes tropicales"
+      }
+    },
+    "closing": {
+      "quote": "Voyagez avec nous et profitez de nos guides, services VIP et hébergements premium.",
+      "services": "Ainsi qu'un accompagnement complet sur toute la logistique de votre voyage : équipements, vols, correspondances, transferts et formalités.",
+      "invite": "Nous vous attendons pour vous accompagner dans votre prochaine aventure.",
+      "cta": "Demander des informations"
     }
   },
   "aboutUs": {

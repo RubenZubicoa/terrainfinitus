@@ -75,6 +75,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Süßwasser",
     "saltwater": "Salzwasser",
+    "warmwater": "Warme Gewässer",
     "guides": "Guides",
     "testimonials": "Testimonials",
     "bookings": "Reservierungen & Preise",
@@ -125,6 +126,45 @@
       "description": "Hier finden Sie die Videos von Terra Infinitus",
       "more": "Weitere Videos",
       "videoTitle": "Terra Infinitus — Video"
+    }
+  },
+  "destinations": {
+    "eyebrow": "Die Welt erwartet Sie",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Reisen ist ohne Zweifel eines der größten Abenteuer, die man erleben kann.",
+    "intro": "Bei Terra Infinitus wissen wir das und haben deshalb eine umfangreiche Auswahl an Destinationen auf der ganzen Welt zusammengestellt.",
+    "selection": "Jedes Ziel wurde sorgfältig ausgewählt, damit es unseren Ansprüchen an Qualität, Produktivität, Betreuung, Sicherheit und purem Vergnügen gerecht wird.",
+    "groupsLabel": "Drei große Gruppen",
+    "groupsAria": "Destination-Kategorien",
+    "closingAria": "Reisen Sie mit uns",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Flüsse und Seen",
+        "title": "Süßwasser",
+        "description": "Fluss- und Seeziele mit einer großen Vielfalt an Arten — resident und wandernd (Forelle, Lachs, Meerforelle, Steelhead, Hecht, Bass, Karpfen, Barbe, Wels und mehr).",
+        "cta": "Süßwasser entdecken",
+        "alt": "Fluss- und Süßwasserlandschaft zum Angeln"
+      },
+      "saltwater": {
+        "eyebrow": "Ozeane und Flats",
+        "title": "Salzwasser",
+        "description": "Ziele in Salz- oder Brackwasser — vom Boot oder watend auf den Flats — mit unzähligen Arten, die all Ihre Fähigkeiten fordern.",
+        "cta": "Salzwasser entdecken",
+        "alt": "Salzwasser-Angelumgebung"
+      },
+      "warmwater": {
+        "eyebrow": "Amazonas und Tropen",
+        "title": "Warme Gewässer",
+        "description": "Abenteuer im Amazonas und in tropischen Gewässern — mit der Garantie der besten und spannendsten Destinationen der Welt, in voller Exklusivität und Sicherheit.",
+        "cta": "Warme Gewässer entdecken",
+        "alt": "Abenteuer in warmen tropischen Gewässern"
+      }
+    },
+    "closing": {
+      "quote": "Reisen Sie mit uns und genießen Sie unsere Guides, VIP-Services und Premium-Unterkünfte.",
+      "services": "Dazu kommt vollständige Beratung zur gesamten Logistik Ihrer Reise: von Ausrüstung über Flüge, Verbindungen und Transfers bis zu Formalitäten.",
+      "invite": "Wir freuen uns, Sie auf Ihr nächstes Abenteuer zu begleiten.",
+      "cta": "Informationen anfragen"
     }
   },
   "aboutUs": {

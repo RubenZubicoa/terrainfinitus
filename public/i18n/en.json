@@ -78,6 +78,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Freshwater",
     "saltwater": "Saltwater",
+    "warmwater": "Warm waters",
     "guides": "Guides",
     "testimonials": "Testimonials",
     "bookings": "Bookings & Prices",
@@ -125,6 +126,45 @@
       "description": "Here you can find Terra Infinitus videos",
       "more": "More videos",
       "videoTitle": "Terra Infinitus — video"
+    }
+  },
+  "destinations": {
+    "eyebrow": "The world awaits",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Travel is, without a doubt, one of the greatest adventures you can embark on.",
+    "intro": "At Terra Infinitus we know this well, which is why we have crafted an extensive and complete selection of destinations across the entire planet.",
+    "selection": "Every destination has been carefully selected to ensure it meets all our standards of quality, productivity, service, safety and pure enjoyment.",
+    "groupsLabel": "Three main groups",
+    "groupsAria": "Destination categories",
+    "closingAria": "Travel with us",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Rivers and lakes",
+        "title": "Freshwater",
+        "description": "River and lake destinations covering a wide range of species, both resident and migratory (trout, salmon, sea trout, steelhead, pike, bass, carp, barbel, catfish, and more).",
+        "cta": "Explore freshwater",
+        "alt": "River and freshwater fishing landscape"
+      },
+      "saltwater": {
+        "eyebrow": "Oceans and flats",
+        "title": "Saltwater",
+        "description": "Destinations in salt or brackish water, whether fishing from a boat or wading the flats, covering endless species that will challenge every skill you have.",
+        "cta": "Explore saltwater",
+        "alt": "Saltwater fishing environment"
+      },
+      "warmwater": {
+        "eyebrow": "Amazon and tropics",
+        "title": "Warm waters",
+        "description": "Adventures in the Amazon and tropical waters in general, with the assurance of having selected the world's finest and most thrilling destinations, with total exclusivity and safety.",
+        "cta": "Explore warm waters",
+        "alt": "Warm tropical water adventure"
+      }
+    },
+    "closing": {
+      "quote": "Travel with us and enjoy our guides, available VIP services and premium accommodations.",
+      "services": "Plus full advice on every part of your trip logistics: from gear to flights, connections, transfers and paperwork.",
+      "invite": "We look forward to joining you on your next adventure.",
+      "cta": "Request information"
     }
   },
   "aboutUs": {

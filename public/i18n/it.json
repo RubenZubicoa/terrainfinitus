@@ -75,6 +75,7 @@
     "destinations": "Terra Infinitus Destinations",
     "freshwater": "Acqua dolce",
     "saltwater": "Acqua salata",
+    "warmwater": "Acque calde",
     "guides": "Guide",
     "testimonials": "Testimonials",
     "bookings": "Prenotazioni-Prezzi",
@@ -125,6 +126,45 @@
       "description": "Qui troverai i video di Terra Infinitus",
       "more": "Altri video",
       "videoTitle": "Terra Infinitus — video"
+    }
+  },
+  "destinations": {
+    "eyebrow": "Il mondo ti aspetta",
+    "title": "Terra Infinitus Destinations",
+    "lead": "Viaggiare è, senza dubbio, una delle migliori avventure che si possano vivere.",
+    "intro": "In Terra Infinitus ne siamo consapevoli e per questo abbiamo elaborato un'ampia e completa selezione di destinazioni in tutto il pianeta.",
+    "selection": "Ogni destinazione è stata accuratamente selezionata per garantire qualità, produttività, attenzione, sicurezza e pieno divertimento.",
+    "groupsLabel": "Tre grandi gruppi",
+    "groupsAria": "Categorie di destinazioni",
+    "closingAria": "Viaggia con noi",
+    "categories": {
+      "freshwater": {
+        "eyebrow": "Fiumi e laghi",
+        "title": "Acqua dolce",
+        "description": "Destinazioni di fiume e lago, con un'ampia varietà di specie, residenti e migratorie (trota, salmone, trota di mare, steelhead, luccio, bass, carpe, barbi, siluri, ecc.).",
+        "cta": "Esplora acqua dolce",
+        "alt": "Paesaggio di fiume e acque dolci per la pesca"
+      },
+      "saltwater": {
+        "eyebrow": "Oceani e flats",
+        "title": "Acqua salata",
+        "description": "Destinazioni in acqua salata o salmastra, sia da imbarcazione sia percorrendo i flats, con infinite specie che metteranno alla prova tutte le tue abilità.",
+        "cta": "Esplora acqua salata",
+        "alt": "Ambiente di pesca in acqua salata"
+      },
+      "warmwater": {
+        "eyebrow": "Amazzonia e tropici",
+        "title": "Acque calde",
+        "description": "Avventure in Amazzonia e nelle acque tropicali, con la garanzia di aver selezionato le destinazioni più appassionanti del mondo, in totale esclusività e sicurezza.",
+        "cta": "Esplora acque calde",
+        "alt": "Avventura in acque calde tropicali"
+      }
+    },
+    "closing": {
+      "quote": "Viaggia con noi e goditi le nostre guide, i servizi VIP disponibili e gli alloggi premium.",
+      "services": "Inoltre, una consulenza completa su tutta la logistica del viaggio: dall'attrezzatura ai voli, collegamenti, trasferimenti e pratiche.",
+      "invite": "Ti aspettiamo per accompagnarti nella tua prossima avventura.",
+      "cta": "Richiedi informazioni"
     }
   },
   "aboutUs": {

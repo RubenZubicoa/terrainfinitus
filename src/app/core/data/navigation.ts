@@ -54,9 +54,11 @@ export const MAIN_NAVIGATION: NavItem[] = [
   { labelKey: 'nav.blog', route: '/blog' },
   {
     labelKey: 'nav.destinations',
+    route: '/destinations',
     children: [
       { labelKey: 'nav.freshwater', route: '/destinations/agua-dulce' },
       { labelKey: 'nav.saltwater', route: '/destinations/agua-salada' },
+      { labelKey: 'nav.warmwater', route: '/destinations/aguas-calidas' },
       { labelKey: 'nav.guides', route: '/destinations/guias' },
     ],
   },
