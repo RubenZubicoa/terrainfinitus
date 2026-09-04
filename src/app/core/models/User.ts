@@ -7,6 +7,8 @@ export type UserDB = {
     email: string;
     password: string;
     role: string;
+    dni: string;
+    isProfessional?: boolean;
     createdAt?: number;
     updatedAt?: number;
     isDeleted?: boolean;
@@ -21,10 +23,17 @@ export interface User {
     email: string;
     role: string;
     password: string;
+    dni: string;
+    isProfessional: boolean;
 }
 
-export type AddUser = Omit<User, 'uuid' | 'createdAt' | 'updatedAt' | 'isDeleted'>;
-export type UpdateUser = Omit<User, 'uuid' | 'password' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'role'>;
+export type AddUser = Omit<User, 'uuid' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'isProfessional'>;
+export type UpdateUser = Omit<
+  User,
+  'uuid' | 'password' | 'createdAt' | 'updatedAt' | 'isDeleted' | 'role'
+>;
+/** Actualización de perfil incluyendo nueva contraseña. */
+export type UpdateUserWithPassword = UpdateUser & { password: string };
 
 export function mapUserDBToUser(userDB: UserDB): User {
     return {
@@ -36,5 +45,7 @@ export function mapUserDBToUser(userDB: UserDB): User {
         email: userDB.email,
         role: userDB.role,
         password: userDB.password,
+        dni: userDB.dni ?? '',
+        isProfessional: userDB.isProfessional === true,
     }
 }

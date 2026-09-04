@@ -1,0 +1,36 @@
+<section class="bulletins-unsubscribe section" [attr.aria-label]="'bulletins.unsubscribePage.title' | translate">
+  <header class="bulletins-unsubscribe__hero">
+    <p class="bulletins-unsubscribe__eyebrow">{{ 'bulletins.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'bulletins.unsubscribePage.title' | translate }}</h1>
+    <p class="bulletins-unsubscribe__description">{{ 'bulletins.unsubscribePage.description' | translate }}</p>
+  </header>
+
+  @if (success()) {
+    <p class="bulletins-unsubscribe__success">{{ 'bulletins.unsubscribePage.success' | translate }}</p>
+  } @else {
+    <form class="bulletins-unsubscribe__form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+      <div class="bulletins-unsubscribe__field">
+        <label class="bulletins-unsubscribe__label" for="unsubscribe-email">
+          {{ 'bulletins.unsubscribePage.email' | translate }}
+        </label>
+        <input
+          id="unsubscribe-email"
+          class="bulletins-unsubscribe__input"
+          type="email"
+          formControlName="email"
+          autocomplete="email"
+        />
+      </div>
+
+      <button type="submit" class="bulletins-unsubscribe__submit" [disabled]="submitting()">
+        {{
+          submitting()
+            ? ('bulletins.unsubscribePage.submitting' | translate)
+            : ('bulletins.unsubscribePage.submit' | translate)
+        }}
+      </button>
+    </form>
+  }
+
+  <a class="link" routerLink="/boletines">{{ 'bulletins.unsubscribePage.back' | translate }}</a>
+</section>

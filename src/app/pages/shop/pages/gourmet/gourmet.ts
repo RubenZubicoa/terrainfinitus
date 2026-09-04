@@ -8,9 +8,9 @@ import {
   GOURMET_BASE_ROUTE,
   GOURMET_SECTIONS,
 } from '../../data/gourmet-sections.data';
-import { getGourmetProductsBySection } from '../../data/products.data';
-import { GourmetSection, GourmetSectionId } from '../../../../shared/models/product.models';
+import { GourmetSection, GourmetSectionId, Product } from '../../../../shared/models/product.models';
 import { ProductList } from '../../../../shared/components/product-list/product-list';
+import { Gourmet as GourmetService } from '../../services/gourmet';
 
 @Component({
   selector: 'app-gourmet',
@@ -23,12 +23,14 @@ export class Gourmet implements OnInit {
   private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
   private readonly sanitizer = inject(DomSanitizer);
+  private readonly gourmetService = inject(GourmetService);
 
   readonly sections = GOURMET_SECTIONS;
   readonly gourmetBaseRoute = GOURMET_BASE_ROUTE;
   readonly activeSection = computed(() => this.resolveActiveSection(this.fragment()));
 
   private readonly fragment = signal<string | null>(null);
+  private readonly products = signal<Product[]>([]);
 
   readonly activeSectionData = computed((): GourmetSection | undefined =>
     this.sections.find((section) => section.id === this.activeSection()),
@@ -38,10 +40,15 @@ export class Gourmet implements OnInit {
     this.route.fragment.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((fragment) => {
       this.fragment.set(fragment);
     });
+
+    this.gourmetService
+      .getProducts()
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((products) => this.products.set(products));
   }
 
-  productsForSection(sectionId: GourmetSectionId) {
-    return getGourmetProductsBySection(sectionId);
+  productsForSection(sectionId: GourmetSectionId): Product[] {
+    return this.products().filter((product) => product.gourmetSection === sectionId);
   }
 
   productCount(sectionId: GourmetSectionId): number {

@@ -30,4 +30,6 @@ export interface Product {
   descriptionKey: string;
   image: string;
   price: number;
+  /** Precio exclusivo para profesionales. */
+  professionalPrice?: number;
 }

@@ -16,7 +16,11 @@
     "contact": "お問い合わせ",
     "login": "ログイン",
     "logout": "ログアウト",
-    "cart": "ショッピングカート"
+    "cart": "ショッピングカート",
+    "userMenu": "ユーザーメニュー",
+    "profile": "プロフィール",
+    "orders": "注文",
+    "bookings": "予約"
   },
   "login": {
     "eyebrow": "会員エリア",
@@ -37,6 +41,115 @@
     "showPassword": "パスワードを表示",
     "hidePassword": "パスワードを非表示",
     "demoHint": "デモ: demo@terrainfinitus.com / demo123"
+  },
+  "register": {
+    "eyebrow": "会員エリア",
+    "title": "アカウント作成",
+    "subtitle": "ご予約と滞在管理のために登録してください",
+    "name": "名",
+    "namePlaceholder": "お名前（名）",
+    "lastName": "姓",
+    "lastNamePlaceholder": "お名前（姓）",
+    "email": "メールアドレス",
+    "emailPlaceholder": "you@email.com",
+    "phone": "電話番号",
+    "phonePlaceholder": "+81 90 0000 0000",
+    "dni": "身分証番号 / NIF",
+    "dniPlaceholder": "12345678A",
+    "address": "住所",
+    "addressPlaceholder": "住所を入力",
+    "password": "パスワード",
+    "passwordPlaceholder": "6文字以上",
+    "confirmPassword": "パスワード確認",
+    "confirmPasswordPlaceholder": "パスワードを再入力",
+    "submit": "アカウントを作成",
+    "submitting": "作成中…",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "login": "ログイン",
+    "success": "アカウントを作成しました。ログイン画面へ移動します…",
+    "error": "アカウントを作成できませんでした。もう一度お試しください。",
+    "errorRequired": "すべての項目を正しく入力してください。",
+    "errorPasswordMismatch": "パスワードが一致しません。",
+    "errorExists": "このメールアドレスのアカウントは既に存在します。"
+  },
+  "orders": {
+    "eyebrow": "アカウント",
+    "title": "注文履歴",
+    "description": "グルメ注文の履歴を確認できます。",
+    "loading": "注文を読み込み中…",
+    "error": "注文を読み込めませんでした。後でもう一度お試しください。",
+    "empty": "まだ注文がありません。",
+    "emptyCta": "グルメショップへ",
+    "orderId": "注文",
+    "total": "合計",
+    "status": {
+      "pending": "保留中",
+      "confirmed": "確認済み",
+      "paid": "支払済み",
+      "shipped": "発送済み",
+      "cancelled": "キャンセル",
+      "completed": "完了",
+      "unknown": "不明な状態"
+    }
+  },
+  "myBookings": {
+    "eyebrow": "アカウント",
+    "title": "予約履歴",
+    "description": "客室予約の履歴を確認できます。",
+    "loading": "予約を読み込み中…",
+    "error": "予約を読み込めませんでした。後でもう一度お試しください。",
+    "empty": "まだ予約がありません。",
+    "emptyCta": "客室を見る",
+    "bookingId": "予約",
+    "createdAt": "作成日",
+    "checkIn": "チェックイン",
+    "checkOut": "チェックアウト",
+    "guests": "人数",
+    "paymentMethod": "支払い方法",
+    "payment": "支払い",
+    "total": "合計",
+    "status": {
+      "pending": "保留中",
+      "confirmed": "確認済み",
+      "cancelled": "キャンセル",
+      "completed": "完了",
+      "unknown": "不明な状態"
+    },
+    "paymentStatus": {
+      "pending": "保留中",
+      "paid": "支払済み",
+      "failed": "失敗",
+      "refunded": "返金済み",
+      "unknown": "不明"
+    }
+  },
+  "profile": {
+    "eyebrow": "アカウント",
+    "title": "マイプロフィール",
+    "subtitle": "個人情報の更新やパスワードの変更ができます。",
+    "personalData": "個人情報",
+    "changePassword": "パスワード変更",
+    "name": "名",
+    "lastName": "姓",
+    "email": "メールアドレス",
+    "phone": "電話番号",
+    "dni": "身分証番号 / NIF",
+    "address": "住所",
+    "password": "新しいパスワード",
+    "passwordPlaceholder": "6文字以上",
+    "confirmPassword": "パスワード確認",
+    "confirmPasswordPlaceholder": "新しいパスワードを再入力",
+    "saveProfile": "変更を保存",
+    "savingProfile": "保存中…",
+    "savePassword": "パスワードを更新",
+    "savingPassword": "更新中…",
+    "successProfile": "プロフィールを更新しました。",
+    "successPassword": "パスワードを更新しました。",
+    "errorRequired": "すべての項目を正しく入力してください。",
+    "errorPasswordMismatch": "パスワードが一致しません。",
+    "errorProfile": "プロフィールを更新できませんでした。もう一度お試しください。",
+    "errorPassword": "パスワードを更新できませんでした。もう一度お試しください。",
+    "errorExists": "このメールアドレスのアカウントは既に存在します。"
   },
   "auth": {
     "logoutSuccess": "ログアウトしました。"
@@ -62,7 +175,7 @@
     "presentation": "プレゼンテーション",
     "menus": "メニュー",
     "activities": "アクティビティ",
-    "shop": "ブティックショップ",
+    "shop": "オンラインショップ",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -72,7 +185,8 @@
     "galleryNature": "自然",
     "galleryFishing": "釣り",
     "blog": "ブログ",
-    "destinations": "Terra Infinitus Destinations",
+    "bulletins": "ニュースレター",
+    "destinations": "Destinations",
     "freshwater": "淡水",
     "saltwater": "海水",
     "warmwater": "暖水域",
@@ -182,7 +296,7 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "オンラインショップ",
       "intro": "オンラインショップへようこそ。以下のカテゴリーで厳選された商品をご覧いただけます（各ブランド・商品の販売、支払い、配送条件のセクションもご確認ください）。",
       "categoriesAria": "ブティックショップのカテゴリー",
@@ -230,13 +344,16 @@
     "checkout": {
       "title": "注文を完了する",
       "eyebrow": "Checkout",
-      "subtitle": "個人情報を入力し、お支払い方法を選択してください。",
+      "subtitle": "アカウントを確認し、お支払い方法を選択してください。",
+      "accountData": "アカウント情報",
+      "accountHint": "注文はアカウントに紐づけられます。情報の変更が必要な場合はプロフィールを更新してください。",
       "personalData": "個人情報",
       "name": "名",
       "lastName": "姓",
       "email": "メールアドレス",
       "phone": "電話番号",
       "address": "配送先住所",
+      "dni": "身分証番号 / NIF",
       "paymentMethod": "お支払い方法",
       "paymentMethods": {
         "card": "カード",
@@ -260,10 +377,13 @@
       "submit": "注文を確定",
       "submitting": "注文を処理中…",
       "success": "注文が正常に登録されました。追ってご連絡いたします。",
-      "error": "注文を処理できませんでした。もう一度お試しください。"
+      "error": "注文を処理できませんでした。もう一度お試しください。",
+      "loginRequired": "注文を確定するにはログインしてください。",
+      "loginCta": "ログイン",
+      "noGourmetItems": "注文を作成できるグルメ商品がカートにありません。"
     },
     "gourmet": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "Gourmet",
       "description": "製品ファミリー別に整理されたグルメセレクションをご覧ください。各セクションには紹介文と価格付きカタログがあります。",
       "navAria": "グルメショップのカテゴリー",
@@ -345,7 +465,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "ブティックショップ",
+      "eyebrow": "オンラインショップ",
       "title": "Merchandising",
       "description": "テラ・インフィニタス限定アイテム。コンテンポラリーデザイン、上質な素材、各目的地の世界観をお届けします。思い出をお持ち帰りください。",
       "empty": "マーチャンダイジング商品は近日追加予定です。"
@@ -702,6 +822,7 @@
       "galleryAria": "商品画像",
       "brand": "Malvasía · Soria",
       "priceLabel": "価格",
+      "professionalPriceLabel": "プロ価格",
       "aboutTitle": "説明",
       "originTitle": "原産地と品質",
       "originText": "ソリア州アベハールのMalvasía（Canard S.A.）製。厳格な品質基準を満たしたプレミアム鴨グルメ製品。グルテンフリーで国際的に評価されています。",
@@ -724,6 +845,28 @@
     "navAria": "リゾートのセクション",
     "mobileSectionLabel": "Section",
     "sectionPending": "このセクションは、クライアントから提供されるコンテンツで近日中に完成します。",
+    "imagePlaceholder": "画像準備中",
+    "landing": {
+      "eyebrow": "Our Resorts",
+      "title": "Terra Infinitus projects",
+      "intro": "Discover our sustainable luxury tourism projects: the vision that inspires us and the resorts where nature, exclusivity and hospitality come together. Choose a section to explore each destination in detail.",
+      "imageAlt": "Sunset over the landscape of our resorts",
+      "sectionsAria": "Our resorts sections",
+      "idea": {
+        "title": "コンセプト",
+        "description": "The vision, team and philosophy behind Terra Infinitus: an exceptional tourism project designed for unique people in dream settings.",
+        "cta": "Discover the idea"
+      },
+      "peralejos": {
+        "cta": "Explore Peralejos"
+      },
+      "bugarra": {
+        "cta": "Explore Bugarra"
+      },
+      "theLake": {
+        "cta": "Explore The Lake"
+      }
+    },
     "idea": {
       "title": "コンセプト",
       "alt1": "Terra Infinitus",
@@ -755,35 +898,68 @@
           "title": "紹介",
           "paragraphs": []
         },
+        "laZona": {
+          "title": "この地域"
+        },
         "quienesSomos": {
-          "title": "私たちについて。なぜ？企業とシナジー"
+          "title": "私たちについて"
+        },
+        "sinergias": {
+          "title": "シナジー"
         },
         "conceptosTuristicos": {
           "title": "適用される観光概念、フェーズ"
         },
         "edificaciones": {
-          "title": "建物、客室タイプ、平面図"
+          "title": "建物"
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "terrenos": {
+          "title": "土地"
         },
-        "spasHidroterapia": {
-          "title": "スパ、プール、サウナ、ジム、水治療、テラス、図書館"
+        "servicios": {
+          "title": "サービス"
         },
-        "gimnasioRecepcion": {
-          "title": "ジム、受付、会議室"
+        "restauracion": {
+          "title": "レストラン"
         },
-        "cocinaCarta": {
-          "title": "キッチン、メニュー"
+        "otrasZonas": {
+          "title": "その他のエリア"
         },
-        "tiendaPaquetes": {
-          "title": "ショップ、ツアーパッケージ"
+        "tienda": {
+          "title": "ショップ"
         },
-        "rutasTrekking": {
-          "title": "トレッキング・ランニングルート、観光プログラム、分析、地域の観光状況"
+        "paquetesTuristicos": {
+          "title": "観光パッケージ"
         },
-        "staffImpacto": {
-          "title": "スタッフと雇用、地域社会への直接的影響"
+        "reservas": {
+          "title": "予約"
+        },
+        "suministros": {
+          "title": "設備・供給"
+        },
+        "helipuerto": {
+          "title": "ヘリポート"
+        },
+        "domotica": {
+          "title": "ホームオートメーション"
+        },
+        "seguridad": {
+          "title": "セキュリティ"
+        },
+        "programas": {
+          "title": "プログラム"
+        },
+        "situacionTuristica": {
+          "title": "観光状況"
+        },
+        "web": {
+          "title": "ウェブサイト"
+        },
+        "staff": {
+          "title": "スタッフ"
+        },
+        "gestion": {
+          "title": "経営管理"
         }
       }
     },
@@ -1266,6 +1442,51 @@
       "invalidDates": "チェックアウトはチェックインより後である必要があります。",
       "guestsRequired": "1名以上入力してください。",
       "capacityExceeded": "定員を超えています。"
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "ニュースレター",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "ニュースレターを受け取るにはこちらをクリック",
+    "thanks": "ありがとうございます。",
+    "archiveTitle": "公開済みニュースレター",
+    "viewIssue": "ニュースレターを見る",
+    "unsubscribeHint": "すでに登録済みでニュースレターの受信を停止したい場合は、",
+    "unsubscribeLink": "こちらをクリックして登録を解除してください",
+    "subscribeDialog": {
+      "title": "Newsletter subscription",
+      "description": "Enter your details to receive our newsletters. Only name and email are required.",
+      "name": "Name",
+      "email": "Email address",
+      "required": "(required)",
+      "optionalLegend": "Additional details (optional)",
+      "phone": "Phone",
+      "address": "Address",
+      "notes": "Other details",
+      "privacy": "Your data will remain absolutely private and will not be shared with third parties.",
+      "submit": "Subscribe",
+      "submitting": "Sending…",
+      "success": "Thank you. Your subscription has been registered. You will receive our newsletters soon."
+    },
+    "unsubscribePage": {
+      "title": "Cancel subscription",
+      "description": "Enter your email address and we will remove it from our newsletter list.",
+      "email": "Email address",
+      "submit": "Unsubscribe",
+      "submitting": "Processing…",
+      "success": "We have received your request. Your email address will be removed from our newsletter list.",
+      "back": "Back to newsletters"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "ニュースレター第1号"
+      }
     }
   }
 }

@@ -21,6 +21,8 @@ export class CurrentUserService {
     return [current.name, current.lastName].filter(Boolean).join(' ').trim();
   });
 
+  readonly isProfessional = computed(() => this._user()?.isProfessional === true);
+
   constructor() {
     if (this.tokenService.isAuthenticated()) {
       this.initialize();
@@ -46,6 +48,11 @@ export class CurrentUserService {
     if (!stored) {
       return null;
     }
-    return JSON.parse(stored) as User;
+    const user = JSON.parse(stored) as User;
+    return {
+      ...user,
+      dni: user.dni ?? '',
+      isProfessional: user.isProfessional === true,
+    };
   }
 }

@@ -108,6 +108,28 @@
   font-style: italic;
 }
 
+.project-resort__image-placeholders {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.project-resort__image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(10rem, 28vw, 16rem);
+  border: 1px dashed var(--ti-border);
+  border-radius: var(--ti-radius-md);
+  background: rgba(184, 115, 51, 0.04);
+  color: var(--ti-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 1rem;
+}
+
 @media (max-width: 900px) {
   .project-resort__layout {
     grid-template-columns: 1fr;

@@ -10,6 +10,7 @@ import { aboutUsRoutes } from './pages/abaut-us/about-us.routes';
 import { shopRoutes } from './pages/shop/shop.routes';
 import { authRoutes } from './pages/auth/auth.routes';
 import { destinationsRoutes } from './pages/destinations/destinations.routes';
+import { bulletinsRoutes } from './pages/bulletins/bulletins.routes';
 
 const placeholder = (titleKey: string) => ({
   component: PlaceholderComponent,
@@ -39,8 +40,27 @@ export const routes: Routes = [
       { path: 'galeria/videos/pesca', component: Videos },
       { path: 'blog', ...placeholder('nav.blog') },
       { path: 'destinations', children: destinationsRoutes },
+      { path: 'boletines', children: bulletinsRoutes },
+      { path: 'destinations/agua-dulce', ...placeholder('nav.freshwater') },
+      { path: 'destinations/agua-salada', ...placeholder('nav.saltwater') },
+      { path: 'destinations/guias', ...placeholder('nav.guides') },
       { path: 'testimonios', ...placeholder('nav.testimonials') },
       { path: 'reservas-precios', ...placeholder('nav.bookings') },
+      {
+        path: 'perfil',
+        loadComponent: () =>
+          import('./pages/auth/pages/profile/profile').then((m) => m.Profile),
+      },
+      {
+        path: 'pedidos',
+        loadComponent: () =>
+          import('./pages/shop/pages/orders/orders').then((m) => m.Orders),
+      },
+      {
+        path: 'reservas',
+        loadComponent: () =>
+          import('./pages/rooms/pages/my-bookings/my-bookings').then((m) => m.MyBookings),
+      },
       { path: 'contacto', ...placeholder('nav.contact') },
       { path: 'login', children: authRoutes },
     ],

@@ -3,8 +3,8 @@ import { Routes } from '@angular/router';
 export const projectsRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'la-idea',
-    pathMatch: 'full',
+    loadComponent: () =>
+      import('./pages/resorts-landing/resorts-landing').then((m) => m.ResortsLanding),
   },
   {
     path: 'la-idea',

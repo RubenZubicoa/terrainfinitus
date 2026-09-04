@@ -67,12 +67,3 @@ export interface Reservation {
   status: ReservationStatus;
   notes: string;
 }
-
-export interface BookingDraft {
-  roomId: string;
-  guestName: string;
-  checkIn: string;
-  checkOut: string;
-  guests: number;
-  notes: string;
-}

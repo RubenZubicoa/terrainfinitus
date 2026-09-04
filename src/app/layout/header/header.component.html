@@ -111,9 +111,52 @@
 
     @if (currentUserService.user()) {
       <div class="header__session">
-        <span class="header__user-name" [attr.title]="currentUserService.displayName()">
-          {{ currentUserService.displayName() }}
-        </span>
+        <div class="header__user-menu">
+          <button
+            type="button"
+            class="header__user-toggle"
+            [attr.aria-expanded]="userMenuOpen()"
+            aria-haspopup="menu"
+            [attr.aria-label]="('header.userMenu' | translate) + ': ' + currentUserService.displayName()"
+            (click)="toggleUserMenu(); $event.stopPropagation()"
+          >
+            <span class="header__user-name" [attr.title]="currentUserService.displayName()">
+              {{ currentUserService.displayName() }}
+            </span>
+            <svg class="header__user-chevron" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </button>
+
+          @if (userMenuOpen()) {
+            <div class="header__user-panel" role="menu" [attr.aria-label]="'header.userMenu' | translate">
+              <a
+                class="header__user-option"
+                role="menuitem"
+                routerLink="/perfil"
+                (click)="closeUserMenu()"
+              >
+                {{ 'header.profile' | translate }}
+              </a>
+              <a
+                class="header__user-option"
+                role="menuitem"
+                routerLink="/pedidos"
+                (click)="closeUserMenu()"
+              >
+                {{ 'header.orders' | translate }}
+              </a>
+              <a
+                class="header__user-option"
+                role="menuitem"
+                routerLink="/reservas"
+                (click)="closeUserMenu()"
+              >
+                {{ 'header.bookings' | translate }}
+              </a>
+            </div>
+          }
+        </div>
         <button
           type="button"
           class="header__logout"

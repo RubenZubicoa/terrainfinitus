@@ -15,6 +15,36 @@
   box-shadow: var(--ti-shadow-lg);
 }
 
+.login__card--wide {
+  width: min(100%, 36rem);
+}
+
+.login__row {
+  display: grid;
+  gap: 1.1rem;
+
+  @media (min-width: 560px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.login__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin: 0.15rem 0 0;
+  font-family: var(--ti-font-body);
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--ti-charcoal);
+  cursor: pointer;
+
+  input {
+    margin-top: 0.15rem;
+    accent-color: var(--ti-copper);
+  }
+}
+
 .login__header {
   margin-bottom: 1.75rem;
   text-align: center;
@@ -249,6 +279,22 @@
   &:hover {
     color: var(--ti-copper);
   }
+}
+
+.profile .login__form + .login__form {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ti-border);
+}
+
+.profile__section-title {
+  margin: 0 0 0.25rem;
+  font-family: var(--ti-font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ti-black);
 }
 
 @media (max-width: 480px) {

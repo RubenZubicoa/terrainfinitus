@@ -63,6 +63,19 @@
                 </div>
               }
 
+              @if (section.imagePlaceholderCount && section.imagePlaceholderCount > 0) {
+                <div class="project-resort__image-placeholders">
+                  @for (slot of placeholderSlots(section.imagePlaceholderCount); track slot) {
+                    <div
+                      class="project-resort__image-placeholder"
+                      [attr.aria-label]="'projects.imagePlaceholder' | translate"
+                    >
+                      <span>{{ 'projects.imagePlaceholder' | translate }}</span>
+                    </div>
+                  }
+                </div>
+              }
+
               @if (section.pdfPath && section.pdfLabelKey) {
                 <app-pdf-viewer [pdfPath]="section.pdfPath" [pdfLabel]="section.pdfLabelKey | translate" />
               }

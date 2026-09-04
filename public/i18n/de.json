@@ -16,7 +16,11 @@
     "contact": "Kontakt",
     "login": "Anmelden",
     "logout": "Abmelden",
-    "cart": "Warenkorb"
+    "cart": "Warenkorb",
+    "userMenu": "Benutzermenü",
+    "profile": "Profil",
+    "orders": "Bestellungen",
+    "bookings": "Reservierungen"
   },
   "login": {
     "eyebrow": "Privater Bereich",
@@ -37,6 +41,115 @@
     "showPassword": "Passwort anzeigen",
     "hidePassword": "Passwort ausblenden",
     "demoHint": "Demo: demo@terrainfinitus.com / demo123"
+  },
+  "register": {
+    "eyebrow": "Privater Bereich",
+    "title": "Konto erstellen",
+    "subtitle": "Registrieren Sie sich, um Aufenthalte zu buchen und zu verwalten",
+    "name": "Vorname",
+    "namePlaceholder": "Ihr Vorname",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Ihr Nachname",
+    "email": "E-Mail",
+    "emailPlaceholder": "ihre@email.com",
+    "phone": "Telefon",
+    "phonePlaceholder": "+49 170 0000000",
+    "dni": "Ausweis / Steuernummer",
+    "dniPlaceholder": "12345678A",
+    "address": "Adresse",
+    "addressPlaceholder": "Straße, Nummer, Stadt",
+    "password": "Passwort",
+    "passwordPlaceholder": "Mindestens 6 Zeichen",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordPlaceholder": "Passwort wiederholen",
+    "submit": "Konto erstellen",
+    "submitting": "Konto wird erstellt…",
+    "hasAccount": "Bereits ein Konto?",
+    "login": "Anmelden",
+    "success": "Konto erstellt. Weiterleitung zur Anmeldung…",
+    "error": "Konto konnte nicht erstellt werden. Bitte erneut versuchen.",
+    "errorRequired": "Bitte füllen Sie alle Felder korrekt aus.",
+    "errorPasswordMismatch": "Die Passwörter stimmen nicht überein.",
+    "errorExists": "Ein Konto mit dieser E-Mail existiert bereits."
+  },
+  "orders": {
+    "eyebrow": "Konto",
+    "title": "Meine Bestellungen",
+    "description": "Sehen Sie Ihre Gourmet-Bestellhistorie ein.",
+    "loading": "Bestellungen werden geladen…",
+    "error": "Bestellungen konnten nicht geladen werden. Bitte später erneut versuchen.",
+    "empty": "Sie haben noch keine Bestellungen aufgegeben.",
+    "emptyCta": "Zum Gourmet-Shop",
+    "orderId": "Bestellung",
+    "total": "Gesamt",
+    "status": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "paid": "Bezahlt",
+      "shipped": "Versendet",
+      "cancelled": "Storniert",
+      "completed": "Abgeschlossen",
+      "unknown": "Unbekannter Status"
+    }
+  },
+  "myBookings": {
+    "eyebrow": "Konto",
+    "title": "Meine Reservierungen",
+    "description": "Sehen Sie Ihre Zimmerreservierungen ein.",
+    "loading": "Reservierungen werden geladen…",
+    "error": "Reservierungen konnten nicht geladen werden. Bitte später erneut versuchen.",
+    "empty": "Sie haben noch keine Reservierungen.",
+    "emptyCta": "Zimmer ansehen",
+    "bookingId": "Reservierung",
+    "createdAt": "Erstellt",
+    "checkIn": "Anreise",
+    "checkOut": "Abreise",
+    "guests": "Gäste",
+    "paymentMethod": "Zahlungsart",
+    "payment": "Zahlung",
+    "total": "Gesamt",
+    "status": {
+      "pending": "Ausstehend",
+      "confirmed": "Bestätigt",
+      "cancelled": "Storniert",
+      "completed": "Abgeschlossen",
+      "unknown": "Unbekannter Status"
+    },
+    "paymentStatus": {
+      "pending": "Ausstehend",
+      "paid": "Bezahlt",
+      "failed": "Fehlgeschlagen",
+      "refunded": "Erstattet",
+      "unknown": "Unbekannt"
+    }
+  },
+  "profile": {
+    "eyebrow": "Konto",
+    "title": "Mein Profil",
+    "subtitle": "Aktualisieren Sie Ihre persönlichen Daten oder ändern Sie Ihr Passwort.",
+    "personalData": "Persönliche Daten",
+    "changePassword": "Passwort ändern",
+    "name": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "dni": "Ausweis / Steuernummer",
+    "address": "Adresse",
+    "password": "Neues Passwort",
+    "passwordPlaceholder": "Mindestens 6 Zeichen",
+    "confirmPassword": "Passwort bestätigen",
+    "confirmPasswordPlaceholder": "Neues Passwort wiederholen",
+    "saveProfile": "Änderungen speichern",
+    "savingProfile": "Wird gespeichert…",
+    "savePassword": "Passwort aktualisieren",
+    "savingPassword": "Wird aktualisiert…",
+    "successProfile": "Profil erfolgreich aktualisiert.",
+    "successPassword": "Passwort erfolgreich aktualisiert.",
+    "errorRequired": "Bitte füllen Sie alle Felder korrekt aus.",
+    "errorPasswordMismatch": "Die Passwörter stimmen nicht überein.",
+    "errorProfile": "Profil konnte nicht aktualisiert werden. Bitte erneut versuchen.",
+    "errorPassword": "Passwort konnte nicht aktualisiert werden. Bitte erneut versuchen.",
+    "errorExists": "Ein Konto mit dieser E-Mail existiert bereits."
   },
   "auth": {
     "logoutSuccess": "Sie wurden erfolgreich abgemeldet."
@@ -62,7 +175,7 @@
     "presentation": "Präsentation",
     "menus": "Die Karten",
     "activities": "Aktivitäten",
-    "shop": "Boutique-Shop",
+    "shop": "Online-Shops",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -72,7 +185,8 @@
     "galleryNature": "Natur",
     "galleryFishing": "Angeln",
     "blog": "Blog",
-    "destinations": "Terra Infinitus Destinations",
+    "bulletins": "Newsletter",
+    "destinations": "Destinations",
     "freshwater": "Süßwasser",
     "saltwater": "Salzwasser",
     "warmwater": "Warme Gewässer",
@@ -182,7 +296,7 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Unsere Online-Shops",
       "intro": "Willkommen in unseren Online-Shops, in denen Sie eine exquisite Auswahl an Artikeln für die unten aufgeführten Kategorien finden (vergessen Sie nicht, den Bereich zu den Verkaufs-, Zahlungs- und Versandbedingungen für jede Marke und jedes Produkt zu besuchen).",
       "categoriesAria": "Boutique-Shop-Kategorien",
@@ -230,13 +344,16 @@
     "checkout": {
       "title": "Bestellung abschließen",
       "eyebrow": "Checkout",
-      "subtitle": "Geben Sie Ihre persönlichen Daten ein und wählen Sie die Zahlungsart.",
+      "subtitle": "Bestätigen Sie Ihr Konto und wählen Sie die Zahlungsart.",
+      "accountData": "Kontodaten",
+      "accountHint": "Die Bestellung wird Ihrem Konto zugeordnet. Aktualisieren Sie Ihr Profil, falls diese Daten geändert werden müssen.",
       "personalData": "Persönliche Daten",
       "name": "Vorname",
       "lastName": "Nachname",
       "email": "E-Mail",
       "phone": "Telefon",
       "address": "Lieferadresse",
+      "dni": "Ausweis / Steuernummer",
       "paymentMethod": "Zahlungsart",
       "paymentMethods": {
         "card": "Karte",
@@ -260,10 +377,13 @@
       "submit": "Bestellung bestätigen",
       "submitting": "Bestellung wird verarbeitet…",
       "success": "Bestellung erfolgreich registriert. Wir werden Sie kontaktieren.",
-      "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen."
+      "error": "Bestellung konnte nicht verarbeitet werden. Bitte erneut versuchen.",
+      "loginRequired": "Melden Sie sich an, um die Bestellung zu bestätigen.",
+      "loginCta": "Anmelden",
+      "noGourmetItems": "Es gibt keine Gourmet-Produkte im Warenkorb für eine Bestellung."
     },
     "gourmet": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Gourmet",
       "description": "Entdecken Sie unsere Gourmet-Auswahl nach Produktfamilien. Jeder Bereich enthält eine Präsentation und einen Katalog mit Referenzen und Preisen.",
       "navAria": "Gourmet-Shop-Kategorien",
@@ -345,7 +465,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Boutique-Shop",
+      "eyebrow": "Online-Shops",
       "title": "Merchandising",
       "description": "Exklusive Terra-Infinitus-Artikel: zeitgenössisches Design, hochwertige Materialien und die Identität unserer Destinationen. Nehmen Sie eine Erinnerung an Ihr Erlebnis mit.",
       "empty": "Merchandising-Produkte folgen in Kürze."
@@ -702,6 +822,7 @@
       "galleryAria": "Produktbild",
       "brand": "Malvasía · Soria",
       "priceLabel": "Preis",
+      "professionalPriceLabel": "Professionellenpreis",
       "aboutTitle": "Beschreibung",
       "originTitle": "Herkunft & Qualität",
       "originText": "Hergestellt von Malvasía (Canard S.A.) in Abejar, Soria. Premium-Entengourmet-Produkte mit strengen Qualitätsstandards, glutenfrei und international anerkannt.",
@@ -724,6 +845,28 @@
     "navAria": "Resort sections",
     "mobileSectionLabel": "Section",
     "sectionPending": "Dieser Abschnitt wird in Kürze mit den vom Kunden bereitgestellten Inhalten vervollständigt.",
+    "imagePlaceholder": "Bild ausstehend",
+    "landing": {
+      "eyebrow": "Unsere Resorts",
+      "title": "Terra Infinitus Projekte",
+      "intro": "Entdecken Sie unsere Projekte für nachhaltigen Luxustourismus: die Vision, die uns inspiriert, und die Resorts, in denen Natur, Exklusivität und Gastfreundschaft zusammenkommen. Wählen Sie einen Bereich, um jedes Ziel im Detail zu erkunden.",
+      "imageAlt": "Sonnenuntergang über der Landschaft unserer Resorts",
+      "sectionsAria": "Bereiche unserer Resorts",
+      "idea": {
+        "title": "Die Idee",
+        "description": "Die Vision, das Team und die Philosophie hinter Terra Infinitus: ein außergewöhnliches Tourismusprojekt für einzigartige Menschen an Traumorten.",
+        "cta": "Die Idee entdecken"
+      },
+      "peralejos": {
+        "cta": "Peralejos erkunden"
+      },
+      "bugarra": {
+        "cta": "Bugarra erkunden"
+      },
+      "theLake": {
+        "cta": "The Lake erkunden"
+      }
+    },
     "idea": {
       "title": "Die Idee",
       "alt1": "Terra Infinitus",
@@ -755,35 +898,68 @@
           "title": "Einleitung",
           "paragraphs": []
         },
+        "laZona": {
+          "title": "Die Region"
+        },
         "quienesSomos": {
-          "title": "Wer sind wir? Warum? Das Unternehmen, Synergien"
+          "title": "Wer sind wir?"
+        },
+        "sinergias": {
+          "title": "Synergien"
         },
         "conceptosTuristicos": {
           "title": "Angewandte Tourismuskonzepte, Phasen"
         },
         "edificaciones": {
-          "title": "Gebäude, Zimmertypen, Grundrisse"
+          "title": "Gebäude"
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "terrenos": {
+          "title": "Grundstücke"
         },
-        "spasHidroterapia": {
-          "title": "Spas, Pools, Saunen, Fitnessstudios, Hydrotherapie, Terrassen, Bibliothek"
+        "servicios": {
+          "title": "Dienstleistungen"
         },
-        "gimnasioRecepcion": {
-          "title": "Fitnessstudio, Rezeption, Besprechungsraum"
+        "restauracion": {
+          "title": "Gastronomie"
         },
-        "cocinaCarta": {
-          "title": "Küche, unsere Karte"
+        "otrasZonas": {
+          "title": "Weitere Bereiche"
         },
-        "tiendaPaquetes": {
-          "title": "Shop, touristische Pakete"
+        "tienda": {
+          "title": "Shop"
         },
-        "rutasTrekking": {
-          "title": "Trekking- und Laufstrecken, touristische Programme, Analyse, Tourismussituation der Region"
+        "paquetesTuristicos": {
+          "title": "Touristische Pakete"
         },
-        "staffImpacto": {
-          "title": "Personal und Arbeitsplätze, direkte Auswirkung auf die Gemeinschaft"
+        "reservas": {
+          "title": "Reservierungen"
+        },
+        "suministros": {
+          "title": "Versorgung"
+        },
+        "helipuerto": {
+          "title": "Heliport"
+        },
+        "domotica": {
+          "title": "Gebäudeautomation"
+        },
+        "seguridad": {
+          "title": "Sicherheit"
+        },
+        "programas": {
+          "title": "Programme"
+        },
+        "situacionTuristica": {
+          "title": "Touristische Lage"
+        },
+        "web": {
+          "title": "Website"
+        },
+        "staff": {
+          "title": "Personal"
+        },
+        "gestion": {
+          "title": "Management"
         }
       }
     },
@@ -1266,6 +1442,51 @@
       "invalidDates": "Abreise muss nach Anreise liegen.",
       "guestsRequired": "Mindestens ein Gast erforderlich.",
       "capacityExceeded": "Gästeanzahl übersteigt die Kapazität."
+    }
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Newsletter",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "Um unsere Newsletter zu erhalten, klicken Sie hier",
+    "thanks": "Danke.",
+    "archiveTitle": "Veröffentlichte Newsletter",
+    "viewIssue": "Newsletter ansehen",
+    "unsubscribeHint": "Wenn Sie bereits abonniert sind und unsere Newsletter nicht mehr erhalten möchten,",
+    "unsubscribeLink": "klicken Sie hier, um Ihr Abonnement zu kündigen",
+    "subscribeDialog": {
+      "title": "Newsletter-Abonnement",
+      "description": "Geben Sie Ihre Daten ein, um unsere Newsletter zu erhalten. Nur Name und E-Mail sind Pflichtfelder.",
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "required": "(Pflichtfeld)",
+      "optionalLegend": "Zusätzliche Angaben (freiwillig)",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "notes": "Weitere Angaben",
+      "privacy": "Ihre Daten bleiben absolut privat und werden nicht an Dritte weitergegeben.",
+      "submit": "Abonnieren",
+      "submitting": "Wird gesendet…",
+      "success": "Vielen Dank. Ihr Abonnement wurde registriert. Sie erhalten bald unsere Newsletter."
+    },
+    "unsubscribePage": {
+      "title": "Abonnement kündigen",
+      "description": "Geben Sie Ihre E-Mail-Adresse ein und wir entfernen sie aus unserer Newsletter-Liste.",
+      "email": "E-Mail-Adresse",
+      "submit": "Abmelden",
+      "submitting": "Wird verarbeitet…",
+      "success": "Wir haben Ihre Anfrage erhalten. Ihre E-Mail-Adresse wird aus unserer Newsletter-Liste entfernt.",
+      "back": "Zurück zu Newsletter"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Newsletter Nr. 1"
+      }
     }
   }
 }

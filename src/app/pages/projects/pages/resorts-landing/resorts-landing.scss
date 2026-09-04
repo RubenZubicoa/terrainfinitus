@@ -1,0 +1,117 @@
+.resorts-landing {
+  --resorts-landing-gap: clamp(1.5rem, 2.5vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--resorts-landing-gap);
+  width: 100%;
+}
+
+.resorts-landing__hero {
+  max-width: none;
+  margin: 0;
+  text-align: left;
+}
+
+.resorts-landing__eyebrow {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ti-copper);
+}
+
+.resorts-landing__hero .title {
+  margin: 0 0 0.85rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.resorts-landing__intro {
+  margin: 0;
+  max-width: none;
+  font-size: clamp(0.9375rem, 1.6vw, 1.0625rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}
+
+.resorts-landing__image {
+  padding: 0;
+  width: 100%;
+  max-width: 42rem;
+  margin-inline: auto;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    max-height: min(360px, 45vh);
+    object-fit: cover;
+    border-radius: var(--ti-radius-md);
+    box-shadow: var(--ti-shadow);
+  }
+}
+
+.resorts-landing__sections {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+.resorts-landing__section {
+  padding: clamp(1.1rem, 2vw, 1.5rem);
+  border: 1px solid var(--ti-border);
+  border-radius: var(--ti-radius-md);
+  background: #fff;
+  box-shadow: var(--ti-shadow-sm);
+}
+
+.resorts-landing__section-title {
+  margin: 0 0 0.75rem;
+  font-family: var(--ti-font-display);
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ti-black);
+}
+
+.resorts-landing__section-text {
+  margin: 0;
+  font-size: clamp(0.9375rem, 1.5vw, 1.02rem);
+  line-height: 1.65;
+  color: var(--ti-muted);
+  text-align: justify;
+}
+
+.resorts-landing__cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--ti-copper);
+  color: #fff;
+  font-family: var(--ti-font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background var(--ti-transition),
+    transform var(--ti-transition);
+
+  &:hover {
+    background: var(--ti-copper-dark);
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 768px) {
+  .resorts-landing__intro,
+  .resorts-landing__section-text {
+    text-align: left;
+  }
+
+  .resorts-landing__image img {
+    max-height: min(220px, 35vh);
+  }
+}

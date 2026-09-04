@@ -1,0 +1,142 @@
+<section class="bulletins section" [attr.aria-label]="'bulletins.title' | translate">
+  <header class="bulletins__hero">
+    <p class="bulletins__eyebrow">{{ 'bulletins.eyebrow' | translate }}</p>
+    <h1 class="title">{{ 'bulletins.title' | translate }}</h1>
+  </header>
+
+  <div class="bulletins__intro">
+    @for (paragraph of ('bulletins.introParagraphs' | translate); track $index) {
+      <p class="text">{{ paragraph }}</p>
+    }
+  </div>
+
+  <div class="bulletins__cta">
+    <button type="button" class="bulletins__cta-button" (click)="openSubscribeDialog()">
+      {{ 'bulletins.subscribeCta' | translate }}
+    </button>
+    <p class="bulletins__thanks">{{ 'bulletins.thanks' | translate }}</p>
+  </div>
+
+  <section class="bulletins__archive" [attr.aria-labelledby]="'bulletins-archive-title'">
+    <h2 id="bulletins-archive-title" class="bulletins__archive-title">
+      {{ 'bulletins.archiveTitle' | translate }}
+    </h2>
+    <ul class="bulletins__list">
+      @for (issue of issues; track issue.id) {
+        <li class="bulletins__item">
+          <article class="bulletins__card">
+            @if (issue.imageSrc) {
+              <div class="bulletins__card-media">
+                <img [src]="issue.imageSrc" [alt]="issue.titleKey | translate" loading="lazy" />
+              </div>
+            }
+            <div class="bulletins__card-body">
+              <h3 class="bulletins__card-title">{{ issue.titleKey | translate }}</h3>
+              @if (issue.pdfPath) {
+                <a
+                  class="bulletins__card-link"
+                  [href]="issue.pdfPath"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ 'bulletins.viewIssue' | translate }}
+                </a>
+              }
+            </div>
+          </article>
+        </li>
+      }
+    </ul>
+  </section>
+
+  <p class="bulletins__unsubscribe-hint">
+    {{ 'bulletins.unsubscribeHint' | translate }}
+    <a class="link" routerLink="/boletines/baja">{{ 'bulletins.unsubscribeLink' | translate }}</a>
+  </p>
+</section>
+
+@if (subscribeDialogOpen()) {
+  <div
+    #subscribeBackdrop
+    class="bulletins-dialog__backdrop"
+    role="presentation"
+    (click)="onSubscribeBackdropClick($event)"
+  >
+    <div
+      class="bulletins-dialog"
+      role="dialog"
+      aria-modal="true"
+      tabindex="-1"
+      [attr.aria-label]="'bulletins.subscribeDialog.title' | translate"
+      (click)="$event.stopPropagation()"
+      (keydown)="onDialogKeydown($event)"
+    >
+      <header class="bulletins-dialog__header">
+        <h2 class="bulletins-dialog__title">{{ 'bulletins.subscribeDialog.title' | translate }}</h2>
+        <button
+          type="button"
+          class="bulletins-dialog__close"
+          (click)="closeSubscribeDialog()"
+          [attr.aria-label]="'common.close' | translate"
+        >
+          ×
+        </button>
+      </header>
+
+      @if (subscribeSuccess()) {
+        <p class="bulletins-dialog__success">{{ 'bulletins.subscribeDialog.success' | translate }}</p>
+        <button type="button" class="bulletins-dialog__submit" (click)="closeSubscribeDialog()">
+          {{ 'common.close' | translate }}
+        </button>
+      } @else {
+        <p class="bulletins-dialog__description">
+          {{ 'bulletins.subscribeDialog.description' | translate }}
+        </p>
+
+        <form class="bulletins-dialog__form" [formGroup]="subscribeForm" (ngSubmit)="onSubscribeSubmit()" novalidate>
+          <div class="bulletins-dialog__field">
+            <label class="bulletins-dialog__label" for="bulletin-name">
+              {{ 'bulletins.subscribeDialog.name' | translate }}
+              <span class="bulletins-dialog__required">{{ 'bulletins.subscribeDialog.required' | translate }}</span>
+            </label>
+            <input
+              id="bulletin-name"
+              class="bulletins-dialog__input"
+              type="text"
+              formControlName="name"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="bulletins-dialog__field">
+            <label class="bulletins-dialog__label" for="bulletin-email">
+              {{ 'bulletins.subscribeDialog.email' | translate }}
+              <span class="bulletins-dialog__required">{{ 'bulletins.subscribeDialog.required' | translate }}</span>
+            </label>
+            <input
+              id="bulletin-email"
+              class="bulletins-dialog__input"
+              type="email"
+              formControlName="email"
+              autocomplete="email"
+            />
+          </div>
+
+          <p class="bulletins-dialog__privacy">{{ 'bulletins.subscribeDialog.privacy' | translate }}</p>
+
+          <button
+            type="submit"
+            class="bulletins-dialog__submit"
+            [disabled]="subscribeSubmitting()"
+          >
+            {{
+              subscribeSubmitting()
+                ? ('bulletins.subscribeDialog.submitting' | translate)
+                : ('bulletins.subscribeDialog.submit' | translate)
+            }}
+          </button>
+        </form>
+      }
+    </div>
+  </div>
+}

@@ -16,7 +16,11 @@
     "contact": "Contact",
     "login": "Sign in",
     "logout": "Sign out",
-    "cart": "Shopping cart"
+    "cart": "Shopping cart",
+    "userMenu": "User menu",
+    "profile": "Profile",
+    "orders": "Orders",
+    "bookings": "Bookings"
   },
   "login": {
     "eyebrow": "Private area",
@@ -37,6 +41,115 @@
     "showPassword": "Show password",
     "hidePassword": "Hide password",
     "demoHint": "Demo: demo@terrainfinitus.com / demo123"
+  },
+  "register": {
+    "eyebrow": "Private area",
+    "title": "Create account",
+    "subtitle": "Sign up to book and manage your stays",
+    "name": "First name",
+    "namePlaceholder": "Your first name",
+    "lastName": "Last name",
+    "lastNamePlaceholder": "Your last name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+34 600 000 000",
+    "dni": "ID / Tax ID",
+    "dniPlaceholder": "12345678A",
+    "address": "Address",
+    "addressPlaceholder": "Street, number, city",
+    "password": "Password",
+    "passwordPlaceholder": "At least 6 characters",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordPlaceholder": "Repeat your password",
+    "submit": "Create account",
+    "submitting": "Creating account…",
+    "hasAccount": "Already have an account?",
+    "login": "Sign in",
+    "success": "Account created. Redirecting to sign in…",
+    "error": "Could not create the account. Please try again.",
+    "errorRequired": "Please complete all fields correctly.",
+    "errorPasswordMismatch": "Passwords do not match.",
+    "errorExists": "An account with this email already exists."
+  },
+  "orders": {
+    "eyebrow": "Account",
+    "title": "My orders",
+    "description": "View your gourmet order history.",
+    "loading": "Loading orders…",
+    "error": "Could not load orders. Please try again later.",
+    "empty": "You have not placed any orders yet.",
+    "emptyCta": "Go to the gourmet shop",
+    "orderId": "Order",
+    "total": "Total",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "paid": "Paid",
+      "shipped": "Shipped",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "unknown": "Unknown status"
+    }
+  },
+  "myBookings": {
+    "eyebrow": "Account",
+    "title": "My bookings",
+    "description": "View your room booking history.",
+    "loading": "Loading bookings…",
+    "error": "Could not load bookings. Please try again later.",
+    "empty": "You have not made any bookings yet.",
+    "emptyCta": "Browse rooms",
+    "bookingId": "Booking",
+    "createdAt": "Created",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "paymentMethod": "Payment method",
+    "payment": "Payment",
+    "total": "Total",
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "cancelled": "Cancelled",
+      "completed": "Completed",
+      "unknown": "Unknown status"
+    },
+    "paymentStatus": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "failed": "Failed",
+      "refunded": "Refunded",
+      "unknown": "Unknown"
+    }
+  },
+  "profile": {
+    "eyebrow": "Account",
+    "title": "My profile",
+    "subtitle": "Update your personal details or change your password.",
+    "personalData": "Personal details",
+    "changePassword": "Change password",
+    "name": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "dni": "ID / Tax ID",
+    "address": "Address",
+    "password": "New password",
+    "passwordPlaceholder": "At least 6 characters",
+    "confirmPassword": "Confirm password",
+    "confirmPasswordPlaceholder": "Repeat the new password",
+    "saveProfile": "Save changes",
+    "savingProfile": "Saving…",
+    "savePassword": "Update password",
+    "savingPassword": "Updating…",
+    "successProfile": "Profile updated successfully.",
+    "successPassword": "Password updated successfully.",
+    "errorRequired": "Please complete all fields correctly.",
+    "errorPasswordMismatch": "Passwords do not match.",
+    "errorProfile": "Could not update the profile. Please try again.",
+    "errorPassword": "Could not update the password. Please try again.",
+    "errorExists": "An account with this email already exists."
   },
   "auth": {
     "logoutSuccess": "You have been signed out successfully."
@@ -65,7 +178,7 @@
     "presentation": "Presentation",
     "menus": "The menus",
     "activities": "Activities",
-    "shop": "Boutique Shop",
+    "shop": "Online shops",
     "shopGourmet": "Gourmet",
     "shopMerchandising": "Merchandising",
     "shopTheLake": "THE LAKE",
@@ -75,7 +188,8 @@
     "galleryNature": "Nature",
     "galleryFishing": "Fishing",
     "blog": "Blog",
-    "destinations": "Terra Infinitus Destinations",
+    "bulletins": "Newsletters",
+    "destinations": "Destinations",
     "freshwater": "Freshwater",
     "saltwater": "Saltwater",
     "warmwater": "Warm waters",
@@ -87,6 +201,51 @@
   "footer": {
     "copyright": "Copyright © {{year}} Terra Infinitus",
     "linksAria": "Footer links"
+  },
+  "bulletins": {
+    "eyebrow": "Terra Infinitus",
+    "title": "Newsletters",
+    "introParagraphs": [
+      "We periodically publish an information and entertainment newsletter about our resorts: activities, news and updates.",
+      "These newsletters are not aggressive or commercial and usually consist of a powerful photograph you will receive and enjoy, transporting your imagination to some of the wonderful landscapes around us.",
+      "Your data will remain absolutely private and will not be shared with third parties. The frequency will be low and they will never be aggressive or commercial.",
+      "You can unsubscribe at any time and we will delete your email address."
+    ],
+    "subscribeCta": "To receive our newsletters, click here",
+    "thanks": "Thank you.",
+    "archiveTitle": "Published newsletters",
+    "viewIssue": "View newsletter",
+    "unsubscribeHint": "If you are already subscribed and wish to stop receiving our newsletters,",
+    "unsubscribeLink": "click here to cancel your subscription",
+    "subscribeDialog": {
+      "title": "Newsletter subscription",
+      "description": "Enter your details to receive our newsletters. Only name and email are required.",
+      "name": "Name",
+      "email": "Email address",
+      "required": "(required)",
+      "optionalLegend": "Additional details (optional)",
+      "phone": "Phone",
+      "address": "Address",
+      "notes": "Other details",
+      "privacy": "Your data will remain absolutely private and will not be shared with third parties.",
+      "submit": "Subscribe",
+      "submitting": "Sending…",
+      "success": "Thank you. Your subscription has been registered. You will receive our newsletters soon."
+    },
+    "unsubscribePage": {
+      "title": "Cancel subscription",
+      "description": "Enter your email address and we will remove it from our newsletter list.",
+      "email": "Email address",
+      "submit": "Unsubscribe",
+      "submitting": "Processing…",
+      "success": "We have received your request. Your email address will be removed from our newsletter list.",
+      "back": "Back to newsletters"
+    },
+    "issues": {
+      "boletin1": {
+        "title": "Newsletter no. 1"
+      }
+    }
   },
   "home": {
     "eyebrow": "Unique experiences",
@@ -182,10 +341,10 @@
   },
   "shop": {
     "landing": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Our online shops",
       "intro": "Welcome to our online shops, where you will find an exquisite selection of items across the categories detailed below (remember to check the sales, payment and shipping conditions section for each brand and product).",
-      "categoriesAria": "Boutique shop categories",
+      "categoriesAria": "Online shop categories",
       "gourmet": {
         "title": "Gourmet",
         "description": "A selection of gourmet and delicatessen products you can enjoy in our restaurants and, through our online shop, take home to share with your loved ones. Top brands with artisanal, small-batch products of the highest quality and originality.",
@@ -230,13 +389,16 @@
     "checkout": {
       "title": "Complete order",
       "eyebrow": "Checkout",
-      "subtitle": "Enter your personal details and choose how you want to pay.",
+      "subtitle": "Confirm your account and choose how you want to pay.",
+      "accountData": "Account details",
+      "accountHint": "The order will be linked to your account. Update your profile if these details need changing.",
       "personalData": "Personal details",
       "name": "First name",
       "lastName": "Last name",
       "email": "Email",
       "phone": "Phone",
       "address": "Shipping address",
+      "dni": "ID / Tax ID",
       "paymentMethod": "Payment method",
       "paymentMethods": {
         "card": "Card",
@@ -260,10 +422,13 @@
       "submit": "Confirm order",
       "submitting": "Processing order…",
       "success": "Order placed successfully. We will contact you shortly.",
-      "error": "Could not process the order. Please try again."
+      "error": "Could not process the order. Please try again.",
+      "loginRequired": "Sign in to confirm your order.",
+      "loginCta": "Sign in",
+      "noGourmetItems": "There are no gourmet products in the cart to create an order."
     },
     "gourmet": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Gourmet",
       "description": "Explore our gourmet selection organised by product families. Each section includes an introduction and a catalogue of items with prices.",
       "navAria": "Gourmet shop categories",
@@ -345,7 +510,7 @@
       }
     },
     "merchandising": {
-      "eyebrow": "Boutique Shop",
+      "eyebrow": "Online shops",
       "title": "Merchandising",
       "description": "Exclusive Terra Infinitus items: contemporary design, quality materials and the identity of our destinations. Take home a memento of your experience.",
       "empty": "We will add merchandising products soon."
@@ -702,6 +867,7 @@
       "galleryAria": "Product image",
       "brand": "Malvasía · Soria",
       "priceLabel": "Price",
+      "professionalPriceLabel": "Professional price",
       "aboutTitle": "Description",
       "originTitle": "Origin & quality",
       "originText": "Produced by Malvasía (Canard S.A.) in Abejar, Soria. Premium duck gourmet products with strict quality standards, gluten-free and internationally recognised.",
@@ -724,6 +890,28 @@
     "navAria": "Resort sections",
     "mobileSectionLabel": "Section",
     "sectionPending": "This section will be completed soon with content provided by the client.",
+    "imagePlaceholder": "Image pending",
+    "landing": {
+      "eyebrow": "Our Resorts",
+      "title": "Terra Infinitus projects",
+      "intro": "Discover our sustainable luxury tourism projects: the vision that inspires us and the resorts where nature, exclusivity and hospitality come together. Choose a section to explore each destination in detail.",
+      "imageAlt": "Sunset over the landscape of our resorts",
+      "sectionsAria": "Our resorts sections",
+      "idea": {
+        "title": "The idea",
+        "description": "The vision, team and philosophy behind Terra Infinitus: an exceptional tourism project designed for unique people in dream settings.",
+        "cta": "Discover the idea"
+      },
+      "peralejos": {
+        "cta": "Explore Peralejos"
+      },
+      "bugarra": {
+        "cta": "Explore Bugarra"
+      },
+      "theLake": {
+        "cta": "Explore The Lake"
+      }
+    },
     "idea": {
       "title": "The idea",
       "alt1": "Terra Infinitus vision",
@@ -754,42 +942,257 @@
         "introduccion": {
           "title": "Introduction",
           "paragraphs": [
-            "Focused on building and developing a six-star hotel along with ten bungalows, a gourmet restaurant, hydrotherapy areas, pools, gyms, spas, tourist activities, online shop, vehicle rental and guide services, among other features, in the heart of the privileged Alto Tajo Natural Park in Peralejos de Las Truchas, Guadalajara — a project we started more than two years ago and which is in full development and design phase.",
-            "We will have around thirty rooms, ranging from nearly one hundred to four hundred square metres, gourmet dining and a wealth of exquisite details that will give the Project the highest reputation and prestige in Spain and abroad. The Project will be developed in phases, with many constructions and infrastructures already completed.",
-            "We aim to be ready by 2026-2027 with all luxury bungalow capacity, common areas, saunas, pools, spas, landscaping, solar fields and many more details, and by 2027-2028 to be fully operational with the rest of the Project's constructions and infrastructures."
+            "In this dream we have brought together a very special group of very different people, united by a common idea: to create a tourism project suited to a dream place like Peralejos.",
+            "We have extensive experience in tourism and gastronomy; we come from a project of more than thirty years in Patagonia, where we run a first-class lodge welcoming top international personalities — singers, actors, politicians, business leaders — who return again and again. The destination has been rated preferential on TripAdvisor, and Chile’s Ministry of Tourism recognised it as the country’s best tourism establishment in 2008.",
+            "Our philosophy is to create a unique environment for unique people. We know we work with something that deserves absolute responsibility: our clients’ dreams. We have built an unmatched reputation and a captive market of guests who will be a major contribution to our new project in Peralejos.",
+            "Among them are Robert Redford, Tom Selleck, John Denver, Madonna, White House members, painters, presidents of major corporations such as Coca-Cola and Inditex, journalists, writers, athletes and actors — and a treasure of testimonials and recommendations we will bring to Peralejos.",
+            "Some of these guests have been visiting us for more than eighteen years in a row, not only in Patagonia but also in destinations such as the Amazon, the Caribbean and Spain. They will undoubtedly be regular visitors to our Castilla-La Mancha infrastructure.",
+            "Our family also includes creatives with genuine sensitivity: experience in Spanish hospitality, customer service, furniture design, decoration and gastronomy. Landscaping professionals will design an oasis within the property; water technicians and other staff will be recruited locally and trained so the whole exceeds our guests’ expectations.",
+            "We have carried out a thorough study of vital aspects so that our infrastructure reaches the highest level, tailored to the market our idea is aimed at.",
+            "What is luxury? Luxury means very different things to different people. There is no absolute truth: respecting individual freedom of thought, the definition of luxury belongs to each person. We serve a demand that we personally share.",
+            "After travelling widely and visiting every kind of establishment, we concluded that we do not really like traditional hotels: they turn you into a number — anonymous and lacking the peculiarities we love in luxury travel.",
+            "Regardless of size or star rating, you are one of hundreds or thousands. Massage requires booking hours or days ahead. Pools, spas and saunas are shared with strangers; cafés involve waiting and protocols that steal rest and privacy. Staff barely know your name. Rooms look alike and you almost have to beg for a view.",
+            "Many hotels share the same décor and an acceptable quality-price balance, yet a special day with your partner, friends or team is shared with strangers — noise, photos, phone calls. For us, that is not luxury, but a series of small annoyances.",
+            "We do not claim the only definition of luxury, but we defend ours and apply it radically. Around thirty rooms mean special guests who are never anonymous. Extensive common areas can be used freely, without appointments or unwanted company: terraces, garden corners, rooms, spas, pools, gyms, cafés, saunas and private rooms.",
+            "Mobile phones and recording devices are not allowed in common areas. From Patagonia we learned to protect the privacy of famous and non-famous guests alike, so they can go unnoticed.",
+            "A drink can be requested from staff or taken from visi-coolers around the grounds; the same applies to coffee, snacks and juices. Guests choose their parking space, view it via the iPad given on arrival, control room temperatures, check spa and pool temperatures, choose menus, shop and move freely through common areas.",
+            "We focus on a layer of luxury within luxury, where real exclusivity means minority attention. In restaurants and cafés no tables sit side by side. Each room has its own character. We decorate as guests would decorate their own homes — we aim to be a home more than a hotel.",
+            "We avoid rigid check-in and check-out times. We prefer to call guests “invitees”: economic freedom and as few extras as possible, minimising the hated phrase “this is not included”.",
+            "The complex will be run by a highly trained team under outstanding working conditions: we do not have employees, we have a team. Owners and managers will be available to guests so their stay fully exceeds expectations. We are not claiming to be better than others — simply different, serving a different segment.",
+            "True luxury in hotels and restaurants goes far beyond price. It is measured by experience: exclusive surroundings, impeccable service and the ability to delight from the first moment.",
+            "We address a particularly demanding segment of the luxury market. A boutique hotel can feel more personal than a large chain. We take that idea further, with a guest-to-staff ratio well above typical hospitality standards.",
+            "True luxury lives in every detail — textiles, lighting, tableware, views, noble materials, climate, acoustics and integrated technology. Each guest receives an iPad to manage services, rest, pillows and room ambience, with sustainability data such as carbon footprint and solar generation in real time.",
+            "In Patagonia we achieved 85% repeat stays and, in peak seasons, waiting lists of several years — a goal we aim to replicate. With around thirty rooms and strong loyalty, plus a captive database of some six hundred thousand contacts, we start already halfway there.",
+            "This project seeks excellence beyond extreme quality. Official ratings in Europe stop at five stars, but six and seven exist worldwide, based on care and exclusivity as much as facilities. True exclusivity cannot be massified: each guest has a name and knows the team; spaces serve the guest, not the other way around.",
+            "Our best rating is our guests’ opinion. Hence our slogan: “we have millions of stars.” We sit in a privileged Free Sky place without light pollution — crowned not by five or six stars, but by millions of them. Silence, peace and warmth, with skies visible from almost every point of the hotel, are the finest rating we could aspire to."
+          ]
+        },
+        "laZona": {
+          "title": "The area",
+          "paragraphs": [
+            "Peralejos de las Truchas, a small and charming village in the province of Guadalajara, is a destination that offers a perfect combination of adventure, tourism, solitude and family fun. Surrounded by impressive natural landscapes, it is ideal for lovers of fishing, hunting, hiking, wildlife watching, mushroom foraging, water activities, stargazing — thanks to skies free of light pollution — buggy routes, climbing, photography and many more outdoor activities.",
+            "Peralejos de las Truchas is a true paradise for fishing enthusiasts; its crystal-clear rivers and streams hold abundant trout, making it a very popular destination among anglers. The natural setting also allows visitors to enjoy a wide range of activities in a peaceful, relaxing atmosphere.",
+            "For those who prefer adventure and direct contact with nature, Peralejos de las Truchas offers a wide variety of landscapes and hiking routes through the forests and mountains around the village, with impressive scenery and the tranquillity that only nature can provide. Wild animals such as deer, wild boar and birds of prey can be spotted in their natural habitat at any time.",
+            "But Peralejos de las Truchas is not only for nature lovers; it is also perfect for groups. Its cobbled streets and picturesque squares invite quiet walks and discovery of charming corners. The village also has playgrounds and picnic areas where children can play outdoors.",
+            "Exclusivity and romance make Peralejos de las Truchas a special place. Traditional architecture creates a warm, romantic atmosphere, ideal for a couple’s getaway, a charming dinner and stargazing on a clear night. It is also perfect for group activities: team building, coaching, meetings and corporate gatherings.",
+            "The flora of the area is lush and varied, offering a unique visual spectacle in every season. In spring the fields fill with wildflowers; in autumn the trees turn gold and red. For mushroom foragers, the surrounding forests are full of edible varieties, turning the activity into a unique gastronomic experience.",
+            "The hospitality of local people is another highlight. Residents are known for their kindness and warmth, making visitors feel at home. Local gastronomy, featuring traditional dishes and our own produce, will be enjoyed in our restaurant and sky bar with imposing views and absolute tranquillity and exclusivity.",
+            "In short, Peralejos de las Truchas offers a unique experience for couples seeking a quiet romantic place, for families who want nature and adventure, and for corporate groups with exclusive needs. Whatever the reason for visiting, unforgettable moments await in a place that seems taken from a fairy tale.",
+            "Peralejos de las Truchas is a village in Guadalajara, Castilla-La Mancha, Spain. Its economy is based mainly on tourism, agriculture and livestock. Demographically it is small, with around 200 inhabitants — a quiet, welcoming place for those who want to leave city bustle behind and enjoy rural life.",
+            "Natural resources surround the village within the Alto Tajo Natural Park, a destination of international standing that is expected to become a National Park. Its forests host a great variety of flora and fauna, some endemic, making it perfect for birdwatching, listening to the rutting season, mushroom foraging, hiking, hunting and fishing, photography, canoeing, cycling or simply disconnecting.",
+            "The village has well-preserved traditional architecture, with cobbled streets and stone houses. Basic services such as shops, restaurants and simple accommodation ensure a comfortable stay for visitors.",
+            "In Peralejos de las Truchas, the heart of the Alto Tajo, and across a very wide surrounding radius, there is no tourism and hotel offer of the level and quality we will deliver — positioning us as a definitive reference point in the Region."
           ]
         },
         "quienesSomos": {
-          "title": "Who are we? Why? The company, synergies"
+          "title": "Who are we?",
+          "paragraphs": [
+            "We can say that in this wonderful dream we have brought together an extraordinary group of very diverse people, united by a common vision to create an exceptional tourism project in a dream location such as Peralejos.",
+            "We have extensive experience in the tourism and gastronomy sector in Spain and abroad. For more than thirty years we have developed a project in Patagonia. There, in our top-level lodge, we welcome outstanding international personalities — singers, actors, politicians, business leaders and first-class guests. They choose to return, making our establishment the best in the country according to TripAdvisor.",
+            "As here, our philosophy there is based on creating a unique environment for unique people. We know the importance of working with our clients’ dreams and are proud to have built an unmatched reputation.",
+            "We have a loyal client base that is invaluable for our new project in Peralejos. Among them are Robert Redford, Tom Selleck, John Denver, Madonna, White House members, painters, presidents of major corporations such as Coca-Cola and Inditex, journalists, writers, athletes and actors.",
+            "We bring a treasure of testimonials and recommendations to Peralejos, with a captive market and database of more than six hundred thousand direct contacts, dozens of distributors worldwide, and access to the corresponding national market.",
+            "Some of these guests have been visiting us for more than eighteen years, not only in Patagonia but also in destinations such as the Amazon, the Caribbean and Spain. They will undoubtedly be regular visitors to our Guadalajara infrastructure.",
+            "In Spain, our team will bring together talents needed for the exclusivity we require: people with genuine sensitivity and creativity, experience in Spanish hospitality, customer service, furniture design, decoration and gastronomy, and a complete understanding of tourism management and guest care.",
+            "We have landscaping specialists who will design an oasis within the property, as well as water experts and other staff we will recruit locally and train so that the harmony of the whole meets the project’s standards and exceeds guests’ expectations — while ensuring a definitive impact on the community through full employment with quality, stable jobs.",
+            "Why? I spent most of my life living and working in Chilean Patagonia; after many decades of effort I retired some years ago and began to consider living in Spain again. Through investments I achieved an income that allowed me to live off those returns, enjoying my hobbies and a quiet life.",
+            "Yet my way of understanding life kept pushing me toward creating a project that would be the culmination of many things. When someone has a certain possibility, their duty is to share it and use it for the common good.",
+            "I have always said that the duty of the world’s fastest person is to run; of a privileged painter, to paint; of a unique thinker, to share knowledge. Life has given me privileged experience in high-end tourism, so my duty is to use that knowledge and those possibilities for the community.",
+            "My village is dying: I love my village and its people, its setting and its history — they are part of my own life. Depopulation, crisis and the social situation are slowly killing it, as in many other towns in the region. There are no opportunities for young people. Suddenly I realised I could drastically change that and turn this whole area into something unique that brings prosperity, quality of life, development and improvements for everyone.",
+            "I also saw that, beyond the project itself, many synergies could arise by creating companies to be shared with young people from the village and the area, linked to the complex’s tourism activity, aiming for: full employment in the area; high-level income for participants; local infrastructure development; ending depopulation and attracting more people; and a direct and indirect network of income sources and synergies with other companies and individuals.",
+            "Besides the tourism project itself, we intend to create several companies, part of which we will hand over to selected young people so they can make them their own according to their share of work and participation.",
+            "Company organisation: to execute the project properly and meet our social and tax responsibilities, we engaged Carrera, a firm of advisers and lawyers dedicated to supporting entrepreneurs with innovative, personalised legal solutions that add value and address challenges from a multidisciplinary perspective.",
+            "Carrera’s professionals have extensive experience in recognised firms in Spain and abroad across the advisory fields required for a project of this level. Carrera advises leading national and international companies and has successfully helped create projects of all kinds. Together, Carrera and Terra Infinitus form a cohesive team making this shared dream a reality.",
+            "Alongside Carrera, we work with Aseloma in Molina de Aragón for day-to-day accounting, monthly tax filings, and related work.",
+            "To implement the projects, an ad hoc limited company has been incorporated — Terra Infinitus Peralejos — integrating all material and personal elements needed for the project’s success. It belongs to the Peralejosdream corporate group, fully owned by Spanish shareholders; the holding also includes Terra Infinitus Bugarra SLU, which is already executing another tourism project in Bugarra, Valencia."
+          ]
         },
-        "conceptosTuristicos": {
-          "title": "Applied tourism concepts, phases"
+        "sinergias": {
+          "title": "Synergies",
+          "paragraphs": [
+            "Some of the synergies linked to the project are as follows.",
+            "Tour operator company: the area has enormous potential for tourist activities, but programmes are almost non-existent. In Patagonia we helped create tourism products and programmes and know what is needed. We intend to create a company linked to the parent company, invest in tourism equipment, and train people to run the complex’s activities without requiring them to invest their own resources. It will offer eco-buggy excursions, trekking and hiking circuits, birdwatching, flora and fauna, stargazing, cultural and gastronomic routes, and more for our guests.",
+            "Guides: likewise, we will create a group of fly-fishing guides to provide first-class service for high-end clients from around the world who come to enjoy quality fishing in the area’s unique river waters. This includes an exclusive special fishing beat accessible only with a trained, authorised guide who accompanies guests at all times, ensuring absolute care and respect for the environment and its ecosystem.",
+            "As a complement to the guides, there will be wardens, sale and rental of professional fishing equipment, fishing courses (fishing school) and interpretation of the surroundings — also creating skilled, quality jobs.",
+            "Peralejos Expeditios: a company that will be handed over to selected young people from the village and will run all tourism activities for our clients and external clients."
+          ]
         },
         "edificaciones": {
-          "title": "Buildings, room types, floor plans"
+          "title": "Buildings",
+          "paragraphs": [
+            "Tower I: this five-storey building is one of the central structures, with the main entrance and the most important areas of the whole complex.",
+            "On Tower I ground level (floor 0) are the gym, sauna, games room, WCs, showers, counter-current swimming pool, changing rooms and other smaller spaces (about 174.5 m² built).",
+            "On the ground floor are the main access to the tower and hotel, stairs, kitchens, service bathrooms, dining room, reception, bar-pub, cloakroom, office, storeroom and wine cellar, plus other smaller rooms (about 760.62 m² built).",
+            "Floors 1 to 4 mainly house rooms, stairs, lift and common areas. Each has suites (five per floor on several levels) and around 800–810 m² built. Tower I totals about 4,492.59 m² built.",
+            "Staff floors (mezzanine and −1) contain individual rooms with bathroom for staff. Together with the planned apartment, they can accommodate up to ten employees in comfort.",
+            "Tower II: also five storeys, houses top-level rooms — Top Presidential, Presidential Suites, Suites and Junior Suites — plus a meeting room and control rooms for the four solar fields, batteries, tool room, barbecue, terraces, water tanks and machinery. Given its location it is the tallest building above the complex’s zero level, with unmatched views. It has a lift and stairs, three independent accesses from Tower I, and a glazed corridor linking the two towers.",
+            "On Tower II floor 0 there are three independent vehicle entrances, a tool room, solar field and battery control centre, VIP parking for four vehicles and common areas with access to stairs and lift (about 271.40 m² built).",
+            "Upper floors of Tower II house suites with terraces and common areas (around 350 m² per floor). Floor 4 includes the largest suite in the complex, about three hundred square metres, with a terrace of privileged views; duplexes with private terraces are created on the roof level.",
+            "Rooms: no resource has been spared to design and equip them for the expected clientele. Each has a unique design — decoration, orientation, views and terrace type differ — with three-metre ceiling height and first-class fittings: XXXL bed, large-format TV, personalised iPad, fibre optic, emission-free fireplace, underfloor heating, climate control, safe, butler, 24-hour service and more than twenty-five square metres, among other details.",
+            "Bathrooms: conceived as an oasis, with natural light, home automation, luxury materials and innovations (XXL jacuzzi, smart mirror, hydromassage, aromatherapy, smart WC, non-slip floor, heated towel rail, etc.). They are one of the complex’s best calling cards and loyalty drivers.",
+            "In addition to the main buildings, the project includes 11 luxury bungalows (types A and B) to support luxury motorhomes and glamping, diversify the business model and reach another guest profile. A type A pilot bungalow already exists; in the first phase three type B units will be built."
+          ]
         },
-        "bungalows": {
-          "title": "Bungalows"
+        "terrenos": {
+          "title": "Land",
+          "paragraphs": [
+            "Project location: the whole complex sits on four plots — Carretera del Albergue 25A, 25B and 25C, and Polígono 5 plot 11. Cadastral plans and a topographic survey are available; main buildings are detailed in the buildings section.",
+            "Areas: plot 25A, 444 m²; plot 25B, 1,002 m²; plot 25C, 1,932 m²; plot 11, 13,600 m². Approximate total: 16,978 m². Three further plots are under negotiation.",
+            "Within the perimeter: entrances, bungalows, internal paths, motorhome area, parking and spa, sauna and gym buildings.",
+            "Site plan: original and final project layouts place every building and zone on the plots (Tower I, Tower II, bungalows, dwelling, spa/gym/massage buildings, conference hall, organic garden and henhouse, guest and VIP parking, etc.).",
+            "Parking: besides enclosed parking, there is covered outdoor space for events or restaurant guests; bus parking; and space for up to three luxury motorhomes with bathroom, shower, water, sewage and VIP services. Among others: VIP parking at Tower II and plot 16-25C, guest and motorhome parking on plot 16, and bungalow parking beside those units."
+          ]
         },
-        "spasHidroterapia": {
-          "title": "Spas, pools, saunas, gyms, hydrotherapy concept, terraces, library"
+        "servicios": {
+          "title": "Services",
+          "paragraphs": [
+            "Spa, sauna, massage, gym and pool buildings: several structures group massage rooms, sauna, counter-current pool, jacuzzi, hydrotherapy circuit, bar, spas and similar equipment; outside, a large pool, smaller pools and several spas. The layout avoids crowding: each guest chooses a space and uses it exclusively, with no schedules or waiting lists. The ensemble is visible from any point of the complex.",
+            "Several zones are distinguished: Tower I floor 0 (swim pool, showers, WC and gym next to the games room); others in Tower II, Águila building, spa and pool area, and the romantic pool and beach.",
+            "Garages: spacious, climate-controlled luxury spaces per room, with individual video cameras the vehicle owner can monitor, smoke, flood, fire and noise detection, and an isolated, avant-garde design. There is also parking for visitors, events, buses and vehicles needing security, placed next to each area of interest with shade and weather protection.",
+            "Laundry: each room includes an iron, board and suit hanging space; the hotel also offers wash and iron service with a special net and request form.",
+            "Entrances: four vehicle accesses with automatic opening controllable from the guest’s phone, and five illuminated pedestrian accesses under 24-hour CCTV. There are three VIP entrances, one service/goods entrance and one for bungalows, separating flows. All accesses stay closed, with video intercoms. The hotel operates by reservation only, with no street walk-in access, for maximum security and privacy.",
+            "Games room, gym, spa and swim pool: next to the main gym — billiards, darts, board games, video games and a bar, with noble woods, lighting and high-definition cinema/sound.",
+            "Mobile phones, cameras and tobacco: for exclusivity, discretion and the security of illustrious guests, mobiles and any recording or listening device are not allowed in common areas — only in guest rooms. The entire grounds, indoors and outdoors, are smoke-free: tobacco and similar products are not permitted."
+          ]
         },
-        "gimnasioRecepcion": {
-          "title": "Gym, reception, meeting room"
+        "restauracion": {
+          "title": "Dining",
+          "paragraphs": [
+            "Kitchen, restaurant and café: originality and design run through the whole project, and the gastronomic offer has been crafted with the same care in dishes and menus. The menu is built on original, authentic products (organic, with proven traceability and quality), top brands, and attentive service — each dish shows how long it will take to arrive.",
+            "With a professional, continuously trained team, eating or drinking here will engage the senses: emotion, warmth, authenticity and excellence, in a setting of views and natural light, exquisite yet simple décor, comfort and ergonomics, and full independence from other diners.",
+            "An ad hoc kitchen has been designed for the complex, with technological advances, careful cooking, fast efficient service and comfort for kitchen staff. Preference goes to nearby suppliers that reduce the carbon footprint and to efficient providers of meats, fish, seafood, oils, vinegars, pâtés, pastas and gourmet products, plus what is grown on site.",
+            "Cutlery, crockery and linens: custom designs match the level of the dining offer — plates of every size, fine glassware — so each menu dish has its own presentation (porcelain, trays, noble-wood boards, designer ceramics). Table linens are designed for each type of event, time of day and decorative need.",
+            "Dining rooms: first-class noble woods with stone, steel and glass, and a classic, welcoming décor of fireplaces, paintings and lighting. Each table or corner is planned so tables never interfere visually or acoustically. The experience starts in armchairs by fireplaces, terraces and fountains with aperitifs, continues at the table, and ends with digestifs, premium spirits, coffees and infusions in another area.",
+            "Our menus: four seasonal menus, each a work of art in itself. Every dish details origin and traceability, composition and possible allergens, serving time and portion size. The kitchen balances imagination, speed and top-level presentation, from simplicity to sophistication.",
+            "Self-service corners: pickles and marinades; more than thirty Spanish oils; over seventy chillies, condiments and salts from around the world; and a salad corner with fresh organic produce that reduces waste. The wine and spirits list mixes prestige references with lesser-known origins and grapes, and extraordinary spirits — for example tasting the same whisky at different ages.",
+            "The spirits selection, advised with Hisúmer, extends the hotel experience: premium brands with story and differentiation, alongside recognisable references, staff training, recommendations by guest profile and tasting experiences. The question is not only which brands everyone knows, but what memory guests take away."
+          ]
         },
-        "cocinaCarta": {
-          "title": "Kitchen, our menu"
+        "otrasZonas": {
+          "title": "Other areas",
+          "paragraphs": [
+            "Barbecue and wood-fired oven area: a traditional space for informal gatherings, breakfasts, snacks, lunches and dinners, with impressive views. It includes free beer on tap, coffee machine, microwave, air conditioning, extractor, fan, wood heating, griddle, barbecue and wood oven, gas and induction cooking, special cutlery and crockery, careful décor, and light and sound controllable from an iPad or on site — for private or group activities without interference.",
+            "The setting: views are spectacular by day and night; calm, peace and romance create a unique atmosphere, in the spirit of the Alto Tajo National Park.",
+            "Offices and accommodation: given the scale of the project, two homes have been acquired in Molina de Aragón. One, fully remodelled, hosts visitors who need to stay overnight (in addition to the pilot bungalow on the project grounds), with two bedrooms, bathroom, kitchen and dining room. Another floor is used as office, storeroom, meeting room and archives. Post office box no. 16 has also been opened there to centralise correspondence."
+          ]
         },
-        "tiendaPaquetes": {
-          "title": "Shop, tourist packages"
+        "tienda": {
+          "title": "Shop",
+          "paragraphs": [
+            "A shop of gourmet products, merchandising, local crafts and sports and fishing items will be set up, with a wide range of top quality goods sold physically at the hotel and nationwide via the website.",
+            "Exclusive distributions for the area and region are already in place — food, sports and other brands — that will be both an income stream and a further differentiation of image and concept."
+          ]
         },
-        "rutasTrekking": {
-          "title": "Trekking and running routes, tourist programmes, analysis, tourism situation in the area"
+        "paquetesTuristicos": {
+          "title": "Tourist packages",
+          "paragraphs": [
+            "Tourist packages will be offered to distributors, agencies and other market players, drawing on the loyal client base, and further activities will enrich the visitor experience.",
+            "Fly fishing: surrounded by waters already known nationally, the offer will also reach an international level. Packages for foreign and domestic guests include guides (training local staff), fishing courses and school, and advanced programmes. With more than thirty-five years’ experience in Patagonia and a fixed clientele, the reference rate there is €1,200 per person per day; in Peralejos an initial promotional rate of €850 per person per day will apply for the first two years. Rental gear for Hoce-seca, Cabrillas, Gallo and Tajo, guided days and courses at every level, plus free courses for local children and young people as part of social responsibility.",
+            "Adventure buggy routes: Can-Am Maverick Trail two-seaters, sealed against pollutant spills, lower displacement for safety, range, agility and low emissions; plus a four-seater model. Both will support guided excursions as extras to general programmes.",
+            "Mountain bike: mountain bike hire for guided or free routes, hotel-specific e-bikes, and Bike Friendly recognition with national and international cycling groups, plus local collaboration for events.",
+            "Vehicle hire, transfer and excursions: Ferrari Modena 360 with driver for routes and transfers; fully equipped Hummer H3 (climate control, screens, GPS, music, 4x4) for mushroom foraging, park routes, transfers and guest transport; and a Nissan Juke for guests. Also Honda Transalp 750 cc trail bike hire and kayaks for water outings, with local agreements for canyoning and similar activities.",
+            "Equipment for tourist activities: in a privileged setting — mountains, wilderness, skies free of light pollution — top-level gear for tourism and sport will be available; many first units have already been acquired."
+          ]
         },
-        "staffImpacto": {
-          "title": "Staff and jobs, direct impact on the Community"
+        "reservas": {
+          "title": "Reservations",
+          "paragraphs": [
+            "Over recent decades a database of hundreds of thousands of addresses has been built — a unique, privileged captive market. Alongside client addresses are hundreds of distributor contacts worldwide, plus traditional distributors.",
+            "19% of reservations will be occasional guests — those who visit once and do not return for reasons of origin or similar. Success rests on repeat visits: true loyalty through service, care and satisfaction. In Patagonia, 85% of reservations are from regular guests, and some groups have returned for more than 18 consecutive years.",
+            "Forecasts estimate that 25% of visitors will repeat (an ultra-conservative figure expected to rise toward 75% after the first seasons). 20% will come via the website and 5% will be fishing clients, a share that should grow as operations and awareness expand.",
+            "International distribution channels add decisive strategic value. Agencies, distributors and trade shows (Fly Water Travel, ORVIS, Frontiers, Yellow Dog, Safari Club International, EFFTEX and many more across the USA, Europe, Latin America, Japan and Australia) include active partners and others in progress.",
+            "The database includes, among other figures: about 52,430 client addresses, 52,660 anglers, 421 shops, 15,066 travellers worldwide and 3,500 in Spain. This support will be used to send newsletters and personalised advertising to end clients, agencies and distributors.",
+            "This clientele and these distributors target ultra-high-end tourism, with packages above five thousand euros per week. Destination catalogues have been published, as well as the book “DREAMS”: 208 full-colour pages on coated paper, gifted to distributors and VIP clients.",
+            "Estimated origin of reservations (based on Patagonia experience): repeats 25%, agencies 21%, direct clients 19%, web 20%, occasional 10% and fishing 5%."
+          ]
+        },
+        "suministros": {
+          "title": "Supplies & infrastructure",
+          "paragraphs": [
+            "Luxury motorhome hosting: three top-level pitches for this luxury nomadic tourism (glamping), all-inclusive, exclusive and highly comfortable. Motorhomes often cost tens of thousands of euros and guests seek luxury; typical campsites do not avoid crowding or noise. Each pitch includes views, independence, potable water, electricity, waste emptying, access to café, restaurant, bar, terraces, pool, spas and saunas, vehicle wash and daily cleaning, with sector platform contacts to promote the offer.",
+            "Earthworks: plots need levelling, fill, paths and embankments. Much work is already done; more than three hundred truckloads and heavy machinery (excavators, mixers, cranes, etc.) have been used so far.",
+            "Electrical supply: the project aims for high emission-reduction standards. Three photovoltaic plants of just over 25 kW each are planned (self-consumption limit per plot), nearly self-sufficient, equivalent to about 150 trees per month in environmental return. Automatic backup generators cover full occupancy, emergencies or extreme weather.",
+            "Exterior solar lighting: a network of dusk-activated solar luminaires with presence detection; about 50% is already installed and running.",
+            "High-speed networks and internet in common areas and rooms. Mobile phones and photographic or recording devices are not allowed in common areas — only in guest rooms.",
+            "Each guest will have a latest-generation iPad for services (also manageable manually): health and sleep, films, information, restaurant, home automation, etc. iMacs will be available in administration, rooms and common areas, plus 100-inch TVs in each room.",
+            "Electric vehicle charging points powered by solar energy: two medium-speed Tesla chargers and two fast chargers in the hotel parking. There are no chargers in Peralejos or nearby towns (the nearest is more than fifty kilometres away)."
+          ]
+        },
+        "helipuerto": {
+          "title": "Heliport",
+          "paragraphs": [
+            "In Patagonia, many guests arrive by private jet and a helicopter service is offered for transfers, tourist travel, heli-fishing and other exclusive services.",
+            "In Peralejos, given the target audience, the local heliport is expected to be used — if legally possible — for international guests arriving by private jet at the relevant airport, and for those who wish to use this means for certain activities."
+          ]
+        },
+        "domotica": {
+          "title": "Home automation",
+          "paragraphs": [
+            "The entire complex — rooms, common areas, pools, saunas, restaurant and café, indoors and outdoors — will have advanced home automation: automatic locks, digital peepholes, smart thermostats, motion, fall, smoke and flood sensors, facial recognition, licence-plate reading, and automatic light and blind control.",
+            "From the iPad guests can adjust lights, sound, blinds, climate, check in/out, view menus, browse, routes, weather, flights, emergencies, monitor rest, book activities, contact management and shop or reserve tickets, among other functions.",
+            "Z-Wave technology (868 MHz in Europe): a low-power wireless protocol with mesh architecture, interoperability and S2 encryption. In a multi-building hotel each block has its own hub on the IP network, with mesh topology by floor or wing and possible BMS, PMS and access-control integration.",
+            "Benefits: circadian lighting, motorised blinds, occupancy-based climate (ECO mode in empty rooms), electronic locks and centralised monitoring. Estimated savings of 20–40% on climate and 20–50% on lighting in some areas; full projects can cut the energy bill by 20–45%, with typical payback of 2 to 5 years."
+          ]
+        },
+        "seguridad": {
+          "title": "Security",
+          "paragraphs": [
+            "Across the complex and surroundings, latest-generation equipment ensures guest safety and comfort: CCTV, fire, smoke and flood detection, perimeter barriers, artificial intelligence, adverse weather alerts, and home-automation and IT systems.",
+            "Interior and exterior security protects privacy and the grounds: perimeter and common-area alarms; individual in-room alarms; smoke, gas, fire and flood detection; and safety in pools, saunas, spas and gyms."
+          ]
+        },
+        "programas": {
+          "title": "Programmes",
+          "paragraphs": [
+            "Trekking and running routes: a circuit around the property with stops and exercises at different levels, in silence and clean air, supervised by specialised staff and combinable with gyms, massages and water therapies.",
+            "Tourist programmes: the area has great potential but little high-end package offer. Drawing on experience at the Patagonia Tourism Board and the UNWTO, the aim is to position a quality destination, attract a higher-spending, environmentally aware guest, and create VIP programmes based on landscape, gastronomy, crafts, flora, fauna and exclusive activities, with attention to every detail.",
+            "Planned programmes include: honeymoon, rutting season, couples, mycological, buggy, rivers and lagoons, birds and wildlife, fly fishing, rafting, canyoning, mountain bike, gastronomy, horseback routes, sky watch, climbing, trekking, coaching, team building, spa circuit, massage therapy, Open Sky, Ferrari, moto and buggy routes, celebrations, and many more, to be expanded over time.",
+            "Some run with local companies and guides; others with own infrastructure and the planned ecotourism company, with free equity for local young people to achieve quality, non-seasonal full employment. The project’s infrastructure is key to attracting this distinguished clientele still unknown in the area."
+          ]
+        },
+        "situacionTuristica": {
+          "title": "Tourism situation",
+          "paragraphs": [
+            "The region’s tourism situation can be summarised in three essential problems.",
+            "Lack of quality infrastructure: within a wide radius around Peralejos, the Natural Park and the project there are many similar lodgings aimed at the same clientele, around €25, with mediocre facilities in general.",
+            "Lack of tourist offer: the area has enormous potential, but at least 90% is undeveloped — there are wonderful mountains, but nobody to take you and no clear way to organise the visit.",
+            "Low quality of the current market: due to prices, establishment quality and little appreciation of the destination’s assets, most visitors leave little economic value and often do not respect the environment. There are exceptions, but that is the general trend.",
+            "Proposed responses include creating and improving quality infrastructure, turning raw product into tourist programmes, attracting VIP markets, re-educating the existing market, creating micro-enterprises for services and guides, developing quality dining, promoting through the right channels, and improving regulation, signage and surveillance."
+          ]
+        },
+        "web": {
+          "title": "Website",
+          "paragraphs": [
+            "The names «terrainfinitus» are held across many extensions (.com, .es, .org, etc.) and the trademark is registered in class 39.",
+            "The website will be in several languages (Spanish, English, French, Romanian, Italian, German), with sections on the area — Peralejos, the region and the country — to place visitors in the setting where they will live their activities.",
+            "It will include who we are, background and experience; detailed descriptions of lodgings, setting, beds, bathrooms, home automation and equipment; online booking; purchase of tickets for regional activities; online shop; videos, testimonials and photos; and a section on restaurant, café, sky bar, terraces, menus and wine cellar.",
+            "Planned contents: the area, bookings, bungalow, who we are, lodging, dining, activities, fishing, contact, videos, photos, testimonials, shop and travel.",
+            "A local and regional services portal will also be created, covering activities, routes, lodgings, dining and other services, with an online booking system that supports other businesses’ development."
+          ]
+        },
+        "staff": {
+          "title": "Staff",
+          "paragraphs": [
+            "The project is born with social responsibility to change Peralejos: quality jobs and full employment; a parallel services company handed to local young people; alliances and synergies with third parties; and improvement of the village’s urban fabric.",
+            "Six VIP rooms with bathrooms for six employees and a home for a couple will be built, plus rest and leisure areas. Beyond excellent salaries, the team will share directly in company profits. The hotel will have roughly one employee for every three guests.",
+            "About 22 roles will be created (management, butler, housekeepers, reception, kitchen, PR and ten co-owners of the adventure company) — dignified, well-paid work that will drive housing, education, safety and community life.",
+            "The tourist services company will have legal personality, offices, a website and equipment (buggies, vehicles, mountain gear, etc.), serving the hotel and the general public. Ownership is retained, but management will be given free of charge to a group of up to ten people, preferably from the village.",
+            "Direct impact: municipal licences and taxes to improve streets and lighting; free architectural contributions (fountains, sculptures, street works); full employment; arrival of families with children for the school; and support for shops, artisans, guides and other services. Space on plot 16 will also be given to a local specialty coffee roaster, with independent street access so as not to disturb the complex."
+          ]
+        },
+        "gestion": {
+          "title": "Management",
+          "paragraphs": [
+            "Viability is assessed against typical hospitality challenges (staff, margins, rents, loyalty, planning). Facing the difficulty of finding workers, the model reduces dependence on large teams, uses self-service where appropriate, keeps guest volumes manageable, provides housing and common areas for staff, excellent salaries, stability and profit sharing.",
+            "Training is constant and a management duty: people willing to learn are preferred. A motivated, productive team allows leaner staffing, more personalisation and lower labour costs. Internal loyalty reduces turnover and absenteeism.",
+            "On margins and logistics: years of work to find quality suppliers with fast replenishment and less stock; agile assembly-style cooking; no rent or transfer fees (own amortisable investment); a flexible, adaptive economic study; lower opening costs by doing much work in-house; a captive market and repeats; market research aligned with target clients.",
+            "Professional management: hospitality vocation and specialised advice go together. Full fiscal transparency. Tips are not taken directly — they are shared proportionally across business areas. Menus span price ranges, with IT inventory control and tracking of best-selling dishes.",
+            "Location and guest experience: parking tailored to exclusive, secure stays. The guest is the core. Loyalty through name, preferences and history; an atmosphere with soul; repeats and word of mouth; four seasonal menus; human, empathetic service; indicated dish serving times; personalised post-sale follow-up (newsletters, greetings, news).",
+            "A diversified business model under the same exclusivity concept: six-star hotel, bungalows, restaurant, café, spa, shop, events, fishing, excursions, guides, car and bike hire, etc., with separate guest flows and the same quality standards throughout."
+          ]
         }
-      }
+      },
+      "pdfIntroViewer": "Full document: Project introduction"
     },
     "bugarra": {
       "title": "Terra Infinitus Bugarra luxury resort",
@@ -837,6 +1240,7 @@
       "title": "The Lake",
       "description": "Artificial lake in Gestalgar, Valencia, dedicated to catch-and-release sport fishing and premium water activities.",
       "imageAlt": "The Lake Terra Infinitus",
+      "logoAlt": "The Lake logo — Private Fishing Reserve",
       "pdfViewer": "The Lake project document",
       "sections": {
         "historiaPesca": {
@@ -1240,10 +1644,37 @@
       "checkIn": "Check-in",
       "checkOut": "Check-out",
       "guests": "Guests",
+      "guestsInvalid": "Enter between 1 and {{max}} guests.",
       "notes": "Notes (optional)",
+      "paymentMethod": "Payment method",
       "submit": "Confirm booking",
+      "submitting": "Booking…",
       "update": "Update booking",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "loginRequired": "Sign in to confirm your booking.",
+      "loginCta": "Sign in",
+      "success": "Booking created successfully.",
+      "error": "Could not create the booking. Please try again.",
+      "unavailable": "This room is not available for the selected dates. Please choose other dates.",
+      "dayUnavailable": "This day is unavailable because it is already booked."
+    },
+    "calendar": {
+      "aria": "Availability calendar",
+      "prev": "Previous month",
+      "next": "Next month",
+      "loading": "Loading availability…",
+      "selectCheckIn": "Select check-in",
+      "selectCheckOut": "Select check-out",
+      "unavailableLegend": "Unavailable days",
+      "weekdays": {
+        "mon": "Mo",
+        "tue": "Tu",
+        "wed": "We",
+        "thu": "Th",
+        "fri": "Fr",
+        "sat": "Sa",
+        "sun": "Su"
+      }
     },
     "table": {
       "title": "Bookings",

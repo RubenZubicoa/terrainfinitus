@@ -64,32 +64,147 @@
           <li>{{ 'rooms.guestsMax' | translate: { count: room.capacity } }}</li>
         </ul>
 
-        @if (hasStayDates()) {
-          <div class="room-detail__stay">
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.checkIn' | translate }}</span>
-              <strong>{{ checkIn() }}</strong>
-            </div>
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.checkOut' | translate }}</span>
-              <strong>{{ checkOut() }}</strong>
-            </div>
-            <div class="room-detail__stay-row">
-              <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
-              <strong>{{ stayTotal() | currency: 'EUR' : 'symbol' : '1.0-0' }}</strong>
-            </div>
-          </div>
-        }
-
-        <a
-          class="room-detail__book"
-          routerLink="/reservas-precios"
-          [queryParams]="bookingQueryParams()"
+        <form
+          class="room-detail__booking"
+          [attr.aria-label]="'rooms.bookingAria' | translate"
+          (ngSubmit)="submitBooking()"
         >
-          {{ 'rooms.detail.bookCta' | translate }}
-        </a>
-      </aside>
-    </header>
+          <div class="room-detail__calendar" [attr.aria-label]="'rooms.calendar.aria' | translate">
+            <div class="room-detail__calendar-header">
+              <button type="button" class="room-detail__calendar-nav" (click)="previousMonth()" [attr.aria-label]="'rooms.calendar.prev' | translate">
+                ‹
+              </button>
+              <p class="room-detail__calendar-title">{{ calendarTitle() }}</p>
+              <button type="button" class="room-detail__calendar-nav" (click)="nextMonth()" [attr.aria-label]="'rooms.calendar.next' | translate">
+                ›
+              </button>
+            </div>
+
+            <div class="room-detail__calendar-weekdays">
+              @for (dayKey of weekDayKeys; track dayKey) {
+                <span>{{ dayKey | translate }}</span>
+              }
+            </div>
+
+            <div class="room-detail__calendar-grid" role="grid">
+              @for (day of calendarDays(); track day.key) {
+                <button
+                  type="button"
+                  class="room-detail__calendar-day"
+                  [class.room-detail__calendar-day--muted]="!day.inMonth"
+                  [class.room-detail__calendar-day--past]="day.past"
+                  [class.room-detail__calendar-day--unavailable]="day.unavailable"
+                  [class.room-detail__calendar-day--start]="day.selectedStart"
+                  [class.room-detail__calendar-day--end]="day.selectedEnd"
+                  [class.room-detail__calendar-day--range]="day.inRange"
+                  [disabled]="!day.inMonth || day.past"
+                  (click)="selectCalendarDay(day)"
+                >
+                  @if (day.inMonth) {
+                    {{ day.day }}
+                  }
+                </button>
+              }
+            </div>
+
+            <p class="room-detail__calendar-legend">
+              <span class="room-detail__legend-swatch room-detail__legend-swatch--unavailable"></span>
+              {{ 'rooms.calendar.unavailableLegend' | translate }}
+            </p>
+
+            @if (bookingsLoading()) {
+              <p class="room-detail__hint">{{ 'rooms.calendar.loading' | translate }}</p>
+            }
+          </div>
+
+          <div class="room-detail__dates-summary">
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.form.checkIn' | translate }}</span>
+              <strong>{{ checkIn() || ('rooms.calendar.selectCheckIn' | translate) }}</strong>
+            </div>
+            <div class="room-detail__stay-row">
+              <span>{{ 'rooms.form.checkOut' | translate }}</span>
+              <strong>{{ checkOut() || ('rooms.calendar.selectCheckOut' | translate) }}</strong>
+            </div>
+            @if (checkIn() || checkOut()) {
+              <button type="button" class="room-detail__clear-dates" (click)="clearDates()">
+                {{ 'rooms.dates.clear' | translate }}
+              </button>
+            }
+          </div>
+
+          <label class="room-detail__field">
+            <span>{{ 'rooms.form.guests' | translate }}</span>
+            <input
+              type="number"
+              class="room-detail__input"
+              min="1"
+              [max]="room.capacity"
+              [ngModel]="guests()"
+              (ngModelChange)="onGuestsChange($event)"
+              name="guests"
+              required
+            />
+          </label>
+
+          @if (dateRangeInvalid()) {
+            <p class="room-detail__error" role="alert">{{ 'rooms.dates.invalid' | translate }}</p>
+          }
+
+          @if (datesUnavailable()) {
+            <p class="room-detail__error" role="alert">{{ 'rooms.form.unavailable' | translate }}</p>
+          }
+
+          @if (guestsInvalid()) {
+            <p class="room-detail__error" role="alert">
+              {{ 'rooms.form.guestsInvalid' | translate: { max: room.capacity } }}
+            </p>
+          }
+
+          @if (hasStayDates() && !datesUnavailable()) {
+            <div class="room-detail__stay">
+              <div class="room-detail__stay-row">
+                <span>{{ 'rooms.dates.nights' | translate: { count: nights() } }}</span>
+                <strong>{{ stayTotal() | currency: 'EUR' : 'symbol' : '1.0-0' }}</strong>
+              </div>
+            </div>
+          }
+
+          <fieldset class="room-detail__payment">
+            <legend>{{ 'rooms.form.paymentMethod' | translate }}</legend>
+            @for (method of paymentMethods; track method) {
+              <label class="room-detail__payment-option">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  [value]="method"
+                  [ngModel]="paymentMethod()"
+                  (ngModelChange)="paymentMethod.set($event)"
+                />
+                <span>{{ paymentMethodLabelKey(method) | translate }}</span>
+              </label>
+            }
+          </fieldset>
+
+          @if (!isAuthenticated()) {
+            <p class="room-detail__hint">{{ 'rooms.form.loginRequired' | translate }}</p>
+            <button type="button" class="room-detail__book" (click)="goToLogin()">
+              {{ 'rooms.form.loginCta' | translate }}
+            </button>
+          } @else {
+            <button
+              type="submit"
+              class="room-detail__book"
+              [disabled]="!canSubmit()"
+            >
+              @if (submitting()) {
+                {{ 'rooms.form.submitting' | translate }}
+              } @else {
+                {{ 'rooms.form.submit' | translate }}
+              }
+            </button>
+          }
+        </form>      </aside>    </header>
 
     <div class="room-detail__body">
       <section class="room-detail__section">

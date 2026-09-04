@@ -12,6 +12,8 @@ export interface ProjectSection {
   pdfLabelKey?: string;
   imageSrc?: string;
   imageAltKey?: string;
+  /** Número de huecos reservados para imágenes que se añadirán más adelante. */
+  imagePlaceholderCount?: number;
 }
 
 export interface ResortConfig {

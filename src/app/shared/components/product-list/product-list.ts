@@ -3,6 +3,7 @@ import { Component, inject, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CartService } from '../../../core/services/cart.service';
+import { CurrentUserService } from '../../../core/services/current-user-service';
 import { NotificationService } from '../../../core/services/notification.service';
 import { Product } from '../../models/product.models';
 
@@ -22,10 +23,11 @@ export class ProductList {
   readonly enableCart = input(true);
 
   protected readonly cartService = inject(CartService);
+  protected readonly currentUserService = inject(CurrentUserService);
   private readonly notificationService = inject(NotificationService);
 
   protected addToCart(product: Product): void {
-    this.cartService.addItem(product.id);
+    this.cartService.addItem(product);
     this.notificationService.show('shop.cart.added', 'success', 2500);
   }
 }

@@ -47,6 +47,10 @@ export class Resort {
     void this.router.navigate([this.resortRoute()], { fragment: sectionId });
   }
 
+  placeholderSlots(count: number): number[] {
+    return Array.from({ length: count }, (_, index) => index);
+  }
+
   private resolveActiveSection(fragment: string | null): string {
     const defaultSection = this.resort()?.defaultSectionId ?? this.sections()[0]?.id;
     if (fragment && this.sections().some((section) => section.id === fragment)) {

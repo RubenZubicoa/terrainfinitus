@@ -1,18 +1,20 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { filter, map, startWith } from 'rxjs';
+import { catchError, filter, map, of, startWith, switchMap } from 'rxjs';
 import { CartService } from '../../../../core/services/cart.service';
+import { CurrentUserService } from '../../../../core/services/current-user-service';
 import { NotificationService } from '../../../../core/services/notification.service';
-import { getProductById, getRelatedProducts } from '../../data/products.data';
+import { Product } from '../../../../shared/models/product.models';
 import {
   getCategoryListingPath,
   getCategoryTitleKey,
   getShopCategoryBasePath,
   resolveCategoryFromUrl,
 } from '../../data/shop-paths';
+import { Gourmet as GourmetService } from '../../services/gourmet';
 
 const HIGHLIGHT_KEYS = [
   'shop.detail.highlights.quality',
@@ -20,6 +22,8 @@ const HIGHLIGHT_KEYS = [
   'shop.detail.highlights.origin',
   'shop.detail.highlights.shipping',
 ] as const;
+
+const RELATED_PRODUCTS_LIMIT = 4;
 
 @Component({
   selector: 'app-product-detail',
@@ -30,15 +34,12 @@ const HIGHLIGHT_KEYS = [
 export class ProductDetail {
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
+  private readonly gourmetService = inject(GourmetService);
   protected readonly cartService = inject(CartService);
+  protected readonly currentUserService = inject(CurrentUserService);
   private readonly notificationService = inject(NotificationService);
 
   readonly highlightKeys = HIGHLIGHT_KEYS;
-
-  private readonly productId = toSignal(
-    this.route.paramMap.pipe(map((params) => params.get('productId') ?? '')),
-    { initialValue: '' },
-  );
 
   private readonly routeCategory = toSignal(
     this.router.events.pipe(
@@ -49,19 +50,39 @@ export class ProductDetail {
     { initialValue: resolveCategoryFromUrl(this.router.url) },
   );
 
-  readonly product = computed(() => {
-    const id = this.productId();
-    const current = id ? getProductById(id) : undefined;
-    if (!current || current.category !== this.routeCategory()) {
-      return undefined;
-    }
-    return current;
-  });
+  readonly product = toSignal(
+    this.route.paramMap.pipe(
+      map((params) => params.get('productId') ?? ''),
+      switchMap((id) => {
+        if (!id || resolveCategoryFromUrl(this.router.url) !== 'gourmet') {
+          return of(undefined);
+        }
 
-  readonly relatedProducts = computed(() => {
-    const id = this.productId();
-    return id ? getRelatedProducts(id) : [];
-  });
+        return this.gourmetService.getProductById(id).pipe(
+          catchError(() => of(undefined)),
+        );
+      }),
+    ),
+    { initialValue: undefined },
+  );
+
+  readonly relatedProducts = toSignal(
+    toObservable(this.product).pipe(
+      switchMap((product) => {
+        if (!product?.gourmetSection) {
+          return of([] as Product[]);
+        }
+
+        return this.gourmetService.getProductsBySection(product.gourmetSection).pipe(
+          map((products) =>
+            products.filter((item) => item.id !== product.id).slice(0, RELATED_PRODUCTS_LIMIT),
+          ),
+          catchError(() => of([] as Product[])),
+        );
+      }),
+    ),
+    { initialValue: [] as Product[] },
+  );
 
   readonly categoryTitleKey = computed(() => {
     const current = this.product();
@@ -86,7 +107,7 @@ export class ProductDetail {
     if (!current) {
       return;
     }
-    this.cartService.addItem(current.id);
+    this.cartService.addItem(current);
     this.notificationService.show('shop.cart.added', 'success', 2500);
   }
 }
